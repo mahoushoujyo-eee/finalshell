@@ -48,14 +48,14 @@ import java.util.List;
 import javax.swing.JComponent;
 
 public class Ds2 extends Y2 implements D7, LT3 {
-   protected boolean v = E2.c;
-   protected Xh4 s = E2.G;
-   protected Ky4 o;
-   protected boolean r = false;
-   protected B1 G = null;
-   protected B1 I = null;
-   protected Nq4 n = null;
-   protected List Q = new ArrayList(1);
+   public boolean v = E2.c;
+   public Xh4 s = E2.G;
+   public Ky4 o;
+   public boolean r = false;
+   public B1 G = null;
+   public B1 I = null;
+   public Nq4 n = null;
+   public List Q = new ArrayList(1);
    public static int[] g;
    public static String[] b;
    public static String[] c;
@@ -96,7 +96,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
    }
 
    @Override
-   protected void j$void() {
+   public void j$void() {
       label15: {
          super.j$void();
          this.getRootPane().setWindowDecorationStyle(0);
@@ -244,35 +244,35 @@ public class Ds2 extends Y2 implements D7, LT3 {
       Ox4.E(this.o, a(-14034, 18833), var1);
    }
 
-   protected M Q$M() {
+   public M Q$M() {
       return this.g().M();
    }
 
-   protected void e(M var1) {
+   public void e(M var1) {
       Ox4.E(this.o, a(-14035, -19132), var1);
    }
 
-   protected int f() {
+   public int f() {
       return this.g().I();
    }
 
-   protected void x(int var1) {
+   public void x(int var1) {
       Ox4.E(this.o, a(-14038, -31209), var1);
    }
 
-   protected int r$int() {
+   public int r$int() {
       return this.g().i();
    }
 
-   protected void M(int var1) {
+   public void M(int var1) {
       Ox4.E(this.o, a(-14037, -19018), var1);
    }
 
-   protected int B$int() {
+   public int B$int() {
       return this.g().B();
    }
 
-   protected void l(int var1) {
+   public void l(int var1) {
       Ox4.E(this.o, a(-14036, 2596), var1);
    }
 
@@ -436,7 +436,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return this;
    }
 
-   protected void F(Component var1, E_2 var2) {
+   public void F(Component var1, E_2 var2) {
       label16: {
          int[] var3 = U$arrint();
          if (var3 == null) {
@@ -455,7 +455,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       this.L(var1);
    }
 
-   protected void L(Component var1) {
+   public void L(Component var1) {
       int[] var2 = U$arrint();
       boolean var10000 = var1 instanceof Window;
       if (var2 == null) {
@@ -478,7 +478,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       }
    }
 
-   protected void R(Rectangle var1) {
+   public void R(Rectangle var1) {
       this.e(M.dropdown);
       Dimension var3 = this.getSize();
       int var4 = this.G();
@@ -502,7 +502,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       }
    }
 
-   protected void N(Component var1, E_2 var2) {
+   public void N(Component var1, E_2 var2) {
       Window var4;
       RZ var5;
       Wy_2 var6;
@@ -534,7 +534,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       this.D(new Ry2(this, var4, var6, var5, var1, var7, var8, var9));
    }
 
-   protected int W(Rectangle var1, B1 var2, Point var3) {
+   public int W(Rectangle var1, B1 var2, Point var3) {
       int[] var4 = U$arrint();
       int var10000 = FG.L[var2.ordinal()];
       if (var4 == null) {
@@ -553,7 +553,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return var10000;
    }
 
-   protected Point D(Rectangle var1, boolean var2, int var3, int var4, Dimension var5, Rectangle var6, B1 var7) {
+   public Point D(Rectangle var1, boolean var2, int var3, int var4, Dimension var5, Rectangle var6, B1 var7) {
       int[] var8;
       Point var9;
       B1 var14;
@@ -682,7 +682,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return null;
    }
 
-   protected Point k(Point var1, Rectangle var2) {
+   public Point k(Point var1, Rectangle var2) {
       int[] var3 = U$arrint();
       Point var10000 = var1;
       if (var3 == null) {
@@ -696,7 +696,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return var10000;
    }
 
-   protected Point B(Point var1, Dimension var2, Rectangle var3) {
+   public Point B(Point var1, Dimension var2, Rectangle var3) {
       int[] var4 = U$arrint();
       Point var10000 = var1;
       if (var4 == null) {
@@ -710,7 +710,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return var10000;
    }
 
-   protected Point z(Point var1, Rectangle var2) {
+   public Point z(Point var1, Rectangle var2) {
       int[] var3 = U$arrint();
       Point var10000 = var1;
       if (var3 == null) {
@@ -724,7 +724,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return var10000;
    }
 
-   protected Point i(Point var1, Dimension var2, Rectangle var3) {
+   public Point i(Point var1, Dimension var2, Rectangle var3) {
       int[] var4 = U$arrint();
       Point var10000 = var1;
       if (var4 == null) {
@@ -738,7 +738,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return var10000;
    }
 
-   protected B1 Z(Rectangle var1, boolean var2, int var3, Dimension var4, Rectangle var5) {
+   public B1 Z(Rectangle var1, boolean var2, int var3, Dimension var4, Rectangle var5) {
       int[] var10000 = U$arrint();
       B1[] var7 = this.G.r();
       int var8 = var7.length;
@@ -806,7 +806,7 @@ public class Ds2 extends Y2 implements D7, LT3 {
       return var12;
    }
 
-   protected Point p(Rectangle var1, boolean var2, B1 var3) {
+   public Point p(Rectangle var1, boolean var2, B1 var3) {
       int[] var4 = U$arrint();
       if (this.s == Xh4.componentCenter) {
          return new Point(var1.x + var1.width / 2, var1.y + var1.height / 2);

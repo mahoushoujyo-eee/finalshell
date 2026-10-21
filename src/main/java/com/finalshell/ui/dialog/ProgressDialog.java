@@ -13,7 +13,7 @@ import javax.swing.JTextArea;
 import net.miginfocom.swing.MigLayout;
 
 public class ProgressDialog extends JDialog {
-   JTextArea d;
+   public JTextArea d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -68,7 +68,7 @@ public class ProgressDialog extends JDialog {
       ((JTextArea)Ref.g(538377885794939275L, var2)).setText(var1);
    }
 
-   void I() {
+   public void I() {
    }
 
    static {

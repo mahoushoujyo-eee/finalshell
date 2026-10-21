@@ -11,7 +11,7 @@ import javax.swing.JWindow;
 import net.miginfocom.swing.MigLayout;
 
 public class TH3 extends JWindow {
-   JLabel U;
+   public JLabel U;
    public static String[] a;
    public static String[] b;
    public static long[] c;

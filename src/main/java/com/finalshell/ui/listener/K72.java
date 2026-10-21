@@ -11,11 +11,11 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class K72 implements TreeSelectionListener {
-   final DefaultMutableTreeNode s;
-   final LocalDrive q;
-   final Kb2 I;
+   public final DefaultMutableTreeNode s;
+   public final LocalDrive q;
+   public final Kb2 I;
 
-   K72(Kb2 var1, DefaultMutableTreeNode var2, LocalDrive var3) {
+   public K72(Kb2 var1, DefaultMutableTreeNode var2, LocalDrive var3) {
       this.I = var1;
       this.s = var2;
       this.q = var3;
@@ -42,14 +42,14 @@ public class K72 implements TreeSelectionListener {
       }
 
       DefaultMutableTreeNode var3 = var10004;
-      if (this == false || var3 != null) {
+      if (this == null || var3 != null) {
          Object var10005;
          label91: {
             label92: {
                Object var13 = 278769137899237136L;
                var10005 = this.equals((DefaultMutableTreeNode)Ref.g(278769137899237136L, var13));
-               if (this != false) {
-                  if (var10005 != false) {
+               if (this == null) {
+                  if (var10005 == null) {
                      Object var15 = 432279057068136028L;
                      Ref.g(432279057068136028L, var15);
                      Object var17 = 605945497076756383L;
@@ -66,7 +66,7 @@ public class K72 implements TreeSelectionListener {
                         throw var56.getTargetException();
                      }
 
-                     if (this != false) {
+                     if (this == null) {
                         break label92;
                      }
                   }
@@ -78,11 +78,11 @@ public class K72 implements TreeSelectionListener {
                   var10007.equals((DefaultMutableTreeNode)Ref.g(477205005732428780L, var25));
                }
 
-               if (this == false) {
+               if (this == null) {
                   break label91;
                }
 
-               if (var10005 != false) {
+               if (var10005 == null) {
                   Object var27 = 432279057068136028L;
                   Ref.g(432279057068136028L, var27);
                   Object var29 = 605945497076756383L;
@@ -123,8 +123,8 @@ public class K72 implements TreeSelectionListener {
 
          label94: {
             var10005 = var4;
-            if (this != false) {
-               if (var4 != false) {
+            if (this == null) {
+               if (var4 == null) {
                   break label94;
                }
 
@@ -135,7 +135,7 @@ public class K72 implements TreeSelectionListener {
                var63.equals((DefaultMutableTreeNode)Ref.g(292193458601960086L, var43));
             }
 
-            if (var10005 != false) {
+            if (var10005 == null) {
                return;
             }
 
@@ -152,7 +152,7 @@ public class K72 implements TreeSelectionListener {
                throw var53.getTargetException();
             }
 
-            if (this != false) {
+            if (this == null) {
                return;
             }
          }

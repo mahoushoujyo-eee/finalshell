@@ -5,7 +5,7 @@ public class W4_2 implements Comparable {
    public String N;
    public C_p_2 I;
 
-   W4_2(String var1, String var2, C_p_2 var3) {
+   public W4_2(String var1, String var2, C_p_2 var3) {
       this.G(var1);
       this.h(var2);
       this.E(var3);
@@ -15,7 +15,7 @@ public class W4_2 implements Comparable {
       return this.c;
    }
 
-   void G(String var1) {
+   public void G(String var1) {
       this.c = var1;
    }
 
@@ -23,7 +23,7 @@ public class W4_2 implements Comparable {
       return this.N;
    }
 
-   void h(String var1) {
+   public void h(String var1) {
       this.N = var1;
    }
 
@@ -31,7 +31,7 @@ public class W4_2 implements Comparable {
       return this.I;
    }
 
-   void E(C_p_2 var1) {
+   public void E(C_p_2 var1) {
       this.I = var1;
    }
 

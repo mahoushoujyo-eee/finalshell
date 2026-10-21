@@ -19,11 +19,11 @@ public class Cp4 extends Cj4 {
    public Cp4() {
    }
 
-   protected DQ3 F(ConnectHost var1) throws Pc2 {
+   public DQ3 F(ConnectHost var1) throws Pc2 {
       return (DQ3)var1.i$dm_4(c(2037, -24136));
    }
 
-   protected void w(DQ3 var1) {
+   public void w(DQ3 var1) {
       String[] var10000 = Cj4.v$arrString();
       String var3 = System.getenv().get(c(2038, 19719));
       String[] var2 = var10000;
@@ -37,22 +37,22 @@ public class Cp4 extends Cj4 {
       var1.b(c(2036, -7017));
    }
 
-   protected void V(DQ3 var1, int var2, int var3, int var4, int var5) {
+   public void V(DQ3 var1, int var2, int var3, int var4, int var5) {
       var1.F(var2, var3, var4, var5);
    }
 
    @Override
-   protected void U(Dm4 var1) {
+   public void U(Dm4 var1) {
       this.w((DQ3)var1);
    }
 
    @Override
-   protected Dm4 i(ConnectHost var1) throws Pc2 {
+   public Dm4 i(ConnectHost var1) throws Pc2 {
       return this.F(var1);
    }
 
    @Override
-   protected void D(Dm4 var1, int var2, int var3, int var4, int var5) {
+   public void D(Dm4 var1, int var2, int var3, int var4, int var5) {
       this.V((DQ3)var1, var2, var3, var4, var5);
    }
 

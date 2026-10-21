@@ -12,11 +12,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kp2 implements ActionListener {
-   final AM d;
-   final T32 o;
-   final Bq2 a;
+   public final AM d;
+   public final T32 o;
+   public final Bq2 a;
 
-   Kp2(Bq2 var1, AM var2, T32 var3) {
+   public Kp2(Bq2 var1, AM var2, T32 var3) {
       this.a = var1;
       this.d = var2;
       this.o = var3;

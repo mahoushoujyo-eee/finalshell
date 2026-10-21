@@ -7,9 +7,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Jl2 implements Comparator {
-   Jl2() {
-   }
-
    public int I(Ln4_2 var1, Ln4_2 var2) {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 145535910876897139L;

@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class I6 implements ActionListener {
-   final Kz4 v;
+   public final Kz4 v;
 
-   I6(Kz4 var1) {
+   public I6(Kz4 var1) {
       this.v = var1;
    }
 

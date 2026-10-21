@@ -1,9 +1,6 @@
 package com.finalshell.core;
 
 public class DL3_2 implements FW3 {
-   DL3_2() {
-   }
-
    @Override
    public void w(TX param1) {
       // $VF: Couldn't be decompiled

@@ -8,10 +8,10 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class GU implements Runnable {
-   final String y;
-   final F5 q;
+   public final String y;
+   public final F5 q;
 
-   GU(F5 var1, String var2) {
+   public GU(F5 var1, String var2) {
       this.q = var1;
       this.y = var2;
    }

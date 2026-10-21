@@ -10,8 +10,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellRenderer;
 
 public class Q6 extends Ky4 implements P6 {
-   protected U3 l;
-   protected Ud2_2 U;
+   public U3 l;
+   public Ud2_2 U;
    public static String[] a;
    public static String[] b;
 

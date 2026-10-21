@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 
 public class K3 {
-   Um4 d;
-   Um4 i;
-   Um4 L;
+   public Um4 d;
+   public Um4 i;
+   public Um4 L;
 
    public Um4 D() {
       Object var1 = 316308885847392115L;

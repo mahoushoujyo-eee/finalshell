@@ -5,7 +5,7 @@ public class Ow4 {
    public int W;
    public int L;
    public int c;
-   Ap2_2 V;
+   public Ap2_2 V;
 
    public Ow4(int var1) {
       this.r(this.m = var1);

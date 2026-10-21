@@ -7,9 +7,6 @@ import java.lang.reflect.InvocationTargetException;
 public class UX implements Runnable {
    public static long a;
 
-   UX() {
-   }
-
    @Override
    public void run() {
       while (true) {

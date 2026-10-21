@@ -10,7 +10,7 @@ public class XB {
    public static XB I;
    public static XB h;
    public static XB S;
-   protected final int q;
+   public final int q;
    public final char[] R;
    public final int s;
    public final int b;
@@ -215,7 +215,7 @@ public class XB {
       return new String(this.R, this.s, this.b);
    }
 
-   String i() {
+   public String i() {
       return new String(this.R, this.s, this.b);
    }
 
@@ -234,7 +234,7 @@ public class XB {
       return var2;
    }
 
-   static XB[] l(String var0) {
+   public static XB[] l(String var0) {
       int[] var10000 = X();
       char[] var2 = var0.toCharArray();
       int[] var1 = var10000;
@@ -314,7 +314,7 @@ public class XB {
       return var10;
    }
 
-   protected String G() {
+   public String G() {
       int[] var1 = X();
       switch (this.q) {
          case 0:

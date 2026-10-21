@@ -10,10 +10,10 @@ import javax.swing.JLabel;
 import javax.swing.border.EmptyBorder;
 
 public class Bb2 extends JLabel {
-   float t;
-   Color j;
-   Color S;
-   Color M;
+   public float t;
+   public Color j;
+   public Color S;
+   public Color M;
    public static long[] a;
    public static Integer[] b;
 

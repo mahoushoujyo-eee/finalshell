@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class Ib2 implements Runnable {
    public final long V;
    public volatile boolean O;
-   final UO e;
+   public final UO e;
 
    public Ib2(UO var1) {
       this.e = var1;

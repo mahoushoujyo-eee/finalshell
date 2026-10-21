@@ -5,9 +5,9 @@ import com.finalshell.ui.frame.Xc4;
 import com.finalshell.ui.panel.KD3;
 
 public class OF3 implements Runnable {
-   final String[] V;
+   public final String[] V;
 
-   OF3(String[] var1) {
+   public OF3(String[] var1) {
       this.V = var1;
    }
 

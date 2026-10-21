@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.TextEditorFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class T92 implements Runnable {
-   final OT u;
+   public final OT u;
 
-   T92(OT var1) {
+   public T92(OT var1) {
       this.u = var1;
    }
 

@@ -9,9 +9,9 @@ import com.finalshell.ui.panel.FilePermissionPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class DU3 implements Runnable {
-   final YJ3 o;
+   public final YJ3 o;
 
-   DU3(YJ3 var1) {
+   public DU3(YJ3 var1) {
       this.o = var1;
    }
 

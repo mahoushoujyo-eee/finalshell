@@ -8,9 +8,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ft4 implements MouseListener {
-   final AM j;
+   public final AM j;
 
-   Ft4(AM var1) {
+   public Ft4(AM var1) {
       this.j = var1;
    }
 
@@ -44,7 +44,7 @@ public class Ft4 implements MouseListener {
       }
 
       if (var2 == null) {
-         if (var10002 == false) {
+         if (var10002 == null) {
             return;
          }
 
@@ -64,7 +64,7 @@ public class Ft4 implements MouseListener {
          }
       }
 
-      if (var10002 == false) {
+      if (var10002 == null) {
          Registry.emptyArgs();
          long var13 = 299368763907830673L;
          Ref.h2(299368763907830673L, var13);

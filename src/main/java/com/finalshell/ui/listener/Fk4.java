@@ -12,10 +12,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class Fk4 implements KeyListener {
-   final Connection4 G;
+   public final Connection4 G;
    public static long a;
 
-   Fk4(Connection4 var1) {
+   public Fk4(Connection4 var1) {
       this.G = var1;
    }
 
@@ -110,7 +110,7 @@ public class Fk4 implements KeyListener {
       label74: {
          Fk4 var10012 = var5.contains(var10013);
          if (var2 != null) {
-            if (var10012 == false) {
+            if (var10012 == null) {
                return;
             }
 
@@ -132,7 +132,7 @@ public class Fk4 implements KeyListener {
             }
          }
 
-         if (var10012 != false) {
+         if (var10012 == null) {
             Object var39 = 173244602779313450L;
             ((Connection4)Ref.g(173244602779313450L, var39)).collapsePath(new TreePath(var4.getPath()));
             if (var2 != null) {

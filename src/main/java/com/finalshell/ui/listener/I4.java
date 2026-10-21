@@ -21,10 +21,10 @@ import javax.swing.TransferHandler;
 import javax.swing.tree.TreePath;
 
 public class I4 extends MouseAdapter {
-   final K5_2 Q;
+   public final K5_2 Q;
    public static long a;
 
-   I4(K5_2 var1) {
+   public I4(K5_2 var1) {
       this.Q = var1;
    }
 
@@ -80,7 +80,7 @@ public class I4 extends MouseAdapter {
                                  var6 = var1.getX() - var5;
                                  var10000 = this.Q.V();
                                  if (var2 != null) {
-                                    if (var10000 == false) {
+                                    if (var10000 == null) {
                                        break label185;
                                     }
 
@@ -88,7 +88,7 @@ public class I4 extends MouseAdapter {
                                  }
 
                                  if (var2 != null) {
-                                    if (var10000 == false) {
+                                    if (var10000 == null) {
                                        break label185;
                                     }
 
@@ -99,7 +99,7 @@ public class I4 extends MouseAdapter {
                                     break label155;
                                  }
 
-                                 if (var10000 != false) {
+                                 if (var10000 == null) {
                                     var10000 = true;
                                     break label155;
                                  }
@@ -111,14 +111,14 @@ public class I4 extends MouseAdapter {
                            Na2 var7 = var10000;
                            Na2 var17 = K5_2.b(this.Q).getCellRenderer().getClass().equals(Na2.class);
                            if (var2 != null) {
-                              if (var17 != false) {
+                              if (var17 == null) {
       Na2 var18;
                                  label135: {
                                     label187: {
                                        Na2 var8 = (Na2)K5_2.w(this.Q).getCellRenderer();
                                        var18 = var7;
                                        if (var2 != null) {
-                                          if (var7 != false) {
+                                          if (var7 == null) {
                                              var18 = var8;
                                              Object[] var10001 = Registry.packArgs(var4, var6);
                                              long var10 = 460506329433732058L;
@@ -148,7 +148,7 @@ public class I4 extends MouseAdapter {
                                           break label135;
                                        }
 
-                                       if (var18 != false) {
+                                       if (var18 == null) {
                                           var18 = K5_2.E(this.Q).getSelectionCount();
                                           if (var2 == null) {
                                              break label135;
@@ -170,7 +170,7 @@ public class I4 extends MouseAdapter {
                               var17 = var7;
                            }
 
-                           if (var17 != false) {
+                           if (var17 == null) {
                               this.Q.G = var3;
                               if (var2 != null) {
                                  break label193;
@@ -285,7 +285,7 @@ public class I4 extends MouseAdapter {
                break label58;
             }
 
-            var6 = K5_2.D(this.Q).getDragEnabled();
+            var6 = (K5_2.D(this.Q).getDragEnabled()) ? 1 : 0;
          }
 
          if (var6 == 0) {

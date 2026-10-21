@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class Il4 {
    public final String O;
    public final int r;
-   final Ip5 A;
+   public final Ip5 A;
 
    public Il4(Ip5 var1, String var2, int var3) {
       this.A = var1;

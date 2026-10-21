@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class QN implements ActionListener {
-   final Kb2 B;
+   public final Kb2 B;
 
-   QN(Kb2 var1) {
+   public QN(Kb2 var1) {
       this.B = var1;
    }
 

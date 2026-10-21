@@ -11,10 +11,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.KeyStroke;
 
 public class Tu2 implements KeyListener {
-   final ConnectionProperty V;
-   final Bq_2 M;
+   public final ConnectionProperty V;
+   public final Bq_2 M;
 
-   Tu2(Bq_2 var1, ConnectionProperty var2) {
+   public Tu2(Bq_2 var1, ConnectionProperty var2) {
       this.M = var1;
       this.V = var2;
    }
@@ -42,7 +42,7 @@ public class Tu2 implements KeyListener {
 
       ZG_2 var3 = (ZG_2)var10002;
       Object[] var2 = var10001;
-      if (var2 == false || var3 != null) {
+      if (var2 == null || var3 != null) {
          var10002 = Registry.emptyArgs();
          long var8 = 468069908955066583L;
          Object[] var7 = (Object[])var10002;

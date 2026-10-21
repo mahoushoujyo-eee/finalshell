@@ -9,22 +9,22 @@ public final class D8 extends Df2 {
    public static long[] j;
    public static Integer[] k;
 
-   D8() {
+   public D8() {
    }
 
-   D8(int var1) throws com.finalshell.io.D22 {
+   public D8(int var1) throws com.finalshell.io.D22 {
       this(var1, b(28479, 249121469356365685L));
    }
 
-   D8(int var1, boolean var2) throws com.finalshell.io.D22 {
+   public D8(int var1, boolean var2) throws com.finalshell.io.D22 {
       this(var1, b(16504, 8230272719706519600L), var2);
    }
 
-   D8(int var1, int var2) throws com.finalshell.io.D22 {
+   public D8(int var1, int var2) throws com.finalshell.io.D22 {
       this(var1, var2, false);
    }
 
-   D8(int var1, int var2, boolean var3) throws com.finalshell.io.D22 {
+   public D8(int var1, int var2, boolean var3) throws com.finalshell.io.D22 {
       int var4 = this.W(var1, var2, var3);
 
       try {
@@ -36,7 +36,7 @@ public final class D8 extends Df2 {
       }
    }
 
-   D8(int var1, int var2, int var3, D92 var4) throws com.finalshell.io.D22 {
+   public D8(int var1, int var2, int var3, D92 var4) throws com.finalshell.io.D22 {
       int var5 = this.D(var1, var2, var3, var4);
 
       try {
@@ -48,7 +48,7 @@ public final class D8 extends Df2 {
       }
    }
 
-   D8(int var1, int var2, int var3) throws com.finalshell.io.D22 {
+   public D8(int var1, int var2, int var3) throws com.finalshell.io.D22 {
       int var4 = this.O(var1, var2, var3);
 
       try {
@@ -60,19 +60,19 @@ public final class D8 extends Df2 {
       }
    }
 
-   int Y(int var1) {
+   public int Y(int var1) {
       return this.O(var1, b(28479, 249121469356365685L));
    }
 
-   int Y(int var1, boolean var2) {
+   public int Y(int var1, boolean var2) {
       return this.W(var1, b(28479, 249121469356365685L), var2);
    }
 
-   int O(int var1, int var2) {
+   public int O(int var1, int var2) {
       return this.W(var1, var2, false);
    }
 
-   int D(int var1, int var2, int var3, D92 var4) {
+   public int D(int var1, int var2, int var3, D92 var4) {
       int[] var5 = Nm4.g();
       int var10000 = var2;
       if (var5 == null) {
@@ -130,13 +130,13 @@ public final class D8 extends Df2 {
       return var10000;
    }
 
-   int O(int var1, int var2, int var3) {
+   public int O(int var1, int var2, int var3) {
       this.z = false;
       this.d = new Wa2_2(this);
       return this.d.m(var1, var2, var3);
    }
 
-   int W(int var1, int var2, boolean var3) {
+   public int W(int var1, int var2, boolean var3) {
       int[] var10000 = Nm4.g();
       this.z = false;
       int[] var4 = var10000;
@@ -150,7 +150,7 @@ public final class D8 extends Df2 {
    }
 
    @Override
-   int o(int var1) {
+   public int o(int var1) {
       int[] var2 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var2 == null) {
@@ -175,7 +175,7 @@ public final class D8 extends Df2 {
    }
 
    @Override
-   int v() {
+   public int v() {
       int[] var10000 = Nm4.g();
       this.z = true;
       int[] var1 = var10000;
@@ -194,7 +194,7 @@ public final class D8 extends Df2 {
       return var2;
    }
 
-   int r(int var1, int var2) {
+   public int r(int var1, int var2) {
       int[] var3 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var3 == null) {
@@ -208,7 +208,7 @@ public final class D8 extends Df2 {
       return var10000.K(var1, var2);
    }
 
-   int x(byte[] var1, int var2) {
+   public int x(byte[] var1, int var2) {
       int[] var3 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var3 == null) {
@@ -223,11 +223,11 @@ public final class D8 extends Df2 {
    }
 
    @Override
-   boolean h$boolean() {
+   public boolean h$boolean() {
       return this.z;
    }
 
-   int Y(D8 var1) {
+   public int Y(D8 var1) {
       this.z = var1.z;
       return Wa2_2.E(this, var1);
    }

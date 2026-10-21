@@ -5,12 +5,12 @@ import java.security.interfaces.ECPublicKey;
 import java.security.spec.ECParameterSpec;
 
 public class WJ_2 implements Hx2 {
-   byte[] s;
-   byte[] V;
-   byte[] F;
-   ECPublicKey H;
-   ECPrivateKey N;
-   ECParameterSpec k;
+   public byte[] s;
+   public byte[] V;
+   public byte[] F;
+   public ECPublicKey H;
+   public ECPrivateKey N;
+   public ECParameterSpec k;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -300,11 +300,11 @@ public class WJ_2 implements Hx2 {
       return this.F;
    }
 
-   ECPublicKey K() {
+   public ECPublicKey K() {
       return this.H;
    }
 
-   ECPrivateKey g() {
+   public ECPrivateKey g() {
       return this.N;
    }
 

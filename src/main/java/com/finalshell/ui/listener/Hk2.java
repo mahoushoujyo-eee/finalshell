@@ -6,9 +6,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Hk2 extends MouseAdapter {
-   final com.finalshell.core.O5 u;
+   public final com.finalshell.core.O5 u;
 
-   Hk2(com.finalshell.core.O5 var1) {
+   public Hk2(com.finalshell.core.O5 var1) {
       this.u = var1;
    }
 

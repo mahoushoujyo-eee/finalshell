@@ -9335,7 +9335,7 @@ public class Registry {
 
       try {
          if (var10000 instanceof String) {
-            var3 = Class.forName(b[var2]);
+            var3 = RegistryAliases.forName(b[var2]);
             a[var2] = var3;
             return var3;
          }

@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class Fw4 implements ActionListener {
-   final EffectPreview n;
+   public final EffectPreview n;
    public static String a;
 
-   Fw4(EffectPreview var1) {
+   public Fw4(EffectPreview var1) {
       this.n = var1;
    }
 

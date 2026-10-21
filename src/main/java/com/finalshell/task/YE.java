@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.net.InetAddress;
 
 public class YE implements Runnable {
-   final InetAddress O;
-   final IcpmPing N;
+   public final InetAddress O;
+   public final IcpmPing N;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   YE(IcpmPing var1, InetAddress var2) {
+   public YE(IcpmPing var1, InetAddress var2) {
       this.N = var1;
       this.O = var2;
    }

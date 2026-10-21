@@ -7,10 +7,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Yp2 implements KeyListener {
-   final TM a;
+   public final TM a;
    public static long b;
 
-   Yp2(TM var1) {
+   public Yp2(TM var1) {
       this.a = var1;
    }
 

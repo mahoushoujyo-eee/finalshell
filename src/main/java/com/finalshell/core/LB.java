@@ -5,9 +5,9 @@ import org.pcap4j.core.PacketListener;
 import org.pcap4j.packet.Packet;
 
 public class LB implements PacketListener {
-   final DnsResolveFailedSetting n;
+   public final DnsResolveFailedSetting n;
 
-   LB(DnsResolveFailedSetting var1) {
+   public LB(DnsResolveFailedSetting var1) {
       this.n = var1;
    }
 

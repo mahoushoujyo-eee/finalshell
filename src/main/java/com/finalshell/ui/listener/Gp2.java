@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Gp2 extends ComponentAdapter {
-   final Wd2 I;
+   public final Wd2 I;
 
-   Gp2(Wd2 var1) {
+   public Gp2(Wd2 var1) {
       this.I = var1;
    }
 

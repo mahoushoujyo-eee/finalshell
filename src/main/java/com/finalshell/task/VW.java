@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class VW implements Runnable {
-   final KV C;
+   public final KV C;
 
-   VW(KV var1) {
+   public VW(KV var1) {
       this.C = var1;
    }
 

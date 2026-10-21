@@ -8,9 +8,9 @@ import com.finalshell.ui.dialog.DU;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wl2 implements Runnable {
-   final YT3_2 n;
+   public final YT3_2 n;
 
-   Wl2(YT3_2 var1) {
+   public Wl2(YT3_2 var1) {
       this.n = var1;
    }
 
@@ -27,7 +27,7 @@ public class Wl2 implements Runnable {
       Object var7 = 214018044769332063L;
       Object var10007 = Ref.g(214018044769332063L, var7);
       Object var9 = 179331486645727952L;
-new DU((DU)Ref.g(179331486645727952L, var9));
+var10007 = new DU((DU)Ref.g(179331486645727952L, var9));
       long var12 = 274180952810189743L;
       Ref.s(274180952810189743L, this, var12);
       Object var13 = 214018044769332063L;

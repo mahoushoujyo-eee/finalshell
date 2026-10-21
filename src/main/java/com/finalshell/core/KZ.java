@@ -21,8 +21,8 @@ public class KZ {
    }
 
    public KZ(double var1, int var3, int var4) {
+   super();
       int var10000 = G();
-      super();
       this.e = var1;
       int var5 = var10000;
 

@@ -4,9 +4,9 @@ import com.finalshell.core.Ej2;
 import javax.swing.event.AncestorEvent;
 
 public class FH2 extends FY {
-   final Ej2 q;
+   public final Ej2 q;
 
-   FH2(Ej2 var1) {
+   public FH2(Ej2 var1) {
       this.q = var1;
    }
 

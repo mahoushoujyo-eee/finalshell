@@ -5,7 +5,7 @@ public final class NB_2 extends NR_2 {
    public final Nt2_2 o;
    public final String B;
    @C_9
-   NV_2 N;
+   public NV_2 N;
    public static String[] a;
    public static String[] d;
 

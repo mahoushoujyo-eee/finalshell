@@ -6,10 +6,10 @@ import com.finalshell.ui.panel.CE;
 import javax.swing.SwingUtilities;
 
 public class DJ3 implements Runnable {
-   final CE x;
+   public final CE x;
    public static long a;
 
-   DJ3(CE var1) {
+   public DJ3(CE var1) {
       this.x = var1;
    }
 

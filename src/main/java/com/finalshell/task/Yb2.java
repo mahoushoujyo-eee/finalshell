@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.frame.U;
 
 public class Yb2 implements Runnable {
-   final U m;
+   public final U m;
 
-   Yb2(U var1) {
+   public Yb2(U var1) {
       this.m = var1;
    }
 

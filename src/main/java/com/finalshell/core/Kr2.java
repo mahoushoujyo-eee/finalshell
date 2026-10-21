@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.K32;
 import com.finalshell.ui.panel.Ks4;
 
 public class Kr2 implements E_2 {
-   final K32 h;
-   final Ks4 x;
+   public final K32 h;
+   public final Ks4 x;
 
-   Kr2(Ks4 var1, K32 var2) {
+   public Kr2(Ks4 var1, K32 var2) {
       this.x = var1;
       this.h = var2;
    }
@@ -20,7 +20,7 @@ public class Kr2 implements E_2 {
             return true;
          }
 
-         var10000 = this.x.e;
+         var10000 = (this.x.e) ? 1 : 0;
       }
 
       if (var1 != null) {

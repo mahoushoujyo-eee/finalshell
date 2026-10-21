@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class CO3 implements ActionListener {
-   final RouteTracePanel2 s;
+   public final RouteTracePanel2 s;
 
-   CO3(RouteTracePanel2 var1) {
+   public CO3(RouteTracePanel2 var1) {
       this.s = var1;
    }
 

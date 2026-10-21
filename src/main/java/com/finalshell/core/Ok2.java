@@ -26,7 +26,7 @@ public abstract class Ok2 implements CA3_2, Xd4 {
    public static TimeZone X;
    public static Locale Y;
    public static String Z;
-   static Wr4[] s;
+   public static Wr4[] s;
    public static String z;
    public static int h;
    public static int a;

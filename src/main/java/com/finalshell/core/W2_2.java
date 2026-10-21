@@ -11,7 +11,7 @@ public class W2_2 extends D2_2 {
    public static Color Y;
    public static Color z;
    public static Color S;
-   protected com.finalshell.ui.model.G R = com.finalshell.ui.model.G.thick;
+   public com.finalshell.ui.model.G R = com.finalshell.ui.model.G.thick;
    public static long[] e;
    public static Integer[] n;
 

@@ -6,7 +6,7 @@ import java.awt.Dimension;
 import java.awt.Insets;
 
 public class TU extends T4 {
-   protected int Q;
+   public int Q;
 
    public TU(int var1) {
       this.Q = var1;
@@ -82,7 +82,7 @@ public class TU extends T4 {
       }
    }
 
-   protected Dimension r(Container var1, boolean var2) {
+   public Dimension r(Container var1, boolean var2) {
       int var10000 = T4.b();
       int var4 = var1.getComponentCount();
       Dimension var5 = new Dimension(0, 0);

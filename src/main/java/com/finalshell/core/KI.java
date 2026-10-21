@@ -77,7 +77,7 @@ public class KI implements A6_2, ClipboardOwner {
       return this.b();
    }
 
-   protected void H(@NotNull String var1) {
+   public void H(@NotNull String var1) {
       this.z(new StringSelection(var1), Q());
    }
 

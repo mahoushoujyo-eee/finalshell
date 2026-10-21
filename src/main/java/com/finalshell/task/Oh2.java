@@ -6,9 +6,6 @@ public class Oh2 implements Runnable {
    public static long c;
    public static long d;
 
-   Oh2() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

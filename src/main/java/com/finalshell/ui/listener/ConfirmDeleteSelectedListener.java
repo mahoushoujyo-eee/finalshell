@@ -12,11 +12,11 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class ConfirmDeleteSelectedListener implements ActionListener {
-   final RouteTracePanel2 D;
+   public final RouteTracePanel2 D;
    public static String[] a;
    public static String[] b;
 
-   ConfirmDeleteSelectedListener(RouteTracePanel2 var1) {
+   public ConfirmDeleteSelectedListener(RouteTracePanel2 var1) {
       this.D = var1;
    }
 

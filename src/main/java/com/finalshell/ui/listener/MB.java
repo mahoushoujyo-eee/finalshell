@@ -8,9 +8,9 @@ import java.awt.event.ItemListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class MB implements ItemListener {
-   final PublicKey h;
+   public final PublicKey h;
 
-   MB(PublicKey var1) {
+   public MB(PublicKey var1) {
       this.h = var1;
    }
 

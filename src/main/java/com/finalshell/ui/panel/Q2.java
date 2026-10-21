@@ -73,7 +73,7 @@ public class Q2 extends JSpinner implements Pp2, RF3, W2_3, Yb4 {
    }
 
    @Override
-   protected JComponent createEditor(SpinnerModel var1) {
+   public JComponent createEditor(SpinnerModel var1) {
       int[] var2 = T4_2.S$arrint();
       boolean var10000 = var1 instanceof SpinnerDateModel;
       if (var2 != null) {

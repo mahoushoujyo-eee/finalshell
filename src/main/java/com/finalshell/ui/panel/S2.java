@@ -8,7 +8,7 @@ import java.awt.Graphics2D;
 import javax.swing.JComponent;
 
 public class S2 extends JComponent {
-   final X3 i;
+   public final X3 i;
    public static long[] a;
    public static Integer[] b;
 

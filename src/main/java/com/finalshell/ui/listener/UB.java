@@ -9,9 +9,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class UB implements MouseListener {
-   final Nd2_2 S;
+   public final Nd2_2 S;
 
-   UB(Nd2_2 var1) {
+   public UB(Nd2_2 var1) {
       this.S = var1;
    }
 

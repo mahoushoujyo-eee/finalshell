@@ -8,9 +8,9 @@ import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 
 public class K7 implements AncestorListener {
-   final Wd2 u;
+   public final Wd2 u;
 
-   K7(Wd2 var1) {
+   public K7(Wd2 var1) {
       this.u = var1;
    }
 

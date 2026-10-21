@@ -5,9 +5,6 @@ import java.awt.event.KeyEvent;
 import java.util.List;
 
 public class UP extends Wc2{
-   UP() {
-   }
-
    @Override
    public void j(KeyEvent var1) {
       String var3 = I22.X$String();

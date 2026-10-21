@@ -10,16 +10,16 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public abstract class Y2_5 {
-   protected TR s = new TR();
-   protected InetAddress v = null;
-   protected String m = null;
-   protected int k;
-   protected Socket Y = null;
-   protected InputStream L;
-   protected OutputStream I;
-   protected int w;
-   protected Y2_5 T = null;
-   protected static Y2_5 a;
+   public TR s = new TR();
+   public InetAddress v = null;
+   public String m = null;
+   public int k;
+   public Socket Y = null;
+   public InputStream L;
+   public OutputStream I;
+   public int w;
+   public Y2_5 T = null;
+   public static Y2_5 a;
    public static String[] b;
    public static String[] c;
    public static long[] f;
@@ -29,7 +29,7 @@ public abstract class Y2_5 {
       __vfClinit__();
    }
 
-   Y2_5(Y2_5 param1, String param2, int param3) throws UnknownHostException {
+   public Y2_5(Y2_5 param1, String param2, int param3) throws UnknownHostException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -85,21 +85,21 @@ public abstract class Y2_5 {
       // 56: return
    }
 
-   Y2_5(String var1, int var2) throws UnknownHostException {
+   public Y2_5(String var1, int var2) throws UnknownHostException {
       this(null, var1, var2);
    }
 
-   Y2_5(Y2_5 var1, InetAddress var2, int var3) {
+   public Y2_5(Y2_5 var1, InetAddress var2, int var3) {
       this.T = var1;
       this.v = var2;
       this.k = var3;
    }
 
-   Y2_5(InetAddress var1, int var2) {
+   public Y2_5(InetAddress var1, int var2) {
       this(null, var1, var2);
    }
 
-   Y2_5(Y2_5 var1) {
+   public Y2_5(Y2_5 var1) {
       this.v = var1.v;
       this.k = var1.k;
       this.w = var1.w;
@@ -315,7 +315,7 @@ public abstract class Y2_5 {
       // 108: areturn
    }
 
-   protected void m$void() throws B52 {
+   public void m$void() throws B52 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -420,15 +420,15 @@ public abstract class Y2_5 {
       // c9: return
    }
 
-   protected abstract Y2_5 B();
+   public abstract Y2_5 B();
 
-   protected abstract Jk2 k(int var1, InetAddress var2, int var3);
+   public abstract Jk2 k(int var1, InetAddress var2, int var3);
 
-   protected abstract Jk2 Q(int var1, String var2, int var3) throws UnknownHostException;
+   public abstract Jk2 Q(int var1, String var2, int var3) throws UnknownHostException;
 
-   protected abstract Jk2 o(InputStream var1) throws B52, IOException;
+   public abstract Jk2 o(InputStream var1) throws B52, IOException;
 
-   protected Jk2 r(InetAddress var1, int var2) throws B52 {
+   public Jk2 r(InetAddress var1, int var2) throws B52 {
       try {
          this.m$void();
          Jk2 var3 = this.k(1, var1, var2);
@@ -439,7 +439,7 @@ public abstract class Y2_5 {
       }
    }
 
-   protected Jk2 V(String var1, int var2) throws UnknownHostException, B52 {
+   public Jk2 V(String var1, int var2) throws UnknownHostException, B52 {
       try {
          this.m$void();
          Jk2 var3 = this.Q(1, var1, var2);
@@ -450,7 +450,7 @@ public abstract class Y2_5 {
       }
    }
 
-   protected Jk2 J(InetAddress var1, int var2) throws B52 {
+   public Jk2 J(InetAddress var1, int var2) throws B52 {
       try {
          this.m$void();
          Jk2 var3 = this.k(2, var1, var2);
@@ -461,7 +461,7 @@ public abstract class Y2_5 {
       }
    }
 
-   protected Jk2 e(String var1, int var2) throws UnknownHostException, B52 {
+   public Jk2 e(String var1, int var2) throws UnknownHostException, B52 {
       try {
          this.m$void();
          Jk2 var3 = this.Q(2, var1, var2);
@@ -472,7 +472,7 @@ public abstract class Y2_5 {
       }
    }
 
-   protected Jk2 s() throws IOException, B52 {
+   public Jk2 s() throws IOException, B52 {
       try {
          return this.o(this.L);
       } catch (InterruptedIOException var3) {
@@ -483,7 +483,7 @@ public abstract class Y2_5 {
       }
    }
 
-   protected Jk2 F(InetAddress var1, int var2) throws B52 {
+   public Jk2 F(InetAddress var1, int var2) throws B52 {
       String[] var3 = Jk2.Y();
 
       try {
@@ -514,7 +514,7 @@ public abstract class Y2_5 {
       throw new B52(a(30760, 1218424183128375748L), a(-31698, -10867));
    }
 
-   protected Jk2 Y(String var1, int var2) throws UnknownHostException, B52 {
+   public Jk2 Y(String var1, int var2) throws UnknownHostException, B52 {
       String[] var3 = Jk2.Y();
 
       try {
@@ -545,7 +545,7 @@ public abstract class Y2_5 {
       throw new B52(a(3788, 6501228741262030626L), a(-31697, 29675));
    }
 
-   protected void F() {
+   public void F() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -578,15 +578,15 @@ public abstract class Y2_5 {
       // 2d: return
    }
 
-   protected void N(Jk2 var1) throws B52, IOException {
+   public void N(Jk2 var1) throws B52, IOException {
       var1.l(this.I);
    }
 
-   protected Jk2 g() throws B52, IOException {
+   public Jk2 g() throws B52, IOException {
       return this.o(this.L);
    }
 
-   protected Jk2 p(Jk2 var1) throws B52 {
+   public Jk2 p(Jk2 var1) throws B52 {
       try {
          var1.l(this.I);
          return this.o(this.L);

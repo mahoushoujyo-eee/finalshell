@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 // $VF: synthetic class
 public class C_2 {
-   static int[] q;
+   public static int[] q;
 
    static {
       __vfClinit__();

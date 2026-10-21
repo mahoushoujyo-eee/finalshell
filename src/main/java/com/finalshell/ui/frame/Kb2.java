@@ -33,34 +33,34 @@ import javax.swing.tree.DefaultTreeModel;
 import net.miginfocom.swing.MigLayout;
 
 public class Kb2 extends JFrame {
-   JPanel G;
-   JPanel V;
-   Z8 R;
-   Lv4_2 o;
-   ArrayList I;
-   Vg2 c;
-   AA S;
-   DefaultMutableTreeNode m;
-   DefaultMutableTreeNode Q;
-   long H;
-   Kb2 z;
-   String A;
+   public JPanel G;
+   public JPanel V;
+   public Z8 R;
+   public Lv4_2 o;
+   public ArrayList I;
+   public Vg2 c;
+   public AA S;
+   public DefaultMutableTreeNode m;
+   public DefaultMutableTreeNode Q;
+   public long H;
+   public Kb2 z;
+   public String A;
    public static boolean w;
-   KQ a;
-   DefaultMutableTreeNode y;
-   Edit j;
-   boolean q;
-   DefaultMutableTreeNode g;
-   String e;
+   public KQ a;
+   public DefaultMutableTreeNode y;
+   public Edit j;
+   public boolean q;
+   public DefaultMutableTreeNode g;
+   public String e;
    public static String[] b;
    public static String[] d;
    public static long[] f;
    public static Integer[] h;
 
    public Kb2(String var1, KQ var2, Window var3, Lv4_2 var4, DefaultMutableTreeNode var5) {
+   super();
       label191: {
          Z7.m();
-         super();
          ArrayList var10002 = new ArrayList();
          long var18 = 429204764258682403L;
          ArrayList var17 = var10002;
@@ -79,7 +79,7 @@ public class Kb2 extends JFrame {
          Ref.s(407576561248461390L, var5, var26);
          long var28 = 473641348993414305L;
          Ref.s(473641348993414305L, var4, var28);
-         if (this != false) {
+         if (this == null) {
             Object var29 = 473641348993414305L;
             if ((Lv4_2)Ref.g(473641348993414305L, var29) != null) {
                Registry.lookupField(300266073511944820L).setBoolean(this, true);
@@ -121,7 +121,7 @@ public class Kb2 extends JFrame {
                   throw var191.getTargetException();
                }
 
-               if (this != false) {
+               if (this == null) {
                   break label191;
                }
             }
@@ -307,7 +307,7 @@ public class Kb2 extends JFrame {
          Object var129 = 289180313571318483L;
          ((JPanel)Ref.g(289180313571318483L, var129)).add(var15);
          JButton var10049 = var15;
-         if (this != false) {
+         if (this == null) {
             var15.addActionListener(new QN(this));
             if (Registry.lookupField(300266073511944820L).getBoolean(this)) {
                JButton var16 = new JButton(a(-6108, 27334));
@@ -315,7 +315,7 @@ public class Kb2 extends JFrame {
                Object var131 = 289180313571318483L;
                ((JPanel)Ref.g(289180313571318483L, var131)).add(var16);
                var16.addActionListener(new J9(this));
-               if (this != false) {
+               if (this == null) {
                   break label182;
                }
             }
@@ -347,7 +347,7 @@ public class Kb2 extends JFrame {
       }
 
       label195: {
-         if (this != false) {
+         if (this == null) {
             if (!Registry.lookupField(300266073511944820L).getBoolean(this)) {
                Lv4_2 var10054 = new Lv4_2();
                long var142 = 473641348993414305L;
@@ -392,7 +392,7 @@ public class Kb2 extends JFrame {
                   throw var180.getTargetException();
                }
 
-               if (this != false) {
+               if (this == null) {
                   break label195;
                }
             }
@@ -482,7 +482,7 @@ public class Kb2 extends JFrame {
             throw var9.getTargetException();
          }
 
-         if (var2 != false) {
+         if (var2 == null) {
             break;
          }
       }
@@ -573,7 +573,7 @@ public class Kb2 extends JFrame {
       }
    }
 
-   boolean l() {
+   public boolean l() {
       long var10 = 143703518532667980L;
       Object var9 = null;
       Ref.s(143703518532667980L, var9, var10);
@@ -722,7 +722,7 @@ public class Kb2 extends JFrame {
       return (boolean)var10002;
    }
 
-   void X(Lv4_2 param1, boolean param2) throws Exception {
+   public void X(Lv4_2 param1, boolean param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1015,7 +1015,7 @@ public class Kb2 extends JFrame {
       // 295: return
    }
 
-   void s() {
+   public void s() {
       Object var1 = 605945497076756383L;
       Ref.g(605945497076756383L, var1);
       Object var3 = 143703518532667980L;

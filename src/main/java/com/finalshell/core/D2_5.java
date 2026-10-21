@@ -11,7 +11,7 @@ public abstract class D2_5 extends U2_3 {
    }
 
    @C_9
-   protected abstract File C(String var1);
+   public abstract File C(String var1);
 }
 
 

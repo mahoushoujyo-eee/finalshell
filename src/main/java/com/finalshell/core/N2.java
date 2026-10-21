@@ -24,39 +24,39 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicSliderUI;
 
 public class N2 extends BasicSliderUI implements L0_2 {
-   protected Color R;
-   protected Color G;
-   protected int L;
-   protected int O;
-   protected int c;
-   protected boolean D;
-   protected Color f;
-   protected Color h;
-   protected Color N;
-   protected int a;
-   protected int F;
-   protected boolean T;
-   protected Color e;
-   protected Color I;
-   protected int b;
-   protected int M;
-   protected int u;
-   protected int K;
-   protected boolean Y;
-   protected boolean Q;
-   protected int l;
-   protected boolean g;
-   protected boolean t;
-   protected Insets n;
-   protected Og4 q;
-   protected boolean p;
-   protected PropertyChangeListener P;
-   protected MouseWheelListener S;
-   protected ChangeListener w;
-   protected MouseAdapter z;
-   protected boolean y;
-   protected int B;
-   protected WC_2 v;
+   public Color R;
+   public Color G;
+   public int L;
+   public int O;
+   public int c;
+   public boolean D;
+   public Color f;
+   public Color h;
+   public Color N;
+   public int a;
+   public int F;
+   public boolean T;
+   public Color e;
+   public Color I;
+   public int b;
+   public int M;
+   public int u;
+   public int K;
+   public boolean Y;
+   public boolean Q;
+   public int l;
+   public boolean g;
+   public boolean t;
+   public Insets n;
+   public Og4 q;
+   public boolean p;
+   public PropertyChangeListener P;
+   public MouseWheelListener S;
+   public ChangeListener w;
+   public MouseAdapter z;
+   public boolean y;
+   public int B;
+   public WC_2 v;
    public static int r;
    public static String[] d;
    public static String[] i;
@@ -417,7 +417,7 @@ public class N2 extends BasicSliderUI implements L0_2 {
    }
 
    @Override
-   protected Dimension getThumbSize() {
+   public Dimension getThumbSize() {
       return this.slider.getOrientation() == 0 ? new Dimension(this.b, this.M) : new Dimension(this.M, this.b);
    }
 
@@ -475,15 +475,15 @@ public class N2 extends BasicSliderUI implements L0_2 {
       }
    }
 
-   protected Color r$Color() {
+   public Color r$Color() {
       return P9.N(GO.N, GO.Ff, this.i$float());
    }
 
-   protected float i$float() {
+   public float i$float() {
       return (float)this.B / 5.0F;
    }
 
-   protected Shape l$Shape() {
+   public Shape l$Shape() {
       int var1 = (W()) ? 1 : 0;
       int var10000 = (this.Y) ? 1 : 0;
       if (var1 != 0) {
@@ -784,7 +784,7 @@ public class N2 extends BasicSliderUI implements L0_2 {
       RV.X(var3, var4);
    }
 
-   protected Shape S$Shape() {
+   public Shape S$Shape() {
       int var1 = G$int();
       int var10000 = this.O;
       if (var1 == 0) {
@@ -822,7 +822,7 @@ public class N2 extends BasicSliderUI implements L0_2 {
          );
    }
 
-   protected Shape r$Shape() {
+   public Shape r$Shape() {
       int var1 = G$int();
       int var10000 = this.O;
       if (var1 == 0) {
@@ -914,51 +914,51 @@ public class N2 extends BasicSliderUI implements L0_2 {
       );
    }
 
-   static JSlider x(N2 var0) {
+   public static JSlider x(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider o(N2 var0) {
+   public static JSlider o(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider I(N2 var0) {
+   public static JSlider I(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider H(N2 var0) {
+   public static JSlider H(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider T(N2 var0) {
+   public static JSlider T(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider a(N2 var0) {
+   public static JSlider a(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider l(N2 var0) {
+   public static JSlider l(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider r(N2 var0) {
+   public static JSlider r(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider q(N2 var0) {
+   public static JSlider q(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider K(N2 var0) {
+   public static JSlider K(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider s(N2 var0) {
+   public static JSlider s(N2 var0) {
       return var0.slider;
    }
 
-   static JSlider X(N2 var0) {
+   public static JSlider X(N2 var0) {
       return var0.slider;
    }
 

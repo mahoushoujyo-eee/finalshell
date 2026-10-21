@@ -4,9 +4,9 @@ import com.finalshell.ui.dialog.DK;
 import java.io.File;
 
 public class K12 implements RM {
-   final DK t;
+   public final DK t;
 
-   K12(DK var1) {
+   public K12(DK var1) {
       this.t = var1;
    }
 

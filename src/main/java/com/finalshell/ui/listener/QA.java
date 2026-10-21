@@ -5,9 +5,9 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class QA implements PopupMenuListener {
-   final Kz4 r;
+   public final Kz4 r;
 
-   QA(Kz4 var1) {
+   public QA(Kz4 var1) {
       this.r = var1;
    }
 

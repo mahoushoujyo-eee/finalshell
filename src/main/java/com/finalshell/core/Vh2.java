@@ -45,7 +45,7 @@ public class Vh2 {
       SwingUtilities.invokeLater(new com.finalshell.task.UA());
    }
 
-   static void q() {
+   public static void q() {
       Registry.emptyArgs();
       long var0 = 416564062626485712L;
       Ref.h2(416564062626485712L, var0);

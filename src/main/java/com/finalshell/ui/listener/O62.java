@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class O62 extends MouseAdapter {
-   final T32 s;
-   final AM W;
-   final Bq2 e;
+   public final T32 s;
+   public final AM W;
+   public final Bq2 e;
 
-   O62(Bq2 var1, T32 var2, AM var3) {
+   public O62(Bq2 var1, T32 var2, AM var3) {
       this.e = var1;
       this.s = var2;
       this.W = var3;

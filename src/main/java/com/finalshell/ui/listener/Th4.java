@@ -10,9 +10,9 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class Th4 implements ActionListener {
-   final SetExternalEditorPanel B;
+   public final SetExternalEditorPanel B;
 
-   Th4(SetExternalEditorPanel var1) {
+   public Th4(SetExternalEditorPanel var1) {
       this.B = var1;
    }
 
@@ -100,7 +100,7 @@ public class Th4 implements ActionListener {
             throw var27.getTargetException();
          }
 
-new Th4(var10008);
+var3 = new Th4(var10008);
          File var5 = var40;
          var10006 = var5.exists();
          if (var2 == null && var10006 == false) {
@@ -109,7 +109,7 @@ new Th4(var10008);
          }
       }
 
-      if (var10006 != false) {
+      if (var10006 == null) {
          Object var20 = 207788080053309886L;
          Ref.g(207788080053309886L, var20);
          Object var22 = 166731455568463101L;

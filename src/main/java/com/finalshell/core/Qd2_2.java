@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.XW3;
 import java.awt.Component;
 
 public class Qd2_2 implements T5 {
-   final XW3 q;
+   public final XW3 q;
 
-   Qd2_2(XW3 var1) {
+   public Qd2_2(XW3 var1) {
       this.q = var1;
    }
 

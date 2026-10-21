@@ -7,9 +7,9 @@ import java.util.Map;
 import java.util.WeakHashMap;
 
 public abstract class An2 implements NA3 {
-   protected final List i = new ArrayList();
-   protected final Map H = new WeakHashMap();
-   protected final Object B = new Object();
+   public final List i = new ArrayList();
+   public final Map H = new WeakHashMap();
+   public final Object B = new Object();
 
    public void V(Window var1) {
       this.y(var1, null);

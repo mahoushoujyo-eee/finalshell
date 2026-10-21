@@ -98,74 +98,74 @@ import org.slf4j.LoggerFactory;
 
 public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    public static Logger w;
-   protected SetBackgroundImagePanel kj;
-   protected JScrollBar v;
-   protected Connect_2 O;
-   protected AtomicBoolean kJ;
+   public SetBackgroundImagePanel kj;
+   public JScrollBar v;
+   public Connect_2 O;
+   public AtomicBoolean kJ;
    public AZ j;
    public Wq2_2 W;
-   protected D9 G;
+   public D9 G;
    public PN kz;
    public Cj4 L;
    public E0 V;
    public Thread E;
-   protected Rx4 kC;
+   public Rx4 kC;
    public CS3_2 Z;
    public JLayeredPane b;
    public In4 Q;
    public List kq;
-   com.finalshell.ui.frame.U kD;
-   ConnectionProperty U;
-   ConnectionProperty kk;
-   FilePanel ks;
-   boolean s;
-   float k;
-   int kP;
-   int d;
-   Lv4_2 C;
-   String X;
-   boolean kS;
-   CB kL;
-   Ty2 N;
+   public com.finalshell.ui.frame.U kD;
+   public ConnectionProperty U;
+   public ConnectionProperty kk;
+   public FilePanel ks;
+   public boolean s;
+   public float k;
+   public int kP;
+   public int d;
+   public Lv4_2 C;
+   public String X;
+   public boolean kS;
+   public CB kL;
+   public Ty2 N;
    public Ov4 kl;
-   KM3 kY;
-   T32 kM;
-   ConnectHost P;
-   JPanel kW;
-   GP kp;
-   Y3 M;
-   int h;
-   int r;
-   int kc;
-   GP k8;
-   Ff2 l;
-   Backspace x;
-   Dv2 k7;
-   GP kb;
-   Uc2 I;
-   int k2;
-   static String i;
+   public KM3 kY;
+   public T32 kM;
+   public ConnectHost P;
+   public JPanel kW;
+   public GP kp;
+   public Y3 M;
+   public int h;
+   public int r;
+   public int kc;
+   public GP k8;
+   public Ff2 l;
+   public Backspace x;
+   public Dv2 k7;
+   public GP kb;
+   public Uc2 I;
+   public int k2;
+   public static String i;
    public static BufferedImage z;
    public static BufferedImage Y;
-   Dimension o;
-   XX3 m;
-   int k0;
-   int T;
-   int a;
-   boolean g;
-   float y;
+   public Dimension o;
+   public XX3 m;
+   public int k0;
+   public int T;
+   public int a;
+   public boolean g;
+   public float y;
    public static RenderingHints n;
-   int u;
-   int t;
-   int F;
-   int B;
-   Object A;
-   boolean k5;
-   Y2 J;
-   JScrollBar e;
-   Bq_2 kN;
-   BS kQ;
-   String D;
+   public int u;
+   public int t;
+   public int F;
+   public int B;
+   public Object A;
+   public boolean k5;
+   public Y2 J;
+   public JScrollBar e;
+   public Bq_2 kN;
+   public BS kQ;
+   public String D;
    public static int S;
    public static String[] ab;
    public static String[] bb;
@@ -555,8 +555,8 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    public ConnectionProperty(int var1, int var2, Rx4 var3) {
+   super();
       int var10000 = M$int();
-      super();
       this.kJ = new AtomicBoolean();
       this.kq = new CopyOnWriteArrayList();
       this.s = true;
@@ -935,7 +935,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       BufferedImage var6 = (BufferedImage)var10002.get(var5);
       Uc2 var4 = var10001;
       BufferedImage var27 = var6;
-      if (var4 != false) {
+      if (var4 == null) {
          if (var6 == null) {
             int var7 = this.a + this.k0 / 2;
             Registry.packArgs(this.y, var7, 2 * var7);
@@ -1009,7 +1009,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       BufferedImage var3 = (BufferedImage)var10002.get(var1);
       Uc2 var2 = var10001;
       BufferedImage var20 = var3;
-      if (var2 == false) {
+      if (var2 == null) {
          if (var3 == null) {
             Pr2 var4 = this.kj.N$Pr_2();
             int var5 = var1 * this.k0 + Hj2.f.top;
@@ -1077,7 +1077,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       BufferedImage var3 = (BufferedImage)var10002.get(var1);
       Uc2 var2 = var10001;
       BufferedImage var19 = var3;
-      if (var2 != false) {
+      if (var2 == null) {
          if (var3 == null) {
             int var4 = var1 * this.k0 + Hj2.f.top;
             Registry.packArgs(this.y, this.getWidth(), this.k0 + this.a);
@@ -1143,7 +1143,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Object var2;
       Graphics2D var3;
       int var6;
@@ -1159,7 +1159,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                long var4 = System.currentTimeMillis();
                var6 = 0;
                var10000 = this.o;
-               if (var2 == 0) {
+               if (var2 == null) {
                   if (this.o == null) {
                      break label336;
                   }
@@ -1168,9 +1168,9 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                }
 
                int var97 = var10000.width;
-               if (var2 == 0) {
+               if (var2 == null) {
                   if (var10000.width == this.o.width) {
-                     if (var2 != 0) {
+                     if (var2 != null) {
                         break label335;
                      }
 
@@ -1183,7 +1183,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                }
 
                var6 = var97;
-               if (var2 == 0) {
+               if (var2 == null) {
                   break label331;
                }
             }
@@ -1253,10 +1253,10 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                   this.t = (int)(this.y * (float)this.getHeight());
                   var99 = (var6) != 0;
                   label308:
-                  if (var2 == 0) {
+                  if (var2 == null) {
                      if (var6 == 0) {
                         var99 = this.k5;
-                        if (var2 != 0) {
+                        if (var2 != null) {
                            break label308;
                         }
 
@@ -1281,7 +1281,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
                   label341: {
                      Uc2 var8 = (Uc2)var10004;
-                     if (var2 == 0) {
+                     if (var2 == null) {
                         if (var8 == null) {
                            Object[] var10005 = Registry.packArgs(z, Y, n, this.u, this.t);
                            long var35 = 266518540506038545L;
@@ -1294,7 +1294,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                            }
 
                            var10005.I = (Uc2)var10006;
-                           if (var2 == 0) {
+                           if (var2 == null) {
                               break label341;
                            }
                         }
@@ -1347,7 +1347,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                   var10007.drawImage(var10008, 0, 0, this.getWidth(), this.getHeight(), this);
                   Pr2 var10 = this.kj.N$Pr_2();
                   OT var112 = var10.j();
-                  if (var2 == 0) {
+                  if (var2 == null) {
                      if (var112 == null) {
                         break label343;
                      }
@@ -1367,12 +1367,12 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                      if (var13 < var11) {
                         var14 = (Ap2_2)var12.get(var13);
                         var113 = var14;
-                        if (var2 == 0) {
+                        if (var2 == null) {
                            label345: {
-                              if (var2 == 0) {
+                              if (var2 == null) {
                                  if (var14 == null) {
                                     var113 = (Ap2_2)var2;
-                                    if (var2 == false) {
+                                    if (var2 == null) {
                                        break label345;
                                     }
 
@@ -1407,7 +1407,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                            }
 
                            var13++;
-                           if (var2 == false) {
+                           if (var2 == null) {
                               continue;
                            }
 
@@ -1417,7 +1417,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                            }
 
                            var14 = (Ap2_2)var12.get(var13);
-                           if (var2 != false) {
+                           if (var2 == null) {
                               return;
                            }
                         }
@@ -1428,7 +1428,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                         }
 
                         var14 = (Ap2_2)var12.get(var13);
-                        if (var2 != 0) {
+                        if (var2 != null) {
                            return;
                         }
 
@@ -1437,11 +1437,11 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
                      while (true) {
                         label348: {
-                           if (var2 == 0) {
+                           if (var2 == null) {
                               if (var113 == null) {
-                                 if (var2 == false) {
+                                 if (var2 == null) {
                                     var13++;
-                                    if (var2 != false) {
+                                    if (var2 == null) {
                                        break label288;
                                     }
                                     break label348;
@@ -1483,19 +1483,19 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                            int var23 = 0;
                            int var24 = 0;
                            var113 = var21;
-                           if (var2 == 0) {
+                           if (var2 == null) {
                               label281:
                               if (var21 != null) {
                                  int var25 = var21.J - var14.J;
                                  label278:
-                                 if (var2 == false) {
+                                 if (var2 == null) {
                                     if (var25 < 0) {
                                        var24 = var69 + this.k0;
-                                       if (var2 == false) {
+                                       if (var2 == null) {
                                           if (var14.K < var21.J) {
                                              var22 = (var21.J + 1 + this.T) * var10.m() + Hj2.f.left;
                                              var23 = (var14.J - var21.J) * var10.m();
-                                             if (var2 != false) {
+                                             if (var2 == null) {
                                                 var22 = var68;
                                                 var23 = var70;
                                              }
@@ -1509,7 +1509,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
                                        var24 = var69 + this.k0;
                                        var3.drawImage(var73, var22, var24, var22 + var23, var24 + this.a, var22, 0, var22 + var23, var73.getHeight(), null);
-                                       if (var2 == false) {
+                                       if (var2 == null) {
                                           break label278;
                                        }
                                     }
@@ -1522,14 +1522,14 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
 
                                  var25 = var21.K - var14.K;
                                  int var115 = var25;
-                                 if (var2 == false) {
+                                 if (var2 == null) {
                                     if (var25 < 0) {
                                        var24 = var69 + this.k0 - this.a;
                                        var22 = var21.n;
-                                       if (var2 == false) {
+                                       if (var2 == null) {
                                           if (var21.J >= var14.K) {
                                              var23 = (var14.K - var21.K) * var10.m();
-                                             if (var2 != false) {
+                                             if (var2 == null) {
                                                 var23 = var21.t;
                                              }
                                           } else {
@@ -1544,7 +1544,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                                           var3.drawImage(var26, var22, var24, var22 + var23, var24 + this.a, var22, 0, var22 + var23, var73.getHeight(), null);
                                        }
 
-                                       if (var2 == false) {
+                                       if (var2 == null) {
                                           var113 = var21;
                                           break label281;
                                        }
@@ -1568,7 +1568,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                               }
                            }
 
-                           if (var2 == false) {
+                           if (var2 == null) {
                               if (var113 == null) {
                                  var24 = var69 + this.k0;
                                  var24 = var69 + this.k0;
@@ -1581,7 +1581,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                            if (var113 == null) {
                               var24 = var69 - this.a;
                               BufferedImage var87 = this.q(var13 - 1);
-                              if (var2 == false) {
+                              if (var2 == null) {
                                  if (var87 != null) {
                                     var3.drawImage(var87, var68, var24, var68 + var70, var24 + this.a, var68, 0, var68 + var70, var87.getHeight(), null);
                                  }
@@ -1592,7 +1592,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                               var13++;
                            }
 
-                           if (var2 != false) {
+                           if (var2 == null) {
                               break label288;
                            }
                         }
@@ -1602,7 +1602,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                         }
 
                         var14 = (Ap2_2)var12.get(var13);
-                        if (var2 != false) {
+                        if (var2 == null) {
                            return;
                         }
 
@@ -1611,7 +1611,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                   }
                }
 
-               if (var2 == 0) {
+               if (var2 == null) {
                   break label353;
                }
             }
@@ -1744,7 +1744,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       }
    }
 
-   String O(String var1) {
+   public String O(String var1) {
       int var10000 = y();
       String var3 = "";
       int var4 = 0;
@@ -1779,7 +1779,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       return var6;
    }
 
-   void F() {
+   public void F() {
       int var1 = M$int();
       Uc2 var10000 = this.I;
       if (var1 == 0) {
@@ -1810,7 +1810,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       }
    }
 
-   void j() {
+   public void j() {
       int var1 = M$int();
       Uc2 var10000 = this.I;
       if (var1 != 0) {
@@ -1858,7 +1858,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       Y = null;
    }
 
-   void T$void() {
+   public void T$void() {
       int var10000 = y();
       String var2 = "\uf062";
       int var1 = var10000;
@@ -2320,7 +2320,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       var2 = new Object(var10007.p());
       var48.setBackground(var48);
       ConnectionProperty var49 = this;
-      if (var1 == false) {
+      if (var1 == null) {
          if (this.q$s() != null) {
             this.q$s();
             Object[] var10005 = Registry.emptyArgs();
@@ -2346,13 +2346,13 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          label146: {
             Object var51;
             label152: {
-               if (var1 == false) {
+               if (var1 == null) {
                   if (var49.kD == null) {
                      break label146;
                   }
 
                   var51 = var1;
-                  if (var1 != false) {
+                  if (var1 == null) {
                      break label152;
                   }
                }
@@ -2376,7 +2376,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
             }
 
             ((ConnectionProperty)var51).setBorder(null);
-            if (var1 == false) {
+            if (var1 == null) {
                break label151;
             }
          }
@@ -2384,7 +2384,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
          Color var3;
          label131: {
             var3 = new Color(b(24277, 3885012068565589315L), b(5102, 3033349893925785709L), b(5102, 3033349893925785709L));
-            if (var1 == false) {
+            if (var1 == null) {
                Registry.emptyArgs();
                long var18 = 270389152141252877L;
                Ref.h2(270389152141252877L, var18);
@@ -2410,7 +2410,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
                this.setBorder(BorderFactory.createMatteBorder(1, 1, 0, 0, var3));
             }
 
-            if (var1 == false) {
+            if (var1 == null) {
                break label151;
             }
          }
@@ -2447,7 +2447,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       var2 = new Object(var10010.p());
       var59.setBackground(var59);
       var10007 = this;
-      if (var1 == false) {
+      if (var1 == null) {
          var10007 = this.k7;
          Color var63;
          Object[] var10011 = Registry.emptyArgs();
@@ -2533,7 +2533,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kj.requestFocus();
    }
 
-   protected JScrollBar t$JScrollBar() {
+   public JScrollBar t$JScrollBar() {
       this.e = new JScrollBar();
       this.J = new Ym2(this);
       this.e.addAdjustmentListener(new Gv2(this));
@@ -2552,13 +2552,13 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kj.l$void();
    }
 
-   protected Ov4 d$ov_4() {
+   public Ov4 d$ov_4() {
       Ov4 var1 = new Ov4();
       var1.t(this.kC.Q());
       return var1;
    }
 
-   protected SetBackgroundImagePanel F(@NotNull Rx4 var1, @NotNull Ov4 var2, @NotNull Im4 var3) {
+   public SetBackgroundImagePanel F(@NotNull Rx4 var1, @NotNull Ov4 var2, @NotNull Im4 var3) {
       return new SetBackgroundImagePanel(var1, var3, var2);
    }
 
@@ -2613,7 +2613,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kj.v(this.V);
    }
 
-   protected E0 y(@NotNull Connect_2 var1, @NotNull Fv2_2 var2) {
+   public E0 y(@NotNull Connect_2 var1, @NotNull Fv2_2 var2) {
       return new E0(var1, var2, new HN(var2, this.W::O), this.W, this.kj);
    }
 
@@ -2956,7 +2956,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.kQ.setVisible(false);
    }
 
-   void w() {
+   public void w() {
       Bq_2 var1 = this.G.l();
       var1.setVisible(false);
       this.b.revalidate();
@@ -3017,7 +3017,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
    }
 
    @NotNull
-   protected HH V$HH() {
+   public HH V$HH() {
       return new Xv4(this);
    }
 
@@ -3045,7 +3045,7 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       this.D = var1;
    }
 
-   void s$void() {
+   public void s$void() {
       this.G.l().setVisible(false);
       this.kj.requestFocusInWindow();
       this.kN.s();
@@ -3312,27 +3312,27 @@ public class ConnectionProperty extends F8 implements W82, FM, CS3_2, Ms2 {
       return true;
    }
 
-   static JLayeredPane j(ConnectionProperty var0) {
+   public static JLayeredPane j(ConnectionProperty var0) {
       return var0.b;
    }
 
-   static Cj4 D(ConnectionProperty var0) {
+   public static Cj4 D(ConnectionProperty var0) {
       return var0.L;
    }
 
-   static PN q(ConnectionProperty var0) {
+   public static PN q(ConnectionProperty var0) {
       return var0.kz;
    }
 
-   static E0 s(ConnectionProperty var0) {
+   public static E0 s(ConnectionProperty var0) {
       return var0.V;
    }
 
-   static Logger J$Logger() {
+   public static Logger J$Logger() {
       return w;
    }
 
-   static List f(ConnectionProperty var0) {
+   public static List f(ConnectionProperty var0) {
       return var0.kq;
    }
 

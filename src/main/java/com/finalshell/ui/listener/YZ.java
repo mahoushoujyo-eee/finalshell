@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YZ implements ActionListener {
-   final SetExternalEditorPanel H;
+   public final SetExternalEditorPanel H;
 
-   YZ(SetExternalEditorPanel var1) {
+   public YZ(SetExternalEditorPanel var1) {
       this.H = var1;
    }
 

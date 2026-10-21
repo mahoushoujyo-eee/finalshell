@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.awt.event.KeyEvent;
 
 public class Lm2 extends Wc2{
-   final BX j;
+   public final BX j;
 
-   Lm2(BX var1) {
+   public Lm2(BX var1) {
       this.j = var1;
    }
 

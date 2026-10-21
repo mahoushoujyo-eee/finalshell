@@ -5,7 +5,7 @@ import com.finalshell.util.Xy4;
 import java.util.Map.Entry;
 
 public final class K extends B2 {
-   final Xy4 f;
+   public final Xy4 f;
 
    public K(Xy4 var1) {
       super(var1);
@@ -21,7 +21,7 @@ public final class K extends B2 {
       return this.S();
    }
 
-   K(Xy4 var1, Oi4 var2) {
+   public K(Xy4 var1, Oi4 var2) {
       this(var1);
    }
 }

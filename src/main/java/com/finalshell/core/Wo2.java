@@ -4,8 +4,8 @@ import java.net.DatagramPacket;
 
 public class Wo2 extends WC {
    public short a = D6.nJ;
-   byte[] O;
-   int R;
+   public byte[] O;
+   public int R;
    public static long[] b;
    public static Integer[] c;
 

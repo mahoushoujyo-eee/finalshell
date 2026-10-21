@@ -5,9 +5,6 @@ import com.finalshell.core.BN3;
 import java.io.IOException;
 
 public class U8 implements Runnable {
-   U8() {
-   }
-
    @Override
    public void run() {
       BF3.L = true;

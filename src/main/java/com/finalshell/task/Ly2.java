@@ -3,8 +3,8 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.ConnectionProperty;
 
 public class Ly2 implements Runnable {
-   int N;
-   final ConnectionProperty X;
+   public int N;
+   public final ConnectionProperty X;
    public static String[] a;
    public static String[] b;
 

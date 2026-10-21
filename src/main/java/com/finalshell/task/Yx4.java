@@ -9,10 +9,10 @@ import java.awt.Point;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yx4 implements Runnable {
-   final int U;
-   final Di2 M;
+   public final int U;
+   public final Di2 M;
 
-   Yx4(Di2 var1, int var2) {
+   public Yx4(Di2 var1, int var2) {
       this.M = var1;
       this.U = var2;
    }
@@ -61,7 +61,7 @@ public class Yx4 implements Runnable {
 
       Object[] var44 = Registry.lookupField(515313227049281099L).getBoolean(var10004);
       if (var1 == null) {
-         if (var44 != false) {
+         if (var44 == null) {
             return;
          }
 
@@ -84,7 +84,7 @@ public class Yx4 implements Runnable {
       }
 
       if (var1 == null) {
-         if (var44 == false) {
+         if (var44 == null) {
             return;
          }
 

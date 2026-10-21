@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class VD {
-   String k;
-   String g;
-   int Y;
-   String P;
+   public String k;
+   public String g;
+   public int Y;
+   public String P;
 
    public VD(String var1, String var2, String var3, int var4) {
       this.P = var1;

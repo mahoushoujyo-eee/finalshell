@@ -139,7 +139,7 @@ public class LZ3 extends AbstractMap implements Serializable {
       return var2;
    }
 
-   static ReferenceQueue n(LZ3 var0) {
+   public static ReferenceQueue n(LZ3 var0) {
       return var0.B;
    }
 

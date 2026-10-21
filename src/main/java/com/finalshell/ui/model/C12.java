@@ -10,14 +10,14 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class C12 extends AbstractTableModel {
-   ArrayList g;
+   public ArrayList g;
    public static String e;
    public static String q;
    public static String Y;
    public static String z;
    public static String V;
-   String[] t;
-   int p;
+   public String[] t;
+   public int p;
 
    public C12() {
       ArrayList var10001 = new ArrayList();

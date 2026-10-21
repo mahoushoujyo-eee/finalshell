@@ -6,11 +6,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class LZ3 extends Thread {
-   final Connect5 p;
+   public final Connect5 p;
    public final ServerSocket f;
    public static String a;
 
-   LZ3(Connect5 var1, ServerSocket var2) {
+   public LZ3(Connect5 var1, ServerSocket var2) {
       this.p = var1;
       this.f = var2;
    }

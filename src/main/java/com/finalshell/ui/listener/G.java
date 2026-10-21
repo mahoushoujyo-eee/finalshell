@@ -12,11 +12,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class G implements MouseListener {
-   final Y12_2 c;
-   final CompleteFullPathPanel w;
-   final Backspace V;
+   public final Y12_2 c;
+   public final CompleteFullPathPanel w;
+   public final Backspace V;
 
-   G(Backspace var1, Y12_2 var2, CompleteFullPathPanel var3) {
+   public G(Backspace var1, Y12_2 var2, CompleteFullPathPanel var3) {
       this.V = var1;
       this.c = var2;
       this.w = var3;
@@ -43,7 +43,7 @@ public class G implements MouseListener {
          Object var2 = var10002;
          var10002 = var1.getButton();
          if (var2 != null) {
-            if (var10002 != 1) {
+            if (var10002 != null) {
                return;
             }
 
@@ -65,7 +65,7 @@ public class G implements MouseListener {
             }
          }
 
-         if (var10002 == 0) {
+         if (var10002 == null) {
             if (var1.getButton() != 1) {
                return;
             }

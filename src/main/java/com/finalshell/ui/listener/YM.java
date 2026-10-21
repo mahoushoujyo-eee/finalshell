@@ -27,13 +27,13 @@ public class YM extends MouseAdapter {
    public boolean I;
    public BufferedImage H;
    public Color y;
-   final Nx4 O;
+   public final Nx4 O;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   YM(Nx4 var1) {
+   public YM(Nx4 var1) {
       this.O = var1;
       this.I = false;
    }
@@ -219,51 +219,51 @@ public class YM extends MouseAdapter {
       this.C.setLocation(var6, var7);
    }
 
-   static Ky4 l(YM var0) {
+   public static Ky4 l(YM var0) {
       return var0.n;
    }
 
-   static BufferedImage I(YM var0, BufferedImage var1) {
+   public static BufferedImage I(YM var0, BufferedImage var1) {
       return var0.H = var1;
    }
 
-   static Color d(YM var0, Color var1) {
+   public static Color d(YM var0, Color var1) {
       return var0.y = var1;
    }
 
-   static BufferedImage q(YM var0) {
+   public static BufferedImage q(YM var0) {
       return var0.H;
    }
 
-   static Color O(YM var0) {
+   public static Color O(YM var0) {
       return var0.y;
    }
 
-   static com.finalshell.ui.panel.O N(YM var0) {
+   public static com.finalshell.ui.panel.O N(YM var0) {
       return var0.v;
    }
 
-   static boolean C(YM var0, boolean var1) {
+   public static boolean C(YM var0, boolean var1) {
       return var0.I = var1;
    }
 
-   static boolean Z(YM var0) {
+   public static boolean Z(YM var0) {
       return var0.L;
    }
 
-   static com.finalshell.core.E E(YM var0, com.finalshell.core.E var1) {
+   public static com.finalshell.core.E E(YM var0, com.finalshell.core.E var1) {
       return var0.C = var1;
    }
 
-   static Ky4 W(YM var0, Ky4 var1) {
+   public static Ky4 W(YM var0, Ky4 var1) {
       return var0.n = var1;
    }
 
-   static com.finalshell.core.E M(YM var0) {
+   public static com.finalshell.core.E M(YM var0) {
       return var0.C;
    }
 
-   static boolean A(YM var0, boolean var1) {
+   public static boolean A(YM var0, boolean var1) {
       return var0.L = var1;
    }
 

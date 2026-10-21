@@ -12,25 +12,25 @@ import java.util.TimeZone;
 import java.util.UUID;
 
 public abstract class U9 implements P7, Closeable {
-   protected int Y;
-   protected int i;
-   protected int y;
-   protected char l;
-   protected int d;
-   protected int n;
-   protected char[] V;
-   protected int e;
-   protected int S;
-   protected boolean L;
-   protected Calendar M;
-   protected TimeZone N;
-   protected Locale b;
+   public int Y;
+   public int i;
+   public int y;
+   public char l;
+   public int d;
+   public int n;
+   public char[] V;
+   public int e;
+   public int S;
+   public boolean L;
+   public Calendar M;
+   public TimeZone N;
+   public Locale b;
    public int z;
    public static ThreadLocal s;
-   protected String J;
-   protected int I;
-   protected static char[] Z;
-   protected static int[] K;
+   public String J;
+   public int I;
+   public static char[] Z;
+   public static int[] K;
    public static String[] a;
    public static String[] c;
    public static long[] h;
@@ -38,7 +38,7 @@ public abstract class U9 implements P7, Closeable {
    public static long[] p;
    public static Long[] q;
 
-   protected void G(String var1, Object[] var2) {
+   public void G(String var1, Object[] var2) {
       this.Y = 1;
    }
 
@@ -1862,7 +1862,7 @@ public abstract class U9 implements P7, Closeable {
    @Override
    public abstract char C$char();
 
-   protected void F() {
+   public void F() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2144,7 +2144,7 @@ public abstract class U9 implements P7, Closeable {
       // 154: areturn
    }
 
-   protected abstract void w(int var1, char[] var2, int var3, int var4);
+   public abstract void w(int var1, char[] var2, int var3, int var4);
 
    @Override
    public final String z(O12 param1, char param2) {
@@ -3102,7 +3102,7 @@ public abstract class U9 implements P7, Closeable {
       // 257: areturn
    }
 
-   protected abstract void l(int var1, int var2, char[] var3);
+   public abstract void l(int var1, int var2, char[] var3);
 
    @Override
    public final void A$void() {
@@ -24306,7 +24306,7 @@ public abstract class U9 implements P7, Closeable {
 
    public abstract String R(int var1, int var2);
 
-   protected abstract char[] s(int var1, int var2);
+   public abstract char[] s(int var1, int var2);
 
    public static String M(char[] param0, int param1) {
       // $VF: Couldn't be decompiled
@@ -24664,7 +24664,7 @@ public abstract class U9 implements P7, Closeable {
       // 42a: areturn
    }
 
-   protected abstract boolean P$boolean(char[] var1);
+   public abstract boolean P$boolean(char[] var1);
 
    @Override
    public boolean k() {
@@ -25426,7 +25426,7 @@ public abstract class U9 implements P7, Closeable {
       // 643: return
    }
 
-   protected final void x(char var1) {
+   public final void x(char var1) {
       boolean var2 = Yn4.o();
 
       U9 var10000;

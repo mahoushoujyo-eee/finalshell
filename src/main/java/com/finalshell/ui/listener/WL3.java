@@ -5,9 +5,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class WL3 extends KeyAdapter {
-   final com.finalshell.core.Lk4 B;
+   public final com.finalshell.core.Lk4 B;
 
-   WL3(com.finalshell.core.Lk4 var1) {
+   public WL3(com.finalshell.core.Lk4 var1) {
       this.B = var1;
    }
 

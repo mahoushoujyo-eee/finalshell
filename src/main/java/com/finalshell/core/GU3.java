@@ -306,7 +306,7 @@ public class GU3 extends W5 {
       }
    }
 
-   protected float v(int var1, int var2, int var3, int var4) {
+   public float v(int var1, int var2, int var3, int var4) {
       return (float)var1 / (float)var3;
    }
 

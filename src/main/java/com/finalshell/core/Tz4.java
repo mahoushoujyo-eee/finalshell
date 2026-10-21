@@ -4,12 +4,12 @@ import com.finalshell.connection.Connection;
 import com.finalshell.ui.panel.Ky4;
 
 public class Tz4 {
-   Connection T;
-   boolean r = false;
-   Qm2 d;
+   public Connection T;
+   public boolean r = false;
+   public Qm2 d;
    public static String a;
 
-   Tz4(Qm2 var1) {
+   public Tz4(Qm2 var1) {
       this.d = var1;
       this.T = var1.j;
    }

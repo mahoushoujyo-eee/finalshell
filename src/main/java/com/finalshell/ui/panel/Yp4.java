@@ -12,10 +12,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPanel;
 
 public class Yp4 extends JPanel {
-   BufferedImage a;
-   com.finalshell.ui.frame.U t;
-   BufferedImage I;
-   Dimension Z;
+   public BufferedImage a;
+   public com.finalshell.ui.frame.U t;
+   public BufferedImage I;
+   public Dimension Z;
    public static long[] b;
    public static Integer[] c;
 
@@ -35,7 +35,7 @@ public class Yp4 extends JPanel {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
    }
 

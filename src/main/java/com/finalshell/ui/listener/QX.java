@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class QX implements MouseListener {
-   final TerminateProcessPanel M;
+   public final TerminateProcessPanel M;
 
-   QX(TerminateProcessPanel var1) {
+   public QX(TerminateProcessPanel var1) {
       this.M = var1;
    }
 

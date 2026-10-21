@@ -8,7 +8,7 @@ import javax.swing.JComponent;
 import javax.swing.JTabbedPane;
 
 public class It4 implements WH3 {
-   protected JTabbedPane E = new JTabbedPane();
+   public JTabbedPane E = new JTabbedPane();
 
    @Override
    public int n() {

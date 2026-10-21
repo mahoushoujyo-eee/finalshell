@@ -7,9 +7,9 @@ import java.io.Serializable;
 @XStreamAlias("NodeState")
 public class B2_2 implements Serializable, Cloneable {
    @XStreamAsAttribute
-   protected boolean C;
+   public boolean C;
    @XStreamAsAttribute
-   protected boolean r;
+   public boolean r;
 
    public B2_2() {
       this.C = false;
@@ -37,12 +37,12 @@ public class B2_2 implements Serializable, Cloneable {
       this.r = var1;
    }
 
-   protected B2_2 w() {
+   public B2_2 w() {
       return new B2_2(this.C, this.r);
    }
 
    @Override
-   protected Object clone() throws CloneNotSupportedException {
+   public Object clone() throws CloneNotSupportedException {
       return this.w();
    }
 }

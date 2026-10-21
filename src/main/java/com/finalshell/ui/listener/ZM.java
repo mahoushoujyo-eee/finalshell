@@ -9,11 +9,11 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 
 public class ZM implements ActionListener {
-   final JProgressBar k;
-   final Ej2 R;
+   public final JProgressBar k;
+   public final Ej2 R;
    public static long a;
 
-   ZM(Ej2 var1, JProgressBar var2) {
+   public ZM(Ej2 var1, JProgressBar var2) {
       this.R = var1;
       this.k = var2;
    }

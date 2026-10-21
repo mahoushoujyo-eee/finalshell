@@ -9,12 +9,12 @@ public class ND_2 {
    public B22 k;
    public static String a;
 
-   void D(A6 var1) {
+   public void D(A6 var1) {
       this.I.add(var1);
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void X(Bc2 var1) {
+   public void X(Bc2 var1) {
       B22 var3 = new B22();
       Ky4[] var10000 = A6.P();
       var3.t = 0;
@@ -107,7 +107,7 @@ public class ND_2 {
       }
    }
 
-   B22 B() {
+   public B22 B() {
       return this.k;
    }
 

@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.SelectPrivateKeyDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ji2 implements Fb2 {
-   final SelectPrivateKeyDialog n;
+   public final SelectPrivateKeyDialog n;
 
-   Ji2(SelectPrivateKeyDialog var1) {
+   public Ji2(SelectPrivateKeyDialog var1) {
       this.n = var1;
    }
 

@@ -4,10 +4,10 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.dialog.DownloadDialog;
 
 public class Gq2 implements Runnable {
-   final DownloadDialog U;
+   public final DownloadDialog U;
    public static long a;
 
-   Gq2(DownloadDialog var1) {
+   public Gq2(DownloadDialog var1) {
       this.U = var1;
    }
 

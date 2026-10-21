@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class C_0 implements Fq2_2 {
-   final FF_2 a;
+   public final FF_2 a;
    public static String[] b;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   C_0(FF_2 var1) {
+   public C_0(FF_2 var1) {
       this.a = var1;
    }
 

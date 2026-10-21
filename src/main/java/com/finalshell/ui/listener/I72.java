@@ -5,9 +5,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class I72 extends MouseAdapter {
-   final KD3 Y;
+   public final KD3 Y;
 
-   I72(KD3 var1) {
+   public I72(KD3 var1) {
       this.Y = var1;
    }
 
@@ -20,7 +20,7 @@ public class I72 extends MouseAdapter {
             return;
          }
 
-         var10000 = KD3.j(this.Y);
+         var10000 = (KD3.j(this.Y)) ? 1 : 0;
       }
 
       label33: {

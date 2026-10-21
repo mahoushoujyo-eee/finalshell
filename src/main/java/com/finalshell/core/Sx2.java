@@ -686,7 +686,7 @@ public class Sx2 implements P8 {
       // 36d: areturn
    }
 
-   static File n(String var0, String var1, String var2, String var3, String var4, int var5, int var6, int var7, int var8, File[] var9, boolean var10) {
+   public static File n(String var0, String var1, String var2, String var3, String var4, int var5, int var6, int var7, int var8, File[] var9, boolean var10) {
       int var11 = w();
       File var10000 = L(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
       if (Ky4.F$arrString() != null) {

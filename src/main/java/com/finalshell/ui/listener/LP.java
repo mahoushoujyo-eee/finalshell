@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class LP implements MouseListener {
-   final Ox4 A;
+   public final Ox4 A;
 
-   LP(Ox4 var1) {
+   public LP(Ox4 var1) {
       this.A = var1;
    }
 

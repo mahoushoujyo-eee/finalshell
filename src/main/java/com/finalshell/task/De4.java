@@ -8,11 +8,11 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class De4 implements Runnable {
-   final Tf4 q;
-   final String U;
-   final Address s;
+   public final Tf4 q;
+   public final String U;
+   public final Address s;
 
-   De4(Address var1, Tf4 var2, String var3) {
+   public De4(Address var1, Tf4 var2, String var3) {
       this.s = var1;
       this.q = var2;
       this.U = var3;

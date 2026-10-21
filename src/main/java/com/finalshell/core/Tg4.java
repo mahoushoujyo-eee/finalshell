@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.util.BitSet;
 
 public class Tg4 {
-   BitSet z;
-   byte[] L;
-   final byte[] q;
+   public BitSet z;
+   public byte[] L;
+   public final byte[] q;
    public static long[] a;
    public static Integer[] b;
 

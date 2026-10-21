@@ -5,9 +5,6 @@ import java.util.Collections;
 public class Q_4 extends U2_3 {
    public static String b;
 
-   Q_4() {
-   }
-
    @C_9
    @Override
    public N_6 J(String var1) {

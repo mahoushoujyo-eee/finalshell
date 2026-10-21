@@ -23,14 +23,14 @@ import javax.swing.JRadioButtonMenuItem;
 import net.miginfocom.swing.MigLayout;
 
 public class LocalMachinePanel extends JPanel {
-   JO t;
-   JO L;
-   LB3 D;
-   KV T;
-   boolean m;
-   JPopupMenu K;
-   JButton w;
-   String X;
+   public JO t;
+   public JO L;
+   public LB3 D;
+   public KV T;
+   public boolean m;
+   public JPopupMenu K;
+   public JButton w;
+   public String X;
    public static int U;
    public static String[] a;
    public static String[] b;
@@ -38,8 +38,8 @@ public class LocalMachinePanel extends JPanel {
    public static Integer[] d;
 
    public LocalMachinePanel(boolean var1) {
+   super();
       int var10000 = t();
-      super();
       Registry.lookupField(527414514539504903L).setBoolean(this, var1);
       int var2 = var10000;
       this.setLayout(new MigLayout(a(23658, 16918), "", a(23656, 2819)));
@@ -97,7 +97,7 @@ public class LocalMachinePanel extends JPanel {
             Ref.s(533402787991075064L, var30, var31);
             Y12_2 var10014;
             Object var32 = 533402787991075064L;
-new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
+var4 = new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
             Y12_2 var5 = var10014;
             var4.addActionListener(new NF(this, var5, var4));
          }
@@ -172,7 +172,7 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
          Object var20 = 385286581456393831L;
          ((JO)Ref.g(385286581456393831L, var20))
             .setForeground(new Color(a(26084, 8718613484233102417L), a(20670, 5964839488599040271L), a(4708, 2045348241513833435L)));
-         if (this == false && Registry.lookupField(527414514539504903L).getBoolean(this)) {
+         if (this == null && Registry.lookupField(527414514539504903L).getBoolean(this)) {
             String var10008 = (String)(Registry.emptyArgs());
             long var23 = 609170221187935837L;
             Object[] var22 = var10008;
@@ -199,14 +199,14 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
                }
 
                var1.setText(var10011);
-               if (this == false) {
+               if (this == null) {
                   break label78;
                }
             }
 
             Object var28 = 385286581456393831L;
             ((JO)Ref.g(385286581456393831L, var28)).setText(a(23661, -21140));
-            if (this == false) {
+            if (this == null) {
                break label78;
             }
          }
@@ -216,7 +216,7 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
       }
 
       boolean var6 = false;
-      if (this == false && Registry.lookupField(527414514539504903L).getBoolean(this)) {
+      if (this == null && Registry.lookupField(527414514539504903L).getBoolean(this)) {
          Object[] var45 = Registry.emptyArgs();
          long var33 = 600849645967396341L;
          Object[] var32 = var45;
@@ -229,7 +229,7 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
          }
 
          int var7 = var47;
-         if (this != false) {
+         if (this == null) {
             return;
          }
 
@@ -255,12 +255,12 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
       ((JButton)Ref.g(237443335566599428L, var36)).setVisible(var6);
    }
 
-   JPopupMenu L() {
+   public JPopupMenu L() {
       t();
       Object var6 = 533402787991075064L;
       ((JPopupMenu)Ref.g(533402787991075064L, var6)).removeAll();
       LocalMachinePanel var1 = this;
-      if (this != false) {
+      if (this == null) {
          Object var8 = 412103333330765630L;
          if ((KV)Ref.g(412103333330765630L, var8) != null) {
             Object var10 = 412103333330765630L;
@@ -278,12 +278,12 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
 
             for (VD var4 : var10004) {
                JRadioButtonMenuItem var5 = new JRadioButtonMenuItem(var4.k());
-               if (var1 == false) {
+               if (var1 == null) {
                   break;
                }
 
                label56:
-               if (var1 != false) {
+               if (var1 == null) {
                   Object var14 = 412103333330765630L;
                   Ref.g(412103333330765630L, var14);
                   String var10006 = (String)(Registry.emptyArgs());
@@ -298,7 +298,7 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
                   }
 
                   if (var10006 != null) {
-                     if (var1 == false) {
+                     if (var1 == null) {
                         break label56;
                      }
 
@@ -325,7 +325,7 @@ new LocalMachinePanel(this, (JPopupMenu)Ref.g(533402787991075064L, var32));
 
                Object var22 = 533402787991075064L;
                ((JPopupMenu)Ref.g(533402787991075064L, var22)).add(var5);
-               if (var1 == false) {
+               if (var1 == null) {
                   break;
                }
             }

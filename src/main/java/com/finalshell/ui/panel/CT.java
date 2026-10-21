@@ -17,14 +17,14 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class CT extends F8 {
-   TerminateProcessPanel G;
-   T32 j;
-   KV Z;
-   boolean V;
-   DG3 w;
-   ConnectionProperty h;
-   Ty2 r;
-   boolean z;
+   public TerminateProcessPanel G;
+   public T32 j;
+   public KV Z;
+   public boolean V;
+   public DG3 w;
+   public ConnectionProperty h;
+   public Ty2 r;
+   public boolean z;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -126,7 +126,7 @@ public class CT extends F8 {
       }
    }
 
-   void z$void() {
+   public void z$void() {
       Uo2.i();
       ConnectionProperty var10002 = (ConnectionProperty)(Registry.emptyArgs());
       long var7 = 398891882190620836L;
@@ -156,7 +156,7 @@ public class CT extends F8 {
 
          Object var10 = 208762370948884177L;
          boolean var10003 = this.equals((String)Ref.g(208762370948884177L, var10));
-         if (this == false) {
+         if (this == null) {
             if (!var10003) {
                return;
             }
@@ -301,7 +301,7 @@ public class CT extends F8 {
       }
    }
 
-   void m() {
+   public void m() {
       Object var1 = 562268837063478851L;
       Registry.lookupField(461634183601281643L).setBoolean(Ref.g(562268837063478851L, var1), false);
       Object var3 = 562268837063478851L;

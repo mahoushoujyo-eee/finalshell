@@ -3,11 +3,11 @@ package com.finalshell.task;
 import com.finalshell.core.Mm2;
 
 public class WB extends Thread {
-   final Mm2 H;
+   public final Mm2 H;
    public static long[] a;
    public static Long[] b;
 
-   WB(Mm2 var1) {
+   public WB(Mm2 var1) {
       this.H = var1;
    }
 

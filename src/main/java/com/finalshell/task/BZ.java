@@ -5,10 +5,10 @@ import com.finalshell.ui.model.CB3;
 import java.util.List;
 
 public class BZ implements Runnable {
-   final List e;
-   final NF V;
+   public final List e;
+   public final NF V;
 
-   BZ(NF var1, List var2) {
+   public BZ(NF var1, List var2) {
       this.V = var1;
       this.e = var2;
    }

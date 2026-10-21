@@ -12,7 +12,7 @@ public class GS3 extends Gj4 {
    }
 
    @Override
-   protected float q(float var1) {
+   public float q(float var1) {
       return var1 * this.v;
    }
 

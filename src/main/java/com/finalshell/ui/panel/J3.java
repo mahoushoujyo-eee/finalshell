@@ -13,11 +13,11 @@ import javax.swing.plaf.TreeUI;
 import javax.swing.tree.TreeCellRenderer;
 
 public class J3 extends G implements TreeCellRenderer {
-   protected String C;
-   protected ImageIcon y = K5_2.E;
-   protected ImageIcon c = K5_2.a;
-   protected ImageIcon x = K5_2.w;
-   protected ImageIcon M = K5_2.s;
+   public String C;
+   public ImageIcon y = K5_2.E;
+   public ImageIcon c = K5_2.a;
+   public ImageIcon x = K5_2.w;
+   public ImageIcon M = K5_2.s;
    public static String[] d;
    public static String[] e;
 

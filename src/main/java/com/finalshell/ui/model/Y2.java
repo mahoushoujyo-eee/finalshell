@@ -8,11 +8,11 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class Y2 extends O_3 {
-   Y2(Iterator var1) {
+   public Y2(Iterator var1) {
       super(var1);
    }
 
-   protected Iterator W(Object var1) {
+   public Iterator W(Object var1) {
       int[] var10000 = F_6.h();
       File var3 = (File)var1;
       int[] var2 = var10000;
@@ -30,7 +30,7 @@ public class Y2 extends O_3 {
    }
 
    @Override
-   protected Object w(Object var1) {
+   public Object w(Object var1) {
       return this.W(var1);
    }
 }

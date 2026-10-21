@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Tx4 implements MouseListener {
-   final CopyPanel p;
+   public final CopyPanel p;
 
-   Tx4(CopyPanel var1) {
+   public Tx4(CopyPanel var1) {
       this.p = var1;
    }
 

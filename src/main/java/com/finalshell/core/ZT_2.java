@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class ZT_2 implements Xz2 {
-   String Z;
-   String u;
-   byte[] l;
+   public String Z;
+   public String u;
+   public byte[] l;
 
    public ZT_2(String var1, String var2) {
       this.Z = var1;

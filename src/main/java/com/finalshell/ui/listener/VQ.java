@@ -6,9 +6,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class VQ implements ListSelectionListener {
-   final com.finalshell.core.Km2 f;
+   public final com.finalshell.core.Km2 f;
 
-   VQ(com.finalshell.core.Km2 var1) {
+   public VQ(com.finalshell.core.Km2 var1) {
       this.f = var1;
    }
 

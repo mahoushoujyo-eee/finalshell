@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public abstract class Gl4 extends GT3 {
-   protected int b;
-   protected X42 F;
-   protected int W;
-   protected Po2 a;
+   public int b;
+   public X42 F;
+   public int W;
+   public Po2 a;
    public static long d;
 
    public Gl4() {

@@ -15,7 +15,7 @@ public class JL extends ActionMapUIResource {
    public static String[] a;
    public static String[] b;
 
-   static void C(JComponent var0, java.lang.Class var1, String var2) {
+   public static void C(JComponent var0, java.lang.Class var1, String var2) {
       String var10000 = com.finalshell.ui.panel.AA.z();
       Object var4 = (ActionMap)UIManager.get(var2);
       String var3 = var10000;
@@ -40,7 +40,7 @@ public class JL extends ActionMapUIResource {
       SwingUtilities.replaceUIActionMap(var0, (ActionMap)var4);
    }
 
-   static ActionMap U(java.lang.Class var0, String var1) {
+   public static ActionMap U(java.lang.Class var0, String var1) {
       String var10000 = com.finalshell.ui.panel.AA.z();
       ActionMap var3 = (ActionMap)UIManager.get(var1);
       String var2 = var10000;

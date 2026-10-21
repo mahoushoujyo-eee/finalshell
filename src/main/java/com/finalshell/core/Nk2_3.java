@@ -4,11 +4,11 @@ public abstract class Nk2_3 extends Fr2_2 implements FW_2 {
    @C_9
    public K_2_2 k;
    public final Fu2_2[] z;
-   static boolean K;
+   public static boolean K;
    public static String[] a;
    public static String[] b;
 
-   protected Nk2_3(com.finalshell.ui.model.I var1, Fu2_2[] var2) {
+   public Nk2_3(com.finalshell.ui.model.I var1, Fu2_2[] var2) {
       super(var1);
       this.z = var2;
    }

@@ -3,12 +3,12 @@ package com.finalshell.core;
 import java.net.DatagramPacket;
 
 public class Wr2 extends WC {
-   short q = D6.L;
-   int J;
-   int P;
-   byte[] h;
-   int n;
-   byte[] i;
+   public short q = D6.L;
+   public int J;
+   public int P;
+   public byte[] h;
+   public int n;
+   public byte[] i;
    public static long[] a;
    public static Integer[] b;
 

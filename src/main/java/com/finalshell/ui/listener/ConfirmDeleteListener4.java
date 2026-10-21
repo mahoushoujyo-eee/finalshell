@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteListener4 implements ActionListener {
-   final TunnelList E;
+   public final TunnelList E;
    public static String[] a;
    public static String[] b;
 
-   ConfirmDeleteListener4(TunnelList var1) {
+   public ConfirmDeleteListener4(TunnelList var1) {
       this.E = var1;
    }
 

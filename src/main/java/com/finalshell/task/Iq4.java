@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.listener.Ec2;
 
 public class Iq4 implements Runnable {
-   final Ec2 T;
+   public final Ec2 T;
 
-   Iq4(Ec2 var1) {
+   public Iq4(Ec2 var1) {
       this.T = var1;
    }
 

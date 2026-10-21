@@ -4,11 +4,11 @@ import com.finalshell.core.YI;
 import com.finalshell.ui.panel.SelectDownloadFolderPanel;
 
 public class OT implements Runnable {
-   final YI R;
-   final SelectDownloadFolderPanel C;
+   public final YI R;
+   public final SelectDownloadFolderPanel C;
    public static long a;
 
-   OT(SelectDownloadFolderPanel var1, YI var2) {
+   public OT(SelectDownloadFolderPanel var1, YI var2) {
       this.C = var1;
       this.R = var2;
    }

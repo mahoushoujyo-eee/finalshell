@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class GW extends Go2 {
-   final Yj4 Q;
+   public final Yj4 Q;
    public static String b;
 
    public GW(Yj4 var1) {

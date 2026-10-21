@@ -124,7 +124,7 @@ public class OG extends O implements W2_3, Sa2 {
       }
    }
 
-   protected void B$void() {
+   public void B$void() {
       MemoryUsage var2 = ManagementFactory.getMemoryMXBean().getHeapMemoryUsage();
       this.Y = var2.getUsed();
       Ky4[] var10000 = P();
@@ -145,7 +145,7 @@ public class OG extends O implements W2_3, Sa2 {
       var3.repaint();
    }
 
-   protected String I$String() {
+   public String I$String() {
       long var4;
       label14: {
          Ky4[] var1 = P();
@@ -166,7 +166,7 @@ public class OG extends O implements W2_3, Sa2 {
       return Cz2.n(this.Y, this.c(this.Y)) + " " + I22.O(a(17373, -22417)) + " " + Cz2.n(var2, this.c(var2));
    }
 
-   protected String w() {
+   public String w() {
       return a(17372, -15655)
          + I22.O(a(17361, 25525))
          + a(17368, -9167)
@@ -380,7 +380,7 @@ public class OG extends O implements W2_3, Sa2 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Ky4[] var2;
       Graphics2D var3;
       Object var4;
@@ -677,15 +677,15 @@ public class OG extends O implements W2_3, Sa2 {
       return this.z$OG(var1);
    }
 
-   static boolean s(OG var0, boolean var1) {
+   public static boolean s(OG var0, boolean var1) {
       return var0.G = var1;
    }
 
-   static boolean f(OG var0) {
+   public static boolean f(OG var0) {
       return var0.p;
    }
 
-   static boolean r(OG var0) {
+   public static boolean r(OG var0) {
       return var0.G;
    }
 

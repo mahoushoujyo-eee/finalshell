@@ -13,8 +13,8 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Dy4_2 implements LayoutManager {
-   Connection5 P;
-   com.finalshell.ui.panel.Tv2 n;
+   public Connection5 P;
+   public com.finalshell.ui.panel.Tv2 n;
    public static long[] a;
    public static Integer[] b;
 

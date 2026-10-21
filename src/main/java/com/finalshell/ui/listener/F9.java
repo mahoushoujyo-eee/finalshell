@@ -4,9 +4,9 @@ import com.finalshell.core.Pk4;
 import javax.swing.event.AncestorEvent;
 
 public class F9 extends FY {
-   final Pk4 M;
+   public final Pk4 M;
 
-   F9(Pk4 var1) {
+   public F9(Pk4 var1) {
       this.M = var1;
    }
 

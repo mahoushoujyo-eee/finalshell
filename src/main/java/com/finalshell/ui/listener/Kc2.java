@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kc2 implements ActionListener {
-   final AM H;
-   final CopyMenu F;
+   public final AM H;
+   public final CopyMenu F;
 
-   Kc2(CopyMenu var1, AM var2) {
+   public Kc2(CopyMenu var1, AM var2) {
       this.F = var1;
       this.H = var2;
    }

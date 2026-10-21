@@ -15,16 +15,16 @@ import javax.swing.JTextField;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 public class InputCommandListener implements ActionListener {
-   final JTextField P;
-   final RSyntaxTextArea q;
-   final Copy3 e;
-   final JCheckBox Y;
-   final T32 J;
-   final EditDialog3 n;
+   public final JTextField P;
+   public final RSyntaxTextArea q;
+   public final Copy3 e;
+   public final JCheckBox Y;
+   public final T32 J;
+   public final EditDialog3 n;
    public static String[] a;
    public static String[] b;
 
-   InputCommandListener(EditDialog3 var1, JTextField var2, RSyntaxTextArea var3, Copy3 var4, JCheckBox var5, T32 var6) {
+   public InputCommandListener(EditDialog3 var1, JTextField var2, RSyntaxTextArea var3, Copy3 var4, JCheckBox var5, T32 var6) {
       this.n = var1;
       this.P = var2;
       this.q = var3;
@@ -43,7 +43,7 @@ public class InputCommandListener implements ActionListener {
       boolean var5 = false;
       InputCommandListener var10002 = var3.equals("");
       if (this == null) {
-         if (var10002 != false) {
+         if (var10002 == null) {
             Object var11 = 365487823234570811L;
             JOptionPane.showMessageDialog((EditDialog3)Ref.g(365487823234570811L, var11), a(24947, 24935));
             return;
@@ -55,7 +55,7 @@ public class InputCommandListener implements ActionListener {
       label91: {
          label92: {
             if (this == null) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   Object var13 = 365487823234570811L;
                   JOptionPane.showMessageDialog((EditDialog3)Ref.g(365487823234570811L, var13), a(24946, -23651));
                   return;
@@ -79,7 +79,7 @@ public class InputCommandListener implements ActionListener {
                }
             }
 
-            if (var10002 == false) {
+            if (var10002 == null) {
                Object var19 = 504945593503601436L;
                Ref.g(504945593503601436L, var19);
                Object var21 = 485132230127156269L;

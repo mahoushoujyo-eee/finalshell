@@ -1,21 +1,21 @@
 package com.finalshell.core;
 
 public class J {
-   static long a;
+   public static long a;
    public static long s;
-   static long X;
-   static long H;
+   public static long X;
+   public static long H;
    public static int v;
    public static int l;
    public static int N;
    public static int K;
    public static int F;
    public static int t;
-   static long Y;
-   static long Z;
-   static long d;
-   static long C;
-   static int i;
+   public static long Y;
+   public static long Z;
+   public static long d;
+   public static long C;
+   public static int i;
    public static int B;
 
    static {

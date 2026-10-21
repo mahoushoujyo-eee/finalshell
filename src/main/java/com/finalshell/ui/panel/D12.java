@@ -168,19 +168,19 @@ public class D12 extends JComponent implements SwingConstants, ActionListener {
       return this.e;
    }
 
-   static int J(D12 var0) {
+   public static int J(D12 var0) {
       return var0.h;
    }
 
-   static int U(D12 var0, int var1) {
+   public static int U(D12 var0, int var1) {
       return var0.h -= var1;
    }
 
-   static String Y(D12 var0) {
+   public static String Y(D12 var0) {
       return var0.f;
    }
 
-   static WC_2 S(D12 var0) {
+   public static WC_2 S(D12 var0) {
       return var0.F;
    }
 

@@ -62,33 +62,33 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class Address extends F8 implements Td4 {
-   Connection12 E;
-   Connection12 o;
-   JPanel s;
-   Bi2 t;
-   Connection4 S;
-   Km2 h;
-   com.finalshell.ui.model.Kl4 P;
-   ArrayList g;
-   String y;
-   Lv4_2 L;
-   Loading A;
-   String W;
-   ConnectionProperty C;
-   boolean j;
-   boolean l;
-   Fm2 k;
-   FilePanel X;
-   Dv2 J;
-   T2 r;
-   static SimpleDateFormat F;
-   JButton B;
-   JButton a;
-   JButton b;
-   JButton G;
-   JButton Y;
-   JButton e;
-   JScrollPane x;
+   public Connection12 E;
+   public Connection12 o;
+   public JPanel s;
+   public Bi2 t;
+   public Connection4 S;
+   public Km2 h;
+   public com.finalshell.ui.model.Kl4 P;
+   public ArrayList g;
+   public String y;
+   public Lv4_2 L;
+   public Loading A;
+   public String W;
+   public ConnectionProperty C;
+   public boolean j;
+   public boolean l;
+   public Fm2 k;
+   public FilePanel X;
+   public Dv2 J;
+   public T2 r;
+   public static SimpleDateFormat F;
+   public JButton B;
+   public JButton a;
+   public JButton b;
+   public JButton G;
+   public JButton Y;
+   public JButton e;
+   public JScrollPane x;
    public boolean Z;
    public static boolean M;
    public static String[] d;
@@ -119,7 +119,7 @@ public class Address extends F8 implements Td4 {
       }
    }
 
-   void F() {
+   public void F() {
       this.setLayout(new MigLayout(a(20043, 8996), a(20044, -32299), a(20056, 31227)));
       this.setOpaque(false);
       this.setBackground(Color.yellow);
@@ -329,7 +329,7 @@ public class Address extends F8 implements Td4 {
       label148: {
          Object var52 = 460354311900945697L;
          Object var10026 = (Connection12)Ref.g(460354311900945697L, var52);
-         if (var1 == false) {
+         if (var1 == null) {
             if (var10026 != null) {
                Object var54 = 460354311900945697L;
                Ref.g(460354311900945697L, var54);
@@ -346,7 +346,7 @@ public class Address extends F8 implements Td4 {
             }
 
             var10026 = this;
-            if (var1 != false) {
+            if (var1 == null) {
                break label148;
             }
 
@@ -483,7 +483,7 @@ public class Address extends F8 implements Td4 {
          var3 = null;
          Object var12 = 625337668494616580L;
          Object var10005 = (ArrayList)Ref.g(625337668494616580L, var12);
-         if (var2 != false) {
+         if (var2 == null) {
             if (var10005.size() <= 0) {
                break label23;
             }
@@ -498,7 +498,7 @@ public class Address extends F8 implements Td4 {
          var3 = (String)var10005;
       }
 
-      if (var2 != false && !var1.equals(var3)) {
+      if (var2 == null && !var1.equals(var3)) {
          Object var18 = 625337668494616580L;
          ((ArrayList)Ref.g(625337668494616580L, var18)).add(var1);
       }
@@ -572,7 +572,7 @@ public class Address extends F8 implements Td4 {
       MatteBorder var4 = BorderFactory.createMatteBorder(0, 0, 0, (int)var1, var10011);
    }
 
-   void N() {
+   public void N() {
       JPanel var10001 = new JPanel();
       long var11 = 272238901011657720L;
       JPanel var10 = var10001;
@@ -709,7 +709,7 @@ public class Address extends F8 implements Td4 {
       Ref.s(246488842365380158L, var100, var101);
       Connection4 var10048;
       Object var102 = 246488842365380158L;
-new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, var102));
+false = new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, var102));
       long var105 = 627973027287447539L;
       Connection4 var104 = var10048;
       Ref.s(627973027287447539L, var104, var105);
@@ -875,7 +875,7 @@ new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, v
       Object var174 = 627973027287447539L;
       ((Connection4)Ref.g(627973027287447539L, var174)).setRootVisible(false);
       if (Ky4.F$arrString() != null) {
-         W(var1 == false);
+         W(var1 == null);
       }
    }
 
@@ -1767,7 +1767,7 @@ new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, v
       // 804: return
    }
 
-   String G() {
+   public String G() {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 622340890791521181L;
       Object[] var3 = var10001;
@@ -1838,7 +1838,7 @@ new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, v
       }
    }
 
-   void Q(String var1, String var2) {
+   public void Q(String var1, String var2) {
       new DownloadDialog(SwingUtilities.getWindowAncestor(this), this, var1, var2);
    }
 
@@ -2354,7 +2354,7 @@ new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, v
          + a(20048, -5743);
    }
 
-   void w(String var1, String var2, Object var3) {
+   public void w(String var1, String var2, Object var3) {
       ArrayList var5;
       ArrayList var6;
       label91: {
@@ -2380,7 +2380,7 @@ new UN3((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(246488842365380158L, v
                      throw var24.getTargetException();
                   }
 
-new ArrayList(var10004);
+var7 = new ArrayList(var10004);
                   var10001.add(var10001);
                   Object[] var10002 = Registry.emptyArgs();
                   long var14 = 498856411508641826L;
@@ -2451,7 +2451,7 @@ new ArrayList(var10004);
             throw var22.getTargetException();
          }
 
-new ArrayList(var34);
+var25 = new ArrayList(var34);
          var28.add(var28);
       }
 
@@ -2517,7 +2517,7 @@ new ArrayList(var34);
          throw var31.getTargetException();
       }
 
-new Address(this, var10006, var2, var3, var7, var9, false);
+var10004 = new Address(this, var10006, var2, var3, var7, var9, false);
       Object[] var39 = Registry.e(var6.length());
       long var19 = 119264357941005086L;
       Object[] var18 = var39;
@@ -3209,7 +3209,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
       int[] var3 = ((Km2)Ref.g(150762093507542450L, var12)).getSelectedRows();
       Address var2 = this;
       int var4 = JOptionPane.showConfirmDialog(var1, a(20057, 30116), a(20058, 10267), 0);
-      if (this == false) {
+      if (this == null) {
          if (var4 != 0) {
             return;
          }
@@ -3241,11 +3241,11 @@ new Address(this, var10006, var2, var3, var7, var9, false);
             Object var11 = var10003;
             var6.add(var11);
             var9++;
-            if (var2 != false) {
+            if (var2 == null) {
                break;
             }
 
-            if (var2 == false) {
+            if (var2 == null) {
                continue;
             }
          }
@@ -4205,7 +4205,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
          Object var4 = var10003;
          Object var5 = null;
          var10003 = (Object[])var4;
-         if (this == false) {
+         if (this == null) {
             if (var4 == null) {
                return;
             }
@@ -4214,7 +4214,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
          }
 
          var10003 = var10003.getClass();
-         if (this == false) {
+         if (this == null) {
             if (!var10003.equals(Ck4.class)) {
                return;
             }
@@ -4291,7 +4291,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
 
       ArrayList var6 = var10006;
       boolean var10005 = var6.contains(var5);
-      if (var4 == false) {
+      if (var4 == null) {
          if (var10005) {
             var2 = false;
          }
@@ -4320,7 +4320,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
                if (var7 != null) {
                   boolean var132 = new java.io.File(var7).exists();
                   var10007 = var4;
-                  if (var4 != false) {
+                  if (var4 == null) {
                      break label309;
                   }
 
@@ -4329,7 +4329,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
                   }
                }
 
-               if (var4 != false) {
+               if (var4 == null) {
                   break label308;
                }
 
@@ -4345,7 +4345,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
                }
             }
 
-            if (var10007 == true && !var8) {
+            if (var10007 != null && !var8) {
                Registry.packArgs(this);
                long var35 = 211273487601650149L;
                Ref.h2(211273487601650149L, var35);
@@ -4373,7 +4373,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
             String var120 = var138;
             if (var120 != null) {
                var141 = new java.io.File(var120).exists();
-               if (var4 != false) {
+               if (var4 == null) {
                   break label289;
                }
 
@@ -4403,7 +4403,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
       String var122 = (String)Registry.lookupField(439146272996415412L).get(null);
       String var10 = var1.substring(var121.length());
       String var135 = java.io.File.separator;
-      if (var4 == false) {
+      if (var4 == null) {
          if (java.io.File.separator.equals("\\")) {
             var10 = var10.replaceAll("/", a(20063, -3872));
          }
@@ -4504,7 +4504,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
 
       String var17 = (String)var10018;
       var10018 = var17;
-      if (var4 == false) {
+      if (var4 == null) {
          if (!var17.equals("")) {
             String var18 = var16 + "." + var17;
          }
@@ -4562,7 +4562,7 @@ new Address(this, var10006, var2, var3, var7, var9, false);
          throw var101.getTargetException();
       }
 
-new Address(this, var10023, var121, var122, var1, var11, true);
+var152 = new Address(this, var10023, var121, var122, var1, var11, true);
       Object[] var155 = Registry.packArgs(true);
       long var76 = 400314518109324563L;
       Object[] var75 = var155;
@@ -4614,7 +4614,7 @@ new Address(this, var10023, var121, var122, var1, var11, true);
          throw var97.getTargetException();
       }
 
-new Address(this, var10029, var122, var121, var11, var1, false);
+var10027 = new Address(this, var10029, var122, var121, var11, var1, false);
       Object[] var163 = Registry.packArgs(this);
       long var88 = 626543303632176749L;
       Object[] var87 = var163;
@@ -4789,13 +4789,13 @@ new Address(this, var10029, var122, var121, var11, var1, false);
       }
    }
 
-   void s(String var1) {
+   public void s(String var1) {
       String var2 = "";
       if (!var1.startsWith("/")) {
       }
    }
 
-   void s(String var1, boolean var2, boolean var3) {
+   public void s(String var1, boolean var2, boolean var3) {
       Object var4 = 627973027287447539L;
       Ref.g(627973027287447539L, var4);
       Object[] var10002 = Registry.packArgs(var1, var2, var3);
@@ -4837,7 +4837,7 @@ new Address(this, var10029, var122, var121, var11, var1, false);
       int var3 = var62;
       int var10001 = var3;
       int var63 = Registry.lookupField(451440066276164151L).getInt(null);
-      if (var1 != false) {
+      if (var1 == null) {
          if (var3 == var63) {
             var10002 = Registry.emptyArgs();
             long var9 = 405617140951858885L;
@@ -4864,7 +4864,7 @@ new Address(this, var10029, var122, var121, var11, var1, false);
                throw var58.getTargetException();
             }
 
-            if (var1 == false || var10004 != null) {
+            if (var1 == null || var10004 != null) {
                Object[] var10005 = Registry.emptyArgs();
                long var15 = 498856411508641826L;
                Object[] var14 = var10005;
@@ -4920,7 +4920,7 @@ new Address(this, var10029, var122, var121, var11, var1, false);
                }
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                return;
             }
          }
@@ -4966,7 +4966,7 @@ new Address(this, var10029, var122, var121, var11, var1, false);
             throw var51.getTargetException();
          }
 
-         if (var1 == false || var72 != null) {
+         if (var1 == null || var72 != null) {
             Object[] var10006 = Registry.emptyArgs();
             long var37 = 498856411508641826L;
             Object[] var36 = var10006;
@@ -5168,7 +5168,7 @@ new Address(this, var10029, var122, var121, var11, var1, false);
       Ref.h(266288712085965362L, var1, var2);
    }
 
-   static void n(Address var0, ConnectHost var1) throws Exception {
+   public static void n(Address var0, ConnectHost var1) throws Exception {
       Object[] var10001 = Registry.packArgs(var1);
       long var3 = 349245443016521960L;
       Object[] var2 = var10001;

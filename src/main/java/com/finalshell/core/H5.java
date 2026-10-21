@@ -3,9 +3,6 @@ package com.finalshell.core;
 public class H5 implements A0_2 {
    public static H5 E;
 
-   H5() {
-   }
-
    public Integer T(Ph4 var1, Object var2, Object var3) {
       return var1.T(var3);
    }

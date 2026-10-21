@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class H3 implements ActionListener {
-   final int b;
-   final HD X;
+   public final int b;
+   public final HD X;
 
-   H3(HD var1, int var2) {
+   public H3(HD var1, int var2) {
       this.X = var1;
       this.b = var2;
    }

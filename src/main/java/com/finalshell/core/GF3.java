@@ -181,7 +181,7 @@ public class GF3 extends Gy4 {
    }
 
    @Override
-   protected void T(Rectangle var1) {
+   public void T(Rectangle var1) {
       String[] var2 = W5.q();
       boolean var10000 = this.J;
       if (var2 != null) {
@@ -258,7 +258,7 @@ public class GF3 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       var3[0] = (float)this.U.width * (this.O * (float)var1 + this.x * (float)var2 + this.Q) / (this.Y * (float)var1 + this.T * (float)var2 + this.b);
       var3[1] = (float)this.U.height * (this.E * (float)var1 + this.V * (float)var2 + this.k) / (this.Y * (float)var1 + this.T * (float)var2 + this.b);
    }

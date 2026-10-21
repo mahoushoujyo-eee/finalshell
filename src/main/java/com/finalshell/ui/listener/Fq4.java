@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fq4 implements ActionListener {
-   final PasswordDialog l;
+   public final PasswordDialog l;
 
-   Fq4(PasswordDialog var1) {
+   public Fq4(PasswordDialog var1) {
       this.l = var1;
    }
 

@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Ap2_2 {
-   int u;
-   Ow4 A;
-   int r;
-   HashMap U;
-   ArrayList o;
+   public int u;
+   public Ow4 A;
+   public int r;
+   public HashMap U;
+   public ArrayList o;
    public int K;
    public int J;
    public int n;

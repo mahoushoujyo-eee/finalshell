@@ -5,17 +5,17 @@ import java.awt.Shape;
 import javax.swing.JComponent;
 
 public class Sz2 implements E_2 {
-   final JComponent U;
-   final BU g;
-   final int N;
-   final int d;
-   final int a;
-   final int j;
-   final int o;
-   final boolean k;
-   final boolean u;
+   public final JComponent U;
+   public final BU g;
+   public final int N;
+   public final int d;
+   public final int a;
+   public final int j;
+   public final int o;
+   public final boolean k;
+   public final boolean u;
 
-   Sz2(JComponent var1, BU var2, int var3, int var4, int var5, int var6, int var7, boolean var8, boolean var9) {
+   public Sz2(JComponent var1, BU var2, int var3, int var4, int var5, int var6, int var7, boolean var8, boolean var9) {
       this.U = var1;
       this.g = var2;
       this.N = var3;

@@ -7,8 +7,8 @@ public class Pf2 implements Wy4 {
    public String[] j;
 
    public Pf2(String[] var1, String[] var2) {
+   super();
       String var10000 = Nv4.o();
-      super();
       String var3 = var10000;
       String[] var4 = var1;
       if (var3 != null) {

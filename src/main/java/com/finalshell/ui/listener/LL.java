@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LL implements ActionListener {
-   final com.finalshell.ui.panel.Qq2 O;
+   public final com.finalshell.ui.panel.Qq2 O;
 
-   LL(com.finalshell.ui.panel.Qq2 var1) {
+   public LL(com.finalshell.ui.panel.Qq2 var1) {
       this.O = var1;
    }
 

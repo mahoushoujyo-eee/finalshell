@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.XQ_2;
 
 public class Do2 implements Runnable {
-   final XQ_2 D;
+   public final XQ_2 D;
    public static long a;
 
-   Do2(XQ_2 var1) {
+   public Do2(XQ_2 var1) {
       this.D = var1;
    }
 

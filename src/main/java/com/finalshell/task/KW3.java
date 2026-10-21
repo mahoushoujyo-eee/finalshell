@@ -5,9 +5,9 @@ import com.finalshell.core.XE_2;
 import com.finalshell.reflect.Ref;
 
 public class KW3 implements Runnable {
-   final LK z;
+   public final LK z;
 
-   KW3(LK var1) {
+   public KW3(LK var1) {
       this.z = var1;
    }
 

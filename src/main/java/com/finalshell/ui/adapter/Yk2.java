@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 public class Yk2 extends AbstractAction {
-   final SetBackgroundImagePanel h;
+   public final SetBackgroundImagePanel h;
 
-   Yk2(SetBackgroundImagePanel var1, String var2) {
+   public Yk2(SetBackgroundImagePanel var1, String var2) {
       super(var2);
       this.h = var1;
    }

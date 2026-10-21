@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class V6 extends FilterInputStream {
-   long r = 0L;
-   int h = 0;
+   public long r = 0L;
+   public int h = 0;
    public boolean E = false;
    public static long a;
    public static long b;

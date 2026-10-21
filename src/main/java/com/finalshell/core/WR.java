@@ -5,13 +5,13 @@ import java.net.DatagramPacket;
 
 public class WR extends WC {
    public short u = D6.I;
-   byte[] n;
-   int t;
-   String X;
-   int a;
-   int c;
-   int U;
-   int B;
+   public byte[] n;
+   public int t;
+   public String X;
+   public int a;
+   public int c;
+   public int U;
+   public int B;
    public static String[] b;
    public static String[] e;
    public static long[] f;

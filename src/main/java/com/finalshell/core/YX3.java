@@ -3,7 +3,7 @@ package com.finalshell.core;
 import java.awt.Rectangle;
 
 public class YX3 extends GT3 {
-   protected static int[] V;
+   public static int[] V;
    public int o = a(32109, 688847293996231935L);
    public boolean k;
    public int B = a(22191, 3198772515552806710L);
@@ -295,7 +295,7 @@ public class YX3 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int[] var5 = new int[var1 * var2];
       this.Q(var3, var5, var1, var2, this.B, this.k, this.U);
       return var5;

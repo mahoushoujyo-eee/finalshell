@@ -28,13 +28,13 @@ public class Bw2_2 implements Ln4 {
       return (JComponent)var5;
    }
 
-   protected JComponent D(BX var1, At2 var2) {
+   public JComponent D(BX var1, At2 var2) {
       com.finalshell.ui.panel.O var3 = new com.finalshell.ui.panel.O(var2.T(), var2.I());
       var3.setForeground(var2.Y());
       return var3;
    }
 
-   protected JComponent o(BX var1, At2 var2) {
+   public JComponent o(BX var1, At2 var2) {
       KD var3 = new KD(com.finalshell.ui.panel.QL.G, com.finalshell.ui.panel.QL.t);
       var3.G(true);
       var3.setFocusable(false);

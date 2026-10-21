@@ -8,7 +8,7 @@ public class Rl2 implements Cd4 {
    public static String[] a;
    public static String[] b;
 
-   Rl2(Xe2 var1) {
+   public Rl2(Xe2 var1) {
       this.u = var1;
    }
 
@@ -133,7 +133,7 @@ public class Rl2 implements Cd4 {
       }
    }
 
-   synchronized void E(AB_2 var1) {
+   public synchronized void E(AB_2 var1) {
       boolean var2 = Dm4.J$boolean();
       boolean var10000 = this.v.contains(var1);
       if (!var2) {

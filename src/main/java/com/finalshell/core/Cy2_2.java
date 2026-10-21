@@ -1,25 +1,22 @@
 package com.finalshell.core;
 
 public class Cy2_2 extends Cq2_2 {
-   static byte[] H;
-   static byte[] o;
+   public static byte[] H;
+   public static byte[] o;
    public static String j;
 
-   Cy2_2() {
-   }
-
    @Override
-   byte[] l() {
+   public byte[] l() {
       return H;
    }
 
    @Override
-   byte[] u() {
+   public byte[] u() {
       return o;
    }
 
    @Override
-   String i() {
+   public String i() {
       return j;
    }
 

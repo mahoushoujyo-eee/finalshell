@@ -26,7 +26,7 @@ public class Yt4 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[this.Z];

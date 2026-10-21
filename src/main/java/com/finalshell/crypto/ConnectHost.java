@@ -66,7 +66,7 @@ public class ConnectHost {
    public byte[] s;
    public int o;
    public int i1;
-   String[] L;
+   public String[] L;
    public EU b;
    public EU iO;
    public FP z;
@@ -82,14 +82,14 @@ public class ConnectHost {
    public volatile boolean H;
    public Thread im;
    public Object S;
-   boolean N;
-   boolean iu;
-   InputStream O;
-   OutputStream l;
-   static I82 p;
-   UJ k;
-   YU D;
-   PJ3 K;
+   public boolean N;
+   public boolean iu;
+   public InputStream O;
+   public OutputStream l;
+   public static I82 p;
+   public UJ k;
+   public YU D;
+   public PJ3 K;
    public Hashtable M;
    public Ic4 P;
    public Gq2 Y;
@@ -100,39 +100,39 @@ public class ConnectHost {
    public RW q;
    public volatile String[] id;
    public volatile boolean n;
-   protected boolean ih;
+   public boolean ih;
    public long R;
-   int iI;
-   int X;
-   String V;
-   String U;
-   int x;
-   String g;
-   byte[] iS;
-   Xe2 d;
-   GN ij;
-   ConnectionProperty r;
-   ConnectionProperty ix;
-   Lv4_2 Z;
-   ConnectHost i2;
-   int t;
-   boolean iF;
-   ArrayList a;
-   boolean I;
-   GH_2 u;
+   public int iI;
+   public int X;
+   public String V;
+   public String U;
+   public int x;
+   public String g;
+   public byte[] iS;
+   public Xe2 d;
+   public GN ij;
+   public ConnectionProperty r;
+   public ConnectionProperty ix;
+   public Lv4_2 Z;
+   public ConnectHost i2;
+   public int t;
+   public boolean iF;
+   public ArrayList a;
+   public boolean I;
+   public GH_2 u;
    public static String iQ;
    public static String G;
    public static long ia;
    public static long J;
-   boolean iv;
+   public boolean iv;
    public volatile boolean iq;
    public volatile boolean W;
    public volatile String[] E;
-   int[] iY;
-   int[] T;
+   public int[] iY;
+   public int[] T;
    public int il;
    public int A;
-   Runnable iw;
+   public Runnable iw;
    public Fw2 iC;
    public static byte[] c;
    public static byte[] iy;
@@ -273,7 +273,7 @@ public class ConnectHost {
       }
    }
 
-   static void t$void() {
+   public static void t$void() {
       Toolkit var0 = Toolkit.getDefaultToolkit();
       var0.addAWTEventListener(new W7(), b(16776, 1473469404361689390L));
    }
@@ -653,11 +653,11 @@ public class ConnectHost {
       return this.U(var1, var2, var3, var4, var5, 0, var6);
    }
 
-   void S(Ms2 var1) {
+   public void S(Ms2 var1) {
       this.a.add(var1);
    }
 
-   void r(Yl4 var1) {
+   public void r(Yl4 var1) {
       boolean var10000 = Dm4.J$boolean();
       Iterator var3 = this.a.iterator();
       boolean var2 = var10000;
@@ -727,7 +727,7 @@ public class ConnectHost {
       // 4a: return
    }
 
-   void B() {
+   public void B() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -796,7 +796,7 @@ public class ConnectHost {
       this.iF = var1;
    }
 
-   void L() {
+   public void L() {
       boolean var1 = Dm4.J$boolean();
 
       byte var7;
@@ -846,7 +846,7 @@ public class ConnectHost {
       this.ix = var1;
    }
 
-   ConnectHost(Xe2 param1, String param2, String param3, int param4) throws Pc2 {
+   public ConnectHost(Xe2 param1, String param2, String param3, int param4) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5836,7 +5836,7 @@ public class ConnectHost {
       // 54: areturn
    }
 
-   void h(YU param1) throws Exception {
+   public void h(YU param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6231,7 +6231,7 @@ public class ConnectHost {
       // 36a: return
    }
 
-   UJ V(UJ param1) throws Exception {
+   public UJ V(UJ param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -8085,7 +8085,7 @@ public class ConnectHost {
       // 18c: athrow
    }
 
-   byte[] I() {
+   public byte[] I() {
       return this.m;
    }
 
@@ -8704,7 +8704,7 @@ public class ConnectHost {
       return var11;
    }
 
-   void O(YU param1, Dm4 param2, int param3) throws Exception {
+   public void O(YU param1, Dm4 param2, int param3) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -9074,7 +9074,7 @@ public class ConnectHost {
       // 2d6: return
    }
 
-   void D(YU param1) throws Exception {
+   public void D(YU param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -9324,7 +9324,7 @@ public class ConnectHost {
       // 47: return
    }
 
-   void P$void() {
+   public void P$void() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10817,7 +10817,7 @@ public class ConnectHost {
       return DS3.R(this);
    }
 
-   Hh2 i$Hh_2(String param1) throws Pc2 {
+   public Hh2 i$Hh_2(String param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11605,11 +11605,11 @@ public class ConnectHost {
       // 11f: return
    }
 
-   void j(Dm4 var1) {
+   public void j(Dm4 var1) {
       var1.D(this);
    }
 
-   String[] P$arrString() {
+   public String[] P$arrString() {
       return this.id;
    }
 
@@ -12397,7 +12397,7 @@ public class ConnectHost {
       // 1a7: areturn
    }
 
-   static boolean X(String var0) {
+   public static boolean X(String var0) {
       try {
          Class var1 = Class.forName(var0).asSubclass(EU.class);
          EU var2 = (EU)var1.getDeclaredConstructor().newInstance();
@@ -12608,7 +12608,7 @@ public class ConnectHost {
       // 1a7: areturn
    }
 
-   static boolean v(String var0) {
+   public static boolean v(String var0) {
       try {
          Class var1 = Class.forName(var0).asSubclass(FP.class);
          FP var2 = (FP)var1.getDeclaredConstructor().newInstance();
@@ -12777,7 +12777,7 @@ public class ConnectHost {
       // 140: areturn
    }
 
-   static boolean m(ConnectHost var0, String var1) {
+   public static boolean m(ConnectHost var0, String var1) {
       try {
          Class var2 = Class.forName(var1).asSubclass(Cv2.class);
          Cv2 var3 = (Cv2)var2.getDeclaredConstructor().newInstance();
@@ -12957,7 +12957,7 @@ public class ConnectHost {
       this.w = var1;
    }
 
-   Cd4 m$cd_4() {
+   public Cd4 m$cd_4() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -13757,7 +13757,7 @@ public class ConnectHost {
       this.ij = var1;
    }
 
-   int D() {
+   public int D() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

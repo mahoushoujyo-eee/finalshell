@@ -6,10 +6,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Fs4 extends Thread {
-   final Connect5 n;
+   public final Connect5 n;
    public final ServerSocket V;
 
-   Fs4(Connect5 var1, ServerSocket var2) {
+   public Fs4(Connect5 var1, ServerSocket var2) {
       this.n = var1;
       this.V = var2;
    }

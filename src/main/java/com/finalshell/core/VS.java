@@ -14,9 +14,9 @@ import javax.swing.border.Border;
 public class VS extends AbstractBorder {
    public static Border n;
    public static Border e;
-   protected int m;
-   protected Color j;
-   protected boolean t;
+   public int m;
+   public Color j;
+   public boolean t;
 
    public static Border z() {
       String var0 = Km2.U$String();

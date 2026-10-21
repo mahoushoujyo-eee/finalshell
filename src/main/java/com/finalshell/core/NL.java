@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class NL {
    public int j = 0;
    public UR T;
-   String r;
+   public String r;
 
    public NL(UR var1, int var2) {
       this.j = var2;

@@ -25,17 +25,17 @@ import javax.swing.JPopupMenu;
 import net.miginfocom.swing.MigLayout;
 
 public class Copy3 extends F8 implements AL {
-   AppendCarriageReturnCRPanel h;
-   Li4 E;
-   AM u;
-   String Y;
-   Lj4_2 I;
+   public AppendCarriageReturnCRPanel h;
+   public Li4 E;
+   public AM u;
+   public String Y;
+   public Lj4_2 I;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   Copy3(AppendCarriageReturnCRPanel var1, Li4 var2) {
+   public Copy3(AppendCarriageReturnCRPanel var1, Li4 var2) {
       AppendCarriageReturnCRPanel.Y();
       long var9 = 597736782183485260L;
       Ref.s(597736782183485260L, var2, var9);
@@ -372,7 +372,7 @@ public class Copy3 extends F8 implements AL {
       }
    }
 
-   void s(Li4 var1, Lj4_2 var2) {
+   public void s(Li4 var1, Lj4_2 var2) {
       AppendCarriageReturnCRPanel.Y();
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
       long var7 = 408177353860141270L;
@@ -823,7 +823,7 @@ public class Copy3 extends F8 implements AL {
       }
    }
 
-   void M(Y9 var1) {
+   public void M(Y9 var1) {
       Object var11 = 601657008259262484L;
       Component[] var3 = ((AM)Ref.g(601657008259262484L, var11)).getComponents();
       ArrayList var4 = new ArrayList();

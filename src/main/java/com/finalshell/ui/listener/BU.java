@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JMenuItem;
 
 public class BU implements ActionListener {
-   final JMenuItem Y;
-   final SetExternalEditorPanel x;
+   public final JMenuItem Y;
+   public final SetExternalEditorPanel x;
 
-   BU(SetExternalEditorPanel var1, JMenuItem var2) {
+   public BU(SetExternalEditorPanel var1, JMenuItem var2) {
       this.x = var1;
       this.Y = var2;
    }

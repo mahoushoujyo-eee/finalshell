@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class OI3 implements ActionListener {
-   final Bq_2 B;
+   public final Bq_2 B;
 
-   OI3(Bq_2 var1) {
+   public OI3(Bq_2 var1) {
       this.B = var1;
    }
 

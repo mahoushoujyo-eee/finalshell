@@ -8,8 +8,8 @@ import java.awt.image.ColorModel;
 
 public final class XE3 implements Composite {
    public static String[] Q;
-   protected float R;
-   protected int M;
+   public float R;
+   public int M;
    public static String[] a;
    public static String[] b;
    public static long[] c;

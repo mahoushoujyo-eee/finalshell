@@ -9,12 +9,12 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 public class T22 extends Thread {
-   final YT3_2 x;
+   public final YT3_2 x;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   T22(YT3_2 var1) {
+   public T22(YT3_2 var1) {
       this.x = var1;
    }
 

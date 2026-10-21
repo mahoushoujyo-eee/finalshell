@@ -26,7 +26,7 @@ public class X0 {
       }
    }
 
-   protected JTextField k() {
+   public JTextField k() {
       return new JTextField();
    }
 
@@ -41,7 +41,7 @@ public class X0 {
       }
    }
 
-   static void k(int var0, Component var1, String var2, T5 var3) {
+   public static void k(int var0, Component var1, String var2, T5 var3) {
       R(var0, var1, var2, var3);
    }
 

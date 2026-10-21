@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.util.Date;
 
 public class V_ implements Pu4 {
-   final Lk4 U;
+   public final Lk4 U;
 
-   V_(Lk4 var1) {
+   public V_(Lk4 var1) {
       this.U = var1;
    }
 

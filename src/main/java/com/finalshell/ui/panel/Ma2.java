@@ -12,7 +12,7 @@ import javax.swing.JTree;
 
 public class Ma2 extends JTree implements Autoscroll {
    public int t;
-   final WY p;
+   public final WY p;
    public static long[] a;
    public static Integer[] b;
 

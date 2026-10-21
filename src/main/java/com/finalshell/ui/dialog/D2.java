@@ -217,19 +217,19 @@ public class D2 extends Y2 {
       }
    }
 
-   static int b(D2 var0) {
+   public static int b(D2 var0) {
       return var0.M;
    }
 
-   static O k(D2 var0) {
+   public static O k(D2 var0) {
       return var0.x;
    }
 
-   static By_2 G(D2 var0) {
+   public static By_2 G(D2 var0) {
       return var0.n;
    }
 
-   static void t(D2 var0) {
+   public static void t(D2 var0) {
       var0.h();
    }
 

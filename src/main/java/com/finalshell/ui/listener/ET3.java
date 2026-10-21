@@ -7,10 +7,10 @@ import java.awt.event.HierarchyListener;
 import javax.swing.SwingUtilities;
 
 public class ET3 implements HierarchyListener {
-   final SetBackgroundImagePanel g;
+   public final SetBackgroundImagePanel g;
    public static long a;
 
-   ET3(SetBackgroundImagePanel var1) {
+   public ET3(SetBackgroundImagePanel var1) {
       this.g = var1;
    }
 

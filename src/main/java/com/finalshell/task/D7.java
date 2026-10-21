@@ -7,9 +7,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class D7 implements Runnable {
-   final MV B;
+   public final MV B;
 
-   D7(MV var1) {
+   public D7(MV var1) {
       this.B = var1;
    }
 

@@ -4,9 +4,9 @@ import com.finalshell.ui.dialog.DK;
 import java.awt.Component;
 
 public class Xf2 implements PT {
-   final DK y;
+   public final DK y;
 
-   Xf2(DK var1) {
+   public Xf2(DK var1) {
       this.y = var1;
    }
 

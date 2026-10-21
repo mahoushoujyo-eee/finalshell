@@ -162,7 +162,7 @@ public class LQ_2 implements A0_2 {
       // 7f: ireturn
    }
 
-   static N5 w(LQ_2 var0) {
+   public static N5 w(LQ_2 var0) {
       return var0.J;
    }
 

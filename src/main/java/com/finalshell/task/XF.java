@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 
 public class XF implements Runnable {
-   final F0 X;
+   public final F0 X;
    public static long a;
 
-   XF(F0 var1) {
+   public XF(F0 var1) {
       this.X = var1;
    }
 

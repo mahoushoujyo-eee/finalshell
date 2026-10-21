@@ -15,14 +15,14 @@ import java.util.Collection;
 import java.util.List;
 
 public class Co2 extends CI {
-   protected boolean n = C_E.d;
-   protected int g = C_E.M;
-   protected int d = C_E.P;
-   protected G6 j = C_E.z;
-   protected FileFilter W = C_E.Z;
-   protected OQ3 z;
-   protected java.io.File G = null;
-   protected SZ h = null;
+   public boolean n = C_E.d;
+   public int g = C_E.M;
+   public int d = C_E.P;
+   public G6 j = C_E.z;
+   public FileFilter W = C_E.Z;
+   public OQ3 z;
+   public java.io.File G = null;
+   public SZ h = null;
    public static String m;
 
    public Co2() {
@@ -50,7 +50,7 @@ public class Co2 extends CI {
       this.Y$void();
    }
 
-   protected void Y$void() {
+   public void Y$void() {
       this.setLayoutOrientation(2);
       this.setVisibleRowCount(0);
       this.setCellRenderer(new OQ(this));
@@ -93,7 +93,7 @@ public class Co2 extends CI {
    }
 
    @Override
-   protected K3_2 O() {
+   public K3_2 O() {
       return new W22();
    }
 
@@ -155,7 +155,7 @@ public class Co2 extends CI {
       this.repaint();
    }
 
-   protected void Z(OQ3 var1) {
+   public void Z(OQ3 var1) {
       String var2 = U$String();
       if (var1 != null) {
          for (Wo4 var4 : this.Y$eP_3().p()) {

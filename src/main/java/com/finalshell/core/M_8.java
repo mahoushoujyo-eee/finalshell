@@ -798,7 +798,7 @@ public class M_8 {
       // 91: areturn
    }
 
-   static K_6 Q(M_8 var0) {
+   public static K_6 Q(M_8 var0) {
       return var0.P;
    }
 

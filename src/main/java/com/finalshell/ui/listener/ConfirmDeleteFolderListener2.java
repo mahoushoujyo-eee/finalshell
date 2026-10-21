@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteFolderListener2 implements ActionListener {
-   final FilePermissionPanel J;
+   public final FilePermissionPanel J;
    public static String[] a;
    public static String[] b;
 
-   ConfirmDeleteFolderListener2(FilePermissionPanel var1) {
+   public ConfirmDeleteFolderListener2(FilePermissionPanel var1) {
       this.J = var1;
    }
 

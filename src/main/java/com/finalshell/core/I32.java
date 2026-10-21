@@ -11,11 +11,11 @@ public class I32 {
    public static long[] c;
    public static Integer[] d;
 
-   I32(Db2 var1) {
+   public I32(Db2 var1) {
       this.r = var1;
    }
 
-   synchronized Vector d() {
+   public synchronized Vector d() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -147,7 +147,7 @@ public class I32 {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   synchronized byte[] H(byte[] var1, byte[] var2, String var3) {
+   public synchronized byte[] H(byte[] var1, byte[] var2, String var3) {
       char[] var15;
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;
       byte var5 = 0;
@@ -254,7 +254,7 @@ public class I32 {
       return this.H.S();
    }
 
-   synchronized boolean R(byte[] param1) {
+   public synchronized boolean R(byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -332,7 +332,7 @@ public class I32 {
       // 91: ireturn
    }
 
-   synchronized void k() {
+   public synchronized void k() {
       byte var1 = 5;
       this.H.m();
       this.H.X(var1);
@@ -347,7 +347,7 @@ public class I32 {
       }
    }
 
-   synchronized boolean Z(byte[] param1) {
+   public synchronized boolean Z(byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -423,7 +423,7 @@ public class I32 {
       // 89: ireturn
    }
 
-   synchronized boolean w() {
+   public synchronized boolean w() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -487,7 +487,7 @@ public class I32 {
       // 6e: ireturn
    }
 
-   synchronized Db2 p() {
+   public synchronized Db2 p() {
       return this.r;
    }
 

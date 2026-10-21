@@ -5,11 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CM3 implements ActionListener {
-   final QZ B;
+   public final QZ B;
    public static long[] a;
    public static Integer[] b;
 
-   CM3(QZ var1) {
+   public CM3(QZ var1) {
       this.B = var1;
    }
 

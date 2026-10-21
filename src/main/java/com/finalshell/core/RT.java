@@ -5,7 +5,7 @@ public final class RT extends Fr2_2 implements Fs2_3 {
    @C_9
    public final String[][] S;
 
-   protected RT(com.finalshell.ui.model.I var1, String[] var2, @C_9 String[][] var3) {
+   public RT(com.finalshell.ui.model.I var1, String[] var2, @C_9 String[][] var3) {
       super(var1);
       this.Z = var2;
       this.S = var3;

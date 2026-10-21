@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class D_2_4 implements A_4 {
-   final java.lang.Class L;
+   public final java.lang.Class L;
 
-   D_2_4(java.lang.Class var1) {
+   public D_2_4(java.lang.Class var1) {
       this.L = var1;
    }
 

@@ -7,13 +7,13 @@ import com.finalshell.ui.model.Tf4;
 import java.lang.reflect.InvocationTargetException;
 
 public class FG implements Runnable {
-   final String X;
-   final String T;
-   final String K;
-   final Tf4 x;
-   final MT z;
+   public final String X;
+   public final String T;
+   public final String K;
+   public final Tf4 x;
+   public final MT z;
 
-   FG(MT var1, String var2, String var3, String var4, Tf4 var5) {
+   public FG(MT var1, String var2, String var3, String var4, Tf4 var5) {
       this.z = var1;
       this.X = var2;
       this.T = var3;

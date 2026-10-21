@@ -23,18 +23,18 @@ import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
 
 public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
-   protected boolean v = BC.c;
-   protected LX G = BC.Z;
-   protected int T = BC.l;
-   protected ImageIcon w = BC.q;
-   protected ImageIcon i = BC.d;
-   protected boolean e = BC.W;
-   protected boolean r = BC.p;
-   protected int F = BC.x;
-   protected List H = new ArrayList(1);
-   protected List y = new ArrayList();
-   protected List C = new ArrayList();
-   protected K32 j = null;
+   public boolean v = BC.c;
+   public LX G = BC.Z;
+   public int T = BC.l;
+   public ImageIcon w = BC.q;
+   public ImageIcon i = BC.d;
+   public boolean e = BC.W;
+   public boolean r = BC.p;
+   public int F = BC.x;
+   public List H = new ArrayList(1);
+   public List y = new ArrayList();
+   public List C = new ArrayList();
+   public K32 j = null;
 
    public Ks4() {
       this.h(BC.Z);
@@ -44,7 +44,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       this.h(var1);
    }
 
-   protected void h(LX var1) {
+   public void h(LX var1) {
       this.i(true);
       this.u(false);
       this.setLayout(new T0_2(this));
@@ -60,7 +60,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       this.B$void();
    }
 
-   protected void B$void() {
+   public void B$void() {
       int[] var10000 = K32.L$arrint();
       Iterator var2 = this.y.iterator();
       int[] var1 = var10000;
@@ -101,7 +101,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       this.c();
    }
 
-   protected void c() {
+   public void c() {
       int[] var10000 = K32.L$arrint();
       Iterator var2 = this.y.iterator();
       int[] var1 = var10000;
@@ -143,7 +143,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       this.H(-1, true);
    }
 
-   protected void H(int var1, boolean var2) {
+   public void H(int var1, boolean var2) {
       label105: {
          int var7;
          label108: {
@@ -308,7 +308,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       return this.I(var1, var4);
    }
 
-   protected K32 I(int var1, K32 var2) {
+   public K32 I(int var1, K32 var2) {
       var2.l(this.v);
       int[] var10000 = K32.L$arrint();
       var2.x(this.w);
@@ -336,7 +336,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       this.m((K32)this.y.get(var1));
    }
 
-   protected void m(K32 var1) {
+   public void m(K32 var1) {
       int[] var10000 = K32.L$arrint();
       int var3 = this.y.indexOf(var1);
       int[] var2 = var10000;
@@ -373,7 +373,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       return (K32)this.y.get(var1);
    }
 
-   protected void t() {
+   public void t() {
       int[] var10000 = K32.L$arrint();
       boolean var2 = this.G.equals(LX.united);
       int[] var1 = var10000;
@@ -766,7 +766,7 @@ public class Ks4 extends Ky4 implements SwingConstants, Eh2 {
       this.H.remove(var1);
    }
 
-   protected void l() {
+   public void l() {
       int[] var10000 = K32.L$arrint();
       Iterator var2 = AL_2.J((Collection)this.H).iterator();
       int[] var1 = var10000;

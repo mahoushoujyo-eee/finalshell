@@ -7,7 +7,7 @@ import java.io.IOException;
 public abstract class X2_3 {
    public static String a;
 
-   protected abstract void R(DataOutputStream var1) throws IOException;
+   public abstract void R(DataOutputStream var1) throws IOException;
 
    public abstract boolean x();
 
@@ -56,7 +56,7 @@ public abstract class X2_3 {
       }
    }
 
-   static X2_3 r(DataInputStream var0) throws IOException {
+   public static X2_3 r(DataInputStream var0) throws IOException {
       return i(var0);
    }
 

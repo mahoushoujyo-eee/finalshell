@@ -7,9 +7,9 @@ import java.io.File;
 import javax.swing.AbstractAction;
 
 public class N extends AbstractAction {
-   final T i;
+   public final T i;
 
-   N(T var1) {
+   public N(T var1) {
       this.i = var1;
    }
 

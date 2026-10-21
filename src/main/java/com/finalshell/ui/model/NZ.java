@@ -4,7 +4,7 @@ import com.finalshell.core.QT;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class NZ extends Enum {
+public class NZ {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -45,11 +45,10 @@ public class NZ extends Enum {
    }
 
    public static NZ valueOf(String var0) {
-      return Enum.valueOf(NZ.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public NZ(String var1, int var2) {
-      super(var1, var2);
    }
 
    public void r(QT var1, boolean var2) {
@@ -85,7 +84,7 @@ public class NZ extends Enum {
       return var10000;
    }
 
-   NZ(String var1, int var2, NX var3) {
+   public NZ(String var1, int var2, NX var3) {
       this(var1, var2);
    }
 

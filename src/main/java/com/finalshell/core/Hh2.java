@@ -1,14 +1,11 @@
 package com.finalshell.core;
 
 public class Hh2 {
-   String n = null;
-   int R = -1;
-   String T = null;
-   int j = -1;
-   String z = null;
-
-   Hh2() {
-   }
+   public String n = null;
+   public int R = -1;
+   public String T = null;
+   public int j = -1;
+   public String z = null;
 }
 
 

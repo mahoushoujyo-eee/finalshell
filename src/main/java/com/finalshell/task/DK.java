@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.AM;
 import java.lang.reflect.InvocationTargetException;
 
 public class DK implements Runnable {
-   final AM q;
+   public final AM q;
 
-   DK(AM var1) {
+   public DK(AM var1) {
       this.q = var1;
    }
 

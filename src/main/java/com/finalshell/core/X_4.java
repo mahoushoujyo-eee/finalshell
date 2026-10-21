@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class X_4 implements Fo2_2 {
-   final Cs2_2 r;
+   public final Cs2_2 r;
 
-   X_4(Cs2_2 var1) {
+   public X_4(Cs2_2 var1) {
       this.r = var1;
    }
 

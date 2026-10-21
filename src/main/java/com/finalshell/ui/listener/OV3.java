@@ -7,11 +7,11 @@ import javax.swing.JComboBox;
 import javax.swing.JTable;
 
 public class OV3 implements ItemListener {
-   final JComboBox u;
-   final JTable D;
-   final int[] Y;
+   public final JComboBox u;
+   public final JTable D;
+   public final int[] Y;
 
-   OV3(JComboBox var1, JTable var2, int[] var3) {
+   public OV3(JComboBox var1, JTable var2, int[] var3) {
       this.u = var1;
       this.D = var2;
       this.Y = var3;

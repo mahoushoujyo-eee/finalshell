@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kr2 implements Runnable {
-   final Connection12 s;
+   public final Connection12 s;
 
-   Kr2(Connection12 var1) {
+   public Kr2(Connection12 var1) {
       this.s = var1;
    }
 

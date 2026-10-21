@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Aa2;
 import java.lang.reflect.InvocationTargetException;
 
 public class D32 implements Runnable {
-   final Aa2 Q;
+   public final Aa2 Q;
 
-   D32(Aa2 var1) {
+   public D32(Aa2 var1) {
       this.Q = var1;
    }
 

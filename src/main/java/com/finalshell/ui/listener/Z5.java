@@ -5,10 +5,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Z5 extends MouseAdapter {
-   final KD L;
-   final com.finalshell.ui.panel.N_2 P;
+   public final KD L;
+   public final com.finalshell.ui.panel.N_2 P;
 
-   Z5(com.finalshell.ui.panel.N_2 var1, KD var2) {
+   public Z5(com.finalshell.ui.panel.N_2 var1, KD var2) {
       this.P = var1;
       this.L = var2;
    }

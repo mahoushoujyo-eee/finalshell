@@ -7,11 +7,11 @@ import java.awt.Rectangle;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bu4 implements Runnable {
-   final boolean i;
-   final Connection4 r;
+   public final boolean i;
+   public final Connection4 r;
    public static long a;
 
-   Bu4(Connection4 var1, boolean var2) {
+   public Bu4(Connection4 var1, boolean var2) {
       this.r = var1;
       this.i = var2;
    }

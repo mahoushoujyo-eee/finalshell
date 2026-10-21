@@ -10,13 +10,13 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class Pc implements ActionListener {
-   final JLabel F;
-   final Color U;
-   final com.finalshell.ui.panel.W8 K;
-   final String I;
-   final SelectDownloadFolderPanel z;
+   public final JLabel F;
+   public final Color U;
+   public final com.finalshell.ui.panel.W8 K;
+   public final String I;
+   public final SelectDownloadFolderPanel z;
 
-   Pc(SelectDownloadFolderPanel var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, String var5) {
+   public Pc(SelectDownloadFolderPanel var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, String var5) {
       this.z = var1;
       this.F = var2;
       this.U = var3;

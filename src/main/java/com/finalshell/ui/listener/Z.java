@@ -7,10 +7,10 @@ import java.awt.Container;
 import javax.swing.event.AncestorEvent;
 
 public class Z extends FY {
-   final Ki4 U;
-   final com.finalshell.core.I H;
+   public final Ki4 U;
+   public final com.finalshell.core.I H;
 
-   Z(com.finalshell.core.I var1, Ki4 var2) {
+   public Z(com.finalshell.core.I var1, Ki4 var2) {
       this.H = var1;
       this.U = var2;
    }

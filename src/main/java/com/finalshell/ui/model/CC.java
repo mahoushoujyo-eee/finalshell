@@ -9,15 +9,15 @@ import java.util.Comparator;
 import java.util.Locale;
 
 public class CC implements Comparator {
-   final Comparator j;
-   final O8 f;
-   String i;
-   final String u;
-   final Km2 I;
+   public final Comparator j;
+   public final O8 f;
+   public String i;
+   public final String u;
+   public final Km2 I;
    public static long[] a;
    public static Long[] b;
 
-   CC(Km2 var1, String var2) {
+   public CC(Km2 var1, String var2) {
       this.I = var1;
       this.u = var2;
       this.j = Collator.getInstance(Locale.CHINA);
@@ -66,7 +66,7 @@ public class CC implements Comparator {
             var23 = false;
             var117 = var1.getClass().equals(Tf4.class);
             if (var3 == null) {
-               if (var117 != false) {
+               if (var117 == null) {
                   Tf4 var24 = (Tf4)var1;
                   short var118 = 15601;
                   String var10002 = (String)(Registry.emptyArgs());
@@ -131,7 +131,7 @@ public class CC implements Comparator {
                break label294;
             }
 
-            if (var117 != false) {
+            if (var117 == null) {
                Ck4 var114 = (Ck4)var1;
                String var10001 = (String)(Registry.emptyArgs());
                long var34 = 396085629172753019L;
@@ -216,7 +216,7 @@ public class CC implements Comparator {
       label282: {
          label300: {
             if (var3 == null) {
-               if (var117 != false) {
+               if (var117 == null) {
                   Tf4 var115 = (Tf4)var2;
                   short var119 = 3196;
                   String var133 = (String)(Registry.emptyArgs());
@@ -269,7 +269,7 @@ public class CC implements Comparator {
                break label282;
             }
 
-            if (var117 != false) {
+            if (var117 == null) {
                Ck4 var116 = (Ck4)var2;
                String var122 = (String)(Registry.emptyArgs());
                long var54 = 396085629172753019L;
@@ -341,13 +341,13 @@ public class CC implements Comparator {
 
       label270:
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             var117 = (CC)var23;
             if (var3 != null) {
                break label270;
             }
 
-            if (var23 == false) {
+            if (var23 == null) {
                return -1;
             }
          }
@@ -357,13 +357,13 @@ public class CC implements Comparator {
 
       label263:
       if (var3 == null) {
-         if (var117 == false) {
+         if (var117 == null) {
             var117 = (CC)var23;
             if (var3 != null) {
                break label263;
             }
 
-            if (var23 != false) {
+            if (var23 == null) {
                return 1;
             }
          }
@@ -374,7 +374,7 @@ public class CC implements Comparator {
       }
 
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             Object var67 = 316557178524622543L;
             return ((Comparator)Ref.g(316557178524622543L, var67)).compare(var4, var5);
          }
@@ -385,7 +385,7 @@ public class CC implements Comparator {
       }
 
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             Object var71 = 366794114718761223L;
             Ref.g(366794114718761223L, var71);
             Object[] var148 = Registry.packArgs(Long.valueOf(var6), Long.valueOf(var8));
@@ -408,7 +408,7 @@ public class CC implements Comparator {
       }
 
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             Object var77 = 316557178524622543L;
             return ((Comparator)Ref.g(316557178524622543L, var77)).compare(var20, var21);
          }
@@ -419,7 +419,7 @@ public class CC implements Comparator {
       }
 
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             Object var81 = 366794114718761223L;
             Ref.g(366794114718761223L, var81);
             Object[] var145 = Registry.packArgs(Long.valueOf(var10), Long.valueOf(var12));
@@ -442,7 +442,7 @@ public class CC implements Comparator {
       }
 
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             Object var87 = 366794114718761223L;
             Ref.g(366794114718761223L, var87);
             Object[] var142 = Registry.packArgs(Long.valueOf(var14), Long.valueOf(var16));
@@ -465,7 +465,7 @@ public class CC implements Comparator {
       }
 
       if (var3 == null) {
-         if (var117 != false) {
+         if (var117 == null) {
             return Integer.compare(var18, var18);
          }
 

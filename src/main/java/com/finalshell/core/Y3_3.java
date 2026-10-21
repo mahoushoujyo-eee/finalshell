@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Y3_3 implements FY_2 {
-   final FF_2 Q;
+   public final FF_2 Q;
    public static long a;
 
-   Y3_3(FF_2 var1) {
+   public Y3_3(FF_2 var1) {
       this.Q = var1;
    }
 

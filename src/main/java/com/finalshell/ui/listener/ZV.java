@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class ZV implements ActionListener {
-   final DU F;
+   public final DU F;
 
-   ZV(DU var1) {
+   public ZV(DU var1) {
       this.F = var1;
    }
 

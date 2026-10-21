@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.core.CK;
 
 public class Jw2 implements Runnable {
-   final UX W;
+   public final UX W;
 
-   Jw2(UX var1) {
+   public Jw2(UX var1) {
       this.W = var1;
    }
 

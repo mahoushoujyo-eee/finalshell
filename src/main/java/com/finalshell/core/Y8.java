@@ -14,21 +14,21 @@ public abstract class Y8 extends Yi2 {
       return WF.down;
    }
 
-   protected Object n(PQ var1, int var2, int var3) {
+   public Object n(PQ var1, int var2, int var3) {
       return var1.getValueAt(var2, var3);
    }
 
-   protected boolean H(PQ var1, int var2, int var3) {
+   public boolean H(PQ var1, int var2, int var3) {
       return var1.isCellSelected(var2, var3);
    }
 
    @Override
-   protected boolean M(JComponent var1, int var2, int var3) {
+   public boolean M(JComponent var1, int var2, int var3) {
       return this.H((PQ)var1, var2, var3);
    }
 
    @Override
-   protected Object c(JComponent var1, int var2, int var3) {
+   public Object c(JComponent var1, int var2, int var3) {
       return this.n((PQ)var1, var2, var3);
    }
 

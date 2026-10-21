@@ -9,10 +9,10 @@ import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wg2 implements Runnable {
-   final ConnectionProperty C;
-   final U h;
+   public final ConnectionProperty C;
+   public final U h;
 
-   Wg2(U var1, ConnectionProperty var2) {
+   public Wg2(U var1, ConnectionProperty var2) {
       this.h = var1;
       this.C = var2;
    }

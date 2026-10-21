@@ -4,9 +4,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class Aq2 extends FocusAdapter {
-   final Ic2 S;
+   public final Ic2 S;
 
-   Aq2(Ic2 var1) {
+   public Aq2(Ic2 var1) {
       this.S = var1;
    }
 

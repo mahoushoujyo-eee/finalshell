@@ -18,25 +18,25 @@ public final class YM3 extends Writer {
    public static char[] G;
    public static char[] F;
    public static int o;
-   protected char[] U;
-   protected int c;
-   protected int q;
+   public char[] U;
+   public int c;
+   public int q;
    public final Writer j;
-   protected boolean R;
-   protected boolean e;
-   protected boolean K;
-   protected boolean g;
-   protected boolean A;
-   protected boolean z;
-   protected boolean d;
-   protected boolean Y;
-   protected boolean p;
-   protected boolean D;
-   protected char t;
-   protected int M;
-   protected boolean T;
-   protected long s;
-   static int b;
+   public boolean R;
+   public boolean e;
+   public boolean K;
+   public boolean g;
+   public boolean A;
+   public boolean z;
+   public boolean d;
+   public boolean Y;
+   public boolean p;
+   public boolean D;
+   public char t;
+   public int M;
+   public boolean T;
+   public long s;
+   public static int b;
    public static String[] a;
    public static String[] f;
    public static long[] h;
@@ -341,7 +341,7 @@ public final class YM3 extends Writer {
       // 99: return
    }
 
-   protected void C() {
+   public void C() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11631,7 +11631,7 @@ public final class YM3 extends Writer {
       // 35: return
    }
 
-   protected void E(String param1) {
+   public void E(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -12189,7 +12189,7 @@ public final class YM3 extends Writer {
       // 494: return
    }
 
-   protected void l(char[] param1) {
+   public void l(char[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

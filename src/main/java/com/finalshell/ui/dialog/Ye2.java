@@ -6,7 +6,7 @@ import java.awt.Frame;
 import javax.swing.JDialog;
 
 public class Ye2 extends JDialog {
-   U e;
+   public U e;
    public static String a;
    public static long[] b;
    public static Integer[] c;

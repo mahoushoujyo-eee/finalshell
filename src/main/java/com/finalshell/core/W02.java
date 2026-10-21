@@ -3,24 +3,24 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class W02 {
-   int Y;
-   int C = 1;
-   final RE3 Q = new RE3();
-   Nl4[] T = new Nl4[a(15299, 3931763262190136338L)];
-   int N = (int)(0.75 * (double)this.T.length);
-   final Nl4 g = new Nl4();
-   final Nl4 D = new Nl4();
-   final Nl4 r = new Nl4();
+   public int Y;
+   public int C = 1;
+   public final RE3 Q = new RE3();
+   public Nl4[] T = new Nl4[a(15299, 3931763262190136338L)];
+   public int N = (int)(0.75 * (double)this.T.length);
+   public final Nl4 g = new Nl4();
+   public final Nl4 D = new Nl4();
+   public final Nl4 r = new Nl4();
    public int X;
    public int n;
-   String d;
+   public String d;
    public int G;
    public int J;
    public int[] w;
-   XO s;
-   XO k;
-   F_2 R;
-   F_2 U;
+   public XO s;
+   public XO k;
+   public F_2 R;
+   public F_2 U;
    public static String a;
    public static long[] b;
    public static Integer[] c;
@@ -256,7 +256,7 @@ public class W02 {
       return var8.Q;
    }
 
-   Nl4 N(Object param1) {
+   public Nl4 N(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -429,7 +429,7 @@ public class W02 {
       return var3;
    }
 
-   Nl4 h(String var1, String var2, String var3) {
+   public Nl4 h(String var1, String var2, String var3) {
       int[] var10000 = XB.X();
       this.r.y(a(11772, 5883405572420221487L), var1, var2, var3);
       int[] var4 = var10000;
@@ -455,7 +455,7 @@ public class W02 {
       return var5;
    }
 
-   Nl4 d(String var1, String var2, String var3, boolean var4) {
+   public Nl4 d(String var1, String var2, String var3, boolean var4) {
       int[] var5 = XB.X();
 
       int var10000;

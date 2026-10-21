@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class DB3 implements MouseListener {
-   final Qp2 Q;
+   public final Qp2 Q;
 
-   DB3(Qp2 var1) {
+   public DB3(Qp2 var1) {
       this.Q = var1;
    }
 

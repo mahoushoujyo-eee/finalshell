@@ -1,10 +1,10 @@
 package com.finalshell.task;
 
 public class Kd2 implements Runnable {
-   final com.finalshell.core.Dw4 O;
+   public final com.finalshell.core.Dw4 O;
    public static long a;
 
-   Kd2(com.finalshell.core.Dw4 var1) {
+   public Kd2(com.finalshell.core.Dw4 var1) {
       this.O = var1;
    }
 

@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class G23 implements ActionListener {
-   final SetBackgroundImagePanel Z;
-   final com.finalshell.ui.panel.Y3 w;
+   public final SetBackgroundImagePanel Z;
+   public final com.finalshell.ui.panel.Y3 w;
 
-   G23(com.finalshell.ui.panel.Y3 var1, SetBackgroundImagePanel var2) {
+   public G23(com.finalshell.ui.panel.Y3 var1, SetBackgroundImagePanel var2) {
       this.w = var1;
       this.Z = var2;
    }

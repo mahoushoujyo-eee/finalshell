@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class YC implements PropertyChangeListener {
-   final I12 C;
+   public final I12 C;
 
-   YC(I12 var1) {
+   public YC(I12 var1) {
       this.C = var1;
    }
 

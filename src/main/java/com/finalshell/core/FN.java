@@ -6206,21 +6206,21 @@ public final class FN extends FV_2 {
       R = (R + 1) % a(19445, 5594446782800183061L);
    }
 
-   static Thread B(Thread var0) {
+   public static Thread B(Thread var0) {
       Q = var0;
       return var0;
    }
 
-   static Thread Z() {
+   public static Thread Z() {
       return Q;
    }
 
-   static Thread M(Thread var0) {
+   public static Thread M(Thread var0) {
       P = var0;
       return var0;
    }
 
-   static Thread E$Thread() {
+   public static Thread E$Thread() {
       return P;
    }
 

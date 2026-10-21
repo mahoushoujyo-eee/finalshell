@@ -5,11 +5,11 @@ import java.awt.Shape;
 import javax.swing.AbstractButton;
 
 public class R implements E_2 {
-   final Rectangle v;
-   final AbstractButton m;
-   final G2 N;
+   public final Rectangle v;
+   public final AbstractButton m;
+   public final G2 N;
 
-   R(G2 var1, Rectangle var2, AbstractButton var3) {
+   public R(G2 var1, Rectangle var2, AbstractButton var3) {
       this.N = var1;
       this.v = var2;
       this.m = var3;

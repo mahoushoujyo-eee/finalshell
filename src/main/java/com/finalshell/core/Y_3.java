@@ -19,9 +19,9 @@ public abstract class Y_3 {
       var2.writeTo(var1);
    }
 
-   protected abstract void T(DataOutputStream var1) throws IOException;
+   public abstract void T(DataOutputStream var1) throws IOException;
 
-   static short H(Y_3 var0) {
+   public static short H(Y_3 var0) {
       return var0.b;
    }
 }

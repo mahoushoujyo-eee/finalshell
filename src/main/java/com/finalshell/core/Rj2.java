@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Rj2 implements Fz2_2 {
-   final FF_2 b;
+   public final FF_2 b;
    public static String a;
 
-   Rj2(FF_2 var1) {
+   public Rj2(FF_2 var1) {
       this.b = var1;
    }
 

@@ -22,14 +22,14 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class Refresh extends F8 {
-   T32 E;
-   KV Z;
-   boolean S;
-   ConnectionProperty Q;
-   Ty2 n;
-   String a;
-   NetworkInterfacePanel b;
-   GH_2 k;
+   public T32 E;
+   public KV Z;
+   public boolean S;
+   public ConnectionProperty Q;
+   public Ty2 n;
+   public String a;
+   public NetworkInterfacePanel b;
+   public GH_2 k;
    public static int[] C;
    public static String[] d;
    public static String[] e;
@@ -190,7 +190,7 @@ public class Refresh extends F8 {
       }
    }
 
-   F8 y() {
+   public F8 y() {
       F8 var1 = new F8();
       var1.setOpaque(true);
       var1.setBackground(new Color(b(6724, 1581320518255368516L), b(20046, 4176913884594834762L), b(20046, 4176913884594834762L)));
@@ -289,7 +289,7 @@ public class Refresh extends F8 {
       MatteBorder var2 = BorderFactory.createMatteBorder(0, 0, 0, (int)var1, var10008);
    }
 
-   void e() {
+   public void e() {
       Object var1 = 323602357927532056L;
       Registry.lookupField(461634183601281643L).setBoolean(Ref.g(323602357927532056L, var1), false);
       Object var3 = 323602357927532056L;

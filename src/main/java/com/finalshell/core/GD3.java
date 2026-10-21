@@ -96,7 +96,7 @@ public class GD3 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       String[] var10000 = W5.q();
       float var5 = (float)var1 - this.Z;
       float var6 = (float)var2 - this.I;

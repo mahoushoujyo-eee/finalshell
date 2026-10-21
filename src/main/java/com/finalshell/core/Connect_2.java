@@ -50,37 +50,37 @@ public class Connect_2 implements QT, IY3, Ab2 {
    public YT d2;
    public XE p;
    public boolean o;
-   ConnectionProperty r;
-   String z;
-   String c;
-   String m;
-   int B;
-   StringBuffer i;
-   ArrayList u;
-   String H;
-   String X;
-   boolean t;
-   boolean K;
-   boolean Q;
-   long b;
-   Thread L;
-   int g;
-   int M;
-   long I;
-   boolean J;
-   String h;
-   boolean dD;
-   long R;
-   String n;
-   boolean y;
-   String q;
-   Object T;
-   boolean dH;
-   String E;
+   public ConnectionProperty r;
+   public String z;
+   public String c;
+   public String m;
+   public int B;
+   public StringBuffer i;
+   public ArrayList u;
+   public String H;
+   public String X;
+   public boolean t;
+   public boolean K;
+   public boolean Q;
+   public long b;
+   public Thread L;
+   public int g;
+   public int M;
+   public long I;
+   public boolean J;
+   public String h;
+   public boolean dD;
+   public long R;
+   public String n;
+   public boolean y;
+   public String q;
+   public Object T;
+   public boolean dH;
+   public String E;
    public List l;
-   int C;
-   long s;
-   int v;
+   public int C;
+   public long s;
+   public int v;
    public XQ x;
    public static String[] ab;
    public static String[] bb;
@@ -287,10 +287,10 @@ public class Connect_2 implements QT, IY3, Ab2 {
       // 5a: return
    }
 
-   void G() {
+   public void G() {
    }
 
-   void N(String var1) {
+   public void N(String var1) {
    }
 
    public boolean z(com.finalshell.ui.model.NZ var1) {
@@ -443,7 +443,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
       }
    }
 
-   void l$void(String var1) {
+   public void l$void(String var1) {
       String var2 = "";
       if (!var1.startsWith("/")) {
       }
@@ -1264,7 +1264,7 @@ public class Connect_2 implements QT, IY3, Ab2 {
       // 153: return
    }
 
-   void R$void() {
+   public void R$void() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4566,11 +4566,11 @@ public class Connect_2 implements QT, IY3, Ab2 {
       // 3f: ireturn
    }
 
-   static int W(Connect_2 var0) {
+   public static int W(Connect_2 var0) {
       return var0.V;
    }
 
-   static Im4 y(Connect_2 var0) {
+   public static Im4 y(Connect_2 var0) {
       return var0.O;
    }
 

@@ -10,9 +10,6 @@ import javax.swing.ImageIcon;
 public class JT {
    public static Map U;
 
-   JT() {
-   }
-
    public ImageIcon P(String var1) {
       Object[] var10001 = Registry.packArgs(this.getClass(), var1);
       long var3 = 250722249728895787L;

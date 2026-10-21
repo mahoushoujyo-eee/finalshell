@@ -3,13 +3,13 @@ package com.finalshell.core;
 public abstract class NV_2 extends N_ implements M3_2, T4_3 {
    @C_9
    public X_3_2 e;
-   static Object D;
+   public static Object D;
    @C_9
-   Object F;
-   static boolean K;
+   public Object F;
+   public static boolean K;
    public static int b;
 
-   protected NV_2(com.finalshell.ui.model.I var1) {
+   public NV_2(com.finalshell.ui.model.I var1) {
       super(var1);
       this.F = D;
    }
@@ -66,11 +66,11 @@ public abstract class NV_2 extends N_ implements M3_2, T4_3 {
       return var1.q(this);
    }
 
-   static X_3_2 w(NV_2 var0) {
+   public static X_3_2 w(NV_2 var0) {
       return var0.e;
    }
 
-   static X_3_2 f(NV_2 var0, X_3_2 var1) {
+   public static X_3_2 f(NV_2 var0, X_3_2 var1) {
       return var0.e = var1;
    }
 

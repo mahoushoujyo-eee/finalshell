@@ -4,7 +4,7 @@ public class L_8 {
    public final com.finalshell.ui.model.U b;
    @C_9
    public final Z2_4 w;
-   static boolean C;
+   public static boolean C;
    public static String[] a;
    public static String[] c;
 

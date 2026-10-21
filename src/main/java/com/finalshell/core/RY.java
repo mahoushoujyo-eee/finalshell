@@ -12,8 +12,8 @@ public class RY implements E32, SC, R__2 {
    public static Integer[] b;
 
    public RY() {
+   super();
       String var10000 = UZ.h();
-      super();
       String var1 = var10000;
       short[] var10001 = new short[a(5930, 3472450272902544054L)];
       var10001[0] = (short)a(22676, 409747341844133142L);
@@ -578,7 +578,7 @@ public class RY implements E32, SC, R__2 {
       return var10000;
    }
 
-   static float[] d(int var0) {
+   public static float[] d(int var0) {
       String var10000 = UZ.h();
       float[] var2 = new float[a(24968, 3476063267217738963L)];
       f = new Random((long)var0);

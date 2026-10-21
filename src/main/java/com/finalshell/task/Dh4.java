@@ -7,10 +7,10 @@ import com.finalshell.ui.panel.ConnectionProperty;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dh4 implements Runnable {
-   final ConnectionProperty W;
-   final U c;
+   public final ConnectionProperty W;
+   public final U c;
 
-   Dh4(U var1, ConnectionProperty var2) {
+   public Dh4(U var1, ConnectionProperty var2) {
       this.c = var1;
       this.W = var2;
    }

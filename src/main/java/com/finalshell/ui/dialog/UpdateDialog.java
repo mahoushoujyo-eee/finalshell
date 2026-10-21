@@ -28,19 +28,19 @@ import javax.swing.text.BadLocationException;
 import net.miginfocom.swing.MigLayout;
 
 public class UpdateDialog extends JDialog implements CH {
-   Fl4 g;
-   JTextArea I;
-   boolean C;
-   JButton G;
-   JButton i;
-   JButton F;
-   JTextArea h;
-   JScrollPane O;
-   boolean L;
-   final int a;
-   boolean d;
-   boolean p;
-   long D;
+   public Fl4 g;
+   public JTextArea I;
+   public boolean C;
+   public JButton G;
+   public JButton i;
+   public JButton F;
+   public JTextArea h;
+   public JScrollPane O;
+   public boolean L;
+   public final int a;
+   public boolean d;
+   public boolean p;
+   public long D;
    public static String[] b;
    public static String[] c;
    public static String[] e;
@@ -49,8 +49,8 @@ public class UpdateDialog extends JDialog implements CH {
    public static long k;
 
    public UpdateDialog(JFrame var1, Fl4 var2) {
+   super();
       label63: {
-         super();
          y();
          Registry.lookupField(356414783958618676L).setBoolean(this, false);
          Registry.lookupField(557137373509279378L).setBoolean(this, true);
@@ -247,7 +247,7 @@ public class UpdateDialog extends JDialog implements CH {
       var4.printStackTrace();
    }
 
-   void N(String var1) {
+   public void N(String var1) {
       y();
       Object var4 = 209593506021318868L;
       ((JTextArea)Ref.g(209593506021318868L, var4)).append(var1);
@@ -289,7 +289,7 @@ public class UpdateDialog extends JDialog implements CH {
          }
       }
 
-      if (var10000 == 0) {
+      if (var10000 == null) {
          Object var4 = 354794456661762655L;
          Ref.g(354794456661762655L, var4);
          Object[] var10002 = Registry.emptyArgs();
@@ -340,7 +340,7 @@ public class UpdateDialog extends JDialog implements CH {
       }
 
       if (var2 == null) {
-         if (var9 != false) {
+         if (var9 == null) {
             return;
          }
 
@@ -348,7 +348,7 @@ public class UpdateDialog extends JDialog implements CH {
       }
 
       if (var2 == null) {
-         if (var9 == false) {
+         if (var9 == null) {
             return;
          }
 
@@ -357,7 +357,7 @@ public class UpdateDialog extends JDialog implements CH {
          ((JButton)Ref.g(484654819353749686L, var4)).isEnabled();
       }
 
-      if (var9 != false) {
+      if (var9 == null) {
          Registry.lookupField(388376917454860932L).get(null);
          Object[] var10001 = Registry.packArgs(new YD(this));
          long var7 = 434592463220957006L;
@@ -372,7 +372,7 @@ public class UpdateDialog extends JDialog implements CH {
       }
    }
 
-   void N() {
+   public void N() {
       y();
       String var2 = a(25131, 20027);
       Object var6 = 354794456661762655L;
@@ -420,7 +420,7 @@ public class UpdateDialog extends JDialog implements CH {
 
          label475: {
             if (var1 == null) {
-               if (var10006 != false) {
+               if (var10006 == null) {
                   var2 = a(25137, 10635);
                   if (var1 == null) {
                      break label475;
@@ -442,7 +442,7 @@ public class UpdateDialog extends JDialog implements CH {
             }
 
             if (var1 == null) {
-               if (var10006 == false) {
+               if (var10006 == null) {
                   break label475;
                }
 
@@ -461,7 +461,7 @@ public class UpdateDialog extends JDialog implements CH {
             }
 
             if (var1 == null) {
-               if (var10006 != false) {
+               if (var10006 == null) {
                   if (var3 != null) {
                      new StringBuilder().append(a(25148, -15329));
                      String var171 = (String)(Registry.emptyArgs());
@@ -626,7 +626,7 @@ public class UpdateDialog extends JDialog implements CH {
                }
             }
 
-            if (var10006 != false) {
+            if (var10006 == null) {
                var2 = a(25144, -27266);
                if (var1 == null) {
                   break label475;
@@ -662,7 +662,7 @@ public class UpdateDialog extends JDialog implements CH {
          }
 
          if (var1 == null) {
-            if (var181 != false) {
+            if (var181 == null) {
                Object var58 = 484654819353749686L;
                JButton var183 = (JButton)Ref.g(484654819353749686L, var58);
                Object var60 = 354794456661762655L;
@@ -798,7 +798,7 @@ public class UpdateDialog extends JDialog implements CH {
          }
 
          if (var1 == null) {
-            if (var181 != false) {
+            if (var181 == null) {
                Object var84 = 484654819353749686L;
                JButton var185 = (JButton)Ref.g(484654819353749686L, var84);
                Object var86 = 354794456661762655L;
@@ -933,7 +933,7 @@ public class UpdateDialog extends JDialog implements CH {
             }
          }
 
-         if (var181 != false) {
+         if (var181 == null) {
             Object var110 = 484654819353749686L;
             JButton var187 = (JButton)Ref.g(484654819353749686L, var110);
             Object var112 = 354794456661762655L;

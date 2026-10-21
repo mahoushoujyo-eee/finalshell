@@ -11,9 +11,9 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class Mv2 implements Gq2, Hs2 {
-   Connection12 L;
-   String d;
-   JTextField v;
+   public Connection12 L;
+   public String d;
+   public JTextField v;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -65,7 +65,7 @@ public class Mv2 implements Gq2, Hs2 {
       Object[] var2 = var10001;
       int var4 = JOptionPane.showConfirmDialog(null, var3, var1, 2);
       int var11 = var4;
-      if (var2 != false) {
+      if (var2 == null) {
          if (var4 == 0) {
             Object var7 = 479150787716720832L;
             String var10003 = ((JTextField)Ref.g(479150787716720832L, var7)).getText();

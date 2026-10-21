@@ -21,7 +21,7 @@ public class SI extends S3 {
 
    @NotNull
    @Override
-   protected XF3 L(int var1) {
+   public XF3 L(int var1) {
       return this.L[var1];
    }
 

@@ -7,15 +7,15 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class PacketLoss {
-   int l = a(12904, 1325376257774792025L);
-   String a;
-   InetAddress L;
-   int b;
-   DatagramSocket k;
-   static Random U;
-   int t = 0;
-   int R = 1;
-   HashMap C = new HashMap();
+   public int l = a(12904, 1325376257774792025L);
+   public String a;
+   public InetAddress L;
+   public int b;
+   public DatagramSocket k;
+   public static Random U;
+   public int t = 0;
+   public int R = 1;
+   public HashMap C = new HashMap();
    public static String[] c;
    public static String[] d;
    public static long[] e;

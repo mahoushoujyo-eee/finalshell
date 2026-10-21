@@ -12,9 +12,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class D92 implements MouseListener {
-   final Vn2 c;
+   public final Vn2 c;
 
-   D92(Vn2 var1) {
+   public D92(Vn2 var1) {
       this.c = var1;
    }
 
@@ -46,7 +46,7 @@ public class D92 implements MouseListener {
                   throw var20.getTargetException();
                }
 
-new D92(var10006);
+var5 = new D92(var10006);
                File var6 = var10004;
                Object var16 = 483663784764278403L;
                com.finalshell.ui.frame.U var7 = (com.finalshell.ui.frame.U)SwingUtilities.windowForComponent((Vn2)Ref.g(483663784764278403L, var16));

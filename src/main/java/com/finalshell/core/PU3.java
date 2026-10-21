@@ -12,8 +12,8 @@ public class PU3 {
    public static Integer[] b;
 
    public PU3(Font var1, int var2, float var3) {
+   super();
       T();
-      super();
       this.s = var1;
       this.P = var2;
       this.p = var3;

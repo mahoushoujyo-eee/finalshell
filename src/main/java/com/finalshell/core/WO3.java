@@ -16,13 +16,13 @@ import javax.swing.JList;
 import javax.swing.ListModel;
 
 public abstract class WO3 implements K3_2 {
-   protected int f = -1;
-   protected Object b;
-   protected Component d;
-   protected ComponentAdapter j;
-   protected MouseAdapter Y = null;
-   protected int R;
-   protected KeyAdapter Q;
+   public int f = -1;
+   public Object b;
+   public Component d;
+   public ComponentAdapter j;
+   public MouseAdapter Y = null;
+   public int R;
+   public KeyAdapter Q;
    public static int k;
    public static long a;
 
@@ -38,7 +38,7 @@ public abstract class WO3 implements K3_2 {
       this.W(var1);
    }
 
-   protected void W(JList var1) {
+   public void W(JList var1) {
       int var10000 = f();
       this.Y = new DD(this, var1);
       var1.addMouseListener(this.Y);
@@ -56,7 +56,7 @@ public abstract class WO3 implements K3_2 {
       this.H(var1);
    }
 
-   protected void H(JList var1) {
+   public void H(JList var1) {
       int var2 = f();
       WO3 var10000 = this;
       if (var2 == 0) {
@@ -111,9 +111,9 @@ public abstract class WO3 implements K3_2 {
       return this.d;
    }
 
-   protected abstract Component j(JList var1, int var2, Object var3);
+   public abstract Component j(JList var1, int var2, Object var3);
 
-   protected void b(JList var1, int var2, Object var3) {
+   public void b(JList var1, int var2, Object var3) {
       El4 var5 = new El4(this, var1);
       int var10000 = f();
       this.d.addFocusListener(var5);
@@ -206,23 +206,23 @@ public abstract class WO3 implements K3_2 {
       return var10000;
    }
 
-   protected void d(JList var1) {
+   public void d(JList var1) {
       var1.add(this.d);
       var1.revalidate();
       var1.repaint();
    }
 
-   protected void k(JList var1) {
+   public void k(JList var1) {
       var1.remove(this.d);
       var1.revalidate();
       var1.repaint();
    }
 
-   protected Rectangle O(JList var1, int var2, Object var3, Rectangle var4) {
+   public Rectangle O(JList var1, int var2, Object var3, Rectangle var4) {
       return new Rectangle(0, 0, var4.width, var4.height);
    }
 
-   protected Rectangle n(JList var1, int var2, Object var3) {
+   public Rectangle n(JList var1, int var2, Object var3) {
       int var10000 = f();
       Rectangle var5 = var1.getCellBounds(var2, var2);
       int var4 = var10000;

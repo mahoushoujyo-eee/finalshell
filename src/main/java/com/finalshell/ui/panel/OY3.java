@@ -32,31 +32,33 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
 public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
-   protected Insets k;
-   protected int q;
-   protected int g;
-   protected int p;
-   protected int e;
-   protected int S;
-   protected int X;
-   protected int n;
-   protected Color P;
-   protected Color L;
-   protected boolean M;
-   protected int v;
-   protected int b;
-   protected int s;
-   protected int T;
-   protected boolean f;
-   protected OB3 c;
-   protected final List y;
-   protected int t;
-   protected float O;
-   protected boolean i;
-   protected int Q;
-   protected Shape r;
-   protected LinearGradientPaint l;
-   protected Shape R;
+   private static Color[] var22;
+   private static float[] var20;
+   public Insets k;
+   public int q;
+   public int g;
+   public int p;
+   public int e;
+   public int S;
+   public int X;
+   public int n;
+   public Color P;
+   public Color L;
+   public boolean M;
+   public int v;
+   public int b;
+   public int s;
+   public int T;
+   public boolean f;
+   public OB3 c;
+   public final List y;
+   public int t;
+   public float O;
+   public boolean i;
+   public int Q;
+   public Shape r;
+   public LinearGradientPaint l;
+   public Shape R;
    public static boolean N;
    public static long[] a;
    public static Integer[] d;
@@ -82,8 +84,8 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
    }
 
    public OY3(List var1) {
+   super();
       boolean var10000 = y$boolean();
-      super();
       this.k = Lj2_2.U;
       this.q = Lj2_2.s;
       this.g = Lj2_2.G;
@@ -425,7 +427,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       this.revalidate();
    }
 
-   protected void X$void() {
+   public void X$void() {
       boolean var1 = y$boolean();
       List var10000 = this.y;
       if (var1) {
@@ -444,7 +446,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       }
    }
 
-   protected void t(U_ var1) {
+   public void t(U_ var1) {
       boolean var2 = y$boolean();
       if (var2) {
          if (this.M) {
@@ -514,7 +516,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       this.j();
    }
 
-   protected void L() {
+   public void L() {
       boolean var1 = Z();
       int var10000 = this.t;
       if (!var1) {
@@ -700,7 +702,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       Object var3 = RV.X(var2);
@@ -715,25 +717,25 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return this.X$Shape();
    }
 
-   protected void g() {
+   public void g() {
       this.r = null;
       this.repaint();
    }
 
-   protected void j() {
+   public void j() {
       this.l = null;
       this.R = null;
       this.repaint();
    }
 
-   protected void P() {
+   public void P() {
       this.r = null;
       this.l = null;
       this.R = null;
       this.repaint();
    }
 
-   protected Shape X$Shape() {
+   public Shape X$Shape() {
       boolean var1 = Z();
       Shape var10000 = this.r;
       if (!var1) {
@@ -747,7 +749,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return var10000;
    }
 
-   protected Shape S$Shape() {
+   public Shape S$Shape() {
       boolean var10000 = Z();
       Area var2 = new Area(this.C());
       boolean var1 = var10000;
@@ -776,7 +778,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return var4;
    }
 
-   protected Shape H$Shape(int var1) {
+   public Shape H$Shape(int var1) {
       Point var2 = this.S$Point(var1);
       return (Shape)(this.p * 2 >= this.g
          ? new Double((double)(var2.x - this.g / 2), (double)(var2.y - this.g / 2), (double)this.g, (double)this.g)
@@ -785,7 +787,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
          ));
    }
 
-   protected LinearGradientPaint u() {
+   public LinearGradientPaint u() {
       boolean var1 = y$boolean();
       LinearGradientPaint var10000 = this.l;
       if (var1) {
@@ -799,7 +801,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return var10000;
    }
 
-   protected LinearGradientPaint y$LinearGradientPaint() {
+   public LinearGradientPaint y$LinearGradientPaint() {
       int var10000 = y$boolean();
       Point var2 = this.T$Point();
       boolean var1 = (boolean)var10000;
@@ -899,7 +901,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       );
    }
 
-   protected Shape I() {
+   public Shape I() {
       boolean var1 = y$boolean();
       Shape var10000 = this.R;
       if (var1) {
@@ -913,7 +915,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return var10000;
    }
 
-   protected Shape K() {
+   public Shape K() {
       boolean var10000 = Z();
       Area var2 = new Area(this.e());
       boolean var1 = var10000;
@@ -940,7 +942,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return var4;
    }
 
-   protected Shape p$Shape(int var1) {
+   public Shape p$Shape(int var1) {
       Point var2 = this.S$Point(var1);
       return (Shape)(this.S * 2 >= this.e
          ? new Double((double)(var2.x - this.e / 2), (double)(var2.y - this.e / 2), (double)this.e, (double)this.e)
@@ -949,7 +951,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
          ));
    }
 
-   protected Shape C() {
+   public Shape C() {
       int var10000 = y$boolean();
       Point var2 = this.T$Point();
       boolean var1 = (boolean)var10000;
@@ -974,7 +976,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       );
    }
 
-   protected Shape e() {
+   public Shape e() {
       int var10000 = Z();
       Point var2 = this.T$Point();
       boolean var1 = (boolean)var10000;
@@ -999,15 +1001,15 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       );
    }
 
-   protected Point T$Point() {
+   public Point T$Point() {
       return this.S$Point(0);
    }
 
-   protected Point J() {
+   public Point J() {
       return this.S$Point(this.y.size() - 1);
    }
 
-   protected Point S$Point(int var1) {
+   public Point S$Point(int var1) {
       Dimension var3 = this.U().L();
       int var10000 = Z();
       byte var4 = this.getComponentOrientation().isLeftToRight();
@@ -1120,7 +1122,7 @@ public class OY3 extends JComponent implements SwingConstants, W2_3, Sa2 {
       return new Point(var12, var7);
    }
 
-   protected int O$int() {
+   public int O$int() {
       boolean var1 = Z();
       int var10000 = this.v;
       if (!var1) {

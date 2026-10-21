@@ -17,12 +17,12 @@ import javax.swing.SwingUtilities;
 import javax.swing.text.View;
 
 public class V2 extends Lz2_2 implements LJ3 {
-   protected boolean P = O__2.U;
-   protected Color B = O__2.v;
-   protected Float L = O__2.l;
-   protected Og4 e = O__2.j;
-   protected Rectangle M = new Rectangle();
-   protected Rectangle f = new Rectangle();
+   public boolean P = O__2.U;
+   public Color B = O__2.v;
+   public Float L = O__2.l;
+   public Og4 e = O__2.j;
+   public Rectangle M = new Rectangle();
+   public Rectangle f = new Rectangle();
    public static String a;
    public static long g;
 
@@ -202,7 +202,7 @@ public class V2 extends Lz2_2 implements LJ3 {
       }
    }
 
-   protected String i(JLabel var1, FontMetrics var2, int var3, int var4) {
+   public String i(JLabel var1, FontMetrics var2, int var3, int var4) {
       Insets var6;
       String var7;
       Icon var11;
@@ -235,7 +235,7 @@ public class V2 extends Lz2_2 implements LJ3 {
       return this.d(var1, var2, var7, var8, var9, this.M, this.f);
    }
 
-   protected String d(JLabel var1, FontMetrics var2, String var3, Icon var4, Rectangle var5, Rectangle var6, Rectangle var7) {
+   public String d(JLabel var1, FontMetrics var2, String var3, Icon var4, Rectangle var5, Rectangle var6, Rectangle var7) {
       return SwingUtilities.layoutCompoundLabel(
          var1,
          var2,
@@ -252,7 +252,7 @@ public class V2 extends Lz2_2 implements LJ3 {
       );
    }
 
-   protected void u(JLabel var1, Graphics2D var2, String var3, int var4, int var5) {
+   public void u(JLabel var1, Graphics2D var2, String var3, int var4, int var5) {
       int[] var6 = W_2.B$arrint();
       int var10000 = (this.P) ? 1 : 0;
       if (var6 == null) {
@@ -272,7 +272,7 @@ public class V2 extends Lz2_2 implements LJ3 {
       FN.W(var2, var3, var7, var4, var5);
    }
 
-   protected void O(JLabel var1, Graphics2D var2, String var3, int var4, int var5) {
+   public void O(JLabel var1, Graphics2D var2, String var3, int var4, int var5) {
       int var10000;
       int[] var6 = W_2.B$arrint();
       var10000 = (var1.isEnabled()) ? 1 : 0;
@@ -304,7 +304,7 @@ public class V2 extends Lz2_2 implements LJ3 {
       FN.W(var2, var3, var7, var4, var5);
    }
 
-   protected void V(Graphics2D var1, String var2, int var3, int var4) {
+   public void V(Graphics2D var1, String var2, int var3, int var4) {
       var1.translate(var3, var4);
       GA.v(var1, var2, this.B);
       var1.translate(-var3, -var4);

@@ -8,14 +8,14 @@ import java.awt.geom.Rectangle2D.Double;
 import javax.swing.JComponent;
 
 public class W2 extends JComponent {
-   final L H;
+   public final L H;
 
-   W2(L var1) {
+   public W2(L var1) {
       this.H = var1;
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       Shape var3 = var2.getClip();

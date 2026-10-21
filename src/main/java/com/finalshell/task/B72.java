@@ -9,11 +9,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class B72 implements Runnable {
-   final U T;
-   final M6 F;
+   public final U T;
+   public final M6 F;
    public static long a;
 
-   B72(M6 var1, U var2) {
+   public B72(M6 var1, U var2) {
       this.F = var1;
       this.T = var2;
    }

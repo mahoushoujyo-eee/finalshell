@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 public class Np2 extends AbstractAction {
-   final Yz2 O;
+   public final Yz2 O;
 
-   Np2(Yz2 var1) {
+   public Np2(Yz2 var1) {
       this.O = var1;
    }
 

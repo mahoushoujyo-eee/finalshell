@@ -6,15 +6,15 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 
 public class PasswordError2 implements Runnable {
-   final BufferedWriter A;
-   final String q;
-   final BufferedReader C;
-   final Process G;
-   final CH w;
+   public final BufferedWriter A;
+   public final String q;
+   public final BufferedReader C;
+   public final Process G;
+   public final CH w;
    public static String[] a;
    public static String[] b;
 
-   PasswordError2(BufferedWriter var1, String var2, BufferedReader var3, Process var4, CH var5) {
+   public PasswordError2(BufferedWriter var1, String var2, BufferedReader var3, Process var4, CH var5) {
       this.A = var1;
       this.q = var2;
       this.C = var3;

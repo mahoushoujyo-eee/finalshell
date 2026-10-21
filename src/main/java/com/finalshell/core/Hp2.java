@@ -39,7 +39,7 @@ public class Hp2 {
       return var6;
    }
 
-   protected static PU3 D(Font var0, int var1, int var2) {
+   public static PU3 D(Font var0, int var1, int var2) {
       return new PU3(var0, var1, (float)var2);
    }
 

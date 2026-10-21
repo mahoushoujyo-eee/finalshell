@@ -6,15 +6,15 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 
 public class L9 {
-   String J;
-   String i;
-   boolean a;
-   boolean N;
-   boolean s;
-   int L;
-   Zh2_2 z;
-   KV c;
-   HashSet v;
+   public String J;
+   public String i;
+   public boolean a;
+   public boolean N;
+   public boolean s;
+   public int L;
+   public Zh2_2 z;
+   public KV c;
+   public HashSet v;
    public static int[] k;
 
    public L9() {

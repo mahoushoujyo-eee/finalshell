@@ -1,18 +1,18 @@
 package com.finalshell.core;
 
 public class Cr4 {
-   long c;
-   int T;
+   public long c;
+   public int T;
    public static int Z;
    public static int i;
-   int Y;
-   String G;
+   public int Y;
+   public String G;
 
    static {
       __vfClinit__();
    }
 
-   Cr4(long var1, int var3, int var4) {
+   public Cr4(long var1, int var3, int var4) {
       this(null, var1, var3, var4);
    }
 

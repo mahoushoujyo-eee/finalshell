@@ -7,12 +7,12 @@ import java.awt.Point;
 import java.awt.event.MouseEvent;
 
 public class PJ implements Runnable {
-   final MouseEvent Q;
-   final Ot2 U;
+   public final MouseEvent Q;
+   public final Ot2 U;
    public static String[] a;
    public static String[] b;
 
-   PJ(Ot2 var1, MouseEvent var2) {
+   public PJ(Ot2 var1, MouseEvent var2) {
       this.U = var1;
       this.Q = var2;
    }

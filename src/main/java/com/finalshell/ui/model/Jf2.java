@@ -75,11 +75,11 @@ public final class Jf2 implements Serializable {
       return a(28584, 3462549945706121450L) * var1 + this.B;
    }
 
-   static int s(Jf2 var0) {
+   public static int s(Jf2 var0) {
       return var0.N;
    }
 
-   static int v(Jf2 var0) {
+   public static int v(Jf2 var0) {
       return var0.B;
    }
 

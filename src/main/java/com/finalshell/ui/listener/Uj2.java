@@ -8,10 +8,10 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class Uj2 implements ActionListener {
-   final User S;
+   public final User S;
    public static String a;
 
-   Uj2(User var1) {
+   public Uj2(User var1) {
       this.S = var1;
    }
 

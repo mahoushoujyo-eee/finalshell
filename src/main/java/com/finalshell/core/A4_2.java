@@ -86,7 +86,7 @@ public class A4_2 extends FileChooserUI {
       this.X.Z(var1);
    }
 
-   protected void Z(PropertyChangeEvent var1) {
+   public void Z(PropertyChangeEvent var1) {
       String var10000 = com.finalshell.ui.panel.T.v$String();
       String var3 = var1.getPropertyName();
       String var2 = var10000;
@@ -413,15 +413,15 @@ public class A4_2 extends FileChooserUI {
       return var10000 == 0 ? com.finalshell.ui.model.P.open : com.finalshell.ui.model.P.custom;
    }
 
-   static boolean y(A4_2 var0, boolean var1) {
+   public static boolean y(A4_2 var0, boolean var1) {
       return var0.k = var1;
    }
 
-   static com.finalshell.ui.panel.T s(A4_2 var0) {
+   public static com.finalshell.ui.panel.T s(A4_2 var0) {
       return var0.X;
    }
 
-   static JFileChooser n(A4_2 var0) {
+   public static JFileChooser n(A4_2 var0) {
       return var0.p;
    }
 

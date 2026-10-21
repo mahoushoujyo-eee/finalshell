@@ -5,18 +5,18 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class AT {
-   Qm2 X;
-   int O = 0;
-   ArrayList m;
-   HashSet q;
+   public Qm2 X;
+   public int O = 0;
+   public ArrayList m;
+   public HashSet q;
 
-   AT(Qm2 var1) {
+   public AT(Qm2 var1) {
       this.X = var1;
       this.m = new ArrayList();
       this.q = new HashSet();
    }
 
-   synchronized void C(int var1) {
+   public synchronized void C(int var1) {
       Ky4[] var2 = Qm2.J();
       if (var2 != null && !this.q.contains(var1)) {
          this.m.add(var1);
@@ -25,7 +25,7 @@ public class AT {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   synchronized void t() {
+   public synchronized void t() {
       int var2 = 0;
       int var3 = Cs2.x;
       Ky4[] var10000 = Qm2.J();
@@ -87,7 +87,7 @@ public class AT {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   ArrayList P(int var1, int var2, ArrayList var3) {
+   public ArrayList P(int var1, int var2, ArrayList var3) {
       Ky4[] var10000 = Qm2.J();
       ArrayList var5 = new ArrayList();
       Ky4[] var4 = var10000;

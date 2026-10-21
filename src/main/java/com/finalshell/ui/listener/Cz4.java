@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Cz4 implements MouseListener {
-   final com.finalshell.ui.panel.N22 U;
+   public final com.finalshell.ui.panel.N22 U;
 
-   Cz4(com.finalshell.ui.panel.N22 var1) {
+   public Cz4(com.finalshell.ui.panel.N22 var1) {
       this.U = var1;
    }
 

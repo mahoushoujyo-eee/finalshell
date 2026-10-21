@@ -78,7 +78,7 @@ public abstract class C_L {
       return this.f;
    }
 
-   protected final void L() {
+   public final void L() {
       String[] var1 = RG_2.C();
 
       try {
@@ -637,9 +637,9 @@ public abstract class C_L {
    }
 
    @C_9
-   protected abstract Hd2 x(String var1) throws ClassNotFoundException;
+   public abstract Hd2 x(String var1) throws ClassNotFoundException;
 
-   protected final void l(Hd2 var1) {
+   public final void l(Hd2 var1) {
       String var2 = var1.z$String();
       y.log(Level.FINE, a(5474, 9005), var2);
       Hd2 var3 = this.Q.put(var2, var1);
@@ -780,7 +780,7 @@ public abstract class C_L {
          var10002 = var1;
       }
 
-new HashMap(var10002);
+var11 = new HashMap(var10002);
       G_5 var4 = var10;
       A_5 var5 = new A_5(var2);
       C_V var6 = new C_V(var3, null);

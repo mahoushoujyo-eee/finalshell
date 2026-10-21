@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.core.X3_3;
 
 public class Y72 implements Runnable {
-   final X3_3 p;
+   public final X3_3 p;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
    public static long e;
 
-   Y72(X3_3 var1) {
+   public Y72(X3_3 var1) {
       this.p = var1;
    }
 

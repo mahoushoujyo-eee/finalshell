@@ -7,12 +7,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.Callable;
 
 public class Yv2 implements Callable {
-   final String F;
-   final String L;
-   final Ty2 M;
+   public final String F;
+   public final String L;
+   public final Ty2 M;
    public static String a;
 
-   Yv2(Ty2 var1, String var2, String var3) {
+   public Yv2(Ty2 var1, String var2, String var3) {
       this.M = var1;
       this.F = var2;
       this.L = var3;

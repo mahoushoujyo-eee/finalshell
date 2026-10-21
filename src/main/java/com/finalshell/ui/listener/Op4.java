@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Op4 implements ActionListener {
-   final EditTunnelDialog k;
+   public final EditTunnelDialog k;
 
-   Op4(EditTunnelDialog var1) {
+   public Op4(EditTunnelDialog var1) {
       this.k = var1;
    }
 

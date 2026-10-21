@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Of4 implements ActionListener {
-   final DK M;
+   public final DK M;
 
-   Of4(DK var1) {
+   public Of4(DK var1) {
       this.M = var1;
    }
 

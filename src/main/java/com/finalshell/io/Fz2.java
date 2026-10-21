@@ -29,8 +29,8 @@ public class Fz2 extends Reader {
    public ByteBuffer L;
    public InputStream w;
    public ReadableByteChannel s;
-   boolean i;
-   ArrayList E;
+   public boolean i;
+   public ArrayList E;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -713,11 +713,11 @@ public class Fz2 extends Reader {
       }
    }
 
-   Fz2(InputStream var1, Object var2, Charset var3) {
+   public Fz2(InputStream var1, Object var2, Charset var3) {
       this(var1, var2, var3.newDecoder().onMalformedInput(CodingErrorAction.REPLACE).onUnmappableCharacter(CodingErrorAction.REPLACE));
    }
 
-   Fz2(InputStream param1, Object param2, CharsetDecoder param3) {
+   public Fz2(InputStream param1, Object param2, CharsetDecoder param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -833,7 +833,7 @@ public class Fz2 extends Reader {
       // e6: return
    }
 
-   Fz2(ReadableByteChannel param1, CharsetDecoder param2, int param3) {
+   public Fz2(ReadableByteChannel param1, CharsetDecoder param2, int param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1295,7 +1295,7 @@ public class Fz2 extends Reader {
       // 2d9: ireturn
    }
 
-   int J(char[] param1, int param2, int param3) throws IOException {
+   public int J(char[] param1, int param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2064,7 +2064,7 @@ public class Fz2 extends Reader {
       // 6b0: ireturn
    }
 
-   String D() {
+   public String D() {
       Object var1 = 553018690272945810L;
       return ((Charset)Ref.g(553018690272945810L, var1)).name();
    }
@@ -2132,7 +2132,7 @@ public class Fz2 extends Reader {
       // 71: ireturn
    }
 
-   boolean X() {
+   public boolean X() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2186,7 +2186,7 @@ public class Fz2 extends Reader {
       // 60: ireturn
    }
 
-   void c() throws IOException {
+   public void c() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -13,9 +13,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Dt4 implements ActionListener {
-   final RouteTracePanel2 U;
+   public final RouteTracePanel2 U;
 
-   Dt4(RouteTracePanel2 var1) {
+   public Dt4(RouteTracePanel2 var1) {
       this.U = var1;
    }
 

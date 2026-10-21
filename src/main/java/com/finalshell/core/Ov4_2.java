@@ -33,7 +33,7 @@ public class Ov4_2 {
       if (var1 == 0) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 != 0 ? 0 : 1);
+         return (boolean)((var2 != 0 ? 0 : 1) != 0);
       }
    }
 
@@ -52,7 +52,7 @@ public class Ov4_2 {
       if (var1 == 0) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 != 0 ? 0 : 1);
+         return (boolean)((var2 != 0 ? 0 : 1) != 0);
       }
    }
 

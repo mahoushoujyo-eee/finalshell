@@ -23,7 +23,7 @@ public class T2_5 extends J_5 {
       return var2 == null ? null : new H2_4(this, var1, var2);
    }
 
-   static ZipFile S(T2_5 var0) {
+   public static ZipFile S(T2_5 var0) {
       return var0.g;
    }
 

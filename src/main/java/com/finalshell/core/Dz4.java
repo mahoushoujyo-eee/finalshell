@@ -10,8 +10,8 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.plaf.UIResource;
 
 public class Dz4 implements Transferable, UIResource {
-   protected String y;
-   protected String Y;
+   public String y;
+   public String Y;
    public static DataFlavor[] p;
    public static DataFlavor[] B;
    public static DataFlavor[] d;
@@ -496,7 +496,7 @@ public class Dz4 implements Transferable, UIResource {
       // 296: athrow
    }
 
-   protected boolean N(DataFlavor var1) {
+   public boolean N(DataFlavor var1) {
       com.finalshell.ui.panel.AA.z();
       Object[] var10002 = Registry.emptyArgs();
       long var7 = 391034260468315379L;
@@ -559,15 +559,15 @@ public class Dz4 implements Transferable, UIResource {
       return var10;
    }
 
-   protected DataFlavor[] M() {
+   public DataFlavor[] M() {
       return null;
    }
 
-   protected Object T$Object(DataFlavor var1) throws UnsupportedFlavorException {
+   public Object T$Object(DataFlavor var1) throws UnsupportedFlavorException {
       return null;
    }
 
-   protected boolean T$boolean(DataFlavor var1) {
+   public boolean T$boolean(DataFlavor var1) {
       DataFlavor[] var3 = (DataFlavor[])Registry.lookupField(371162706378214403L).get(null);
       String var10000 = com.finalshell.ui.panel.AA.z();
       int var4 = 0;
@@ -601,17 +601,17 @@ public class Dz4 implements Transferable, UIResource {
       return var5;
    }
 
-   protected boolean F() {
+   public boolean F() {
       Object var1 = 267752808280314255L;
       return (String)Ref.g(267752808280314255L, var1) != null;
    }
 
-   protected String y() {
+   public String y() {
       Object var1 = 267752808280314255L;
       return (String)Ref.g(267752808280314255L, var1);
    }
 
-   protected boolean i(DataFlavor var1) {
+   public boolean i(DataFlavor var1) {
       DataFlavor[] var3 = (DataFlavor[])Registry.lookupField(507666187908136268L).get(null);
       String var10000 = com.finalshell.ui.panel.AA.z();
       int var4 = 0;
@@ -645,17 +645,17 @@ public class Dz4 implements Transferable, UIResource {
       return var5;
    }
 
-   protected boolean P() {
+   public boolean P() {
       Object var1 = 259584263947102711L;
       return (String)Ref.g(259584263947102711L, var1) != null;
    }
 
-   protected String Z() {
+   public String Z() {
       Object var1 = 259584263947102711L;
       return (String)Ref.g(259584263947102711L, var1);
    }
 
-   protected boolean t(DataFlavor var1) {
+   public boolean t(DataFlavor var1) {
       String var10000 = com.finalshell.ui.panel.AA.z();
       DataFlavor[] var3 = (DataFlavor[])Registry.lookupField(551288916370793759L).get(null);
       int var4 = 0;

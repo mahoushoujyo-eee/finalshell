@@ -10,7 +10,7 @@ import java.awt.event.ItemEvent;
 import javax.swing.JToggleButton.ToggleButtonModel;
 
 public class S extends ToggleButtonModel {
-   protected boolean p = IN.G;
+   public boolean p = IN.G;
    public static long[] a;
    public static Integer[] b;
 
@@ -177,7 +177,7 @@ public class S extends ToggleButtonModel {
       this.fireActionPerformed(new ActionEvent(this, a(5724, 489063734572372561L), this.getActionCommand(), var5, var3));
    }
 
-   protected void d() {
+   public void d() {
       this.f(this.Y(this.y()));
    }
 
@@ -252,7 +252,7 @@ public class S extends ToggleButtonModel {
       this.fireItemStateChanged(new ItemEvent(this, a(23821, 7849490957253515524L), this, 3));
    }
 
-   protected Pt2 Y(Pt2 var1) {
+   public Pt2 Y(Pt2 var1) {
       Ky4[] var2 = Pt2.b();
       int var10000 = Yn2.M[var1.ordinal()];
       if (var2 == null) {

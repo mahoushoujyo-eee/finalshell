@@ -14,13 +14,13 @@ import com.finalshell.ui.panel.N22;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yg4 implements Runnable {
-   final int D;
-   final boolean j;
-   final N22 n;
+   public final int D;
+   public final boolean j;
+   public final N22 n;
    public static long[] a;
    public static Integer[] b;
 
-   Yg4(N22 var1, int var2, boolean var3) {
+   public Yg4(N22 var1, int var2, boolean var3) {
       this.n = var1;
       this.D = var2;
       this.j = var3;

@@ -10,7 +10,7 @@ public class W4_3 {
    public FU m;
    @C_9
    public FU U;
-   static boolean b;
+   public static boolean b;
    public static String[] a;
    public static String[] c;
 
@@ -145,7 +145,7 @@ public class W4_3 {
       return this.s;
    }
 
-   static String d(W4_3 var0) {
+   public static String d(W4_3 var0) {
       return var0.F;
    }
 

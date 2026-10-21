@@ -3,11 +3,11 @@ package com.finalshell.core;
 import java.util.HashMap;
 
 public class HT implements C_e_2_2 {
-   static boolean m;
-   final H3_2 T;
+   public static boolean m;
+   public final H3_2 T;
    public static String a;
 
-   HT(H3_2 var1) {
+   public HT(H3_2 var1) {
       this.T = var1;
    }
 
@@ -113,7 +113,7 @@ public class HT implements C_e_2_2 {
       return this.v(var1);
    }
 
-   static Object F(HT var0, T4_3 var1) throws B2_5 {
+   public static Object F(HT var0, T4_3 var1) throws B2_5 {
       return var0.z(var1);
    }
 

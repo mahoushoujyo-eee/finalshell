@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class H8 implements C_4_3 {
-   final H3_2 A;
+   public final H3_2 A;
 
-   H8(H3_2 var1) {
+   public H8(H3_2 var1) {
       this.A = var1;
    }
 

@@ -3,28 +3,25 @@ package com.finalshell.core;
 import com.finalshell.crypto.ConnectHost;
 
 public abstract class CG extends Cv2 {
-   int e;
-   int B;
-   int y;
+   public int e;
+   public int B;
+   public int y;
    public int O;
-   Nn4 S;
-   byte[] m;
-   byte[] Y;
-   byte[] l;
-   byte[] s;
+   public Nn4 S;
+   public byte[] m;
+   public byte[] Y;
+   public byte[] l;
+   public byte[] s;
    public UJ w;
    public YU X;
    public byte[] D;
    public byte[] j;
    public byte[] u;
-   protected String U;
+   public String U;
    public static String[] d;
    public static String[] f;
    public static long[] o;
    public static Integer[] p;
-
-   CG() {
-   }
 
    @Override
    public void x(ConnectHost param1, byte[] param2, byte[] param3, byte[] param4, byte[] param5) throws Exception {
@@ -726,7 +723,7 @@ public abstract class CG extends Cv2 {
       return this.O;
    }
 
-   static boolean o(int var0) {
+   public static boolean o(int var0) {
       boolean var1 = Dm4.F$boolean();
       int var10000 = var0;
       if (var1) {

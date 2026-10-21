@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Ce4 implements PropertyChangeListener {
-   final Gi2 O;
+   public final Gi2 O;
 
-   Ce4(Gi2 var1) {
+   public Ce4(Gi2 var1) {
       this.O = var1;
    }
 

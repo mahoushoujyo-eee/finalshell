@@ -2,7 +2,7 @@ package com.finalshell.ui.model;
 
 import com.finalshell.core.Yn4;
 
-public final class Ks2_2 extends Enum {
+public final class Ks2_2 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -43,11 +43,10 @@ public final class Ks2_2 extends Enum {
    }
 
    public static Ks2_2 valueOf(String var0) {
-      return Enum.valueOf(Ks2_2.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public Ks2_2(String var1, int var2) {
-      super(var1, var2);
    }
 
    public final int v() {

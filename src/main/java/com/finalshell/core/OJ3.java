@@ -6,13 +6,13 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class OJ3 {
-   JLabel Y;
-   JTextField N;
-   String F;
-   com.finalshell.ui.dialog.Fw2 R;
-   final EditPanel A;
+   public JLabel Y;
+   public JTextField N;
+   public String F;
+   public com.finalshell.ui.dialog.Fw2 R;
+   public final EditPanel A;
 
-   OJ3(EditPanel var1, com.finalshell.ui.dialog.Fw2 var2, String var3, JLabel var4, JTextField var5) {
+   public OJ3(EditPanel var1, com.finalshell.ui.dialog.Fw2 var2, String var3, JLabel var4, JTextField var5) {
       this.A = var1;
       long var7 = 462106220310149247L;
       Ref.s(462106220310149247L, var3, var7);

@@ -162,8 +162,8 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    public D__2 w = new D__2(this);
    public BoundedRangeModel i = new DefaultBoundedRangeModel(0, a(5921, 385034442389622210L), 0, a(5921, 385034442389622210L));
    public boolean X = true;
-   protected int P;
-   List cT = new CopyOnWriteArrayList();
+   public int P;
+   public List cT = new CopyOnWriteArrayList();
    public String j = a(8956, -13003);
    public CS3_2 R;
    public String cf;
@@ -189,46 +189,46 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    public RU3 e;
    public int F;
    public int cy;
-   Connect_2 s;
-   ZB_2 cv;
-   boolean n;
-   int c6;
-   String cH;
-   ConnectionProperty L;
-   Kx4_2 O;
-   NY cM;
-   K3 d;
-   KeyEvent cr;
-   long E;
-   boolean g;
-   boolean o;
-   Object f;
-   StringBuffer cs;
-   long M;
-   XE K;
-   boolean cj;
-   ConnectHost S;
-   Y3 q;
-   Lt4 m;
-   int cw;
-   long h;
-   boolean cQ;
-   static HashMap J;
-   Pr2 H;
-   boolean k;
-   boolean c8;
-   boolean A;
-   ChangeListener p;
-   Clipboard G;
-   boolean cS;
-   int U;
-   GH_2 b;
-   int I;
-   long C;
+   public Connect_2 s;
+   public ZB_2 cv;
+   public boolean n;
+   public int c6;
+   public String cH;
+   public ConnectionProperty L;
+   public Kx4_2 O;
+   public NY cM;
+   public K3 d;
+   public KeyEvent cr;
+   public long E;
+   public boolean g;
+   public boolean o;
+   public Object f;
+   public StringBuffer cs;
+   public long M;
+   public XE K;
+   public boolean cj;
+   public ConnectHost S;
+   public Y3 q;
+   public Lt4 m;
+   public int cw;
+   public long h;
+   public boolean cQ;
+   public static HashMap J;
+   public Pr2 H;
+   public boolean k;
+   public boolean c8;
+   public boolean A;
+   public ChangeListener p;
+   public Clipboard G;
+   public boolean cS;
+   public int U;
+   public GH_2 b;
+   public int I;
+   public long C;
    public long ce;
-   float y;
-   long cb;
-   boolean ca;
+   public float y;
+   public long cb;
+   public boolean ca;
    public static String[] ab;
    public static String[] bb;
    public static long[] db;
@@ -484,12 +484,12 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       this.J$void();
    }
 
-   void z(int var1, int var2) {
+   public void z(int var1, int var2) {
       JPopupMenu var3 = this.C$JPopupMenu();
       var3.show(this, var1, var2);
    }
 
-   JPopupMenu C$JPopupMenu() {
+   public JPopupMenu C$JPopupMenu() {
       JPopupMenu var1 = new JPopupMenu();
       Object[] var10001 = Registry.packArgs(Registry.lookupField(518223218338208363L).getInt(null), new Oo2(this, a(8954, -25906)));
       long var3 = 458639668206483981L;
@@ -707,11 +707,11 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 63: ireturn
    }
 
-   void e$void() {
+   public void e$void() {
       SwingUtilities.invokeLater(new Lg2_2(this));
    }
 
-   void V$void() {
+   public void V$void() {
       this.u = null;
       this.N$void();
    }
@@ -890,20 +890,20 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 169: return
    }
 
-   void x() {
+   public void x() {
       this.q.setVisible(false);
       this.cj = false;
    }
 
-   void W$void() {
+   public void W$void() {
       this.q.setVisible(true);
    }
 
-   void Q() {
+   public void Q() {
       this.G = Toolkit.getDefaultToolkit().getSystemClipboard();
    }
 
-   String J$String() {
+   public String J$String() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -970,7 +970,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 77: areturn
    }
 
-   protected void r(XE var1, XE var2) {
+   public void r(XE var1, XE var2) {
       int var3 = ConnectionProperty.y();
 
       XE var10000;
@@ -1024,7 +1024,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       }
    }
 
-   protected void C(StringSelection param1) {
+   public void C(StringSelection param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1069,14 +1069,14 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 46: return
    }
 
-   void K() {
+   public void K() {
       KeyEvent var1 = new KeyEvent(
          this, a(22342, 1641791032517774729L), System.currentTimeMillis(), 0, a(3818, 4017640413363442733L), (char)a(3818, 4017640413363442733L)
       );
       this.dispatchEvent(var1);
    }
 
-   protected void r(String param1) {
+   public void r(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1126,7 +1126,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       }
    }
 
-   protected String A$String() throws IOException, UnsupportedFlavorException {
+   public String A$String() throws IOException, UnsupportedFlavorException {
       try {
          return (String)this.G.getData(DataFlavor.stringFlavor);
       } catch (Exception var2) {
@@ -1290,12 +1290,12 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       var2.dispose();
    }
 
-   void k(@NotNull Wq2_2 var1) {
+   public void k(@NotNull Wq2_2 var1) {
       this.W = var1;
    }
 
    @NotNull
-   protected A6_2 U$a6() {
+   public A6_2 U$a6() {
       return new KI();
    }
 
@@ -1312,12 +1312,12 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       super.repaint();
    }
 
-   protected void d$void() {
+   public void d$void() {
       this.L$void();
       this.A$void();
    }
 
-   protected void L$void() {
+   public void L$void() {
       this.c_ = this.s();
       this.cL = this.c_.deriveFont(1);
       this.ck = this.c_.deriveFont(2);
@@ -1385,7 +1385,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 3e: ireturn
    }
 
-   protected void i(@NotNull MouseWheelEvent param1, @NotNull JScrollBar param2) {
+   public void i(@NotNull MouseWheelEvent param1, @NotNull JScrollBar param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1880,7 +1880,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 34: ireturn
    }
 
-   protected boolean W$boolean() {
+   public boolean W$boolean() {
       return QP_2.D();
    }
 
@@ -1912,7 +1912,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    @Nullable
-   protected WZ b$WZ(boolean param1) {
+   public WZ b$WZ(boolean param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2086,7 +2086,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       this.i.setValue(this.i.getValue() + var1);
    }
 
-   protected Font s() {
+   public Font s() {
       return this.t.Z();
    }
 
@@ -2217,11 +2217,11 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       return this.v.y(false);
    }
 
-   protected void l(Graphics2D var1, BufferedImage var2, int var3, int var4, ImageObserver var5) {
+   public void l(Graphics2D var1, BufferedImage var2, int var3, int var4, ImageObserver var5) {
       var1.drawImage(var2, var3, var4, var2.getWidth(), var2.getHeight(), var5);
    }
 
-   protected BufferedImage L(int var1, int var2) {
+   public BufferedImage L(int var1, int var2) {
       return new BufferedImage(var1, var2, 1);
    }
 
@@ -2490,7 +2490,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       return Character.isLetterOrDigit(var0);
    }
 
-   protected void W(Graphics param1) {
+   public void W(Graphics param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3172,7 +3172,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       return LG3.l(this.getBackground());
    }
 
-   protected int p$int() {
+   public int p$int() {
       return 0;
    }
 
@@ -3183,7 +3183,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    @NotNull
-   KeyListener I$KeyListener() {
+   public KeyListener I$KeyListener() {
       return this.c2;
    }
 
@@ -3222,7 +3222,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 37: ireturn
    }
 
-   protected void w(Graphics2D var1, BufferedImage var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
+   public void w(Graphics2D var1, BufferedImage var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
       var1.drawImage(var2, var3, var4, var5, var6, var7, var8, var9, var10, null);
    }
 
@@ -3971,11 +3971,11 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 5ed: return
    }
 
-   static Color F(XF3 var0, int var1) {
+   public static Color F(XF3 var0, int var1) {
       return new Color(var0.U(), var0.K(), var0.E$int(), var1);
    }
 
-   static Color C(Color var0, int var1) {
+   public static Color C(Color var0, int var1) {
       return new Color(var0.getRed(), var0.getGreen(), var0.getBlue(), var1);
    }
 
@@ -4782,7 +4782,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 40: ireturn
    }
 
-   protected Font q(char param1, YP param2) {
+   public Font q(char param1, YP param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5474,7 +5474,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    @NotNull
-   protected Font h(char[] param1, int param2, int param3, @NotNull YP param4) {
+   public Font h(char[] param1, int param2, int param3, @NotNull YP param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5918,7 +5918,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    @NotNull
-   protected JPopupMenu S(@NotNull CS3_2 var1) {
+   public JPopupMenu S(@NotNull CS3_2 var1) {
       JPopupMenu var2 = new JPopupMenu();
       AD_2.m(var2, var1);
       return var2;
@@ -6090,7 +6090,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 75: areturn
    }
 
-   protected boolean C$boolean() {
+   public boolean C$boolean() {
       int var1 = ConnectionProperty.y();
 
       try {
@@ -6126,7 +6126,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       this.X(true);
    }
 
-   protected void X(boolean param1) {
+   public void X(boolean param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7164,7 +7164,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 4b: ireturn
    }
 
-   boolean Z(KeyEvent param1) {
+   public boolean Z(KeyEvent param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7389,7 +7389,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 1db: ireturn
    }
 
-   boolean i(KeyEvent param1) {
+   public boolean i(KeyEvent param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7711,7 +7711,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
    }
 
    @Override
-   protected void processInputMethodEvent(InputMethodEvent param1) {
+   public void processInputMethodEvent(InputMethodEvent param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -8212,7 +8212,7 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       this.s = var1;
    }
 
-   boolean E$boolean() {
+   public boolean E$boolean() {
       return this.ca;
    }
 
@@ -8763,167 +8763,167 @@ public class SetBackgroundImagePanel extends JComponent implements DV3, CS3_2, C
       // 24: return
    }
 
-   static boolean Z(SetBackgroundImagePanel var0, KeyEvent var1) {
+   public static boolean Z(SetBackgroundImagePanel var0, KeyEvent var1) {
       return var0.u(var1);
    }
 
-   static boolean Y(SetBackgroundImagePanel var0, KeyEvent var1) {
+   public static boolean Y(SetBackgroundImagePanel var0, KeyEvent var1) {
       return var0.f(var1);
    }
 
-   static XE x(SetBackgroundImagePanel var0, Point var1) {
+   public static XE x(SetBackgroundImagePanel var0, Point var1) {
       return var0.z(var1);
    }
 
-   static RU3 e(SetBackgroundImagePanel var0) {
+   public static RU3 e(SetBackgroundImagePanel var0) {
       return var0.u;
    }
 
-   static XE A$XE(SetBackgroundImagePanel var0) {
+   public static XE A$XE(SetBackgroundImagePanel var0) {
       return var0.c0;
    }
 
-   static XE f(SetBackgroundImagePanel var0, XE var1) {
+   public static XE f(SetBackgroundImagePanel var0, XE var1) {
       return var0.c0 = var1;
    }
 
-   static RU3 t(SetBackgroundImagePanel var0, RU3 var1) {
+   public static RU3 t(SetBackgroundImagePanel var0, RU3 var1) {
       return var0.u = var1;
    }
 
-   static Rx4 S(SetBackgroundImagePanel var0) {
+   public static Rx4 S(SetBackgroundImagePanel var0) {
       return var0.t;
    }
 
-   static void Z(SetBackgroundImagePanel var0, int var1) {
+   public static void Z(SetBackgroundImagePanel var0, int var1) {
       var0.b(var1);
    }
 
-   static Im4 T(SetBackgroundImagePanel var0) {
+   public static Im4 T(SetBackgroundImagePanel var0) {
       return var0.V;
    }
 
-   static void I(SetBackgroundImagePanel var0) {
+   public static void I(SetBackgroundImagePanel var0) {
       var0.A$void();
    }
 
-   static D__2 D(SetBackgroundImagePanel var0) {
+   public static D__2 D(SetBackgroundImagePanel var0) {
       return var0.w;
    }
 
-   static BoundedRangeModel y(SetBackgroundImagePanel var0) {
+   public static BoundedRangeModel y(SetBackgroundImagePanel var0) {
       return var0.i;
    }
 
-   static String r(SetBackgroundImagePanel var0) {
+   public static String r(SetBackgroundImagePanel var0) {
       return var0.C$String();
    }
 
-   static E0 A$E0(SetBackgroundImagePanel var0) {
+   public static E0 A$E0(SetBackgroundImagePanel var0) {
       return var0.cc;
    }
 
-   static void f(SetBackgroundImagePanel var0, Point var1, boolean var2) {
+   public static void f(SetBackgroundImagePanel var0, Point var1, boolean var2) {
       var0.u(var1, var2);
    }
 
-   static OX3 c(SetBackgroundImagePanel var0) {
+   public static OX3 c(SetBackgroundImagePanel var0) {
       return var0.B;
    }
 
-   static OX3 M(SetBackgroundImagePanel var0, OX3 var1) {
+   public static OX3 M(SetBackgroundImagePanel var0, OX3 var1) {
       return var0.B = var1;
    }
 
-   static boolean D(SetBackgroundImagePanel var0, MouseEvent var1) {
+   public static boolean D(SetBackgroundImagePanel var0, MouseEvent var1) {
       return var0.B(var1);
    }
 
-   static Yw2 C(SetBackgroundImagePanel var0, Point var1) {
+   public static Yw2 C(SetBackgroundImagePanel var0, Point var1) {
       return var0.s(var1);
    }
 
-   static void O(SetBackgroundImagePanel var0) {
+   public static void O(SetBackgroundImagePanel var0) {
       var0.i();
    }
 
-   static boolean C(SetBackgroundImagePanel var0, boolean var1) {
+   public static boolean C(SetBackgroundImagePanel var0, boolean var1) {
       return var0.cz = var1;
    }
 
-   static void Z(SetBackgroundImagePanel var0, Component var1, boolean var2) {
+   public static void Z(SetBackgroundImagePanel var0, Component var1, boolean var2) {
       var0.J(var1, var2);
    }
 
-   static void H(SetBackgroundImagePanel var0, boolean var1) {
+   public static void H(SetBackgroundImagePanel var0, boolean var1) {
       var0.l(var1);
    }
 
-   static AtomicBoolean p(SetBackgroundImagePanel var0) {
+   public static AtomicBoolean p(SetBackgroundImagePanel var0) {
       return var0.Q;
    }
 
-   static void V(SetBackgroundImagePanel var0) {
+   public static void V(SetBackgroundImagePanel var0) {
       var0.h();
    }
 
-   static Logger t$Logger() {
+   public static Logger t$Logger() {
       return cl;
    }
 
-   static boolean H$boolean(SetBackgroundImagePanel var0) {
+   public static boolean H$boolean(SetBackgroundImagePanel var0) {
       return var0.cq;
    }
 
-   static boolean u(SetBackgroundImagePanel var0, boolean var1) {
+   public static boolean u(SetBackgroundImagePanel var0, boolean var1) {
       return var0.cq = var1;
    }
 
-   static Wq2_2 H$Wq_2(SetBackgroundImagePanel var0) {
+   public static Wq2_2 H$Wq_2(SetBackgroundImagePanel var0) {
       return var0.W;
    }
 
-   static int k(SetBackgroundImagePanel var0) {
+   public static int k(SetBackgroundImagePanel var0) {
       return var0.P$int();
    }
 
-   static YP Y(SetBackgroundImagePanel var0, YP var1) {
+   public static YP Y(SetBackgroundImagePanel var0, YP var1) {
       return var0.y(var1);
    }
 
-   static Ov4 Z(SetBackgroundImagePanel var0) {
+   public static Ov4 Z(SetBackgroundImagePanel var0) {
       return var0.cY;
    }
 
-   static Color t(SetBackgroundImagePanel var0, Et2 var1) {
+   public static Color t(SetBackgroundImagePanel var0, Et2 var1) {
       return var0.r(var1);
    }
 
-   static void M(SetBackgroundImagePanel var0, int var1, int var2, com.finalshell.ui.model.J2 var3, YP var4, Graphics2D var5, boolean var6, boolean var7) {
+   public static void M(SetBackgroundImagePanel var0, int var1, int var2, com.finalshell.ui.model.J2 var3, YP var4, Graphics2D var5, boolean var6, boolean var7) {
       var0.R(var1, var2, var3, var4, var5, var6, var7);
    }
 
-   static void G(SetBackgroundImagePanel var0, int var1, int var2, YP var3, com.finalshell.ui.model.J2 var4, Graphics2D var5) {
+   public static void G(SetBackgroundImagePanel var0, int var1, int var2, YP var3, com.finalshell.ui.model.J2 var4, Graphics2D var5) {
       var0.r(var1, var2, var3, var4, var5);
    }
 
-   static WZ o(SetBackgroundImagePanel var0) {
+   public static WZ o(SetBackgroundImagePanel var0) {
       return var0.l;
    }
 
-   static YP a(SetBackgroundImagePanel var0, YP var1) {
+   public static YP a(SetBackgroundImagePanel var0, YP var1) {
       return var0.Z(var1);
    }
 
-   static RU3 Y(SetBackgroundImagePanel var0) {
+   public static RU3 Y(SetBackgroundImagePanel var0) {
       return var0.e;
    }
 
-   static YP l(SetBackgroundImagePanel var0, YP var1) {
+   public static YP l(SetBackgroundImagePanel var0, YP var1) {
       return var0.S(var1);
    }
 
-   static YP S(SetBackgroundImagePanel var0, YP var1) {
+   public static YP S(SetBackgroundImagePanel var0, YP var1) {
       return var0.Y(var1);
    }
 

@@ -12,11 +12,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class HD extends MouseAdapter {
-   final BX L;
+   public final BX L;
    public static String[] a;
    public static String[] b;
 
-   HD(BX var1) {
+   public HD(BX var1) {
       this.L = var1;
    }
 

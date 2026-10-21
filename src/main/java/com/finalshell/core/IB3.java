@@ -358,7 +358,7 @@ public class IB3 implements Db2 {
       // 257: return
    }
 
-   static WinUser.COPYDATASTRUCT u(String var0) {
+   public static WinUser.COPYDATASTRUCT u(String var0) {
       Memory var1 = new Memory((long)(var0.length() + 1));
       var1.setString(0L, var0, a(4698, -15794));
       WinUser.COPYDATASTRUCT var2 = new WinUser.COPYDATASTRUCT();
@@ -369,7 +369,7 @@ public class IB3 implements Db2 {
       return var2;
    }
 
-   long Z(WinDef.HWND var1, WinUser.COPYDATASTRUCT var2) {
+   public long Z(WinDef.HWND var1, WinUser.COPYDATASTRUCT var2) {
       WinDef.LPARAM var3 = new WinDef.LPARAM(Pointer.nativeValue(var2.getPointer()));
       WinDef.LRESULT var4 = this.h.SendMessage(var1, a(31717, 3260472462419095614L), null, var3);
       return var4.longValue();

@@ -4,11 +4,11 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class O2 extends ComponentAdapter {
-   final com.finalshell.ui.panel.V V;
-   final com.finalshell.core.D p;
+   public final com.finalshell.ui.panel.V V;
+   public final com.finalshell.core.D p;
    public static long a;
 
-   O2(com.finalshell.core.D var1, com.finalshell.ui.panel.V var2) {
+   public O2(com.finalshell.core.D var1, com.finalshell.ui.panel.V var2) {
       this.p = var1;
       this.V = var2;
    }

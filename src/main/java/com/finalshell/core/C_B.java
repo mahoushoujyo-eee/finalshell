@@ -3,7 +3,7 @@ package com.finalshell.core;
 import java.security.MessageDigest;
 
 public class C_B implements Y_2 {
-   MessageDigest q;
+   public MessageDigest q;
    public static String[] a;
    public static String[] b;
    public static long c;

@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.connection.DelayedAckSACK;
 
 public class Th2 extends Thread {
-   final DelayedAckSACK m;
+   public final DelayedAckSACK m;
 
-   Th2(DelayedAckSACK var1) {
+   public Th2(DelayedAckSACK var1) {
       this.m = var1;
    }
 

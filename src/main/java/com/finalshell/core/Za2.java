@@ -6,12 +6,12 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 public class Za2 implements On2 {
-   protected C82 F;
-   protected Map R = new HashMap();
-   protected boolean O = false;
-   protected boolean z = false;
-   protected boolean k = false;
-   protected String A = "";
+   public C82 F;
+   public Map R = new HashMap();
+   public boolean O = false;
+   public boolean z = false;
+   public boolean k = false;
+   public String A = "";
 
    public C82 W$c8_2() {
       return this.F;
@@ -109,7 +109,7 @@ public class Za2 implements On2 {
       return var5;
    }
 
-   protected boolean H(CB3 var1, String var2) {
+   public boolean H(CB3 var1, String var2) {
       String[] var3 = CB3.C$arrString();
       byte var10000 = (this.s(var1, var2)) ? 1 : 0;
       if (var3 != null) {
@@ -150,7 +150,7 @@ public class Za2 implements On2 {
       return var5;
    }
 
-   protected boolean s(CB3 var1, String var2) {
+   public boolean s(CB3 var1, String var2) {
       String[] var10000 = CB3.C$arrString();
       Boolean var4 = (Boolean)this.R.get(var1.H());
       String[] var3 = var10000;
@@ -167,7 +167,7 @@ public class Za2 implements On2 {
       return var5;
    }
 
-   protected boolean X(CB3 var1, String var2) {
+   public boolean X(CB3 var1, String var2) {
       String[] var3;
       String var6;
       label38: {
@@ -211,7 +211,7 @@ public class Za2 implements On2 {
       return var7;
    }
 
-   protected boolean D(String var1, String var2, boolean var3) {
+   public boolean D(String var1, String var2, boolean var3) {
       String[] var4 = CB3.C$arrString();
       boolean var10000 = var3;
       if (var4 != null) {

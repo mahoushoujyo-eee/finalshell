@@ -4,10 +4,10 @@ import java.lang.reflect.TypeVariable;
 import java.util.Arrays;
 
 public class C_t_2_2 implements C_J {
-   final TypeVariable G;
-   final HA l;
+   public final TypeVariable G;
+   public final HA l;
 
-   C_t_2_2(HA var1, TypeVariable var2) {
+   public C_t_2_2(HA var1, TypeVariable var2) {
       this.l = var1;
       this.G = var2;
    }

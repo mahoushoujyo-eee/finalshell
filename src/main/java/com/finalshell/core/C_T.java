@@ -1,12 +1,12 @@
 package com.finalshell.core;
 
 public class C_T implements M2_4 {
-   final Cr2_2 u;
-   final Ht2_2 E;
+   public final Cr2_2 u;
+   public final Ht2_2 E;
    public static String[] a;
    public static String[] b;
 
-   C_T(Ht2_2 var1) {
+   public C_T(Ht2_2 var1) {
       this.E = var1;
       this.u = Ht2_2.j(this.E);
    }

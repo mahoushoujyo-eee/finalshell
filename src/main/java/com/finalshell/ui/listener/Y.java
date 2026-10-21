@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Y implements ActionListener {
-   final PasswordDialog Y;
+   public final PasswordDialog Y;
 
-   Y(PasswordDialog var1) {
+   public Y(PasswordDialog var1) {
       this.Y = var1;
    }
 

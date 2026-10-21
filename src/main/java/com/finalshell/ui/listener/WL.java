@@ -8,11 +8,11 @@ import java.beans.PropertyChangeListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class WL implements PropertyChangeListener {
-   final Ux2 m;
+   public final Ux2 m;
    public static long[] a;
    public static Long[] b;
 
-   WL(Ux2 var1) {
+   public WL(Ux2 var1) {
       this.m = var1;
    }
 

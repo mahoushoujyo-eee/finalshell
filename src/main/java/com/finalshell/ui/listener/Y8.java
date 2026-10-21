@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 public class Y8 implements ActionListener {
-   final JComponent S;
-   final C4 y;
+   public final JComponent S;
+   public final C4 y;
 
-   Y8(C4 var1, JComponent var2) {
+   public Y8(C4 var1, JComponent var2) {
       this.y = var1;
       this.S = var2;
    }

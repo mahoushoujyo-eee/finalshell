@@ -8,32 +8,32 @@ public class Fw2 {
    public Fw2() {
    }
 
-   void V(Thread var1) {
+   public void V(Thread var1) {
       this.r = var1;
       this.w = -1;
    }
 
-   Thread p() {
+   public Thread p() {
       return this.r;
    }
 
-   void P(int var1) {
+   public void P(int var1) {
       this.w = var1;
    }
 
-   int G() {
+   public int G() {
       return this.w;
    }
 
-   int o() {
+   public int o() {
       return this.Y;
    }
 
-   void D(int var1) {
+   public void D(int var1) {
       this.Y = var1;
    }
 
-   Fw2(W7 var1) {
+   public Fw2(W7 var1) {
       this();
    }
 }

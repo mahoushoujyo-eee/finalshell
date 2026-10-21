@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class TS implements ActionListener {
-   final EditPanel Q;
+   public final EditPanel Q;
 
-   TS(EditPanel var1) {
+   public TS(EditPanel var1) {
       this.Q = var1;
    }
 

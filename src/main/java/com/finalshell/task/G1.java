@@ -7,9 +7,9 @@ import com.finalshell.ui.dialog.Fm2;
 import java.lang.reflect.InvocationTargetException;
 
 public class G1 implements Runnable {
-   final Fm2 d;
+   public final Fm2 d;
 
-   G1(Fm2 var1) {
+   public G1(Fm2 var1) {
       this.d = var1;
    }
 

@@ -1,9 +1,9 @@
 package com.finalshell.task;
 
 public class UE implements Runnable {
-   final Mo2 B;
+   public final Mo2 B;
 
-   UE(Mo2 var1) {
+   public UE(Mo2 var1) {
       this.B = var1;
    }
 

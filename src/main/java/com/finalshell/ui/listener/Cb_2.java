@@ -6,11 +6,11 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Cb_2 extends KeyAdapter {
-   final Na4 L;
+   public final Na4 L;
    public static long[] a;
    public static Integer[] b;
 
-   Cb_2(Na4 var1) {
+   public Cb_2(Na4 var1) {
       this.L = var1;
    }
 

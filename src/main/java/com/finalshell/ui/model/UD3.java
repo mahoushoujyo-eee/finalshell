@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
-public final class UD3 extends Enum {
+public final class UD3 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -31,11 +31,10 @@ public final class UD3 extends Enum {
    }
 
    public static UD3 valueOf(String var0) {
-      return Enum.valueOf(UD3.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public UD3(String var1, int var2, int var3, int var4, int var5) {
-      super(var1, var2);
       this.X = var3;
       this.d = var4;
       this.outputLen = var5;

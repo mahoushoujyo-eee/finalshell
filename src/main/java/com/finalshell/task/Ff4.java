@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Bq2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ff4 implements Runnable {
-   final Bq2 h;
+   public final Bq2 h;
 
-   Ff4(Bq2 var1) {
+   public Ff4(Bq2 var1) {
       this.h = var1;
    }
 

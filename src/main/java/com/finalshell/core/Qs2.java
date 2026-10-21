@@ -5,9 +5,9 @@ import javax.swing.UIDefaults;
 import javax.swing.UIDefaults.ActiveValue;
 
 public class Qs2 implements ActiveValue {
-   final A9 d;
+   public final A9 d;
 
-   Qs2(A9 var1) {
+   public Qs2(A9 var1) {
       this.d = var1;
    }
 

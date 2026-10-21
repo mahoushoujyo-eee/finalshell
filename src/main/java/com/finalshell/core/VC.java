@@ -6,9 +6,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class VC {
-   String h;
-   String f;
-   String x;
+   public String h;
+   public String f;
+   public String x;
 
    public VC(String var1) {
       long var3 = 628672175147824801L;
@@ -31,7 +31,7 @@ public class VC {
 
       VC var209 = var10001.equals((String)Registry.lookupField(517036517890312843L).get(null));
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             Object var21 = 617838227313014025L;
             super((String)Ref.g(617838227313014025L, var21));
             Object var23 = 144008674458598213L;
@@ -184,7 +184,7 @@ public class VC {
                   long var306;
                   UI3 var280 = (var306 = var279 - 0L) == 0L ? 0 : (var306 < 0L ? -1 : 1);
                   if (var2 == null) {
-                     if (var280 == 0) {
+                     if (var280 == null) {
                         Object[] var10015 = Registry.e(Registry.lookupField(315787338003670960L).getLong(var11));
                         long var48 = 133459673991489049L;
                         Object[] var47 = var10015;
@@ -225,7 +225,7 @@ public class VC {
                   }
 
                   if (var2 == null) {
-                     if (var280 == false) {
+                     if (var280 == null) {
                         Object[] var287 = Registry.e(Registry.lookupField(428744148812321032L).getLong(var11));
                         long var54 = 620383792453224883L;
                         Object[] var53 = var287;
@@ -268,7 +268,7 @@ public class VC {
                      var10017.equals(var10);
                   }
 
-                  if (var280 != false) {
+                  if (var280 == null) {
                      Object[] var289 = Registry.packArgs(var12);
                      long var62 = 351459790059463760L;
                      Object[] var61 = var289;
@@ -298,7 +298,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             Object var65 = 617838227313014025L;
             super((String)Ref.g(617838227313014025L, var65));
             Object var67 = 390578034059240075L;
@@ -336,7 +336,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             L6 var210;
             Object var77 = 617838227313014025L;
             super((String)Ref.g(617838227313014025L, var77));
@@ -489,7 +489,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             W4 var211;
             Object var107 = 144008674458598213L;
             super((String)Ref.g(144008674458598213L, var107));
@@ -682,7 +682,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             Object var141 = 144008674458598213L;
             super((String)Ref.g(144008674458598213L, var141));
             Object[] var219 = Registry.emptyArgs();
@@ -710,7 +710,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             return;
          }
 
@@ -720,7 +720,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             Object var151 = 144008674458598213L;
             super((String)Ref.g(144008674458598213L, var151));
             if (var2 == null) {
@@ -734,7 +734,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             return;
          }
 
@@ -744,7 +744,7 @@ public class VC {
       }
 
       if (var2 == null) {
-         if (var209 != false) {
+         if (var209 == null) {
             return;
          }
 
@@ -753,7 +753,7 @@ public class VC {
          ((String)Ref.g(628672175147824801L, var157)).equals((String)Registry.lookupField(184200262128901292L).get(null));
       }
 
-      if (var209 != false) {
+      if (var209 == null) {
       }
    }
 

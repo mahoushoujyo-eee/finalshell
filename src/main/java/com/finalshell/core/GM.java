@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class GM extends Go2 {
-   final Yj4 e;
+   public final Yj4 e;
    public static String b;
    public static long c;
 

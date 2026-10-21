@@ -20,14 +20,14 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
 public class JR extends JTable {
-   K42 Y;
-   int p;
-   int B;
-   com.finalshell.ui.panel.N22 h;
-   Color i;
-   Color k;
-   String N;
-   Color X;
+   public K42 Y;
+   public int p;
+   public int B;
+   public com.finalshell.ui.panel.N22 h;
+   public Color i;
+   public Color k;
+   public String N;
+   public Color X;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -70,7 +70,7 @@ public class JR extends JTable {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       Object var3 = 211147456586738223L;
@@ -197,7 +197,7 @@ public class JR extends JTable {
       }
    }
 
-   JLabel y() {
+   public JLabel y() {
       JLabel var1 = new JLabel();
       var1.setBorder(BorderFactory.createEmptyBorder(2, 2, 1, 0));
       var1.setOpaque(false);

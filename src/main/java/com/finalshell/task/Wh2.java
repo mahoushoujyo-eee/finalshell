@@ -9,10 +9,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Wh2 implements Runnable {
-   final ServerSocket s;
-   final Mapping t;
+   public final ServerSocket s;
+   public final Mapping t;
 
-   Wh2(Mapping var1, ServerSocket var2) {
+   public Wh2(Mapping var1, ServerSocket var2) {
       this.t = var1;
       this.s = var2;
    }

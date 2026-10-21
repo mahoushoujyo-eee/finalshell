@@ -6,9 +6,9 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JTree.DropLocation;
 
 public class P3 implements PropertyChangeListener {
-   final K5_2 K;
+   public final K5_2 K;
 
-   P3(K5_2 var1) {
+   public P3(K5_2 var1) {
       this.K = var1;
    }
 

@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class CX extends CG {
    public static String i;
 
-   CX() {
+   public CX() {
       this.U = i;
    }
 

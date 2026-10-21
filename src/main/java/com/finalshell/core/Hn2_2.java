@@ -183,7 +183,7 @@ public class Hn2_2 extends F2_4 implements D_4 {
       }
    }
 
-   void o(RD var1) throws B2_5 {
+   public void o(RD var1) throws B2_5 {
       this.r.T(var1);
 
       java.lang.Class var2;
@@ -206,7 +206,7 @@ public class Hn2_2 extends F2_4 implements D_4 {
       return this.r.Q();
    }
 
-   final FK[] q$FK(@C_9 HG param1) throws B2_5, IOException {
+   public final FK[] q$FK(@C_9 HG param1) throws B2_5, IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -310,7 +310,7 @@ public class Hn2_2 extends F2_4 implements D_4 {
       // cd: areturn
    }
 
-   protected C_E_2 X(com.finalshell.ui.model.I param1, RD param2) {
+   public C_E_2 X(com.finalshell.ui.model.I param1, RD param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -395,11 +395,11 @@ public class Hn2_2 extends F2_4 implements D_4 {
    }
 
    @C_9
-   protected Nt2_2 k(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
+   public Nt2_2 k(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
       return this.r.D(var1, var2);
    }
 
-   protected Nt2_2 N(com.finalshell.ui.model.I var1, java.lang.Class var2) {
+   public Nt2_2 N(com.finalshell.ui.model.I var1, java.lang.Class var2) {
       return this.r.S(var1, var2);
    }
 

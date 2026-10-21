@@ -18,13 +18,13 @@ import javax.swing.SwingUtilities;
 import javax.swing.table.TableCellEditor;
 
 public class MT extends AbstractCellEditor implements TableCellEditor {
-   Object T;
-   Object w;
-   Connection4 Y;
-   Address s;
-   Ne4 L;
-   com.finalshell.ui.panel.Wb2 z;
-   JTable F;
+   public Object T;
+   public Object w;
+   public Connection4 Y;
+   public Address s;
+   public Ne4 L;
+   public com.finalshell.ui.panel.Wb2 z;
+   public JTable F;
    public static String a;
 
    public MT() {

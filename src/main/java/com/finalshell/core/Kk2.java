@@ -9,7 +9,7 @@ public class Kk2 implements Ky2 {
    public static long[] a;
    public static Integer[] b;
 
-   protected Kk2(ByteBuffer var1) {
+   public Kk2(ByteBuffer var1) {
       this.V = var1;
    }
 

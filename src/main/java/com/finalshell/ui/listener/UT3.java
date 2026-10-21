@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class UT3 implements ActionListener {
-   final SetByKeyboardDialog T;
+   public final SetByKeyboardDialog T;
 
-   UT3(SetByKeyboardDialog var1) {
+   public UT3(SetByKeyboardDialog var1) {
       this.T = var1;
    }
 

@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Z3 implements ActionListener {
-   final com.finalshell.ui.dialog.E v;
+   public final com.finalshell.ui.dialog.E v;
 
-   Z3(com.finalshell.ui.dialog.E var1) {
+   public Z3(com.finalshell.ui.dialog.E var1) {
       this.v = var1;
    }
 

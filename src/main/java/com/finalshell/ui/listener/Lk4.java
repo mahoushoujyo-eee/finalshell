@@ -10,9 +10,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lk4 implements MouseListener {
-   final ClearListDialog d;
+   public final ClearListDialog d;
 
-   Lk4(ClearListDialog var1) {
+   public Lk4(ClearListDialog var1) {
       this.d = var1;
    }
 

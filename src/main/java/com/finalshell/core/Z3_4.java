@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class Z3_4 implements D_7 {
-   final Ht2_2 m;
+   public final Ht2_2 m;
    public static String[] a;
    public static String[] b;
 
-   Z3_4(Ht2_2 var1) {
+   public Z3_4(Ht2_2 var1) {
       this.m = var1;
    }
 

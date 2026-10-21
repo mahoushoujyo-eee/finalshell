@@ -131,7 +131,7 @@ public class Gf4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var6 = (float)var1;
       float var7 = (float)var2;
       int var8 = var2 % this.G * this.M + var1 % this.M;

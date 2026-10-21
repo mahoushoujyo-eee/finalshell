@@ -7,11 +7,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JRadioButtonMenuItem;
 
 public class Yo2 implements ActionListener {
-   final JRadioButtonMenuItem R;
-   final VD K;
-   final LocalMachinePanel O;
+   public final JRadioButtonMenuItem R;
+   public final VD K;
+   public final LocalMachinePanel O;
 
-   Yo2(LocalMachinePanel var1, JRadioButtonMenuItem var2, VD var3) {
+   public Yo2(LocalMachinePanel var1, JRadioButtonMenuItem var2, VD var3) {
       this.O = var1;
       this.R = var2;
       this.K = var3;

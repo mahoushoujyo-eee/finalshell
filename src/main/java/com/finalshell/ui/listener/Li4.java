@@ -5,11 +5,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 
 public class Li4 extends MouseAdapter {
-   final JComponent S;
-   final com.finalshell.core.N2 T;
+   public final JComponent S;
+   public final com.finalshell.core.N2 T;
    public static long a;
 
-   Li4(com.finalshell.core.N2 var1, JComponent var2) {
+   public Li4(com.finalshell.core.N2 var1, JComponent var2) {
       this.T = var1;
       this.S = var2;
    }

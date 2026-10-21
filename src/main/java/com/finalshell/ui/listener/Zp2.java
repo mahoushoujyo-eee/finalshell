@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 
 public class Zp2 implements ActionListener {
-   final JCheckBox Q;
-   final SendSyncMailPanel C;
+   public final JCheckBox Q;
+   public final SendSyncMailPanel C;
 
-   Zp2(SendSyncMailPanel var1, JCheckBox var2) {
+   public Zp2(SendSyncMailPanel var1, JCheckBox var2) {
       this.C = var1;
       this.Q = var2;
    }

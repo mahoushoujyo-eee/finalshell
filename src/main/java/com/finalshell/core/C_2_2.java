@@ -11,7 +11,7 @@ public class C_2_2 implements W2_4 {
    public final short q;
    public final short z;
    public final List E;
-   final Cr2_2 w;
+   public final Cr2_2 w;
 
    public C_2_2(Cr2_2 var1, short var2, short var3, short var4, List var5) {
       this.w = var1;

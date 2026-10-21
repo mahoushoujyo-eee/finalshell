@@ -10,11 +10,11 @@ import java.awt.event.ComponentListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BW implements ComponentListener {
-   final Bq2 p;
-   final com.finalshell.ui.frame.U u;
-   final YN3 s;
+   public final Bq2 p;
+   public final com.finalshell.ui.frame.U u;
+   public final YN3 s;
 
-   BW(YN3 var1, Bq2 var2, com.finalshell.ui.frame.U var3) {
+   public BW(YN3 var1, Bq2 var2, com.finalshell.ui.frame.U var3) {
       this.s = var1;
       this.p = var2;
       this.u = var3;

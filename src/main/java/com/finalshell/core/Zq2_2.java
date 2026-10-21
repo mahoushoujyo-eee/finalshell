@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Zq2_2 {
-   String i = null;
-   String c = null;
-   boolean X = false;
-   DW z = null;
+   public String i = null;
+   public String c = null;
+   public boolean X = false;
+   public DW z = null;
 
    public String j() {
       return this.i;

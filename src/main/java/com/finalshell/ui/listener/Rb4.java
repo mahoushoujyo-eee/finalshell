@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Rb4 implements ActionListener {
-   final ConnectionProperty Q;
+   public final ConnectionProperty Q;
 
-   Rb4(ConnectionProperty var1) {
+   public Rb4(ConnectionProperty var1) {
       this.Q = var1;
    }
 

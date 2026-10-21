@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 public class Q52 implements ActionListener {
-   final BK2 B;
+   public final BK2 B;
 
-   Q52(BK2 var1) {
+   public Q52(BK2 var1) {
       this.B = var1;
    }
 

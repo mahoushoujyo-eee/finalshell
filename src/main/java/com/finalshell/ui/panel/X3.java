@@ -145,15 +145,15 @@ public class X3 extends Ky4 {
       }
    }
 
-   static C22_2 o(X3 var0) {
+   public static C22_2 o(X3 var0) {
       return var0.A;
    }
 
-   static S2 E(X3 var0) {
+   public static S2 E(X3 var0) {
       return var0.p;
    }
 
-   static void B(X3 var0, int var1, boolean var2) {
+   public static void B(X3 var0, int var1, boolean var2) {
       var0.K(var1, var2);
    }
 

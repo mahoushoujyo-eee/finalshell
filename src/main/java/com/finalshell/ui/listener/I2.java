@@ -4,9 +4,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class I2 extends MouseAdapter {
-   final com.finalshell.core.Y2 O;
+   public final com.finalshell.core.Y2 O;
 
-   I2(com.finalshell.core.Y2 var1) {
+   public I2(com.finalshell.core.Y2 var1) {
       this.O = var1;
    }
 

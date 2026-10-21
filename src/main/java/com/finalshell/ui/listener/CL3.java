@@ -9,9 +9,9 @@ import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
 public class CL3 implements ActionListener {
-   final NO x;
+   public final NO x;
 
-   CL3(NO var1) {
+   public CL3(NO var1) {
       this.x = var1;
    }
 

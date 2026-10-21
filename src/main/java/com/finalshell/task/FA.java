@@ -7,10 +7,10 @@ import com.finalshell.ui.panel.CT;
 import javax.swing.SwingUtilities;
 
 public class FA implements Runnable {
-   final CT o;
+   public final CT o;
    public static long a;
 
-   FA(CT var1) {
+   public FA(CT var1) {
       this.o = var1;
    }
 

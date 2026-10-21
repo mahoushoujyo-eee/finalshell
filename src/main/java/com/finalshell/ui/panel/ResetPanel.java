@@ -20,23 +20,23 @@ import javax.swing.JRadioButtonMenuItem;
 import net.miginfocom.swing.MigLayout;
 
 public class ResetPanel extends JPanel {
-   Xj2 F;
-   JO w;
-   JO g;
-   JO Q;
-   Color a;
-   Color o;
-   JO R;
-   JO p;
-   KV r;
-   JPopupMenu b;
-   String n;
+   public Xj2 F;
+   public JO w;
+   public JO g;
+   public JO Q;
+   public Color a;
+   public Color o;
+   public JO R;
+   public JO p;
+   public KV r;
+   public JPopupMenu b;
+   public String n;
    public static String[] c;
    public static String[] d;
    public static long[] e;
    public static Integer[] f;
 
-   ResetPanel() {
+   public ResetPanel() {
       Color var10001 = new Color(a(523, 5605099169534719352L), a(304, 2788125910285694541L), a(13528, 8384030043991901090L));
       long var12 = 460253951039000465L;
       Color var11 = var10001;
@@ -180,7 +180,7 @@ public class ResetPanel extends JPanel {
       Ref.s(635187916850230994L, var79, var80);
       Y12_2 var93;
       Object var81 = 635187916850230994L;
-new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
+var8 = new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
       Y12_2 var9 = var93;
       var8.addActionListener(new Qi2(this, var9, var8));
       KD var10 = new KD(a(3119, -80));
@@ -466,7 +466,7 @@ new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
       this.validate();
    }
 
-   JPopupMenu O() {
+   public JPopupMenu O() {
       Object var7 = 635187916850230994L;
       ((JPopupMenu)Ref.g(635187916850230994L, var7)).removeAll();
       KV.b$arrString();
@@ -514,7 +514,7 @@ new Yi4(this, (JPopupMenu)Ref.g(635187916850230994L, var81));
                   throw var31.getTargetException();
                }
 
-new JPanel(var10009);
+var5 = new JPanel(var10009);
                JRadioButtonMenuItem var6 = var10007;
                if (var1 == null) {
                   if (var2 != null) {

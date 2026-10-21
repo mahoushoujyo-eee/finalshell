@@ -6,9 +6,9 @@ import java.beans.PropertyChangeListener;
 import javax.swing.text.Document;
 
 public class La2 implements PropertyChangeListener {
-   final EK3 O;
+   public final EK3 O;
 
-   La2(EK3 var1) {
+   public La2(EK3 var1) {
       this.O = var1;
    }
 

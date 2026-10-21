@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class CQ implements Runnable {
-   final Dz2 p;
+   public final Dz2 p;
 
-   CQ(Dz2 var1) {
+   public CQ(Dz2 var1) {
       this.p = var1;
    }
 

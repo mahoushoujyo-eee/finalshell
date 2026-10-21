@@ -11,7 +11,7 @@ public class E2_5 extends F_6 {
    }
 
    @Override
-   protected final File r(String var1) {
+   public final File r(String var1) {
       return new File(this.I, var1.replace((char)((int)b), File.separatorChar));
    }
 

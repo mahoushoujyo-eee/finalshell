@@ -31,13 +31,13 @@ import net.miginfocom.swing.MigLayout;
 import org.jetbrains.annotations.Nullable;
 
 public class Bq_2 extends JPanel implements D9 {
-   Ne4 T;
-   final JLabel e;
-   final KD t;
-   final KD B;
-   ConnectionProperty p;
-   SetBackgroundImagePanel i;
-   Object w = new Object();
+   public Ne4 T;
+   public final JLabel e;
+   public final KD t;
+   public final KD B;
+   public ConnectionProperty p;
+   public SetBackgroundImagePanel i;
+   public Object w = new Object();
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -200,7 +200,7 @@ public class Bq_2 extends JPanel implements D9 {
       this.p.v.repaint();
    }
 
-   String a(String var1) {
+   public String a(String var1) {
       int var10000 = ConnectionProperty.y();
       String var3 = "";
       int var4 = 0;
@@ -235,23 +235,23 @@ public class Bq_2 extends JPanel implements D9 {
       return var6;
    }
 
-   JButton v() {
+   public JButton v() {
       return new BasicArrowButton(1);
    }
 
-   JButton C() {
+   public JButton C() {
       return new BasicArrowButton(5);
    }
 
-   void V() {
+   public void V() {
       this.C(this.i.e$WZ());
    }
 
-   void f() {
+   public void f() {
       this.C(this.i.I$WZ());
    }
 
-   void C(@Nullable WZ var1) {
+   public void C(@Nullable WZ var1) {
       int var10000 = ConnectionProperty.M$int();
       WZ var3 = this.i.f$WZ();
       int var2 = var10000;

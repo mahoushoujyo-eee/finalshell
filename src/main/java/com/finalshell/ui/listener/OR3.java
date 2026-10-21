@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class OR3 implements ActionListener {
-   final ZU y;
+   public final ZU y;
 
-   OR3(ZU var1) {
+   public OR3(ZU var1) {
       this.y = var1;
    }
 

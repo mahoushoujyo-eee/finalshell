@@ -18,7 +18,7 @@ public class LY {
    public static long[] d;
    public static Integer[] e;
 
-   LY(Y42 var1) throws IOException {
+   public LY(Y42 var1) throws IOException {
       this.t = new int[5];
       this.x = 0;
       this.v(var1);
@@ -497,11 +497,11 @@ public class LY {
       // 15f: ireturn
    }
 
-   int a$int() {
+   public int a$int() {
       return this.x;
    }
 
-   final int Q(int var1, int var2) {
+   public final int Q(int var1, int var2) {
       String var3 = SelectUploadFile.r$String();
       int var10000 = var1;
       if (var3 == null) {

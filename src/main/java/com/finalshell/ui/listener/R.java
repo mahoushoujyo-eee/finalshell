@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class R implements ActionListener {
-   final SystemInfoPanel N;
+   public final SystemInfoPanel N;
 
-   R(SystemInfoPanel var1) {
+   public R(SystemInfoPanel var1) {
       this.N = var1;
    }
 

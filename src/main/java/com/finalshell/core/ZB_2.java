@@ -4,11 +4,11 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class ZB_2 {
-   String j;
-   String K;
-   int p;
-   int b;
-   long C;
+   public String j;
+   public String K;
+   public int p;
+   public int b;
+   public long C;
 
    public ZB_2() {
       Registry.lookupField(453484836900178585L).setLong(this, System.currentTimeMillis());

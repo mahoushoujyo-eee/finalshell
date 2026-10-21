@@ -9,10 +9,10 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
 public class SB extends MouseMotionAdapter {
-   final IY3 F;
-   final SetBackgroundImagePanel d;
+   public final IY3 F;
+   public final SetBackgroundImagePanel d;
 
-   SB(SetBackgroundImagePanel var1, IY3 var2) {
+   public SB(SetBackgroundImagePanel var1, IY3 var2) {
       this.d = var1;
       this.F = var2;
    }

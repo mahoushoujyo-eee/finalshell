@@ -12,7 +12,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 
 public class D4 {
-   static Key W;
+   public static Key W;
    public static String[] a;
    public static String[] b;
    public static long[] c;

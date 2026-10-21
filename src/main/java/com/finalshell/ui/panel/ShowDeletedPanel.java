@@ -57,25 +57,25 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import net.miginfocom.swing.MigLayout;
 
 public class ShowDeletedPanel extends JPanel implements Fb2 {
-   UV3 O;
-   UV3 R;
-   int T;
-   int l;
-   int H;
-   int b;
-   ShowDeletedPanel Y;
-   JT U;
-   KQ E;
-   JPanel M;
-   C I;
-   Ne4 B;
-   XT3 r;
-   JComboBox S;
-   KD A;
-   KD u;
-   boolean y;
-   int q;
-   boolean x;
+   public UV3 O;
+   public UV3 R;
+   public int T;
+   public int l;
+   public int H;
+   public int b;
+   public ShowDeletedPanel Y;
+   public JT U;
+   public KQ E;
+   public JPanel M;
+   public C I;
+   public Ne4 B;
+   public XT3 r;
+   public JComboBox S;
+   public KD A;
+   public KD u;
+   public boolean y;
+   public int q;
+   public boolean x;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -393,7 +393,7 @@ public class ShowDeletedPanel extends JPanel implements Fb2 {
          throw var159.getTargetException();
       }
 
-new UV3(var10062, var177);
+var10061 = new UV3(var10062, var177);
       Object[] var7 = var10060;
       var7.setOpaque(false);
       var7.setBackground(Color.white);
@@ -529,7 +529,7 @@ new UV3(var10062, var177);
       return var1;
    }
 
-   void c() {
+   public void c() {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Jp2(this));
       long var2 = 434592463220957006L;
@@ -543,7 +543,7 @@ new UV3(var10062, var177);
       }
    }
 
-   synchronized void O$void() {
+   public synchronized void O$void() {
       String[] var1 = F8.y();
       if (var1 == null) {
          if (Registry.lookupField(576761866492028513L).getBoolean(this)) {
@@ -559,7 +559,7 @@ new UV3(var10062, var177);
          var2 = ((Ne4)Ref.g(503453149395465632L, var4)).getText().trim();
          ShowDeletedPanel var10001 = var2.length();
          if (var1 == null) {
-            if (var10001 == 0) {
+            if (var10001 == null) {
                Object var6 = 503453149395465632L;
                ((Ne4)Ref.g(503453149395465632L, var6)).z(null);
                Object[] var10003 = Registry.emptyArgs();
@@ -590,7 +590,7 @@ new UV3(var10062, var177);
             Registry.lookupField(270047832273883253L).getBoolean(this);
          }
 
-         if (var10001 == 0) {
+         if (var10001 == null) {
             Object[] var26 = Registry.emptyArgs();
             long var15 = 344765142696056302L;
             Object[] var14 = var26;
@@ -632,7 +632,7 @@ new UV3(var10062, var177);
       SwingUtilities.invokeLater(new YE3(this, var2, var3));
    }
 
-   void j() {
+   public void j() {
       Registry.lookupField(270047832273883253L).setBoolean(this, true);
       Object var7 = 605575582011546661L;
       JPanel var10001 = (JPanel)Ref.g(605575582011546661L, var7);
@@ -657,7 +657,7 @@ new UV3(var10062, var177);
       }
    }
 
-   void Z() {
+   public void Z() {
       Registry.lookupField(270047832273883253L).setBoolean(this, false);
       Object var7 = 605575582011546661L;
       JPanel var10001 = (JPanel)Ref.g(605575582011546661L, var7);
@@ -683,7 +683,7 @@ new UV3(var10062, var177);
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       var2.setColor(Color.white);
@@ -786,14 +786,14 @@ new UV3(var10062, var177);
       }
    }
 
-   Qe2_2 r(String var1) {
+   public Qe2_2 r(String var1) {
       Qe2_2 var2 = new Qe2_2(var1).k(0);
       int var3 = a(12358, 4071600662827487561L);
       var2.setMargin(new Insets(0, var3, 0, var3));
       return var2;
    }
 
-   XT3 g() {
+   public XT3 g() {
       XT3 var2 = new XT3(0);
       var2.O(true);
       var2.setBorder(null);
@@ -1351,7 +1351,7 @@ new UV3(var10062, var177);
       super((String)var10010, var10011, (Window)var10012, null, var3);
    }
 
-   String t(String var1) {
+   public String t(String var1) {
       String var3 = a(23334, 30727);
       String var10000 = F8.y();
       String var4 = var3;

@@ -9,7 +9,7 @@ public class Nn2 extends TextAction {
    public static long[] b;
    public static Integer[] c;
 
-   Nn2() {
+   public Nn2() {
       super(a);
    }
 

@@ -7,12 +7,12 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 public class Yp2 extends V2 {
-   protected boolean J = false;
-   protected boolean s = false;
-   protected PF3 b = null;
-   protected PF3 R = null;
-   protected P62 u;
-   protected boolean G = false;
+   public boolean J = false;
+   public boolean s = false;
+   public PF3 b = null;
+   public PF3 R = null;
+   public P62 u;
+   public boolean G = false;
    public static int X;
 
    public Yp2() {
@@ -228,7 +228,7 @@ public class Yp2 extends V2 {
       var6.u(var1, var2, var3);
    }
 
-   protected PF3 Q() {
+   public PF3 Q() {
       int var1 = f();
       Yp2 var10000 = this;
       if (var1 == 0) {

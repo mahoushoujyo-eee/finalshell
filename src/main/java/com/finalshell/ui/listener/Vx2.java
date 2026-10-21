@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vx2 implements ActionListener {
-   final SyncPasswordDialog2 N;
+   public final SyncPasswordDialog2 N;
 
-   Vx2(SyncPasswordDialog2 var1) {
+   public Vx2(SyncPasswordDialog2 var1) {
       this.N = var1;
    }
 

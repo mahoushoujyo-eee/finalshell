@@ -4,10 +4,10 @@ import com.finalshell.core.Qu2;
 import java.io.IOException;
 
 public class Z6 implements Runnable {
-   final Qu2 j;
+   public final Qu2 j;
    public static long a;
 
-   Z6(Qu2 var1) {
+   public Z6(Qu2 var1) {
       this.j = var1;
    }
 

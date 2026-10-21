@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class G5 extends Go2 {
-   final Yj4 o;
+   public final Yj4 o;
    public static String b;
 
    public G5(Yj4 var1) {

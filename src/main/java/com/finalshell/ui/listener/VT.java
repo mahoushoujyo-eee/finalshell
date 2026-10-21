@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class VT implements ActionListener {
-   final SetByKeyboardDialog x;
+   public final SetByKeyboardDialog x;
 
-   VT(SetByKeyboardDialog var1) {
+   public VT(SetByKeyboardDialog var1) {
       this.x = var1;
    }
 

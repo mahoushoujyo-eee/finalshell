@@ -2,7 +2,7 @@ package com.finalshell.ui.model;
 
 import com.finalshell.core.Ub2;
 
-public final class X9 extends Enum {
+public final class X9 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -48,21 +48,18 @@ public final class X9 extends Enum {
    }
 
    public static X9 valueOf(String var0) {
-      return Enum.valueOf(X9.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public X9(String var1, int var2, char var3) {
-      super(var1, var2);
       this.e = (byte)var3;
    }
 
    public X9(String var1, int var2, int var3) {
-      super(var1, var2);
       this.e = (byte)var3;
    }
 
    public X9(String var1, int var2, byte var3) {
-      super(var1, var2);
       this.e = var3;
    }
 

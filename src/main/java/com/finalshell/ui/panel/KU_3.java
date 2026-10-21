@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 
 public class KU_3 extends K2_2 {
    public JLabel y;
-   final com.finalshell.ui.frame.U a;
+   public final com.finalshell.ui.frame.U a;
    public static long[] b;
    public static Integer[] c;
 

@@ -887,7 +887,7 @@ public final class EI implements SwingConstants {
       String var3;
       label60: {
          int var10000 = (Oj2.g()) ? 1 : 0;
-         var3 = ("") != 0;
+         var3 = ("") != null;
          var2 = ((((boolean)var10000) != 0) != 0) != 0;
          String var4 = var0;
          int var5 = V(var0, "{", 0);

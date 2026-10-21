@@ -6,9 +6,6 @@ import java.io.IOException;
 public class CV implements Y2_3 {
    public static String a;
 
-   CV() {
-   }
-
    @Override
    public int u() {
       return 1;

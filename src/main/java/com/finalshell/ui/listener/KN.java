@@ -10,10 +10,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class KN implements ActionListener {
-   final FT B;
-   final Tq4 X;
+   public final FT B;
+   public final Tq4 X;
 
-   KN(Tq4 var1, FT var2) {
+   public KN(Tq4 var1, FT var2) {
       this.X = var1;
       this.B = var2;
    }

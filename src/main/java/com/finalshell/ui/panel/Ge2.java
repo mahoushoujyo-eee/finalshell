@@ -7,12 +7,12 @@ import net.miginfocom.swing.MigLayout;
 public class Ge2 extends JPanel {
    public static String a;
 
-   Ge2() {
+   public Ge2() {
       this.setLayout(new MigLayout(a));
       this.setOpaque(false);
    }
 
-   void f(JComponent var1) {
+   public void f(JComponent var1) {
       String[] var10000 = AM.s$arrString();
       this.removeAll();
       String[] var2 = var10000;
@@ -30,7 +30,7 @@ public class Ge2 extends JPanel {
       var3.repaint();
    }
 
-   void S() {
+   public void S() {
       this.removeAll();
       this.doLayout();
       this.validate();

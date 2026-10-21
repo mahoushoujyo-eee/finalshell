@@ -196,7 +196,7 @@ public class HY {
       }
    }
 
-   protected int[] b() {
+   public int[] b() {
       int var2 = this.I.length;
       float[] var3 = new float[var2 + 2];
       float[] var4 = new float[var2 + 2];

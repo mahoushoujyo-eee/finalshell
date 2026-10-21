@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class FZ_2 implements Rz2_2 {
-   final FF_2 P;
+   public final FF_2 P;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   FZ_2(FF_2 var1) {
+   public FZ_2(FF_2 var1) {
       this.P = var1;
    }
 

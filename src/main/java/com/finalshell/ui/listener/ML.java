@@ -12,11 +12,11 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class ML implements ListSelectionListener {
-   final JCheckBox N;
-   final EnableBackgroundImage T;
+   public final JCheckBox N;
+   public final EnableBackgroundImage T;
    public static String a;
 
-   ML(EnableBackgroundImage var1, JCheckBox var2) {
+   public ML(EnableBackgroundImage var1, JCheckBox var2) {
       this.T = var1;
       this.N = var2;
    }
@@ -32,7 +32,7 @@ public class ML implements ListSelectionListener {
       if (var3 != null) {
          var10002 = var1.getValueIsAdjusting();
          if (var2 != null) {
-            if (var10002 != false) {
+            if (var10002 == null) {
                return;
             }
 
@@ -42,7 +42,7 @@ public class ML implements ListSelectionListener {
          label70: {
             label71: {
                if (var2 != null) {
-                  if (var10002 != false) {
+                  if (var10002 == null) {
                      break label70;
                   }
 
@@ -75,7 +75,7 @@ public class ML implements ListSelectionListener {
                   }
                }
 
-               if (var10002 != false) {
+               if (var10002 == null) {
                   break label70;
                }
 

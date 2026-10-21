@@ -6,15 +6,15 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 
 public class Cn4 {
-   String n;
-   String O;
-   boolean g;
-   boolean t;
-   boolean L;
-   int A;
-   Zh2_2 r;
-   KV U;
-   HashSet N;
+   public String n;
+   public String O;
+   public boolean g;
+   public boolean t;
+   public boolean L;
+   public int A;
+   public Zh2_2 r;
+   public KV U;
+   public HashSet N;
 
    public Cn4() {
       HashSet var10001 = new HashSet();

@@ -7,7 +7,7 @@ public class Ce4 {
       new Ce4();
    }
 
-   Ce4() {
+   public Ce4() {
       DnsResolveFailedSetting var1 = null;
 
       try {

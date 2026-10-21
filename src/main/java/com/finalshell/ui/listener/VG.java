@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class VG implements ActionListener {
-   final AppendCarriageReturnCRPanel p;
+   public final AppendCarriageReturnCRPanel p;
 
-   VG(AppendCarriageReturnCRPanel var1) {
+   public VG(AppendCarriageReturnCRPanel var1) {
       this.p = var1;
    }
 

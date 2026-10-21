@@ -14,7 +14,7 @@ import org.fife.rsta.ui.GoToDialog;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 public class LocateLineAdapter extends AbstractAction {
-   final TextEditorFrame z;
+   public final TextEditorFrame z;
    public static String[] a;
    public static String[] b;
    public static long c;

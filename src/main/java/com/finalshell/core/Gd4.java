@@ -253,7 +253,7 @@ public class Gd4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       String[] var10000 = W5.q();
       float var5 = this.p;
       String[] var4 = var10000;

@@ -7,12 +7,12 @@ import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
 public class Ep2 implements Lf2 {
-   int o;
-   final Graphics2D W;
-   final SetBackgroundImagePanel p;
+   public int o;
+   public final Graphics2D W;
+   public final SetBackgroundImagePanel p;
    public static long a;
 
-   Ep2(SetBackgroundImagePanel var1, Graphics2D var2) {
+   public Ep2(SetBackgroundImagePanel var1, Graphics2D var2) {
       this.p = var1;
       this.W = var2;
       this.o = this.p.U$int();

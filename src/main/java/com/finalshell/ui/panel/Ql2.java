@@ -17,13 +17,13 @@ import javax.swing.table.TableCellRenderer;
 import net.miginfocom.swing.MigLayout;
 
 public class Ql2 extends JPanel implements TableCellRenderer {
-   JLabel e;
-   JLabel r;
-   YI W;
-   JPanel x;
-   Color X;
-   LA b;
-   T2 i;
+   public JLabel e;
+   public JLabel r;
+   public YI W;
+   public JPanel x;
+   public Color X;
+   public LA b;
+   public T2 i;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -119,7 +119,7 @@ public class Ql2 extends JPanel implements TableCellRenderer {
       ((JLabel)Ref.g(478867394288887476L, var71)).setFont((Font)Registry.lookupField(593752358540399204L).get(null));
    }
 
-   void z(YI var1, JTable var2, int var3) {
+   public void z(YI var1, JTable var2, int var3) {
       SelectDownloadFolderPanel.O$arrint();
       long var14 = 334292599326061570L;
       Ref.s(334292599326061570L, var1, var14);

@@ -8,11 +8,11 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class UF3 implements Runnable {
-   final ConnectHost j;
-   final ArrayList Y;
-   final TunnelList F;
+   public final ConnectHost j;
+   public final ArrayList Y;
+   public final TunnelList F;
 
-   UF3(TunnelList var1, ConnectHost var2, ArrayList var3) {
+   public UF3(TunnelList var1, ConnectHost var2, ArrayList var3) {
       this.F = var1;
       this.j = var2;
       this.Y = var3;

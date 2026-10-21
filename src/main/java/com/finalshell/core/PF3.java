@@ -18,15 +18,15 @@ import javax.swing.ImageIcon;
 
 @XStreamConverter(Nz2.class)
 public class PF3 implements Icon {
-   protected Component Y;
-   protected BufferedImage d;
-   protected List J;
-   protected List R;
-   protected Insets x;
-   protected Integer c;
-   protected Integer B;
-   protected Integer k;
-   protected Integer t;
+   public Component Y;
+   public BufferedImage d;
+   public List J;
+   public List R;
+   public Insets x;
+   public Integer c;
+   public Integer B;
+   public Integer k;
+   public Integer t;
    public static String L;
    public static String[] a;
    public static String[] b;
@@ -71,7 +71,7 @@ public class PF3 implements Icon {
       this(var1, var2, true);
    }
 
-   protected PF3(BufferedImage param1, Component param2, boolean param3) {
+   public PF3(BufferedImage param1, Component param2, boolean param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -678,7 +678,7 @@ public class PF3 implements Icon {
       // 4e: ireturn
    }
 
-   protected int U(boolean var1) {
+   public int U(boolean var1) {
       int var2 = this.d.getWidth();
 
       for (EZ var4 : this.J) {
@@ -698,7 +698,7 @@ public class PF3 implements Icon {
       return var2;
    }
 
-   protected void a() {
+   public void a() {
       this.c = null;
       this.B = null;
       this.e(true);
@@ -753,7 +753,7 @@ public class PF3 implements Icon {
       // 4e: ireturn
    }
 
-   protected int K(boolean var1) {
+   public int K(boolean var1) {
       int var2 = this.d.getHeight();
 
       for (EZ var4 : this.R) {
@@ -773,7 +773,7 @@ public class PF3 implements Icon {
       return var2;
    }
 
-   protected void o() {
+   public void o() {
       this.k = null;
       this.t = null;
       this.L(true);

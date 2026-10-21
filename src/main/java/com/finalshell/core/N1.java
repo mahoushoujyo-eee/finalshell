@@ -8,13 +8,13 @@ import java.awt.event.AWTEventListener;
 import java.awt.event.MouseEvent;
 
 public class N1 implements AWTEventListener {
-   final com.finalshell.ui.panel.Ot2 e;
+   public final com.finalshell.ui.panel.Ot2 e;
    public static long[] a;
    public static Integer[] b;
    public static long[] c;
    public static Long[] d;
 
-   N1(com.finalshell.ui.panel.Ot2 var1) {
+   public N1(com.finalshell.ui.panel.Ot2 var1) {
       this.e = var1;
    }
 

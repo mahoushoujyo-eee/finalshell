@@ -33,57 +33,57 @@ import javax.swing.border.CompoundBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class Bq2 extends O {
-   T32 B;
-   AM T;
-   Bq2 J;
-   int a;
-   Color w;
-   Color k;
-   Color j;
-   Color L;
-   Color i;
-   Color y;
-   Color h;
-   Color W;
-   Border x;
-   Border N;
-   Border f;
-   Border s;
-   boolean C;
-   boolean m;
-   boolean z;
-   int E;
-   boolean v;
-   JLabel O;
-   long M;
-   boolean S;
-   boolean G;
-   JPanel l;
-   long b;
-   boolean I;
-   T2 e;
-   long g;
-   Yg2 F;
-   AM X;
-   TH3 A;
-   JLabel r;
-   Window Q;
-   Point o;
-   Point d;
-   Point n;
-   C K;
-   C p;
-   boolean u;
-   boolean Z;
-   boolean U;
+   public T32 B;
+   public AM T;
+   public Bq2 J;
+   public int a;
+   public Color w;
+   public Color k;
+   public Color j;
+   public Color L;
+   public Color i;
+   public Color y;
+   public Color h;
+   public Color W;
+   public Border x;
+   public Border N;
+   public Border f;
+   public Border s;
+   public boolean C;
+   public boolean m;
+   public boolean z;
+   public int E;
+   public boolean v;
+   public JLabel O;
+   public long M;
+   public boolean S;
+   public boolean G;
+   public JPanel l;
+   public long b;
+   public boolean I;
+   public T2 e;
+   public long g;
+   public Yg2 F;
+   public AM X;
+   public TH3 A;
+   public JLabel r;
+   public Window Q;
+   public Point o;
+   public Point d;
+   public Point n;
+   public C K;
+   public C p;
+   public boolean u;
+   public boolean Z;
+   public boolean U;
    public static String[] c;
    public static String[] q;
    public static long[] t;
    public static Integer[] D;
 
-   Bq2(T32 var1, AM var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+   public Bq2(T32 var1, AM var2, boolean var3, boolean var4, boolean var5, int var6, boolean var7) {
+   super();
       label216: {
-         super();
          Color var10001 = new Color(b(14744, 2579293605355848411L), b(16177, 5399903379597100135L), b(16177, 5399903379597100135L));
          long var17 = 300793705977237886L;
          Color var16 = var10001;
@@ -216,7 +216,7 @@ public class Bq2 extends O {
          }
 
          if (this == null) {
-            if (var10016 != false) {
+            if (var10016 == null) {
                Color var194 = new Color(b(21297, 8102616426695846011L), b(21211, 1732522469089700239L), b(21211, 1732522469089700239L));
                long var71 = 544542606382447190L;
                Color var70 = var194;
@@ -380,7 +380,7 @@ public class Bq2 extends O {
                var206 = (Bq2)var4;
             }
 
-            if (var206 != false) {
+            if (var206 == null) {
                this.setLayout(new MigLayout(a(-30256, 13795), a(-30255, 22655), ""));
                if (this == null) {
                   break label217;
@@ -395,7 +395,7 @@ public class Bq2 extends O {
 
       if (this == null) {
          label159:
-         if (var206 != false) {
+         if (var206 == null) {
             String var189 = "\uf114";
             if (var4 != false) {
                var189 = "";
@@ -457,7 +457,7 @@ public class Bq2 extends O {
       }
 
       if (this == null) {
-         if (var206 != false) {
+         if (var206 == null) {
             Registry.packArgs("\uf013");
             long var140 = 378399160856121064L;
             Object var10027 = Ref.h2(378399160856121064L, var140);
@@ -493,7 +493,7 @@ public class Bq2 extends O {
       }
 
       if (this == null) {
-         if (var206 == false) {
+         if (var206 == null) {
             Object var162 = 184969517688200929L;
             ((JLabel)Ref.g(184969517688200929L, var162)).setFont(((Font)Registry.lookupField(395970988011231853L).get(null)).deriveFont(1));
          }
@@ -510,7 +510,7 @@ public class Bq2 extends O {
 
       label223: {
          label144:
-         if (var206 == false) {
+         if (var206 == null) {
             Boolean var211 = (Boolean)(Registry.emptyArgs());
             long var167 = 120571880662107930L;
             Object[] var166 = var211;
@@ -523,7 +523,7 @@ public class Bq2 extends O {
             }
 
             if (this == null) {
-               if (var211 == false) {
+               if (var211 == null) {
                   break label144;
                }
 
@@ -543,7 +543,7 @@ public class Bq2 extends O {
                }
             }
 
-            if (var211 != false) {
+            if (var211 == null) {
                Object var170 = 275545539772972982L;
                this.add((Yg2)Ref.g(275545539772972982L, var170), a(-30249, 21314));
             }
@@ -577,7 +577,7 @@ public class Bq2 extends O {
       }
    }
 
-   void r() {
+   public void r() {
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 273754091082965916L;
       Object[] var1 = var10001;
@@ -692,11 +692,11 @@ public class Bq2 extends O {
       Registry.lookupField(120501553429581714L).setBoolean(var21, var2);
    }
 
-   void z(boolean var1) {
+   public void z(boolean var1) {
       Registry.lookupField(223239328082186834L).setBoolean(this, var1);
    }
 
-   void G() {
+   public void G() {
       String[] var1;
       byte var2;
       label181: {
@@ -949,7 +949,7 @@ public class Bq2 extends O {
       }
    }
 
-   void y() {
+   public void y() {
       AM.s$arrString();
       Object var3 = 293938313616336078L;
       Object var10002 = Ref.g(293938313616336078L, var3);
@@ -1538,7 +1538,7 @@ public class Bq2 extends O {
       Registry.lookupField(451154194190924563L).setBoolean(this, var1);
    }
 
-   static void H(Bq2 var0) {
+   public static void H(Bq2 var0) {
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 273754091082965916L;
       Object[] var1 = var10001;

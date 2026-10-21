@@ -9,18 +9,18 @@ import java.awt.Component;
 import java.util.ArrayList;
 
 public class Vy2 implements Runnable {
-   String F;
-   final Connection12 N;
-   final String s;
-   final ArrayList Q;
-   final ProgressDialog f;
-   final Tf4 l;
-   final boolean T;
-   final Component O;
-   final Address p;
+   public String F;
+   public final Connection12 N;
+   public final String s;
+   public final ArrayList Q;
+   public final ProgressDialog f;
+   public final Tf4 l;
+   public final boolean T;
+   public final Component O;
+   public final Address p;
    public static String a;
 
-   Vy2(Address var1, Connection12 var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
+   public Vy2(Address var1, Connection12 var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
       this.p = var1;
       this.N = var2;
       this.s = var3;

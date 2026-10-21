@@ -6,10 +6,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class F42 implements PropertyChangeListener {
-   final Co2 U;
-   final OQ a;
+   public final Co2 U;
+   public final OQ a;
 
-   F42(OQ var1, Co2 var2) {
+   public F42(OQ var1, Co2 var2) {
       this.a = var1;
       this.U = var2;
    }

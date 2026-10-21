@@ -4,10 +4,10 @@ import java.security.PrivilegedAction;
 import java.util.Map;
 
 public class Fw2_2 implements PrivilegedAction {
-   final Map r;
-   final HO_2 Y;
+   public final Map r;
+   public final HO_2 Y;
 
-   Fw2_2(HO_2 var1, Map var2) {
+   public Fw2_2(HO_2 var1, Map var2) {
       this.Y = var1;
       this.r = var2;
    }

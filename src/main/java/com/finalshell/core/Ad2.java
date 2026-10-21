@@ -5,10 +5,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ad2 implements Tk4 {
-   final Lv4_2 n;
-   final Yf2 L;
+   public final Lv4_2 n;
+   public final Yf2 L;
 
-   Ad2(Yf2 var1, Lv4_2 var2) {
+   public Ad2(Yf2 var1, Lv4_2 var2) {
       this.L = var1;
       this.n = var2;
    }

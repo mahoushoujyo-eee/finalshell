@@ -19,14 +19,14 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class Ch2 extends F8 {
-   T32 P;
-   KV F;
-   boolean W;
-   ConnectionProperty g;
-   Ty2 d;
-   String r;
-   Lh4_2 E;
-   GH_2 S;
+   public T32 P;
+   public KV F;
+   public boolean W;
+   public ConnectionProperty g;
+   public Ty2 d;
+   public String r;
+   public Lh4_2 E;
+   public GH_2 S;
    public static Ky4[] v;
    public static String[] a;
    public static String[] b;
@@ -163,7 +163,7 @@ public class Ch2 extends F8 {
       }
    }
 
-   F8 n() {
+   public F8 n() {
       a();
       F8 var2 = new F8();
       var2.setOpaque(true);
@@ -249,7 +249,7 @@ public class Ch2 extends F8 {
       MatteBorder var2 = BorderFactory.createMatteBorder(0, 0, 0, (int)var1, var10008);
    }
 
-   void y() {
+   public void y() {
       Object var1 = 254198425345626269L;
       Registry.lookupField(461634183601281643L).setBoolean(Ref.g(254198425345626269L, var1), false);
       Object var3 = 254198425345626269L;

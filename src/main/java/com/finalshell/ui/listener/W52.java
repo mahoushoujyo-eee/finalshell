@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class W52 implements PropertyChangeListener {
-   final com.finalshell.core.OC3 V;
+   public final com.finalshell.core.OC3 V;
 
-   W52(com.finalshell.core.OC3 var1) {
+   public W52(com.finalshell.core.OC3 var1) {
       this.V = var1;
    }
 

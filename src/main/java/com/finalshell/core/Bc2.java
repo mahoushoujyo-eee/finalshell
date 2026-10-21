@@ -4,12 +4,12 @@ import com.finalshell.ui.panel.Ky4;
 import java.util.HashMap;
 
 public class Bc2 {
-   HashMap E = new HashMap();
-   HashMap n = new HashMap();
+   public HashMap E = new HashMap();
+   public HashMap n = new HashMap();
    public static String[] a;
    public static String[] b;
 
-   synchronized void l(String var1, String var2, B22 var3) {
+   public synchronized void l(String var1, String var2, B22 var3) {
       String var7;
       B22 var9;
       label17: {
@@ -43,7 +43,7 @@ public class Bc2 {
       this.n.put(var7, var9);
    }
 
-   B22 q(String var1, String var2) {
+   public B22 q(String var1, String var2) {
       String var3 = "" + (var1.hashCode() + var2.hashCode());
       return (B22)this.n.get(var3);
    }

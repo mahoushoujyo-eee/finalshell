@@ -4,10 +4,10 @@ import java.net.DatagramPacket;
 
 public class Wk2 extends WC {
    public short c = D6.G;
-   byte[] i;
-   int u;
-   int Y;
-   int w;
+   public byte[] i;
+   public int u;
+   public int Y;
+   public int w;
    public static long[] a;
    public static Integer[] b;
 

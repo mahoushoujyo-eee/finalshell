@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.listener.Ic2;
 
 public class CO implements Runnable {
-   final Ic2 R;
+   public final Ic2 R;
 
-   CO(Ic2 var1) {
+   public CO(Ic2 var1) {
       this.R = var1;
    }
 

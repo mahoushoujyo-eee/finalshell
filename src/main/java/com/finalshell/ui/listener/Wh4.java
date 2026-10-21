@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Wh4 implements ActionListener {
-   final Runnable y;
+   public final Runnable y;
 
-   Wh4(Runnable var1) {
+   public Wh4(Runnable var1) {
       this.y = var1;
    }
 

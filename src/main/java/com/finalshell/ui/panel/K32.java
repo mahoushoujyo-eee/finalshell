@@ -36,31 +36,31 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
 public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
-   protected boolean Q;
-   protected ImageIcon U;
-   protected ImageIcon v;
-   protected Insets x;
-   protected boolean G;
-   protected boolean S;
-   protected int E;
-   protected int r;
-   protected Insets t;
-   protected List P;
-   protected ImageIcon X;
-   protected ImageIcon R;
-   protected ImageIcon s;
-   protected ImageIcon i;
-   protected E_2 h;
-   protected boolean C;
-   protected float k;
-   protected float H;
-   protected WC_2 p;
-   protected boolean K;
-   protected Ky4 j;
-   protected Component M;
-   protected KD g;
-   protected Ky4 Z;
-   protected Component Y;
+   public boolean Q;
+   public ImageIcon U;
+   public ImageIcon v;
+   public Insets x;
+   public boolean G;
+   public boolean S;
+   public int E;
+   public int r;
+   public Insets t;
+   public List P;
+   public ImageIcon X;
+   public ImageIcon R;
+   public ImageIcon s;
+   public ImageIcon i;
+   public E_2 h;
+   public boolean C;
+   public float k;
+   public float H;
+   public WC_2 p;
+   public boolean K;
+   public Ky4 j;
+   public Component M;
+   public KD g;
+   public Ky4 Z;
+   public Component Y;
    public static int[] A;
    public static String[] a;
    public static String[] b;
@@ -84,8 +84,8 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
    }
 
    public K32(Icon var1, String var2, Component var3) {
+   super();
       int[] var10000 = L$arrint();
-      super();
       this.Q = YA_2.K;
       this.U = YA_2.C;
       int[] var4 = var10000;
@@ -153,7 +153,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       }
    }
 
-   protected void o() {
+   public void o() {
       int[] var1 = L$arrint();
       boolean var10000 = this.isShowing();
       if (var1 != null) {
@@ -191,11 +191,11 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       var2.transferFocus();
    }
 
-   protected void D$void() {
+   public void D$void() {
       this.K(this.u$Icon(), this.Q());
    }
 
-   protected void K(Icon var1, String var2) {
+   public void K(Icon var1, String var2) {
       Object var4;
       label25: {
          int[] var3 = L$arrint();
@@ -224,7 +224,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       ((Ky4)var4).add(this.M, b(-73, -20720));
    }
 
-   protected void J() {
+   public void J() {
       int[] var1 = L$arrint();
       K32 var10000 = this;
       if (var1 != null) {
@@ -307,7 +307,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       ((O)var6).S(var2);
    }
 
-   protected void c() {
+   public void c() {
       K32 var3;
       label43: {
          label45: {
@@ -368,7 +368,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       var3.revalidate();
    }
 
-   protected void v() {
+   public void v() {
       int[] var1;
       int var10001;
       label79: {
@@ -474,7 +474,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       this.j.I((boolean)var10001, (boolean)((((var10002 != 0) != 0) != 0) != 0), (boolean)(var10003 != 0), (boolean)((var10004 != 0) != 0));
    }
 
-   protected void z() {
+   public void z() {
       Object var4;
       label69: {
          label68: {
@@ -551,11 +551,11 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       ((Ky4)var4).revalidate();
    }
 
-   protected void L$void() {
+   public void L$void() {
       this.g.setMargin(this.x);
    }
 
-   protected JComponent C(Icon var1, String var2) {
+   public JComponent C(Icon var1, String var2) {
       Object var4;
       label23: {
          int[] var3 = L$arrint();
@@ -744,7 +744,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       return var10000;
    }
 
-   protected void u$void() {
+   public void u$void() {
       int[] var10000 = L$arrint();
       this.v();
       int[] var1 = var10000;
@@ -832,13 +832,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       return var10000;
    }
 
-   protected void K$void() {
+   public void K$void() {
       this.revalidate();
       this.repaint();
       this.Z();
    }
 
-   protected void n() {
+   public void n() {
       int[] var1 = L$arrint();
       WC_2 var10000 = this.p;
       if (var1 != null) {
@@ -1020,13 +1020,13 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       this.z();
    }
 
-   protected void V() {
+   public void V() {
       this.t$void();
       this.A$void();
       this.r();
    }
 
-   protected void r() {
+   public void r() {
       int[] var1 = L$arrint();
       K32 var10000 = this;
       if (var1 != null) {
@@ -1045,12 +1045,12 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       var10000.g.setDisabledIcon(this.h$ImageIcon());
    }
 
-   protected void t$void() {
+   public void t$void() {
       this.s = null;
       this.i = null;
    }
 
-   protected ImageIcon y$ImageIcon() {
+   public ImageIcon y$ImageIcon() {
       int[] var1 = L$arrint();
       ImageIcon var10000 = this.s;
       if (var1 != null) {
@@ -1126,7 +1126,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       return var10000;
    }
 
-   protected ImageIcon E() {
+   public ImageIcon E() {
       int[] var1 = L$arrint();
       ImageIcon var10000 = this.i;
       if (var1 != null) {
@@ -1140,12 +1140,12 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       return var10000;
    }
 
-   protected void A$void() {
+   public void A$void() {
       this.X = null;
       this.R = null;
    }
 
-   protected ImageIcon a() {
+   public ImageIcon a() {
       int[] var1 = L$arrint();
       ImageIcon var10000 = this.X;
       if (var1 != null) {
@@ -1267,7 +1267,7 @@ public class K32 extends Ky4 implements SwingConstants, W2_3, Au2, Eh2 {
       return var10000;
    }
 
-   protected ImageIcon h$ImageIcon() {
+   public ImageIcon h$ImageIcon() {
       int[] var1 = L$arrint();
       ImageIcon var10000 = this.R;
       if (var1 != null) {

@@ -10,7 +10,7 @@ import java.util.WeakHashMap;
 import javax.swing.JComponent;
 
 public class Hv2 implements En4 {
-   protected final Map k = new WeakHashMap();
+   public final Map k = new WeakHashMap();
 
    @Override
    public void Q(Component var1, com.finalshell.ui.model.G9 var2) {
@@ -97,7 +97,7 @@ public class Hv2 implements En4 {
       }
    }
 
-   protected void E(com.finalshell.ui.panel.Wd2 var1) {
+   public void E(com.finalshell.ui.panel.Wd2 var1) {
       boolean var10000 = I22.K$boolean();
       Component var3 = var1.N$Component();
       boolean var2 = var10000;

@@ -15,11 +15,11 @@ public class L32 extends Ls4 {
    public static long[] e;
    public static Integer[] g;
 
-   L32(Xe2 var1) {
+   public L32(Xe2 var1) {
       this(var1, null, null, null, null);
    }
 
-   L32(Xe2 param1, byte[] param2) {
+   public L32(Xe2 param1, byte[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -106,7 +106,7 @@ public class L32 extends Ls4 {
       // b0: return
    }
 
-   L32(Xe2 param1, byte[] param2, byte[] param3, byte[] param4, byte[] param5) {
+   public L32(Xe2 param1, byte[] param2, byte[] param3, byte[] param4, byte[] param5) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -204,7 +204,7 @@ public class L32 extends Ls4 {
    }
 
    @Override
-   void K(int param1) throws Pc2 {
+   public void K(int param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -301,17 +301,17 @@ public class L32 extends Ls4 {
    }
 
    @Override
-   byte[] Y() {
+   public byte[] Y() {
       return n;
    }
 
    @Override
-   byte[] d() {
+   public byte[] d() {
       return N;
    }
 
    @Override
-   byte[] r$arrbyte() {
+   public byte[] r$arrbyte() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -541,7 +541,7 @@ public class L32 extends Ls4 {
    }
 
    @Override
-   boolean I(byte[] param1) {
+   public boolean I(byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1397,7 +1397,7 @@ public class L32 extends Ls4 {
    }
 
    @Override
-   byte[] A() {
+   public byte[] A() {
       return E8.J(b(-902, 1821) + E8.B(this.i));
    }
 
@@ -1653,7 +1653,7 @@ public class L32 extends Ls4 {
       return this.R();
    }
 
-   static Ls4 m(Xe2 var0, UJ var1) throws Pc2 {
+   public static Ls4 m(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(5, b(-900, -7610));
       byte[] var3 = var2[1];
       byte[][] var4 = Y(var2[2]);
@@ -1687,7 +1687,7 @@ public class L32 extends Ls4 {
       return var2;
    }
 
-   static byte[] I(byte[] var0, byte[] var1) {
+   public static byte[] I(byte[] var0, byte[] var1) {
       byte[] var2 = new byte[1 + var0.length + var1.length];
       var2[0] = 4;
       System.arraycopy(var0, 0, var2, 1, var0.length);
@@ -1695,7 +1695,7 @@ public class L32 extends Ls4 {
       return var2;
    }
 
-   static byte[][] Y(byte[] var0) {
+   public static byte[][] Y(byte[] var0) {
       boolean var10000 = Dm4.F$boolean();
       int var2 = 0;
       boolean var1 = var10000;

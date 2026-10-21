@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.core.SecondHandshake;
 
 public class FS extends Thread {
-   final SecondHandshake h;
+   public final SecondHandshake h;
 
-   FS(SecondHandshake var1) {
+   public FS(SecondHandshake var1) {
       this.h = var1;
    }
 

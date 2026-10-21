@@ -10,8 +10,8 @@ import javax.swing.BorderFactory;
 import net.miginfocom.swing.MigLayout;
 
 public class CL extends F8 {
-   T32 a;
-   QuickConnectPanel W;
+   public T32 a;
+   public QuickConnectPanel W;
    public static int k;
    public static String[] b;
    public static String[] d;

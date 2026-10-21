@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Aa2;
 import java.lang.reflect.InvocationTargetException;
 
 public class AR implements Runnable {
-   final Aa2 M;
+   public final Aa2 M;
 
-   AR(Aa2 var1) {
+   public AR(Aa2 var1) {
       this.M = var1;
    }
 

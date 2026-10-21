@@ -4,9 +4,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class T3 implements ChangeListener {
-   final com.finalshell.ui.panel.N_2 k;
+   public final com.finalshell.ui.panel.N_2 k;
 
-   T3(com.finalshell.ui.panel.N_2 var1) {
+   public T3(com.finalshell.ui.panel.N_2 var1) {
       this.k = var1;
    }
 

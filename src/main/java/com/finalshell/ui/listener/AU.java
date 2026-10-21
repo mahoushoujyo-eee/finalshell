@@ -4,9 +4,9 @@ import com.finalshell.core.E__2;
 import java.awt.event.ComponentEvent;
 
 public class AU extends AJ {
-   final E__2 V;
+   public final E__2 V;
 
-   AU(E__2 var1) {
+   public AU(E__2 var1) {
       this.V = var1;
    }
 

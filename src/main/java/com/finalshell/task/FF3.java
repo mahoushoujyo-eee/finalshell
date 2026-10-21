@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.CP;
 import java.lang.reflect.InvocationTargetException;
 
 public class FF3 implements Runnable {
-   final CP a;
+   public final CP a;
 
-   FF3(CP var1) {
+   public FF3(CP var1) {
       this.a = var1;
    }
 

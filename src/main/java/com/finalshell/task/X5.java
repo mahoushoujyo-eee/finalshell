@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.U;
 import java.lang.reflect.InvocationTargetException;
 
 public class X5 implements Runnable {
-   final U n;
+   public final U n;
 
-   X5(U var1) {
+   public X5(U var1) {
       this.n = var1;
    }
 

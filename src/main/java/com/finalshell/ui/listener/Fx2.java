@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fx2 implements ActionListener {
-   final UpdateFrame Y;
+   public final UpdateFrame Y;
 
-   Fx2(UpdateFrame var1) {
+   public Fx2(UpdateFrame var1) {
       this.Y = var1;
    }
 

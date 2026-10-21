@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class BX extends Thread {
-   final Connection7 J;
+   public final Connection7 J;
    public final OutputStream y;
    public static long a;
 
-   BX(Connection7 var1, OutputStream var2) {
+   public BX(Connection7 var1, OutputStream var2) {
       this.J = var1;
       this.y = var2;
    }

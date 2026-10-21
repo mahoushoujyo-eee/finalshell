@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 public class Hc4 extends HN3 {
    public float h;
    public float l = 0.0F;
-   protected float y = 5.0F;
+   public float y = 5.0F;
    public float f;
    public float x;
    public static String a;

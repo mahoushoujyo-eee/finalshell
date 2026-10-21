@@ -50,7 +50,7 @@ public class Ca2_2 implements Y2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == this.o ? 1 : 0);
+         return (boolean)((var10000 == this.o ? 1 : 0) != 0);
       }
    }
 

@@ -11,7 +11,7 @@ public abstract class Bs2_2 {
    public static String[] a;
    public static String[] b;
 
-   Bs2_2(@NotNull DC3 param1, int param2, int param3, @NotNull YP param4) {
+   public Bs2_2(@NotNull DC3 param1, int param2, int param3, @NotNull YP param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -111,7 +111,7 @@ public abstract class Bs2_2 {
       this.C = true;
    }
 
-   protected abstract void t();
+   public abstract void t();
 
    public boolean v(int param1, int param2) {
       // $VF: Couldn't be decompiled

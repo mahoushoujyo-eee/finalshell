@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import javax.swing.JPanel;
 
 public class W8 extends JPanel {
-   String w;
+   public String w;
 
    public W8(String var1) {
       long var3 = 374922815631635208L;

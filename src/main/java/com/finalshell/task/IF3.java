@@ -1,9 +1,9 @@
 package com.finalshell.task;
 
 public class IF3 implements Runnable {
-   final Cw2 d;
+   public final Cw2 d;
 
-   IF3(Cw2 var1) {
+   public IF3(Cw2 var1) {
       this.d = var1;
    }
 

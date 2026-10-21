@@ -376,7 +376,7 @@ public class II extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       int var3 = this.getHeight();
       int var4 = this.getWidth();
@@ -600,31 +600,31 @@ public class II extends JComponent {
       return new Dimension(a(23296, 5169269775888493519L) * (this.e.size() + 1) + this.k * this.e.size(), a(23427, 2024366731169606474L) + this.O * 2);
    }
 
-   static List d(II var0) {
+   public static List d(II var0) {
       return var0.e;
    }
 
-   static int a(II var0) {
+   public static int a(II var0) {
       return var0.W;
    }
 
-   static int i(II var0) {
+   public static int i(II var0) {
       return var0.k;
    }
 
-   static float Z(II var0) {
+   public static float Z(II var0) {
       return var0.f;
    }
 
-   static float k(II var0, float var1) {
+   public static float k(II var0, float var1) {
       return var0.f += var1;
    }
 
-   static float T(II var0, float var1) {
+   public static float T(II var0, float var1) {
       return var0.f = var1;
    }
 
-   static WC_2 I(II var0) {
+   public static WC_2 I(II var0) {
       return var0.s;
    }
 

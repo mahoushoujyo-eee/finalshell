@@ -7,7 +7,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class X2_4 extends Y2_5 implements Cloneable {
-   String i;
+   public String i;
    public static long[] d;
    public static Integer[] e;
 
@@ -40,7 +40,7 @@ public class X2_4 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected Y2_5 B() {
+   public Y2_5 B() {
       X2_4 var1 = new X2_4(this.v, this.k, this.i);
       var1.s = this.s;
       var1.T = this.T;
@@ -48,7 +48,7 @@ public class X2_4 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected Jk2 k(int var1, InetAddress var2, int var3) {
+   public Jk2 k(int var1, InetAddress var2, int var3) {
       String[] var4;
       label20: {
          var4 = Jk2.Y();
@@ -76,12 +76,12 @@ public class X2_4 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected Jk2 Q(int var1, String var2, int var3) throws UnknownHostException {
+   public Jk2 Q(int var1, String var2, int var3) throws UnknownHostException {
       return this.k(var1, InetAddress.getByName(var2), var3);
    }
 
    @Override
-   protected Jk2 o(InputStream var1) throws B52, IOException {
+   public Jk2 o(InputStream var1) throws B52, IOException {
       return new Jo2(var1, true);
    }
 

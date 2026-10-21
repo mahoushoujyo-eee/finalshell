@@ -15,10 +15,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vj2 implements ActionListener {
-   final NetworkMonitorPanel E;
+   public final NetworkMonitorPanel E;
    public static String a;
 
-   Vj2(NetworkMonitorPanel var1) {
+   public Vj2(NetworkMonitorPanel var1) {
       this.E = var1;
    }
 

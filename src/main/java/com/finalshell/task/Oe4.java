@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.ConnectTimeout;
 
 public class Oe4 extends Thread {
-   final ConnectTimeout X;
+   public final ConnectTimeout X;
    public static long a;
 
-   Oe4(ConnectTimeout var1) {
+   public Oe4(ConnectTimeout var1) {
       this.X = var1;
    }
 

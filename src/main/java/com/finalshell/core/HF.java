@@ -5,18 +5,18 @@ import java.util.Objects;
 public class HF extends Hv2_2 {
    @C_9
    public H4_2[] d;
-   final NU_3 K;
-   final H3_2 B;
+   public final NU_3 K;
+   public final H3_2 B;
    public static String[] c;
    public static String[] e;
    public static long[] f;
    public static Integer[] h;
 
-   HF(H3_2 var1, Hd2 var2, NU_3 var3) {
+   public HF(H3_2 var1, Hd2 var2, NU_3 var3) {
+   super(var2);
       this.B = var1;
       this.K = var3;
       Objects.requireNonNull(var2);
-      super(var2);
    }
 
    @Override

@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 public class KQ implements ActionListener {
-   final Wd2 I;
+   public final Wd2 I;
 
-   KQ(Wd2 var1) {
+   public KQ(Wd2 var1) {
       this.I = var1;
    }
 
@@ -22,7 +22,7 @@ public class KQ implements ActionListener {
       Ky4[] var10000 = Ac2.n();
       float var4 = 1.0F / var3;
       Ky4[] var2 = var10000;
-      int var7 = Wd2.q(this.I).equals(IC3.fadeIn);
+      int var7 = (Wd2.q(this.I).equals(IC3.fadeIn)) ? 1 : 0;
       if (var2 == null) {
          if (var7 != 0) {
             Wd2 var8 = this.I;
@@ -45,7 +45,7 @@ public class KQ implements ActionListener {
             }
          }
 
-         var7 = Wd2.q(this.I).equals(IC3.fadeOut);
+         var7 = (Wd2.q(this.I).equals(IC3.fadeOut)) ? 1 : 0;
       }
 
       label50: {

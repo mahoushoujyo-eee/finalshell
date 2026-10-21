@@ -31,30 +31,30 @@ import javax.swing.JWindow;
 import javax.swing.Popup;
 
 public class QB extends Ky4 implements W_3 {
-   protected List a = new ArrayList(2);
-   protected boolean V = true;
-   protected boolean F = true;
-   protected boolean e = false;
-   protected boolean Y = false;
-   protected float P = 1.0F;
-   protected boolean n = true;
-   protected float A = 0.05F;
-   protected float y;
-   protected final Object c;
-   protected boolean r;
-   protected boolean U;
-   protected WC_2 l;
-   protected WC_2 S;
-   protected final List t;
-   protected final List K;
-   protected final Object i;
-   protected Popup E;
-   protected JWindow w;
-   protected Component b;
-   protected Window z;
-   protected AWTEventListener N;
-   protected Ka2 f;
-   protected Rt2 W;
+   public List a = new ArrayList(2);
+   public boolean V = true;
+   public boolean F = true;
+   public boolean e = false;
+   public boolean Y = false;
+   public float P = 1.0F;
+   public boolean n = true;
+   public float A = 0.05F;
+   public float y;
+   public final Object c;
+   public boolean r;
+   public boolean U;
+   public WC_2 l;
+   public WC_2 S;
+   public final List t;
+   public final List K;
+   public final Object i;
+   public Popup E;
+   public JWindow w;
+   public Component b;
+   public Window z;
+   public AWTEventListener N;
+   public Ka2 f;
+   public Rt2 W;
    public static long p;
 
    public QB() {
@@ -244,7 +244,7 @@ public class QB extends Ky4 implements W_3 {
       return this.E();
    }
 
-   protected JWindow E() {
+   public JWindow E() {
       int[] var1 = WC_2.V();
       JWindow var10000 = this.w;
       if (var1 == null) {
@@ -268,7 +268,7 @@ public class QB extends Ky4 implements W_3 {
       return this.B$JWindow();
    }
 
-   protected JWindow B$JWindow() {
+   public JWindow B$JWindow() {
       int[] var1 = WC_2.V();
       JWindow var10000 = this.w;
       if (var1 == null) {
@@ -357,11 +357,11 @@ public class QB extends Ky4 implements W_3 {
       var10000.Y();
    }
 
-   protected void h() {
+   public void h() {
       this.W = Rt2.q(this.w, this.z);
    }
 
-   protected void Y() {
+   public void Y() {
       Rt2.f(this.z, this.W);
       this.W = null;
    }
@@ -413,7 +413,7 @@ public class QB extends Ky4 implements W_3 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void T(Component var1, int var2, int var3) {
+   public void T(Component var1, int var2, int var3) {
       int[] var10000 = WC_2.V();
       Object var5 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -566,7 +566,7 @@ public class QB extends Ky4 implements W_3 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void W$void() {
+   public void W$void() {
       int[] var10000 = WC_2.V();
       Object var2 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -657,7 +657,7 @@ public class QB extends Ky4 implements W_3 {
       }
    }
 
-   protected void D() {
+   public void D() {
       QB var2;
       int[] var10000 = WC_2.V();
       this.g();
@@ -692,10 +692,10 @@ public class QB extends Ky4 implements W_3 {
       var2.q$void();
    }
 
-   protected void i() {
+   public void i() {
    }
 
-   protected void f() {
+   public void f() {
    }
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits

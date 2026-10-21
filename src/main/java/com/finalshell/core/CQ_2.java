@@ -7,14 +7,14 @@ import java.util.Arrays;
 
 public class CQ_2 extends CM_2 {
    public final Y2_3[] c;
-   static boolean B;
+   public static boolean B;
    public static String[] a;
    public static String[] b;
    public static long e;
 
    public CQ_2(int var1, Y2_3[] var2) {
+   super(var1);
       Ky4[] var10000 = Cr2_2.q$arrky_4();
-      super(var1);
       Ky4[] var3 = var10000;
       if (var3 == null) {
          if (!B) {

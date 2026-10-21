@@ -597,7 +597,7 @@ public class ZzzzF6BeanInfo {
       // 77: areturn
    }
 
-   static boolean W(List param0, Ph2 param1) {
+   public static boolean W(List param0, Ph2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3941,7 +3941,7 @@ public class ZzzzF6BeanInfo {
       // 28e: return
    }
 
-   static Constructor n(java.lang.Class param0, Constructor[] param1) {
+   public static Constructor n(java.lang.Class param0, Constructor[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

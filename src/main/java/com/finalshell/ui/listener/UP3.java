@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextArea;
 
 public class UP3 implements ActionListener {
-   final LogPanel Y;
+   public final LogPanel Y;
 
-   UP3(LogPanel var1) {
+   public UP3(LogPanel var1) {
       this.Y = var1;
    }
 

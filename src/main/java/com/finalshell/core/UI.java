@@ -3,13 +3,13 @@ package com.finalshell.core;
 import java.awt.Shape;
 
 public class UI implements E_2 {
-   final int u;
-   final int x;
-   final int D;
-   final int M;
-   final boolean Y;
+   public final int u;
+   public final int x;
+   public final int D;
+   public final int M;
+   public final boolean Y;
 
-   UI(int var1, int var2, int var3, int var4, boolean var5) {
+   public UI(int var1, int var2, int var3, int var4, boolean var5) {
       this.u = var1;
       this.x = var2;
       this.D = var3;

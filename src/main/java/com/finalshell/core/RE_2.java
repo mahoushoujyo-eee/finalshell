@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.security.PrivilegedAction;
 
 public class RE_2 implements PrivilegedAction {
-   final ClassLoader d;
-   final Rh2_2 Y;
+   public final ClassLoader d;
+   public final Rh2_2 Y;
 
-   RE_2(Rh2_2 var1, ClassLoader var2) {
+   public RE_2(Rh2_2 var1, ClassLoader var2) {
       this.Y = var1;
       this.d = var2;
    }

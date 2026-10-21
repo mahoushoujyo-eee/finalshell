@@ -16,19 +16,19 @@ import java.util.Random;
 public class F0 {
    public DatagramSocket X;
    public int z;
-   Socket S;
-   InetAddress w;
-   int r;
-   HashMap T = new HashMap();
-   Object y = new Object();
-   F0 L;
-   InputStream q;
-   static Random x;
-   PingMessageR N;
-   String U;
-   int C;
+   public Socket S;
+   public InetAddress w;
+   public int r;
+   public HashMap T = new HashMap();
+   public Object y = new Object();
+   public F0 L;
+   public InputStream q;
+   public static Random x;
+   public PingMessageR N;
+   public String U;
+   public int C;
    public Dm4_2 l;
-   boolean E = false;
+   public boolean E = false;
    public static String a;
 
    static {
@@ -55,7 +55,7 @@ public class F0 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void d() {
+   public void d() {
       String[] var10000 = PingMessageR.N();
       this.X.close();
       String[] var1 = var10000;
@@ -85,7 +85,7 @@ public class F0 {
       this.l.D(this);
    }
 
-   Iterator g() {
+   public Iterator g() {
       Object var1 = null;
       synchronized (this.y) {
          return new com.finalshell.ui.model.GN(this.T.keySet().iterator());
@@ -96,7 +96,7 @@ public class F0 {
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void e(DatagramPacket var1) {
+   public void e(DatagramPacket var1) {
       FO var17;
       String[] var10000 = PingMessageR.N();
       ByteArrayInputStream var3 = new ByteArrayInputStream(var1.getData(), 0, var1.getLength());
@@ -176,7 +176,7 @@ public class F0 {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   void A(byte[] var1) {
+   public void A(byte[] var1) {
       DatagramPacket var3 = new DatagramPacket(var1, var1.length);
       var3.setAddress(this.w);
       String[] var10000 = PingMessageR.N();
@@ -222,7 +222,7 @@ public class F0 {
       var4.printStackTrace();
    }
 
-   void N() {
+   public void N() {
       PingMessageR.U.execute(new com.finalshell.task.XF(this));
    }
 

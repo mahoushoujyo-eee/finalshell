@@ -9,10 +9,10 @@ import javax.swing.table.AbstractTableModel;
 
 public class UN extends AbstractTableModel {
    public ArrayList F;
-   String[] a;
-   Class[] j;
+   public String[] a;
+   public Class[] j;
 
-   UN() {
+   public UN() {
       ArrayList var10001 = new ArrayList();
       long var2 = 388227650086417294L;
       ArrayList var1 = var10001;

@@ -35,28 +35,28 @@ import javax.swing.tree.DefaultTreeModel;
 import net.miginfocom.swing.MigLayout;
 
 public class Km4 extends JFrame {
-   JPanel n;
-   JPanel J;
-   Z8 w;
-   Lv4_2 W;
-   ArrayList q;
-   Vg2 N;
-   AA B;
-   DefaultMutableTreeNode A;
-   DefaultMutableTreeNode L;
-   long P;
-   Km4 f;
-   String D;
+   public JPanel n;
+   public JPanel J;
+   public Z8 w;
+   public Lv4_2 W;
+   public ArrayList q;
+   public Vg2 N;
+   public AA B;
+   public DefaultMutableTreeNode A;
+   public DefaultMutableTreeNode L;
+   public long P;
+   public Km4 f;
+   public String D;
    public static boolean j;
-   KQ r;
-   boolean g;
-   DefaultMutableTreeNode V;
-   DefaultMutableTreeNode C;
-   Edit t;
-   DefaultMutableTreeNode c;
-   TunnelList F;
-   TerminalHint h;
-   String O;
+   public KQ r;
+   public boolean g;
+   public DefaultMutableTreeNode V;
+   public DefaultMutableTreeNode C;
+   public Edit t;
+   public DefaultMutableTreeNode c;
+   public TunnelList F;
+   public TerminalHint h;
+   public String O;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -80,7 +80,7 @@ public class Km4 extends JFrame {
       Registry.lookupField(423197961904551339L).setBoolean(this, false);
       long var29 = 241687581993549108L;
       Ref.s(241687581993549108L, var5, var29);
-      if (this == false) {
+      if (this == null) {
          if (var2 != null) {
             Object[] var10006 = Registry.packArgs(true);
             long var31 = 480031414946709658L;
@@ -110,7 +110,7 @@ public class Km4 extends JFrame {
       }
 
       label268: {
-         if (this == false) {
+         if (this == null) {
             Object var36 = 193644890840143673L;
             if ((Lv4_2)Ref.g(193644890840143673L, var36) != null) {
                Registry.lookupField(423197961904551339L).setBoolean(this, true);
@@ -152,7 +152,7 @@ public class Km4 extends JFrame {
                   throw var237.getTargetException();
                }
 
-               if (this == false) {
+               if (this == null) {
                   break label268;
                }
 
@@ -406,7 +406,7 @@ public class Km4 extends JFrame {
          Object var166 = 270076967019229732L;
          ((JPanel)Ref.g(270076967019229732L, var166)).add(var18);
          JButton var10063 = var18;
-         if (this == false) {
+         if (this == null) {
             var18.addActionListener(new YW3(this));
             if (Registry.lookupField(423197961904551339L).getBoolean(this)) {
                JButton var19 = new JButton(a(-2302, 10772));
@@ -414,7 +414,7 @@ public class Km4 extends JFrame {
                Object var168 = 270076967019229732L;
                ((JPanel)Ref.g(270076967019229732L, var168)).add(var19);
                var19.addActionListener(new Bt2(this));
-               if (this == false) {
+               if (this == null) {
                   break label258;
                }
             }
@@ -446,7 +446,7 @@ public class Km4 extends JFrame {
       }
 
       label274: {
-         if (this == false) {
+         if (this == null) {
             if (!Registry.lookupField(423197961904551339L).getBoolean(this)) {
                Lv4_2 var10068 = new Lv4_2();
                long var179 = 193644890840143673L;
@@ -491,7 +491,7 @@ public class Km4 extends JFrame {
                   throw var223.getTargetException();
                }
 
-               if (this == false) {
+               if (this == null) {
                   break label274;
                }
             }
@@ -533,8 +533,8 @@ public class Km4 extends JFrame {
 
       Object[] var251;
       label276: {
-         if (this == false) {
-            if (var249 == false) {
+         if (this == null) {
+            if (var249 == null) {
                this.setAlwaysOnTop(true);
             }
 
@@ -562,7 +562,7 @@ public class Km4 extends JFrame {
             }
 
             var10074.setLocationRelativeTo(var254);
-            if (this != false) {
+            if (this == null) {
                break label276;
             }
 
@@ -588,7 +588,7 @@ public class Km4 extends JFrame {
             }
          }
 
-         if (var249 != false) {
+         if (var249 == null) {
             return;
          }
 
@@ -618,7 +618,7 @@ public class Km4 extends JFrame {
             throw var9.getTargetException();
          }
 
-         if (var2 != false) {
+         if (var2 == null) {
             break;
          }
       }
@@ -709,7 +709,7 @@ public class Km4 extends JFrame {
       }
    }
 
-   boolean w() {
+   public boolean w() {
       long var10 = 192015943206609872L;
       Object var9 = null;
       Ref.s(192015943206609872L, var9, var10);
@@ -748,15 +748,15 @@ public class Km4 extends JFrame {
                throw var29.getTargetException();
             }
 
-            if (var1 == false) {
+            if (var1 == null) {
                break;
             }
 
-            if (var1 != false && !var41) {
+            if (var1 == null && !var41) {
                var3.add(var6);
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                continue;
             }
          }
@@ -765,7 +765,7 @@ public class Km4 extends JFrame {
          break;
       }
 
-      if (var1 != false) {
+      if (var1 == null) {
          if (var10002 > 0) {
             var4 = var3.iterator();
 
@@ -788,7 +788,7 @@ public class Km4 extends JFrame {
                      }
 
                      ArrayList var34 = var37;
-                     if (var1 == false) {
+                     if (var1 == null) {
                         break label93;
                      }
 
@@ -801,10 +801,10 @@ public class Km4 extends JFrame {
 
                         label83: {
                            String var8 = (String)var7.next();
-                           if (var1 != false) {
+                           if (var1 == null) {
                               Object var19 = 192015943206609872L;
                               Vg2 var42 = (Vg2)Ref.g(192015943206609872L, var19);
-                              if (var1 == false) {
+                              if (var1 == null) {
                                  break;
                               }
 
@@ -815,18 +815,18 @@ public class Km4 extends JFrame {
 
                            long var22 = 192015943206609872L;
                            Ref.s(192015943206609872L, var33, var22);
-                           if (var1 != false) {
+                           if (var1 == null) {
                               break label88;
                            }
                         }
 
-                        if (var1 == false) {
+                        if (var1 == null) {
                            break label88;
                         }
                      }
                   }
 
-                  if (var1 != false) {
+                  if (var1 == null) {
                      continue;
                   }
                }
@@ -858,7 +858,7 @@ public class Km4 extends JFrame {
       return (boolean)var10002;
    }
 
-   void L(Lv4_2 param1, boolean param2) throws Exception {
+   public void L(Lv4_2 param1, boolean param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1164,7 +1164,7 @@ public class Km4 extends JFrame {
       // 2b4: return
    }
 
-   void A() {
+   public void A() {
       Object var1 = 631372995965003737L;
       Ref.g(631372995965003737L, var1);
       Object var3 = 192015943206609872L;

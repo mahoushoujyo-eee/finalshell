@@ -9,16 +9,16 @@ import java.util.Iterator;
 import javax.swing.SwingConstants;
 
 public class Ts2_2 extends T4 implements SwingConstants {
-   protected boolean F = true;
-   protected boolean a = true;
-   protected int d = 0;
-   protected int W = 0;
-   protected int J;
-   protected int v;
-   protected boolean o;
-   protected int M;
-   protected int S;
-   protected ArrayList I;
+   public boolean F = true;
+   public boolean a = true;
+   public int d = 0;
+   public int W = 0;
+   public int J;
+   public int v;
+   public boolean o;
+   public int M;
+   public int S;
+   public ArrayList I;
    public static long b;
 
    public Ts2_2() {
@@ -310,7 +310,7 @@ public class Ts2_2 extends T4 implements SwingConstants {
       }
    }
 
-   protected int r(Container var1, Insets var2, NR3 var3) {
+   public int r(Container var1, Insets var2, NR3 var3) {
       int var4;
       int var6;
       int var10001;
@@ -359,7 +359,7 @@ public class Ts2_2 extends T4 implements SwingConstants {
       return var6 - var10001;
    }
 
-   protected int e(Container var1, Insets var2) {
+   public int e(Container var1, Insets var2) {
       int var3 = T4.b();
       int var10000 = this.v;
       int var10001 = 1;

@@ -14,7 +14,7 @@ public class Hb2 implements C7_3 {
    public F1 G;
    @C_9
    public Y_5 j;
-   static boolean q;
+   public static boolean q;
    public static String[] a;
    public static String[] c;
 
@@ -985,7 +985,7 @@ public class Hb2 implements C7_3 {
       // 2b: return
    }
 
-   protected final B2_5 F(String var1) {
+   public final B2_5 F(String var1) {
       return new B2_5(var1, this.w.m());
    }
 

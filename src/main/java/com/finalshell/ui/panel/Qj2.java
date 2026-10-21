@@ -17,12 +17,12 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Qj2 extends Ky4 {
-   protected List E;
-   protected boolean x;
-   protected boolean k;
-   protected XW p;
-   protected List F;
-   protected Component o;
+   public List E;
+   public boolean x;
+   public boolean k;
+   public XW p;
+   public List F;
+   public Component o;
    public static String a;
 
    public Qj2() {
@@ -98,7 +98,7 @@ public class Qj2 extends Ky4 {
       FN.u(var1, new Cu2_2(this, var3));
    }
 
-   protected void W(Component var1) {
+   public void W(Component var1) {
       String[] var2 = XW.w();
       Qj2 var10000 = this;
       if (var2 == null) {
@@ -206,7 +206,7 @@ public class Qj2 extends Ky4 {
       var10000.I(var1, var3, var4, var5);
    }
 
-   protected boolean y$boolean() {
+   public boolean y$boolean() {
       String[] var1 = XW.w();
       Qj2 var10000 = this;
       if (var1 == null) {
@@ -221,7 +221,7 @@ public class Qj2 extends Ky4 {
       return var1 != null ? var2 : var2;
    }
 
-   protected void I(Component var1, int var2, int var3, BufferedImage var4) {
+   public void I(Component var1, int var2, int var3, BufferedImage var4) {
       String[] var10000 = XW.w();
       this.removeAll();
       String[] var5 = var10000;
@@ -248,7 +248,7 @@ public class Qj2 extends Ky4 {
       }
    }
 
-   protected void I(Component var1) {
+   public void I(Component var1) {
       String[] var10000 = XW.w();
       this.removeAll();
       String[] var2 = var10000;

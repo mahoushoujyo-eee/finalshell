@@ -18,12 +18,12 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class Wa2 extends TransferHandler {
-   DataFlavor Y;
-   DataFlavor F;
-   DataFlavor[] k;
-   DefaultMutableTreeNode[] y;
-   DefaultMutableTreeNode P;
-   Connection5 v;
+   public DataFlavor Y;
+   public DataFlavor F;
+   public DataFlavor[] k;
+   public DefaultMutableTreeNode[] y;
+   public DefaultMutableTreeNode P;
+   public Connection5 v;
    public static String[] a;
    public static String[] b;
 
@@ -61,7 +61,7 @@ public class Wa2 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       String var10000 = com.finalshell.ui.panel.AA.z();
       JTree var3 = (JTree)var1;
       String var2 = var10000;
@@ -183,7 +183,7 @@ public class Wa2 extends TransferHandler {
    }
 
    @Override
-   protected void exportDone(JComponent var1, Transferable var2, int var3) {
+   public void exportDone(JComponent var1, Transferable var2, int var3) {
       if ((var3 & 2) == 2) {
          JTree var4 = (JTree)var1;
          DefaultTreeModel var5 = (DefaultTreeModel)var4.getModel();

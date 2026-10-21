@@ -8,11 +8,11 @@ import javax.swing.JButton;
 import javax.swing.JPopupMenu;
 
 public class AI implements ActionListener {
-   final JPopupMenu p;
-   final JButton z;
-   final ShowDeletedPanel S;
+   public final JPopupMenu p;
+   public final JButton z;
+   public final ShowDeletedPanel S;
 
-   AI(ShowDeletedPanel var1, JPopupMenu var2, JButton var3) {
+   public AI(ShowDeletedPanel var1, JPopupMenu var2, JButton var3) {
       this.S = var1;
       this.p = var2;
       this.z = var3;

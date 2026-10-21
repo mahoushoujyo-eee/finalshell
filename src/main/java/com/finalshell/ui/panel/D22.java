@@ -9,7 +9,7 @@ public class D22 extends JScrollPane {
    public static long[] a;
    public static Integer[] b;
 
-   D22(Component var1) {
+   public D22(Component var1) {
       super(var1);
    }
 

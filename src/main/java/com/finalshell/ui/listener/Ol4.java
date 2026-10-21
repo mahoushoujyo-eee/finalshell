@@ -8,9 +8,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Ol4 extends MouseAdapter {
-   final CC p;
+   public final CC p;
 
-   protected Ol4(CC var1) {
+   public Ol4(CC var1) {
       this.p = var1;
    }
 
@@ -39,7 +39,7 @@ public class Ol4 extends MouseAdapter {
                break label39;
             }
 
-            var8 = this.p.h;
+            var8 = (this.p.h) ? 1 : 0;
          }
 
          if (var8 != 0) {

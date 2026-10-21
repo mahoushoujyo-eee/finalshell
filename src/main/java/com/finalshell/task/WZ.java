@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class WZ extends Thread {
-   final Connect5 V;
+   public final Connect5 V;
    public final OutputStream l;
    public static String[] a;
    public static String[] b;
    public static long c;
    public static long d;
 
-   WZ(Connect5 var1, OutputStream var2) {
+   public WZ(Connect5 var1, OutputStream var2) {
       this.V = var1;
       this.l = var2;
    }

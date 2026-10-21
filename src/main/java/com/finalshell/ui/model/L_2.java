@@ -7,10 +7,7 @@ import com.finalshell.ui.panel.Ky4;
 import java.util.Comparator;
 
 public class L_2 implements Comparator {
-   static boolean d;
-
-   L_2() {
-   }
+   public static boolean d;
 
    @Override
    public int compare(@C_9 Object var1, @C_9 Object var2) {

@@ -12,13 +12,13 @@ import java.awt.image.BufferedImage;
 
 public class Hy2 implements ActionListener {
    public int e;
-   final Rectangle f;
-   final Qm2 S;
-   final BufferedImage I;
+   public final Rectangle f;
+   public final Qm2 S;
+   public final BufferedImage I;
    public static long[] a;
    public static Integer[] b;
 
-   Hy2(Rectangle var1, Qm2 var2, BufferedImage var3) {
+   public Hy2(Rectangle var1, Qm2 var2, BufferedImage var3) {
       this.f = var1;
       this.S = var2;
       this.I = var3;

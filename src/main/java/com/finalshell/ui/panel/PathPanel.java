@@ -25,29 +25,29 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class PathPanel extends JPanel implements Td4 {
-   JPanel h;
-   JTextField C;
-   Connection4 w;
-   JPanel K;
-   Km2 u;
-   com.finalshell.ui.model.Kl4 o;
-   Loading Y;
-   ArrayList y;
-   String x;
-   String J;
-   int k;
-   Zv2_2 b;
-   boolean c;
+   public JPanel h;
+   public JTextField C;
+   public Connection4 w;
+   public JPanel K;
+   public Km2 u;
+   public com.finalshell.ui.model.Kl4 o;
+   public Loading Y;
+   public ArrayList y;
+   public String x;
+   public String J;
+   public int k;
+   public Zv2_2 b;
+   public boolean c;
    public static String[] a;
    public static String[] d;
    public static long[] e;
    public static Integer[] f;
 
-   PathPanel(int var1) {
+   public PathPanel(int var1) {
       this(var1, null, false);
    }
 
-   PathPanel(int var1, Zv2_2 var2, boolean var3) {
+   public PathPanel(int var1, Zv2_2 var2, boolean var3) {
       ArrayList var10001 = new ArrayList();
       long var5 = 450621661109313877L;
       ArrayList var4 = var10001;
@@ -71,7 +71,7 @@ public class PathPanel extends JPanel implements Td4 {
       }
    }
 
-   void b() {
+   public void b() {
       this.setLayout(new MigLayout(a(-29541, 6200), "", ""));
       this.setOpaque(false);
       Object[] var10001 = Registry.emptyArgs();
@@ -118,7 +118,7 @@ public class PathPanel extends JPanel implements Td4 {
          var2 = var10004;
          Object var12 = 450621661109313877L;
          Object var10005 = (ArrayList)Ref.g(450621661109313877L, var12);
-         if (var2 == false) {
+         if (var2 == null) {
             if (var10005.size() <= 0) {
                break label23;
             }
@@ -133,13 +133,13 @@ public class PathPanel extends JPanel implements Td4 {
          var3 = (String)var10005;
       }
 
-      if (var2 == false && !var1.equals(var3)) {
+      if (var2 == null && !var1.equals(var3)) {
          Object var18 = 450621661109313877L;
          ((ArrayList)Ref.g(450621661109313877L, var18)).add(var1);
       }
    }
 
-   void h$void() {
+   public void h$void() {
       JPanel var10001 = new JPanel();
       long var7 = 300027703367967316L;
       JPanel var6 = var10001;
@@ -246,7 +246,7 @@ public class PathPanel extends JPanel implements Td4 {
 
       Connection4 var10026;
       Object var54 = 215197654066137060L;
-new TA((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(215197654066137060L, var54));
+true = new TA((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(215197654066137060L, var54));
       long var57 = 294487557435087442L;
       Connection4 var56 = var10026;
       Ref.s(294487557435087442L, var56, var57);
@@ -269,7 +269,7 @@ new TA((boolean)this, (com.finalshell.ui.model.Kl4)Ref.g(215197654066137060L, va
 
       Km2 var10032;
       Object var66 = 294487557435087442L;
-new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Registry.lookupField(464038983016865223L).getBoolean(this));
+null = new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Registry.lookupField(464038983016865223L).getBoolean(this));
 
 
       long var69 = 427789642816905166L;
@@ -414,7 +414,7 @@ new MigLayout(this, (Connection4)Ref.g(294487557435087442L, var66), Registry.loo
             throw var28.getTargetException();
          }
 
-         if (var1 != false || var10004 != null) {
+         if (var1 == null || var10004 != null) {
             Object[] var10005 = Registry.emptyArgs();
             long var14 = 498856411508641826L;
             Object[] var13 = var10005;

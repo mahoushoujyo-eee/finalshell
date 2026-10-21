@@ -12,7 +12,7 @@ public class Yj4 extends GT3 {
    public float m;
    public int z;
    public float j = 10000.0F;
-   Gy2 e;
+   public Gy2 e;
    public Vector x;
    public int I = 0;
    public int T = 0;
@@ -158,7 +158,7 @@ public class Yj4 extends GT3 {
       return this.x;
    }
 
-   protected void Q(O_3 var1, int var2) {
+   public void Q(O_3 var1, int var2) {
       var1.X(
          (float)(var2 >> a(13119, 2581595998403621982L) & a(14544, 4175067001360220083L)) * 0.003921569F,
          (float)(var2 >> a(24962, 6665134605975463653L) & a(18639, 4088369156610592681L)) * 0.003921569F,
@@ -168,7 +168,7 @@ public class Yj4 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10000 = W5.q();
       int var6 = 0;
       int[] var7 = new int[var1 * var2];
@@ -652,7 +652,7 @@ public class Yj4 extends GT3 {
       }
    }
 
-   protected O_3 U(Od4 var1, Od4 var2, Od4 var3, O_3 var4, O_3 var5, Gy2 var6, Go2[] var7) {
+   public O_3 U(Od4 var1, Od4 var2, Od4 var3, O_3 var4, O_3 var5, Gy2 var6, Go2[] var7) {
       this.b.t(var4);
       this.b.K(var6.e);
       String[] var10000 = W5.q();
@@ -879,7 +879,7 @@ public class Yj4 extends GT3 {
       return a;
    }
 
-   static int K(Yj4 var0) {
+   public static int K(Yj4 var0) {
       return var0.z;
    }
 

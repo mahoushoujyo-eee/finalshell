@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class CP implements ActionListener {
-   final LogPanel W;
+   public final LogPanel W;
 
-   CP(LogPanel var1) {
+   public CP(LogPanel var1) {
       this.W = var1;
    }
 

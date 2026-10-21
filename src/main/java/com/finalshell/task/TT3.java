@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.UZ;
 import java.lang.reflect.InvocationTargetException;
 
 public class TT3 implements Runnable {
-   final UZ J;
+   public final UZ J;
 
-   TT3(UZ var1) {
+   public TT3(UZ var1) {
       this.J = var1;
    }
 

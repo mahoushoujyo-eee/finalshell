@@ -19,7 +19,7 @@ import javax.swing.plaf.FontUIResource;
 
 public class Fx4 {
    public static int v;
-   M6 e;
+   public M6 e;
    public static Font j;
    public static Font U;
    public static Font i;
@@ -49,7 +49,7 @@ public class Fx4 {
    public static Color E;
    public static Color o;
    public static String c;
-   Window Q;
+   public Window Q;
    public static String[] d;
    public static String[] h;
    public static long[] l;

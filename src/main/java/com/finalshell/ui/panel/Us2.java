@@ -27,14 +27,14 @@ import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
 public class Us2 extends S implements Ig4 {
-   protected static Object F;
-   protected final Object c = new Object();
-   protected List X = new ArrayList(1);
-   protected final Object x = new Object();
-   protected boolean S = true;
-   protected Comparator M;
-   protected On2 u;
-   protected T8_2 Q;
+   public static Object F;
+   public final Object c = new Object();
+   public List X = new ArrayList(1);
+   public final Object x = new Object();
+   public boolean S = true;
+   public Comparator M;
+   public On2 u;
+   public T8_2 Q;
 
    public Us2() {
       this.N(new RG3());
@@ -503,7 +503,7 @@ public class Us2 extends S implements Ig4 {
       return null;
    }
 
-   protected void r(CB3 var1, TreePath var2, boolean var3) {
+   public void r(CB3 var1, TreePath var2, boolean var3) {
       Object var10000;
       String[] var4;
       label41: {
@@ -585,7 +585,7 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void P(CB3 var1) {
+   public void P(CB3 var1) {
       String[] var10000 = CB3.C$arrString();
       Object var4 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -620,7 +620,7 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void b(CB3 var1, List var2) {
+   public void b(CB3 var1, List var2) {
       String[] var10000 = CB3.C$arrString();
       Object var5 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -655,7 +655,7 @@ public class Us2 extends S implements Ig4 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void V(CB3 var1, Throwable var2) {
+   public void V(CB3 var1, Throwable var2) {
       String[] var10000 = CB3.C$arrString();
       Object var5 = this.c;
       synchronized (this.c){} // $VF: monitorenter 
@@ -767,7 +767,7 @@ public class Us2 extends S implements Ig4 {
       }
    }
 
-   protected void k(CB3 var1, List var2, boolean var3, boolean var4, S5 var5) {
+   public void k(CB3 var1, List var2, boolean var3, boolean var4, S5 var5) {
       String[] var6 = CB3.C$arrString();
       if (var6 != null) {
          if (var2.size() > 0) {
@@ -837,7 +837,7 @@ public class Us2 extends S implements Ig4 {
       var9.t(var1);
    }
 
-   protected void r(CB3 var1, boolean var2, boolean var3) {
+   public void r(CB3 var1, boolean var2, boolean var3) {
       String[] var4 = CB3.C$arrString();
       boolean var10000 = var3;
       if (var4 != null) {
@@ -891,7 +891,7 @@ public class Us2 extends S implements Ig4 {
       var10000.H$void();
    }
 
-   protected void z(TreePath var1) {
+   public void z(TreePath var1) {
       String[] var2 = CB3.C$arrString();
       Us2 var10000 = this;
       TreePath var10001 = var1;
@@ -910,7 +910,7 @@ public class Us2 extends S implements Ig4 {
       var10000.b(var10001);
    }
 
-   protected void t(TreePath var1) {
+   public void t(TreePath var1) {
       String[] var10000 = CB3.C$arrString();
       this.expandPath(var1);
       String[] var2 = var10000;
@@ -926,7 +926,7 @@ public class Us2 extends S implements Ig4 {
       }
    }
 
-   protected void b(TreePath var1) {
+   public void b(TreePath var1) {
       this.d(new SK(this, var1));
       this.expandPath(var1);
    }

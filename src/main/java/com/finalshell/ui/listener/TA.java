@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class TA implements ActionListener {
-   final com.finalshell.core.C Z;
-   final PathPanel N;
+   public final com.finalshell.core.C Z;
+   public final PathPanel N;
 
-   TA(PathPanel var1, com.finalshell.core.C var2) {
+   public TA(PathPanel var1, com.finalshell.core.C var2) {
       this.N = var1;
       this.Z = var2;
    }

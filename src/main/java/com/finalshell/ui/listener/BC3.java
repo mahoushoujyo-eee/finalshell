@@ -10,11 +10,11 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BC3 implements MouseListener {
-   final AM B;
-   final T32 I;
-   final Bq2 l;
+   public final AM B;
+   public final T32 I;
+   public final Bq2 l;
 
-   BC3(Bq2 var1, AM var2, T32 var3) {
+   public BC3(Bq2 var1, AM var2, T32 var3) {
       this.l = var1;
       this.B = var2;
       this.I = var3;

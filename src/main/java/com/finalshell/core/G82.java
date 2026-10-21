@@ -54,11 +54,11 @@ public class G82 extends Gy4 {
       return this.G;
    }
 
-   protected void B(int var1, int var2, Point var3) {
+   public void B(int var1, int var2, Point var3) {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var5 = 0.0F;
       float var6 = 0.0F;
       String[] var10000 = W5.q();

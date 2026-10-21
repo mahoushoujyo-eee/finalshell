@@ -36,11 +36,11 @@ public class Yp4 extends Yj4 {
       return c;
    }
 
-   static float f(Yp4 var0) {
+   public static float f(Yp4 var0) {
       return var0.Z;
    }
 
-   static float o(Yp4 var0) {
+   public static float o(Yp4 var0) {
       return var0.h;
    }
 

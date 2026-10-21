@@ -7,7 +7,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
 public class QU extends JScrollPane {
-   QU(Component var1, int var2, int var3) {
+   public QU(Component var1, int var2, int var3) {
       super(var1, var2, var3);
    }
 

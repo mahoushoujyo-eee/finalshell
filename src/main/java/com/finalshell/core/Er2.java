@@ -5,9 +5,9 @@ import java.io.File;
 import java.util.List;
 
 public class Er2 extends EY {
-   final KD3 T;
+   public final KD3 T;
 
-   Er2(KD3 var1) {
+   public Er2(KD3 var1) {
       this.T = var1;
    }
 

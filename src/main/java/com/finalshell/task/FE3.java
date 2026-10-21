@@ -5,10 +5,10 @@ import com.finalshell.core.Bj4;
 import java.io.IOException;
 
 public class FE3 implements Runnable {
-   final byte[] l;
+   public final byte[] l;
    public static long a;
 
-   FE3(byte[] var1) {
+   public FE3(byte[] var1) {
       this.l = var1;
    }
 

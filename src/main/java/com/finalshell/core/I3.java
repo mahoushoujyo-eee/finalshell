@@ -4,12 +4,12 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 public class I3 extends U3_3 {
-   final Field Z;
-   final HA k;
+   public final Field Z;
+   public final HA k;
    public static String[] a;
    public static String[] b;
 
-   I3(HA var1, Field var2) {
+   public I3(HA var1, Field var2) {
       super(var1);
       this.k = var1;
       this.Z = var2;

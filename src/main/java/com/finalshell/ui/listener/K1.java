@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class K1 implements ActionListener {
-   final SetExternalEditorPanel T;
+   public final SetExternalEditorPanel T;
 
-   K1(SetExternalEditorPanel var1) {
+   public K1(SetExternalEditorPanel var1) {
       this.T = var1;
    }
 

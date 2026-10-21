@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Cc4 implements Comparator {
-   final ClearListDialog Z;
+   public final ClearListDialog Z;
 
-   Cc4(ClearListDialog var1) {
+   public Cc4(ClearListDialog var1) {
       this.Z = var1;
    }
 

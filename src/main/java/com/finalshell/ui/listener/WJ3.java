@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class WJ3 implements PropertyChangeListener {
-   final Fm2 e;
+   public final Fm2 e;
 
-   WJ3(Fm2 var1) {
+   public WJ3(Fm2 var1) {
       this.e = var1;
    }
 

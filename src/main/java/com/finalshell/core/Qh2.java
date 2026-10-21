@@ -5,7 +5,7 @@ import java.awt.Window;
 import java.awt.event.KeyEvent;
 
 public class Qh2 {
-   Window i;
+   public Window i;
 
    public Qh2(Window var1) {
       long var3 = 497709676134445623L;

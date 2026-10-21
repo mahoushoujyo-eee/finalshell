@@ -5,7 +5,7 @@ public class Gt4 extends Gj4 {
    public static String a;
 
    @Override
-   protected float q(float var1) {
+   public float q(float var1) {
       return 1.0F - (float)Math.exp((double)(-var1 * this.Y));
    }
 

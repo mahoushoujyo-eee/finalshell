@@ -7,9 +7,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class XR extends KeyAdapter {
-   final CC q;
+   public final CC q;
 
-   protected XR(CC var1) {
+   public XR(CC var1) {
       this.q = var1;
    }
 

@@ -24,7 +24,7 @@ public class Af2 {
    }
 
    @NotNull
-   String h(@NotNull List var1) {
+   public String h(@NotNull List var1) {
       try {
          this.e(var1);
          return this.t(List.of(a(-4579, 3350), this.p.getAbsolutePath()));

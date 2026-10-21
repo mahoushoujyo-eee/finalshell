@@ -5,10 +5,10 @@ import com.finalshell.ui.panel.KC3;
 import com.finalshell.ui.panel.Ko4;
 
 public class Cc4 extends C42 {
-   final KC3 G;
-   final Ko4 z;
+   public final KC3 G;
+   public final Ko4 z;
 
-   Cc4(Ko4 var1, boolean var2, KC3 var3) {
+   public Cc4(Ko4 var1, boolean var2, KC3 var3) {
       super(var2);
       this.z = var1;
       this.G = var3;

@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPopupMenu;
 
 public class Y4 implements MouseListener {
-   final Y12_2 H;
-   final com.finalshell.core.C S;
-   final com.finalshell.ui.frame.U Z;
+   public final Y12_2 H;
+   public final com.finalshell.core.C S;
+   public final com.finalshell.ui.frame.U Z;
 
-   Y4(com.finalshell.ui.frame.U var1, Y12_2 var2, com.finalshell.core.C var3) {
+   public Y4(com.finalshell.ui.frame.U var1, Y12_2 var2, com.finalshell.core.C var3) {
       this.Z = var1;
       this.H = var2;
       this.S = var3;
@@ -41,7 +41,7 @@ public class Y4 implements MouseListener {
          Object var2 = var10002;
          var10002 = var1.getButton();
          if (var2 == null) {
-            if (var10002 != 1) {
+            if (var10002 != null) {
                return;
             }
 
@@ -63,7 +63,7 @@ public class Y4 implements MouseListener {
             }
          }
 
-         if (var10002 == 0) {
+         if (var10002 == null) {
             if (var1.getButton() != 1) {
                return;
             }

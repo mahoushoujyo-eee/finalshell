@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.List;
 
 public class Q_2_2 extends EY {
-   protected com.finalshell.ui.model.D2 p;
-   final com.finalshell.ui.panel.T k;
+   public com.finalshell.ui.model.D2 p;
+   public final com.finalshell.ui.panel.T k;
 
    public Q_2_2(com.finalshell.ui.panel.T var1, com.finalshell.ui.model.D2 var2) {
       this.k = var1;

@@ -23,15 +23,15 @@ import javax.swing.ImageIcon;
 
 public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
    public static ImageIcon I;
-   protected List d = new ArrayList(1);
-   protected boolean U = true;
-   protected SimpleDateFormat X = new SimpleDateFormat(a(-11477, -5773));
-   protected Date M = null;
-   protected OR T = null;
-   protected KD C;
-   protected E R;
-   protected com.finalshell.ui.panel.KV3 L;
-   protected Pu4 S;
+   public List d = new ArrayList(1);
+   public boolean U = true;
+   public SimpleDateFormat X = new SimpleDateFormat(a(-11477, -5773));
+   public Date M = null;
+   public OR T = null;
+   public KD C;
+   public E R;
+   public com.finalshell.ui.panel.KV3 L;
+   public Pu4 S;
    public static String[] f;
    public static String[] b;
    public static String[] c;
@@ -113,11 +113,11 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       }
    }
 
-   protected void j() {
+   public void j() {
       this.setMargin(this.b() ? Lj4.C : Lj4.a);
    }
 
-   protected void q() {
+   public void q() {
       String[] var1;
       Lk4 var10000;
       var1 = N();
@@ -199,10 +199,10 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       this.L.transferFocus();
    }
 
-   protected void V(E var1) {
+   public void V(E var1) {
    }
 
-   protected void C$void() {
+   public void C$void() {
       String[] var1 = N();
       E var10000 = this.R;
       if (var1 == null) {
@@ -216,7 +216,7 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       var10000.setVisible(false);
    }
 
-   protected void l() {
+   public void l() {
       String[] var10000 = N();
       Point var2 = this.getLocationOnScreen();
       Rectangle var3 = this.R.getGraphicsConfiguration().getBounds();
@@ -307,7 +307,7 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       this.R.setLocation(var8, var9);
    }
 
-   protected Date H$Date() {
+   public Date H$Date() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -349,7 +349,7 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       // 3c: areturn
    }
 
-   protected String X() {
+   public String X() {
       String[] var1 = N();
       Lk4 var10000 = this;
       if (var1 == null) {
@@ -375,15 +375,15 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       this.Y(var1);
    }
 
-   protected void Y(boolean var1) {
+   public void Y(boolean var1) {
       this.f(this.H$Date(), com.finalshell.ui.model.N0.field, var1);
    }
 
-   protected void f(boolean var1) {
+   public void f(boolean var1) {
       this.f(this.L.I(), com.finalshell.ui.model.N0.calendar, var1);
    }
 
-   protected void f(Date var1, com.finalshell.ui.model.N0 var2, boolean var3) {
+   public void f(Date var1, com.finalshell.ui.model.N0 var2, boolean var3) {
       String[] var4 = N();
       boolean var10000 = Ax2.Z(this.M, new Object[]{var1});
       if (var4 == null) {
@@ -427,12 +427,12 @@ public class Lk4 extends L42 implements W2_3, Eh2, Sa2 {
       }
    }
 
-   protected void H$void() {
+   public void H$void() {
       this.setText(this.X());
       this.setCaretPosition(0);
    }
 
-   protected void i(Date var1) {
+   public void i(Date var1) {
       this.L.z(this.S);
       this.L.N(var1);
       this.L.J(this.S);

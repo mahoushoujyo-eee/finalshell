@@ -7,10 +7,10 @@ import java.awt.event.MouseListener;
 import javax.swing.table.JTableHeader;
 
 public class K2 implements MouseListener {
-   final JTableHeader o;
-   final Y62_2 d;
+   public final JTableHeader o;
+   public final Y62_2 d;
 
-   K2(Y62_2 var1, JTableHeader var2) {
+   public K2(Y62_2 var1, JTableHeader var2) {
       this.d = var1;
       this.o = var2;
    }

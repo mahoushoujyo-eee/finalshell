@@ -25,10 +25,10 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class TunnelList extends Z7 {
-   C12 u;
-   NH a;
-   Lv4_2 q;
-   ArrayList U;
+   public C12 u;
+   public NH a;
+   public Lv4_2 q;
+   public ArrayList U;
    public static String M;
    public static String[] b;
    public static String[] d;
@@ -77,7 +77,7 @@ public class TunnelList extends Z7 {
       }
    }
 
-   void l(int var1) {
+   public void l(int var1) {
       V();
       Object var5 = 432008228546876612L;
       Iterator var3 = ((ArrayList)Ref.g(432008228546876612L, var5)).iterator();
@@ -154,7 +154,7 @@ public class TunnelList extends Z7 {
       super(var1, this, (ArrayList)Ref.g(432008228546876612L, var3), true);
    }
 
-   void i() {
+   public void i() {
    }
 
    public void o() {

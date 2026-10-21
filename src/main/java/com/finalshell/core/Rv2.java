@@ -10,8 +10,8 @@ public final class Rv2 extends Re2_2 {
    public static String[] f;
 
    public Rv2(com.finalshell.ui.model.I var1, NV_2 var2, List var3) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       String[] var4 = var10000;
       (this.d = var2).d(this);
 

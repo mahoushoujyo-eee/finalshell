@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class U5 implements ActionListener {
-   final com.finalshell.ui.panel.T P;
+   public final com.finalshell.ui.panel.T P;
 
-   U5(com.finalshell.ui.panel.T var1) {
+   public U5(com.finalshell.ui.panel.T var1) {
       this.P = var1;
    }
 

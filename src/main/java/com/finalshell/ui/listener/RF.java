@@ -7,13 +7,13 @@ import java.awt.event.FocusEvent;
 import java.awt.image.BufferedImage;
 
 public class RF extends FocusAdapter {
-   final Component i;
-   final int P;
-   final int h;
-   final BufferedImage H;
-   final Qj2 f;
+   public final Component i;
+   public final int P;
+   public final int h;
+   public final BufferedImage H;
+   public final Qj2 f;
 
-   RF(Qj2 var1, Component var2, int var3, int var4, BufferedImage var5) {
+   public RF(Qj2 var1, Component var2, int var3, int var4, BufferedImage var5) {
       this.f = var1;
       this.i = var2;
       this.P = var3;

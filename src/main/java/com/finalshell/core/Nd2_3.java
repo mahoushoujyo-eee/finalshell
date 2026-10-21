@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Nd2_3 extends NV_2 {
-   final H3_2 E;
+   public final H3_2 E;
    public static String a;
 
-   Nd2_3(H3_2 var1, com.finalshell.ui.model.I var2) {
+   public Nd2_3(H3_2 var1, com.finalshell.ui.model.I var2) {
       super(var2);
       this.E = var1;
    }

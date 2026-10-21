@@ -6,15 +6,15 @@ import java.net.URL;
 import java.util.zip.ZipEntry;
 
 public class H2_4 implements T_4 {
-   final String B;
-   final ZipEntry b;
-   final T2_5 n;
+   public final String B;
+   public final ZipEntry b;
+   public final T2_5 n;
    public static String[] a;
    public static String[] c;
    public static long d;
    public static long e;
 
-   H2_4(T2_5 var1, String var2, ZipEntry var3) {
+   public H2_4(T2_5 var1, String var2, ZipEntry var3) {
       this.n = var1;
       this.B = var2;
       this.b = var3;

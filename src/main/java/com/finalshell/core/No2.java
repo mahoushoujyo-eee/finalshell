@@ -4,7 +4,7 @@ public final class No2 extends N5_2 {
    @C_9
    public final N_ l;
    @C_9
-   HP_2 L;
+   public HP_2 L;
    public static String a;
    public static long[] d;
    public static Integer[] f;

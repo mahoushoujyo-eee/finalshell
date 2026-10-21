@@ -10,13 +10,13 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTable;
 
 public class DT extends JTable {
-   Fr4 a;
-   DT I;
-   SelectDownloadFolderPanel l;
+   public Fr4 a;
+   public DT I;
+   public SelectDownloadFolderPanel l;
    public static long[] b;
    public static Integer[] c;
 
-   DT(SelectDownloadFolderPanel var1, Fr4 var2) {
+   public DT(SelectDownloadFolderPanel var1, Fr4 var2) {
       long var6 = 520595572764773303L;
       Ref.s(520595572764773303L, this, var6);
       long var8 = 129770487350982726L;

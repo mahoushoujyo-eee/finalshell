@@ -11,11 +11,11 @@ import java.awt.event.MouseMotionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class GK implements MouseMotionListener {
-   final AM V;
-   final Bq2 Q;
+   public final AM V;
+   public final Bq2 Q;
    public static long a;
 
-   GK(Bq2 var1, AM var2) {
+   public GK(Bq2 var1, AM var2) {
       this.Q = var1;
       this.V = var2;
    }
@@ -83,7 +83,7 @@ public class GK implements MouseMotionListener {
 
       label231: {
          if (var2 == null) {
-            if (var10004 == false) {
+            if (var10004 == null) {
                return;
             }
 
@@ -105,7 +105,7 @@ public class GK implements MouseMotionListener {
             }
          }
 
-         if (var10004 == false) {
+         if (var10004 == null) {
             return;
          }
 
@@ -179,7 +179,7 @@ public class GK implements MouseMotionListener {
             }
          }
 
-         if (var102 == 0) {
+         if (var102 == null) {
             return;
          }
       }
@@ -211,7 +211,7 @@ public class GK implements MouseMotionListener {
                      Registry.lookupField(308935006170094327L).getInt(var109);
                   }
 
-                  if (var104 != 1) {
+                  if (var104 != null) {
                      break label236;
                   }
 
@@ -288,7 +288,7 @@ public class GK implements MouseMotionListener {
             }
 
             if (var2 == null) {
-               if (var110 == 0) {
+               if (var110 == null) {
                   return;
                }
 

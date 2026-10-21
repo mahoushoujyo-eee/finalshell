@@ -6,9 +6,6 @@ public class WM extends Thread {
    public static long a;
    public static long b;
 
-   WM() {
-   }
-
    @Override
    public void run() {
       byte[] var1 = new byte[(int)a];

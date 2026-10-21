@@ -57,7 +57,7 @@ public abstract class Fv2_2 {
 
    void M(Lv4_2 var1);
 
-   Lv4_2 E();
+   public Lv4_2 E();
 
    ConnectHost e();
 

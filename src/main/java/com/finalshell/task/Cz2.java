@@ -7,14 +7,14 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JEditorPane;
 
 public class Cz2 extends Thread {
-   JEditorPane P;
-   final JEditorPane y;
+   public JEditorPane P;
+   public final JEditorPane y;
    public static String[] a;
    public static String[] b;
    public static long c;
    public static long d;
 
-   Cz2(JEditorPane var1) {
+   public Cz2(JEditorPane var1) {
       this.y = var1;
       Object var2 = 544676092557382532L;
       Object var10002 = Ref.g(544676092557382532L, var2);

@@ -11,15 +11,15 @@ public class ED extends OutputStream {
    public UJ Z;
    public YU y;
    public boolean h;
-   byte[] i;
-   final Dm4 n;
-   final Dm4 G;
+   public byte[] i;
+   public final Dm4 n;
+   public final Dm4 G;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   ED(Dm4 var1, Dm4 var2) {
+   public ED(Dm4 var1, Dm4 var2) {
       this.G = var1;
       this.n = var2;
       this.t = 0;

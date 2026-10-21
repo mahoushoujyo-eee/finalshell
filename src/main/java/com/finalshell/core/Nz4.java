@@ -9,8 +9,8 @@ public class Nz4 implements A0_2 {
    public static Integer[] b;
 
    public Nz4(String[] var1) {
+   super();
       String var10000 = Hi2.C();
-      super();
       this.Y = var1;
       String var2 = var10000;
       this.u = new long[var1.length];

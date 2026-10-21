@@ -8,13 +8,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Wa4 implements ActionListener {
-   final Qe2_2 v;
-   final Ne4 N;
-   final KD3 D;
+   public final Qe2_2 v;
+   public final Ne4 N;
+   public final KD3 D;
    public static String[] a;
    public static String[] b;
 
-   Wa4(KD3 var1, Qe2_2 var2, Ne4 var3) {
+   public Wa4(KD3 var1, Qe2_2 var2, Ne4 var3) {
       this.D = var1;
       this.v = var2;
       this.N = var3;

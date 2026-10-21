@@ -41,27 +41,27 @@ public class KV3 extends Ky4 {
    public static ImageIcon V;
    public static ImageIcon d;
    public static ImageIcon t;
-   protected List Y;
-   protected SimpleDateFormat z;
-   protected boolean B;
-   protected boolean R;
-   protected boolean h;
-   protected Color O;
-   protected Color o;
-   protected Color S;
-   protected ZzzzN1Customizer u;
-   protected Date x;
-   protected Date k;
-   protected Date l;
-   protected KD i;
-   protected KD I;
-   protected O j;
-   protected KD T;
-   protected KD A;
-   protected Ky4 C;
-   protected Ky4 F;
-   protected Qj2 f;
-   protected Qe2_2 p;
+   public List Y;
+   public SimpleDateFormat z;
+   public boolean B;
+   public boolean R;
+   public boolean h;
+   public Color O;
+   public Color o;
+   public Color S;
+   public ZzzzN1Customizer u;
+   public Date x;
+   public Date k;
+   public Date l;
+   public KD i;
+   public KD I;
+   public O j;
+   public KD T;
+   public KD A;
+   public Ky4 C;
+   public Ky4 F;
+   public Qj2 f;
+   public Qe2_2 p;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -172,11 +172,11 @@ public class KV3 extends Ky4 {
       }
    }
 
-   protected void X$void() {
+   public void X$void() {
       this.j.setText(this.z.format(this.k));
    }
 
-   protected void S(boolean var1) {
+   public void S(boolean var1) {
       KV3 var10000;
       label36: {
          String[] var2 = Lk4.N();
@@ -228,7 +228,7 @@ public class KV3 extends Ky4 {
       var10000.l$void();
    }
 
-   protected void P(int var1) {
+   public void P(int var1) {
       label13: {
          String[] var2 = Lk4.N();
          int var10000 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
@@ -250,7 +250,7 @@ public class KV3 extends Ky4 {
       this.a(var3.getTime());
    }
 
-   protected void S(int var1) {
+   public void S(int var1) {
       label13: {
          String[] var2 = Lk4.N();
          int var10000 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;
@@ -272,7 +272,7 @@ public class KV3 extends Ky4 {
       this.a(var3.getTime());
    }
 
-   protected Ky4 G() {
+   public Ky4 G() {
       Ky4 var1 = new Ky4();
       var1.setOpaque(false);
       var1.N(GO.FG - 1, GO.FG - 1, GO.FG - 1, GO.FG - 1);
@@ -307,7 +307,7 @@ public class KV3 extends Ky4 {
       return var1;
    }
 
-   protected void l$void() {
+   public void l$void() {
       String[] var1 = Lk4.N();
       Qe2_2 var10000 = this.p;
       if (var1 == null) {
@@ -321,7 +321,7 @@ public class KV3 extends Ky4 {
       var10000.requestFocusInWindow();
    }
 
-   protected DR3 q(boolean var1) {
+   public DR3 q(boolean var1) {
       String[] var2 = Lk4.N();
       boolean var10000 = this.h;
       if (var2 == null) {
@@ -335,7 +335,7 @@ public class KV3 extends Ky4 {
       return var10000 ? DR3.right : DR3.left;
    }
 
-   protected DR3 l(boolean var1) {
+   public DR3 l(boolean var1) {
       String[] var2 = Lk4.N();
       boolean var10000 = this.h;
       if (var2 == null) {
@@ -349,7 +349,7 @@ public class KV3 extends Ky4 {
       return var10000 ? DR3.left : DR3.right;
    }
 
-   protected void o() {
+   public void o() {
       String[] var10000 = Lk4.N();
       this.C.removeAll();
       String[] var1 = var10000;
@@ -416,7 +416,7 @@ public class KV3 extends Ky4 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   protected void o(JPanel var1) {
+   public void o(JPanel var1) {
       String[] var2;
       ButtonGroup var3;
       Calendar var4;
@@ -759,11 +759,11 @@ public class KV3 extends Ky4 {
       var10000.q(var1, var2);
    }
 
-   protected void J(Date var1) {
+   public void J(Date var1) {
       this.q(var1, this.O());
    }
 
-   protected void q(Date var1, boolean var2) {
+   public void q(Date var1, boolean var2) {
       this.x = var1;
       this.w(var1, var2);
       this.Z(var1);

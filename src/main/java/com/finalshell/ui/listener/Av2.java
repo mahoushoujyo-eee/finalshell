@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 
 public class Av2 implements ActionListener {
    public Q4_2 V;
-   final KD3 I;
+   public final KD3 I;
    public static String a;
 
-   Av2(KD3 var1) {
+   public Av2(KD3 var1) {
       this.I = var1;
       this.V = null;
    }

@@ -5,11 +5,11 @@ import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
 
 public class DY3 implements Runnable {
-   final JScrollPane G;
-   final Xw2 w;
+   public final JScrollPane G;
+   public final Xw2 w;
    public static long a;
 
-   DY3(Xw2 var1, JScrollPane var2) {
+   public DY3(Xw2 var1, JScrollPane var2) {
       this.w = var1;
       this.G = var2;
    }

@@ -10,7 +10,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 
 public class NP extends LayoutStyle {
    public static NP U;
-   static boolean S;
+   public static boolean S;
    public static String[] a;
    public static String[] b;
    public static long[] e;
@@ -180,7 +180,7 @@ public class NP extends LayoutStyle {
       // 2f: ireturn
    }
 
-   protected boolean E(JComponent param1, JComponent param2, int param3) {
+   public boolean E(JComponent param1, JComponent param2, int param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -257,7 +257,7 @@ public class NP extends LayoutStyle {
       // 93: ireturn
    }
 
-   protected int M(JComponent param1, JComponent param2, int param3, int param4) {
+   public int M(JComponent param1, JComponent param2, int param3, int param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -306,7 +306,7 @@ public class NP extends LayoutStyle {
       // 49: ireturn
    }
 
-   protected int I(JComponent var1, int var2, int var3) {
+   public int I(JComponent var1, int var2, int var3) {
       var3 -= this.T(var1, var2);
       return Math.max(var3, 0);
    }
@@ -442,7 +442,7 @@ public class NP extends LayoutStyle {
       // 62: return
    }
 
-   protected int i(int param1) {
+   public int i(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -488,7 +488,7 @@ public class NP extends LayoutStyle {
       // 6a: ireturn
    }
 
-   protected int i(JComponent param1, int param2) {
+   public int i(JComponent param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

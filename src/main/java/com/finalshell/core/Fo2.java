@@ -1,9 +1,6 @@
 package com.finalshell.core;
 
 public class Fo2 implements IF {
-   Fo2() {
-   }
-
    @Override
    public String U() {
       return null;

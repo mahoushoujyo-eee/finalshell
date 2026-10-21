@@ -6,10 +6,10 @@ import java.util.Hashtable;
 import java.util.Vector;
 
 public class TR implements Cloneable {
-   Hashtable d;
-   Vector l;
-   Vector N;
-   boolean O = true;
+   public Hashtable d;
+   public Vector l;
+   public Vector N;
+   public boolean O = true;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -851,7 +851,7 @@ public class TR implements Cloneable {
       // 6b: return
    }
 
-   static long J(InetAddress param0) {
+   public static long J(InetAddress param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -918,7 +918,7 @@ public class TR implements Cloneable {
       // 66: lreturn
    }
 
-   long e(String param1) {
+   public long e(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1002,7 +1002,7 @@ public class TR implements Cloneable {
       // 90: lreturn
    }
 
-   static int[] X(String param0) {
+   public static int[] X(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

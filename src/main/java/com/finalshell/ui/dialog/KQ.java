@@ -28,13 +28,13 @@ public class KQ extends JDialog {
    public long R;
    public boolean B;
    public boolean A;
-   U r;
-   Window m;
-   long g;
-   ShowDeletedPanel a;
-   Dimension K;
-   Point V;
-   int i;
+   public U r;
+   public Window m;
+   public long g;
+   public ShowDeletedPanel a;
+   public Dimension K;
+   public Point V;
+   public int i;
    public static String b;
    public static long[] c;
    public static Integer[] d;
@@ -350,7 +350,7 @@ public class KQ extends JDialog {
       }
    }
 
-   void G() {
+   public void G() {
       String[] var1;
       int var4;
       int var9;
@@ -486,7 +486,7 @@ public class KQ extends JDialog {
       return (ShowDeletedPanel)Ref.g(144581259712304790L, var1);
    }
 
-   static boolean F(KQ var0) {
+   public static boolean F(KQ var0) {
       return Registry.lookupField(632784343757357398L).getBoolean(var0);
    }
 

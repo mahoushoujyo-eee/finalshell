@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.U;
 import java.lang.reflect.InvocationTargetException;
 
 public class OM implements Runnable {
-   final U z;
+   public final U z;
 
-   OM(U var1) {
+   public OM(U var1) {
       this.z = var1;
    }
 

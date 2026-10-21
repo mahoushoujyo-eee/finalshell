@@ -56,7 +56,7 @@ public class Op2 extends O implements W2_3, Au2 {
       this.L();
    }
 
-   protected void L() {
+   public void L() {
       this.setOpaque(false);
       this.D(true);
       this.setForeground(Color.DARK_GRAY);
@@ -137,7 +137,7 @@ public class Op2 extends O implements W2_3, Au2 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Op2 var9;
       label52: {
          boolean var10000 = Oj2.V();

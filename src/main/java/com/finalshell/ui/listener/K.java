@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class K implements ActionListener {
-   final Copy3 c;
+   public final Copy3 c;
 
-   K(Copy3 var1) {
+   public K(Copy3 var1) {
       this.c = var1;
    }
 

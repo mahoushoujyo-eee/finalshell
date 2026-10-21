@@ -12,17 +12,17 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 public class NL3 extends Nv4 {
-   protected final En2 B;
+   public final En2 B;
    public final YM3 w;
    public int k = 0;
    public String R = "\t";
    public String V;
    public DateFormat T;
    public String n;
-   protected IdentityHashMap Y = null;
-   protected Uh2_2 W;
-   protected TimeZone D = Ok2.X;
-   protected Locale y = Ok2.Y;
+   public IdentityHashMap Y = null;
+   public Uh2_2 W;
+   public TimeZone D = Ok2.X;
+   public Locale y = Ok2.Y;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -986,7 +986,7 @@ public class NL3 extends Nv4 {
       this.I(var1, var2, null, 0);
    }
 
-   protected final void A(char param1, String param2, Object param3) {
+   public final void A(char param1, String param2, Object param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

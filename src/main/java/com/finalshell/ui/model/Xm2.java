@@ -8,10 +8,10 @@ import java.text.Collator;
 import java.util.Comparator;
 
 public class Xm2 implements Comparator {
-   final Collator m;
-   final Connection12 i;
+   public final Collator m;
+   public final Connection12 i;
 
-   Xm2(Connection12 var1, Collator var2) {
+   public Xm2(Connection12 var1, Collator var2) {
       this.i = var1;
       this.m = var2;
    }

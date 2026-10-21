@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Xi4 implements ActionListener {
-   final KD3 F;
+   public final KD3 F;
 
-   Xi4(KD3 var1) {
+   public Xi4(KD3 var1) {
       this.F = var1;
    }
 

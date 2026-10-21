@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Wk4 implements ActionListener {
-   final EF q;
+   public final EF q;
 
-   Wk4(EF var1) {
+   public Wk4(EF var1) {
       this.q = var1;
    }
 

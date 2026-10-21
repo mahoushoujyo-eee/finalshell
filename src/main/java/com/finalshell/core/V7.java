@@ -65,7 +65,7 @@ public class V7 {
       while (true) {
          if (var6.hasNext()) {
             LD3_2 var7 = (LD3_2)var6.next();
-            if (var1 == false) {
+            if (var1 == null) {
                break;
             }
 
@@ -79,11 +79,11 @@ public class V7 {
                throw var30.getTargetException();
             }
 
-            if (var1 != false && !var40) {
+            if (var1 == null && !var40) {
                var5.add(var7);
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                continue;
             }
 

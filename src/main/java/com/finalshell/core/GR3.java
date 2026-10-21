@@ -68,7 +68,7 @@ public class GR3 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var5 = this.w * (float)var1 + this.o * (float)var2;
       String[] var10000 = W5.q();
       float var6 = this.F * (float)var1 + this.g * (float)var2;

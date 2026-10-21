@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class UW implements ActionListener {
-   final JCheckBox k;
-   final TerminalHint e;
+   public final JCheckBox k;
+   public final TerminalHint e;
 
-   UW(TerminalHint var1, JCheckBox var2) {
+   public UW(TerminalHint var1, JCheckBox var2) {
       this.e = var1;
       this.k = var2;
    }

@@ -7,14 +7,14 @@ public class YE {
    public static int e;
    public static int H;
    public static int A;
-   int z;
-   String n;
-   int G;
-   int E;
-   String g;
-   String u;
-   int I;
-   boolean J;
+   public int z;
+   public String n;
+   public int G;
+   public int E;
+   public String g;
+   public String u;
+   public int I;
+   public boolean J;
    public static int[] W;
 
    public YE() {

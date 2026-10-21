@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.io.PipedOutputStream;
 
 public class GF extends Gu2 {
-   PipedOutputStream h;
+   public PipedOutputStream h;
 
-   GF(PipedOutputStream var1, int var2) throws IOException {
+   public GF(PipedOutputStream var1, int var2) throws IOException {
       super(var1, var2);
       this.h = var1;
    }
 
-   GF(PipedOutputStream var1) throws IOException {
+   public GF(PipedOutputStream var1) throws IOException {
       super(var1);
       this.h = var1;
    }

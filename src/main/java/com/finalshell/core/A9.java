@@ -169,7 +169,7 @@ public class A9 extends BasicLookAndFeel {
    }
 
    @Override
-   protected void initClassDefaults(UIDefaults var1) {
+   public void initClassDefaults(UIDefaults var1) {
       var1.put(a(-27737, 3702), zW);
       var1.put(a(-27781, -1188), zd);
       var1.put(a(-27941, 29083), a);
@@ -225,7 +225,7 @@ public class A9 extends BasicLookAndFeel {
    }
 
    @Override
-   protected void initSystemColorDefaults(UIDefaults var1) {
+   public void initSystemColorDefaults(UIDefaults var1) {
       super.initSystemColorDefaults(var1);
       String var2 = P9.u(GO.V);
       String var3 = P9.u(GO.F4);
@@ -248,7 +248,7 @@ public class A9 extends BasicLookAndFeel {
    }
 
    @Override
-   protected void initComponentDefaults(UIDefaults var1) {
+   public void initComponentDefaults(UIDefaults var1) {
       super.initComponentDefaults(var1);
       Xk2.P(var1);
       R(var1);
@@ -737,7 +737,7 @@ public class A9 extends BasicLookAndFeel {
       w(var0, a(-27960, 26560), zZ, zD);
    }
 
-   protected static void w(UIDefaults var0, String var1, Font var2, Font var3) {
+   public static void w(UIDefaults var0, String var1, Font var2, Font var3) {
       String[] var4 = XD3.U();
       Font var10002 = var2;
       if (var4 == null) {
@@ -747,7 +747,7 @@ public class A9 extends BasicLookAndFeel {
       var0.put(var1, u(var10002));
    }
 
-   protected static LR3 u(Font var0) {
+   public static LR3 u(Font var0) {
       return new LR3(a(-27679, 6754), null, new Object[]{var0.getName(), var0.getStyle(), var0.getSize()});
    }
 
@@ -888,7 +888,7 @@ public class A9 extends BasicLookAndFeel {
       return var4;
    }
 
-   protected static void R$void() {
+   public static void R$void() {
       String[] var0 = XD3.U();
       List var10000 = l;
       if (var0 == null) {
@@ -1040,11 +1040,11 @@ public class A9 extends BasicLookAndFeel {
       o(var10000);
    }
 
-   static boolean w() {
+   public static boolean w() {
       return n;
    }
 
-   static boolean n() {
+   public static boolean n() {
       return zz;
    }
 

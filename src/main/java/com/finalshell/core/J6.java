@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComponent;
 
 public class J6 implements LayoutManager {
-   OG3 J;
+   public OG3 J;
    public static long[] a;
    public static Integer[] b;
 

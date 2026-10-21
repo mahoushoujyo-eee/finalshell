@@ -12,7 +12,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
 
 public class Q4_2 extends JFileChooser implements Au2, CX3_2 {
-   protected List f = null;
+   public List f = null;
    public static String a;
 
    public Q4_2() {
@@ -40,7 +40,7 @@ public class Q4_2 extends JFileChooser implements Au2, CX3_2 {
    }
 
    @Override
-   protected JDialog createDialog(Component var1) throws HeadlessException {
+   public JDialog createDialog(Component var1) throws HeadlessException {
       JDialog var2 = super.createDialog(var1);
 
       try {

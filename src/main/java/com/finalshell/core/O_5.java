@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class O_5 extends U2_3 {
-   final ClassLoader u;
+   public final ClassLoader u;
    public static String b;
 
-   O_5(ClassLoader var1) {
+   public O_5(ClassLoader var1) {
       this.u = var1;
    }
 

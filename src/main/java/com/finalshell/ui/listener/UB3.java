@@ -11,14 +11,14 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.KeyStroke;
 
 public class UB3 implements KeyListener {
-   boolean S;
-   final SetBackgroundImagePanel O;
-   final Backspace s;
+   public boolean S;
+   public final SetBackgroundImagePanel O;
+   public final Backspace s;
    public static long[] a;
    public static Integer[] b;
    public static long c;
 
-   UB3(Backspace var1, SetBackgroundImagePanel var2) {
+   public UB3(Backspace var1, SetBackgroundImagePanel var2) {
       this.s = var1;
       this.O = var2;
       Registry.lookupField(411573546296257898L).setBoolean(this, false);
@@ -50,7 +50,7 @@ public class UB3 implements KeyListener {
             KeyStroke var3 = KeyStroke.getKeyStrokeForEvent(var1);
             var10002 = var3.getModifiers();
             if (var2 != null) {
-               if (var10002 == 0) {
+               if (var10002 == null) {
                   Object var4 = var1.getKeyCode();
                   var10002 = (Object[])var4;
                   var10003 = a(12946, 2137176971674416974L);

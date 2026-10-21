@@ -45,8 +45,8 @@ public class Ky4 extends JPanel implements D7, W2_3, WR_2, Pp2, RF3, Sa2, CX3_2 
    }
 
    public Ky4(boolean var1) {
+   super(new BorderLayout());
       Ky4[] var10000 = BI.u();
-      super(new BorderLayout());
       Ky4[] var2 = var10000;
       boolean var10001 = var1;
       if (var2 == null) {
@@ -57,8 +57,8 @@ public class Ky4 extends JPanel implements D7, W2_3, WR_2, Pp2, RF3, Sa2, CX3_2 
    }
 
    public Ky4(boolean var1, LayoutManager var2) {
+   super(var2);
       Ky4[] var10000 = BI.u();
-      super(var2);
       Ky4[] var3 = var10000;
       boolean var10001 = var1;
       if (var3 == null) {
@@ -69,8 +69,8 @@ public class Ky4 extends JPanel implements D7, W2_3, WR_2, Pp2, RF3, Sa2, CX3_2 
    }
 
    public Ky4(boolean var1, Component var2) {
+   super(new BorderLayout());
       Ky4[] var10000 = BI.u();
-      super(new BorderLayout());
       Ky4[] var3 = var10000;
       boolean var10001 = var1;
       if (var3 == null) {

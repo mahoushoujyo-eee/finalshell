@@ -6,11 +6,11 @@ import java.awt.Insets;
 import java.awt.Rectangle;
 
 public class T2_3 extends T4 {
-   final com.finalshell.ui.panel.OQ l;
+   public final com.finalshell.ui.panel.OQ l;
    public static long[] a;
    public static Integer[] b;
 
-   protected T2_3(com.finalshell.ui.panel.OQ var1) {
+   public T2_3(com.finalshell.ui.panel.OQ var1) {
       this.l = var1;
    }
 
@@ -25,7 +25,7 @@ public class T2_3 extends T4 {
       byte var3 = (this.l.s.getComponentOrientation().isLeftToRight()) ? 1 : 0;
       Insets var4 = this.l.getInsets();
       String var2 = var10000;
-      byte var5 = this.l.i();
+      byte var5 = (this.l.i()) ? 1 : 0;
       int var6 = this.l.a.getText() != null ? 1 : 0;
       int var7 = var5 != 0 && this.l.o.getText() != null ? 1 : 0;
       int var8 = var5 != 0 && this.l.U.getText() != null ? 1 : 0;
@@ -122,7 +122,7 @@ public class T2_3 extends T4 {
       byte var2 = (this.l.s.getComponentOrientation().isLeftToRight()) ? 1 : 0;
       String var1 = var10000;
       Insets var3 = this.l.getInsets();
-      byte var4 = this.l.i();
+      byte var4 = (this.l.i()) ? 1 : 0;
       int var7 = var4;
       if (var1 != null) {
          if (var4 != 0) {

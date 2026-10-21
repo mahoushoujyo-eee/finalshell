@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Ol2 extends ComponentAdapter {
-   final OY3 M;
+   public final OY3 M;
 
-   Ol2(OY3 var1) {
+   public Ol2(OY3 var1) {
       this.M = var1;
    }
 

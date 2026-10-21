@@ -4,11 +4,11 @@ import com.finalshell.ui.panel.Connection4;
 import javax.swing.event.TreeExpansionEvent;
 
 public class Va2 implements Runnable {
-   final TreeExpansionEvent E;
-   final Connection4 Y;
+   public final TreeExpansionEvent E;
+   public final Connection4 Y;
    public static String a;
 
-   Va2(Connection4 var1, TreeExpansionEvent var2) {
+   public Va2(Connection4 var1, TreeExpansionEvent var2) {
       this.Y = var1;
       this.E = var2;
    }

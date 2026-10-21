@@ -4,7 +4,7 @@ import com.finalshell.ui.model.RP3;
 
 // $VF: synthetic class
 public class O92 {
-   static int[] Q;
+   public static int[] Q;
 
    static {
       __vfClinit__();

@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class AB {
-   ArrayList h;
-   N a;
+   public ArrayList h;
+   public N a;
 
    public N q(String var1) {
       String var10000 = W2.F();

@@ -28,22 +28,22 @@ import javax.swing.filechooser.FileSystemView;
 import net.miginfocom.swing.MigLayout;
 
 public class Zn2 extends Z7 {
-   XG H;
-   XG E;
-   JLabel i;
-   DC v;
-   DC B;
-   JTable t;
-   JTable n;
-   String u;
-   String o;
-   int U;
-   static FileSystemView f;
-   Locale M;
-   Locale W;
-   HashMap T;
-   JComboBox s;
-   HashMap q;
+   public XG H;
+   public XG E;
+   public JLabel i;
+   public DC v;
+   public DC B;
+   public JTable t;
+   public JTable n;
+   public String u;
+   public String o;
+   public int U;
+   public static FileSystemView f;
+   public Locale M;
+   public Locale W;
+   public HashMap T;
+   public JComboBox s;
+   public HashMap q;
    public static int[] D;
    public static String[] a;
    public static String[] b;
@@ -79,7 +79,7 @@ public class Zn2 extends Z7 {
       }
    }
 
-   void B() {
+   public void B() {
       short var10000 = 567;
       g();
       Registry.emptyArgs();
@@ -395,7 +395,7 @@ public class Zn2 extends Z7 {
       ((JTable)Ref.g(589348336963751296L, var131)).getSelectionModel().addListSelectionListener(new Gw2(this));
    }
 
-   void n() {
+   public void n() {
       Object var3 = 162058560421645924L;
       Ref.g(162058560421645924L, var3);
       int var10003 = Registry.lookupField(362807796445170916L).getInt(this);
@@ -462,7 +462,7 @@ public class Zn2 extends Z7 {
       }
    }
 
-   void L() {
+   public void L() {
       g();
       XG var10002 = new XG();
       long var11 = 237503863821638476L;
@@ -625,7 +625,7 @@ public class Zn2 extends Z7 {
          Object var42 = 162058560421645924L;
          Zn2 var10014 = ((String)Ref.g(162058560421645924L, var42)).toLowerCase().endsWith(a(-25377, 2752));
          if (var1 == null) {
-            if (var10014 != 0) {
+            if (var10014 != null) {
                Object var44 = 237503863821638476L;
                Ref.g(237503863821638476L, var44);
                Object var46 = 162058560421645924L;
@@ -688,7 +688,7 @@ public class Zn2 extends Z7 {
       }
    }
 
-   ArrayList C() {
+   public ArrayList C() {
       ArrayList var2 = new ArrayList();
       int[] var10000 = g();
       String[] var3 = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
@@ -728,7 +728,7 @@ public class Zn2 extends Z7 {
       return var2;
    }
 
-   void K(String var1, String var2, int var3) {
+   public void K(String var1, String var2, int var3) {
       Registry.emptyArgs();
       long var4 = 270389152141252877L;
       Ref.h2(270389152141252877L, var4);

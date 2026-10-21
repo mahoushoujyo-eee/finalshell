@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class O2_4 implements V_2_2 {
-   final T_3 m;
+   public final T_3 m;
 
-   O2_4(T_3 var1) {
+   public O2_4(T_3 var1) {
       this.m = var1;
    }
 

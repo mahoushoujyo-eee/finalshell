@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class N4 implements ActionListener {
-   final NetworkMonitorPanel v;
+   public final NetworkMonitorPanel v;
 
-   N4(NetworkMonitorPanel var1) {
+   public N4(NetworkMonitorPanel var1) {
       this.v = var1;
    }
 

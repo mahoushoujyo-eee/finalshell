@@ -15,9 +15,9 @@ import javax.swing.tree.TreeCellEditor;
 import javax.swing.tree.TreePath;
 
 public class Ol4 extends AbstractCellEditor implements TreeCellEditor {
-   Dq4_2 u;
-   ChangeEvent E;
-   JTree k;
+   public Dq4_2 u;
+   public ChangeEvent E;
+   public JTree k;
 
    public Ol4(JTree var1) {
       Dq4_2 var10001 = new Dq4_2();
@@ -154,7 +154,7 @@ public class Ol4 extends AbstractCellEditor implements TreeCellEditor {
       return var18;
    }
 
-   static void i(Ol4 var0) {
+   public static void i(Ol4 var0) {
       var0.fireEditingStopped();
    }
 }

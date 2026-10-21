@@ -12,11 +12,11 @@ import java.util.Map;
 
 public class Q22 implements PaintContext {
    public Map s;
-   final AffineTransform C;
-   final C22_2 i;
+   public final AffineTransform C;
+   public final C22_2 i;
    public static long a;
 
-   Q22(C22_2 var1, AffineTransform var2) {
+   public Q22(C22_2 var1, AffineTransform var2) {
       this.i = var1;
       this.C = var2;
       this.s = new HashMap();

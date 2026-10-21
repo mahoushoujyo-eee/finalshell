@@ -1,12 +1,12 @@
 package com.finalshell.task;
 
 public class JC implements Runnable {
-   final String O;
-   final String y;
-   final boolean T;
-   final String J;
+   public final String O;
+   public final String y;
+   public final boolean T;
+   public final String J;
 
-   JC(String var1, String var2, boolean var3, String var4) {
+   public JC(String var1, String var2, boolean var3, String var4) {
       this.O = var1;
       this.y = var2;
       this.T = var3;

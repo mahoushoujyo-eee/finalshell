@@ -11,12 +11,12 @@ import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 
 public class BK2 extends MouseAdapter {
-   final JComponent w;
-   final Gi2 g;
+   public final JComponent w;
+   public final Gi2 g;
    public static String[] a;
    public static String[] b;
 
-   BK2(Gi2 var1, JComponent var2) {
+   public BK2(Gi2 var1, JComponent var2) {
       this.g = var1;
       this.w = var2;
    }

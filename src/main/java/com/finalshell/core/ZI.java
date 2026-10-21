@@ -1,14 +1,14 @@
 package com.finalshell.core;
 
 public class ZI {
-   protected int[][] d = null;
-   protected int A = 0;
-   protected int[] B;
-   protected int[] G;
-   protected int[] e;
-   protected int[] t;
-   protected float[] H;
-   protected boolean p = true;
+   public int[][] d = null;
+   public int A = 0;
+   public int[] B;
+   public int[] G;
+   public int[] e;
+   public int[] t;
+   public float[] H;
+   public boolean p = true;
    public static long[] a;
    public static Integer[] b;
 
@@ -22,8 +22,8 @@ public class ZI {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public ZI(int[] var1, int var2, int var3, int var4, int var5) {
+   super();
       String[] var10000 = W5.q();
-      super();
       String[] var6 = var10000;
       this.d = new int[3][a(28816, 629281330306058382L)];
       this.B = new int[4];

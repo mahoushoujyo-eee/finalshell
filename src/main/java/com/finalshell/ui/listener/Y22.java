@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Y22 extends ComponentAdapter {
-   final Kz4 W;
+   public final Kz4 W;
 
-   Y22(Kz4 var1) {
+   public Y22(Kz4 var1) {
       this.W = var1;
    }
 

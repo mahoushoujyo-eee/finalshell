@@ -6,10 +6,10 @@ import com.finalshell.ui.panel.SelectDownloadFolderPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class J8 extends Thread {
-   final SelectDownloadFolderPanel Q;
+   public final SelectDownloadFolderPanel Q;
    public static long a;
 
-   J8(SelectDownloadFolderPanel var1) {
+   public J8(SelectDownloadFolderPanel var1) {
       this.Q = var1;
    }
 

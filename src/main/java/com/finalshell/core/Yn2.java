@@ -4,7 +4,7 @@ import com.finalshell.ui.model.Pt2;
 
 // $VF: synthetic class
 public class Yn2 {
-   static int[] M;
+   public static int[] M;
 
    static {
       __vfClinit__();

@@ -11,13 +11,13 @@ import javax.swing.table.AbstractTableModel;
 
 public class ExtranetAddressModel extends AbstractTableModel {
    public List j;
-   String[] C;
-   Class[] b;
+   public String[] C;
+   public Class[] b;
    public static String[] a;
    public static String[] c;
    public static long d;
 
-   ExtranetAddressModel() {
+   public ExtranetAddressModel() {
       Class[] var10001 = new Class[(int)d];
       var10001[0] = String.class;
       var10001[1] = String.class;
@@ -109,7 +109,7 @@ public class ExtranetAddressModel extends AbstractTableModel {
       return (int)var10001;
    }
 
-   List e() {
+   public List e() {
       Object var1 = 396909645103208969L;
       return (List)Ref.g(396909645103208969L, var1);
    }

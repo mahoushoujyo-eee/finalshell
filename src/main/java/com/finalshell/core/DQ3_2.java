@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class DQ3_2 implements PO3 {
-   final Ty2 r;
+   public final Ty2 r;
 
-   DQ3_2(Ty2 var1) {
+   public DQ3_2(Ty2 var1) {
       this.r = var1;
    }
 

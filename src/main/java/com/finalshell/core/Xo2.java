@@ -53,7 +53,7 @@ public class Xo2 {
       if (var2 != null) {
          return var4 != 0;
       } else {
-         return (boolean)(var4 != 0 ? 1 : 0);
+         return (boolean)((var4 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -62,7 +62,7 @@ public class Xo2 {
       return Objects.hash(this.x, this.f);
    }
 
-   void X(boolean var1, US var2) {
+   public void X(boolean var1, US var2) {
       label16: {
          String[] var3 = Wq2_2.y();
          if (var3 == null) {

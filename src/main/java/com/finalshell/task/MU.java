@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.panel.EnableBackgroundImage;
 
 public class MU implements Runnable {
-   final EnableBackgroundImage y;
+   public final EnableBackgroundImage y;
 
-   MU(EnableBackgroundImage var1) {
+   public MU(EnableBackgroundImage var1) {
       this.y = var1;
    }
 

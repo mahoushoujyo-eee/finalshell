@@ -3,9 +3,9 @@ package com.finalshell.task;
 import java.io.IOException;
 
 public class GA extends Thread {
-   final Process L;
+   public final Process L;
 
-   GA(Process var1) {
+   public GA(Process var1) {
       this.L = var1;
    }
 

@@ -12,7 +12,7 @@ import javax.swing.JTextArea;
 import net.miginfocom.swing.MigLayout;
 
 public class TerminalHelpFrame extends JFrame {
-   JTextArea Z;
+   public JTextArea Z;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -70,7 +70,7 @@ public class TerminalHelpFrame extends JFrame {
          throw var17.getTargetException();
       }
 
-new Q7(var10008, !var20);
+var10007 = new Q7(var10008, !var20);
       Object[] var4 = var10006;
       var2.add(var4, a(-30866, -5189));
       var4.addActionListener(new Q7(this, var4));

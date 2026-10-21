@@ -30,20 +30,20 @@ import javax.swing.JPopupMenu;
 import javax.swing.JRadioButtonMenuItem;
 
 public class SetExternalEditorPanel extends JPopupMenu {
-   Km2 s;
-   Ck4 U;
-   Tf4 P;
-   com.finalshell.ui.model.Kl4 h;
-   Connection4 T;
-   boolean W;
-   Object X;
-   U62 y;
+   public Km2 s;
+   public Ck4 U;
+   public Tf4 P;
+   public com.finalshell.ui.model.Kl4 h;
+   public Connection4 T;
+   public boolean W;
+   public Object X;
+   public U62 y;
    public static String[] a;
    public static String[] b;
 
    public SetExternalEditorPanel(Km2 var1, com.finalshell.ui.model.Kl4 var2, Connection4 var3) {
+   super();
       String var10000 = Km2.U$String();
-      super();
       String var4 = var10000;
       Registry.emptyArgs();
       long var6 = 270389152141252877L;
@@ -85,7 +85,7 @@ public class SetExternalEditorPanel extends JPopupMenu {
                      Object var26 = 125534131174805204L;
                      SetExternalEditorPanel var10011 = Ref.g(125534131174805204L, var26).getClass().equals(Ck4.class);
                      if (var4 == null) {
-                        if (var10011 != false) {
+                        if (var10011 == null) {
                            Object var28 = 125534131174805204L;
                            Ck4 var10013 = (Ck4)Ref.g(125534131174805204L, var28);
                            long var31 = 450156560726681374L;
@@ -106,7 +106,7 @@ public class SetExternalEditorPanel extends JPopupMenu {
                         Ref.g(125534131174805204L, var32).getClass().equals(Tf4.class);
                      }
 
-                     if (var10011 != false) {
+                     if (var10011 == null) {
                         Object var34 = 125534131174805204L;
                         Tf4 var43 = (Tf4)Ref.g(125534131174805204L, var34);
                         long var37 = 566271456646205392L;
@@ -171,7 +171,7 @@ public class SetExternalEditorPanel extends JPopupMenu {
                throw var71.getTargetException();
             }
 
-new JMenuItem(var10004);
+var10003 = new JMenuItem(var10004);
             Registry.packArgs(this.getName());
             long var29 = 353935338506646766L;
             var10003 = Ref.h2(353935338506646766L, var29);
@@ -247,7 +247,7 @@ new JMenuItem(var10004);
 
       label151: {
          if (var1 == null) {
-            if (var10002 == 0) {
+            if (var10002 == null) {
                var10.setSelected(true);
                if (var1 == null) {
                   break label151;
@@ -268,7 +268,7 @@ new JMenuItem(var10004);
             }
          }
 
-         if (var10002 == 1) {
+         if (var10002 == null) {
             var11.setSelected(true);
          }
       }

@@ -9,9 +9,9 @@ import java.awt.event.WindowEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class JD extends WindowAdapter {
-   final SpeedTestFrame b;
+   public final SpeedTestFrame b;
 
-   JD(SpeedTestFrame var1) {
+   public JD(SpeedTestFrame var1) {
       this.b = var1;
    }
 

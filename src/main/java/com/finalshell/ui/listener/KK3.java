@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class KK3 implements ActionListener {
-   final ApplyToFileAndDirDialog b;
+   public final ApplyToFileAndDirDialog b;
 
-   KK3(ApplyToFileAndDirDialog var1) {
+   public KK3(ApplyToFileAndDirDialog var1) {
       this.b = var1;
    }
 

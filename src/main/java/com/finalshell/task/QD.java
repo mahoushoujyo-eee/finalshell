@@ -7,12 +7,12 @@ import javax.swing.JScrollBar;
 import javax.swing.SwingUtilities;
 
 public class QD implements Runnable {
-   final JScrollBar z;
-   final int t;
-   final int C;
+   public final JScrollBar z;
+   public final int t;
+   public final int C;
    public static long a;
 
-   QD(JScrollBar var1, int var2, int var3) {
+   public QD(JScrollBar var1, int var2, int var3) {
       this.z = var1;
       this.t = var2;
       this.C = var3;

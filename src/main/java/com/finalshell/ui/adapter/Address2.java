@@ -18,9 +18,9 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class Address2 extends DefaultTableCellRenderer {
-   Border h;
-   SimpleDateFormat v;
-   BA3 b;
+   public Border h;
+   public SimpleDateFormat v;
+   public BA3 b;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -457,7 +457,7 @@ public class Address2 extends DefaultTableCellRenderer {
                   }
 
                   label324:
-                  if (var135 == 0) {
+                  if (var135 == null) {
                      String var142 = (String)(Registry.emptyArgs());
                      long var62 = 564648154927582737L;
                      Object[] var61 = var142;

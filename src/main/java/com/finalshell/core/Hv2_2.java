@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public abstract class Hv2_2 extends Hu2 {
-   final Hd2 O;
+   public final Hd2 O;
    public static String[] a;
    public static String[] b;
    public static long[] k;

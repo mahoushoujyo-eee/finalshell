@@ -6,11 +6,11 @@ import java.awt.Dimension;
 import java.awt.Insets;
 
 public class TO extends T4 {
-   protected int Y;
-   protected int s;
-   protected int d;
-   protected boolean Q;
-   protected boolean j;
+   public int Y;
+   public int s;
+   public int d;
+   public boolean Q;
+   public boolean j;
 
    public TO() {
       this(0, 0, 0, true, false);
@@ -323,7 +323,7 @@ public class TO extends T4 {
       }
    }
 
-   protected int m(Container var1) {
+   public int m(Container var1) {
       int var3 = 0;
       int var10000 = T4.b();
       int var4 = 0;

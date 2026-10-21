@@ -14,12 +14,12 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Cf2 {
-   static long T;
-   static int S;
+   public static long T;
+   public static int S;
    public static Gs2_2 U;
-   static ArrayList t;
-   static long Q;
-   static Random R;
+   public static ArrayList t;
+   public static long Q;
+   public static Random R;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -1273,7 +1273,7 @@ public class Cf2 {
       // 45d: return
    }
 
-   static PipedInputStream g(InputStream var0, int var1) {
+   public static PipedInputStream g(InputStream var0, int var1) {
       PipedOutputStream var2 = new PipedOutputStream();
       PipedInputStream var3 = null;
 

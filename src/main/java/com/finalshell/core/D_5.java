@@ -9,7 +9,7 @@ public class D_5 extends N2_3 {
    public static String b;
    public static long c;
 
-   D_5(long var1) {
+   public D_5(long var1) {
       this.Y = var1;
    }
 
@@ -50,7 +50,7 @@ public class D_5 extends N2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(!var10000 ? 1 : 0);
+         return (boolean)((!var10000 ? 1 : 0) != 0);
       }
    }
 

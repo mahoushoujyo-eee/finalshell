@@ -7,12 +7,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class NE3 {
-   protected static Map K;
-   protected static Map J;
-   protected static Object c;
-   protected static boolean m;
-   protected static Pm2 f;
-   protected static boolean b;
+   public static Map K;
+   public static Map J;
+   public static Object c;
+   public static boolean m;
+   public static Pm2 f;
+   public static boolean b;
    public static Ky4[] y;
    public static String[] a;
    public static String[] d;

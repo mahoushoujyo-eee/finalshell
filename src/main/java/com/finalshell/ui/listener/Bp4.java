@@ -12,9 +12,6 @@ import javax.swing.event.HyperlinkListener;
 import javax.swing.event.HyperlinkEvent.EventType;
 
 public class Bp4 implements HyperlinkListener {
-   Bp4() {
-   }
-
    @Override
    public void hyperlinkUpdate(HyperlinkEvent var1) {
       Ky4[] var10000 = YT3_2.c();

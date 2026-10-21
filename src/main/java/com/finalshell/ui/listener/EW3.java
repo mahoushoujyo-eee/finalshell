@@ -5,9 +5,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class EW3 implements ChangeListener {
-   final Xc4 H;
+   public final Xc4 H;
 
-   EW3(Xc4 var1) {
+   public EW3(Xc4 var1) {
       this.H = var1;
    }
 

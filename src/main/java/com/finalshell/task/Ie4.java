@@ -11,12 +11,12 @@ import com.finalshell.ui.panel.SZ;
 import java.io.IOException;
 
 public class Ie4 implements Runnable {
-   final com.finalshell.core.P2 I;
-   final com.finalshell.core.X2 j;
-   final com.finalshell.ui.panel.Oj2 r;
-   final XD3 P;
+   public final com.finalshell.core.P2 I;
+   public final com.finalshell.core.X2 j;
+   public final com.finalshell.ui.panel.Oj2 r;
+   public final XD3 P;
 
-   Ie4(XD3 var1, com.finalshell.core.P2 var2, com.finalshell.core.X2 var3, com.finalshell.ui.panel.Oj2 var4) {
+   public Ie4(XD3 var1, com.finalshell.core.P2 var2, com.finalshell.core.X2 var3, com.finalshell.ui.panel.Oj2 var4) {
       this.P = var1;
       this.I = var2;
       this.j = var3;

@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ui2 implements ActionListener {
-   final LogPanel u;
+   public final LogPanel u;
 
-   Ui2(LogPanel var1) {
+   public Ui2(LogPanel var1) {
       this.u = var1;
    }
 

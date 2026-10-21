@@ -3,23 +3,23 @@ package com.finalshell.core;
 import java.io.PrintStream;
 
 public class Dl2_2 {
-   int r;
-   int u;
-   Dl2_2 j;
-   Dl2_2[] e;
-   boolean S;
-   int x;
-   int n;
-   int h;
-   int U;
-   int F;
-   final KL i;
+   public int r;
+   public int u;
+   public Dl2_2 j;
+   public Dl2_2[] e;
+   public boolean S;
+   public int x;
+   public int n;
+   public int h;
+   public int U;
+   public int F;
+   public final KL i;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Dl2_2(KL var1) {
+   public Dl2_2(KL var1) {
       this.i = var1;
       this.e = new Dl2_2[a(25625, 1949440518602740935L)];
    }

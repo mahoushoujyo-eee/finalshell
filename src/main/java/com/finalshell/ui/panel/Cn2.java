@@ -157,7 +157,7 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
 
    public abstract ConnectionProperty x();
 
-   protected void w(Fv2_2 var1, ConnectionProperty var2) {
+   public void w(Fv2_2 var1, ConnectionProperty var2) {
       new S0(var1, Executors.newSingleThreadExecutor()).J(this::lambda$setupTtyConnectorWaitFor$0);
    }
 
@@ -167,7 +167,7 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
    }
 
    @NotNull
-   String J(@NotNull ConnectionProperty var1) {
+   public String J(@NotNull ConnectionProperty var1) {
       String[] var10000 = Q$arrString();
       Fv2_2 var3 = var1.s$Fv_2();
       String[] var2 = var10000;
@@ -264,9 +264,9 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
       }
    }
 
-   protected abstract WH3 m();
+   public abstract WH3 m();
 
-   protected Component Z(WH3 var1, ConnectionProperty var2) {
+   public Component Z(WH3 var1, ConnectionProperty var2) {
       return new XW3(this, var1, var2, null);
    }
 
@@ -657,15 +657,15 @@ public abstract class Cn2 extends JPanel implements FM, CS3_2 {
       return var10000;
    }
 
-   static WH3 l(Cn2 var0) {
+   public static WH3 l(Cn2 var0) {
       return var0.Z;
    }
 
-   static void T(Cn2 var0) {
+   public static void T(Cn2 var0) {
       var0.p();
    }
 
-   static void b(Cn2 var0) {
+   public static void b(Cn2 var0) {
       var0.J();
    }
 

@@ -40,14 +40,14 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class SelectDownloadFolderPanel extends JPanel implements Cq2 {
-   Fr4 A;
-   DT I;
-   boolean l;
-   C_C H;
-   ArrayList s;
-   JPopupMenu a;
-   U62 q;
-   C5 z;
+   public Fr4 A;
+   public DT I;
+   public boolean l;
+   public C_C H;
+   public ArrayList s;
+   public JPopupMenu a;
+   public U62 q;
+   public C5 z;
    public static int[] u;
    public static String[] b;
    public static String[] c;
@@ -93,7 +93,7 @@ public class SelectDownloadFolderPanel extends JPanel implements Cq2 {
          throw var98.getTargetException();
       }
 
-new ArrayList(var10013);
+var10012 = new ArrayList(var10013);
       var10009 = new java.io.File(var10009.append(this.getAbsolutePath()).toString());
       long var30 = 435031631667149019L;
       StringBuilder var29 = var10008;
@@ -213,7 +213,7 @@ new ArrayList(var10013);
       Object var69 = 435031631667149019L;
       C_C var10031 = (C_C)Ref.g(435031631667149019L, var69);
       Object var71 = 468326905894456044L;
-new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
+var10031 = new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       Object var73 = 435031631667149019L;
       ((C_C)Ref.g(435031631667149019L, var73)).addMouseListener(new com.finalshell.ui.listener.OS(this, this));
       Fr4 var10032 = new Fr4();
@@ -406,7 +406,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
          java.io.File var5 = new java.io.File(var4);
          Object[] var46 = var5.exists();
          if (this == null) {
-            if (var46 == false) {
+            if (var46 == null) {
                return;
             }
 
@@ -420,7 +420,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
             }
          }
 
-         if (var46 != false) {
+         if (var46 == null) {
             Registry.packArgs(var5.getAbsolutePath());
             long var24 = 402130946821638998L;
             Ref.h2(402130946821638998L, var24);
@@ -764,7 +764,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       } while (var2 == null);
    }
 
-   W8 d(String var1) {
+   public W8 d(String var1) {
       int[] var10000 = O$arrint();
       W8 var3 = null;
       int[] var2 = var10000;
@@ -795,7 +795,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       return var3;
    }
 
-   void W() {
+   public void W() {
       Registry.emptyArgs();
       long var1 = 270389152141252877L;
       Ref.h2(270389152141252877L, var1);
@@ -811,7 +811,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       }
    }
 
-   EditDialog2 l(String var1, com.finalshell.ui.frame.U var2) {
+   public EditDialog2 l(String var1, com.finalshell.ui.frame.U var2) {
       int[] var10000 = O$arrint();
       EditDialog2 var4 = new EditDialog2(Registry.lookupField(243490669497898236L).getInt(null), var2, a(-21396, -2576), false);
       int[] var3 = var10000;
@@ -837,7 +837,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       return var4;
    }
 
-   W8 B(FX3 var1, JPopupMenu var2, Component var3, String var4) {
+   public W8 B(FX3 var1, JPopupMenu var2, Component var3, String var4) {
       Color var5 = (Color)Registry.lookupField(461796957683008100L).get(null);
       Color var6 = new Color(a(13476, 7212822420094570422L), a(19896, 2985074675117635238L), a(19896, 2985074675117635238L));
       Color var7 = new Color(a(31074, 3857975071267521147L), a(17714, 9183881487808052776L), a(17714, 9183881487808052776L));
@@ -915,7 +915,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
       return var9;
    }
 
-   void c() {
+   public void c() {
       O$arrint();
       Object var2 = false;
       Object var7 = 344912960350819457L;
@@ -1211,7 +1211,7 @@ new LP_3(this, (JPopupMenu)Ref.g(468326905894456044L, var71));
 
       label228: {
          if (var1 == null) {
-            if (var82 == false) {
+            if (var82 == null) {
                return;
             }
 

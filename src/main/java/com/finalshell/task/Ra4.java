@@ -3,10 +3,10 @@ package com.finalshell.task;
 import java.io.File;
 
 public class Ra4 implements Runnable {
-   final File g;
-   final com.finalshell.ui.panel.Oj2 N;
+   public final File g;
+   public final com.finalshell.ui.panel.Oj2 N;
 
-   Ra4(com.finalshell.ui.panel.Oj2 var1, File var2) {
+   public Ra4(com.finalshell.ui.panel.Oj2 var1, File var2) {
       this.N = var1;
       this.g = var2;
    }

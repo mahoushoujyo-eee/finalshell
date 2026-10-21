@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.OR3;
 import java.lang.reflect.InvocationTargetException;
 
 public class Gp2 implements Runnable {
-   final OR3 j;
+   public final OR3 j;
 
-   Gp2(OR3 var1) {
+   public Gp2(OR3 var1) {
       this.j = var1;
    }
 

@@ -19,7 +19,7 @@ public class M2 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       var1.drawImage(O.getImage(), this.getWidth() - O.getIconWidth(), this.getHeight() - O.getIconHeight(), null);
    }

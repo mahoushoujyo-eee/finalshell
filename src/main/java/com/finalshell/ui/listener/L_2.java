@@ -7,10 +7,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class L_2 implements PropertyChangeListener {
-   final Ky4 M;
-   final com.finalshell.ui.panel.T U;
+   public final Ky4 M;
+   public final com.finalshell.ui.panel.T U;
 
-   L_2(com.finalshell.ui.panel.T var1, Ky4 var2) {
+   public L_2(com.finalshell.ui.panel.T var1, Ky4 var2) {
       this.U = var1;
       this.M = var2;
    }

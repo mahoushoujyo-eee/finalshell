@@ -7,16 +7,16 @@ import com.finalshell.ui.panel.LogPanel;
 import java.util.ArrayList;
 
 public class Fc2 {
-   U5 n;
-   LogPanel s;
+   public U5 n;
+   public LogPanel s;
    public static int e;
    public static int p;
    public static int V;
-   int v;
-   int J;
-   boolean c;
-   boolean O;
-   long W;
+   public int v;
+   public int J;
+   public boolean c;
+   public boolean O;
+   public long W;
    public static String[] a;
    public static String[] b;
 
@@ -1135,7 +1135,7 @@ public class Fc2 {
       // a21: return
    }
 
-   void j(O0 var1) {
+   public void j(O0 var1) {
       Registry.lookupField(466109883020685687L).setLong(this, var1.I(a(23897, 2939)));
       Registry.lookupField(584896487691029264L).setBoolean(this, var1.G(a(23930, -28209)));
       if (Registry.lookupField(584896487691029264L).getBoolean(this)) {

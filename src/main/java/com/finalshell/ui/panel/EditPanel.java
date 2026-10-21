@@ -24,19 +24,19 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class EditPanel extends JPanel {
-   AppendCarriageReturnCRPanel L;
-   JLabel a;
-   JLabel G;
-   ArrayList j;
-   Lj4_2 J;
-   Copy3 u;
-   JPanel P;
+   public AppendCarriageReturnCRPanel L;
+   public JLabel a;
+   public JLabel G;
+   public ArrayList j;
+   public Lj4_2 J;
+   public Copy3 u;
+   public JPanel P;
    public static String[] b;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   EditPanel(AppendCarriageReturnCRPanel var1) {
+   public EditPanel(AppendCarriageReturnCRPanel var1) {
       ArrayList var10001 = new ArrayList();
       long var12 = 584619567951220222L;
       ArrayList var11 = var10001;
@@ -186,7 +186,7 @@ public class EditPanel extends JPanel {
       }
    }
 
-   void T(Lj4_2 var1) {
+   public void T(Lj4_2 var1) {
       AppendCarriageReturnCRPanel.Y();
       long var11 = 376006859484345408L;
       Ref.s(376006859484345408L, var1, var11);

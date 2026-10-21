@@ -5,9 +5,9 @@ import java.awt.Component;
 import javax.swing.JList;
 
 public class OB extends Oq2 {
-   final Kd4 l;
+   public final Kd4 l;
 
-   OB(Kd4 var1) {
+   public OB(Kd4 var1) {
       this.l = var1;
    }
 

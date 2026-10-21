@@ -25,7 +25,7 @@ public class Cr2_2 implements W2_4 {
    public final List P;
    public final List E;
    public final Map s;
-   static boolean Q;
+   public static boolean Q;
    public static Ky4[] j;
    public static String[] a;
    public static String[] b;
@@ -2287,35 +2287,35 @@ public class Cr2_2 implements W2_4 {
       }
    }
 
-   static C_ Z(Cr2_2 var0, boolean var1, List var2) {
+   public static C_ Z(Cr2_2 var0, boolean var1, List var2) {
       return var0.q(var1, var2);
    }
 
-   static void q(Cr2_2 var0, boolean var1, String var2, Map var3, List var4) {
+   public static void q(Cr2_2 var0, boolean var1, String var2, Map var3, List var4) {
       var0.h(var1, var2, var3, var4);
    }
 
-   static void m(DataOutputStream var0, List var1) throws IOException {
+   public static void m(DataOutputStream var0, List var1) throws IOException {
       u(var0, var1);
    }
 
-   static short[] a(DataInputStream var0) throws IOException {
+   public static short[] a(DataInputStream var0) throws IOException {
       return i(var0);
    }
 
-   static void D(DataOutputStream var0, short[] var1) throws IOException {
+   public static void D(DataOutputStream var0, short[] var1) throws IOException {
       q(var0, var1);
    }
 
-   static R2_3 d$r_2(DataInputStream var0) throws IOException {
+   public static R2_3 d$r_2(DataInputStream var0) throws IOException {
       return g$r_2(var0);
    }
 
-   static byte[] S(DataInputStream var0) throws IOException {
+   public static byte[] S(DataInputStream var0) throws IOException {
       return v$arrbyte(var0);
    }
 
-   static Y_3 U(Cr2_2 var0, DataInputStream var1) throws IOException {
+   public static Y_3 U(Cr2_2 var0, DataInputStream var1) throws IOException {
       return var0.g$Y(var1);
    }
 

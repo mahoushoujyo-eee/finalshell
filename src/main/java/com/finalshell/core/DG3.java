@@ -8,9 +8,6 @@ public final class DG3 implements Aj2 {
    public static long[] c;
    public static Long[] d;
 
-   DG3() {
-   }
-
    @Override
    public void I(long var1) {
       this.J = var1 & b(19622, 4138740959448262675L);
@@ -113,7 +110,7 @@ public final class DG3 implements Aj2 {
       return var1;
    }
 
-   static long h(long var0, long var2, long var4) {
+   public static long h(long var0, long var2, long var4) {
       long var7 = b(16494, 7471326592952001754L);
       long var13 = var4 % var7;
       long var9 = var0 & b(3341, 8495052391616293307L);

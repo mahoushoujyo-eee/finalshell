@@ -8,9 +8,9 @@ import java.util.Comparator;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Cp4 implements Comparator {
-   final Collator D;
+   public final Collator D;
 
-   Cp4(Collator var1) {
+   public Cp4(Collator var1) {
       this.D = var1;
    }
 

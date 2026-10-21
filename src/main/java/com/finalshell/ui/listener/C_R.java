@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class C_R implements ActionListener {
-   final KD3 T;
+   public final KD3 T;
 
-   C_R(KD3 var1) {
+   public C_R(KD3 var1) {
       this.T = var1;
    }
 

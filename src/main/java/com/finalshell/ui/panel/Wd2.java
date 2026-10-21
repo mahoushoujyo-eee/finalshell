@@ -128,9 +128,9 @@ public class Wd2 extends JComponent implements W2_3 {
    }
 
    public Wd2(Component var1, JComponent var2, WF var3, boolean var4) {
+   super();
       Ky4[] var5;
       label17: {
-         super();
          this.W = B7.s;
          this.c = B7.D;
          this.f = B7.M;
@@ -1199,7 +1199,7 @@ public class Wd2 extends JComponent implements W2_3 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Ky4[] var10000 = Ac2.n();
       Graphics2D var3 = (Graphics2D)var1;
@@ -1466,47 +1466,47 @@ public class Wd2 extends JComponent implements W2_3 {
       return var2;
    }
 
-   static long J() {
+   public static long J() {
       return R;
    }
 
-   static int x$int() {
+   public static int x$int() {
       return Y;
    }
 
-   static IC3 q(Wd2 var0) {
+   public static IC3 q(Wd2 var0) {
       return var0.a;
    }
 
-   static float Y$float(Wd2 var0) {
+   public static float Y$float(Wd2 var0) {
       return var0.q;
    }
 
-   static float F(Wd2 var0, float var1) {
+   public static float F(Wd2 var0, float var1) {
       return var0.q = var1;
    }
 
-   static void Y$void(Wd2 var0) {
+   public static void Y$void(Wd2 var0) {
       var0.n();
    }
 
-   static WC_2 N(Wd2 var0) {
+   public static WC_2 N(Wd2 var0) {
       return var0.v;
    }
 
-   static void L(Wd2 var0) {
+   public static void L(Wd2 var0) {
       var0.x$void();
    }
 
-   static IC3 D(Wd2 var0, IC3 var1) {
+   public static IC3 D(Wd2 var0, IC3 var1) {
       return var0.a = var1;
    }
 
-   static void A(Wd2 var0) {
+   public static void A(Wd2 var0) {
       var0.y$void();
    }
 
-   static void I(Wd2 var0) {
+   public static void I(Wd2 var0) {
       var0.F$void();
    }
 

@@ -9,7 +9,7 @@ public class De4 extends Dm4 {
    public static String T;
    public static int R;
    public boolean g = true;
-   static byte[] a;
+   public static byte[] a;
    public static byte[] N;
    public static Hashtable i;
    public static Hashtable q;
@@ -21,7 +21,7 @@ public class De4 extends Dm4 {
    public static long[] l;
    public static Integer[] n;
 
-   static int Z(byte var0) {
+   public static int Z(byte var0) {
       byte var10000 = (Dm4.F$boolean()) ? 1 : 0;
       int var2 = 0;
       boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -54,7 +54,7 @@ public class De4 extends Dm4 {
       return var10000;
    }
 
-   static void n(String var0) {
+   public static void n(String var0) {
       N = E8.J(var0);
       boolean var10000 = Dm4.J$boolean();
       a = new byte[b(15479, 3892102147387622338L)];
@@ -70,17 +70,17 @@ public class De4 extends Dm4 {
       }
    }
 
-   static void N(String var0) {
+   public static void N(String var0) {
       T = var0;
    }
 
-   static void o(int var0) {
+   public static void o(int var0) {
       R = var0;
    }
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   static byte[] N(ConnectHost var0) {
+   public static byte[] N(ConnectHost var0) {
       boolean var10000 = Dm4.F$boolean();
       Hashtable var2 = q;
       synchronized (q){} // $VF: monitorenter 
@@ -132,14 +132,14 @@ public class De4 extends Dm4 {
       }
    }
 
-   static void k(ConnectHost var0) {
+   public static void k(ConnectHost var0) {
       synchronized (q) {
          q.remove(var0);
          i.remove(var0);
       }
    }
 
-   De4() {
+   public De4() {
       this.M(b(9065, 1550131024430537963L));
       this.Q(b(4349, 5341490096153210712L));
       this.f(b(1200, 8703884275044891402L));
@@ -148,7 +148,7 @@ public class De4 extends Dm4 {
    }
 
    @Override
-   void S() {
+   public void S() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -349,7 +349,7 @@ public class De4 extends Dm4 {
    }
 
    @Override
-   void Y(byte[] param1, int param2, int param3) throws IOException {
+   public void Y(byte[] param1, int param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

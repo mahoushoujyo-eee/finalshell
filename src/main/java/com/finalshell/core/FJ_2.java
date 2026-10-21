@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.util.Objects;
 
 public class FJ_2 extends F9 implements FL_3 {
-   FJ_2(B3_2 var1) {
+   public FJ_2(B3_2 var1) {
+   super(var1);
       Objects.requireNonNull(var1);
-      super(var1);
    }
 
    @Override

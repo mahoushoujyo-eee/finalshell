@@ -10,13 +10,13 @@ import java.net.SocketException;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Tunnel extends DatagramSocket {
-   boolean o = true;
-   boolean Y = true;
-   LinkedBlockingQueue J = new LinkedBlockingQueue();
-   DnsResolveFailedSetting i;
-   int y;
-   Object r = new Object();
-   boolean Z = false;
+   public boolean o = true;
+   public boolean Y = true;
+   public LinkedBlockingQueue J = new LinkedBlockingQueue();
+   public DnsResolveFailedSetting i;
+   public int y;
+   public Object r = new Object();
+   public boolean Z = false;
    public static String[] a;
    public static String[] b;
 
@@ -198,7 +198,7 @@ public class Tunnel extends DatagramSocket {
       // 157: return
    }
 
-   void E(InetAddress param1, short param2) {
+   public void E(InetAddress param1, short param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -284,7 +284,7 @@ public class Tunnel extends DatagramSocket {
       }
    }
 
-   void T(UL var1) {
+   public void T(UL var1) {
       this.J.add(var1);
    }
 

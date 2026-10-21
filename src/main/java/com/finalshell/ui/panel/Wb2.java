@@ -89,7 +89,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       this.addPropertyChangeListener(c, new Td_2(this));
    }
 
-   protected void c() {
+   public void c() {
       String var1 = m$String();
       BufferedImage var10001 = this.f;
       if (var1 != null) {
@@ -232,7 +232,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       return this;
    }
 
-   protected void U$void() {
+   public void U$void() {
       String var1 = m$String();
       Wb2 var10000 = this;
       if (var1 != null) {
@@ -264,7 +264,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       return this.g(var1, var1, var1, var1);
    }
 
-   protected void z() {
+   public void z() {
       String var1 = m$String();
       Wb2 var10000 = this;
       if (var1 != null) {
@@ -282,7 +282,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String var10000 = m$String();
       super.paintComponent(var1);
       String var2 = var10000;
@@ -465,15 +465,15 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       }
    }
 
-   protected int G(Insets var1) {
+   public int G(Insets var1) {
       return var1.left + (this.getWidth() - var1.left - var1.right) / 2;
    }
 
-   protected int S(Insets var1) {
+   public int S(Insets var1) {
       return var1.top + (this.getHeight() - var1.top - var1.bottom) / 2;
    }
 
-   protected BufferedImage C(Insets var1) {
+   public BufferedImage C(Insets var1) {
       String var2 = m$String();
       Wb2 var10000 = this;
       if (var2 != null) {
@@ -534,7 +534,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       return this.a;
    }
 
-   protected BufferedImage B() {
+   public BufferedImage B() {
       String var1 = m$String();
       Wb2 var10000 = this;
       if (var1 != null) {
@@ -569,7 +569,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       return var10000.T();
    }
 
-   protected Dimension T() {
+   public Dimension T() {
       Insets var1 = this.getInsets();
       return new Dimension(
          var1.left + (this.f != null ? this.f.getWidth() : 0) + var1.right, var1.top + (this.f != null ? this.f.getHeight() : 0) + var1.bottom
@@ -786,7 +786,7 @@ public class Wb2 extends JComponent implements Pp2, RF3, SwingConstants {
       Ac2.S(this, var1);
    }
 
-   static void O(Wb2 var0) {
+   public static void O(Wb2 var0) {
       var0.Y();
    }
 

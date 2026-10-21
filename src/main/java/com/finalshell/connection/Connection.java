@@ -19,31 +19,31 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Connection {
-   Qm2 I;
-   Rdp2 q;
+   public Qm2 I;
+   public Rdp2 q;
    public InetAddress g;
    public int U;
-   HashMap t = new HashMap();
-   int w = -1;
-   int G = -1;
-   Object k = new Object();
-   boolean y = false;
-   Object Y = new Object();
-   byte[] h = new byte[4];
-   int z = 0;
-   int n;
-   int F;
-   Tz4 V;
-   float m;
-   int l;
-   int D;
-   boolean v;
-   boolean b;
-   static int x;
-   static int W;
-   boolean Z;
+   public HashMap t = new HashMap();
+   public int w = -1;
+   public int G = -1;
+   public Object k = new Object();
+   public boolean y = false;
+   public Object Y = new Object();
+   public byte[] h = new byte[4];
+   public int z = 0;
+   public int n;
+   public int F;
+   public Tz4 V;
+   public float m;
+   public int l;
+   public int D;
+   public boolean v;
+   public boolean b;
+   public static int x;
+   public static int W;
+   public boolean Z;
    public int H;
-   long S;
+   public long S;
    public static String[] a;
    public static String[] c;
    public static long d;
@@ -52,7 +52,7 @@ public class Connection {
       __vfClinit__();
    }
 
-   Connection(Qm2 var1) {
+   public Connection(Qm2 var1) {
       this.n = (int)d;
       this.F = -1;
       this.m = (float)Cs2.r;
@@ -427,7 +427,7 @@ public class Connection {
       }
    }
 
-   boolean Q() {
+   public boolean Q() {
       Ky4[] var10000 = Qm2.J();
       this.H = this.I.J.B - this.F;
       Ky4[] var1 = var10000;
@@ -445,7 +445,7 @@ public class Connection {
       return var3 != 0;
    }
 
-   void A(int var1) {
+   public void A(int var1) {
       Ky4[] var10000 = Qm2.J();
       this.D = var1;
       Ky4[] var2 = var10000;
@@ -461,7 +461,7 @@ public class Connection {
       var3.M();
    }
 
-   void M() {
+   public void M() {
       Ky4[] var1 = Qm2.J();
       int var10000 = (this.v) ? 1 : 0;
       if (var1 != null) {
@@ -501,7 +501,7 @@ public class Connection {
       this.I.J.N();
    }
 
-   void g() {
+   public void g() {
       Ky4[] var1 = Qm2.J();
       int var10000 = (this.v) ? 1 : 0;
       if (var1 != null) {

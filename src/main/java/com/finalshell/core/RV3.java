@@ -4,10 +4,10 @@ import com.finalshell.network.SW;
 import java.awt.event.KeyEvent;
 
 public class RV3 extends Wc2{
-   final SW M;
-   final com.finalshell.ui.dialog.DA G;
+   public final SW M;
+   public final com.finalshell.ui.dialog.DA G;
 
-   RV3(com.finalshell.ui.dialog.DA var1, SW var2) {
+   public RV3(com.finalshell.ui.dialog.DA var1, SW var2) {
       this.G = var1;
       this.M = var2;
    }

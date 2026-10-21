@@ -7,9 +7,9 @@ import com.finalshell.ui.panel.SetBackgroundImagePanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lg2_2 implements Runnable {
-   final SetBackgroundImagePanel e;
+   public final SetBackgroundImagePanel e;
 
-   Lg2_2(SetBackgroundImagePanel var1) {
+   public Lg2_2(SetBackgroundImagePanel var1) {
       this.e = var1;
    }
 

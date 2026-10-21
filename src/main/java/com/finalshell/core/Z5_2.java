@@ -10,13 +10,10 @@ import java.awt.Rectangle;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Z5_2 implements LayoutManager {
-   Km2 C;
-   com.finalshell.ui.panel.Ca2 K;
+   public Km2 C;
+   public com.finalshell.ui.panel.Ca2 K;
    public static long[] a;
    public static Integer[] b;
-
-   Z5_2() {
-   }
 
    @Override
    public void addLayoutComponent(String var1, Component var2) {

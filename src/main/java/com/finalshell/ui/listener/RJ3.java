@@ -8,11 +8,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class RJ3 implements ActionListener {
-   final Pb4 D;
-   final Qe2_2 s;
-   final Kz4 B;
+   public final Pb4 D;
+   public final Qe2_2 s;
+   public final Kz4 B;
 
-   RJ3(Kz4 var1, Pb4 var2, Qe2_2 var3) {
+   public RJ3(Kz4 var1, Pb4 var2, Qe2_2 var3) {
       this.B = var1;
       this.D = var2;
       this.s = var3;

@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Tq2 implements ActionListener {
-   final ShowDeletedPanel T;
+   public final ShowDeletedPanel T;
 
-   Tq2(ShowDeletedPanel var1) {
+   public Tq2(ShowDeletedPanel var1) {
       this.T = var1;
    }
 

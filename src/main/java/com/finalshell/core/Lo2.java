@@ -9,8 +9,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
 public class Lo2 extends Lz2_2 {
-   protected TexturePaint I = null;
-   protected com.finalshell.ui.model.Lt4 q = null;
+   public TexturePaint I = null;
+   public com.finalshell.ui.model.Lt4 q = null;
 
    public Lo2(ImageIcon var1) {
       this(var1.getImage());
@@ -72,7 +72,7 @@ public class Lo2 extends Lz2_2 {
       this.X(var1);
    }
 
-   protected void X(BufferedImage var1) {
+   public void X(BufferedImage var1) {
       this.I = var1 != null ? new TexturePaint(var1, new Rectangle(0, 0, var1.getWidth(), var1.getHeight())) : null;
       this.l();
    }

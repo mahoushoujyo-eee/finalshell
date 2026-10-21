@@ -10,14 +10,14 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextArea;
 
 public class T62 implements MouseListener {
-   final String O;
-   final JTextArea z;
-   final Color c;
-   final Xw2 Q;
+   public final String O;
+   public final JTextArea z;
+   public final Color c;
+   public final Xw2 Q;
    public static long[] a;
    public static Integer[] b;
 
-   T62(Xw2 var1, String var2, JTextArea var3, Color var4) {
+   public T62(Xw2 var1, String var2, JTextArea var3, Color var4) {
       this.Q = var1;
       this.O = var2;
       this.z = var3;

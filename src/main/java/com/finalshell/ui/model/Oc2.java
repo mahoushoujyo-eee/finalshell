@@ -20,8 +20,8 @@ import java.util.RandomAccess;
 
 public class Oc2 extends Ok2 implements List, Cloneable, RandomAccess, Serializable {
    public final List l;
-   protected transient Object g;
-   protected transient Type m;
+   public transient Object g;
+   public transient Type m;
    public static String d;
 
    public Oc2() {

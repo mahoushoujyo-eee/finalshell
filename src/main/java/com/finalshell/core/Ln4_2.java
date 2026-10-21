@@ -5,17 +5,17 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public abstract class Ln4_2 {
-   String y;
-   protected String O;
-   int S;
-   protected String a;
-   long Z;
-   long G;
-   long s;
-   long U;
-   long P;
-   long b;
-   long L;
+   public String y;
+   public String O;
+   public int S;
+   public String a;
+   public long Z;
+   public long G;
+   public long s;
+   public long U;
+   public long P;
+   public long b;
+   public long L;
    public static boolean R;
 
    public Ln4_2() {

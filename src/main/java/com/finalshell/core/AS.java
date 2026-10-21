@@ -16,8 +16,8 @@ public class AS {
    }
 
    public AS(JComponent var1, String var2, String var3, Object var4, boolean var5, boolean var6) {
+   super();
       Cl4_2.I();
-      super();
       this.p(var1);
       this.b(var2);
       this.h(var3);

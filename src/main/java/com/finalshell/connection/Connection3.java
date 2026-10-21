@@ -12,8 +12,8 @@ import java.net.Socket;
 import java.net.URL;
 
 public class Connection3 {
-   static int s;
-   static int j;
+   public static int s;
+   public static int j;
    public static String[] a;
    public static String[] b;
    public static long[] c;

@@ -10,14 +10,14 @@ import com.finalshell.ui.panel.Connection4;
 import java.lang.reflect.InvocationTargetException;
 
 public class UU3 implements Runnable {
-   final Connection12 l;
-   final Ck4 i;
-   final Tf4 m;
-   final String Y;
-   final Connection4 B;
-   final File8 n;
+   public final Connection12 l;
+   public final Ck4 i;
+   public final Tf4 m;
+   public final String Y;
+   public final Connection4 B;
+   public final File8 n;
 
-   UU3(File8 var1, Connection12 var2, Ck4 var3, Tf4 var4, String var5, Connection4 var6) {
+   public UU3(File8 var1, Connection12 var2, Ck4 var3, Tf4 var4, String var5, Connection4 var6) {
       this.n = var1;
       this.l = var2;
       this.i = var3;

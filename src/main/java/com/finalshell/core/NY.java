@@ -4,12 +4,12 @@ import com.finalshell.reflect.Ref;
 import java.awt.Color;
 
 public class NY {
-   XF3 e;
-   XF3 j;
-   XF3 Q;
-   XF3 x;
-   XF3 z;
-   S3 K;
+   public XF3 e;
+   public XF3 j;
+   public XF3 Q;
+   public XF3 x;
+   public XF3 z;
+   public S3 K;
 
    public XF3 B() {
       Object var1 = 294166995888460100L;

@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import javax.swing.JPanel;
 
 public class BS extends JPanel {
-   Y3 m;
+   public Y3 m;
    public static long[] a;
    public static Integer[] b;
 

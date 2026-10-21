@@ -23,10 +23,10 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class FolderAdapter extends DefaultTableCellRenderer {
-   Border X;
-   SimpleDateFormat p;
-   Address e;
-   HashMap Q;
+   public Border X;
+   public SimpleDateFormat p;
+   public Address e;
+   public HashMap Q;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -364,7 +364,7 @@ public class FolderAdapter extends DefaultTableCellRenderer {
                                        throw var147.getTargetException();
                                     }
 
-new SimpleDateFormat(var280);
+var162 = new SimpleDateFormat(var280);
                                     var164 = var268.append(var272.format(var272)).toString();
                                     if (var7 == null) {
                                        break label606;
@@ -723,7 +723,7 @@ new SimpleDateFormat(var280);
                      throw var130.getTargetException();
                   }
 
-new SimpleDateFormat(var277);
+var18 = new SimpleDateFormat(var277);
                   var19 = var10012.append(var10013.format(var10013)).toString();
                   if (var7 == null) {
                      break label620;

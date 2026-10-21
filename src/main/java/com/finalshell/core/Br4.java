@@ -3,12 +3,12 @@ package com.finalshell.core;
 import com.finalshell.crypto.PingMessageR;
 
 public class Br4 {
-   Connect2 q;
-   boolean R = false;
-   UR E;
+   public Connect2 q;
+   public boolean R = false;
+   public UR E;
    public static String a;
 
-   Br4(UR var1) {
+   public Br4(UR var1) {
       this.E = var1;
       this.q = var1.e;
    }

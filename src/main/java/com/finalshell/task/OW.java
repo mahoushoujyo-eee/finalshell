@@ -8,10 +8,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class OW implements Runnable {
-   final Ln2 l;
+   public final Ln2 l;
    public static long a;
 
-   OW(Ln2 var1) {
+   public OW(Ln2 var1) {
       this.l = var1;
    }
 

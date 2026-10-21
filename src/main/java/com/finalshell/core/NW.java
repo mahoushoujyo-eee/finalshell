@@ -5,19 +5,19 @@ import java.io.OutputStream;
 import java.util.Random;
 
 public class NW implements FW3 {
-   byte[] N;
-   int a;
-   int g;
-   int A;
-   Random S;
-   final InputStream T;
-   final OutputStream J;
+   public byte[] N;
+   public int a;
+   public int g;
+   public int A;
+   public Random S;
+   public final InputStream T;
+   public final OutputStream J;
    public static String[] b;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   NW(InputStream var1, OutputStream var2) {
+   public NW(InputStream var1, OutputStream var2) {
       this.T = var1;
       this.J = var2;
       this.N = new byte[a(6085, 1987690668988592585L)];

@@ -3,10 +3,10 @@ package com.finalshell.core;
 import com.finalshell.crypto.ConnectHost;
 
 public abstract class IM {
-   protected Gq2 J;
-   protected YU g;
-   protected UJ s;
-   protected String a;
+   public Gq2 J;
+   public YU g;
+   public UJ s;
+   public String a;
 
    public boolean D(ConnectHost var1) throws Exception {
       this.J = var1.N();

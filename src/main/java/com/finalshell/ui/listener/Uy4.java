@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Uy4 implements MouseListener {
-   final Tq4 k;
+   public final Tq4 k;
 
-   Uy4(Tq4 var1) {
+   public Uy4(Tq4 var1) {
       this.k = var1;
    }
 
@@ -44,7 +44,7 @@ public class Uy4 implements MouseListener {
          var3 = ((Tq4)Ref.g(148840961226333717L, var4)).rowAtPoint(var1.getPoint());
          Uy4 var10001 = var1.getButton();
          if (this == null) {
-            if (var10001 != 3) {
+            if (var10001 != null) {
                return;
             }
 
@@ -58,7 +58,7 @@ public class Uy4 implements MouseListener {
             var10002.isRowSelected(var3);
          }
 
-         if (var10001 != 0) {
+         if (var10001 != null) {
             return;
          }
 

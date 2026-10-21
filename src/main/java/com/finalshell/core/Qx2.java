@@ -4,8 +4,8 @@ import javax.swing.Action;
 import javax.swing.Icon;
 
 public class Qx2 extends Qe2_2 implements ND {
-   protected boolean J;
-   protected float x;
+   public boolean J;
+   public float x;
 
    public Qx2() {
       this.H();

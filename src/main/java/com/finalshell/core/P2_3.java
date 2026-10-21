@@ -6,9 +6,6 @@ import java.io.IOException;
 public class P2_3 implements Y2_3 {
    public static String a;
 
-   P2_3() {
-   }
-
    @Override
    public int u() {
       return 1;

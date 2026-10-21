@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class NZ implements Runnable {
-   final Backspace j;
+   public final Backspace j;
 
-   NZ(Backspace var1) {
+   public NZ(Backspace var1) {
       this.j = var1;
    }
 

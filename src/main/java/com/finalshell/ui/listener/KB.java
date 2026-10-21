@@ -9,9 +9,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class KB implements MouseListener {
-   final KeyManagerFrame P;
+   public final KeyManagerFrame P;
 
-   KB(KeyManagerFrame var1) {
+   public KB(KeyManagerFrame var1) {
       this.P = var1;
    }
 

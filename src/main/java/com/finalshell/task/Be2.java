@@ -5,9 +5,9 @@ import com.finalshell.crypto.ConnectHost;
 import com.finalshell.reflect.Registry;
 
 public class Be2 implements Runnable {
-   final ConnectHost u;
+   public final ConnectHost u;
 
-   Be2(ConnectHost var1) {
+   public Be2(ConnectHost var1) {
       this.u = var1;
    }
 

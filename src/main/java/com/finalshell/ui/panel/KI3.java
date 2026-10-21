@@ -4,9 +4,9 @@ import java.awt.Dimension;
 import java.awt.Insets;
 
 public class KI3 extends Ky4 {
-   final K32 Q;
+   public final K32 Q;
 
-   KI3(K32 var1) {
+   public KI3(K32 var1) {
       this.Q = var1;
    }
 

@@ -5,16 +5,16 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
 public class Y6 implements MouseWheelListener {
-   final com.finalshell.core.M3 J;
+   public final com.finalshell.core.M3 J;
 
-   Y6(com.finalshell.core.M3 var1) {
+   public Y6(com.finalshell.core.M3 var1) {
       this.J = var1;
    }
 
    @Override
    public void mouseWheelMoved(MouseWheelEvent var1) {
       Ky4[] var2 = com.finalshell.core.M3.X();
-      int var10000 = this.J.b;
+      int var10000 = (this.J.b) ? 1 : 0;
       if (var2 == null) {
          if (!this.J.b) {
             return;

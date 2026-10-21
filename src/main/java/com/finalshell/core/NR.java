@@ -1,10 +1,7 @@
 package com.finalshell.core;
 
 public class NR {
-   NR() {
-   }
-
-   static void C(byte[] var0) {
+   public static void C(byte[] var0) {
       boolean var1 = Y12.D();
       if (var0 != null) {
          int var2 = 0;

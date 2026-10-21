@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class UZ implements ActionListener {
-   final UpdateFrame P;
+   public final UpdateFrame P;
 
-   UZ(UpdateFrame var1) {
+   public UZ(UpdateFrame var1) {
       this.P = var1;
    }
 

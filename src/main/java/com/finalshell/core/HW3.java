@@ -19,7 +19,7 @@ public class HW3 extends HN3 {
    public int x;
    public float B;
    public float f;
-   protected Random P;
+   public Random P;
    public float l;
    public float R;
    public float S;
@@ -43,8 +43,8 @@ public class HW3 extends HN3 {
    public BufferedImage T;
    public float y;
    public float a;
-   float I;
-   float J;
+   public float I;
+   public float J;
    public static String[] e;
    public static String[] g;
    public static long[] m;

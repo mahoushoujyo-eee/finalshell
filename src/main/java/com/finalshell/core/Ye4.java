@@ -3,17 +3,14 @@ package com.finalshell.core;
 import javax.crypto.Mac;
 
 public abstract class Ye4 implements FP {
-   protected String N;
-   protected int c;
-   protected String a;
-   protected boolean v;
+   public String N;
+   public int c;
+   public String a;
+   public boolean v;
    public Mac m;
    public final byte[] V = new byte[4];
    public static long[] h;
    public static Integer[] i;
-
-   Ye4() {
-   }
 
    @Override
    public int h() {

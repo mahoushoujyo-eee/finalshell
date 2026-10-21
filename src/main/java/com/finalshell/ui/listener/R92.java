@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class R92 implements ActionListener {
-   final K32 s;
+   public final K32 s;
 
-   R92(K32 var1) {
+   public R92(K32 var1) {
       this.s = var1;
    }
 

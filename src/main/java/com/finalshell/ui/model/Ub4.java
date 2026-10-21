@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Ub4 implements Comparator {
-   final ClearListDialog J;
+   public final ClearListDialog J;
 
-   Ub4(ClearListDialog var1) {
+   public Ub4(ClearListDialog var1) {
       this.J = var1;
    }
 

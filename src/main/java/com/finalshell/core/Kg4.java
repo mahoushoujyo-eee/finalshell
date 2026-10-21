@@ -3,7 +3,7 @@ package com.finalshell.core;
 import com.finalshell.network.SW;
 
 public class Kg4 {
-   protected static boolean K;
+   public static boolean K;
 
    public static synchronized void j() {
       int[] var0 = SW.P();

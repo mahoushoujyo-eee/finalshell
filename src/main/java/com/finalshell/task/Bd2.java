@@ -7,10 +7,10 @@ import com.finalshell.ui.frame.U;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bd2 implements Runnable {
-   final U X;
-   final Fo4 F;
+   public final U X;
+   public final Fo4 F;
 
-   Bd2(Fo4 var1, U var2) {
+   public Bd2(Fo4 var1, U var2) {
       this.F = var1;
       this.X = var2;
    }

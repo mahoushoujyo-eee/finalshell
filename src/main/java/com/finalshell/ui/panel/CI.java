@@ -40,12 +40,12 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListDataListener;
 
 public class CI extends JList implements Pp2, Yb4, Sa2 {
-   protected List U = new ArrayList(1);
-   protected boolean k = false;
-   protected K3_2 D = null;
-   protected Rq2 t = null;
-   protected int x = -1;
-   protected boolean X = true;
+   public List U = new ArrayList(1);
+   public boolean k = false;
+   public K3_2 D = null;
+   public Rq2 t = null;
+   public int x = -1;
+   public boolean X = true;
    public static String[] B;
 
    public CI() {
@@ -227,7 +227,7 @@ public class CI extends JList implements Pp2, Yb4, Sa2 {
       var1.V(this);
    }
 
-   protected K3_2 O() {
+   public K3_2 O() {
       return new W32();
    }
 

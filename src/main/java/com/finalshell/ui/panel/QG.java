@@ -13,7 +13,7 @@ import javax.swing.JComponent;
 import javax.swing.JMenuBar;
 
 public class QG extends JComponent implements ItemListener {
-   Point f;
+   public Point f;
    public static long[] a;
    public static Integer[] b;
 
@@ -29,7 +29,7 @@ public class QG extends JComponent implements ItemListener {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String var2 = AA.z();
       if (var2 == null) {
          Object var3 = 375845063199368784L;

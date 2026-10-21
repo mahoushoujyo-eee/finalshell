@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class XU implements PropertyChangeListener {
-   final com.finalshell.core.FJ W;
+   public final com.finalshell.core.FJ W;
 
-   XU(com.finalshell.core.FJ var1) {
+   public XU(com.finalshell.core.FJ var1) {
       this.W = var1;
    }
 

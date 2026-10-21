@@ -8,9 +8,9 @@ import java.awt.event.WindowFocusListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class B02 implements WindowFocusListener {
-   final KQ u;
+   public final KQ u;
 
-   B02(KQ var1) {
+   public B02(KQ var1) {
       this.u = var1;
    }
 

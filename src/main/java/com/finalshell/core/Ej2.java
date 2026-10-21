@@ -300,14 +300,14 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected Dimension getPreferredInnerHorizontal() {
+   public Dimension getPreferredInnerHorizontal() {
       Dimension var1 = super.getPreferredInnerHorizontal();
       var1.width = this.P;
       return var1;
    }
 
    @Override
-   protected Dimension getPreferredInnerVertical() {
+   public Dimension getPreferredInnerVertical() {
       Dimension var1 = super.getPreferredInnerVertical();
       var1.height = this.P;
       return var1;
@@ -321,7 +321,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected void paintIndeterminate(Graphics var1, JComponent var2) {
+   public void paintIndeterminate(Graphics var1, JComponent var2) {
       Graphics2D var4 = (Graphics2D)var1;
       this.b(var2, var4);
       Shape var5 = this.c(var2);
@@ -430,7 +430,7 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected void paintDeterminate(Graphics var1, JComponent var2) {
+   public void paintDeterminate(Graphics var1, JComponent var2) {
       int var10000 = By_2.y();
       Graphics2D var4 = (Graphics2D)var1;
       int var3 = var10000;
@@ -788,39 +788,39 @@ public class Ej2 extends BasicProgressBarUI implements W2_3, L0_2 {
       return var2;
    }
 
-   static JProgressBar P(Ej2 var0) {
+   public static JProgressBar P(Ej2 var0) {
       return var0.progressBar;
    }
 
-   static void X(Ej2 var0, JProgressBar var1) {
+   public static void X(Ej2 var0, JProgressBar var1) {
       var0.o(var1);
    }
 
-   static JProgressBar c(Ej2 var0) {
+   public static JProgressBar c(Ej2 var0) {
       return var0.progressBar;
    }
 
-   static JProgressBar O(Ej2 var0) {
+   public static JProgressBar O(Ej2 var0) {
       return var0.progressBar;
    }
 
-   static int g(Ej2 var0) {
+   public static int g(Ej2 var0) {
       return var0.F;
    }
 
-   static int L(Ej2 var0) {
+   public static int L(Ej2 var0) {
       return var0.F++;
    }
 
-   static int X(Ej2 var0, int var1) {
+   public static int X(Ej2 var0, int var1) {
       return var0.F = var1;
    }
 
-   static int I(Ej2 var0) {
+   public static int I(Ej2 var0) {
       return var0.w();
    }
 
-   static int C(Ej2 var0, int var1) {
+   public static int C(Ej2 var0, int var1) {
       return var0.F += var1;
    }
 

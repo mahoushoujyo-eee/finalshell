@@ -11,14 +11,14 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Kl4 extends Pl2 {
-   String[] a;
+   public String[] a;
    public ArrayList s;
-   Tf4 E;
-   boolean u;
-   boolean Z;
-   boolean R;
-   int J;
-   Zv2_2 y;
+   public Tf4 E;
+   public boolean u;
+   public boolean Z;
+   public boolean R;
+   public int J;
+   public Zv2_2 y;
    public static String W;
    public static String V;
    public static String H;

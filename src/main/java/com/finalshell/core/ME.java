@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 
 public class ME {
-   String l;
-   String e;
-   String w;
+   public String l;
+   public String e;
+   public String w;
 
    public String H() {
       Object var1 = 542472969032895344L;

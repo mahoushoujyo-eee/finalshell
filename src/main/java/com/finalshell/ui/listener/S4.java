@@ -7,9 +7,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class S4 extends MouseAdapter {
-   final Kf4 d;
+   public final Kf4 d;
 
-   S4(Kf4 var1) {
+   public S4(Kf4 var1) {
       this.d = var1;
    }
 

@@ -32,10 +32,10 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class RouteTracePanel3 extends JPanel {
-   U62 V;
-   ArrayList G;
-   JTextField g;
-   JPopupMenu t;
+   public U62 V;
+   public ArrayList G;
+   public JTextField g;
+   public JPopupMenu t;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -136,7 +136,7 @@ public class RouteTracePanel3 extends JPanel {
       Ref.s(243859269374928732L, var43, var44);
       Y12_2 var10018;
       Object var45 = 243859269374928732L;
-new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, var45));
+var5 = new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, var45));
       Y12_2 var8 = var10018;
       var5.addActionListener(new com.finalshell.ui.listener.Qq2(this, var8));
       if (Ky4.F$arrString() != null) {
@@ -167,7 +167,7 @@ new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, 
       }
    }
 
-   void e(String var1) {
+   public void e(String var1) {
       L9.X();
       Object var14 = 377829773077623687L;
       Object var10002 = Ref.g(377829773077623687L, var14);
@@ -225,7 +225,7 @@ new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, 
 
          label176: {
             W8 var6 = var10006;
-            if (var5 == false) {
+            if (var5 == null) {
                Object var28 = 243859269374928732L;
                Object var10009 = Ref.g(243859269374928732L, var28);
                Object var30 = 248665380297112060L;
@@ -414,7 +414,7 @@ new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, 
          }
 
          var103.setVisible(false);
-      } else if (var90 == false) {
+      } else if (var90 == null) {
          var90 = var3;
          Object[] var10004 = Registry.packArgs(var4);
          long var21 = 610893823161621108L;
@@ -507,7 +507,7 @@ new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, 
       return (JPopupMenu)var32;
    }
 
-   W8 X(String var1) {
+   public W8 X(String var1) {
       int[] var10000 = L9.X();
       W8 var3 = null;
       int[] var2 = var10000;
@@ -538,7 +538,7 @@ new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, 
       return var3;
    }
 
-   void E() {
+   public void E() {
       Registry.emptyArgs();
       long var1 = 270389152141252877L;
       Ref.h2(270389152141252877L, var1);
@@ -554,7 +554,7 @@ new com.finalshell.ui.listener.Qq2(this, (JPopupMenu)Ref.g(243859269374928732L, 
       }
    }
 
-   W8 S(FX3 var1, JPopupMenu var2, Component var3, String var4) {
+   public W8 S(FX3 var1, JPopupMenu var2, Component var3, String var4) {
       Color var5 = (Color)Registry.lookupField(461796957683008100L).get(null);
       Color var6 = new Color(a(13900, 8296476825590303260L), a(24754, 7491671487769238756L), a(24754, 7491671487769238756L));
       new Color(a(32569, 2105838693354226541L), a(25959, 8887335800914008372L), a(25959, 8887335800914008372L));

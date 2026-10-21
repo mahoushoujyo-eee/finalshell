@@ -5,18 +5,18 @@ import java.util.Objects;
 public class L3_3 extends U3_3 {
    @C_9
    public H4_2[] S;
-   final K_2_2 r;
-   final com.finalshell.ui.model.S_3 g;
-   final HV_2[] q;
-   final boolean O;
-   final Nt2_2 M;
-   final int f;
-   final String T;
-   final boolean x;
-   final M3_2 I;
-   final H3_2 h;
+   public final K_2_2 r;
+   public final com.finalshell.ui.model.S_3 g;
+   public final HV_2[] q;
+   public final boolean O;
+   public final Nt2_2 M;
+   public final int f;
+   public final String T;
+   public final boolean x;
+   public final M3_2 I;
+   public final H3_2 h;
 
-   L3_3(
+   public L3_3(
       H3_2 var1,
       Hd2 var2,
       K_2_2 var3,
@@ -29,6 +29,7 @@ public class L3_3 extends U3_3 {
       boolean var10,
       M3_2 var11
    ) {
+   super(var2);
       this.h = var1;
       this.r = var3;
       this.g = var4;
@@ -40,7 +41,6 @@ public class L3_3 extends U3_3 {
       this.x = var10;
       this.I = var11;
       Objects.requireNonNull(var2);
-      super(var2);
    }
 
    @Override

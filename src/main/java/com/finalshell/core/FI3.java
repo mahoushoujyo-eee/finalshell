@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.reflect.Registry;
 
 public class FI3 {
-   int O;
-   int J;
-   int p;
+   public int O;
+   public int J;
+   public int p;
    public static long[] a;
    public static Integer[] b;
 

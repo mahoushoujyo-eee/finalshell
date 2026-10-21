@@ -4,7 +4,7 @@ public final class Ni2_2 extends NR_2 {
    public final N_ S;
    public final String J;
    @C_9
-   NV_2 B;
+   public NV_2 B;
    public static long a;
 
    public Ni2_2(com.finalshell.ui.model.I var1, N_ var2, String var3) {

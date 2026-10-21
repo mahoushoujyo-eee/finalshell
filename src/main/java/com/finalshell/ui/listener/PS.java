@@ -7,9 +7,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class PS extends KeyAdapter {
-   final II a;
+   public final II a;
 
-   PS(II var1) {
+   public PS(II var1) {
       this.a = var1;
    }
 

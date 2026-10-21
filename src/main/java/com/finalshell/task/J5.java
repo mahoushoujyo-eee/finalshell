@@ -9,10 +9,10 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class J5 implements Runnable {
-   final String Q;
-   final F5 c;
+   public final String Q;
+   public final F5 c;
 
-   J5(F5 var1, String var2) {
+   public J5(F5 var1, String var2) {
       this.c = var1;
       this.Q = var2;
    }

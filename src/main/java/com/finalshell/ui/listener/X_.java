@@ -8,9 +8,9 @@ import java.awt.event.MouseMotionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class X_ implements MouseMotionListener {
-   final Bq2 V;
+   public final Bq2 V;
 
-   X_(Bq2 var1) {
+   public X_(Bq2 var1) {
       this.V = var1;
    }
 

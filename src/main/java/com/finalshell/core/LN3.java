@@ -4,10 +4,10 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class LN3 extends Ln4_2 {
-   String v;
-   byte[] j;
-   boolean o;
-   PW3 T;
+   public String v;
+   public byte[] j;
+   public boolean o;
+   public PW3 T;
    public static int x;
 
    public LN3() {

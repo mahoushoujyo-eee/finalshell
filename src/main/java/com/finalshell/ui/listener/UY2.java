@@ -15,10 +15,10 @@ import javax.swing.SwingUtilities;
 
 public class UY2 extends MouseAdapter {
    public int l;
-   final KC3 a;
-   final Ko4 G;
+   public final KC3 a;
+   public final Ko4 G;
 
-   UY2(Ko4 var1, KC3 var2) {
+   public UY2(Ko4 var1, KC3 var2) {
       this.G = var1;
       this.a = var2;
    }
@@ -83,7 +83,7 @@ public class UY2 extends MouseAdapter {
             return;
          }
 
-         var10 = Ko4.Q(this.G);
+         var10 = (Ko4.Q(this.G)) ? 1 : 0;
       }
 
       label95: {

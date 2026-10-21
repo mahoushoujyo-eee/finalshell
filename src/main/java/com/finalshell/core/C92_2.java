@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C92_2 implements Bn2 {
-   final I1 B;
+   public final I1 B;
 
-   C92_2(I1 var1) {
+   public C92_2(I1 var1) {
       this.B = var1;
    }
 

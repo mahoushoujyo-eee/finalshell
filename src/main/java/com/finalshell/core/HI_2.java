@@ -26,7 +26,7 @@ public class HI_2 extends C2_5{
    public java.lang.Class u = N2_5.M;
    @C_9
    public Method[] B;
-   static boolean X;
+   public static boolean X;
    public static String[] c;
    public static String[] d;
    public static long[] e;
@@ -612,7 +612,7 @@ public class HI_2 extends C2_5{
       // ce: return
    }
 
-   void D(@C_9 String param1, FK[] param2, C_r_2[][] param3, NS[][] param4) throws B2_5 {
+   public void D(@C_9 String param1, FK[] param2, C_r_2[][] param3, NS[][] param4) throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -797,7 +797,7 @@ public class HI_2 extends C2_5{
       }
    }
 
-   FK[] A(@C_9 HG var1) throws B2_5, IOException {
+   public FK[] A(@C_9 HG var1) throws B2_5, IOException {
       return this.z.q(var1);
    }
 
@@ -806,7 +806,7 @@ public class HI_2 extends C2_5{
       return this.Z();
    }
 
-   Method[] Z() {
+   public Method[] Z() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1021,19 +1021,19 @@ public class HI_2 extends C2_5{
    }
 
    @C_9
-   protected Nt2_2 N(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
+   public Nt2_2 N(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
       return this.z.k(var1, var2);
    }
 
-   protected Nt2_2 k(com.finalshell.ui.model.I var1, java.lang.Class var2) {
+   public Nt2_2 k(com.finalshell.ui.model.I var1, java.lang.Class var2) {
       return this.z.N(var1, var2);
    }
 
-   protected Nt2_2[] v(com.finalshell.ui.model.I var1, java.lang.Class[] var2) {
+   public Nt2_2[] v(com.finalshell.ui.model.I var1, java.lang.Class[] var2) {
       return this.z.m(var1, var2);
    }
 
-   protected void n(RD var1) throws B2_5 {
+   public void n(RD var1) throws B2_5 {
       this.z.o(var1);
    }
 
@@ -1087,11 +1087,11 @@ public class HI_2 extends C2_5{
    }
 
    @C_9
-   protected final java.lang.Class L(int var1) {
+   public final java.lang.Class L(int var1) {
       return this.Z(var1).K;
    }
 
-   protected void N(int var1, HG var2, List var3, List var4) throws B2_5, IOException {
+   public void N(int var1, HG var2, List var3, List var4) throws B2_5, IOException {
       String[] var5 = RG_2.C();
 
       while (!var2.d(com.finalshell.ui.model.F2_2.END_OF_INPUT)) {

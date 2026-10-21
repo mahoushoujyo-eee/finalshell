@@ -9,15 +9,15 @@ import java.util.List;
 import javax.swing.Icon;
 
 public class At2 {
-   protected transient List q = new ArrayList(1);
-   protected String m;
-   protected Icon Q;
-   protected String N;
-   protected Color E;
-   protected Color i;
-   protected boolean j;
-   protected boolean f;
-   protected Component d;
+   public transient List q = new ArrayList(1);
+   public String m;
+   public Icon Q;
+   public String N;
+   public Color E;
+   public Color i;
+   public boolean j;
+   public boolean f;
+   public Component d;
 
    public At2(String var1, String var2, Component var3) {
       this(var1, null, var2, null, var3);

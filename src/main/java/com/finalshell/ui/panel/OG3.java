@@ -15,11 +15,11 @@ import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
 public class OG3 extends JComponent {
-   J6 V;
-   Xv2_2 c;
-   JComponent U;
-   JComponent B;
-   MouseMotionListener i;
+   public J6 V;
+   public Xv2_2 c;
+   public JComponent U;
+   public JComponent B;
+   public MouseMotionListener i;
    public static int[] S;
 
    public OG3() {
@@ -168,7 +168,7 @@ public class OG3 extends JComponent {
       }
    }
 
-   void U() {
+   public void U() {
       Point var1 = this.getMousePosition();
       Object var2 = 531600943936954170L;
       ((JComponent)Ref.g(531600943936954170L, var2)).setVisible(var1 != null);

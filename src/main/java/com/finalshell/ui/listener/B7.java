@@ -11,13 +11,13 @@ import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class B7 implements KeyListener {
-   L1 W;
-   final boolean R;
-   final ClearListDialog r;
+   public L1 W;
+   public final boolean R;
+   public final ClearListDialog r;
    public static long[] a;
    public static Integer[] b;
 
-   B7(ClearListDialog var1, boolean var2) {
+   public B7(ClearListDialog var1, boolean var2) {
       this.r = var1;
       this.R = var2;
       long var4 = 308750888373001143L;
@@ -58,7 +58,7 @@ public class B7 implements KeyListener {
 
       B7 var45 = Registry.lookupField(361141657865972500L).getBoolean(this);
       if (var2 == null) {
-         if (var45 != 0) {
+         if (var45 != null) {
             return;
          }
 
@@ -66,7 +66,7 @@ public class B7 implements KeyListener {
       }
 
       if (var2 == null) {
-         if (var45 != 0) {
+         if (var45 != null) {
             return;
          }
 
@@ -83,7 +83,7 @@ public class B7 implements KeyListener {
          ((ClearListDialog)Ref.g(484003208200249497L, var14)).isVisible();
       }
 
-      if (var45 == 0) {
+      if (var45 == null) {
       }
 
       if (!Registry.lookupField(361141657865972500L).getBoolean(this)) {
@@ -134,7 +134,7 @@ public class B7 implements KeyListener {
                var10009.isVisible();
             }
 
-            if (var10004 == 0) {
+            if (var10004 == null) {
                Object var30 = 484003208200249497L;
                Ref.g(484003208200249497L, var30);
                Object[] var46 = Registry.emptyArgs();

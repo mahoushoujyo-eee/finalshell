@@ -27,8 +27,8 @@ public class LR3 implements LazyValue {
    }
 
    public LR3(String var1, String var2, Object[] var3) {
+   super();
       int[] var10000 = WC_2.V();
-      super();
       this.S = var1;
       int[] var4 = var10000;
       LR3 var5 = this;

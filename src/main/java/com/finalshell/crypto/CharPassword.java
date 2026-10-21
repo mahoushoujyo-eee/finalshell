@@ -23,7 +23,7 @@ public class CharPassword {
       new CharPassword();
    }
 
-   void h() throws Exception {
+   public void h() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -141,10 +141,7 @@ public class CharPassword {
       // f7: return
    }
 
-   CharPassword() {
-   }
-
-   Ud2 b(Cipher var1, SecretKey var2, byte[] var3, byte[] var4) throws Exception {
+   public Ud2 b(Cipher var1, SecretKey var2, byte[] var3, byte[] var4) throws Exception {
       Object var5 = null;
       var5 = var1.doFinal(var3);
       Ud2 var6 = new Ud2(this);
@@ -152,20 +149,20 @@ public class CharPassword {
       return var6;
    }
 
-   byte[] G(SecretKey var1) throws Exception {
+   public byte[] G(SecretKey var1) throws Exception {
       Cipher var2 = Cipher.getInstance(a(8937, -25156));
       var2.init(1, var1);
       AlgorithmParameters var3 = var2.getParameters();
       return var3.getParameterSpec(IvParameterSpec.class).getIV();
    }
 
-   byte[] P(byte[] var1, SecretKey var2, byte[] var3, byte[] var4) throws Exception {
+   public byte[] P(byte[] var1, SecretKey var2, byte[] var3, byte[] var4) throws Exception {
       Cipher var5 = Cipher.getInstance(a(8938, -9595));
       var5.init(2, var2, new IvParameterSpec(var4));
       return var5.doFinal(var1);
    }
 
-   SecretKey q(char[] var1, byte[] var2) throws NoSuchAlgorithmException, InvalidKeySpecException {
+   public SecretKey q(char[] var1, byte[] var2) throws NoSuchAlgorithmException, InvalidKeySpecException {
       UD.L();
       SecretKeyFactory var4 = SecretKeyFactory.getInstance(a(8940, -19418));
       PBEKeySpec var5 = new PBEKeySpec(var1, var2, a(18581, 3540302264437880051L), a(20218, 4798462313659347613L));

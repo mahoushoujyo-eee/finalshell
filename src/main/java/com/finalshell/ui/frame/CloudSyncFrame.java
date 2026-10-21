@@ -9,8 +9,8 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class CloudSyncFrame extends JFrame {
-   SendSyncMailPanel D;
-   ZU Y;
+   public SendSyncMailPanel D;
+   public ZU Y;
    public static String[] a;
    public static String[] b;
    public static long[] c;

@@ -12,13 +12,13 @@ import java.util.ArrayList;
 import javax.swing.JPopupMenu;
 
 public class AG implements ActionListener {
-   final FX3 q;
-   final String D;
-   final JPopupMenu N;
-   final com.finalshell.ui.panel.W8 S;
-   final RouteTracePanel3 m;
+   public final FX3 q;
+   public final String D;
+   public final JPopupMenu N;
+   public final com.finalshell.ui.panel.W8 S;
+   public final RouteTracePanel3 m;
 
-   AG(RouteTracePanel3 var1, FX3 var2, String var3, JPopupMenu var4, com.finalshell.ui.panel.W8 var5) {
+   public AG(RouteTracePanel3 var1, FX3 var2, String var3, JPopupMenu var4, com.finalshell.ui.panel.W8 var5) {
       this.m = var1;
       this.q = var2;
       this.D = var3;

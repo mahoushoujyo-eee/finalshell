@@ -21,10 +21,10 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicTableUI;
 
 public class Xs2 extends BasicTableUI {
-   protected com.finalshell.ui.listener.FY A;
-   protected MouseAdapter M;
+   public com.finalshell.ui.listener.FY A;
+   public MouseAdapter M;
    public Color L = Sm2.x;
-   protected Point V;
+   public Point V;
    public static String[] a;
    public static String[] b;
 
@@ -88,7 +88,7 @@ public class Xs2 extends BasicTableUI {
       super.uninstallUI(var1);
    }
 
-   protected Rq2 Q() {
+   public Rq2 Q() {
       boolean var1 = PQ.G();
       JTable var10000 = this.table;
       if (var1) {
@@ -106,7 +106,7 @@ public class Xs2 extends BasicTableUI {
       }
    }
 
-   protected void o(JTable var1) {
+   public void o(JTable var1) {
       boolean var10000 = PQ.G();
       JScrollPane var3 = FN.a$JScrollPane(var1);
       boolean var2 = var10000;
@@ -149,19 +149,19 @@ public class Xs2 extends BasicTableUI {
       var3.setCorner(a(11632, 27634), new com.finalshell.ui.panel.RB(true));
    }
 
-   static JTable r(Xs2 var0) {
+   public static JTable r(Xs2 var0) {
       return var0.table;
    }
 
-   static JTable M(Xs2 var0) {
+   public static JTable M(Xs2 var0) {
       return var0.table;
    }
 
-   static JTable F(Xs2 var0) {
+   public static JTable F(Xs2 var0) {
       return var0.table;
    }
 
-   static JTable w(Xs2 var0) {
+   public static JTable w(Xs2 var0) {
       return var0.table;
    }
 

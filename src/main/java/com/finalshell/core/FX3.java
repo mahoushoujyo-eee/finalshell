@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import java.util.ArrayList;
 
 public class FX3 {
-   ArrayList O;
+   public ArrayList O;
 
-   FX3() {
+   public FX3() {
       ArrayList var10001 = new ArrayList();
       long var2 = 172806526899489275L;
       ArrayList var1 = var10001;

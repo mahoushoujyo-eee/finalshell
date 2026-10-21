@@ -11,14 +11,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Cm4 {
-   HashMap s = new HashMap();
-   ArrayList G = new ArrayList();
-   HashMap g;
+   public HashMap s = new HashMap();
+   public ArrayList G = new ArrayList();
+   public HashMap g;
    public ArrayList j;
-   Bc2 f;
-   int Y;
-   int S;
-   int I;
+   public Bc2 f;
+   public int Y;
+   public int S;
+   public int I;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -40,7 +40,7 @@ public class Cm4 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void N(ND_2 var1) {
+   public void N(ND_2 var1) {
       Ky4[] var10000 = A6.P();
       boolean var3 = true;
       Ky4[] var2 = var10000;
@@ -64,7 +64,7 @@ public class Cm4 {
       }
    }
 
-   static void f(String var0, int var1, String var2, int var3) {
+   public static void f(String var0, int var1, String var2, int var3) {
    }
 
    public void H(String param1) {
@@ -119,7 +119,7 @@ public class Cm4 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void M(String var1) {
+   public void M(String var1) {
       Ky4[] var10000 = A6.P();
       O0 var3 = Ok2.y$O0(var1);
       Ky4[] var2 = var10000;

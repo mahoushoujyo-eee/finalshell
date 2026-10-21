@@ -5,9 +5,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class PV3 extends FocusAdapter {
-   final KV_2 n;
+   public final KV_2 n;
 
-   PV3(KV_2 var1) {
+   public PV3(KV_2 var1) {
       this.n = var1;
    }
 

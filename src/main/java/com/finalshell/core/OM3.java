@@ -3,9 +3,6 @@ package com.finalshell.core;
 public class OM3 implements A0_2 {
    public static OM3 f;
 
-   OM3() {
-   }
-
    @Override
    public Object Y(Ph4 param1, Object param2, Object param3) {
       // $VF: Couldn't be decompiled

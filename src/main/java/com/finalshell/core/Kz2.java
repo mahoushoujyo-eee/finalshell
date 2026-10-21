@@ -9,12 +9,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 public class Kz2 {
-   String P;
-   String C;
-   int Q;
-   int H;
-   String t;
-   HashMap S;
+   public String P;
+   public String C;
+   public int Q;
+   public int H;
+   public String t;
+   public HashMap S;
    public static String[] a;
    public static String[] b;
 

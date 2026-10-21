@@ -4,9 +4,9 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowStateListener;
 
 public class H implements WindowStateListener {
-   final D Q;
+   public final D Q;
 
-   H(D var1) {
+   public H(D var1) {
       this.Q = var1;
    }
 

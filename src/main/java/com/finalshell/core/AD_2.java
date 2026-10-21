@@ -326,7 +326,7 @@ public class AD_2 {
       return true;
    }
 
-   static JMenuItem z(AD_2 var0) {
+   public static JMenuItem z(AD_2 var0) {
       return var0.N();
    }
 }

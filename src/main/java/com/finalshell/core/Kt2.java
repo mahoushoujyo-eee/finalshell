@@ -43,7 +43,7 @@ public class Kt2 {
          throw var4.getTargetException();
       }
 
-new Kt2((byte[])var10003, var1);
+var10002 = new Kt2((byte[])var10003, var1);
       return var10001;
    }
 
@@ -546,7 +546,7 @@ new Kt2((byte[])var10003, var1);
          throw var4.getTargetException();
       }
 
-new Kt2((byte[])var10003, var1);
+var10002 = new Kt2((byte[])var10003, var1);
       return var10001;
    }
 

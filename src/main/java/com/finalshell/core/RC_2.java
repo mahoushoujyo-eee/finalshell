@@ -8,8 +8,8 @@ public final class RC_2 extends R8_2 {
    public static long f;
 
    public RC_2(com.finalshell.ui.model.I var1, @C_9 NV_2 var2) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       String[] var3 = var10000;
       this.k = var2;
       NV_2 var4 = var2;

@@ -7,10 +7,10 @@ import com.finalshell.ui.listener.Listener2;
 import java.lang.reflect.InvocationTargetException;
 
 public class OA implements Runnable {
-   final U82 F;
-   final Listener2 i;
+   public final U82 F;
+   public final Listener2 i;
 
-   OA(Listener2 var1, U82 var2) {
+   public OA(Listener2 var1, U82 var2) {
       this.i = var1;
       this.F = var2;
    }

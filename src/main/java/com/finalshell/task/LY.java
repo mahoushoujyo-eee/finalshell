@@ -6,10 +6,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class LY implements Runnable {
-   final L9 n;
-   final Kd2 G;
+   public final L9 n;
+   public final Kd2 G;
 
-   LY(Kd2 var1, L9 var2) {
+   public LY(Kd2 var1, L9 var2) {
       this.G = var1;
       this.n = var2;
    }

@@ -7,7 +7,7 @@ import java.awt.Font;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dv2 extends Ne4 {
-   ClearListDialog N;
+   public ClearListDialog N;
    public static long a;
 
    public Dv2() {

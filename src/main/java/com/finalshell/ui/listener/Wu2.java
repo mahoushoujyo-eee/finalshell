@@ -12,9 +12,9 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wu2 extends MouseAdapter {
-   final SetBackgroundImagePanel O;
+   public final SetBackgroundImagePanel O;
 
-   Wu2(SetBackgroundImagePanel var1) {
+   public Wu2(SetBackgroundImagePanel var1) {
       this.O = var1;
    }
 
@@ -179,7 +179,7 @@ public class Wu2 extends MouseAdapter {
 
                               while (true) {
                                  if (var25 > -this.O.k$ua_2().b()) {
-                                    var28 = SetBackgroundImagePanel.T(this.O).D(var25 - 1).G();
+                                    var28 = (SetBackgroundImagePanel.T(this.O).D(var25 - 1).G()) ? 1 : 0;
                                     if (var2 == 0 || var2 == 0) {
                                        break;
                                     }
@@ -251,7 +251,7 @@ public class Wu2 extends MouseAdapter {
             if (var2 != 0) {
                label155: {
                   if (var28 == var39) {
-                     var28 = SetBackgroundImagePanel.S(this.O).x();
+                     var28 = (SetBackgroundImagePanel.S(this.O).x()) ? 1 : 0;
                      if (var2 == 0) {
                         break label155;
                      }

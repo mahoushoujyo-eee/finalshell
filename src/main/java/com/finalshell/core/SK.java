@@ -5,10 +5,10 @@ import java.util.List;
 import javax.swing.tree.TreePath;
 
 public class SK extends ST {
-   final TreePath Z;
-   final com.finalshell.ui.panel.Us2 a;
+   public final TreePath Z;
+   public final com.finalshell.ui.panel.Us2 a;
 
-   SK(com.finalshell.ui.panel.Us2 var1, TreePath var2) {
+   public SK(com.finalshell.ui.panel.Us2 var1, TreePath var2) {
       this.a = var1;
       this.Z = var2;
    }

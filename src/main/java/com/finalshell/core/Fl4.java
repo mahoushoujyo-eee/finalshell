@@ -17,31 +17,31 @@ import javax.swing.JPasswordField;
 import org.apache.commons.io.FileUtils;
 
 public class Fl4 implements C22 {
-   static String Z;
-   static String f;
-   static String F;
-   static String H;
-   static String M;
-   static String R;
+   public static String Z;
+   public static String f;
+   public static String F;
+   public static String H;
+   public static String M;
+   public static String R;
    public static int u;
-   boolean J;
-   boolean d;
-   static String l;
-   Y7 N;
-   Pz4 E;
-   long S;
-   long c;
-   boolean v;
-   String K;
-   String h;
-   boolean n;
-   boolean O;
-   boolean T;
-   boolean Y;
-   UpdateDialog Q;
-   U52 b;
+   public boolean J;
+   public boolean d;
+   public static String l;
+   public Y7 N;
+   public Pz4 E;
+   public long S;
+   public long c;
+   public boolean v;
+   public String K;
+   public String h;
+   public boolean n;
+   public boolean O;
+   public boolean T;
+   public boolean Y;
+   public UpdateDialog Q;
+   public U52 b;
    public static String q;
-   Component i;
+   public Component i;
    public static String[] a;
    public static String[] e;
    public static long[] g;
@@ -186,7 +186,7 @@ public class Fl4 implements C22 {
       }
    }
 
-   static void v() {
+   public static void v() {
       File var0 = new File((String)Registry.lookupField(215163092700559090L).get(null));
 
       try {
@@ -934,7 +934,7 @@ public class Fl4 implements C22 {
                            if (var7 == 0) {
                               Object[] var129 = Registry.lookupField(602001947594778012L).getBoolean(this);
                               if (var3 == null) {
-                                 if (var129 != false) {
+                                 if (var129 == null) {
                                     Registry.emptyArgs();
                                     long var39 = 253808553645062345L;
                                     Object var10009 = Ref.h2(253808553645062345L, var39);
@@ -947,7 +947,7 @@ public class Fl4 implements C22 {
 
                                     label366: {
                                        if (var3 == null) {
-                                          if (var10009 != false) {
+                                          if (var10009 == null) {
                                              Registry.packArgs(true);
                                              long var41 = 515744380023053865L;
                                              Ref.h2(515744380023053865L, var41);
@@ -977,7 +977,7 @@ public class Fl4 implements C22 {
                                        }
 
                                        if (var3 == null) {
-                                          if (var10009 != false) {
+                                          if (var10009 == null) {
                                              Object[] var134 = Registry.emptyArgs();
                                              long var48 = 128365951011908028L;
                                              Object[] var47 = var134;
@@ -1004,7 +1004,7 @@ public class Fl4 implements C22 {
                                           }
                                        }
 
-                                       if (var10009 != false) {
+                                       if (var10009 == null) {
                                           Object[] var136 = Registry.emptyArgs();
                                           long var52 = 359037471246162130L;
                                           Object[] var51 = var136;
@@ -1048,7 +1048,7 @@ public class Fl4 implements C22 {
                               }
 
                               if (var3 == null) {
-                                 if (var129 != false) {
+                                 if (var129 == null) {
                                     Registry.packArgs(true);
                                     long var59 = 515744380023053865L;
                                     Ref.h2(515744380023053865L, var59);
@@ -1078,7 +1078,7 @@ public class Fl4 implements C22 {
                               }
 
                               if (var3 == null) {
-                                 if (var129 != false) {
+                                 if (var129 == null) {
                                     Registry.emptyArgs();
                                     long var65 = 270389152141252877L;
                                     Ref.h2(270389152141252877L, var65);
@@ -1165,7 +1165,7 @@ public class Fl4 implements C22 {
                                  }
                               }
 
-                              if (var129 != false) {
+                              if (var129 == null) {
                                  Registry.emptyArgs();
                                  long var75 = 270389152141252877L;
                                  Ref.h2(270389152141252877L, var75);
@@ -1258,7 +1258,7 @@ public class Fl4 implements C22 {
       Registry.lookupField(627804769415997620L).setBoolean(this, true);
    }
 
-   String C$String() {
+   public String C$String() {
       String var1 = null;
       JPanel var2 = new JPanel();
       JLabel var3 = new JLabel(a(11130, 20078));
@@ -1288,7 +1288,7 @@ public class Fl4 implements C22 {
       return var1;
    }
 
-   void b(String var1, String var2) {
+   public void b(String var1, String var2) {
       Registry.packArgs(new File(var1), new File(var2));
       long var3 = 491542259234798132L;
       Ref.h2(491542259234798132L, var3);

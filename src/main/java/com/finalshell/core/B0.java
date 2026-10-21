@@ -6,8 +6,8 @@ public class B0 {
    public static int t;
    public static int Z;
    public static int m;
-   int B;
-   j f;
+   public int B;
+   public j f;
 
    static {
       __vfClinit__();

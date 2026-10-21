@@ -270,19 +270,19 @@ public final class RG_2 {
       return var7.toString();
    }
 
-   static HV_2[] h(Fu2_2[] var0) {
+   public static HV_2[] h(Fu2_2[] var0) {
       return E(var0);
    }
 
-   static boolean G(Fu2_2[] var0, String[] var1) {
+   public static boolean G(Fu2_2[] var0, String[] var1) {
       return q(var0, var1);
    }
 
-   static com.finalshell.ui.model.S_3 N$_S(Fu2_2[] var0) {
+   public static com.finalshell.ui.model.S_3 N$_S(Fu2_2[] var0) {
       return Q(var0);
    }
 
-   static String o(Fu2_2[] var0) {
+   public static String o(Fu2_2[] var0) {
       return N$String(var0);
    }
 

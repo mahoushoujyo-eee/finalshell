@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class F02 implements Comparator {
-   final Yf2 I;
+   public final Yf2 I;
 
-   F02(Yf2 var1) {
+   public F02(Yf2 var1) {
       this.I = var1;
    }
 

@@ -10,9 +10,9 @@ import javax.swing.JMenu;
 import javax.swing.JPopupMenu;
 
 public class Lp4 implements PropertyChangeListener {
-   final com.finalshell.core.FJ e;
+   public final com.finalshell.core.FJ e;
 
-   Lp4(com.finalshell.core.FJ var1) {
+   public Lp4(com.finalshell.core.FJ var1) {
       this.e = var1;
    }
 

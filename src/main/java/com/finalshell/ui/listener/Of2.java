@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Of2 implements ActionListener {
-   final ExitFullScreenPanel L;
+   public final ExitFullScreenPanel L;
 
-   Of2(ExitFullScreenPanel var1) {
+   public Of2(ExitFullScreenPanel var1) {
       this.L = var1;
    }
 

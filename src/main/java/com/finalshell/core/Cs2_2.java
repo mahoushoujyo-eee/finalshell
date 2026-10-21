@@ -26,7 +26,7 @@ public class Cs2_2 {
    public final Hj2 X;
    public final FY_2 d;
    public final FE M;
-   static boolean K;
+   public static boolean K;
 
    public Cs2_2() {
       Ky4[] var10000 = Cr2_2.q$arrky_4();

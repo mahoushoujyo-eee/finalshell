@@ -4,9 +4,9 @@ import java.io.File;
 import javax.swing.ImageIcon;
 
 public class I2 extends R2_2 {
-   final com.finalshell.ui.panel.T G;
+   public final com.finalshell.ui.panel.T G;
 
-   protected I2(com.finalshell.ui.panel.T var1) {
+   public I2(com.finalshell.ui.panel.T var1) {
       this.G = var1;
    }
 

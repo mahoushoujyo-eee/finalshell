@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Cp2;
 import java.lang.reflect.InvocationTargetException;
 
 public class DV3 implements Runnable {
-   final Cp2 U;
+   public final Cp2 U;
 
-   DV3(Cp2 var1) {
+   public DV3(Cp2 var1) {
       this.U = var1;
    }
 

@@ -15,8 +15,8 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class RemoteAdapter extends DefaultTableCellRenderer {
-   Border K;
-   SimpleDateFormat Q;
+   public Border K;
+   public SimpleDateFormat Q;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -223,7 +223,7 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
       }
 
       if (var7 != null) {
-         if (var41 != false) {
+         if (var41 == null) {
             var9.setOpaque(true);
             if (var7 != null) {
                return var8;
@@ -235,7 +235,7 @@ public class RemoteAdapter extends DefaultTableCellRenderer {
 
       String var15 = var41;
       if (var7 != null) {
-         if (var15 == false) {
+         if (var15 == null) {
             var9.setOpaque(true);
             var9.setBackground(new Color(a(23359, 8647246012872389655L), a(24295, 799408744771908042L), a(24295, 799408744771908042L), 2));
             if (var7 != null) {

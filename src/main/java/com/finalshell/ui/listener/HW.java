@@ -7,10 +7,10 @@ import java.awt.event.KeyEvent;
 import javax.swing.JList;
 
 public class HW extends KeyAdapter {
-   final JList m;
-   final WO3 u;
+   public final JList m;
+   public final WO3 u;
 
-   HW(WO3 var1, JList var2) {
+   public HW(WO3 var1, JList var2) {
       this.u = var1;
       this.m = var2;
    }

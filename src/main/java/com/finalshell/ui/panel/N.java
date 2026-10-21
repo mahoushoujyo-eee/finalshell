@@ -17,7 +17,7 @@ public class N extends Cn2 {
    }
 
    @Override
-   protected WH3 m() {
+   public WH3 m() {
       return new It4();
    }
 }

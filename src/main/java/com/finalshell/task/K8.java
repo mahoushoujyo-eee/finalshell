@@ -8,9 +8,9 @@ import com.finalshell.ui.frame.FP;
 import java.lang.reflect.InvocationTargetException;
 
 public class K8 implements Runnable {
-   final Fc2 w;
+   public final Fc2 w;
 
-   K8(Fc2 var1) {
+   public K8(Fc2 var1) {
       this.w = var1;
    }
 

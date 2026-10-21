@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import org.icmp4j.j;
 
 public class BQ extends O {
-   boolean X;
-   boolean l;
-   boolean C;
-   Cn4 K;
+   public boolean X;
+   public boolean l;
+   public boolean C;
+   public Cn4 K;
    public static long[] a;
    public static Integer[] b;
 

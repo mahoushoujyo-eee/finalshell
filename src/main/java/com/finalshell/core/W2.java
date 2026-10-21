@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 
 public abstract class W2 {
    public String F;
-   KV p;
-   String T;
-   Tl2 P;
+   public KV p;
+   public String T;
+   public Tl2 P;
    public static String y;
 
    public abstract void O();

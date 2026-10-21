@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class IW3 implements ActionListener {
-   final com.finalshell.ui.panel.QX A;
+   public final com.finalshell.ui.panel.QX A;
 
-   IW3(com.finalshell.ui.panel.QX var1) {
+   public IW3(com.finalshell.ui.panel.QX var1) {
       this.A = var1;
    }
 

@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C_N implements Fo2_2 {
-   final H3_2 V;
+   public final H3_2 V;
 
-   C_N(H3_2 var1) {
+   public C_N(H3_2 var1) {
       this.V = var1;
    }
 

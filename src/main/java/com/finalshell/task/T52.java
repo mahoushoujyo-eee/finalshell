@@ -8,10 +8,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.Callable;
 
 public class T52 implements Callable {
-   final BufferedReader D;
-   final StringBuffer g;
+   public final BufferedReader D;
+   public final StringBuffer g;
 
-   T52(BufferedReader var1, StringBuffer var2) {
+   public T52(BufferedReader var1, StringBuffer var2) {
       this.D = var1;
       this.g = var2;
    }

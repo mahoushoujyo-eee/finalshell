@@ -6,11 +6,11 @@ import java.lang.reflect.InvocationTargetException;
 import org.icmp4j.j;
 
 public class Lo4_2 implements Q0 {
-   final j m;
-   final L9 I;
-   final Dw4 p;
+   public final j m;
+   public final L9 I;
+   public final Dw4 p;
 
-   Lo4_2(Dw4 var1, j var2, L9 var3) {
+   public Lo4_2(Dw4 var1, j var2, L9 var3) {
       this.p = var1;
       this.m = var2;
       this.I = var3;

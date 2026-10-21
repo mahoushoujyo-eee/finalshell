@@ -5,10 +5,10 @@ import com.finalshell.ui.panel.Address;
 import java.io.IOException;
 
 public class TX3 implements Runnable {
-   final DB3 B;
-   final Address Q;
+   public final DB3 B;
+   public final Address Q;
 
-   TX3(Address var1, DB3 var2) {
+   public TX3(Address var1, DB3 var2) {
       this.Q = var1;
       this.B = var2;
    }

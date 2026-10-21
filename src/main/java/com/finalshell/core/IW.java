@@ -5,10 +5,10 @@ import java.lang.ref.WeakReference;
 import javax.swing.JComponent;
 
 public class IW implements P52 {
-   final WeakReference T;
-   final WeakReference y;
+   public final WeakReference T;
+   public final WeakReference y;
 
-   IW(WeakReference var1, WeakReference var2) {
+   public IW(WeakReference var1, WeakReference var2) {
       this.T = var1;
       this.y = var2;
    }

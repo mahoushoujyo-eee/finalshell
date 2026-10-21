@@ -7,9 +7,9 @@ import java.io.File;
 import javax.swing.SwingUtilities;
 
 public class CA extends MouseAdapter {
-   final Ic2 E;
+   public final Ic2 E;
 
-   CA(Ic2 var1) {
+   public CA(Ic2 var1) {
       this.E = var1;
    }
 

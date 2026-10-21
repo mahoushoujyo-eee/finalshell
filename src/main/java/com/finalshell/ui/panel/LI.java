@@ -10,8 +10,8 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class LI extends JLabel {
-   boolean z;
-   Kl2 J;
+   public boolean z;
+   public Kl2 J;
    public static long[] a;
    public static Integer[] b;
 

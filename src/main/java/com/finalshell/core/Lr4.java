@@ -4,10 +4,10 @@ import com.finalshell.ui.dialog.Ds2;
 import java.awt.Rectangle;
 
 public class Lr4 implements E_2 {
-   final Rectangle u;
-   final Ds2 c;
+   public final Rectangle u;
+   public final Ds2 c;
 
-   Lr4(Ds2 var1, Rectangle var2) {
+   public Lr4(Ds2 var1, Rectangle var2) {
       this.c = var1;
       this.u = var2;
    }

@@ -1,17 +1,17 @@
 package com.finalshell.core;
 
 public class LJ {
-   int H;
-   UR t;
-   int r;
-   long C;
+   public int H;
+   public UR t;
+   public int r;
+   public long C;
 
-   LJ(UR var1, int var2) {
+   public LJ(UR var1, int var2) {
       this.t = var1;
       this.r = var2;
    }
 
-   void J$void() {
+   public void J$void() {
       this.H++;
    }
 

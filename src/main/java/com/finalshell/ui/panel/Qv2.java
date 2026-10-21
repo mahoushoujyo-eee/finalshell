@@ -13,8 +13,8 @@ public class Qv2 extends Ky4 {
    }
 
    public Qv2(int var1, int var2, Component[] var3) {
+   super(new Ts2_2(false, var1, var2));
       int[] var10000 = K32.L$arrint();
-      super(new Ts2_2(false, var1, var2));
       int[] var4 = var10000;
       this.setOpaque(false);
 

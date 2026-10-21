@@ -6,10 +6,10 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class Pn2 extends FocusAdapter {
-   final K42 N;
-   final Kk4 H;
+   public final K42 N;
+   public final Kk4 H;
 
-   Pn2(Kk4 var1, K42 var2) {
+   public Pn2(Kk4 var1, K42 var2) {
       this.H = var1;
       this.N = var2;
    }

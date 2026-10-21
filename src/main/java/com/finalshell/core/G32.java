@@ -4,26 +4,26 @@ import java.awt.Rectangle;
 import java.util.Random;
 
 public class G32 extends GT3 implements SC, Cloneable {
-   protected float E = 32.0F;
-   protected float N = 1.0F;
-   protected float C = 0.0F;
+   public float E = 32.0F;
+   public float N = 1.0F;
+   public float C = 0.0F;
    public float S = 1.0F;
    public float Y = 1.0F;
    public float J = 0.5F;
    public float y = 0.5F;
    public float r = 2.0F;
    public boolean W = false;
-   protected Po2 I = new C4();
-   protected float[] D = new float[]{1.0F, 0.0F, 0.0F, 0.0F};
-   protected float P;
-   protected Random a = new Random();
-   protected float i;
-   protected float x;
-   protected float O;
-   protected float h;
-   protected PR3[] n;
-   protected float Z;
-   protected int X;
+   public Po2 I = new C4();
+   public float[] D = new float[]{1.0F, 0.0F, 0.0F, 0.0F};
+   public float P;
+   public Random a = new Random();
+   public float i;
+   public float x;
+   public float O;
+   public float h;
+   public PR3[] n;
+   public float Z;
+   public int X;
    public static byte[] z;
    public float b;
    public static String c;
@@ -824,7 +824,7 @@ public class G32 extends GT3 implements SC, Cloneable {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[var1 * var2];

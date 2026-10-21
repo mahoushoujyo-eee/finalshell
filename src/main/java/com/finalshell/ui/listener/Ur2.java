@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Ur2 implements ActionListener {
-   final TerminateProcessPanel o;
+   public final TerminateProcessPanel o;
 
-   Ur2(TerminateProcessPanel var1) {
+   public Ur2(TerminateProcessPanel var1) {
       this.o = var1;
    }
 

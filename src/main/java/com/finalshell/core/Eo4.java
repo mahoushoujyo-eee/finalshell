@@ -10,8 +10,8 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 public class Eo4 implements Map {
-   protected Map m;
-   protected Map a;
+   public Map m;
+   public Map a;
    public static long b;
 
    public Eo4() {
@@ -19,8 +19,8 @@ public class Eo4 implements Map {
    }
 
    public Eo4(int var1) {
+   super();
       U0.P();
-      super();
       this.m = new HashMap(var1);
       this.a = new HashMap(var1);
       if (Ky4.F$arrString() != null) {

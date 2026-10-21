@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C_6_2 implements C_w_2 {
-   final Fx2 I;
+   public final Fx2 I;
 
-   C_6_2(Fx2 var1) {
+   public C_6_2(Fx2 var1) {
       this.I = var1;
    }
 

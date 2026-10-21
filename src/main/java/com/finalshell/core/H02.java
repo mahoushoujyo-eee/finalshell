@@ -22,7 +22,7 @@ public class H02 extends HN3 implements Cloneable {
    public float Z;
    public Po2 Q = new C4();
    public Ek2 C;
-   protected Random g = new Random();
+   public Random g = new Random();
    public int k = 0;
    public SC z;
    public static String b;
@@ -174,7 +174,7 @@ public class H02 extends HN3 implements Cloneable {
       return this.z;
    }
 
-   protected Ek2 O(float var1, float var2, float var3) {
+   public Ek2 O(float var1, float var2, float var3) {
       Ek2 var4 = new Ek2(var1, var2, var3, this.z);
       float[] var5 = UZ.B(var4, null);
       this.s = var5[0];

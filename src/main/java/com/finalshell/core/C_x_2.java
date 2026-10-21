@@ -14,7 +14,7 @@ public class C_x_2 extends Polygon {
       super(T(var1, var2, var3, var4, var5, var6), u(var1, var2, var3, var4, var5, var6), var5 * 2);
    }
 
-   protected static int[] T(int var0, int var1, int var2, int var3, int var4, double var5) {
+   public static int[] T(int var0, int var1, int var2, int var3, int var4, double var5) {
       int[] var8 = new int[var4 * 2];
       double var9 = (Math.PI * 2) / (double)var4;
       int var10000 = w();
@@ -53,7 +53,7 @@ public class C_x_2 extends Polygon {
       return var17;
    }
 
-   protected static int[] u(int var0, int var1, int var2, int var3, int var4, double var5) {
+   public static int[] u(int var0, int var1, int var2, int var3, int var4, double var5) {
       int[] var8 = new int[var4 * 2];
       double var9 = (Math.PI * 2) / (double)var4;
       int var10000 = a();

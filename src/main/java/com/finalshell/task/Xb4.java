@@ -15,9 +15,9 @@ import javax.swing.ImageIcon;
 import javax.swing.SwingUtilities;
 
 public class Xb4 implements Runnable {
-   protected static ExecutorService Q;
-   protected static Map H;
-   protected static Object z;
+   public static ExecutorService Q;
+   public static Map H;
+   public static Object z;
    public final Co2 W;
    public final Wo4 g;
    public final boolean t;
@@ -388,11 +388,11 @@ public class Xb4 implements Runnable {
       }
    }
 
-   static Wo4 z(Xb4 var0) {
+   public static Wo4 z(Xb4 var0) {
       return var0.g;
    }
 
-   static Co2 X(Xb4 var0) {
+   public static Co2 X(Xb4 var0) {
       return var0.W;
    }
 

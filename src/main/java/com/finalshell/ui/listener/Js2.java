@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Js2 implements ActionListener {
-   final com.finalshell.ui.frame.U r;
+   public final com.finalshell.ui.frame.U r;
 
-   Js2(com.finalshell.ui.frame.U var1) {
+   public Js2(com.finalshell.ui.frame.U var1) {
       this.r = var1;
    }
 

@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Gy2_2 implements ActionListener {
-   final AM J;
-   final CopyMenu W;
+   public final AM J;
+   public final CopyMenu W;
 
-   Gy2_2(CopyMenu var1, AM var2) {
+   public Gy2_2(CopyMenu var1, AM var2) {
       this.W = var1;
       this.J = var2;
    }

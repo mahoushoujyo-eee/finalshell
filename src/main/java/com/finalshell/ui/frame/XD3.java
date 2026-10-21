@@ -467,7 +467,7 @@ public class XD3 extends C {
       u$xD_3().setVisible(true);
    }
 
-   static String[] d(XD3 var0) {
+   public static String[] d(XD3 var0) {
       return var0.m();
    }
 

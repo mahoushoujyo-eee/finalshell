@@ -12,7 +12,7 @@ public class Bb2 implements RW {
    public Xe2 l = null;
    public String H = null;
    public Vector U = null;
-   FP r;
+   public FP r;
    public static byte[] K;
    public static byte[] z;
    public static String[] a;
@@ -20,13 +20,13 @@ public class Bb2 implements RW {
    public static long[] c;
    public static Integer[] d;
 
-   Bb2(Xe2 var1) {
+   public Bb2(Xe2 var1) {
       this.l = var1;
       this.X();
       this.U = new Vector();
    }
 
-   void G(String param1) throws Pc2 {
+   public void G(String param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -189,7 +189,7 @@ public class Bb2 implements RW {
       // 159: return
    }
 
-   void I(InputStream param1) throws Pc2 {
+   public void I(InputStream param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1070,7 +1070,7 @@ public class Bb2 implements RW {
       this.U.addElement(var2);
    }
 
-   String A() {
+   public String A() {
       return this.H;
    }
 
@@ -1340,7 +1340,7 @@ public class Bb2 implements RW {
       // 8f: return
    }
 
-   void w(Gq2 param1) {
+   public void w(Gq2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1755,7 +1755,7 @@ public class Bb2 implements RW {
       // 16c: return
    }
 
-   void W() throws IOException {
+   public void W() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1784,7 +1784,7 @@ public class Bb2 implements RW {
       // 25: return
    }
 
-   synchronized void M(String var1) throws IOException {
+   public synchronized void M(String var1) throws IOException {
       try {
          if (var1 == null) {
             return;
@@ -1810,7 +1810,7 @@ public class Bb2 implements RW {
       var2.close();
    }
 
-   void v(OutputStream var1) throws IOException {
+   public void v(OutputStream var1) throws IOException {
       boolean var2 = Dm4.J$boolean();
 
       try {
@@ -1855,7 +1855,7 @@ public class Bb2 implements RW {
       }
    }
 
-   void L(OutputStream param1, DQ param2) throws IOException {
+   public void L(OutputStream param1, DQ param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1959,7 +1959,7 @@ public class Bb2 implements RW {
       // d0: return
    }
 
-   String L(String param1, String param2) {
+   public String L(String param1, String param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2088,7 +2088,7 @@ public class Bb2 implements RW {
       // f0: areturn
    }
 
-   FP X() throws IllegalArgumentException {
+   public FP X() throws IllegalArgumentException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2123,7 +2123,7 @@ public class Bb2 implements RW {
       // 35: areturn
    }
 
-   FP X(String var1) throws IllegalArgumentException {
+   public FP X(String var1) throws IllegalArgumentException {
       try {
          java.lang.Class var2 = java.lang.Class.forName(var1).asSubclass(FP.class);
          return (FP)var2.getDeclaredConstructor().newInstance();
@@ -2133,13 +2133,13 @@ public class Bb2 implements RW {
       }
    }
 
-   DQ m(String var1, byte[] var2) throws Pc2 {
+   public DQ m(String var1, byte[] var2) throws Pc2 {
       Dg2 var3 = new Dg2(this, var1, var2);
       var3.u();
       return var3;
    }
 
-   static Xe2 W(Bb2 var0) {
+   public static Xe2 W(Bb2 var0) {
       return var0.l;
    }
 

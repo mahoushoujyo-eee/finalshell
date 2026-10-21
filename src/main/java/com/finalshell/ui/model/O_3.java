@@ -24,7 +24,7 @@ public abstract class O_3 implements Iterator {
       this.r.remove();
    }
 
-   protected abstract Object w(Object var1);
+   public abstract Object w(Object var1);
 }
 
 

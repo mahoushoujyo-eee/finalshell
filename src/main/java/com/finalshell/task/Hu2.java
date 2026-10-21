@@ -7,10 +7,10 @@ import java.awt.Component;
 import java.awt.Container;
 
 public class Hu2 implements Runnable {
-   final com.finalshell.core.BX N;
-   final Wf4 D;
+   public final com.finalshell.core.BX N;
+   public final Wf4 D;
 
-   Hu2(Wf4 var1, com.finalshell.core.BX var2) {
+   public Hu2(Wf4 var1, com.finalshell.core.BX var2) {
       this.D = var1;
       this.N = var2;
    }

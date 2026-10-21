@@ -139,7 +139,7 @@ public class Zj2_2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   static void i(ArrayList var0, ArrayList var1, ArrayList var2) {
+   public static void i(ArrayList var0, ArrayList var1, ArrayList var2) {
       HashSet var4 = new HashSet();
       HashMap var5 = new HashMap();
       HashMap var6 = new HashMap();
@@ -218,7 +218,7 @@ public class Zj2_2 {
          Li4 var156 = var8.hasNext();
 
          label665:
-         while (var156 != false) {
+         while (var156 == null) {
             Li4 var103 = (Li4)var8.next();
             var156 = var103;
             var10001 = Registry.emptyArgs();
@@ -319,7 +319,7 @@ public class Zj2_2 {
          var10001 = var8.hasNext();
 
          label633:
-         while (var10001 != false) {
+         while (var10001 == null) {
             Li4 var104 = (Li4)var8.next();
             var10001 = var104;
             var10002 = Registry.emptyArgs();
@@ -1259,7 +1259,7 @@ public class Zj2_2 {
                      do {
                         Lj4_2 var110 = var23.hasNext();
 
-                        while (var110 != false) {
+                        while (var110 == null) {
                            Entry var24 = (Entry)var23.next();
                            String var25 = (String)var24.getKey();
                            Oc2 var26 = (Oc2)var24.getValue();

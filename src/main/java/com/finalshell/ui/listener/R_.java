@@ -6,9 +6,9 @@ import java.awt.event.FocusEvent;
 import java.io.File;
 
 public class R_ extends FocusAdapter {
-   final Kz4 d;
+   public final Kz4 d;
 
-   R_(Kz4 var1) {
+   public R_(Kz4 var1) {
       this.d = var1;
    }
 

@@ -6,8 +6,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 public class Wt2 extends W2 {
-   HashMap D;
-   HashMap A;
+   public HashMap D;
+   public HashMap A;
    public static String a;
 
    public Wt2() {

@@ -6,10 +6,10 @@ import com.finalshell.ui.panel.SelectDownloadFolderPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class UY3 implements Tk4 {
-   final boolean M;
-   final SelectDownloadFolderPanel q;
+   public final boolean M;
+   public final SelectDownloadFolderPanel q;
 
-   UY3(SelectDownloadFolderPanel var1, boolean var2) {
+   public UY3(SelectDownloadFolderPanel var1, boolean var2) {
       this.q = var1;
       this.M = var2;
    }

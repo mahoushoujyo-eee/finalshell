@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class Jm2 extends Thread {
-   final Connect P;
+   public final Connect P;
 
-   Jm2(Connect var1) {
+   public Jm2(Connect var1) {
       this.P = var1;
    }
 

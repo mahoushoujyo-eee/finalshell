@@ -9,11 +9,11 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Aa2 implements MouseListener {
-   final com.finalshell.ui.panel.OG3 E;
+   public final com.finalshell.ui.panel.OG3 E;
    public static long[] a;
    public static Integer[] b;
 
-   Aa2(com.finalshell.ui.panel.OG3 var1) {
+   public Aa2(com.finalshell.ui.panel.OG3 var1) {
       this.E = var1;
    }
 

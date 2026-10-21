@@ -16,9 +16,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class Mapping {
-   ArrayList G;
-   HashMap n;
-   String v;
+   public ArrayList G;
+   public HashMap n;
+   public String v;
    public static String[] a;
    public static String[] b;
 
@@ -65,7 +65,7 @@ public class Mapping {
             Exception var43;
             StringBuilder var47 = new StringBuilder().append(a(-20564, 7141));
             Object var9 = 512189539626964799L;
-new ArrayList(var1.append((String)Ref.g(512189539626964799L, var9)).append(a(-20562, -3586)).toString());
+var47 = new ArrayList(var1.append((String)Ref.g(512189539626964799L, var9)).append(a(-20562, -3586)).toString());
             throw var43;
          }
       } catch (IOException var38) {
@@ -87,7 +87,7 @@ new ArrayList(var1.append((String)Ref.g(512189539626964799L, var9)).append(a(-20
             throw var34.getTargetException();
          }
 
-new ArrayList(var49);
+var1 = new ArrayList(var49);
          var2 = var10003;
          Object[] var46 = Registry.packArgs(var2);
          long var14 = 288445759195044409L;
@@ -128,7 +128,7 @@ new ArrayList(var49);
             throw var31.getTargetException();
          }
 
-new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
+var42 = new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
          throw var10001;
       } finally {
          ;
@@ -537,7 +537,7 @@ new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
       // 295: return
    }
 
-   void B() throws Exception {
+   public void B() throws Exception {
       O0 var2 = new O0();
       int var10000 = BS.t();
       Oc2 var3 = new Oc2();
@@ -600,7 +600,7 @@ new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
       }
    }
 
-   void y() {
+   public void y() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -809,7 +809,7 @@ new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
       // 1cf: return
    }
 
-   BS U(String var1) {
+   public BS U(String var1) {
       BS var3 = null;
       BS.s();
       Object var6 = 412877864063167168L;
@@ -818,7 +818,7 @@ new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
 
       while (var4.hasNext()) {
          BS var5 = (BS)var4.next();
-         if (var2 != false) {
+         if (var2 == null) {
             String var10002 = (String)(Registry.emptyArgs());
             long var9 = 597157388012521283L;
             Object[] var8 = var10002;
@@ -852,7 +852,7 @@ new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
       Ref.s(412877864063167168L, var1, var3);
    }
 
-   void s(ServerSocket var1) {
+   public void s(ServerSocket var1) {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Wh2(this, var1));
       long var3 = 434592463220957006L;
@@ -868,7 +868,7 @@ new ArrayList(var1.append(var45).append(a(-20560, -20007)).toString());
 
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void q(byte[] var1, String var2) throws Exception {
+   public void q(byte[] var1, String var2) throws Exception {
       int var10000 = BS.t();
       FileOutputStream var4 = null;
       int var3 = var10000;

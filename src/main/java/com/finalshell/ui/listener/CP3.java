@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class CP3 implements ActionListener {
-   final TunnelList t;
+   public final TunnelList t;
 
-   CP3(TunnelList var1) {
+   public CP3(TunnelList var1) {
       this.t = var1;
    }
 
@@ -22,7 +22,7 @@ public class CP3 implements ActionListener {
       Object var5 = 204980472334034752L;
       Object var10006 = Ref.g(204980472334034752L, var5);
       Object var7 = 432008228546876612L;
-new CP3(this, (YE)var10006, (ArrayList)Ref.g(432008228546876612L, var7), false);
+null = new CP3(this, (YE)var10006, (ArrayList)Ref.g(432008228546876612L, var7), false);
    }
 }
 

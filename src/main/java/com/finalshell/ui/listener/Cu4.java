@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Cu4 implements ActionListener {
-   final EffectPreview I;
+   public final EffectPreview I;
 
-   Cu4(EffectPreview var1) {
+   public Cu4(EffectPreview var1) {
       this.I = var1;
    }
 

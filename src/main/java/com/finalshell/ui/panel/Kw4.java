@@ -13,10 +13,10 @@ public class Kw4 extends Ky4 {
    }
 
    public Kw4(Component var1, boolean var2, boolean var3) {
+   super();
       int[] var4;
       boolean var5;
       int[] var10000 = K32.L$arrint();
-      super();
       var4 = var10000;
       this.setOpaque(false);
       var5 = var2;

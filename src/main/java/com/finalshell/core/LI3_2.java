@@ -5,19 +5,19 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class LI3_2 {
-   int w;
-   String W;
-   float N;
-   float b;
-   long G;
-   String z;
-   int i;
-   String Y;
-   String Q;
-   String n;
-   CB R;
+   public int w;
+   public String W;
+   public float N;
+   public float b;
+   public long G;
+   public String z;
+   public int i;
+   public String Y;
+   public String Q;
+   public String n;
+   public CB R;
    public static int p;
-   boolean y;
+   public boolean y;
 
    public LI3_2() {
       Registry.lookupField(155314488367693094L).setBoolean(this, false);

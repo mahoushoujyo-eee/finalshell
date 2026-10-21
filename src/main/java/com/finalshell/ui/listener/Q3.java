@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Q3 implements ActionListener {
-   final RouteTracePanel I;
+   public final RouteTracePanel I;
 
-   Q3(RouteTracePanel var1) {
+   public Q3(RouteTracePanel var1) {
       this.I = var1;
    }
 

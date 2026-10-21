@@ -8,13 +8,13 @@ import java.awt.event.MouseListener;
 import javax.swing.JLabel;
 
 public class De2 implements MouseListener {
-   final JLabel E;
-   final Color o;
-   final com.finalshell.ui.panel.W8 n;
-   final Color R;
-   final SelectDownloadFolderPanel v;
+   public final JLabel E;
+   public final Color o;
+   public final com.finalshell.ui.panel.W8 n;
+   public final Color R;
+   public final SelectDownloadFolderPanel v;
 
-   De2(SelectDownloadFolderPanel var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, Color var5) {
+   public De2(SelectDownloadFolderPanel var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, Color var5) {
       this.v = var1;
       this.E = var2;
       this.o = var3;

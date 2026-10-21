@@ -12,7 +12,7 @@ public class PressureEvent extends GestureEvent {
       return this.stage;
    }
 
-   PressureEvent(double pressure, double stage) {
+   public PressureEvent(double pressure, double stage) {
       this.pressure = pressure;
       this.stage = stage;
    }

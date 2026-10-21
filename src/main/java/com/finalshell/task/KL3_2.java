@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.F5;
 import java.lang.reflect.InvocationTargetException;
 
 public class KL3_2 implements Runnable {
-   final F5 X;
+   public final F5 X;
 
-   KL3_2(F5 var1) {
+   public KL3_2(F5 var1) {
       this.X = var1;
    }
 

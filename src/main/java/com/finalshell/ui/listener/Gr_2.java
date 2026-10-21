@@ -12,9 +12,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Gr_2 implements ActionListener {
-   final NetworkMonitorPanel V;
+   public final NetworkMonitorPanel V;
 
-   Gr_2(NetworkMonitorPanel var1) {
+   public Gr_2(NetworkMonitorPanel var1) {
       this.V = var1;
    }
 

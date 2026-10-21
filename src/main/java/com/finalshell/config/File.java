@@ -10,12 +10,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class File {
-   String Q;
-   HashMap h;
+   public String Q;
+   public HashMap h;
    public static String[] a;
    public static String[] b;
 
-   File(String var1) {
+   public File(String var1) {
       HashMap var10001 = new HashMap();
       long var3 = 304274842285362681L;
       HashMap var2 = var10001;
@@ -212,7 +212,7 @@ public class File {
       }
    }
 
-   void J(byte[] param1, String param2) throws Exception {
+   public void J(byte[] param1, String param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

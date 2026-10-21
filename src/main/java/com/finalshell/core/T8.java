@@ -18,9 +18,9 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class T8 extends TransferHandler {
-   DataFlavor u;
-   DataFlavor[] M;
-   DefaultMutableTreeNode[] L;
+   public DataFlavor u;
+   public DataFlavor[] M;
+   public DefaultMutableTreeNode[] L;
    public static String[] a;
    public static String[] b;
 
@@ -53,7 +53,7 @@ public class T8 extends TransferHandler {
          var2 = com.finalshell.ui.panel.F8.y();
          var10000 = var1.isDrop();
          if (var2 == null) {
-            if (var10000 == false) {
+            if (var10000 == null) {
                return false;
             }
 
@@ -67,7 +67,7 @@ public class T8 extends TransferHandler {
             this.isDataFlavorSupported((DataFlavor)Ref.g(125019966672690812L, var12));
          }
 
-         if (var10000 == false) {
+         if (var10000 == null) {
             return false;
          }
 
@@ -219,7 +219,7 @@ public class T8 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       String[] var10000 = com.finalshell.ui.panel.F8.y();
       JTree var3 = (JTree)var1;
       TreePath[] var4 = var3.getSelectionPaths();
@@ -328,7 +328,7 @@ public class T8 extends TransferHandler {
    }
 
    @Override
-   protected void exportDone(JComponent var1, Transferable var2, int var3) {
+   public void exportDone(JComponent var1, Transferable var2, int var3) {
       String[] var4 = com.finalshell.ui.panel.F8.y();
       if ((var3 & 2) == 2) {
          JTree var5 = (JTree)var1;

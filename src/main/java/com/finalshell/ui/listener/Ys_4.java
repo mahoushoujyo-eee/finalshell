@@ -4,9 +4,9 @@ import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
 
 public class Ys_4 implements MenuListener {
-   final com.finalshell.ui.frame.U f;
+   public final com.finalshell.ui.frame.U f;
 
-   Ys_4(com.finalshell.ui.frame.U var1) {
+   public Ys_4(com.finalshell.ui.frame.U var1) {
       this.f = var1;
    }
 

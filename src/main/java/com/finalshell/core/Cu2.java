@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Cu2 implements Fz2_2 {
-   final T_3 g;
+   public final T_3 g;
 
-   Cu2(T_3 var1) {
+   public Cu2(T_3 var1) {
       this.g = var1;
    }
 

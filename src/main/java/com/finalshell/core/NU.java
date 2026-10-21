@@ -4,7 +4,7 @@ import com.finalshell.ui.model.We4;
 
 // $VF: synthetic class
 public class NU {
-   static int[] N;
+   public static int[] N;
 
    static {
       __vfClinit__();

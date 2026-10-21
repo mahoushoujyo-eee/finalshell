@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Y82 implements Runnable {
-   final Yf2 R;
+   public final Yf2 R;
 
-   Y82(Yf2 var1) {
+   public Y82(Yf2 var1) {
       this.R = var1;
    }
 

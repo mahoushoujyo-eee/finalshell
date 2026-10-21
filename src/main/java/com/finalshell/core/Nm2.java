@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Nm2 implements Np2 {
-   final CB3 J;
-   final Zn2 y;
+   public final CB3 J;
+   public final Zn2 y;
 
-   Nm2(Zn2 var1, CB3 var2) {
+   public Nm2(Zn2 var1, CB3 var2) {
       this.y = var1;
       this.J = var2;
    }

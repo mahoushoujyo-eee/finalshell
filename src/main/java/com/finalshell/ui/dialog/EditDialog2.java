@@ -27,20 +27,20 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class EditDialog2 extends JDialog {
-   PathPanel q;
+   public PathPanel q;
    public static int O;
    public static int v;
-   int N;
+   public int N;
    public static int M;
    public static int l;
    public static int j;
    public static int g;
-   int C;
-   String t;
-   Km2 A;
-   Kl4 H;
-   ArrayList S;
-   String k;
+   public int C;
+   public String t;
+   public Km2 A;
+   public Kl4 H;
+   public ArrayList S;
+   public String k;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -98,7 +98,7 @@ public class EditDialog2 extends JDialog {
       }
 
       if (!var6) {
-         if (var10003 != false) {
+         if (var10003 == null) {
             Object var18 = 546550992201866353L;
             Ref.g(546550992201866353L, var18);
             Object[] var10005 = Registry.packArgs(true);
@@ -266,7 +266,7 @@ public class EditDialog2 extends JDialog {
       var11.addActionListener(new YR3(this));
    }
 
-   void j() {
+   public void j() {
       boolean var2 = false;
       Object var14 = 546550992201866353L;
       Ref.g(546550992201866353L, var14);
@@ -333,22 +333,22 @@ public class EditDialog2 extends JDialog {
             Object var32 = 519726087570605904L;
             ((ArrayList)Ref.g(519726087570605904L, var32)).add(var12);
             boolean var10010 = var12.getClass().equals(Tf4.class);
-            if (var1 != false) {
+            if (var1 == null) {
                break;
             }
 
             label109: {
                label119: {
-                  if (var1 == false) {
+                  if (var1 == null) {
                      if (var10010) {
                         Tf4 var13 = (Tf4)var12;
-                        if (var1 == false) {
+                        if (var1 == null) {
                            break label109;
                         }
                      }
 
                      var68 = var12.getClass();
-                     if (var1 != false) {
+                     if (var1 == null) {
                         break label119;
                      }
 
@@ -368,7 +368,7 @@ public class EditDialog2 extends JDialog {
             }
 
             var9++;
-            if (var1 == false) {
+            if (var1 == null) {
                continue;
             }
          }
@@ -378,7 +378,7 @@ public class EditDialog2 extends JDialog {
          break;
       }
 
-      if (var1 == false) {
+      if (var1 == null) {
          if (!(var10008 > 0)) {
             return;
          }

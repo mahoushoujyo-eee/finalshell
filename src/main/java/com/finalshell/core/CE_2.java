@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class CE_2 implements E4_2 {
-   final Cs2_2 j;
+   public final Cs2_2 j;
 
-   CE_2(Cs2_2 var1) {
+   public CE_2(Cs2_2 var1) {
       this.j = var1;
    }
 

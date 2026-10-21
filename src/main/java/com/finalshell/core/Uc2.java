@@ -11,15 +11,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class Uc2 {
-   BufferedImage K;
-   BufferedImage u;
-   HashMap N;
-   HashMap t;
-   HashMap s;
-   HashMap T;
-   HashSet X;
-   int F;
-   int U;
+   public BufferedImage K;
+   public BufferedImage u;
+   public HashMap N;
+   public HashMap t;
+   public HashMap s;
+   public HashMap T;
+   public HashSet X;
+   public int F;
+   public int U;
 
    public Uc2() {
       HashMap var10001 = new HashMap();

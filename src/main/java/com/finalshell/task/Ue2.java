@@ -6,10 +6,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ue2 extends Thread {
-   final D82_2 k;
+   public final D82_2 k;
    public static long a;
 
-   Ue2(D82_2 var1) {
+   public Ue2(D82_2 var1) {
       this.k = var1;
    }
 

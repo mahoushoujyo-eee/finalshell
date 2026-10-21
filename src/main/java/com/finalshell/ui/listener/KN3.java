@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComboBox;
 
 public class KN3 implements ActionListener {
-   final NO b;
+   public final NO b;
 
-   KN3(NO var1) {
+   public KN3(NO var1) {
       this.b = var1;
    }
 

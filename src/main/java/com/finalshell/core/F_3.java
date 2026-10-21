@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class F_3 {
-   static ArrayList T;
+   public static ArrayList T;
    public static String[] a;
    public static String[] b;
 

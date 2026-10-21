@@ -6,11 +6,11 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class G8 extends KeyAdapter {
-   final LocalDrive S;
+   public final LocalDrive S;
    public static long[] a;
    public static Integer[] b;
 
-   G8(LocalDrive var1) {
+   public G8(LocalDrive var1) {
       this.S = var1;
    }
 

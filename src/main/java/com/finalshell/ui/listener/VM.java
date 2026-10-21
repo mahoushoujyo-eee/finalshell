@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class VM implements MouseListener {
-   final com.finalshell.ui.panel.Lh2 X;
+   public final com.finalshell.ui.panel.Lh2 X;
 
-   VM(com.finalshell.ui.panel.Lh2 var1) {
+   public VM(com.finalshell.ui.panel.Lh2 var1) {
       this.X = var1;
    }
 

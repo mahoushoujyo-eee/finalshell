@@ -12,8 +12,8 @@ import javax.swing.TransferHandler;
 import javax.swing.TransferHandler.TransferSupport;
 
 public class Yd2 extends TransferHandler {
-   DataFlavor p;
-   DataFlavor u;
+   public DataFlavor p;
+   public DataFlavor u;
    public static String[] a;
    public static String[] b;
 
@@ -315,7 +315,7 @@ public class Yd2 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       String var10000 = Km2.U$String();
       JTable var3 = (JTable)var1;
       int var4 = var3.getSelectedRow();

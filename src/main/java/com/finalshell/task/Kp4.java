@@ -7,9 +7,9 @@ import com.finalshell.ui.panel.Connection4;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kp4 implements Runnable {
-   final ConfirmDeleteFolderListener H;
+   public final ConfirmDeleteFolderListener H;
 
-   Kp4(ConfirmDeleteFolderListener var1) {
+   public Kp4(ConfirmDeleteFolderListener var1) {
       this.H = var1;
    }
 

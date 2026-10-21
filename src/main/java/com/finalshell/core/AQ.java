@@ -3,14 +3,11 @@ package com.finalshell.core;
 import com.finalshell.crypto.ConnectHost;
 
 public abstract class AQ {
-   ConnectHost o;
-   int j;
-   int w;
-   String M;
-   String X;
-
-   AQ() {
-   }
+   public ConnectHost o;
+   public int j;
+   public int w;
+   public String M;
+   public String X;
 }
 
 

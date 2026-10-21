@@ -5,11 +5,11 @@ import com.finalshell.core.Md2;
 import com.finalshell.core.Zq2_2;
 
 public class Ls2 implements Runnable {
-   final Md2 L;
+   public final Md2 L;
    public static long[] a;
    public static Integer[] b;
 
-   Ls2(Md2 var1) {
+   public Ls2(Md2 var1) {
       this.L = var1;
    }
 

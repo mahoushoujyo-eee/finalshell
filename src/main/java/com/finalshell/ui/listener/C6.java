@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 
 public class C6 extends MouseAdapter {
    public boolean l;
-   final com.finalshell.ui.panel.L w;
+   public final com.finalshell.ui.panel.L w;
    public static long[] a;
    public static Integer[] b;
 
@@ -132,7 +132,7 @@ public class C6 extends MouseAdapter {
       var10000.w.setCursor(Cursor.getDefaultCursor());
    }
 
-   C6(com.finalshell.ui.panel.L var1, com.finalshell.ui.panel.W2 var2) {
+   public C6(com.finalshell.ui.panel.L var1, com.finalshell.ui.panel.W2 var2) {
       this(var1);
    }
 

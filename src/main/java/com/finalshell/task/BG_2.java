@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.listener.ZM;
 
 public class BG_2 implements Runnable {
-   final ZM T;
+   public final ZM T;
 
-   BG_2(ZM var1) {
+   public BG_2(ZM var1) {
       this.T = var1;
    }
 

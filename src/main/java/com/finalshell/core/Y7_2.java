@@ -7,7 +7,7 @@ public class Y7_2 implements AB_2 {
    public String c;
    public static String a;
 
-   Y7_2(I32 var1, byte[] var2, String var3) {
+   public Y7_2(I32 var1, byte[] var2, String var3) {
       this.G = var1;
       this.j = var2;
       this.B = var3;

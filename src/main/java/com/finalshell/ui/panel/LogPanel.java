@@ -23,17 +23,17 @@ import javax.swing.text.BadLocationException;
 import net.miginfocom.swing.MigLayout;
 
 public class LogPanel extends JPanel {
-   JButton m;
-   JTextArea O;
-   boolean E;
-   final int h;
-   JScrollPane W;
+   public JButton m;
+   public JTextArea O;
+   public boolean E;
+   public final int h;
+   public JScrollPane W;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   LogPanel() {
+   public LogPanel() {
       Registry.lookupField(376642468236131701L).setBoolean(this, true);
       this.h = a(26660, 3010000648684305307L);
       this.setLayout(new MigLayout(a(23406, 21430), a(23404, -1626), a(23399, -8210)));
@@ -48,7 +48,7 @@ public class LogPanel extends JPanel {
          throw var44.getTargetException();
       }
 
-new Ui2((String)var10004);
+var10003 = new Ui2((String)var10004);
       long var9 = 402079050501623703L;
       JButton var8 = var10002;
       Ref.s(402079050501623703L, var8, var9);
@@ -104,7 +104,7 @@ new Ui2((String)var10004);
          throw var42.getTargetException();
       }
 
-new FH((String)var10015, Registry.lookupField(376642468236131701L).getBoolean(this));
+var10014 = new FH((String)var10015, Registry.lookupField(376642468236131701L).getBoolean(this));
       JCheckBox var4 = var10013;
       var3.add(var4, a(23398, 29260));
       var4.addActionListener(new FH(this, var4));
@@ -157,10 +157,10 @@ new FH((String)var10015, Registry.lookupField(376642468236131701L).getBoolean(th
       SwingUtilities.invokeLater(new Cg4(this));
    }
 
-   void z() {
+   public void z() {
    }
 
-   JButton Q(String var1) {
+   public JButton Q(String var1) {
       JButton var2 = new JButton(var1);
       var2.setMargin(new Insets(0, 5, 0, 5));
       var2.setFocusPainted(false);

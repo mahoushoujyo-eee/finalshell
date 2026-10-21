@@ -9,9 +9,9 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 public class I extends D2_2 {
-   protected ContainerAdapter S;
-   protected com.finalshell.ui.listener.FY R;
-   protected com.finalshell.ui.panel.KE3 A = null;
+   public ContainerAdapter S;
+   public com.finalshell.ui.listener.FY R;
+   public com.finalshell.ui.panel.KE3 A = null;
 
    public void w(Ki4 var1) {
       this.S = new com.finalshell.ui.listener.C(this, var1);
@@ -26,7 +26,7 @@ public class I extends D2_2 {
       this.R = null;
    }
 
-   protected void r() {
+   public void r() {
       int[] var1 = W_2.B$arrint();
       com.finalshell.ui.panel.KE3 var10000 = this.A;
       if (var1 == null) {

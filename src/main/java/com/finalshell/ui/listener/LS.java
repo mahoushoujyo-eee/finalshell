@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JMenuItem;
 
 public class LS implements ActionListener {
-   final JMenuItem V;
-   final FilePermissionPanel M;
+   public final JMenuItem V;
+   public final FilePermissionPanel M;
 
-   LS(FilePermissionPanel var1, JMenuItem var2) {
+   public LS(FilePermissionPanel var1, JMenuItem var2) {
       this.M = var1;
       this.V = var2;
    }

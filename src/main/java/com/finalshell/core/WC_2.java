@@ -13,24 +13,24 @@ public class WC_2 {
    public static String C;
    public static int O;
    public static boolean U;
-   protected final List j;
-   protected int o;
-   protected int a;
-   protected final Map r;
-   protected long E;
-   protected long t;
-   protected int N;
-   protected Thread d;
-   protected long b;
-   protected long H;
-   protected boolean p;
-   protected boolean M;
-   protected boolean A;
-   protected boolean Y;
-   protected boolean T;
-   protected String Q;
-   protected String y;
-   protected int h;
+   public final List j;
+   public int o;
+   public int a;
+   public final Map r;
+   public long E;
+   public long t;
+   public int N;
+   public Thread d;
+   public long b;
+   public long H;
+   public boolean p;
+   public boolean M;
+   public boolean A;
+   public boolean Y;
+   public boolean T;
+   public String Q;
+   public String y;
+   public int h;
    public static int[] m;
    public static String[] c;
    public static String[] e;
@@ -480,7 +480,7 @@ public class WC_2 {
       // 37: ireturn
    }
 
-   protected synchronized void K() {
+   public synchronized void K() {
       int[] var1 = V();
 
       int var10000;
@@ -508,7 +508,7 @@ public class WC_2 {
       this.d.start();
    }
 
-   protected boolean E(int param1, int param2) {
+   public boolean E(int param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -575,15 +575,15 @@ public class WC_2 {
       // 7f: ireturn
    }
 
-   protected void R(int var1, boolean var2) {
+   public void R(int var1, boolean var2) {
       this.r.put(var1, var2);
    }
 
-   protected void L(int var1) {
+   public void L(int var1) {
       this.r.remove(var1);
    }
 
-   protected synchronized void j() {
+   public synchronized void j() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -783,7 +783,7 @@ public class WC_2 {
       // 105: return
    }
 
-   protected ActionEvent w() {
+   public ActionEvent w() {
       return new ActionEvent(this, 0, this.Q, Gk2.r(), 0);
    }
 

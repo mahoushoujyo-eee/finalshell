@@ -7,10 +7,10 @@ import java.awt.event.ItemListener;
 import java.util.Date;
 
 public class Sp2 implements ItemListener {
-   final Date c;
-   final KV3 Q;
+   public final Date c;
+   public final KV3 Q;
 
-   Sp2(KV3 var1, Date var2) {
+   public Sp2(KV3 var1, Date var2) {
       this.Q = var1;
       this.c = var2;
    }

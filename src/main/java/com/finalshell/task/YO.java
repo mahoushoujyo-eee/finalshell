@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.connection.DelayedAckSACK;
 
 public class YO extends Thread {
-   final DelayedAckSACK U;
+   public final DelayedAckSACK U;
    public static long a;
 
-   YO(DelayedAckSACK var1) {
+   public YO(DelayedAckSACK var1) {
       this.U = var1;
    }
 

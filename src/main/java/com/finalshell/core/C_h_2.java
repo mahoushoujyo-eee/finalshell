@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C_h_2 extends D2_3 {
-   final D32 v;
+   public final D32 v;
 
-   C_h_2(D32 var1) {
+   public C_h_2(D32 var1) {
       this.v = var1;
    }
 

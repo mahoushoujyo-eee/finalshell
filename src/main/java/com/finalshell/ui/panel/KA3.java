@@ -17,8 +17,8 @@ public class KA3 extends Ky4 implements SwingConstants {
    }
 
    public KA3(int var1, int var2, Component var3, Component var4) {
+   super();
       int[] var10000 = K32.L$arrint();
-      super();
       this.setOpaque(false);
       int[] var5 = var10000;
       this.setLayout(new BorderLayout(var2, var2));

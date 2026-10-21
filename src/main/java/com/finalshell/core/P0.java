@@ -7,7 +7,7 @@ public class P0 extends Pc2 {
    public static String[] a;
    public static String[] b;
 
-   P0(int var1, String var2, String var3) {
+   public P0(int var1, String var2, String var3) {
       super(a(var1, var2, var3));
       this.P = D(var1);
       this.G = var2;

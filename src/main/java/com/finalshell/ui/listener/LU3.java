@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 public class LU3 implements ActionListener {
-   final D12 K;
+   public final D12 K;
    public static String a;
    public static long b;
 
-   LU3(D12 var1) {
+   public LU3(D12 var1) {
       this.K = var1;
    }
 

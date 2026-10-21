@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Ab2 implements Comparator {
-   final boolean h;
+   public final boolean h;
 
-   Ab2(boolean var1) {
+   public Ab2(boolean var1) {
       this.h = var1;
    }
 
@@ -40,7 +40,7 @@ public class Ab2 implements Comparator {
       long var6 = var16;
       Object[] var3 = var10002;
       int var15 = (Registry.lookupField(619787630767044970L).getBoolean(this)) ? 1 : 0;
-      if (var3 != false) {
+      if (var3 == null) {
          if (var15 == 0) {
             return Long.compare(var4, var6);
          }

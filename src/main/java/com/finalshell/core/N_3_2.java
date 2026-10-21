@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class N_3_2 implements C_4_3 {
-   final FF_2 Q;
+   public final FF_2 Q;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   N_3_2(FF_2 var1) {
+   public N_3_2(FF_2 var1) {
       this.Q = var1;
    }
 

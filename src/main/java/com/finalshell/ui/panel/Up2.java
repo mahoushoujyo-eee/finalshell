@@ -7,9 +7,9 @@ import java.awt.Graphics;
 import javax.swing.JLabel;
 
 public class Up2 extends JLabel {
-   final Bx2 H;
+   public final Bx2 H;
 
-   Up2(Bx2 var1) {
+   public Up2(Bx2 var1) {
       this.H = var1;
    }
 

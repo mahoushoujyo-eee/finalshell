@@ -11,10 +11,10 @@ import java.awt.event.MouseEvent;
 import java.lang.ref.WeakReference;
 
 public class YD extends MouseAdapter {
-   final WeakReference A;
-   final WC_2 b;
+   public final WeakReference A;
+   public final WC_2 b;
 
-   YD(WeakReference var1, WC_2 var2) {
+   public YD(WeakReference var1, WC_2 var2) {
       this.A = var1;
       this.b = var2;
    }

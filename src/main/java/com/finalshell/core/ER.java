@@ -1,9 +1,6 @@
 package com.finalshell.core;
 
 public class ER implements GN {
-   ER() {
-   }
-
    @Override
    public boolean K(int var1) {
       return false;

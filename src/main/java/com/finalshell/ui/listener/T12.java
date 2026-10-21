@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class T12 implements ActionListener {
-   final Copy N;
+   public final Copy N;
 
-   T12(Copy var1) {
+   public T12(Copy var1) {
       this.N = var1;
    }
 

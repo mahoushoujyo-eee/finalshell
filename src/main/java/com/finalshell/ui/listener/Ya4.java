@@ -9,9 +9,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ya4 implements MouseListener {
-   final JR m;
+   public final JR m;
 
-   Ya4(JR var1) {
+   public Ya4(JR var1) {
       this.m = var1;
    }
 

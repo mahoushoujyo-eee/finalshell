@@ -8,9 +8,6 @@ public class Class extends IM {
    public static long[] d;
    public static Integer[] e;
 
-   Class() {
-   }
-
    @Override
    public boolean D(ConnectHost param1) throws Exception {
       // $VF: Couldn't be decompiled

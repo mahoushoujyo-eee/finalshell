@@ -11,11 +11,11 @@ import java.security.interfaces.DSAPrivateKey;
 import java.security.interfaces.DSAPublicKey;
 
 public class Pw2 implements NN {
-   byte[] p;
-   byte[] f;
-   byte[] N;
-   byte[] h;
-   byte[] T;
+   public byte[] p;
+   public byte[] f;
+   public byte[] N;
+   public byte[] h;
+   public byte[] T;
    public static String a;
 
    @Override

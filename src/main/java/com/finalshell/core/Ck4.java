@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Kz4;
 
 public class Ck4 extends C42 {
-   final Kz4 o;
+   public final Kz4 o;
 
-   Ck4(Kz4 var1) {
+   public Ck4(Kz4 var1) {
       this.o = var1;
    }
 

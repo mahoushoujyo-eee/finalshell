@@ -20,10 +20,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class FilePermissionPanel extends JPopupMenu {
-   Connection4 d;
-   TreePath w;
-   Tf4 G;
-   DefaultMutableTreeNode i;
+   public Connection4 d;
+   public TreePath w;
+   public Tf4 G;
+   public DefaultMutableTreeNode i;
    public static String[] a;
    public static String[] b;
 

@@ -1,18 +1,18 @@
 package com.finalshell.core;
 
 public class HK2 extends Hd2 {
-   final Hd2 a;
-   final C_L Q;
+   public final Hd2 a;
+   public final C_L Q;
    public static String c;
    public static long j;
 
-   HK2(C_L var1, Hd2 var2) {
+   public HK2(C_L var1, Hd2 var2) {
       this.Q = var1;
       this.a = var2;
    }
 
    @Override
-   protected C_J[] V$arr_J() {
+   public C_J[] V$arr_J() {
       return new C_J[0];
    }
 

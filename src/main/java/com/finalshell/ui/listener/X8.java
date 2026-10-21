@@ -5,11 +5,11 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class X8 implements PropertyChangeListener {
-   final Y9_2 N;
+   public final Y9_2 N;
    public static String[] a;
    public static String[] b;
 
-   X8(Y9_2 var1) {
+   public X8(Y9_2 var1) {
       this.N = var1;
    }
 

@@ -4,9 +4,6 @@ public class Y52 implements EU {
    public static long[] a;
    public static Integer[] b;
 
-   Y52() {
-   }
-
    @Override
    public int w() {
       return a(28543, 6931029494393186681L);

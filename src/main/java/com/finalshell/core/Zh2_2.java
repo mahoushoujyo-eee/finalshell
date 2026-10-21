@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class Zh2_2 {
-   String r;
-   String O;
-   String T;
-   String d;
-   String Z;
+   public String r;
+   public String O;
+   public String T;
+   public String d;
+   public String Z;
    public static int[] F;
 
    public String l() {

@@ -12,12 +12,12 @@ public class Kb2 {
    public long F;
    public long l;
    public long C;
-   int y = 0;
-   String[] A = null;
+   public int y = 0;
+   public String[] A = null;
    public static long[] a;
    public static Long[] b;
 
-   static Kb2 M(UJ var0) {
+   public static Kb2 M(UJ var0) {
       boolean var10000 = Dm4.F$boolean();
       Kb2 var2 = new Kb2();
       boolean var1 = var10000;

@@ -9,9 +9,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class NN3 extends MouseAdapter {
-   final Yc2_2 t;
+   public final Yc2_2 t;
 
-   NN3(Yc2_2 var1) {
+   public NN3(Yc2_2 var1) {
       this.t = var1;
    }
 

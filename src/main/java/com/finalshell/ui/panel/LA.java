@@ -8,8 +8,8 @@ import java.awt.Graphics2D;
 import javax.swing.JProgressBar;
 
 public class LA extends JProgressBar {
-   Color u;
-   boolean o;
+   public Color u;
+   public boolean o;
    public static long[] a;
    public static Integer[] b;
 
@@ -22,7 +22,7 @@ public class LA extends JProgressBar {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Graphics2D var3;
       int var5;
       label13: {

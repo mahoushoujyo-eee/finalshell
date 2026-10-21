@@ -8,14 +8,14 @@ import java.awt.event.ActionListener;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 public class KS implements ActionListener {
-   final int d;
-   final RSyntaxTextArea C;
-   final EditDialog3 A;
+   public final int d;
+   public final RSyntaxTextArea C;
+   public final EditDialog3 A;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   KS(EditDialog3 var1, int var2, RSyntaxTextArea var3) {
+   public KS(EditDialog3 var1, int var2, RSyntaxTextArea var3) {
       this.A = var1;
       this.d = var2;
       this.C = var3;

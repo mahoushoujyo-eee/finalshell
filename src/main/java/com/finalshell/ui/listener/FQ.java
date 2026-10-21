@@ -5,10 +5,10 @@ import javax.swing.JComponent;
 import javax.swing.event.AncestorEvent;
 
 public class FQ extends FY {
-   final JComponent L;
-   final com.finalshell.ui.panel.Kd4 I;
+   public final JComponent L;
+   public final com.finalshell.ui.panel.Kd4 I;
 
-   FQ(com.finalshell.ui.panel.Kd4 var1, JComponent var2) {
+   public FQ(com.finalshell.ui.panel.Kd4 var1, JComponent var2) {
       this.I = var1;
       this.L = var2;
    }

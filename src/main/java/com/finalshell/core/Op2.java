@@ -734,7 +734,7 @@ public class Op2 implements DS3_2 {
       label135:
       if (var2 != null) {
          label133:
-         if (var10004 == false) {
+         if (var10004 == null) {
             var10004 = Registry.packArgs(ConnectHost.G);
             long var14 = 517287540690064504L;
             Ref.h2(517287540690064504L, var14);
@@ -757,7 +757,7 @@ public class Op2 implements DS3_2 {
 
             var10006 = var10006.equals(var10007);
             if (var2 != null) {
-               if (var10006 != false) {
+               if (var10006 == null) {
                   Registry.lookupField(515196784670439221L).setBoolean(var1, true);
                   if (var2 != null) {
                      break label133;
@@ -791,7 +791,7 @@ public class Op2 implements DS3_2 {
                break label135;
             }
 
-            if (var10006 != false) {
+            if (var10006 == null) {
                Registry.lookupField(272512613072180701L).setBoolean(var1, true);
             }
          }
@@ -801,7 +801,7 @@ public class Op2 implements DS3_2 {
 
       label141: {
          if (var2 != null) {
-            if (var10004 != false) {
+            if (var10004 == null) {
                Registry.packArgs(a(-27055, 9344));
                long var22 = 517287540690064504L;
                Object var10005 = Ref.h2(517287540690064504L, var22);
@@ -823,7 +823,7 @@ public class Op2 implements DS3_2 {
             var10004 = Registry.lookupField(272512613072180701L).getBoolean(var1);
          }
 
-         if (var10004 != false) {
+         if (var10004 == null) {
             Registry.packArgs(a(-27041, 2430));
             long var26 = 517287540690064504L;
             Object var58 = Ref.h2(517287540690064504L, var26);

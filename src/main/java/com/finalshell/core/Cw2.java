@@ -6,9 +6,6 @@ import java.io.IOException;
 public class Cw2 implements Y2_3 {
    public static String a;
 
-   Cw2() {
-   }
-
    @Override
    public int u() {
       return 1;

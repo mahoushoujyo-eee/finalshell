@@ -12,9 +12,9 @@ import java.util.Map.Entry;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class D5_2 implements SV {
-   protected com.finalshell.ui.panel.U3 b;
-   protected Map D = new WeakHashMap();
-   protected List d = new ArrayList(1);
+   public com.finalshell.ui.panel.U3 b;
+   public Map D = new WeakHashMap();
+   public List d = new ArrayList(1);
 
    public D5_2(com.finalshell.ui.panel.U3 var1) {
       this.b = var1;
@@ -39,7 +39,7 @@ public class D5_2 implements SV {
       return this.E(Pt2.mixed, false);
    }
 
-   protected List E(Pt2 var1, boolean var2) {
+   public List E(Pt2 var1, boolean var2) {
       String[] var10000 = CB3.C$arrString();
       ArrayList var4 = new ArrayList(this.D.size());
       String[] var3 = var10000;
@@ -139,7 +139,7 @@ public class D5_2 implements SV {
       this.o(var5);
    }
 
-   protected void g(DefaultMutableTreeNode var1, boolean var2, List var3, List var4) {
+   public void g(DefaultMutableTreeNode var1, boolean var2, List var3, List var4) {
       String[] var5;
       Pt2 var7;
       D5_2 var8;
@@ -180,7 +180,7 @@ public class D5_2 implements SV {
       var8.f(var1, var3, var4);
    }
 
-   protected void f(DefaultMutableTreeNode var1, List var2, List var3) {
+   public void f(DefaultMutableTreeNode var1, List var2, List var3) {
       String[] var10000 = CB3.C$arrString();
       DefaultMutableTreeNode var5 = (DefaultMutableTreeNode)var1.getParent();
       String[] var4 = var10000;
@@ -296,7 +296,7 @@ public class D5_2 implements SV {
       }
    }
 
-   protected void h(DefaultMutableTreeNode var1, Pt2 var2, List var3, List var4) {
+   public void h(DefaultMutableTreeNode var1, Pt2 var2, List var3, List var4) {
       String[] var10000 = CB3.C$arrString();
       int var6 = 0;
       String[] var5 = var10000;
@@ -319,7 +319,7 @@ public class D5_2 implements SV {
       }
    }
 
-   protected void g(DefaultMutableTreeNode var1, Pt2 var2, List var3) {
+   public void g(DefaultMutableTreeNode var1, Pt2 var2, List var3) {
       String[] var4 = CB3.C$arrString();
       label14:
       if (var4 != null) {
@@ -539,7 +539,7 @@ public class D5_2 implements SV {
       }
    }
 
-   protected Pt2 k(Pt2 var1) {
+   public Pt2 k(Pt2 var1) {
       switch (Sn2.A[var1.ordinal()]) {
          case 1:
             return Pt2.checked;
@@ -699,7 +699,7 @@ public class D5_2 implements SV {
       this.o(var4);
    }
 
-   protected void I(List var1) {
+   public void I(List var1) {
       String[] var10000 = CB3.C$arrString();
       Iterator var3 = var1.iterator();
       String[] var2 = var10000;
@@ -747,7 +747,7 @@ public class D5_2 implements SV {
       }
    }
 
-   protected boolean E(DefaultMutableTreeNode var1, DefaultMutableTreeNode var2) {
+   public boolean E(DefaultMutableTreeNode var1, DefaultMutableTreeNode var2) {
       String[] var3 = CB3.C$arrString();
       Object var10000 = var1;
       if (var3 != null) {
@@ -787,11 +787,11 @@ public class D5_2 implements SV {
       return false;
    }
 
-   protected void F$void() {
+   public void F$void() {
       this.b.repaint(this.b.getVisibleRect());
    }
 
-   protected void S(List var1) {
+   public void S(List var1) {
       this.b.t(var1);
    }
 

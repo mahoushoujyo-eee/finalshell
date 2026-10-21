@@ -24,10 +24,10 @@ import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 
 public class Bh4 {
-   static String D;
-   static String n;
-   static String O;
-   static String V;
+   public static String D;
+   public static String n;
+   public static String O;
+   public static String V;
    public static String[] a;
    public static String[] b;
    public static long[] c;

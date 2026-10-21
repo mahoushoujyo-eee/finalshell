@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.Ky4;
 import com.finalshell.ui.panel.QS;
 
 public class EY3 extends ES3 {
-   final QS q;
+   public final QS q;
 
-   EY3(QS var1) {
+   public EY3(QS var1) {
       this.q = var1;
    }
 

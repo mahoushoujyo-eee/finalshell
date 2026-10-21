@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class EZ3 implements ActionListener {
-   final Ig2 I;
+   public final Ig2 I;
 
-   EZ3(Ig2 var1) {
+   public EZ3(Ig2 var1) {
       this.I = var1;
    }
 

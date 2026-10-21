@@ -5,9 +5,9 @@ import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 
 public class Ri4 implements AdjustmentListener {
-   final Xm2 d;
+   public final Xm2 d;
 
-   Ri4(Xm2 var1) {
+   public Ri4(Xm2 var1) {
       this.d = var1;
    }
 

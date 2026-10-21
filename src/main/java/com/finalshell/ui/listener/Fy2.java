@@ -3,9 +3,9 @@ package com.finalshell.ui.listener;
 import javax.swing.event.AncestorEvent;
 
 public class Fy2 extends FY {
-   final com.finalshell.ui.panel.Qq2 U;
+   public final com.finalshell.ui.panel.Qq2 U;
 
-   Fy2(com.finalshell.ui.panel.Qq2 var1) {
+   public Fy2(com.finalshell.ui.panel.Qq2 var1) {
       this.U = var1;
    }
 

@@ -1321,7 +1321,7 @@ public class Oo2 extends CharsetDecoder {
    }
 
    @Override
-   protected CoderResult decodeLoop(ByteBuffer var1, CharBuffer var2) {
+   public CoderResult decodeLoop(ByteBuffer var1, CharBuffer var2) {
       Object[] var10001 = Registry.packArgs(var1, var2);
       long var4 = 633854366038463952L;
       Object[] var3 = var10001;
@@ -1334,7 +1334,7 @@ public class Oo2 extends CharsetDecoder {
       }
    }
 
-   static void j(Buffer var0, int var1, Buffer var2, int var3) {
+   public static void j(Buffer var0, int var1, Buffer var2, int var3) {
       var0.position(var1);
       var2.position(var3);
    }

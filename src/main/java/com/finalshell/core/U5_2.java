@@ -6,14 +6,14 @@ import java.awt.event.AWTEventListener;
 import java.awt.event.ComponentAdapter;
 
 public class U5_2 extends Uo2_2 {
-   final com.finalshell.ui.panel.Wd2 j;
-   final AWTEventListener Y;
-   final com.finalshell.ui.panel.Qm2 M;
-   final ComponentAdapter S;
-   final boolean A;
+   public final com.finalshell.ui.panel.Wd2 j;
+   public final AWTEventListener Y;
+   public final com.finalshell.ui.panel.Qm2 M;
+   public final ComponentAdapter S;
+   public final boolean A;
    public static long a;
 
-   U5_2(com.finalshell.ui.panel.Wd2 var1, AWTEventListener var2, com.finalshell.ui.panel.Qm2 var3, ComponentAdapter var4, boolean var5) {
+   public U5_2(com.finalshell.ui.panel.Wd2 var1, AWTEventListener var2, com.finalshell.ui.panel.Qm2 var3, ComponentAdapter var4, boolean var5) {
       this.j = var1;
       this.Y = var2;
       this.M = var3;

@@ -257,7 +257,7 @@ public class KT {
          label52: {
             long var8 = var18;
             int var19 = var5;
-            if (var1 != false) {
+            if (var1 == null) {
                if (var5 <= 3) {
                   break label52;
                }
@@ -266,7 +266,7 @@ public class KT {
                var19 = (var20 = (var3 - var8) / a(29389, 662625468544069988L) - a(29714, 7756531679908411322L)) == 0L ? 0 : (var20 < 0L ? -1 : 1);
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                if (var19 <= 0) {
                   break label52;
                }
@@ -277,7 +277,7 @@ public class KT {
             var5--;
          }
 
-         if (var1 == false) {
+         if (var1 == null) {
             break;
          }
       }
@@ -510,7 +510,7 @@ public class KT {
       return var2;
    }
 
-   static long i(String var0) {
+   public static long i(String var0) {
       Registry.packArgs(var0);
       long var1 = 468568467042766421L;
       Object var10001 = Ref.h2(468568467042766421L, var1);

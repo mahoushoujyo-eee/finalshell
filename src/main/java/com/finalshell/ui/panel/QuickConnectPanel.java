@@ -26,20 +26,20 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class QuickConnectPanel extends JPanel implements Fb2 {
-   com.finalshell.ui.model.Q6 T;
-   boolean N;
-   JScrollPane R;
-   Font D;
-   CL Q;
-   Vn2 t;
+   public com.finalshell.ui.model.Q6 T;
+   public boolean N;
+   public JScrollPane R;
+   public Font D;
+   public CL Q;
+   public Vn2 t;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
    public QuickConnectPanel(CL var1) {
+   super();
       String var10000 = Vn2.C();
-      super();
       String var2 = var10000;
       Registry.lookupField(592149699134044003L).setBoolean(this, false);
       Object var10001 = Registry.lookupField(395970988011231853L).get(null);
@@ -63,7 +63,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       }
 
       if (var2 == null) {
-         if (var10003 != false) {
+         if (var10003 == null) {
             var4 = a(24901, 5010830234171504879L);
          }
 
@@ -79,7 +79,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
 
       label66: {
          if (var2 == null) {
-            if (var10003 == false) {
+            if (var10003 == null) {
                break label66;
             }
 
@@ -233,7 +233,7 @@ public class QuickConnectPanel extends JPanel implements Fb2 {
       }
    }
 
-   void d() {
+   public void d() {
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
       Ref.h2(270389152141252877L, var3);

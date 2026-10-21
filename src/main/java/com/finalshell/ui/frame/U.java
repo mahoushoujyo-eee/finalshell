@@ -143,82 +143,82 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
-   Random hP;
+   public Random hP;
    public static Map m;
    public static KQ y;
    public static JDialog b;
-   int hH;
-   ConnectionProperty hr;
-   int hm;
-   JButton hU;
-   JToggleButton hi;
-   int z;
-   int hv;
-   boolean h4;
+   public int hH;
+   public ConnectionProperty hr;
+   public int hm;
+   public JButton hU;
+   public JToggleButton hi;
+   public int z;
+   public int hv;
+   public boolean h4;
    public static String hI;
-   String hA;
-   UU hG;
-   AE d;
-   float W;
-   int hD;
-   int J;
+   public String hA;
+   public UU hG;
+   public AE d;
+   public float W;
+   public int hD;
+   public int J;
    public static int H;
-   JPanel a;
-   JPanel h0;
-   int v;
-   NetworkMonitorPanel h1;
+   public JPanel a;
+   public JPanel h0;
+   public int v;
+   public NetworkMonitorPanel h1;
    public static Ah2 i;
-   ConnectionProperty hn;
-   Kx4_2 R;
+   public ConnectionProperty hn;
+   public Kx4_2 R;
    public static Ox4 K;
    public static UpdateFrame f;
-   JSplitPane r;
-   Yp4 D;
-   NY F;
-   long X;
-   boolean T;
-   Rectangle Y;
-   Rectangle A;
-   Rectangle B;
-   int t;
-   AM C;
-   Ge2 o;
-   KV Q;
-   F8 P;
-   F5 hp;
-   CT N;
-   CE w;
-   com.finalshell.core.C O;
-   JPanel q;
+   public JSplitPane r;
+   public Yp4 D;
+   public NY F;
+   public long X;
+   public boolean T;
+   public Rectangle Y;
+   public Rectangle A;
+   public Rectangle B;
+   public int t;
+   public AM C;
+   public Ge2 o;
+   public KV Q;
+   public F8 P;
+   public F5 hp;
+   public CT N;
+   public CE w;
+   public com.finalshell.core.C O;
+   public JPanel q;
    public static String j;
    public static String c;
    public static String hY;
-   U1 e;
-   boolean I;
-   JMenu k;
-   JPopupMenu hb;
+   public U1 e;
+   public boolean I;
+   public JMenu k;
+   public JPopupMenu hb;
    public static C5 u;
-   com.finalshell.core.C l;
-   Color s;
-   Color g;
-   RenderingHints h;
-   JPanel ha;
-   JPanel hg;
-   int L;
-   int U;
-   Fx4 Z;
-   M6 hM;
-   GH_2 E;
-   SystemTray hW;
-   TrayIcon V;
-   long hQ;
-   long n;
-   boolean S;
-   static long p;
-   static long hc;
-   int x;
-   int hO;
-   long G;
+   public com.finalshell.core.C l;
+   public Color s;
+   public Color g;
+   public RenderingHints h;
+   public JPanel ha;
+   public JPanel hg;
+   public int L;
+   public int U;
+   public Fx4 Z;
+   public M6 hM;
+   public GH_2 E;
+   public SystemTray hW;
+   public TrayIcon V;
+   public long hQ;
+   public long n;
+   public boolean S;
+   public static long p;
+   public static long hc;
+   public int x;
+   public int hO;
+   public long G;
    public static String M;
    public static String[] ab;
    public static String[] bb;
@@ -228,8 +228,8 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
    public static Long[] fb;
 
    public U() {
+   super((String)Registry.lookupField(621025023751330046L).get(null));
       short var10000 = 1449;
-      super((String)Registry.lookupField(621025023751330046L).get(null));
       short var10001 = -14990;
       Random var10003 = new Random();
       long var2 = 333157993979426081L;
@@ -299,7 +299,7 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
       }
    }
 
-   void a(boolean var1) {
+   public void a(boolean var1) {
       String[] var10000 = F8.y();
       long var3 = System.currentTimeMillis();
       String[] var2 = var10000;
@@ -424,7 +424,7 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
       }
 
       if (var2 == null) {
-         if (var96 != false) {
+         if (var96 == null) {
             this.setExtendedState(this.getExtendedState() | a(1289, 6556516967129669109L));
          }
 
@@ -496,7 +496,7 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
             }
          }
 
-         if (var99 == 0) {
+         if (var99 == null) {
             Object var35 = 575209039576190599L;
             ((Yp4)Ref.g(575209039576190599L, var35)).removeAll();
             Object var37 = 575209039576190599L;
@@ -802,7 +802,7 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
       }
    }
 
-   void f() {
+   public void f() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1877,7 +1877,7 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
    }
 
    @Override
-   protected void processWindowEvent(WindowEvent var1) {
+   public void processWindowEvent(WindowEvent var1) {
       String[] var2 = F8.y();
       if (var2 == null) {
          Registry.emptyArgs();
@@ -1939,22 +1939,22 @@ public class U extends JFrame implements CS3_2, Ms2, AL, Fb2 {
       Ref.s(575209039576190599L, var1, var3);
    }
 
-   void u$void() {
+   public void u$void() {
       Registry.lookupField(383251759444111355L).setLong(null, System.currentTimeMillis());
    }
 
-   void V() {
+   public void V() {
       ((Hashtable)Registry.lookupField(437649544414018819L).get(null))
          .put(Registry.lookupField(304769639644063862L).getInt(null), b(6827, 7846952360063419587L));
    }
 
-   void j() {
+   public void j() {
       String[] var10000 = F8.y();
       long var2 = System.currentTimeMillis() - Registry.lookupField(193840005716781234L).getLong(this);
       String[] var1 = var10000;
       if (var1 == null) {
          if (var2 >= 0L && var2 < b(6843, 491614487839655127L)) {
-new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this, ((Rectangle)Ref.g(620488187317011732L, var10)).height);
+
 
 
 
@@ -1978,7 +1978,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
       }
    }
 
-   void A() {
+   public void A() {
       F8.y();
       Registry.emptyArgs();
       long var4 = 270389152141252877L;
@@ -2524,7 +2524,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
 
       var10001 = var10001.getClass().equals(ConnectionProperty.class);
       if (var1 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             if (var1 == null) {
                Object var21 = 208444474277099894L;
                if ((ConnectionProperty)Ref.g(208444474277099894L, var21) != null) {
@@ -2644,7 +2644,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
       }
 
       if (var1 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var55 = 130734847106351886L;
             Ref.g(130734847106351886L, var55);
             KV var187 = (KV)(Registry.emptyArgs());
@@ -2744,7 +2744,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
       }
 
       if (var1 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var79 = 308804367364433353L;
             Ref.g(308804367364433353L, var79);
             ConnectionProperty var190 = (ConnectionProperty)(Registry.emptyArgs());
@@ -2829,7 +2829,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
       }
 
       if (var1 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var101 = 395703699466617837L;
             Ref.g(395703699466617837L, var101);
             ConnectionProperty var193 = (ConnectionProperty)(Registry.emptyArgs());
@@ -2888,7 +2888,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
 
       label406: {
          if (var1 == null) {
-            if (var10001 != false) {
+            if (var10001 == null) {
                Object var117 = 456220523169412016L;
                Ref.g(456220523169412016L, var117);
                ConnectionProperty var196 = (ConnectionProperty)(Registry.emptyArgs());
@@ -2976,7 +2976,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
             ((F8)Ref.g(395703699466617837L, var137)).getClass().equals(CL.class);
          }
 
-         if (var10001 == false) {
+         if (var10001 == null) {
             return;
          }
 
@@ -3009,7 +3009,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
       }
    }
 
-   JSplitPane l(JFrame var1) {
+   public JSplitPane l(JFrame var1) {
       AE var10001 = new AE(0);
       long var12 = 132798821314429637L;
       AE var11 = var10001;
@@ -3220,7 +3220,7 @@ new QP((int)this, ((Rectangle)Ref.g(620488187317011732L, var8)).width, (int)this
       var5.setForeground(new Color(a(17215, 5362272149277547463L), a(17215, 5362272149277547463L), a(17215, 5362272149277547463L)));
       Y12_2 var10055;
       Object var119 = 337860688004803931L;
-new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
+var5 = new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       Y12_2 var6 = var10055;
       var5.addMouseListener(new Y4(this, var6, var5));
       Registry.emptyArgs();
@@ -3414,7 +3414,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
 
       if (var3 == null) {
-         if (var10003 == false) {
+         if (var10003 == null) {
             Object[] var10004 = Registry.emptyArgs();
             long var14 = 406843505159214218L;
             Object[] var13 = var10004;
@@ -3433,7 +3433,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       label166: {
          label167: {
             if (var3 == null) {
-               if (var10003 != false) {
+               if (var10003 == null) {
                   ConnectionProperty var6 = (ConnectionProperty)var4;
                   if (var6 != null) {
                      Object[] var73 = Registry.emptyArgs();
@@ -3464,7 +3464,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
                break label166;
             }
 
-            if (var10003 != false) {
+            if (var10003 == null) {
                CE var63 = (CE)var4;
                var10003 = var1;
                Object[] var76 = Registry.emptyArgs();
@@ -3525,7 +3525,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       Object var64 = var10003;
       var10003 = (Object[])var64;
       if (var3 == null) {
-         if (var64 == false) {
+         if (var64 == null) {
             long var30 = 208444474277099894L;
             Object var29 = null;
             Ref.s(208444474277099894L, var29, var30);
@@ -3569,7 +3569,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
 
       if (var3 == null) {
-         if (var10003 == false) {
+         if (var10003 == null) {
             Object[] var80 = Registry.packArgs(false);
             long var46 = 394729994862123299L;
             Object[] var45 = var80;
@@ -3586,7 +3586,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
 
       if (var3 == null) {
-         if (var10003 != false) {
+         if (var10003 == null) {
             return;
          }
 
@@ -3604,12 +3604,12 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
          }
       }
 
-      if (var10003 == false) {
+      if (var10003 == null) {
          SwingUtilities.invokeLater(new No2_2(this));
       }
    }
 
-   void G(boolean var1) {
+   public void G(boolean var1) {
       if (!var1) {
          Object var2 = 357928268534803218L;
          ((Ge2)Ref.g(357928268534803218L, var2)).setBorder(null);
@@ -3727,7 +3727,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
    }
 
-   void V(Y9 var1) {
+   public void V(Y9 var1) {
       String[] var2 = F8.y();
       if (var2 == null) {
          Object var8 = 498692346592337143L;
@@ -3786,7 +3786,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             Object var22 = 395703699466617837L;
             U var10007 = ((F8)Ref.g(395703699466617837L, var22)).getClass().equals(ConnectionProperty.class);
             if (var2 == null) {
-               if (var10007 != false) {
+               if (var10007 == null) {
                   Object var24 = 498692346592337143L;
                   Ref.g(498692346592337143L, var24);
                   Object[] var181 = Registry.emptyArgs();
@@ -3901,7 +3901,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
 
             if (var2 == null) {
-               if (var10007 != false) {
+               if (var10007 == null) {
                   Object var56 = 132798821314429637L;
                   int var7 = ((AE)Ref.g(132798821314429637L, var56)).getHeight() - var6;
                   Object var58 = 132798821314429637L;
@@ -3965,7 +3965,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
 
             if (var2 == null) {
-               if (var10007 != false) {
+               if (var10007 == null) {
                   long var81 = 208444474277099894L;
                   Object var80 = null;
                   Ref.s(208444474277099894L, var80, var81);
@@ -3997,7 +3997,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
 
             if (var2 == null) {
-               if (var10007 != false) {
+               if (var10007 == null) {
                   Object var92 = 132798821314429637L;
                   int var176 = ((AE)Ref.g(132798821314429637L, var92)).getHeight() - var6;
                   Object var94 = 132798821314429637L;
@@ -4061,7 +4061,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
             }
 
             if (var2 == null) {
-               if (var10007 == false) {
+               if (var10007 == null) {
                   break label309;
                }
 
@@ -4188,7 +4188,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
    }
 
-   void w(YX3 var1) {
+   public void w(YX3 var1) {
       Object var2 = 270752363788326463L;
       ((UU)Ref.g(270752363788326463L, var2)).removeAll();
       Object var4 = 270752363788326463L;
@@ -4197,7 +4197,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       ((UU)Ref.g(270752363788326463L, var6)).validate();
    }
 
-   void t(DG3 var1) {
+   public void t(DG3 var1) {
       Object var2 = 270752363788326463L;
       ((UU)Ref.g(270752363788326463L, var2)).removeAll();
       Object var4 = 270752363788326463L;
@@ -4206,7 +4206,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       ((UU)Ref.g(270752363788326463L, var6)).validate();
    }
 
-   void L(FY3 var1) {
+   public void L(FY3 var1) {
       Object var2 = 270752363788326463L;
       ((UU)Ref.g(270752363788326463L, var2)).removeAll();
       Object var4 = 270752363788326463L;
@@ -4215,7 +4215,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       ((UU)Ref.g(270752363788326463L, var6)).validate();
    }
 
-   void L(FilePanel var1) {
+   public void L(FilePanel var1) {
       Object var2 = 270752363788326463L;
       ((UU)Ref.g(270752363788326463L, var2)).removeAll();
       Object var4 = 270752363788326463L;
@@ -4224,7 +4224,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       ((UU)Ref.g(270752363788326463L, var6)).validate();
    }
 
-   void d$void() {
+   public void d$void() {
       Object var1 = 270752363788326463L;
       ((UU)Ref.g(270752363788326463L, var1)).removeAll();
       Object var3 = 270752363788326463L;
@@ -4260,7 +4260,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
       }
    }
 
-   void l$void() {
+   public void l$void() {
       boolean var1 = false;
       Object var2 = null;
    }
@@ -4573,7 +4573,7 @@ new RenderingHints(this, (JPopupMenu)Ref.g(337860688004803931L, var119));
          throw var26.getTargetException();
       }
 
-new Random(var10005.p());
+var10004 = new Random(var10005.p());
       var10002.setBackground(this);
       FilePanel var4 = new FilePanel(var3);
       String[] var27 = F8.y();
@@ -4794,7 +4794,7 @@ new Random(var10005.p());
                ConnectionProperty var7 = (ConnectionProperty)var22;
                var10003 = var7.R();
                if (var1 == null) {
-                  if (var10003 == false) {
+                  if (var10003 == null) {
                      break label58;
                   }
 
@@ -4954,7 +4954,7 @@ new Random(var10005.p());
          throw var47.getTargetException();
       }
 
-new U((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)var7);
+var65 = new U((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)var7);
       boolean var10005 = var1.v$boolean();
       if (var4 == null) {
          if (var10005) {
@@ -5091,7 +5091,7 @@ new U((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)var7);
       var2.C$void();
    }
 
-   JPopupMenu o$JPopupMenu() {
+   public JPopupMenu o$JPopupMenu() {
       label32: {
          String[] var1 = F8.y();
          Object var19 = 337860688004803931L;
@@ -5253,7 +5253,7 @@ new U((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)var7);
       return var10000;
    }
 
-   void x$void() {
+   public void x$void() {
       F8.y();
       a(1417, 13786);
       Object[] var10004 = Registry.emptyArgs();
@@ -5274,7 +5274,7 @@ new U((String)var7, (int)var70, (String)var7, var10010, (Lv4_2)var7);
          throw var33.getTargetException();
       }
 
-new RenderingHints(var10006, var37);
+var10005 = new RenderingHints(var10006, var37);
       Object[] var2 = var10004;
       Object var12 = 433205011082801842L;
       ((JMenu)Ref.g(433205011082801842L, var12)).add(var2);
@@ -5311,7 +5311,7 @@ new RenderingHints(var10006, var37);
          throw var31.getTargetException();
       }
 
-new RenderingHints(var3, var43);
+var10009 = new RenderingHints(var3, var43);
       JCheckBoxMenuItem var4 = var10008;
       Object var22 = 433205011082801842L;
       ((JMenu)Ref.g(433205011082801842L, var22)).add((JMenuItem)var4);
@@ -5341,7 +5341,7 @@ new RenderingHints(var3, var43);
       var5.setEnabled(false);
    }
 
-   void I(boolean var1) {
+   public void I(boolean var1) {
       String[] var2;
       label43: {
          var2 = F8.y();
@@ -5595,7 +5595,7 @@ new RenderingHints(var3, var43);
       var10006.O$pA_3().requestFocus();
    }
 
-   void K() {
+   public void K() {
       F8.y();
       Registry.emptyArgs();
       long var7 = 270389152141252877L;
@@ -5909,7 +5909,7 @@ new RenderingHints(var3, var43);
       Ref.s(493158471773442262L, var1, var3);
    }
 
-   void v(String var1) {
+   public void v(String var1) {
       try {
          Desktop.getDesktop().browse(new URI(var1));
       } catch (IOException var3) {
@@ -5919,7 +5919,7 @@ new RenderingHints(var3, var43);
       }
    }
 
-   boolean U() {
+   public boolean U() {
       String[] var1 = F8.y();
       int var10000 = Registry.lookupField(563734721953453048L).getInt(this);
       if (var1 == null) {
@@ -5929,7 +5929,7 @@ new RenderingHints(var3, var43);
       return var10000 != 0;
    }
 
-   void W() {
+   public void W() {
       XT3 var1 = new XT3(0);
       var1.setOpaque(false);
       var1.setLayout(new MigLayout(a(1451, 22061), a(1421, -29208), ""));
@@ -6053,7 +6053,7 @@ new RenderingHints(var3, var43);
       return (KQ)Registry.lookupField(199832172921665052L).get(null);
    }
 
-   KD x(String var1) {
+   public KD x(String var1) {
       KD var2 = new KD(var1);
       Registry.packArgs(var2);
       long var3 = 560784054776466487L;
@@ -6331,7 +6331,7 @@ new RenderingHints(var3, var43);
       }
    }
 
-   void z(ConnectionProperty param1) {
+   public void z(ConnectionProperty param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

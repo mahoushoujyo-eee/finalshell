@@ -19,8 +19,8 @@ public class In4 {
    public static long b;
 
    public In4(@NotNull YP var1, @NotNull KO var2) {
+   super();
       boolean var10000 = YA3.w();
-      super();
       this.Z = var1;
       this.n = var2;
       this.e = new ArrayList();

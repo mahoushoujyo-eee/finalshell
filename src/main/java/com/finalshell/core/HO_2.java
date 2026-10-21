@@ -522,7 +522,7 @@ public class HO_2 extends F2_4 implements O2_5 {
    }
 
    @C_9
-   protected Nt2_2 D(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
+   public Nt2_2 D(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
       try {
          if (var2 == null) {
             return null;
@@ -534,11 +534,11 @@ public class HO_2 extends F2_4 implements O2_5 {
       return this.S(var1, var2);
    }
 
-   protected Nt2_2 S(com.finalshell.ui.model.I var1, java.lang.Class var2) {
+   public Nt2_2 S(com.finalshell.ui.model.I var1, java.lang.Class var2) {
       return new Nb2_3(this, var1, var2, var1);
    }
 
-   protected Nt2_2[] J(com.finalshell.ui.model.I param1, @C_9 java.lang.Class[] param2) {
+   public Nt2_2[] J(com.finalshell.ui.model.I param1, @C_9 java.lang.Class[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -592,7 +592,7 @@ public class HO_2 extends F2_4 implements O2_5 {
       // 4f: areturn
    }
 
-   protected final ClassLoader a(RB var1) throws B2_5 {
+   public final ClassLoader a(RB var1) throws B2_5 {
       this.T(var1);
       return this.Y();
    }
@@ -641,15 +641,15 @@ public class HO_2 extends F2_4 implements O2_5 {
       // 2e: areturn
    }
 
-   static boolean p$boolean() {
+   public static boolean p$boolean() {
       return s;
    }
 
-   static ClassLoader E(HO_2 var0) {
+   public static ClassLoader E(HO_2 var0) {
       return var0.D;
    }
 
-   static C_m_2 P(HO_2 var0) {
+   public static C_m_2 P(HO_2 var0) {
       return var0.W;
    }
 

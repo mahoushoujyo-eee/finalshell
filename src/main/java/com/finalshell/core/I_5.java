@@ -8,9 +8,6 @@ public class I_5 extends N2_4 {
    public static long[] a;
    public static Integer[] b;
 
-   I_5() {
-   }
-
    @Override
    public void v(char var1) {
       boolean var2;

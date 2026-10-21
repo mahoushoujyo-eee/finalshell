@@ -11,29 +11,29 @@ public class P42 {
    public final int a;
    public int z;
    public int D;
-   int h;
-   int Z;
-   int V;
-   int X;
-   int[] d;
-   int[] J;
-   int H;
-   int L;
-   boolean G;
-   int U;
-   int W;
-   int m;
-   int I;
-   int Q;
-   int[] B;
-   int R;
-   byte[] f;
+   public int h;
+   public int Z;
+   public int V;
+   public int X;
+   public int[] d;
+   public int[] J;
+   public int H;
+   public int L;
+   public boolean G;
+   public int U;
+   public int W;
+   public int m;
+   public int I;
+   public int Q;
+   public int[] B;
+   public int R;
+   public byte[] f;
    public static long[] b;
    public static Integer[] c;
 
-   P42(int var1, int var2, byte[] var3, int var4) {
+   public P42(int var1, int var2, byte[] var3, int var4) {
+   super();
       Ky4[] var10000 = Kj4.d();
-      super();
       this.Z = a(23188, 7711734704620450771L);
       this.X = a(432, 2357350484718938362L);
       Ky4[] var5 = var10000;
@@ -73,7 +73,7 @@ public class P42 {
       }
    }
 
-   void i(byte param1, OutputStream param2) throws IOException {
+   public void i(byte param1, OutputStream param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -115,14 +115,14 @@ public class P42 {
       // 3c: return
    }
 
-   void t(OutputStream var1) throws IOException {
+   public void t(OutputStream var1) throws IOException {
       this.C(this.H);
       this.L = this.W + 2;
       this.G = true;
       this.x(this.W, var1);
    }
 
-   void C(int var1) {
+   public void C(int var1) {
       Ky4[] var10000 = Kj4.d();
       int var3 = 0;
       Ky4[] var2 = var10000;
@@ -136,7 +136,7 @@ public class P42 {
       }
    }
 
-   void O(int param1, OutputStream param2) throws IOException {
+   public void O(int param1, OutputStream param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -381,7 +381,7 @@ public class P42 {
       // 1bf: return
    }
 
-   void e(OutputStream var1) throws IOException {
+   public void e(OutputStream var1) throws IOException {
       var1.write(this.a);
       this.z = this.g * this.x;
       this.D = 0;
@@ -389,7 +389,7 @@ public class P42 {
       var1.write(0);
    }
 
-   void H(OutputStream param1) throws IOException {
+   public void H(OutputStream param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -428,7 +428,7 @@ public class P42 {
       // 37: return
    }
 
-   final int t(int var1) {
+   public final int t(int var1) {
       return (1 << var1) - 1;
    }
 
@@ -448,7 +448,7 @@ public class P42 {
       return var2 & a(9476, 4430856160928123988L);
    }
 
-   void x(int param1, OutputStream param2) throws IOException {
+   public void x(int param1, OutputStream param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

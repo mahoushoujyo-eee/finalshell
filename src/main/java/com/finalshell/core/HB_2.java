@@ -4,13 +4,13 @@ public class HB_2 extends Hq2 {
    public int t;
    public F9 g;
    public final FU G;
-   final B3_2 K;
+   public final B3_2 K;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   HB_2(B3_2 var1, int var2, FU var3) {
+   public HB_2(B3_2 var1, int var2, FU var3) {
       super(var1, null);
       this.K = var1;
       this.t = var2;
@@ -716,11 +716,11 @@ public class HB_2 extends Hq2 {
       // 1de: return
    }
 
-   static F9 F(HB_2 var0) {
+   public static F9 F(HB_2 var0) {
       return var0.g;
    }
 
-   static FU y(HB_2 var0) {
+   public static FU y(HB_2 var0) {
       return var0.G;
    }
 

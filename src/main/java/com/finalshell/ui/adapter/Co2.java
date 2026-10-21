@@ -10,7 +10,7 @@ import javax.swing.AbstractAction;
 import javax.swing.KeyStroke;
 
 public class Co2 extends AbstractAction {
-   final TextEditorFrame g;
+   public final TextEditorFrame g;
    public static String[] a;
    public static String[] b;
    public static long c;

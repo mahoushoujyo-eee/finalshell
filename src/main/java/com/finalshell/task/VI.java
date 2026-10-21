@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class VI implements Runnable {
-   final MT h;
+   public final MT h;
 
-   VI(MT var1) {
+   public VI(MT var1) {
       this.h = var1;
    }
 

@@ -5,9 +5,9 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 public class Li2 implements FocusListener {
-   final Hl2 O;
+   public final Hl2 O;
 
-   Li2(Hl2 var1) {
+   public Li2(Hl2 var1) {
       this.O = var1;
    }
 

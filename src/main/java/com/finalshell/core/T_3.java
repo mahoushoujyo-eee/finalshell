@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class T_3 implements X_2_3 {
-   final K2_3 T;
+   public final K2_3 T;
 
-   T_3(K2_3 var1) {
+   public T_3(K2_3 var1) {
       this.T = var1;
    }
 

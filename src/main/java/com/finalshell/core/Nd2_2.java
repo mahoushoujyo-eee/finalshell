@@ -15,15 +15,15 @@ import javax.swing.JTable;
 import javax.swing.table.TableModel;
 
 public class Nd2_2 extends JTable {
-   ExtranetAddressModel n;
-   Nd2_2 L;
-   AccelerateRdpHelpPanel Q;
+   public ExtranetAddressModel n;
+   public Nd2_2 L;
+   public AccelerateRdpHelpPanel Q;
    public static long[] a;
    public static Integer[] b;
 
-   Nd2_2(AccelerateRdpHelpPanel var1, ExtranetAddressModel var2) {
+   public Nd2_2(AccelerateRdpHelpPanel var1, ExtranetAddressModel var2) {
+   super();
       short var10000 = 8677;
-      super();
       long var10001 = 1894970607044380565L;
       long var7 = 425022080861781771L;
       Ref.s(425022080861781771L, var2, var7);
@@ -60,7 +60,7 @@ public class Nd2_2 extends JTable {
       this.addMouseListener(new UB(this));
    }
 
-   void p() {
+   public void p() {
       int var1 = this.getSelectedRow();
       int var2 = this.convertRowIndexToModel(var1);
       Object[] var10001 = Registry.emptyArgs();

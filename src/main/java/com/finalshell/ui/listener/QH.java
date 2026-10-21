@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class QH extends MouseAdapter {
-   final ClearListDialog w;
+   public final ClearListDialog w;
 
-   QH(ClearListDialog var1) {
+   public QH(ClearListDialog var1) {
       this.w = var1;
    }
 

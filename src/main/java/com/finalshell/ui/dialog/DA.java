@@ -25,7 +25,7 @@ public class DA extends E {
    public final Ne4 C;
    public final R6 h;
    public final UE t;
-   final SW d;
+   public final SW d;
    public static String[] e;
    public static String[] g;
    public static long[] m;
@@ -96,11 +96,11 @@ public class DA extends E {
    }
 
    @Override
-   protected ImageIcon W(int var1) {
+   public ImageIcon W(int var1) {
       return SW.k;
    }
 
-   static Ne4 l(DA var0) {
+   public static Ne4 l(DA var0) {
       return var0.C;
    }
 

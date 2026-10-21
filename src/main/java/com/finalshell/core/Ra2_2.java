@@ -3,7 +3,7 @@ package com.finalshell.core;
 public final class Ra2_2 extends R8_2 {
    public final NV_2 t;
    public final C_r_2 u;
-   short o = -1;
+   public short o = -1;
    public static String[] d;
    public static String[] e;
 

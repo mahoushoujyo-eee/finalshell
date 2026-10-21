@@ -14,16 +14,16 @@ import javax.swing.plaf.ScrollPaneUI;
 import javax.swing.plaf.basic.BasicComboPopup;
 
 public class C_4 extends BasicComboPopup {
-   final M3 Z;
+   public final M3 Z;
    public static String a;
 
-   C_4(M3 var1, JComboBox var2) {
+   public C_4(M3 var1, JComboBox var2) {
       super(var2);
       this.Z = var1;
    }
 
    @Override
-   protected JScrollPane createScroller() {
+   public JScrollPane createScroller() {
       Ky4[] var1;
       JScrollPane var2;
       label27: {
@@ -66,7 +66,7 @@ public class C_4 extends BasicComboPopup {
    }
 
    @Override
-   protected JList createList() {
+   public JList createList() {
       Ky4[] var10000 = M3.X();
       JList var2 = super.createList();
       Ky4[] var1 = var10000;
@@ -85,7 +85,7 @@ public class C_4 extends BasicComboPopup {
    }
 
    @Override
-   protected void configurePopup() {
+   public void configurePopup() {
       super.configurePopup();
       this.addPopupMenuListener(new com.finalshell.ui.listener.N2(this));
    }
@@ -151,15 +151,15 @@ public class C_4 extends BasicComboPopup {
       return var5.getLocation();
    }
 
-   static JComboBox L(C_4 var0) {
+   public static JComboBox L(C_4 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox O(C_4 var0) {
+   public static JComboBox O(C_4 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox C(C_4 var0) {
+   public static JComboBox C(C_4 var0) {
       return var0.comboBox;
    }
 

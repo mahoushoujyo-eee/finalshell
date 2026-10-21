@@ -36,7 +36,7 @@ public class GX3 extends Gj4 {
    }
 
    @Override
-   protected void D() {
+   public void D() {
       String[] var1;
       label38: {
          String[] var10000 = W5.q();

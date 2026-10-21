@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.awt.event.ActionEvent;
 
 public class F5 implements O22_2 {
-   final com.finalshell.ui.dialog.S3 L;
+   public final com.finalshell.ui.dialog.S3 L;
 
-   F5(com.finalshell.ui.dialog.S3 var1) {
+   public F5(com.finalshell.ui.dialog.S3 var1) {
       this.L = var1;
    }
 

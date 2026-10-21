@@ -13,14 +13,14 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class YN3 implements MouseListener {
-   final AM P;
-   final T32 R;
-   final boolean z;
-   final Bq2 h;
+   public final AM P;
+   public final T32 R;
+   public final boolean z;
+   public final Bq2 h;
    public static long[] a;
    public static Long[] b;
 
-   YN3(Bq2 var1, AM var2, T32 var3, boolean var4) {
+   public YN3(Bq2 var1, AM var2, T32 var3, boolean var4) {
       this.h = var1;
       this.P = var2;
       this.R = var3;
@@ -1545,7 +1545,7 @@ public class YN3 implements MouseListener {
 
       label99: {
          if (this == null) {
-            if (var10010 == false) {
+            if (var10010 == null) {
                return;
             }
 
@@ -1567,7 +1567,7 @@ public class YN3 implements MouseListener {
             }
          }
 
-         if (var10010 != false) {
+         if (var10010 == null) {
             return;
          }
 

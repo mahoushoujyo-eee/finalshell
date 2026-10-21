@@ -8,9 +8,6 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class G1 implements PropertyChangeListener {
-   G1() {
-   }
-
    @Override
    public void propertyChange(PropertyChangeEvent var1) {
       Ky4[] var2 = Fr2_2.M();

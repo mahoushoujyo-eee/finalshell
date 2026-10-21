@@ -4,9 +4,9 @@ import com.finalshell.core.Xs2;
 import javax.swing.event.AncestorEvent;
 
 public class F1 extends FY {
-   final Xs2 b;
+   public final Xs2 b;
 
-   F1(Xs2 var1) {
+   public F1(Xs2 var1) {
       this.b = var1;
    }
 

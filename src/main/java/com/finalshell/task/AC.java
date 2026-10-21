@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class AC implements Runnable {
-   final Km2 i;
+   public final Km2 i;
 
-   AC(Km2 var1) {
+   public AC(Km2 var1) {
       this.i = var1;
    }
 

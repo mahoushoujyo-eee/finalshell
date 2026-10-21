@@ -6,9 +6,6 @@ public class Qf2 extends Qi2 {
    public static String a;
    public static long d;
 
-   Qf2() {
-   }
-
    @Override
    public void Q(ConnectHost var1, Dm4 var2) throws Exception {
       UJ var7;

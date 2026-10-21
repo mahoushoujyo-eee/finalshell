@@ -36,8 +36,8 @@ import javax.swing.JComponent;
 import javax.swing.JDialog;
 
 public class Y2 extends JDialog implements Pj2, Au2, CX3_2, Eh2, W_3 {
-   protected boolean a = false;
-   protected C42 l;
+   public boolean a = false;
+   public C42 l;
    public static int[] D;
 
    public Y2() {
@@ -139,7 +139,7 @@ public class Y2 extends JDialog implements Pj2, Au2, CX3_2, Eh2, W_3 {
       this.j$void();
    }
 
-   protected void j$void() {
+   public void j$void() {
       com.finalshell.core.FN.Y(this);
       this.setDefaultCloseOperation(2);
       this.l = new O2_2(this, true);
@@ -555,7 +555,7 @@ public class Y2 extends JDialog implements Pj2, Au2, CX3_2, Eh2, W_3 {
       return this.Z(var1);
    }
 
-   static void X(Y2 var0, WindowEvent var1) {
+   public static void X(Y2 var0, WindowEvent var1) {
       var0.processWindowEvent(var1);
    }
 

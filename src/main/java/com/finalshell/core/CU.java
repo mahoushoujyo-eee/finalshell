@@ -4,12 +4,12 @@ import java.net.InetAddress;
 
 public class CU {
    public Qm2 f;
-   InetAddress x;
-   int e;
-   Rdp2 a;
-   boolean v = false;
+   public InetAddress x;
+   public int e;
+   public Rdp2 a;
+   public boolean v = false;
 
-   CU(Qm2 var1) {
+   public CU(Qm2 var1) {
       this.f = var1;
       this.x = var1.c;
       this.e = var1.i;

@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class A1_2 {
-   protected float[] D;
-   protected float[] U;
-   protected float[] c;
+   public float[] D;
+   public float[] U;
+   public float[] c;
 
    public A1_2(int var1) {
       this.D = new float[var1];

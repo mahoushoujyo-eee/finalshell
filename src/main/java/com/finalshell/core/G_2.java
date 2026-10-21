@@ -52,7 +52,7 @@ public class G_2 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       return new StringSelection(this.K());
    }
 }

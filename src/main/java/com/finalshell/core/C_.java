@@ -15,12 +15,12 @@ import java.util.Map;
 public class C_ extends Y_3 {
    public final List L;
 
-   C_(short var1) {
+   public C_(short var1) {
       super(var1);
       this.L = new ArrayList();
    }
 
-   C_(short var1, V2_3[] var2) {
+   public C_(short var1, V2_3[] var2) {
       super(var1);
       this.L = new ArrayList<>(Arrays.asList(var2));
    }
@@ -94,7 +94,7 @@ public class C_ extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeShort(this.L.size());
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       Iterator var3 = this.L.iterator();
@@ -109,15 +109,15 @@ public class C_ extends Y_3 {
       }
    }
 
-   static List j(C_ var0) {
+   public static List j(C_ var0) {
       return var0.L;
    }
 
-   static Y_3 d(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 d(short var0, DataInputStream var1) throws IOException {
       return q(var0, var1);
    }
 
-   static V2_3 i(DataInputStream var0) throws IOException {
+   public static V2_3 i(DataInputStream var0) throws IOException {
       return q(var0);
    }
 

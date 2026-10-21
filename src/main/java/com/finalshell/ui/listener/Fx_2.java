@@ -6,10 +6,10 @@ import com.finalshell.ui.panel.QL;
 import javax.swing.event.AncestorEvent;
 
 public class Fx_2 extends FY {
-   final ZU L;
-   final QL E;
+   public final ZU L;
+   public final QL E;
 
-   Fx_2(QL var1, ZU var2) {
+   public Fx_2(QL var1, ZU var2) {
       this.E = var1;
       this.L = var2;
    }

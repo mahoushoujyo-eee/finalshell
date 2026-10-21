@@ -14,10 +14,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JRadioButton;
 
 public class B5_2 implements Icon {
-   final JRadioButton Z;
-   final com.finalshell.ui.listener.C4 t;
+   public final JRadioButton Z;
+   public final com.finalshell.ui.listener.C4 t;
 
-   B5_2(com.finalshell.ui.listener.C4 var1, JRadioButton var2) {
+   public B5_2(com.finalshell.ui.listener.C4 var1, JRadioButton var2) {
       this.t = var1;
       this.Z = var2;
    }

@@ -13,15 +13,15 @@ public abstract class N6_2 extends Nk2_3 implements B_2_3, RO {
    @C_9
    public final List H;
    @C_9
-   Q4_3 s;
+   public Q4_3 s;
    @C_9
    public Map i;
    public static String[] d;
    public static String[] e;
 
    public N6_2(com.finalshell.ui.model.I var1, @C_9 String var2, Fu2_2[] var3, Nt2_2 var4, String var5, RJ_2 var6, Nt2_2[] var7, @C_9 List var8) {
+   super(var1, var3);
       String[] var10000 = RG_2.C();
-      super(var1, var3);
       this.m = var2;
       this.f = var4;
       this.P = var5;
@@ -180,7 +180,7 @@ public abstract class N6_2 extends Nk2_3 implements B_2_3, RO {
       if (var1 == null) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 != -1 ? 1 : 0);
+         return (boolean)((var2 != -1 ? 1 : 0) != 0);
       }
    }
 

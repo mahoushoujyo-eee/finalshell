@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.security.PrivilegedAction;
 
 public class A_2_2 implements PrivilegedAction {
-   final Rh2_2 k;
+   public final Rh2_2 k;
 
-   A_2_2(Rh2_2 var1) {
+   public A_2_2(Rh2_2 var1) {
       this.k = var1;
    }
 

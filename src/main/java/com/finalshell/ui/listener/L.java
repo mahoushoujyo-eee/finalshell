@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import javax.swing.JPopupMenu;
 
 public class L implements ActionListener {
-   final FX3 l;
-   final String Q;
-   final JPopupMenu h;
-   final com.finalshell.ui.panel.W8 L;
-   final SelectDownloadFolderPanel n;
+   public final FX3 l;
+   public final String Q;
+   public final JPopupMenu h;
+   public final com.finalshell.ui.panel.W8 L;
+   public final SelectDownloadFolderPanel n;
    public static long a;
 
-   L(SelectDownloadFolderPanel var1, FX3 var2, String var3, JPopupMenu var4, com.finalshell.ui.panel.W8 var5) {
+   public L(SelectDownloadFolderPanel var1, FX3 var2, String var3, JPopupMenu var4, com.finalshell.ui.panel.W8 var5) {
       this.n = var1;
       this.l = var2;
       this.Q = var3;

@@ -61,7 +61,7 @@ public abstract class Hd2 implements C_f_2 {
    @C_9
    public H4_2[] W;
    public static H4_2[] u;
-   static boolean N;
+   public static boolean N;
    public static String[] i;
    public static String[] w;
    public static long[] L;
@@ -99,7 +99,7 @@ public abstract class Hd2 implements C_f_2 {
       // 28: areturn
    }
 
-   protected abstract C_J[] V$arr_J() throws B2_5;
+   public abstract C_J[] V$arr_J() throws B2_5;
 
    public final Hv2_2[] e() {
       String[] var1 = RG_2.C();
@@ -115,7 +115,7 @@ public abstract class Hd2 implements C_f_2 {
       return var10000;
    }
 
-   protected abstract Hv2_2[] C();
+   public abstract Hv2_2[] C();
 
    public final HP_2[] j$arrhP() {
       String[] var1 = RG_2.C();
@@ -131,7 +131,7 @@ public abstract class Hd2 implements C_f_2 {
       return var10000;
    }
 
-   protected abstract HP_2[] H();
+   public abstract HP_2[] H();
 
    public final HP_2[] q(String var1) {
       String[] var2;
@@ -664,11 +664,11 @@ public abstract class Hd2 implements C_f_2 {
       return (U3_3)this.V$Map().get(var1);
    }
 
-   protected void z$void() {
+   public void z$void() {
       this.R = null;
    }
 
-   protected abstract U3_3[] A$arru_3();
+   public abstract U3_3[] A$arru_3();
 
    public U3_3[] I() {
       return new U3_3[0];
@@ -706,7 +706,7 @@ public abstract class Hd2 implements C_f_2 {
       // 28: areturn
    }
 
-   protected abstract Hd2[] j$arrhd_2() throws B2_5;
+   public abstract Hd2[] j$arrhd_2() throws B2_5;
 
    @C_9
    public final Hd2 L$hd_2() throws B2_5 {
@@ -744,7 +744,7 @@ public abstract class Hd2 implements C_f_2 {
    }
 
    @C_9
-   protected abstract Hd2 V$hd_2() throws B2_5;
+   public abstract Hd2 V$hd_2() throws B2_5;
 
    @C_9
    public final Hd2 i() throws B2_5 {
@@ -783,7 +783,7 @@ public abstract class Hd2 implements C_f_2 {
    }
 
    @C_9
-   protected abstract Hd2 l$hd_2() throws B2_5;
+   public abstract Hd2 l$hd_2() throws B2_5;
 
    @C_9
    public final Hd2 c() throws B2_5 {
@@ -865,7 +865,7 @@ public abstract class Hd2 implements C_f_2 {
    }
 
    @C_9
-   protected abstract Hd2 g() throws B2_5;
+   public abstract Hd2 g() throws B2_5;
 
    public abstract com.finalshell.ui.model.S_3 r();
 
@@ -957,7 +957,7 @@ public abstract class Hd2 implements C_f_2 {
       // 99: areturn
    }
 
-   protected abstract Hd2[] l$arrhd_2() throws B2_5;
+   public abstract Hd2[] l$arrhd_2() throws B2_5;
 
    public abstract boolean B();
 
@@ -975,7 +975,7 @@ public abstract class Hd2 implements C_f_2 {
       return var10000;
    }
 
-   protected abstract String J();
+   public abstract String J();
 
    public static String[] k(Hd2[] var0) {
       String[] var2 = new String[var0.length];
@@ -1032,7 +1032,7 @@ public abstract class Hd2 implements C_f_2 {
    }
 
    @C_9
-   protected abstract Hd2 G();
+   public abstract Hd2 G();
 
    @Override
    public String toString() {
@@ -1439,7 +1439,7 @@ public abstract class Hd2 implements C_f_2 {
       // 78: ireturn
    }
 
-   Hd2[] W(@C_9 String param1) throws B2_5 {
+   public Hd2[] W(@C_9 String param1) throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1710,7 +1710,7 @@ public abstract class Hd2 implements C_f_2 {
       // 28: areturn
    }
 
-   protected H4_2[] a() throws B2_5 {
+   public H4_2[] a() throws B2_5 {
       return u;
    }
 
@@ -1756,7 +1756,7 @@ public abstract class Hd2 implements C_f_2 {
       return (Hd2)var0;
    }
 
-   static Logger P$Logger() {
+   public static Logger P$Logger() {
       return b;
    }
 

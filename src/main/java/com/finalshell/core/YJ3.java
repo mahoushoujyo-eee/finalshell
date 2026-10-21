@@ -4,7 +4,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 
 // $VF: synthetic class
 public class YJ3 {
-   static int[] W;
+   public static int[] W;
 
    static {
       __vfClinit__();

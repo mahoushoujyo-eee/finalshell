@@ -7,8 +7,8 @@ import java.awt.Component;
 import java.awt.LayoutManager;
 
 public class Ki4 extends Ky4 implements ND {
-   protected boolean q;
-   protected float H;
+   public boolean q;
+   public float H;
    public static String a;
 
    public Ki4() {

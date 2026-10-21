@@ -14,7 +14,7 @@ public class C_g_2 extends W3_4 {
    public boolean K = Boolean.getBoolean(b(-26763, -4859));
    public boolean C = this.K;
    public boolean l = this.K;
-   static boolean p;
+   public static boolean p;
    public static String[] c;
    public static String[] d;
 
@@ -74,7 +74,7 @@ public class C_g_2 extends W3_4 {
    }
 
    @Override
-   protected java.lang.Class findClass(@C_9 String param1) throws ClassNotFoundException {
+   public java.lang.Class findClass(@C_9 String param1) throws ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -179,7 +179,7 @@ public class C_g_2 extends W3_4 {
    }
 
    @C_9
-   protected Map Q(String var1) throws ClassNotFoundException {
+   public Map Q(String var1) throws ClassNotFoundException {
       String[] var2 = RG_2.C();
 
       try {

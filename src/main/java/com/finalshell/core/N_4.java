@@ -8,7 +8,7 @@ public class N_4 extends N2_3 {
    public final int F;
    public static String b;
 
-   N_4(int var1) {
+   public N_4(int var1) {
       this.F = var1;
    }
 
@@ -48,7 +48,7 @@ public class N_4 extends N2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == this.F ? 1 : 0);
+         return (boolean)((var10000 == this.F ? 1 : 0) != 0);
       }
    }
 

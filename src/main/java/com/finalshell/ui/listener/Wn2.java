@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wn2 implements ActionListener {
-   final EffectPreview Y;
+   public final EffectPreview Y;
 
-   Wn2(EffectPreview var1) {
+   public Wn2(EffectPreview var1) {
       this.Y = var1;
    }
 

@@ -6,10 +6,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class BI implements Runnable {
-   final YI S;
+   public final YI S;
    public static long a;
 
-   BI(YI var1) {
+   public BI(YI var1) {
       this.S = var1;
    }
 

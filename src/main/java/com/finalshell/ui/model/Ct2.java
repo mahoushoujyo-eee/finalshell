@@ -10,14 +10,14 @@ import java.util.Comparator;
 import java.util.Locale;
 
 public class Ct2 implements Comparator {
-   final Comparator G;
-   final O8 v;
-   final Om2 D;
-   String W;
-   final String C;
-   final Y62_2 L;
+   public final Comparator G;
+   public final O8 v;
+   public final Om2 D;
+   public String W;
+   public final String C;
+   public final Y62_2 L;
 
-   Ct2(Y62_2 var1, String var2) {
+   public Ct2(Y62_2 var1, String var2) {
       this.L = var1;
       this.C = var2;
       this.G = Collator.getInstance(Locale.CHINA);
@@ -35,7 +35,7 @@ public class Ct2 implements Comparator {
       Object var4 = 322807311559053454L;
       Ct2 var10001 = ((String)Ref.g(322807311559053454L, var4)).equals((String)Registry.lookupField(537427811193673915L).get(null));
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var6 = 322467945652486988L;
             Comparator var10002 = (Comparator)Ref.g(322467945652486988L, var6);
             String var61 = (String)(Registry.emptyArgs());
@@ -69,7 +69,7 @@ public class Ct2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var14 = 576645009835838970L;
             Ref.g(576645009835838970L, var14);
             Object[] var58 = Registry.emptyArgs();
@@ -113,7 +113,7 @@ public class Ct2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var24 = 595339177194496352L;
             Ref.g(595339177194496352L, var24);
             Object[] var55 = Registry.emptyArgs();
@@ -157,7 +157,7 @@ public class Ct2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var34 = 595339177194496352L;
             Ref.g(595339177194496352L, var34);
             Object[] var10004 = Registry.emptyArgs();

@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public abstract class RQ extends Fr2_2 {
-   protected RQ(com.finalshell.ui.model.I var1) {
+   public RQ(com.finalshell.ui.model.I var1) {
       super(var1);
    }
 

@@ -33,23 +33,23 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class ZU extends Z7 {
-   JTextField b;
-   JTextField G;
-   JTextField z;
-   JTextField f;
-   JTextField A;
-   JPasswordField d;
-   JCheckBox C;
-   CloudSyncFrame r;
-   JButton L;
+   public JTextField b;
+   public JTextField G;
+   public JTextField z;
+   public JTextField f;
+   public JTextField A;
+   public JPasswordField d;
+   public JCheckBox C;
+   public CloudSyncFrame r;
+   public JButton L;
    public static String[] a;
    public static String[] g;
    public static long[] i;
    public static Integer[] j;
 
    public ZU(CloudSyncFrame var1) {
+   super();
       SendSyncMailPanel.u();
-      super();
       long var18 = 597607974748112108L;
       Ref.s(597607974748112108L, var1, var18);
       this.setLayout(new MigLayout("", a(17851, 3696), ""));
@@ -164,7 +164,7 @@ public class ZU extends Z7 {
          throw var96.getTargetException();
       }
 
-new Oc4(var3, var101);
+var10030 = new Oc4(var3, var101);
       long var74 = 389807861524576519L;
       JCheckBox var73 = var10029;
       Ref.s(389807861524576519L, var73, var74);
@@ -191,7 +191,7 @@ new Oc4(var3, var101);
          throw var95.getTargetException();
       }
 
-new Oc4(var10035, var108);
+var10034 = new Oc4(var10035, var108);
       Object[] var13 = var10033;
       this.add(var13, a(17836, 24691));
       var13.addActionListener(new Oc4(this, var13));
@@ -250,7 +250,7 @@ new Oc4(var10035, var108);
       }
    }
 
-   void u() {
+   public void u() {
       Object var11 = 245244424489255511L;
       ((JButton)Ref.g(245244424489255511L, var11)).setEnabled(false);
 
@@ -448,7 +448,7 @@ new Oc4(var10035, var108);
                throw var85.getTargetException();
             }
 
-new String(var10019);
+var2 = new String(var10019);
             var10016.setFrom(var10016);
             StringBuilder var10017 = new StringBuilder().append(a(17804, -13756));
             Object[] var10018 = Registry.e(System.currentTimeMillis());
@@ -475,7 +475,7 @@ new String(var10019);
                throw var83.getTargetException();
             }
 
-new String(var10022);
+var2 = new String(var10022);
             var122.setRecipient(var127, var127);
             var8.setText(a(17834, -21903));
             var8.saveChanges();
@@ -509,7 +509,7 @@ new String(var10022);
       }
    }
 
-   void z() {
+   public void z() {
       SendSyncMailPanel.u();
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
@@ -663,7 +663,7 @@ new String(var10022);
       var2.setSelected(var71);
    }
 
-   void e() {
+   public void e() {
       Object var3 = 482706109834085201L;
       Ref.g(482706109834085201L, var3);
       Registry.emptyArgs();

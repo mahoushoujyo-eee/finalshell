@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class OH implements ActionListener {
-   final Address j;
+   public final Address j;
 
-   OH(Address var1) {
+   public OH(Address var1) {
       this.j = var1;
    }
 

@@ -7,12 +7,12 @@ public abstract class R8_2 extends Fr2_2 implements C_r_2 {
    public X_3_2 x;
    @C_9
    public Map H;
-   static boolean l;
+   public static boolean l;
    public static String T;
    public static String[] a;
    public static String[] b;
 
-   protected R8_2(com.finalshell.ui.model.I var1) {
+   public R8_2(com.finalshell.ui.model.I var1) {
       super(var1);
    }
 

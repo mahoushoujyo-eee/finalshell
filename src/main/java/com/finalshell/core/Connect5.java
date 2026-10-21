@@ -15,12 +15,12 @@ import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.core.Pcaps;
 
 public class Connect5 {
-   PcapNetworkInterface H;
+   public PcapNetworkInterface H;
    public static String r;
    public static String n;
-   String m = "";
-   PcapHandle F;
-   Fm4 I = new Fm4();
+   public String m = "";
+   public PcapHandle F;
+   public Fm4 I = new Fm4();
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -35,7 +35,7 @@ public class Connect5 {
       var1.Q();
    }
 
-   Connect5() throws Exception {
+   public Connect5() throws Exception {
       List var1 = null;
       var1 = Pcaps.findAllDevs();
       this.H = (PcapNetworkInterface)var1.get(0);
@@ -54,7 +54,7 @@ public class Connect5 {
       }
    }
 
-   void p(Socket var1) {
+   public void p(Socket var1) {
       try {
          OutputStream var3 = var1.getOutputStream();
          InputStream var2 = var1.getInputStream();
@@ -66,7 +66,7 @@ public class Connect5 {
       }
    }
 
-   void n(Socket var1) throws IOException {
+   public void n(Socket var1) throws IOException {
       System.out.println(a(-276, -2375) + var1.getRemoteSocketAddress());
       OutputStream var2 = var1.getOutputStream();
       InputStream var3 = var1.getInputStream();
@@ -75,7 +75,7 @@ public class Connect5 {
       var5.start();
    }
 
-   void Q() throws Exception {
+   public void Q() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

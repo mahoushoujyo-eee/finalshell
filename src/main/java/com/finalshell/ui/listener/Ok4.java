@@ -8,10 +8,10 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class Ok4 implements PopupMenuListener {
-   final com.finalshell.ui.dialog.KQ L;
-   final Connection5 v;
+   public final com.finalshell.ui.dialog.KQ L;
+   public final Connection5 v;
 
-   Ok4(Connection5 var1, com.finalshell.ui.dialog.KQ var2) {
+   public Ok4(Connection5 var1, com.finalshell.ui.dialog.KQ var2) {
       this.v = var1;
       this.L = var2;
    }

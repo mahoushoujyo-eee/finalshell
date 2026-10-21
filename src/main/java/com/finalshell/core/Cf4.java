@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class Cf4 {
-   Object f = new Object();
-   int z;
-   long T = 0L;
-   long u = 0L;
-   Object W = new Object();
-   long Y;
-   long I;
+   public Object f = new Object();
+   public int z;
+   public long T = 0L;
+   public long u = 0L;
+   public Object W = new Object();
+   public long Y;
+   public long I;
    public static long[] a;
    public static Long[] b;
 

@@ -12,9 +12,9 @@ public class NF3 implements Rc2 {
    public static String a;
 
    public NF3() throws C_Y {
+   super();
       AFUNIXSocketChannel var5;
       boolean var10000 = Dm4.J$boolean();
-      super();
       boolean var1 = var10000;
 
       try {

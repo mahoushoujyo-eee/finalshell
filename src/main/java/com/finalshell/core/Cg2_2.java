@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Cg2_2 implements FY_2 {
-   final Cs2_2 v;
+   public final Cs2_2 v;
 
-   Cg2_2(Cs2_2 var1) {
+   public Cg2_2(Cs2_2 var1) {
       this.v = var1;
    }
 

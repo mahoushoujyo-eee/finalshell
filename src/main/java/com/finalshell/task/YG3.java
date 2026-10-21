@@ -6,10 +6,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class YG3 implements Runnable {
-   final BufferedReader Q;
+   public final BufferedReader Q;
    public static String a;
 
-   YG3(BufferedReader var1) {
+   public YG3(BufferedReader var1) {
       this.Q = var1;
    }
 

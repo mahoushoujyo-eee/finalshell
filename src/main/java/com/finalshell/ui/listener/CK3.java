@@ -4,9 +4,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class CK3 extends ComponentAdapter {
-   final Ic2 n;
+   public final Ic2 n;
 
-   CK3(Ic2 var1) {
+   public CK3(Ic2 var1) {
       this.n = var1;
    }
 

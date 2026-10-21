@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class LP3 implements PropertyChangeListener {
-   final K32 z;
+   public final K32 z;
 
-   LP3(K32 var1) {
+   public LP3(K32 var1) {
       this.z = var1;
    }
 

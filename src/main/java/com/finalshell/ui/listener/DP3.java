@@ -6,9 +6,6 @@ import java.awt.event.ActionListener;
 import java.util.Iterator;
 
 public class DP3 implements ActionListener {
-   DP3() {
-   }
-
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override

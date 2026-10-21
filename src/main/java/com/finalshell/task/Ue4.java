@@ -7,11 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextArea;
 
 public class Ue4 implements Runnable {
-   final String v;
-   final UpdateFrame Z;
+   public final String v;
+   public final UpdateFrame Z;
    public static String a;
 
-   Ue4(UpdateFrame var1, String var2) {
+   public Ue4(UpdateFrame var1, String var2) {
       this.Z = var1;
       this.v = var2;
    }
@@ -76,7 +76,7 @@ public class Ue4 implements Runnable {
             var10001 = ((String)Ref.g(326124367307822784L, var30)).contains(a);
          }
 
-         if (var10001 == false) {
+         if (var10001 == null) {
             return;
          }
       }

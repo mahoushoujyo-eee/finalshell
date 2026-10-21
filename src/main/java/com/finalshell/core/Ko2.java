@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Ko2 {
-   final com.finalshell.ui.model.J2 G;
-   final int v;
-   final int E;
+   public final com.finalshell.ui.model.J2 G;
+   public final int v;
+   public final int E;
 
    public Ko2(int var1, int var2, com.finalshell.ui.model.J2 var3) {
       this.v = var1;
@@ -11,7 +11,7 @@ public class Ko2 {
       this.G = var3;
    }
 
-   Ko2(int var1, int var2, com.finalshell.ui.model.J2 var3, L7 var4) {
+   public Ko2(int var1, int var2, com.finalshell.ui.model.J2 var3, L7 var4) {
       this(var1, var2, var3);
    }
 }

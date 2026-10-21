@@ -9,9 +9,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Ga2 implements Runnable {
-   final XB_2 K;
+   public final XB_2 K;
 
-   Ga2(XB_2 var1) {
+   public Ga2(XB_2 var1) {
       this.K = var1;
    }
 

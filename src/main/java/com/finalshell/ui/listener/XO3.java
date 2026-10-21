@@ -9,9 +9,9 @@ import java.io.File;
 import javax.swing.text.JTextComponent;
 
 public class XO3 extends XA3 {
-   final RZ3 h;
+   public final RZ3 h;
 
-   protected XO3(RZ3 var1) {
+   public XO3(RZ3 var1) {
       super(var1);
       this.h = var1;
    }

@@ -8,16 +8,16 @@ import java.awt.event.KeyEvent;
 import javax.swing.JTextField;
 
 public class Xq2 extends KeyAdapter {
-   final JTextField Y;
-   final FocusAdapter b;
-   final int Z;
-   final Component D;
-   final com.finalshell.core.T5 R;
-   final com.finalshell.core.X0 K;
+   public final JTextField Y;
+   public final FocusAdapter b;
+   public final int Z;
+   public final Component D;
+   public final com.finalshell.core.T5 R;
+   public final com.finalshell.core.X0 K;
    public static long[] a;
    public static Integer[] c;
 
-   Xq2(com.finalshell.core.X0 var1, JTextField var2, FocusAdapter var3, int var4, Component var5, com.finalshell.core.T5 var6) {
+   public Xq2(com.finalshell.core.X0 var1, JTextField var2, FocusAdapter var3, int var4, Component var5, com.finalshell.core.T5 var6) {
       this.K = var1;
       this.Y = var2;
       this.b = var3;

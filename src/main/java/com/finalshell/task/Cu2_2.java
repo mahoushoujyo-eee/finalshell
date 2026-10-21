@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.Qj2;
 import java.awt.Component;
 
 public class Cu2_2 implements Runnable {
-   final Component v;
-   final Qj2 g;
+   public final Component v;
+   public final Qj2 g;
 
-   Cu2_2(Qj2 var1, Component var2) {
+   public Cu2_2(Qj2 var1, Component var2) {
       this.g = var1;
       this.v = var2;
    }

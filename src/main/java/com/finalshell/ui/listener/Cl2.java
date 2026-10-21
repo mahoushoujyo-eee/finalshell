@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Cl2 implements ActionListener {
-   final EditDialog R;
+   public final EditDialog R;
 
-   Cl2(EditDialog var1) {
+   public Cl2(EditDialog var1) {
       this.R = var1;
    }
 

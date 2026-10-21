@@ -25,7 +25,7 @@ public class K42 extends Ky4 {
    public static ImageIcon k;
    public final List K = new ArrayList(1);
    public final List u = new ArrayList();
-   protected boolean I = false;
+   public boolean I = false;
    public boolean r = true;
    public boolean U = true;
    public boolean Z = true;
@@ -332,47 +332,47 @@ public class K42 extends Ky4 {
       }
    }
 
-   static boolean e(K42 var0) {
+   public static boolean e(K42 var0) {
       return var0.C;
    }
 
-   static Ky4 g(K42 var0) {
+   public static Ky4 g(K42 var0) {
       return var0.A;
    }
 
-   static Q4_2 v(K42 var0) {
+   public static Q4_2 v(K42 var0) {
       return var0.w;
    }
 
-   static KD L(K42 var0) {
+   public static KD L(K42 var0) {
       return var0.W;
    }
 
-   static boolean d(K42 var0) {
+   public static boolean d(K42 var0) {
       return var0.m;
    }
 
-   static boolean K(K42 var0) {
+   public static boolean K(K42 var0) {
       return var0.r;
    }
 
-   static boolean N(K42 var0) {
+   public static boolean N(K42 var0) {
       return var0.U;
    }
 
-   static boolean r(K42 var0) {
+   public static boolean r(K42 var0) {
       return var0.Z;
    }
 
-   static List y(K42 var0) {
+   public static List y(K42 var0) {
       return var0.u;
    }
 
-   static void b(K42 var0, List var1) {
+   public static void b(K42 var0, List var1) {
       var0.Q(var1);
    }
 
-   static SZ s(K42 var0) {
+   public static SZ s(K42 var0) {
       return var0.S;
    }
 

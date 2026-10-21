@@ -14,10 +14,10 @@ public abstract class C_i_2 implements K_2_2 {
    @C_9
    public X_3_2 O;
    @C_9
-   Hd2 m;
+   public Hd2 m;
    public int r;
    public int B;
-   static boolean Z;
+   public static boolean Z;
    public static int[] u;
    public static String[] a;
    public static String[] b;

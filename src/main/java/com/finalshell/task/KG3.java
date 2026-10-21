@@ -8,11 +8,11 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 public class KG3 extends Thread {
-   final YT3_2 M;
+   public final YT3_2 M;
    public static String a;
    public static long b;
 
-   KG3(YT3_2 var1) {
+   public KG3(YT3_2 var1) {
       this.M = var1;
    }
 

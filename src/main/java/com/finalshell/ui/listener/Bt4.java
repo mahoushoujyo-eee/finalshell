@@ -11,9 +11,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bt4 implements MouseListener {
-   final UV3 H;
+   public final UV3 H;
 
-   Bt4(UV3 var1) {
+   public Bt4(UV3 var1) {
       this.H = var1;
    }
 

@@ -67,73 +67,73 @@ import net.miginfocom.swing.MigLayout;
 import org.jdesktop.swingx.JXList;
 
 public abstract class ClearListDialog extends JDialog implements Kn2 {
-   protected FT H;
-   protected Tq4 s;
-   JScrollPane lC;
-   JScrollPane W;
-   String l9;
-   int lV;
-   boolean T;
-   boolean N;
-   String lU;
-   boolean a;
-   Dimension q;
-   ConnectionProperty o;
-   boolean u;
-   String h;
-   boolean L;
-   boolean b;
-   boolean i;
-   int ll;
-   int Y;
-   protected Dv2 lD;
-   protected Dv2 Z;
-   protected KD j;
-   long V;
-   long g;
-   boolean d;
-   static JDialog C;
-   static JFrame S;
-   boolean lx;
-   boolean lF;
-   boolean B;
-   long l_;
-   boolean lQ;
-   boolean l;
-   Backspace x;
-   protected JPanel I;
-   boolean O;
-   boolean m;
-   boolean p;
-   Ws2 X;
-   int k;
-   long f;
-   boolean P;
-   boolean n;
-   Window c;
-   JPanel U;
-   boolean t;
-   boolean F;
-   protected KD A;
-   protected Du2 v;
+   public FT H;
+   public Tq4 s;
+   public JScrollPane lC;
+   public JScrollPane W;
+   public String l9;
+   public int lV;
+   public boolean T;
+   public boolean N;
+   public String lU;
+   public boolean a;
+   public Dimension q;
+   public ConnectionProperty o;
+   public boolean u;
+   public String h;
+   public boolean L;
+   public boolean b;
+   public boolean i;
+   public int ll;
+   public int Y;
+   public Dv2 lD;
+   public Dv2 Z;
+   public KD j;
+   public long V;
+   public long g;
+   public boolean d;
+   public static JDialog C;
+   public static JFrame S;
+   public boolean lx;
+   public boolean lF;
+   public boolean B;
+   public long l_;
+   public boolean lQ;
+   public boolean l;
+   public Backspace x;
+   public JPanel I;
+   public boolean O;
+   public boolean m;
+   public boolean p;
+   public Ws2 X;
+   public int k;
+   public long f;
+   public boolean P;
+   public boolean n;
+   public Window c;
+   public JPanel U;
+   public boolean t;
+   public boolean F;
+   public KD A;
+   public Du2 v;
    public long R;
-   protected JXList l1;
-   boolean w;
-   boolean lz;
-   US3 z;
-   int l2;
-   int J;
-   int lI;
-   Fg4 r;
-   protected boolean E;
-   int e;
-   protected boolean M;
-   protected MouseListener y;
-   int Q;
-   int lT;
-   int lj;
-   boolean K;
-   AWTEventListener D;
+   public JXList l1;
+   public boolean w;
+   public boolean lz;
+   public US3 z;
+   public int l2;
+   public int J;
+   public int lI;
+   public Fg4 r;
+   public boolean E;
+   public int e;
+   public boolean M;
+   public MouseListener y;
+   public int Q;
+   public int lT;
+   public int lj;
+   public boolean K;
+   public AWTEventListener D;
    public static String[] G;
    public static String[] ab;
    public static String[] bb;
@@ -365,7 +365,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       return var4 != 0;
    }
 
-   void k$void() {
+   public void k$void() {
       Object var2 = 265132846717086219L;
       String var1 = ((Dv2)Ref.g(265132846717086219L, var2)).getText().trim();
       if (var1.length() == 0) {
@@ -395,21 +395,21 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
    public abstract boolean p(L1 var1);
 
-   protected abstract Dx4_2 k$dx_4();
+   public abstract Dx4_2 k$dx_4();
 
-   protected abstract Dx4_2 n();
+   public abstract Dx4_2 n();
 
-   protected abstract void L(String var1);
+   public abstract void L(String var1);
 
-   protected abstract void k(L1 var1);
+   public abstract void k(L1 var1);
 
-   protected abstract void i(L1 var1, int var2);
+   public abstract void i(L1 var1, int var2);
 
-   protected abstract void u(KeyEvent var1);
+   public abstract void u(KeyEvent var1);
 
-   protected abstract String c();
+   public abstract String c();
 
-   void v$void() {
+   public void v$void() {
       String[] var10000 = i$arrString();
       Registry.lookupField(594717380361478836L).setInt(this, 0);
       String[] var1 = var10000;
@@ -791,7 +791,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       label123: {
          label127: {
             if (var1 == null) {
-               if (var10001 == false) {
+               if (var10001 == null) {
                   var10001 = this;
                   Object var6 = 618427502576624312L;
                   int var10002 = ((Tq4)Ref.g(618427502576624312L, var6)).getRowCount();
@@ -961,7 +961,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       String[] var1 = i$arrString();
       Object var10000 = Registry.lookupField(546619646805113494L).getBoolean(this);
       if (var1 == null) {
-         if (var10000 == 0) {
+         if (var10000 == null) {
             Object[] var10001 = Registry.emptyArgs();
             long var5 = 257476172962055898L;
             Object[] var4 = var10001;
@@ -974,7 +974,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             }
 
             if (var1 == null) {
-               if (var10001 == 0) {
+               if (var10001 == null) {
                   Object var6 = 618427502576624312L;
                   int var2 = ((Tq4)Ref.g(618427502576624312L, var6)).getSelectedRow();
                   var2--;
@@ -1088,7 +1088,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                var59 = ((JXList)Ref.g(369475678680292668L, var38)).getSelectedIndex();
                ClearListDialog var10003 = var59;
                if (var1 == null) {
-                  if (var59 == -1) {
+                  if (var59 == null) {
                      var59 = 0;
                      if (var1 == null) {
                         break label131;
@@ -1140,7 +1140,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       String[] var1 = i$arrString();
       ClearListDialog var10000 = Registry.lookupField(546619646805113494L).getBoolean(this);
       if (var1 == null) {
-         if (var10000 == false) {
+         if (var10000 == null) {
             Object[] var10001 = Registry.emptyArgs();
             long var4 = 257476172962055898L;
             Object[] var3 = var10001;
@@ -1153,7 +1153,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             }
 
             if (var1 == null) {
-               if (var10001 == 0) {
+               if (var10001 == null) {
                   Object var5 = 618427502576624312L;
                   int var2 = ((Tq4)Ref.g(618427502576624312L, var5)).getSelectedRow();
                   var2++;
@@ -1226,7 +1226,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             var10000 = var46;
             ClearListDialog var50 = -1;
             if (var1 == null) {
-               if (var46 == -1) {
+               if (var46 == null) {
                   var46 = false;
                   if (var1 == null) {
                      break label64;
@@ -1323,7 +1323,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       SwingUtilities.invokeLater(new A5(this));
    }
 
-   protected void z() {
+   public void z() {
       i$arrString();
       Object var4 = 334241381080505095L;
       Registry.lookupField(151984047746765220L).setInt(this, ((Dv2)Ref.g(334241381080505095L, var4)).getCaretPosition());
@@ -1361,7 +1361,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       this.setBounds(var2);
       ClearListDialog var69 = this.isVisible();
       if (this == null) {
-         if (var69 == false) {
+         if (var69 == null) {
             Object var10 = 618427502576624312L;
             ((Tq4)Ref.g(618427502576624312L, var10)).clearSelection();
             Object[] var10004 = Registry.packArgs(true);
@@ -1428,7 +1428,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                label134: {
                   label149: {
                      if (this == null) {
-                        if (var69 == false) {
+                        if (var69 == null) {
                            if (this == null) {
                               Object var22 = 618427502576624312L;
                               if (((Tq4)Ref.g(618427502576624312L, var22)).getRowCount() > 0) {
@@ -1633,7 +1633,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       }
    }
 
-   void b(KeyEvent var1, byte[] var2) {
+   public void b(KeyEvent var1, byte[] var2) {
       Object var4 = 556898288735746988L;
       ConnectHost var3 = ((ConnectionProperty)Ref.g(556898288735746988L, var4)).s$Fv_2().e();
       if (var3.t$boolean()) {
@@ -1642,7 +1642,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       }
    }
 
-   void N() {
+   public void N() {
       String[] var1 = i$arrString();
       Registry.emptyArgs();
       long var6 = 454647487873911743L;
@@ -1939,11 +1939,11 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       this.dispose();
    }
 
-   void C() {
+   public void C() {
       String[] var1 = i$arrString();
       ClearListDialog var10000 = this.isVisible();
       if (var1 == null) {
-         if (var10000 == 0) {
+         if (var10000 == null) {
             return;
          }
 
@@ -1969,7 +1969,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       Registry.lookupField(373160888351879443L).setBoolean(this, false);
    }
 
-   int b(String var1, ArrayList var2) {
+   public int b(String var1, ArrayList var2) {
       ArrayList var4 = new ArrayList();
       i$arrString();
       Object var15 = 516041024875871057L;
@@ -2067,7 +2067,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       return var10001;
    }
 
-   protected void u$void() {
+   public void u$void() {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
@@ -2260,7 +2260,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             break;
          }
 
-         while (var10007 != false) {
+         while (var10007 == null) {
             L1 var119 = (L1)var115.next();
             var107.remove(var119);
             var107.add(0, var119);
@@ -2280,7 +2280,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
       var10007 = var4.equals("");
       if (var1 == null) {
-         var10007 = var10007 == 0 ? 1 : 0;
+         var10007 = var10007 == null ? 1 : 0;
       }
 
       Object var10 = var10007;
@@ -2363,13 +2363,13 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
             label402:
             if (var1 == null) {
-               if (var10 != 0) {
+               if (var10 != null) {
                   var150 = Registry.lookupField(614822648460925381L).getBoolean(this);
                   if (var1 != null) {
                      break label402;
                   }
 
-                  if (var150 == false) {
+                  if (var150 == null) {
                      var150 = var117;
                      Object[] var10010 = Registry.emptyArgs();
                      long var44 = 608348398594129275L;
@@ -2398,7 +2398,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             label521: {
                label389: {
                   if (var1 == null) {
-                     if (var150 == false) {
+                     if (var150 == null) {
                         break label389;
                      }
 
@@ -2451,7 +2451,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             label501: {
                ClearListDialog var158 = (ClearListDialog)var121;
                if (var1 == null) {
-                  if (var121 == false) {
+                  if (var121 == null) {
                      break label501;
                   }
 
@@ -2469,7 +2469,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
 
                label503: {
                   if (var1 == null) {
-                     if (var158 == false) {
+                     if (var158 == null) {
                         break label501;
                      }
 
@@ -2480,7 +2480,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      var158 = Registry.lookupField(546619646805113494L).getBoolean(this);
                   }
 
-                  if (var158 != false) {
+                  if (var158 == null) {
                      break label501;
                   }
                }
@@ -2510,7 +2510,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       }
 
       if (var1 == null) {
-         if (var150 == 0) {
+         if (var150 == null) {
             return;
          }
 
@@ -2544,13 +2544,13 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             var150 = var10;
             label346:
             if (var1 == null) {
-               if (var10 != false) {
+               if (var10 == null) {
                   var150 = Registry.lookupField(614822648460925381L).getBoolean(this);
                   if (var1 != null) {
                      break label346;
                   }
 
-                  if (var150 == false) {
+                  if (var150 == null) {
                      var150 = var118;
                      Object[] var159 = Registry.emptyArgs();
                      long var62 = 608348398594129275L;
@@ -2579,7 +2579,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
             label522: {
                label333: {
                   if (var1 == null) {
-                     if (var150 == false) {
+                     if (var150 == null) {
                         break label333;
                      }
 
@@ -2633,7 +2633,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                label514: {
                   ClearListDialog var166 = (ClearListDialog)var122;
                   if (var1 == null) {
-                     if (var122 == false) {
+                     if (var122 == null) {
                         break label513;
                      }
 
@@ -2653,7 +2653,7 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
                      }
                   }
 
-                  if (var166 == false) {
+                  if (var166 == null) {
                      break label513;
                   }
                }
@@ -2696,15 +2696,15 @@ public abstract class ClearListDialog extends JDialog implements Kn2 {
       ((JXList)Ref.g(369475678680292668L, var79)).clearSelection();
    }
 
-   void s(ArrayList var1) {
+   public void s(ArrayList var1) {
       Collections.sort(var1, new Cc4(this));
    }
 
-   void N(ArrayList var1) {
+   public void N(ArrayList var1) {
       Collections.sort(var1, new Ub4(this));
    }
 
-   void I(ArrayList var1, ArrayList var2) {
+   public void I(ArrayList var1, ArrayList var2) {
       String[] var10000 = i$arrString();
       int var4 = 0;
       String[] var3 = var10000;

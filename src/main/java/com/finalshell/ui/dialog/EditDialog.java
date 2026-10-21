@@ -20,18 +20,18 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class EditDialog extends JDialog {
-   JTextField C;
-   JTextField I;
-   JTextField T;
-   JTextField i;
-   BS F;
-   AccelerateRdpHelpPanel Z;
-   boolean w;
+   public JTextField C;
+   public JTextField I;
+   public JTextField T;
+   public JTextField i;
+   public BS F;
+   public AccelerateRdpHelpPanel Z;
+   public boolean w;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   EditDialog(AccelerateRdpHelpPanel var1, BS var2, boolean var3) {
+   public EditDialog(AccelerateRdpHelpPanel var1, BS var2, boolean var3) {
       super(SwingUtilities.getWindowAncestor(var1), ModalityType.APPLICATION_MODAL);
       AccelerateRdpHelpPanel.w();
       Registry.lookupField(245550581564489179L).setBoolean(this, false);
@@ -152,7 +152,7 @@ public class EditDialog extends JDialog {
       }
    }
 
-   void p(String var1) throws Exception {
+   public void p(String var1) throws Exception {
       try {
          if (var1.trim().equals("")) {
             throw new Exception(a(15663, -13802));
@@ -162,7 +162,7 @@ public class EditDialog extends JDialog {
       }
    }
 
-   void q(String var1) throws Exception {
+   public void q(String var1) throws Exception {
       try {
          if (var1.trim().equals("")) {
             throw new Exception(a(15674, 8988));
@@ -172,7 +172,7 @@ public class EditDialog extends JDialog {
       }
    }
 
-   void N(String param1) throws Exception {
+   public void N(String param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -240,7 +240,7 @@ public class EditDialog extends JDialog {
       // 75: return
    }
 
-   JButton A(String var1) {
+   public JButton A(String var1) {
       JButton var2 = new JButton(var1);
       var2.setMargin(new Insets(0, 5, 0, 5));
       var2.setFocusPainted(false);

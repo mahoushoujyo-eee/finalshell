@@ -45,7 +45,7 @@ public class AA extends JTree {
       }
    }
 
-   void E() {
+   public void E() {
       this.putClientProperty(b, new Color(a(13560, 3873196748215737387L), a(17886, 5022847974886354190L), a(15719, 8150349306695603638L)));
    }
 

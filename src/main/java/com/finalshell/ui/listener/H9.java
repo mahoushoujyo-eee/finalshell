@@ -6,11 +6,11 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class H9 extends KeyAdapter {
-   final ConnectionProperty g;
-   final Bq_2 z;
+   public final ConnectionProperty g;
+   public final Bq_2 z;
    public static long a;
 
-   H9(Bq_2 var1, ConnectionProperty var2) {
+   public H9(Bq_2 var1, ConnectionProperty var2) {
       this.z = var1;
       this.g = var2;
    }

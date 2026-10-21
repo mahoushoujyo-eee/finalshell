@@ -5,12 +5,12 @@ import com.finalshell.core.Yd2;
 import java.awt.datatransfer.Transferable;
 
 public class A implements Runnable {
-   final Transferable S;
-   final Km2 Q;
-   final int L;
-   final Yd2 f;
+   public final Transferable S;
+   public final Km2 Q;
+   public final int L;
+   public final Yd2 f;
 
-   A(Yd2 var1, Transferable var2, Km2 var3, int var4) {
+   public A(Yd2 var1, Transferable var2, Km2 var3, int var4) {
       this.f = var1;
       this.S = var2;
       this.Q = var3;

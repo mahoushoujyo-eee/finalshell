@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lp_4 implements ActionListener {
-   final AM w;
-   final T32 I;
-   final CopyMenu P;
+   public final AM w;
+   public final T32 I;
+   public final CopyMenu P;
 
-   Lp_4(CopyMenu var1, AM var2, T32 var3) {
+   public Lp_4(CopyMenu var1, AM var2, T32 var3) {
       this.P = var1;
       this.w = var2;
       this.I = var3;

@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.config.DnsResolveFailedSetting;
 
 public class RestoreTask extends Thread {
-   final DnsResolveFailedSetting M;
+   public final DnsResolveFailedSetting M;
    public static String[] a;
    public static String[] b;
    public static long c;
    public static long[] d;
    public static Long[] e;
 
-   RestoreTask(DnsResolveFailedSetting var1) {
+   public RestoreTask(DnsResolveFailedSetting var1) {
       this.M = var1;
    }
 

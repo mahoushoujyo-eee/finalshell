@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Bz2 implements ActionListener {
-   final Bq_2 f;
+   public final Bq_2 f;
 
-   Bz2(Bq_2 var1) {
+   public Bz2(Bq_2 var1) {
       this.f = var1;
    }
 

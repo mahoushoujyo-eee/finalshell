@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Xv2 implements N62 {
-   protected Map c;
-   protected boolean v;
+   public Map c;
+   public boolean v;
    public static String[] O;
    public static String[] g;
    public static String[] h;
@@ -39,27 +39,27 @@ public abstract class Xv2 implements N62 {
       this.Y(a(-7922, -12436), var1);
    }
 
-   protected Map G() {
+   public Map G() {
       return this.c;
    }
 
-   protected void S(Map var1) {
+   public void S(Map var1) {
       this.c = var1;
    }
 
-   protected void Y(String var1, Object var2) {
+   public void Y(String var1, Object var2) {
       this.c.put(var1, var2);
    }
 
-   protected void p(String var1) {
+   public void p(String var1) {
       this.c.remove(var1);
    }
 
-   protected void S() {
+   public void S() {
       this.c.clear();
    }
 
-   protected Object C(String var1, Object var2) {
+   public Object C(String var1, Object var2) {
       String[] var3 = X$arrString();
       Object var10000 = this.c;
       if (var3 != null) {

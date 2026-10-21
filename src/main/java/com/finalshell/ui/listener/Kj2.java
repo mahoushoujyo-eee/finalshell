@@ -8,9 +8,9 @@ import javax.swing.TransferHandler;
 
 public class Kj2 extends MouseAdapter {
    public boolean Q;
-   final K02 Y;
+   public final K02 Y;
 
-   Kj2(K02 var1) {
+   public Kj2(K02 var1) {
       this.Y = var1;
    }
 

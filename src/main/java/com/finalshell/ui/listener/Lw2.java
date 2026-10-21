@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextField;
 
 public class Lw2 implements ActionListener {
-   final PathPanel Z;
+   public final PathPanel Z;
 
-   Lw2(PathPanel var1) {
+   public Lw2(PathPanel var1) {
       this.Z = var1;
    }
 

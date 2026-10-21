@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class M extends C42 {
-   final com.finalshell.ui.frame.C Y;
+   public final com.finalshell.ui.frame.C Y;
 
-   M(com.finalshell.ui.frame.C var1, boolean var2) {
+   public M(com.finalshell.ui.frame.C var1, boolean var2) {
       super(var2);
       this.Y = var1;
    }

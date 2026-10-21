@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class ZI implements ActionListener {
-   final ShowInFolderPanel Y;
+   public final ShowInFolderPanel Y;
 
-   ZI(ShowInFolderPanel var1) {
+   public ZI(ShowInFolderPanel var1) {
       this.Y = var1;
    }
 

@@ -7,8 +7,8 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 public class Connection7 {
-   String x;
-   int y;
+   public String x;
+   public int y;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -16,7 +16,7 @@ public class Connection7 {
    public static void main(String[] var0) throws Exception {
    }
 
-   Connection7(String var1, int var2) throws Exception {
+   public Connection7(String var1, int var2) throws Exception {
       this.x = var1;
       this.y = var2;
       this.n();

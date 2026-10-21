@@ -8,10 +8,10 @@ import java.util.HashMap;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class G0 implements Runnable {
-   final String u;
-   final Connection5 n;
+   public final String u;
+   public final Connection5 n;
 
-   G0(Connection5 var1, String var2) {
+   public G0(Connection5 var1, String var2) {
       this.n = var1;
       this.u = var2;
    }

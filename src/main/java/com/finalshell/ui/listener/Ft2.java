@@ -13,15 +13,15 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Ft2 implements ActionListener {
-   final JTextField m;
-   final JPanel w;
-   final boolean O;
-   final AppendCarriageReturnCRPanel L;
-   final T32 C;
-   final RenameFolderDialog Y;
+   public final JTextField m;
+   public final JPanel w;
+   public final boolean O;
+   public final AppendCarriageReturnCRPanel L;
+   public final T32 C;
+   public final RenameFolderDialog Y;
    public static String a;
 
-   Ft2(RenameFolderDialog var1, JTextField var2, JPanel var3, boolean var4, AppendCarriageReturnCRPanel var5, T32 var6) {
+   public Ft2(RenameFolderDialog var1, JTextField var2, JPanel var3, boolean var4, AppendCarriageReturnCRPanel var5, T32 var6) {
       this.Y = var1;
       this.m = var2;
       this.w = var3;

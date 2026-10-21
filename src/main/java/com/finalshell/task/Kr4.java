@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Ip6;
 
 public class Kr4 implements Runnable {
-   final Ip6 B;
+   public final Ip6 B;
    public static String a;
 
-   Kr4(Ip6 var1) {
+   public Kr4(Ip6 var1) {
       this.B = var1;
    }
 

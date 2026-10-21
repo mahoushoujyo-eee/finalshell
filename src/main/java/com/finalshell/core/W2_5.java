@@ -5,10 +5,10 @@ import java.io.InputStream;
 import java.net.URL;
 
 public class W2_5 implements T_4 {
-   final URL Y;
-   final String K;
+   public final URL Y;
+   public final String K;
 
-   W2_5(URL var1, String var2) {
+   public W2_5(URL var1, String var2) {
       this.Y = var1;
       this.K = var2;
    }

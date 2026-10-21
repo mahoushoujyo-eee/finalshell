@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class LN3 extends MouseAdapter {
-   final Kh4 K;
+   public final Kh4 K;
 
-   LN3(Kh4 var1) {
+   public LN3(Kh4 var1) {
       this.K = var1;
    }
 

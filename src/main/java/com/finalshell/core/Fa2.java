@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Fa2 implements C_4_3 {
-   final Fn2_3 Q;
+   public final Fn2_3 Q;
 
-   Fa2(Fn2_3 var1) {
+   public Fa2(Fn2_3 var1) {
       this.Q = var1;
    }
 

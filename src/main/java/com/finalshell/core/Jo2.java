@@ -9,7 +9,7 @@ import java.net.UnknownHostException;
 public class Jo2 extends Jk2 {
    public byte[] Z;
    public int N;
-   static String[] D;
+   public static String[] D;
    public static String[] a;
    public static String[] d;
    public static long[] h;
@@ -37,12 +37,12 @@ public class Jo2 extends Jk2 {
    }
 
    public Jo2(int var1, int var2, InetAddress var3, int var4, String var5) {
+   super(var2, var3, var4);
       String[] var6;
       Jo2 var9;
       int var12;
       label36: {
          String[] var10000 = Jk2.Y();
-         super(var2, var3, var4);
          var6 = var10000;
          this.O = var5;
          var9 = this;
@@ -304,7 +304,7 @@ public class Jo2 extends Jk2 {
       var1.write(this.Z);
    }
 
-   static InetAddress u(byte[] var0) {
+   public static InetAddress u(byte[] var0) {
       String var1 = n(var0, 0);
 
       try {

@@ -23,19 +23,19 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class Vc2 extends JFrame {
-   FT D;
-   protected Tq4 J;
-   JScrollPane e;
-   protected JTextField N;
-   boolean q;
-   String M;
-   Dx4_2 S;
+   public FT D;
+   public Tq4 J;
+   public JScrollPane e;
+   public JTextField N;
+   public boolean q;
+   public String M;
+   public Dx4_2 S;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Vc2() {
+   public Vc2() {
       Registry.lookupField(551927859663233540L).setBoolean(this, true);
       String var10001 = a(27547, 25492);
       long var3 = 122851861963895150L;
@@ -107,7 +107,7 @@ public class Vc2 extends JFrame {
       }
    }
 
-   void o() {
+   public void o() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -416,7 +416,7 @@ public class Vc2 extends JFrame {
             break;
          }
 
-         while (var10007 != false) {
+         while (var10007 == null) {
             L1 var67 = (L1)var65.next();
             var57.remove(var67);
             var57.add(0, var67);
@@ -436,7 +436,7 @@ public class Vc2 extends JFrame {
 
       var10007 = var3.equals("");
       if (var1 == null) {
-         var10007 = var10007 == false;
+         var10007 = var10007 == null;
       }
 
       Object var56 = var10007;
@@ -478,7 +478,7 @@ public class Vc2 extends JFrame {
             var10007 = (Object[])var56;
             label152:
             if (var1 == null) {
-               if (var56 != false) {
+               if (var56 == null) {
                   var10007 = var62;
                   Object[] var81 = Registry.emptyArgs();
                   long var40 = 608348398594129275L;
@@ -503,7 +503,7 @@ public class Vc2 extends JFrame {
                var10007 = (Object[])var64;
             }
 
-            if (var10007 != false) {
+            if (var10007 == null) {
                Object var41 = 533021200004208971L;
                Ref.g(533021200004208971L, var41);
                Object[] var88 = Registry.packArgs(var62);
@@ -530,7 +530,7 @@ public class Vc2 extends JFrame {
       }
    }
 
-   int T(String var1, ArrayList var2) {
+   public int T(String var1, ArrayList var2) {
       ArrayList var4 = new ArrayList();
       Object var15 = 122851861963895150L;
       Pattern var5 = Pattern.compile((String)Ref.g(122851861963895150L, var15));
@@ -629,7 +629,7 @@ public class Vc2 extends JFrame {
       return var20;
    }
 
-   void R(ArrayList var1) {
+   public void R(ArrayList var1) {
       Collections.sort(var1, new Ld2(this));
    }
 

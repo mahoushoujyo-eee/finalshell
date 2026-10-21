@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.QS;
 
 public class EB3 extends ES3 {
-   final QS q;
+   public final QS q;
 
-   EB3(QS var1) {
+   public EB3(QS var1) {
       this.q = var1;
    }
 

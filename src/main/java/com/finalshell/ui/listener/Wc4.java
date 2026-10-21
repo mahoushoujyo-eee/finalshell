@@ -5,9 +5,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class Wc4 extends FocusAdapter {
-   final IH l;
+   public final IH l;
 
-   Wc4(IH var1) {
+   public Wc4(IH var1) {
       this.l = var1;
    }
 

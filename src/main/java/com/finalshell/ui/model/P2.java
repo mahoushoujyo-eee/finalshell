@@ -11,14 +11,14 @@ import java.util.Map;
 @XStreamAlias("TreeState")
 @XStreamConverter(X4_2.class)
 public class P2 implements Serializable, Cloneable {
-   protected Map i = new LinkedHashMap();
+   public Map i = new LinkedHashMap();
 
    public P2() {
    }
 
    public P2(Map var1) {
+   super();
       String var10000 = com.finalshell.ui.panel.S.d();
-      super();
       String var2 = var10000;
       P2 var3 = this;
       Object var10001 = new LinkedHashMap();

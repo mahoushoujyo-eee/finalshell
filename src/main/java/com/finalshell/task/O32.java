@@ -6,11 +6,11 @@ import com.finalshell.ui.listener.TO;
 import javax.swing.SwingUtilities;
 
 public class O32 implements Runnable {
-   final int d;
-   final int u;
-   final TO E;
+   public final int d;
+   public final int u;
+   public final TO E;
 
-   O32(TO var1, int var2, int var3) {
+   public O32(TO var1, int var2, int var3) {
       this.E = var1;
       this.d = var2;
       this.u = var3;

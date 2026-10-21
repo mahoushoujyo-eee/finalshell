@@ -77,19 +77,19 @@ public class C22_2 implements Paint {
       this.O = var1;
    }
 
-   static ColorModel t(C22_2 var0) {
+   public static ColorModel t(C22_2 var0) {
       return var0.f;
    }
 
-   static int O(C22_2 var0) {
+   public static int O(C22_2 var0) {
       return var0.Q;
    }
 
-   static int L(C22_2 var0) {
+   public static int L(C22_2 var0) {
       return var0.D;
    }
 
-   static int l(C22_2 var0, int var1) {
+   public static int l(C22_2 var0, int var1) {
       return var0.v(var1);
    }
 

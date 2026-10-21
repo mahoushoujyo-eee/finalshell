@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class HW implements C_4_3 {
-   final FO_3 W;
+   public final FO_3 W;
 
-   HW(FO_3 var1) {
+   public HW(FO_3 var1) {
       this.W = var1;
    }
 

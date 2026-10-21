@@ -4,9 +4,9 @@ import java.awt.Graphics;
 import javax.swing.JTextArea;
 
 public class Yj4_2 extends JTextArea {
-   final com.finalshell.ui.panel.YQ M;
+   public final com.finalshell.ui.panel.YQ M;
 
-   Yj4_2(com.finalshell.ui.panel.YQ var1) {
+   public Yj4_2(com.finalshell.ui.panel.YQ var1) {
       this.M = var1;
    }
 

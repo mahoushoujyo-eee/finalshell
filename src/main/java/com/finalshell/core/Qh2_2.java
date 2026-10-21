@@ -7,7 +7,7 @@ public class Qh2_2 extends Qi2 {
    public static String a;
    public static long d;
 
-   Qh2_2(byte[] var1) {
+   public Qh2_2(byte[] var1) {
       this.h = var1;
    }
 

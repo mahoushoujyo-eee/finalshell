@@ -76,7 +76,7 @@ public abstract class F_6 implements H_4 {
       return this.r(var1).delete();
    }
 
-   protected abstract File r(String var1);
+   public abstract File r(String var1);
 
    public static void M(int[] var0) {
       N = var0;

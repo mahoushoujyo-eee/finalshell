@@ -16,8 +16,8 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class Proxy extends DefaultTableCellRenderer {
-   Border j;
-   SimpleDateFormat Y;
+   public Border j;
+   public SimpleDateFormat Y;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -44,7 +44,7 @@ public class Proxy extends DefaultTableCellRenderer {
       int var11 = var1.convertColumnIndexToModel(var6);
       JLabel var36 = var2.getClass().equals(LD3_2.class);
       if (var7 == null) {
-         if (var36 != false) {
+         if (var36 == null) {
             LD3_2 var12 = (LD3_2)var2;
             Object var13 = "";
             Object[] var10001 = Registry.emptyArgs();
@@ -222,7 +222,7 @@ public class Proxy extends DefaultTableCellRenderer {
       }
 
       if (var7 == null) {
-         if (var36 != false) {
+         if (var36 == null) {
             var9.setOpaque(true);
             if (var7 == null) {
                return var8;
@@ -234,7 +234,7 @@ public class Proxy extends DefaultTableCellRenderer {
 
       JLabel var35 = var36;
       if (var7 == null) {
-         if (var35 == false) {
+         if (var35 == null) {
             var9.setOpaque(true);
             var9.setBackground(new Color(a(29860, 3401678354442745474L), a(16339, 6296543440562798065L), a(16339, 6296543440562798065L), 2));
             if (var7 == null) {

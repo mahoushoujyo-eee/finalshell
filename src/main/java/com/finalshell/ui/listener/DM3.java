@@ -6,10 +6,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class DM3 extends KeyAdapter {
-   final com.finalshell.core.KR p;
-   final com.finalshell.ui.panel.Kd4 h;
+   public final com.finalshell.core.KR p;
+   public final com.finalshell.ui.panel.Kd4 h;
 
-   DM3(com.finalshell.ui.panel.Kd4 var1, com.finalshell.core.KR var2) {
+   public DM3(com.finalshell.ui.panel.Kd4 var1, com.finalshell.core.KR var2) {
       this.h = var1;
       this.p = var2;
    }

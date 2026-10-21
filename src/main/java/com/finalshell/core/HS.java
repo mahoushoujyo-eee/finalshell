@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class HS implements Fo2_2 {
-   final Q4_3 d;
-   final M3_2 t;
-   final H3_2 w;
+   public final Q4_3 d;
+   public final M3_2 t;
+   public final H3_2 w;
 
-   HS(H3_2 var1, Q4_3 var2, M3_2 var3) {
+   public HS(H3_2 var1, Q4_3 var2, M3_2 var3) {
       this.w = var1;
       this.d = var2;
       this.t = var3;

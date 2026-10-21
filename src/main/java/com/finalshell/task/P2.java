@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Dl2;
 
 public class P2 extends Thread {
-   final Dl2 s;
+   public final Dl2 s;
    public static long a;
 
-   P2(Dl2 var1) {
+   public P2(Dl2 var1) {
       this.s = var1;
    }
 

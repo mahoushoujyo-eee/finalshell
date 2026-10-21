@@ -21,13 +21,13 @@ import javax.swing.table.TableCellRenderer;
 import net.miginfocom.swing.MigLayout;
 
 public class Fg4 extends JPanel implements TableCellRenderer {
-   JLabel I;
-   Color U;
-   boolean x;
-   boolean u;
-   int j;
-   String Q;
-   ArrayList b;
+   public JLabel I;
+   public Color U;
+   public boolean x;
+   public boolean u;
+   public int j;
+   public String Q;
+   public ArrayList b;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -374,7 +374,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
                      var95 = Registry.lookupField(461058301372135593L).getBoolean(this);
                   }
 
-                  if (var95 != 0) {
+                  if (var95 != null) {
                      Registry.emptyArgs();
                      long var49 = 270389152141252877L;
                      Ref.h2(270389152141252877L, var49);
@@ -426,7 +426,7 @@ public class Fg4 extends JPanel implements TableCellRenderer {
             Dimension var10008;
             int var10010 = a(29360, 6594772236769614172L);
             Object var65 = 442347690627635916L;
-new Point((int)this, ((JLabel)Ref.g(442347690627635916L, var65)).getPreferredSize().height);
+var10010 = new Point((int)this, ((JLabel)Ref.g(442347690627635916L, var65)).getPreferredSize().height);
             var10008.setMinimumSize(var10008);
          }
 

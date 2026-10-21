@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.List;
 
 public abstract class FilesEvent extends AppEvent {
-   FilesEvent(List<File> files) {
+   public FilesEvent(List<File> files) {
    }
 
    public List<File> getFiles() {

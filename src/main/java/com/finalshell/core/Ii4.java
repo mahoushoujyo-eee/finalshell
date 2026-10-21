@@ -9,7 +9,7 @@ import javax.swing.ListCellRenderer;
 import javax.swing.plaf.ListUI;
 
 public class Ii4 implements ListCellRenderer {
-   protected Map V = new HashMap();
+   public Map V = new HashMap();
    public static String a;
 
    @Override

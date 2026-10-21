@@ -6,7 +6,7 @@ import com.finalshell.ui.model.O0;
 import java.lang.reflect.InvocationTargetException;
 
 public class LO3 extends Ln4_2 {
-   String w;
+   public String w;
    public static String c;
 
    public void K(O0 var1) {

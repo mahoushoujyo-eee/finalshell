@@ -21,8 +21,8 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class SwitchTabCommand extends Z7 {
-   Oa4 Q;
-   LQ r;
+   public Oa4 Q;
+   public LQ r;
    public static String[] S;
    public static String[] a;
    public static String[] d;
@@ -75,7 +75,7 @@ public class SwitchTabCommand extends Z7 {
       }
    }
 
-   void V(int var1) {
+   public void V(int var1) {
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
       Ref.h2(270389152141252877L, var3);

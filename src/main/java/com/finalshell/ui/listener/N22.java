@@ -8,10 +8,10 @@ import java.awt.event.AdjustmentListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class N22 implements AdjustmentListener {
-   final com.finalshell.ui.panel.OG3 S;
-   final ClearListDialog G;
+   public final com.finalshell.ui.panel.OG3 S;
+   public final ClearListDialog G;
 
-   N22(ClearListDialog var1, com.finalshell.ui.panel.OG3 var2) {
+   public N22(ClearListDialog var1, com.finalshell.ui.panel.OG3 var2) {
       this.G = var1;
       this.S = var2;
    }

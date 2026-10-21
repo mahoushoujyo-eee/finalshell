@@ -9,10 +9,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class MV {
-   HashMap v;
-   long T;
-   boolean H;
-   SimpleDateFormat b;
+   public HashMap v;
+   public long T;
+   public boolean H;
+   public SimpleDateFormat b;
    public static String[] a;
    public static String[] c;
    public static long d;
@@ -291,7 +291,7 @@ public class MV {
       Registry.lookupField(303519943996955852L).setBoolean(this, true);
    }
 
-   void l(O0 var1, String var2, HashMap var3) {
+   public void l(O0 var1, String var2, HashMap var3) {
       boolean var10000 = Ln4_2.R();
       O0 var5 = new O0();
       var1.C(var2, var5);

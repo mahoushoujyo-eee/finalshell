@@ -23,11 +23,11 @@ public class Ot2 extends Om2 {
       FN.p(new PJ(this, var1));
    }
 
-   static void s(Ot2 var0, MouseEvent var1) {
+   public static void s(Ot2 var0, MouseEvent var1) {
       var0.S(var1);
    }
 
-   static AWTEventListener a(Ot2 var0) {
+   public static AWTEventListener a(Ot2 var0) {
       return var0.h;
    }
 

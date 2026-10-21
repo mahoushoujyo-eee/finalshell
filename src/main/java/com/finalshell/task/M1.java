@@ -5,10 +5,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class M1 implements Runnable {
-   final String F;
-   final com.finalshell.ui.listener.LG p;
+   public final String F;
+   public final com.finalshell.ui.listener.LG p;
 
-   M1(com.finalshell.ui.listener.LG var1, String var2) {
+   public M1(com.finalshell.ui.listener.LG var1, String var2) {
       this.p = var1;
       this.F = var2;
    }

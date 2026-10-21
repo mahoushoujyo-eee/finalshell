@@ -3,9 +3,9 @@ package com.finalshell.task;
 import java.io.IOException;
 
 public class Y6 extends Thread {
-   final Process b;
+   public final Process b;
 
-   Y6(Process var1) {
+   public Y6(Process var1) {
       this.b = var1;
    }
 

@@ -7,10 +7,10 @@ import java.awt.event.ComponentEvent;
 import javax.swing.JList;
 
 public class NV3 extends ComponentAdapter {
-   final JList T;
-   final WO3 l;
+   public final JList T;
+   public final WO3 l;
 
-   NV3(WO3 var1, JList var2) {
+   public NV3(WO3 var1, JList var2) {
       this.l = var1;
       this.T = var2;
    }

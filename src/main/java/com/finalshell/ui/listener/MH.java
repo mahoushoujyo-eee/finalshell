@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class MH implements ItemListener {
-   final U62 u;
-   final JCheckBox N;
-   final EnableBackgroundImage C;
+   public final U62 u;
+   public final JCheckBox N;
+   public final EnableBackgroundImage C;
 
-   MH(EnableBackgroundImage var1, U62 var2, JCheckBox var3) {
+   public MH(EnableBackgroundImage var1, U62 var2, JCheckBox var3) {
       this.C = var1;
       this.u = var2;
       this.N = var3;

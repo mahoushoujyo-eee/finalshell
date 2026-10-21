@@ -7,10 +7,10 @@ import java.awt.Window;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fe2 implements Runnable {
-   final Window A;
+   public final Window A;
    public static long a;
 
-   Fe2(Window var1) {
+   public Fe2(Window var1) {
       this.A = var1;
    }
 

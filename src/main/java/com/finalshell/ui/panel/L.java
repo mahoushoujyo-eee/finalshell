@@ -148,31 +148,31 @@ public class L extends Ky4 {
       }
    }
 
-   static BufferedImage d(L var0) {
+   public static BufferedImage d(L var0) {
       return var0.T;
    }
 
-   static Point H(L var0) {
+   public static Point H(L var0) {
       return var0.o;
    }
 
-   static boolean R(L var0, boolean var1) {
+   public static boolean R(L var0, boolean var1) {
       return var0.w = var1;
    }
 
-   static JComponent N(L var0) {
+   public static JComponent N(L var0) {
       return var0.A;
    }
 
-   static Point u(L var0, Point var1) {
+   public static Point u(L var0, Point var1) {
       return var0.o = var1;
    }
 
-   static com.finalshell.core.Q6 l(L var0) {
+   public static com.finalshell.core.Q6 l(L var0) {
       return var0.M;
    }
 
-   static Cursor z(L var0) {
+   public static Cursor z(L var0) {
       return var0.X();
    }
 

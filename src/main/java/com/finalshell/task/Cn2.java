@@ -7,11 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 import org.icmp4j.j;
 
 public class Cn2 implements Runnable {
-   final j k;
-   final L9 X;
-   final com.finalshell.core.Dw4 U;
+   public final j k;
+   public final L9 X;
+   public final com.finalshell.core.Dw4 U;
 
-   Cn2(com.finalshell.core.Dw4 var1, j var2, L9 var3) {
+   public Cn2(com.finalshell.core.Dw4 var1, j var2, L9 var3) {
       this.U = var1;
       this.k = var2;
       this.X = var3;

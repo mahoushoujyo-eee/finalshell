@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class C_N implements ActionListener {
-   final Kf4 G;
+   public final Kf4 G;
 
-   C_N(Kf4 var1) {
+   public C_N(Kf4 var1) {
       this.G = var1;
    }
 

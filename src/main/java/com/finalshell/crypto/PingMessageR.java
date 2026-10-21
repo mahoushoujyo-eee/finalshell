@@ -44,32 +44,32 @@ public class PingMessageR {
    public Bz2 Q;
    public V e;
    public LW T;
-   Object V;
-   Object r;
-   Random m;
+   public Object V;
+   public Object r;
+   public Random m;
    public int q;
    public int p;
    public static int X;
    public static int w;
    public int g;
-   String W;
-   HashSet z;
-   HashSet j;
+   public String W;
+   public HashSet z;
+   public HashSet j;
    public static int A;
    public static int l;
    public static List o;
-   Timeout S;
-   HashSet D;
+   public Timeout S;
+   public HashSet D;
    public B2 f;
    public boolean Z;
    public HashMap s;
-   HashSet P;
-   static ArrayList a;
-   Or2 Y;
-   Object O;
-   static byte[] N;
-   static byte[] h;
-   static byte[] v;
+   public HashSet P;
+   public static ArrayList a;
+   public Or2 Y;
+   public Object O;
+   public static byte[] N;
+   public static byte[] h;
+   public static byte[] v;
    public static String[] y;
    public static String[] b;
    public static String[] c;
@@ -84,7 +84,7 @@ public class PingMessageR {
       throw new Error(a(17846, -21780));
    }
 
-   void G(DatagramPacket param1) {
+   public void G(DatagramPacket param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -648,7 +648,7 @@ public class PingMessageR {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void p() {
+   public void p() {
       String[] var10000 = N();
       Random var2 = this.V();
       String[] var1 = var10000;
@@ -666,15 +666,15 @@ public class PingMessageR {
       return (long)((Integer)a.get(new Random().nextInt(a.size() - a(11918, 5184118168228160951L)))).intValue();
    }
 
-   Random V() {
+   public Random V() {
       return new Random(this.w());
    }
 
-   long w() {
+   public long w() {
       throw new Error(a(17842, 31736));
    }
 
-   long n(double var1) {
+   public long n(double var1) {
       int var3 = (int)(var1 * 1.0E15);
       return (long)var3;
    }
@@ -726,7 +726,7 @@ public class PingMessageR {
       }
    }
 
-   void M() {
+   public void M() {
       Object var1 = null;
       byte[] var2 = a(17847, -28030).getBytes();
 
@@ -742,20 +742,20 @@ public class PingMessageR {
       }
    }
 
-   void Z(byte[] var1, char[] var2, byte[] var3, byte[] var4) throws Exception {
+   public void Z(byte[] var1, char[] var2, byte[] var3, byte[] var4) throws Exception {
       SecretKey var5 = this.D(var2, var3);
       Cipher var6 = Cipher.getInstance(a(17840, 1913));
       var6.init(2, var5, new IvParameterSpec(var4));
    }
 
-   SecretKey D(char[] var1, byte[] var2) throws NoSuchAlgorithmException, InvalidKeySpecException {
+   public SecretKey D(char[] var1, byte[] var2) throws NoSuchAlgorithmException, InvalidKeySpecException {
       SecretKeyFactory var3 = SecretKeyFactory.getInstance(a(17844, -17384));
       PBEKeySpec var4 = new PBEKeySpec(var1, var2, a(10271, 2017729951368635170L), a(1542, 6243365005476449596L));
       SecretKey var5 = var3.generateSecret(var4);
       return new SecretKeySpec(var5.getEncoded(), a(17843, -31152));
    }
 
-   void E() {
+   public void E() {
    }
 
    public void e(DatagramPacket var1) throws IOException {
@@ -782,7 +782,7 @@ public class PingMessageR {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   static void V(Uy2 var0) {
+   public static void V(Uy2 var0) {
       String[] var1 = N();
       Iterator var3 = o.iterator();
       int var10000;
@@ -888,7 +888,7 @@ public class PingMessageR {
       return var1;
    }
 
-   void X(UR var1) {
+   public void X(UR var1) {
       synchronized (this.V) {
          this.j.add(var1.v);
          this.n.remove(var1.v);
@@ -1025,7 +1025,7 @@ public class PingMessageR {
       this.Z = var1;
    }
 
-   static DatagramSocket B(PingMessageR var0) {
+   public static DatagramSocket B(PingMessageR var0) {
       return var0.I;
    }
 

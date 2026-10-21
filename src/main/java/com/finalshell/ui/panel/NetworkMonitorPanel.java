@@ -36,35 +36,35 @@ import javax.swing.border.Border;
 import net.miginfocom.swing.MigLayout;
 
 public class NetworkMonitorPanel extends JPanel {
-   JTextArea M;
-   ResetPanel w;
-   LocalMachinePanel R;
-   LocalMachinePanel K;
-   LocalMachinePanel h;
-   N22 y;
-   JO P;
-   JO j;
-   Color A;
-   int Y;
-   Color e;
-   SystemInfoPanel V;
-   JPanel Q;
-   JPanel i;
-   JPanel p;
-   JPanel o;
-   JPanel O;
-   JPanel m;
-   Lh2 S;
-   KV k;
-   RouteTracePanel3 z;
-   KD b;
-   ActionListener x;
-   Fg2 n;
-   Fg2 U;
-   Fg2 t;
-   String l;
-   KD f;
-   JLabel T;
+   public JTextArea M;
+   public ResetPanel w;
+   public LocalMachinePanel R;
+   public LocalMachinePanel K;
+   public LocalMachinePanel h;
+   public N22 y;
+   public JO P;
+   public JO j;
+   public Color A;
+   public int Y;
+   public Color e;
+   public SystemInfoPanel V;
+   public JPanel Q;
+   public JPanel i;
+   public JPanel p;
+   public JPanel o;
+   public JPanel O;
+   public JPanel m;
+   public Lh2 S;
+   public KV k;
+   public RouteTracePanel3 z;
+   public KD b;
+   public ActionListener x;
+   public Fg2 n;
+   public Fg2 U;
+   public Fg2 t;
+   public String l;
+   public KD f;
+   public JLabel T;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -237,7 +237,7 @@ public class NetworkMonitorPanel extends JPanel {
             throw var270.getTargetException();
          }
 
-new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
+var10048 = new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
          var7 = var10047.replaceAll("#", "");
       } catch (UnsupportedEncodingException var271) {
          var271.printStackTrace();
@@ -552,7 +552,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
    }
 
@@ -628,7 +628,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       }
    }
 
-   KD t(String var1) {
+   public KD t(String var1) {
       KD var2 = new KD(var1);
       var2.putClientProperty(Integer.valueOf(1), Boolean.valueOf(true));
       var2.setMargin(new Insets(0, 0, 0, 0));
@@ -637,14 +637,14 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       return var2;
    }
 
-   JO V(String var1) {
+   public JO V(String var1) {
       JO var2 = new JO(var1);
       var2.setText(var1);
       var2.setForeground((Color)Registry.lookupField(503018106388102479L).get(null));
       return var2;
    }
 
-   void Z(JComponent var1) {
+   public void Z(JComponent var1) {
       Object var2 = 265343814828332969L;
       ((JPanel)Ref.g(265343814828332969L, var2)).removeAll();
       Object var4 = 265343814828332969L;
@@ -705,7 +705,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       super.paintComponents(var1);
    }
 
-   Qe2_2 k(String var1) {
+   public Qe2_2 k(String var1) {
       Qe2_2 var2 = new Qe2_2(var1);
       var2.R(new Color(a(17712, 3600529029332035270L), a(17712, 3600529029332035270L), a(17712, 3600529029332035270L)));
       var2.k(0);
@@ -1232,7 +1232,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
       label558: {
          NetworkMonitorPanel var271 = var9.endsWith("\n");
          if (var3 == null) {
-            if (var271 != false) {
+            if (var271 == null) {
                var9 = var9.substring(0, var9.length() - 1);
             }
 
@@ -1246,7 +1246,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
             ((JTextArea)Ref.g(580770424908577265L, var109)).getText().equals(var9);
          }
 
-         if (var271 == false) {
+         if (var271 == null) {
             Object var111 = 580770424908577265L;
             ((JTextArea)Ref.g(580770424908577265L, var111)).setText(var9);
          }
@@ -1418,7 +1418,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
 
             label562: {
                if (var3 == null) {
-                  if (var10038 == false) {
+                  if (var10038 == null) {
                      break label562;
                   }
 
@@ -1435,7 +1435,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
                }
 
                if (var3 == null) {
-                  if (var10038 != false) {
+                  if (var10038 == null) {
                      Object var163 = 223739196397539293L;
                      ((JLabel)Ref.g(223739196397539293L, var163))
                         .setForeground(new Color(a(30622, 8875161723151996022L), a(31075, 7458467623727225485L), a(31075, 7458467623727225485L)));
@@ -1462,7 +1462,7 @@ new NetworkMonitorPanel((byte[])var10049, a(-16786, -18523));
                   }
                }
 
-               if (var10038 != false) {
+               if (var10038 == null) {
                   Object var171 = 223739196397539293L;
                   ((JLabel)Ref.g(223739196397539293L, var171))
                      .setForeground(new Color(a(30862, 6051201523158539118L), a(24190, 5354424300253805971L), a(30862, 6051201523158539118L)));

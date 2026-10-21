@@ -4,9 +4,9 @@ import com.finalshell.core.YI;
 import com.finalshell.reflect.Ref;
 
 public class Gx2 implements Runnable {
-   final YI T;
+   public final YI T;
 
-   Gx2(YI var1) {
+   public Gx2(YI var1) {
       this.T = var1;
    }
 

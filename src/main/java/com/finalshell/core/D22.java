@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.awt.Color;
 
 public class D22 implements CZ3_2 {
-   final com.finalshell.ui.panel.N_2 F;
+   public final com.finalshell.ui.panel.N_2 F;
 
-   D22(com.finalshell.ui.panel.N_2 var1) {
+   public D22(com.finalshell.ui.panel.N_2 var1) {
       this.F = var1;
    }
 

@@ -7,9 +7,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bn4 implements MouseListener {
-   final com.finalshell.ui.frame.U Z;
+   public final com.finalshell.ui.frame.U Z;
 
-   Bn4(com.finalshell.ui.frame.U var1) {
+   public Bn4(com.finalshell.ui.frame.U var1) {
       this.Z = var1;
    }
 

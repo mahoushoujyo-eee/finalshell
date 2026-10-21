@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class X0 implements ActionListener {
-   final CustomAcceleratePanel M;
+   public final CustomAcceleratePanel M;
 
-   X0(CustomAcceleratePanel var1) {
+   public X0(CustomAcceleratePanel var1) {
       this.M = var1;
    }
 

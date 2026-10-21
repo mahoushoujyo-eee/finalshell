@@ -29,65 +29,65 @@ import java.util.concurrent.ScheduledExecutorService;
 import org.apache.hc.client5.http.classic.HttpClient;
 
 public class YT3_2 implements CS3 {
-   Fx4 T;
-   DD3 h;
-   static YT3_2 yZ;
-   ArrayList R;
-   Yf2 V;
-   Tc2 s;
+   public Fx4 T;
+   public DD3 h;
+   public static YT3_2 yZ;
+   public ArrayList R;
+   public Yf2 V;
+   public Tc2 s;
    public U62 C;
-   File Q;
+   public File Q;
    public static long x;
-   JT r;
+   public JT r;
    public static D82_2 F;
-   LL3_2 O;
-   Ca4 yN;
-   Kx4_2 w;
-   Nl2_2 o;
-   Mapping E;
-   static int I;
+   public LL3_2 O;
+   public Ca4 yN;
+   public Kx4_2 w;
+   public Nl2_2 o;
+   public Mapping E;
+   public static int I;
    public static boolean yi;
-   CS3 m;
-   Qa2 f;
-   TextEditorFrame v;
-   PG_2 b;
+   public CS3 m;
+   public Qa2 f;
+   public TextEditorFrame v;
+   public PG_2 b;
    public static String Z;
-   Yy4_2 l;
-   OI n;
-   CustomAcceleratePanel B;
-   long P;
-   KQ J;
-   U5 y0;
-   Cy4 A;
-   com.finalshell.ui.frame.FP H;
-   Ln2 y8;
-   MV t;
-   TE y;
+   public Yy4_2 l;
+   public OI n;
+   public CustomAcceleratePanel B;
+   public long P;
+   public KQ J;
+   public U5 y0;
+   public Cy4 A;
+   public com.finalshell.ui.frame.FP H;
+   public Ln2 y8;
+   public MV t;
+   public TE y;
    public static ScheduledExecutorService p;
    public static long yY;
    public static HttpClient c;
    public static TerminalHelpFrame u;
-   com.finalshell.ui.dialog.DU U;
-   com.finalshell.ui.dialog.AW y2;
-   SyncPasswordDialog2 i;
-   SyncPasswordDialog W;
-   V7 L;
-   Om4 G;
-   KeyManagerFrame M;
-   Oy4_2 z;
+   public com.finalshell.ui.dialog.DU U;
+   public com.finalshell.ui.dialog.AW y2;
+   public SyncPasswordDialog2 i;
+   public SyncPasswordDialog W;
+   public V7 L;
+   public Om4 G;
+   public KeyManagerFrame M;
+   public Oy4_2 z;
    public boolean y_;
    public static long N;
-   DatagramSocket e;
-   boolean q;
-   DatagramSocket D;
+   public DatagramSocket e;
+   public boolean q;
+   public DatagramSocket D;
    public static HashSet j;
    public static ArrayList Y;
    public static ArrayList g;
    public static ArrayList S;
-   boolean d;
-   int k;
-   long X;
-   boolean a;
+   public boolean d;
+   public int k;
+   public long X;
+   public boolean a;
    public static Ky4[] K;
    public static String[] ab;
    public static String[] bb;
@@ -183,7 +183,7 @@ public class YT3_2 implements CS3 {
       }
    }
 
-   void r$void() {
+   public void r$void() {
    }
 
    public static YT3_2 i() {
@@ -238,7 +238,7 @@ public class YT3_2 implements CS3 {
       ((DatagramSocket)Ref.g(432262548258381510L, var1)).close();
    }
 
-   void v$void() {
+   public void v$void() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1150,7 +1150,7 @@ public class YT3_2 implements CS3 {
       // 81d: return
    }
 
-   void t() {
+   public void t() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1554,7 +1554,7 @@ public class YT3_2 implements CS3 {
       }
    }
 
-   void x$void() {
+   public void x$void() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5960,7 +5960,7 @@ public class YT3_2 implements CS3 {
       // 2517: return
    }
 
-   void d$void() {
+   public void d$void() {
       String var2;
       label80: {
          Ky4[] var10000 = c();
@@ -8012,12 +8012,12 @@ public class YT3_2 implements CS3 {
       return Registry.lookupField(329780002513415762L).getBoolean(this);
    }
 
-   static U62 W(YT3_2 var0) {
+   public static U62 W(YT3_2 var0) {
       Object var1 = 325429126481578482L;
       return (U62)Ref.g(325429126481578482L, var1);
    }
 
-   static long w(YT3_2 var0, String var1) {
+   public static long w(YT3_2 var0, String var1) {
       Object[] var10001 = Registry.packArgs(var1);
       long var3 = 353166247152693925L;
       Object[] var2 = var10001;

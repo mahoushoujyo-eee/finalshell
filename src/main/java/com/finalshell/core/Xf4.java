@@ -8,8 +8,8 @@ public class Xf4 implements GenericArrayType {
    public static String a;
 
    public Xf4(Type var1) {
+   super();
       int var10000 = Ph2.w();
-      super();
       int var2 = var10000;
       if (var2 != 0) {
          if (!k && var1 == null) {

@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Ai2_2;
 
 public class LG implements Runnable {
-   final Ai2_2 r;
+   public final Ai2_2 r;
    public static long a;
 
-   LG(Ai2_2 var1) {
+   public LG(Ai2_2 var1) {
       this.r = var1;
    }
 

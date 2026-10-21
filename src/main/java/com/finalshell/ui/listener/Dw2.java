@@ -7,9 +7,9 @@ import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dw2 implements KeyListener {
-   final com.finalshell.core.Km2 d;
+   public final com.finalshell.core.Km2 d;
 
-   Dw2(com.finalshell.core.Km2 var1) {
+   public Dw2(com.finalshell.core.Km2 var1) {
       this.d = var1;
    }
 

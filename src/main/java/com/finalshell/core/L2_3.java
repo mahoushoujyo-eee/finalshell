@@ -6,7 +6,7 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class L2_3 extends Lz2_2 {
-   protected Color b;
+   public Color b;
    public static long a;
 
    public L2_3(Color var1) {

@@ -17,10 +17,10 @@ import javax.swing.JTabbedPane;
 import javax.swing.text.JTextComponent;
 
 public class W92 {
-   protected static Map G;
-   protected static Map r;
-   protected static boolean T;
-   protected static boolean i;
+   public static Map G;
+   public static Map r;
+   public static boolean T;
+   public static boolean i;
    public static String[] a;
    public static String[] b;
 
@@ -84,7 +84,7 @@ public class W92 {
       G.put(var0, var1);
    }
 
-   protected static java.lang.Class O(java.lang.Class param0) {
+   public static java.lang.Class O(java.lang.Class param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -131,7 +131,7 @@ public class W92 {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   protected static IB c(AS var0) {
+   public static IB c(AS var0) {
       String var10000 = Cl4_2.I();
       java.lang.Class var2 = O(var0.l().getClass());
       String var1 = var10000;

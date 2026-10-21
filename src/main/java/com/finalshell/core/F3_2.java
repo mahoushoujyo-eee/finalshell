@@ -9,9 +9,9 @@ import java.util.List;
 import javax.swing.ImageIcon;
 
 public class F3_2 extends V3 {
-   protected com.finalshell.ui.model.A_3 O;
-   protected V3 t;
-   protected List k;
+   public com.finalshell.ui.model.A_3 O;
+   public V3 t;
+   public List k;
 
    public F3_2(FileFilter[] var1) {
       this(com.finalshell.ui.model.A_3.AND, var1);

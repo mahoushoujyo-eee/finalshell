@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Sk2 implements ActionListener {
-   final com.finalshell.core.At2 R;
-   final HD o;
+   public final com.finalshell.core.At2 R;
+   public final HD o;
 
-   Sk2(HD var1, com.finalshell.core.At2 var2) {
+   public Sk2(HD var1, com.finalshell.core.At2 var2) {
       this.o = var1;
       this.R = var2;
    }

@@ -5,10 +5,10 @@ import javax.swing.JComponent;
 import javax.swing.event.AncestorEvent;
 
 public class Fr2 extends FY {
-   final JComponent l;
-   final Gi2 W;
+   public final JComponent l;
+   public final Gi2 W;
 
-   Fr2(Gi2 var1, JComponent var2) {
+   public Fr2(Gi2 var1, JComponent var2) {
       this.W = var1;
       this.l = var2;
    }

@@ -24,7 +24,7 @@ public class WK_2 extends BasicTableHeaderUI {
    public static Color G;
    public static Color D;
    public static Color C;
-   boolean x = true;
+   public boolean x = true;
    public static String a;
 
    public static ComponentUI createUI(JComponent var0) {

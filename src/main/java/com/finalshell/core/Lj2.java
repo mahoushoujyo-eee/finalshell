@@ -6,8 +6,8 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.RowFilter.Entry;
 
 public class Lj2 extends Entry {
-   int h;
-   final DM3 n;
+   public int h;
+   public final DM3 n;
 
    public Lj2(DM3 var1) {
       this.n = var1;
@@ -113,7 +113,7 @@ public class Lj2 extends Entry {
       }
    }
 
-   Lj2(DM3 var1, Ut4 var2) {
+   public Lj2(DM3 var1, Ut4 var2) {
       this(var1);
    }
 }

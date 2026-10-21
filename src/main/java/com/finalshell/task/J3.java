@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.UpdateFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class J3 implements Runnable {
-   final UpdateFrame J;
+   public final UpdateFrame J;
 
-   J3(UpdateFrame var1) {
+   public J3(UpdateFrame var1) {
       this.J = var1;
    }
 

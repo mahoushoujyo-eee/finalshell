@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class WN extends MouseAdapter {
-   final Uo2 w;
+   public final Uo2 w;
 
-   WN(Uo2 var1) {
+   public WN(Uo2 var1) {
       this.w = var1;
    }
 
@@ -53,8 +53,8 @@ public class WN extends MouseAdapter {
 
       WN var33 = (WN)var3;
       int var10009 = 2;
-      if (this == false) {
-         if (var3 == 2) {
+      if (this == null) {
+         if (var3 == null) {
             Object var22 = 178668013303736722L;
             if (Registry.lookupField(532627492453842802L).getInt(Ref.g(178668013303736722L, var22)) == 2) {
                return;
@@ -71,7 +71,7 @@ public class WN extends MouseAdapter {
                throw var31.getTargetException();
             }
 
-            if (this == false) {
+            if (this == null) {
                return;
             }
          }
@@ -80,7 +80,7 @@ public class WN extends MouseAdapter {
          var10009 = 3;
       }
 
-      if (this == false) {
+      if (this == null) {
          if (var33 != var10009) {
             return;
          }

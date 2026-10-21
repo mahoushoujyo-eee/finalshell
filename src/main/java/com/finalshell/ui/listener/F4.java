@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComboBox;
 
 public class F4 implements ItemListener {
-   final Zn2 v;
+   public final Zn2 v;
 
-   F4(Zn2 var1) {
+   public F4(Zn2 var1) {
       this.v = var1;
    }
 

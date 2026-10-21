@@ -5,9 +5,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class Os_2 extends FocusAdapter {
-   final OG I;
+   public final OG I;
 
-   Os_2(OG var1) {
+   public Os_2(OG var1) {
       this.I = var1;
    }
 

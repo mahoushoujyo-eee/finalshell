@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class Rp2 {
    public final byte[] X;
 
-   Rp2(int[] var1) {
+   public Rp2(int[] var1) {
       this.X = e(var1);
    }
 
-   Rp2(byte[] var1) {
+   public Rp2(byte[] var1) {
       this.X = var1;
    }
 

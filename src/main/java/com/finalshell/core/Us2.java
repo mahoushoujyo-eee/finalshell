@@ -3,12 +3,9 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 
 public class Us2 {
-   String d;
-   String V;
-   String t;
-
-   Us2() {
-   }
+   public String d;
+   public String V;
+   public String t;
 
    public String o() {
       Object var1 = 309224414318299025L;

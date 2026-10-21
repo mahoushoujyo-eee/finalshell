@@ -20,8 +20,8 @@ public class KP3 extends Ky4 {
    }
 
    public KP3(Component var1, Insets var2) {
+   super();
       int[] var10000 = K32.L$arrint();
-      super();
       int[] var3 = var10000;
       this.b(var2);
       if (var3 != null) {

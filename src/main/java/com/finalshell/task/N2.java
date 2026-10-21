@@ -4,10 +4,10 @@ import com.finalshell.core.Fv2_2;
 import com.finalshell.core.S0;
 
 public class N2 implements Runnable {
-   final Fv2_2 K;
-   final S0 e;
+   public final Fv2_2 K;
+   public final S0 e;
 
-   N2(S0 var1, Fv2_2 var2) {
+   public N2(S0 var1, Fv2_2 var2) {
       this.e = var1;
       this.K = var2;
    }

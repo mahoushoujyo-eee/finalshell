@@ -143,7 +143,7 @@ public final class SN {
       return var0;
    }
 
-   static Map E() {
+   public static Map E() {
       return B;
    }
 

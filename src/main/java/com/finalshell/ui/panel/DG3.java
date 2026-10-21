@@ -14,14 +14,14 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class DG3 extends JPanel implements AL {
-   CT o;
-   KV R;
-   AM W;
-   Ge2 n;
+   public CT o;
+   public KV R;
+   public AM W;
+   public Ge2 n;
    public static String[] a;
    public static String[] b;
 
-   DG3(CT var1) {
+   public DG3(CT var1) {
       long var3 = 532438584493887068L;
       Ref.s(532438584493887068L, var1, var3);
       this.setOpaque(false);
@@ -105,7 +105,7 @@ public class DG3 extends JPanel implements AL {
          long var13 = 424156930953488367L;
          Object[] var12 = var10003;
          Copy2 var7 = (Copy2)Ref.h(424156930953488367L, var12, var13);
-         if (var2 != false) {
+         if (var2 == null) {
             Object[] var10004 = Registry.emptyArgs();
             long var15 = 591392751032912941L;
             Object[] var14 = var10004;

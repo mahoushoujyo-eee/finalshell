@@ -6,17 +6,17 @@ import com.finalshell.ui.panel.Bq2;
 import javax.swing.Icon;
 
 public class L1 {
-   String A;
-   String I;
-   int J;
-   Bq2 o;
-   int M;
-   String p;
-   Bo4 l;
-   Icon O;
-   boolean N;
-   long e;
-   int G;
+   public String A;
+   public String I;
+   public int J;
+   public Bq2 o;
+   public int M;
+   public String p;
+   public Bo4 l;
+   public Icon O;
+   public boolean N;
+   public long e;
+   public int G;
 
    public L1(String var1, String var2) {
       long var4 = 222693280651791850L;

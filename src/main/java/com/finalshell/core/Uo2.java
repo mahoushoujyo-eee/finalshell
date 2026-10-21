@@ -14,10 +14,10 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
 
 public class Uo2 extends JTable {
-   com.finalshell.ui.model.Gk2 O;
-   int p;
-   int T;
-   boolean c;
+   public com.finalshell.ui.model.Gk2 O;
+   public int p;
+   public int T;
+   public boolean c;
    public static boolean q;
    public static long[] a;
    public static Integer[] b;
@@ -145,7 +145,7 @@ public class Uo2 extends JTable {
       }
    }
 
-   protected TableRowSorter f() {
+   public TableRowSorter f() {
       boolean var10000 = i();
       com.finalshell.ui.model.Gk2 var2 = (com.finalshell.ui.model.Gk2)this.getModel();
       boolean var1 = var10000;

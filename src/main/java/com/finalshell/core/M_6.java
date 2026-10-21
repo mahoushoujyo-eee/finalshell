@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class M_6 extends L_6{
-   final Object X;
+   public final Object X;
 
-   M_6(Object var1) {
+   public M_6(Object var1) {
       this.X = var1;
    }
 

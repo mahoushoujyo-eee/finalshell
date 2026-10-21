@@ -4,9 +4,9 @@ import com.finalshell.core.Gs2_2;
 import java.io.IOException;
 
 public class LS3 implements Runnable {
-   final Gs2_2 f;
+   public final Gs2_2 f;
 
-   LS3(Gs2_2 var1) {
+   public LS3(Gs2_2 var1) {
       this.f = var1;
    }
 

@@ -5,7 +5,7 @@ public class Q9 {
    public static int O;
    public static int u;
    public static int h;
-   static int a;
+   public static int a;
    public static int z;
 
    static {

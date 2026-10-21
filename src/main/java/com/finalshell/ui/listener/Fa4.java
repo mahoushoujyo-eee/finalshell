@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Fa4 implements ActionListener {
-   final AccelerateRdpHelpPanel b;
+   public final AccelerateRdpHelpPanel b;
 
-   Fa4(AccelerateRdpHelpPanel var1) {
+   public Fa4(AccelerateRdpHelpPanel var1) {
       this.b = var1;
    }
 

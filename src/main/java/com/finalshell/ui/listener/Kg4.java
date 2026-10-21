@@ -11,10 +11,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kg4 implements ActionListener {
-   final com.finalshell.ui.dialog.C5 e;
-   final CustomAcceleratePanel C;
+   public final com.finalshell.ui.dialog.C5 e;
+   public final CustomAcceleratePanel C;
 
-   Kg4(CustomAcceleratePanel var1, com.finalshell.ui.dialog.C5 var2) {
+   public Kg4(CustomAcceleratePanel var1, com.finalshell.ui.dialog.C5 var2) {
       this.C = var1;
       this.e = var2;
    }

@@ -23,7 +23,7 @@ public class S3_2 extends BasicDesktopIconUI {
    }
 
    @Override
-   protected void installComponents() {
+   public void installComponents() {
       this.iconPane = new F4(this.frame);
       this.desktopIcon.setLayout(new BorderLayout());
       this.desktopIcon.add(this.iconPane, a(29004, 8680));

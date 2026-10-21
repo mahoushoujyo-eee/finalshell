@@ -5,10 +5,10 @@ import java.io.FileFilter;
 import java.util.List;
 
 public class CP implements FileFilter {
-   final List s;
-   final boolean u;
+   public final List s;
+   public final boolean u;
 
-   CP(List var1, boolean var2) {
+   public CP(List var1, boolean var2) {
       this.s = var1;
       this.u = var2;
    }

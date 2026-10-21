@@ -7,9 +7,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class KZ extends MouseAdapter {
-   final SwitchTabCommand Z;
+   public final SwitchTabCommand Z;
 
-   KZ(SwitchTabCommand var1) {
+   public KZ(SwitchTabCommand var1) {
       this.Z = var1;
    }
 

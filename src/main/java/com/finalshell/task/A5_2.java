@@ -5,10 +5,10 @@ import com.finalshell.ui.panel.U22;
 import java.io.File;
 
 public class A5_2 implements Runnable {
-   final File g;
-   final U22 r;
+   public final File g;
+   public final U22 r;
 
-   A5_2(U22 var1, File var2) {
+   public A5_2(U22 var1, File var2) {
       this.r = var1;
       this.g = var2;
    }

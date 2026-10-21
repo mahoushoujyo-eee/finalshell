@@ -10,11 +10,11 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Jh2 implements MouseListener {
-   final com.finalshell.ui.model.C62 y;
-   final Edit F;
-   final Yy2 J;
+   public final com.finalshell.ui.model.C62 y;
+   public final Edit F;
+   public final Yy2 J;
 
-   Jh2(Yy2 var1, com.finalshell.ui.model.C62 var2, Edit var3) {
+   public Jh2(Yy2 var1, com.finalshell.ui.model.C62 var2, Edit var3) {
       this.J = var1;
       this.y = var2;
       this.F = var3;
@@ -29,7 +29,7 @@ public class Jh2 implements MouseListener {
       byte var10002 = 3;
       if (this == null) {
          label53: {
-            if (var10001 == 3) {
+            if (var10001 == null) {
                var10001 = this;
                Object var7 = 452820645423409010L;
                boolean var21 = ((Yy2)Ref.g(452820645423409010L, var7)).isRowSelected((int)var3);
@@ -70,7 +70,7 @@ public class Jh2 implements MouseListener {
          var10001 = (Jh2)var3;
       }
 
-      if (var10001 != false) {
+      if (var10001 == null) {
          Object var11 = 504554534303582134L;
          Ref.g(504554534303582134L, var11);
          LD3_2 var10003 = (LD3_2)(Registry.packArgs((int)var3));

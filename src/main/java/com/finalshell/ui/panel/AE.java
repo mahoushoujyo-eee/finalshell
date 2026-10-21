@@ -6,8 +6,8 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JSplitPane;
 
 public class AE extends JSplitPane {
-   boolean N;
-   int s;
+   public boolean N;
+   public int s;
 
    public AE(int var1) {
       super(var1);

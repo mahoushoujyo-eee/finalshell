@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Ys4 extends ComponentAdapter {
-   final Ie2 W;
+   public final Ie2 W;
 
-   Ys4(Ie2 var1) {
+   public Ys4(Ie2 var1) {
       this.W = var1;
    }
 

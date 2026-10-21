@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationTargetException;
 import org.jdesktop.swingx.JXList;
 
 public class A8 implements MouseListener {
-   final ClearListDialog U;
+   public final ClearListDialog U;
 
-   A8(ClearListDialog var1) {
+   public A8(ClearListDialog var1) {
       this.U = var1;
    }
 
@@ -72,7 +72,7 @@ public class A8 implements MouseListener {
       L1 var5 = var10007;
       L1 var32 = var1.getButton();
       if (var2 == null) {
-         if (var32 != 1) {
+         if (var32 != null) {
             return;
          }
 
@@ -91,7 +91,7 @@ public class A8 implements MouseListener {
          var10008.endsWith("/");
       }
 
-      if (var32 == 0) {
+      if (var32 == null) {
       }
 
       Object var22 = 550210732415152298L;

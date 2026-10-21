@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Jb2 implements Runnable {
-   final G f;
+   public final G f;
 
-   Jb2(G var1) {
+   public Jb2(G var1) {
       this.f = var1;
    }
 

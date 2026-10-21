@@ -6,11 +6,11 @@ import java.io.File;
 import java.io.IOException;
 
 public class P82 implements Runnable {
-   final CK J;
-   final File p;
-   final SelectUploadFile l;
+   public final CK J;
+   public final File p;
+   public final SelectUploadFile l;
 
-   P82(SelectUploadFile var1, CK var2, File var3) {
+   public P82(SelectUploadFile var1, CK var2, File var3) {
       this.l = var1;
       this.J = var2;
       this.p = var3;

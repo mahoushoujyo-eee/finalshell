@@ -11,14 +11,14 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class GR extends AbstractTableModel {
-   ArrayList B;
+   public ArrayList B;
    public static String u;
    public static String Y;
    public static String s;
    public static String Z;
    public static String R;
-   String[] I;
-   boolean l;
+   public String[] I;
+   public boolean l;
 
    public GR() {
       ArrayList var10001 = new ArrayList();

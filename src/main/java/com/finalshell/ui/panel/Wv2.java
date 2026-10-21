@@ -4,9 +4,9 @@ import com.finalshell.core.WH3;
 import javax.swing.JLabel;
 
 public class Wv2 extends JLabel {
-   final XW3 t;
+   public final XW3 t;
 
-   Wv2(XW3 var1) {
+   public Wv2(XW3 var1) {
       this.t = var1;
    }
 

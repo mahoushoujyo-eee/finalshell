@@ -8,12 +8,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class C62 extends MouseAdapter {
-   final Cn2 G;
-   final WH3 O;
-   final ConnectionProperty e;
-   final XW3 m;
+   public final Cn2 G;
+   public final WH3 O;
+   public final ConnectionProperty e;
+   public final XW3 m;
 
-   C62(XW3 var1, Cn2 var2, WH3 var3, ConnectionProperty var4) {
+   public C62(XW3 var1, Cn2 var2, WH3 var3, ConnectionProperty var4) {
       this.m = var1;
       this.G = var2;
       this.O = var3;

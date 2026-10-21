@@ -9,12 +9,12 @@ import java.util.regex.Pattern;
 
 public class XZ_2 {
    public String c;
-   KV x;
-   String P;
-   String i;
-   String n;
-   String M;
-   String b;
+   public KV x;
+   public String P;
+   public String i;
+   public String n;
+   public String M;
+   public String b;
    public static String[] a;
    public static String[] d;
 
@@ -55,7 +55,7 @@ public class XZ_2 {
             Object var17 = 425298135793061145L;
             XZ_2 var10001 = ((String)Ref.g(425298135793061145L, var17)).equals((String)Registry.lookupField(353811571070434348L).get(null));
             if (var1 != null) {
-               if (var10001 != false) {
+               if (var10001 == null) {
                   Object var19 = 561394686517784643L;
                   Object var10003 = Ref.g(561394686517784643L, var19);
                   long var22 = 513452292129737875L;
@@ -75,7 +75,7 @@ public class XZ_2 {
                ((String)Ref.g(425298135793061145L, var23)).equals((String)Registry.lookupField(411776552392660523L).get(null));
             }
 
-            if (var10001 == false) {
+            if (var10001 == null) {
                break label125;
             }
          }
@@ -107,7 +107,7 @@ public class XZ_2 {
          Object var35 = 534147591189393066L;
          XZ_2 var10005 = ((String)Ref.g(534147591189393066L, var35)).equals("");
          if (var1 != null) {
-            if (var10005 != false) {
+            if (var10005 == null) {
                return;
             }
 
@@ -121,7 +121,7 @@ public class XZ_2 {
             var10006.equals(a(-27288, -14904));
          }
 
-         if (var10005 != false) {
+         if (var10005 == null) {
             return;
          }
 

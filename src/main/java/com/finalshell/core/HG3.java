@@ -13,9 +13,9 @@ public class HG3 extends W5 {
    public static int g;
    public static int Y;
    public static int M;
-   protected Kernel d = null;
-   protected boolean K = true;
-   protected boolean J = true;
+   public Kernel d = null;
+   public boolean K = true;
+   public boolean J = true;
    public int f;
    public static String a;
    public static long[] h;

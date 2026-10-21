@@ -7,9 +7,6 @@ public class Z4 implements Runnable {
    public static long[] d;
    public static Long[] e;
 
-   Z4() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

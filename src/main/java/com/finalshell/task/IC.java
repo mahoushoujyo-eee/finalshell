@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.KD3;
 
 public class IC implements Runnable {
-   final KD3 Y;
+   public final KD3 Y;
 
-   IC(KD3 var1) {
+   public IC(KD3 var1) {
       this.Y = var1;
    }
 

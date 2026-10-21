@@ -5,9 +5,9 @@ import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 
 public class Gv2 implements AdjustmentListener {
-   final ConnectionProperty n;
+   public final ConnectionProperty n;
 
-   Gv2(ConnectionProperty var1) {
+   public Gv2(ConnectionProperty var1) {
       this.n = var1;
    }
 

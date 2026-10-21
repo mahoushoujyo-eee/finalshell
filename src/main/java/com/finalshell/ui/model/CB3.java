@@ -6,9 +6,9 @@ import javax.swing.ImageIcon;
 import javax.swing.tree.TreeNode;
 
 public abstract class CB3 extends Q_2 implements Serializable {
-   protected transient ImageIcon x = null;
-   protected Ux2 I = Ux2.waiting;
-   protected Throwable X = null;
+   public transient ImageIcon x = null;
+   public Ux2 I = Ux2.waiting;
+   public Throwable X = null;
    public static String[] e;
    public static String[] b;
    public static String[] c;
@@ -66,7 +66,7 @@ public abstract class CB3 extends Q_2 implements Serializable {
       return var10000;
    }
 
-   protected ImageIcon F() {
+   public ImageIcon F() {
       return IZ.c.equals(Id4.none) ? null : new ImageIcon(CB3.class.getResource(a(-20552, 27060) + IZ.c + a(-20551, -16345)));
    }
 

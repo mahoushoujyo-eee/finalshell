@@ -131,7 +131,7 @@ public class S1 extends JPanel {
       var2.s();
    }
 
-   static String y(S1 var0, W82 var1, int var2) {
+   public static String y(S1 var0, W82 var1, int var2) {
       return var0.c(var1, var2);
    }
 

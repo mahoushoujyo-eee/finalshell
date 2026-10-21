@@ -16,8 +16,8 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class Y3 extends JPanel {
-   SetBackgroundImagePanel G;
-   Rectangle A;
+   public SetBackgroundImagePanel G;
+   public Rectangle A;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -108,7 +108,7 @@ public class Y3 extends JPanel {
       }
    }
 
-   C k(String var1) {
+   public C k(String var1) {
       Registry.packArgs(var1);
       long var3 = 378399160856121064L;
       Object var10001 = Ref.h2(378399160856121064L, var3);

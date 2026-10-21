@@ -4,13 +4,13 @@ public class C_U {
    public final String e;
    @C_9
    public final NA_3[] t;
-   static boolean p;
+   public static boolean p;
    public static String[] a;
    public static String[] b;
 
    public C_U(String var1, @C_9 NA_3[] var2) {
+   super();
       String[] var10000 = RG_2.C();
-      super();
       String[] var3 = var10000;
       if (var3 != null) {
          if (!p && var1 == null) {

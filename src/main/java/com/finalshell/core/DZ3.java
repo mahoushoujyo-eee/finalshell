@@ -5,16 +5,16 @@ import java.io.OutputStream;
 
 public class DZ3 extends Dm4 {
    public static byte[] M;
-   String D;
-   int i;
-   String q = b(-25737, -2895);
-   int A = 0;
+   public String D;
+   public int i;
+   public String q = b(-25737, -2895);
+   public int A = 0;
    public static String[] a;
    public static String[] f;
    public static long[] n;
    public static Integer[] p;
 
-   DZ3() {
+   public DZ3() {
       this.Y = M;
       this.M(b(3767, 6367649432648437702L));
       this.Q(b(18923, 4147474994088511641L));
@@ -22,7 +22,7 @@ public class DZ3 extends Dm4 {
    }
 
    @Override
-   void n() {
+   public void n() {
       this.o = new Cs4();
    }
 
@@ -143,7 +143,7 @@ public class DZ3 extends Dm4 {
    }
 
    @Override
-   void S() {
+   public void S() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -349,7 +349,7 @@ public class DZ3 extends Dm4 {
    }
 
    @Override
-   protected YU V() {
+   public YU V() {
       UJ var1 = new UJ(b(16364, 2065934638942322332L) + this.D.length() + this.q.length() + this.w.D());
       YU var2 = new YU(var1);
       var2.M();

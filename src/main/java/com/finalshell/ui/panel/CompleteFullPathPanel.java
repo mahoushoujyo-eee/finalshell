@@ -18,11 +18,11 @@ import javax.swing.JPopupMenu;
 import javax.swing.JRadioButtonMenuItem;
 
 public class CompleteFullPathPanel extends JPopupMenu {
-   Backspace W;
+   public Backspace W;
    public static String[] a;
    public static String[] b;
 
-   CompleteFullPathPanel(Backspace var1) {
+   public CompleteFullPathPanel(Backspace var1) {
       long var3 = 269701149216436117L;
       Ref.s(269701149216436117L, var1, var3);
       Object[] var10002 = Registry.emptyArgs();
@@ -37,7 +37,7 @@ public class CompleteFullPathPanel extends JPopupMenu {
       }
    }
 
-   void A() {
+   public void A() {
       this.removeAll();
       Registry.emptyArgs();
       long var11 = 270389152141252877L;
@@ -67,7 +67,7 @@ public class CompleteFullPathPanel extends JPopupMenu {
          throw var32.getTargetException();
       }
 
-new CompleteFullPathPanel(var1, var39);
+var10004 = new CompleteFullPathPanel(var1, var39);
       JCheckBoxMenuItem var2 = var10003;
       var2.addActionListener(new DI(this, var1, var2));
       JCheckBoxMenuItem var36;
@@ -83,7 +83,7 @@ new CompleteFullPathPanel(var1, var39);
          throw var31.getTargetException();
       }
 
-new CompleteFullPathPanel(var1, var45);
+var10005 = new CompleteFullPathPanel(var1, var45);
       JCheckBoxMenuItem var3 = var36;
       this.add(var3);
       var3.addActionListener(new X42(this, var1, var3));
@@ -101,7 +101,7 @@ new CompleteFullPathPanel(var1, var45);
          throw var30.getTargetException();
       }
 
-new CompleteFullPathPanel(var1, var50);
+var40 = new CompleteFullPathPanel(var1, var50);
       JCheckBoxMenuItem var4 = var37;
       this.add(var4);
       var4.addActionListener(new N9(this, var1, var4));
@@ -156,7 +156,7 @@ new CompleteFullPathPanel(var1, var50);
       var6.add(var10);
    }
 
-   JMenuItem K(U62 var1, int var2) {
+   public JMenuItem K(U62 var1, int var2) {
       JRadioButtonMenuItem var10001;
       String var10002 = var2 + a(17064, 433);
       Object[] var10004 = Registry.emptyArgs();
@@ -170,7 +170,7 @@ new CompleteFullPathPanel(var1, var50);
          throw var6.getTargetException();
       }
 
-new CompleteFullPathPanel(var1, var8 == var2);
+var10002 = new CompleteFullPathPanel(var1, var8 == var2);
       JRadioButtonMenuItem var3 = var10001;
       var3.addActionListener(new C9(this, var1, var2));
       return var3;

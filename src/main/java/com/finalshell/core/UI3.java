@@ -5,16 +5,16 @@ import com.finalshell.reflect.Registry;
 import java.util.ArrayList;
 
 public class UI3 {
-   String v;
+   public String v;
    public long J;
    public long X;
-   long y;
-   long l;
-   long C;
-   long G;
+   public long y;
+   public long l;
+   public long C;
+   public long G;
    public ArrayList e;
    public ArrayList O;
-   int d;
+   public int d;
    public static long a;
 
    public UI3() {

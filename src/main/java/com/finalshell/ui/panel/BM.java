@@ -1110,7 +1110,7 @@ public class BM extends JComponent implements Sa2 {
    }
 
    @Override
-   protected void paintComponent(Graphics param1) {
+   public void paintComponent(Graphics param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3364,95 +3364,95 @@ public class BM extends JComponent implements Sa2 {
       return this.C(var1);
    }
 
-   static int B(BM var0) {
+   public static int B(BM var0) {
       return var0.I;
    }
 
-   static PF3 v(BM var0) {
+   public static PF3 v(BM var0) {
       return var0.p;
    }
 
-   static boolean C(BM var0) {
+   public static boolean C(BM var0) {
       return var0.a;
    }
 
-   static int q(BM var0, int var1, Insets var2) {
+   public static int q(BM var0, int var1, Insets var2) {
       return var0.Z(var1, var2);
    }
 
-   static int Y(BM var0, int var1, int var2, Insets var3) {
+   public static int Y(BM var0, int var1, int var2, Insets var3) {
       return var0.x(var1, var2, var3);
    }
 
-   static int P(BM var0, int var1, Insets var2) {
+   public static int P(BM var0, int var1, Insets var2) {
       return var0.I(var1, var2);
    }
 
-   static int w(BM var0, int var1, int var2, Insets var3) {
+   public static int w(BM var0, int var1, int var2, Insets var3) {
       return var0.M(var1, var2, var3);
    }
 
-   static boolean D(BM var0) {
+   public static boolean D(BM var0) {
       return var0.U;
    }
 
-   static boolean x(BM var0) {
+   public static boolean x(BM var0) {
       return var0.i;
    }
 
-   static boolean w(BM var0) {
+   public static boolean w(BM var0) {
       return var0.V;
    }
 
-   static boolean Z(BM var0, boolean var1) {
+   public static boolean Z(BM var0, boolean var1) {
       return var0.V = var1;
    }
 
-   static SZ t(BM var0) {
+   public static SZ t(BM var0) {
       return var0.x;
    }
 
-   static BufferedImage E(BM var0) {
+   public static BufferedImage E(BM var0) {
       return var0.E;
    }
 
-   static void A(BM var0) {
+   public static void A(BM var0) {
       var0.C();
    }
 
-   static void U(BM var0) {
+   public static void U(BM var0) {
       var0.a$void();
    }
 
-   static int g$int(BM var0) {
+   public static int g$int(BM var0) {
       return var0.h();
    }
 
-   static boolean K(BM var0) {
+   public static boolean K(BM var0) {
       return var0.G;
    }
 
-   static void W(BM var0) {
+   public static void W(BM var0) {
       var0.X$void();
    }
 
-   static void F(BM var0) {
+   public static void F(BM var0) {
       var0.j$void();
    }
 
-   static boolean z(BM var0) {
+   public static boolean z(BM var0) {
       return var0.R;
    }
 
-   static boolean[] Y(BM var0) {
+   public static boolean[] Y(BM var0) {
       return var0.b$arrboolean();
    }
 
-   static void g$void(BM var0) {
+   public static void g$void(BM var0) {
       var0.M$void();
    }
 
-   static boolean[] P(BM var0) {
+   public static boolean[] P(BM var0) {
       return var0.c();
    }
 

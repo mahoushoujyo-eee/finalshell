@@ -1,17 +1,17 @@
 package com.finalshell.core;
 
 public class Lq2 {
-   int T;
-   Qm2 V;
-   int h;
-   long E;
+   public int T;
+   public Qm2 V;
+   public int h;
+   public long E;
 
-   Lq2(Qm2 var1, int var2) {
+   public Lq2(Qm2 var1, int var2) {
       this.V = var1;
       this.h = var2;
    }
 
-   void g() {
+   public void g() {
       this.T++;
    }
 

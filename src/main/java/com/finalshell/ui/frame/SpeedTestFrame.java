@@ -18,18 +18,19 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class SpeedTestFrame extends JFrame implements Cq2 {
-   Lv4_2 o;
-   U K;
-   SPanel g;
-   SPanel E;
-   LF3_2 n;
-   LF3_2 u;
-   boolean Q;
+   public Lv4_2 o;
+   public U K;
+   public SPanel g;
+   public SPanel E;
+   public LF3_2 n;
+   public LF3_2 u;
+   public boolean Q;
    public static Ky4[] H;
    public static String[] a;
    public static String[] b;
 
    public SpeedTestFrame(Lv4_2 var1, U var2) {
+   super((Lv4_2)Ref.g(229405627664598133L, var2), true);
       Registry.lookupField(410260607189217057L).setBoolean(this, true);
       this.setIconImage((Image)Registry.lookupField(582605604039442414L).get(null));
       long var5 = 229405627664598133L;
@@ -81,10 +82,9 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       this.addWindowListener(new JD(this));
    }
 
-   void a() {
+   public void a() {
       LF3_2 var10002;
       Object var2 = 229405627664598133L;
-      super((Lv4_2)Ref.g(229405627664598133L, var2), true);
       long var5 = 414968019500081253L;
       LF3_2 var4 = var10002;
       Ref.s(414968019500081253L, var4, var5);
@@ -151,7 +151,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       }
    }
 
-   void O() {
+   public void O() {
       Object var10001;
       label36: {
          Ky4[] var1 = K();
@@ -203,7 +203,7 @@ public class SpeedTestFrame extends JFrame implements Cq2 {
       Registry.lookupField(410260607189217057L).setBoolean(var10001, false);
    }
 
-   void M() {
+   public void M() {
    }
 
    @Override

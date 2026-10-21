@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class U_2_3 implements HL {
-   final FF_2 G;
+   public final FF_2 G;
 
-   U_2_3(FF_2 var1) {
+   public U_2_3(FF_2 var1) {
       this.G = var1;
    }
 

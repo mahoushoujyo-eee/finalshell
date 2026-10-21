@@ -6,10 +6,10 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class Xu2 implements Runnable {
-   final DnsResolveFailedSetting v;
+   public final DnsResolveFailedSetting v;
    public static long a;
 
-   Xu2(DnsResolveFailedSetting var1) {
+   public Xu2(DnsResolveFailedSetting var1) {
       this.v = var1;
    }
 

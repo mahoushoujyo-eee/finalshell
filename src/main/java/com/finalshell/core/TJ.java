@@ -6,8 +6,8 @@ import java.awt.Dimension;
 import java.awt.Insets;
 
 public class TJ extends T4 {
-   protected int d;
-   protected boolean r;
+   public int d;
+   public boolean r;
 
    public TJ() {
       this(2);
@@ -166,7 +166,7 @@ public class TJ extends T4 {
       }
    }
 
-   protected Dimension Q(Container var1, boolean var2) {
+   public Dimension Q(Container var1, boolean var2) {
       int var10000 = T4.O();
       int var4 = var1.getComponentCount();
       int var3 = var10000;

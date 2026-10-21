@@ -7,10 +7,10 @@ import com.finalshell.core.Qm2;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Tb2 implements Runnable {
-   boolean C = false;
-   Object S = new Object();
-   long E = 0L;
-   LinkedBlockingQueue X = new LinkedBlockingQueue();
+   public boolean C = false;
+   public Object S = new Object();
+   public long E = 0L;
+   public LinkedBlockingQueue X = new LinkedBlockingQueue();
 
    public Tb2() {
       LA3.b.execute(this);
@@ -22,7 +22,7 @@ public class Tb2 implements Runnable {
       this.X.add(var3);
    }
 
-   long z(Qm2 var1) {
+   public long z(Qm2 var1) {
       com.finalshell.ui.panel.Ky4[] var10000 = Qm2.J();
       int var3 = var1.d.s + (int)((float)var1.d.s * Cs2.P);
       com.finalshell.ui.panel.Ky4[] var2 = var10000;

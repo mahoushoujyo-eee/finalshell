@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class XD implements ActionListener {
-   final NetworkMonitorPanel n;
+   public final NetworkMonitorPanel n;
 
-   XD(NetworkMonitorPanel var1) {
+   public XD(NetworkMonitorPanel var1) {
       this.n = var1;
    }
 

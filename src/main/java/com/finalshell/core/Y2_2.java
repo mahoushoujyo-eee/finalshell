@@ -3,12 +3,12 @@ package com.finalshell.core;
 import com.finalshell.ui.frame.XD3;
 
 public class Y2_2 extends YO {
-   final com.finalshell.ui.panel.Hd2 T;
-   final XD3 E;
+   public final com.finalshell.ui.panel.Hd2 T;
+   public final XD3 E;
    public static String[] a;
    public static String[] b;
 
-   Y2_2(XD3 var1, com.finalshell.ui.panel.Hd2 var2) {
+   public Y2_2(XD3 var1, com.finalshell.ui.panel.Hd2 var2) {
       this.E = var1;
       this.T = var2;
    }

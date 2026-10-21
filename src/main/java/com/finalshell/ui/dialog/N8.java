@@ -8,8 +8,8 @@ import java.awt.Frame;
 import javax.swing.JDialog;
 
 public class N8 extends JDialog {
-   U D;
-   Zm2 k;
+   public U D;
+   public Zm2 k;
    public static String a;
 
    public N8(U var1) {

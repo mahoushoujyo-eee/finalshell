@@ -33,8 +33,8 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 public class C extends JFrame implements Pj2, Au2, CX3_2, Eh2, W_3 {
-   protected boolean N = false;
-   protected C42 g;
+   public boolean N = false;
+   public C42 g;
 
    public C() {
       this.R$void();
@@ -57,7 +57,7 @@ public class C extends JFrame implements Pj2, Au2, CX3_2, Eh2, W_3 {
       this.R$void();
    }
 
-   protected void R$void() {
+   public void R$void() {
       FN.Y(this);
       this.g = new M(this, true);
       ON.b(this, this.g);

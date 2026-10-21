@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import javax.swing.ImageIcon;
 
 public class Gh2_2 extends KD {
-   ImageIcon t;
+   public ImageIcon t;
 
    public Gh2_2() {
       long var2 = 428685662451110732L;

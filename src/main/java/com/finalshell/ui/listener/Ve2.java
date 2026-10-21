@@ -7,9 +7,9 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
 public class Ve2 implements TreeSelectionListener {
-   final Connection4 S;
+   public final Connection4 S;
 
-   Ve2(Connection4 var1) {
+   public Ve2(Connection4 var1) {
       this.S = var1;
    }
 

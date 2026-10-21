@@ -6,12 +6,12 @@ import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.core.Pcaps;
 
 public class ZA {
-   PcapNetworkInterface Y;
+   public PcapNetworkInterface Y;
    public static String n;
    public static String o;
-   String k = "";
-   PcapHandle J;
-   Fm4 r = new Fm4();
+   public String k = "";
+   public PcapHandle J;
+   public Fm4 r = new Fm4();
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -26,7 +26,7 @@ public class ZA {
       var1.Q();
    }
 
-   ZA() throws Exception {
+   public ZA() throws Exception {
       List var1 = null;
       var1 = Pcaps.findAllDevs();
       this.Y = (PcapNetworkInterface)var1.get(0);
@@ -34,7 +34,7 @@ public class ZA {
       this.J = this.Y.openLive(a(15779, 6073548124859277168L), PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 0);
    }
 
-   void U() throws Exception {
+   public void U() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

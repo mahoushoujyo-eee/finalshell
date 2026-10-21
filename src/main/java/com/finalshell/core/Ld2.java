@@ -3,9 +3,9 @@ package com.finalshell.core;
 import javax.swing.AbstractListModel;
 
 public class Ld2 extends AbstractListModel {
-   final com.finalshell.task.No2 o;
+   public final com.finalshell.task.No2 o;
 
-   Ld2(com.finalshell.task.No2 var1) {
+   public Ld2(com.finalshell.task.No2 var1) {
       this.o = var1;
    }
 

@@ -12,11 +12,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JScrollPane;
 
 public class KA implements ComponentListener {
-   final As2 e;
-   final ShowDeletedPanel X;
-   final UV3 t;
+   public final As2 e;
+   public final ShowDeletedPanel X;
+   public final UV3 t;
 
-   KA(UV3 var1, As2 var2, ShowDeletedPanel var3) {
+   public KA(UV3 var1, As2 var2, ShowDeletedPanel var3) {
       this.t = var1;
       this.e = var2;
       this.X = var3;

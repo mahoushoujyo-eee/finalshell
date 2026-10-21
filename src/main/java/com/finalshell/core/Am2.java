@@ -76,7 +76,7 @@ public class Am2 extends AG {
       return this.g();
    }
 
-   Am2(Yw2 var1, AK var2) {
+   public Am2(Yw2 var1, AK var2) {
       this(var1);
    }
 }

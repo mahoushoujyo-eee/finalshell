@@ -1,15 +1,15 @@
 package com.finalshell.core;
 
 public class FU {
-   int E;
+   public int E;
    @C_9
-   FU a;
+   public FU a;
    @C_9
-   FU N;
+   public FU N;
    @C_9
    public FC u;
-   static boolean C;
-   final B3_2 c;
+   public static boolean C;
+   public final B3_2 c;
    public static String[] b;
    public static String[] d;
 
@@ -121,7 +121,7 @@ public class FU {
       // 47: return
    }
 
-   void V() {
+   public void V() {
       F9 var1 = B3_2.s$f9(this.c);
       var1.u = this.u = B3_2.T(var1.u, this.u);
    }
@@ -183,11 +183,11 @@ public class FU {
       return B3_2.x(this.c).t() + a(-19323, 26677) + this.E;
    }
 
-   static FC M(FU var0) {
+   public static FC M(FU var0) {
       return var0.u;
    }
 
-   static FC a(FU var0, FC var1) {
+   public static FC a(FU var0, FC var1) {
       return var0.u = var1;
    }
 

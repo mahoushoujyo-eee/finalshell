@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.AppendCarriageReturnCRPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Xk2 implements Runnable {
-   final AppendCarriageReturnCRPanel C;
+   public final AppendCarriageReturnCRPanel C;
 
-   Xk2(AppendCarriageReturnCRPanel var1) {
+   public Xk2(AppendCarriageReturnCRPanel var1) {
       this.C = var1;
    }
 

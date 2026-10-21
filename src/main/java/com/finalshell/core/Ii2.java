@@ -10,18 +10,15 @@ import org.bouncycastle.crypto.params.Ed448PrivateKeyParameters;
 import org.bouncycastle.crypto.params.Ed448PublicKeyParameters;
 
 public abstract class Ii2 implements Wt2_2 {
-   Signer T;
+   public Signer T;
    public static String[] a;
    public static String[] b;
 
-   Ii2() {
-   }
+   public abstract String k$String();
 
-   abstract String k$String();
+   public abstract String F();
 
-   abstract String F();
-
-   abstract int M();
+   public abstract int M();
 
    @Override
    public void k$void() throws Exception {

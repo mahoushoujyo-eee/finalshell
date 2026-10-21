@@ -7,8 +7,8 @@ import javax.swing.table.AbstractTableModel;
 
 public class FT extends AbstractTableModel {
    public ArrayList G;
-   String[] F;
-   Class[] H;
+   public String[] F;
+   public Class[] H;
    public static String a;
 
    public FT() {

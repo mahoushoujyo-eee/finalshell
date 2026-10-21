@@ -10,8 +10,8 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class ExitFullScreenPanel extends JPanel {
-   com.finalshell.ui.frame.U d;
-   U1 w;
+   public com.finalshell.ui.frame.U d;
+   public U1 w;
    public static String[] a;
    public static String[] b;
 

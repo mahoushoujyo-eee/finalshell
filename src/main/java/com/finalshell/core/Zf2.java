@@ -100,7 +100,7 @@ public class Zf2 extends ZH {
       return this.X;
    }
 
-   protected void M(Rectangle var1) {
+   public void M(Rectangle var1) {
       String[] var2 = ZH.U();
       if (var2 == null) {
          if (!this.b) {

@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.panel.Connection4;
 
 public class Bv4 implements Runnable {
-   final Xh2_2 W;
+   public final Xh2_2 W;
 
-   Bv4(Xh2_2 var1) {
+   public Bv4(Xh2_2 var1) {
       this.W = var1;
    }
 

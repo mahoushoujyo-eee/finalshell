@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class ZX_2 {
-   ArrayList R;
-   ArrayList O;
-   String d;
+   public ArrayList R;
+   public ArrayList O;
+   public String d;
    public static String a;
    public static long[] b;
    public static Integer[] c;
@@ -54,7 +54,7 @@ public class ZX_2 {
       }
    }
 
-   void W() {
+   public void W() {
       String[] var10000 = Backspace.F();
       ZX_2 var2 = false;
       int var3 = 0;
@@ -69,7 +69,7 @@ public class ZX_2 {
          label48: {
             ZX_2 var10001 = var2;
             if (var1 != null) {
-               if (var2 != false) {
+               if (var2 == null) {
                   Object var7 = 146154677724726531L;
                   ((ArrayList)Ref.g(146154677724726531L, var7)).add(var3);
                   var2 = false;

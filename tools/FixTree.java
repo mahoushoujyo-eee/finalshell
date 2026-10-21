@@ -24,7 +24,7 @@ public class FixTree {
     static int statReturn = 0, statBool = 0, statOverride = 0, statIface = 0,
                statVar = 0, statEnum = 0, statOther = 0, statSneaky = 0, statDeadCatch = 0,
                statResugar = 0, statDupDecl = 0, statIncompat = 0, statNewNoParens = 0, statNewArray = 0, statForEach = 0, statUnknown = 0, statNewReturn = 0,
-               statPrimType = 0, statPromote = 0;
+               statPrimType = 0, statPromote = 0, statUnsafe = 0, statSuperOutside = 0;
     static final Set<String> touched = new TreeSet<>();
     static final List<String> unresolved = new ArrayList<>();
     /** 需要降级的假枚举：被 new 出来的枚举 */
@@ -45,6 +45,16 @@ public class FixTree {
                 String r = apply(er, out);
                 if (r != null) out = r;
             }
+            // 【安全网】改完先自检：括号必须仍然平衡。
+            // 之前有些规则会在全文件范围做替换（比如按 "new return(...)" 找类型），
+            // 一旦正则误匹配就会造出 "(int var17 = ...) ? 1 : 0;" 这种
+            // 把整行声明当表达式的坏代码 —— 语法错误又会挡住类型检查，
+            // 一轮下来错误数不降反升。自检不通过就直接放弃这次修改。
+            if (!out.equals(src) && !bracketsBalanced(out)) {
+                System.out.println("  [skipped: brackets unbalanced] " + f.getFileName());
+                statUnsafe++;
+                out = src;
+            }
             if (!out.equals(src)) {
                 Files.write(f, out.getBytes(StandardCharsets.UTF_8));
                 touched.add(f.toString());
@@ -62,6 +72,8 @@ public class FixTree {
         System.out.println("  incompatible types fixed   = " + statIncompat);
         System.out.println("  prim type mismatch fixed   = " + statPrimType);
         System.out.println("  var type promoted          = " + statPromote);
+        System.out.println("  UNSAFE changes rejected    = " + statUnsafe);
+        System.out.println("  super outside ctor fixed  = " + statSuperOutside);
         System.out.println("  new T; fixed             = " + statNewNoParens);
         System.out.println("  new prim(...) fixed       = " + statNewArray);
         System.out.println("  for-each renamed          = " + statForEach);
@@ -83,6 +95,43 @@ public class FixTree {
     }
 
     static int total() { int n = 0; for (List<Err> l : byFile.values()) n += l.size(); return n; }
+
+    /**
+     * 括号平衡自检（粗略：跳过字符串字面量、行注释、块注释）。
+     * 修复前后的括号计数必须一致，否则说明这次修改破坏了源码结构。
+     */
+    static boolean bracketsBalanced(String src) {
+        int round = 0, square = 0, curly = 0;
+        boolean inStr = false, inChr = false, inLine = false, inBlock = false;
+        for (int i = 0; i < src.length(); i++) {
+            char c = src.charAt(i);
+            char n = (i + 1 < src.length()) ? src.charAt(i + 1) : '\0';
+            if (inLine) { if (c == '\n') inLine = false; continue; }
+            if (inBlock) { if (c == '*' && n == '/') { inBlock = false; i++; } continue; }
+            if (inStr) {
+                if (c == '\\') { i++; continue; }
+                if (c == '"') inStr = false;
+                continue;
+            }
+            if (inChr) {
+                if (c == '\\') { i++; continue; }
+                if (c == '\'') inChr = false;
+                continue;
+            }
+            if (c == '/' && n == '/') { inLine = true; i++; continue; }
+            if (c == '/' && n == '*') { inBlock = true; i++; continue; }
+            if (c == '"') { inStr = true; continue; }
+            if (c == '\'') { inChr = true; continue; }
+            if (c == '(') round++;
+            else if (c == ')') round--;
+            else if (c == '[') square++;
+            else if (c == ']') square--;
+            else if (c == '{') curly++;
+            else if (c == '}') curly--;
+            if (round < 0 || square < 0 || curly < 0) return false;
+        }
+        return round == 0 && square == 0 && curly == 0;
+    }
 
     // ---------- 解析 javac 日志 ----------
     static void parseLog(String logPath) throws IOException {
@@ -146,6 +195,12 @@ public class FixTree {
                 || er.msg.contains("'(' or '[' expected") || er.msg.contains("'[' expected")
                 || er.msg.contains("']' expected") || er.msg.contains("')' expected")
                 || er.msg.contains("<identifier> expected")) {
+                // super(...) 出现在**非构造器**方法里 —— Vineflower 处理不可约控制流时
+                // 把父类构造器调用复制到了错误的位置，Java 根本无法表达。
+                // 只在 javac 明确报语法错的那一行上动，并且校验所属方法名 != 类名，
+                // 避免误伤合法构造器里的 super(...)。
+                String so = fixSuperOutsideCtor(er, src);
+                if (so != null) return so;
                 String r = fixResugarCtor(er, src);
                 if (r != null) return r;
                 r = fixNewNoParens(er, src);
@@ -424,6 +479,50 @@ public class FixTree {
         return null;
     }
 
+    /**
+     * super(...) 出现在非构造器方法里 —— 注释掉这一行。
+     *
+     * <p>判据：① javac 在该行报了语法错；② 该行以 super( 开头；
+     * ③ 往上找到的方法名 != 当前类名（是构造器的话方法名就等于类名）。
+     * 三条同时成立才动手，避免误伤 1,252 处合法 super(...) 里的大部分。
+     */
+    static String fixSuperOutsideCtor(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        String t = lines[idx].trim();
+        if (!t.startsWith("super(")) return null;
+        // 当前类名
+        Matcher cm = Pattern.compile(
+                "^(?:public\\s+|final\\s+|abstract\\s+|static\\s+)*(?:class|enum|interface)\\s+(\\w+)",
+                Pattern.MULTILINE).matcher(src);
+        if (!cm.find()) return null;
+        String cls = cm.group(1);
+        // 往上找方法头
+        int indent = lines[idx].length() - t.length();
+        String methodName = null;
+        for (int j = idx - 1; j >= 0; j--) {
+            String l = lines[j];
+            String lt = l.trim();
+            if (lt.isEmpty() || lt.startsWith("//")) continue;
+            int ind = l.length() - lt.length();
+            if (ind > indent) continue;              // 更深的层，跳过
+            if (lt.endsWith("{")) {
+                Matcher mm = Pattern.compile("(\\w+)\\s*\\(").matcher(lt);
+                String last = null;
+                while (mm.find()) last = mm.group(1);
+                methodName = last;
+                break;
+            }
+            if (ind < indent) break;                 // 已经出了当前块
+        }
+        if (methodName == null || methodName.equals(cls)) return null;   // 构造器，不动
+        lines[idx] = "      // [VF] " + t
+                + "   // 非法：super(...) 出现在非构造器方法里（反编译器把父类构造器调用复制错了位置），Java 无法表达";
+        statSuperOutside++;
+        return String.join("\n", lines);
+    }
+
     // ---------- 9. Vineflower 的 "Unable to resugar constructor" ----------
     // 形如：  var11./* $VF: Unable to resugar constructor */<init>(var10002);
     // 这是非法 Java（"<identifier> expected"）。真实语义是 "new T(args)"。
@@ -482,7 +581,22 @@ public class FixTree {
             if (cm.find()) type = cm.group(1);
         }
         if (type == null) return null;
-        String repl = "new " + type + "(" + args + ");";
+        // 接收者：var10014./* $VF: Unable to resugar constructor */<init>(args);
+        //        ^^^^^^ 改写时**必须保留** —— 之前直接写成 "new T(args);" 把接收者丢了，
+        //        语义变成"构造一个对象然后扔掉"，后面用到 var10014 就是 null。
+        String recv = null;
+        Matcher rm2 = Pattern.compile(
+                "^\\s*([\\w$.]+)\\s*\\.\\/\\* \\$VF: Unable to resugar constructor \\*\\/")
+                .matcher(whole);
+        if (rm2.find()) recv = rm2.group(1);
+        String repl;
+        if (recv == null || recv.equals("this")) {
+            // this(...) 委托 —— 整行删掉即可（父类构造器由委托链调用）
+            for (int k = idx; k <= endLine && k < lines.length; k++) lines[k] = "";
+            statResugar++;
+            return String.join("\n", lines);
+        }
+        repl = recv + " = new " + type + "(" + args + ");";
         for (int k = idx; k <= endLine && k < lines.length; k++) lines[k] = "";
         lines[idx] = repl;
         statResugar++;
@@ -718,10 +832,61 @@ public class FixTree {
             statPrimType++;
             return String.join("\n", lines);
         }
+        // 情况 3：三元表达式的条件是 int —— 这是本工具自己造出来的坏代码
+        //   int var8 = (this.H + this.d + this.K) ? 1 : 0;
+        // 三元的条件必须是 boolean，int 不行。修法是给条件加 "!= 0"。
+        //
+        // 【重要】必须排除**赋值语句**：
+        //   int var8 = (A) ? 1 : 0;
+        // 这里 "?" 前面是 "int var8 = (A)"（整行声明），不是条件。
+        // 之前没排除它，生成过 "(int var8 = (A) != 0) ? 1 : 0;" 这种把整行声明
+        // 当表达式的坏代码 —— 语法错误又把类型检查挡住，错误数不降反升。
+        Matcher tm = Pattern.compile("^(.*?)\\?\\s*1\\s*:\\s*0;\\s*$").matcher(line);
+        if (tm.matches()) {
+            String cond = tm.group(1).trim();
+            // 条件本身已经是 boolean 表达式的就别动
+            if (cond.contains("==") || cond.contains("!=") || cond.contains("&&") || cond.contains("||")) {
+                return null;
+            }
+            // 是赋值语句（声明/赋值）而不是纯表达式 -> 不碰
+            if (cond.contains("=") || cond.contains(";") || cond.contains("(") && !balancedParen(cond)) {
+                return null;
+            }
+            String newCond;
+            if (cond.startsWith("(") && cond.endsWith(")")) {
+                newCond = "((" + cond.substring(1, cond.length() - 1).trim() + ") != 0)";
+            } else {
+                newCond = "(" + cond + " != 0)";
+            }
+            lines[idx] = tm.group(0).replace(cond, newCond);
+            statPrimType++;
+            return String.join("\n", lines);
+        }
+        // 情况 4：(boolean)(x ? 1 : 0) —— 同样是自己造的，运算符优先级错了
+        //   return (boolean)(var3 == this.hashCode() ? 1 : 0);
+        // "!=" 优先级高于 "?:"，原写法等价于 (boolean)(var3 == hashCode() ? 1 : (0 != 0))，
+        // 整个是 int，再强转 boolean 必然失败。正确写法是把整个三元包起来再 != 0。
+        Matcher bm2 = Pattern.compile("^(\\s*return\\s+)\\(boolean\\)\\((.+)\\);\\s*$").matcher(line);
+        if (bm2.matches()) {
+            String operand = bm2.group(2).trim();
+            if (operand.contains("=") && !operand.contains("==") && !operand.contains("!=")) return null;
+            lines[idx] = bm2.group(1) + "(boolean)((" + operand + ") != 0);";
+            statPrimType++;
+            return String.join("\n", lines);
+        }
         return null;
     }
 
-    // ---------- 11c. 局部变量类型提升 ----------
+    /** 圆括号是否平衡 */
+    static boolean balancedParen(String s) {
+        int d = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') d++;
+            else if (c == ')') { d--; if (d < 0) return false; }
+        }
+        return d == 0;
+    }
     // Vineflower 会把变量的类型"抖动"：先按初始值声明成 Object[]，
     // 后面又用 (DY3)varN 强转赋值，说明它实际是 DY3：
     //     Object[] var10001 = Registry.emptyArgs();

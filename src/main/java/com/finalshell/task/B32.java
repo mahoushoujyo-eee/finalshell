@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import javax.swing.JPasswordField;
 
 public class B32 implements Runnable {
-   final Fz4 P;
+   public final Fz4 P;
 
-   B32(Fz4 var1) {
+   public B32(Fz4 var1) {
       this.P = var1;
    }
 

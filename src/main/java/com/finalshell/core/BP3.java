@@ -7,10 +7,10 @@ import java.net.InetAddress;
 import org.apache.hc.client5.http.SystemDefaultDnsResolver;
 
 public class BP3 extends SystemDefaultDnsResolver {
-   final U52 k;
+   public final U52 k;
    public static String a;
 
-   BP3(U52 var1) {
+   public BP3(U52 var1) {
       this.k = var1;
    }
 

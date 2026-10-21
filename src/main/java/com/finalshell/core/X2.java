@@ -41,8 +41,8 @@ public class X2 {
    }
 
    public X2(com.finalshell.ui.model.L var1, String var2, X2 var3, List var4) {
+   super();
       int[] var10000 = w();
-      super();
       this.A = new ArrayList();
       int[] var5 = var10000;
       this.y(var1);

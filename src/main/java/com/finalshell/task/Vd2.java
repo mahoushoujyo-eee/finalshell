@@ -7,10 +7,10 @@ import com.finalshell.ui.panel.Refresh;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vd2 implements Runnable {
-   final Ty2 S;
-   final Refresh d;
+   public final Ty2 S;
+   public final Refresh d;
 
-   Vd2(Refresh var1, Ty2 var2) {
+   public Vd2(Refresh var1, Ty2 var2) {
       this.d = var1;
       this.S = var2;
    }

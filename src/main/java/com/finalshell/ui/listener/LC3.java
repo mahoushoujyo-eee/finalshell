@@ -7,10 +7,10 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class LC3 implements MouseListener {
-   final Y12_2 f;
+   public final Y12_2 f;
    public static long a;
 
-   LC3(Y12_2 var1) {
+   public LC3(Y12_2 var1) {
       this.f = var1;
    }
 
@@ -26,7 +26,7 @@ public class LC3 implements MouseListener {
          Object var5 = 175824513233244249L;
          long var3 = this - Registry.lookupField(126803268638211778L).getLong(Ref.g(175824513233244249L, var5));
          long var2 = var10001;
-         if (var2 == null) {
+         if (var2 == 0) {
             if (var3 <= a) {
                break label16;
             }
@@ -35,7 +35,7 @@ public class LC3 implements MouseListener {
             Registry.lookupField(436558571101672386L).setBoolean(Ref.g(175824513233244249L, var7), false);
          }
 
-         if (var2 == null) {
+         if (var2 == 0) {
             return;
          }
       }

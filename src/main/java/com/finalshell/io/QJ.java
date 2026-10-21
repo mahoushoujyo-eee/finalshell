@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public final class QJ extends FilterInputStream {
-   protected final Dh2 k;
-   protected byte[] f;
+   public final Dh2 k;
+   public byte[] f;
    public boolean w;
-   protected boolean n;
+   public boolean n;
    public boolean W;
-   protected boolean L;
+   public boolean L;
    public byte[] E;
    public byte[] y;
    public static String[] a;
@@ -21,28 +21,28 @@ public final class QJ extends FilterInputStream {
    public static long[] e;
    public static Long[] g;
 
-   QJ(InputStream var1) throws IOException {
+   public QJ(InputStream var1) throws IOException {
       this(var1, false);
    }
 
-   QJ(InputStream var1, boolean var2) throws IOException {
+   public QJ(InputStream var1, boolean var2) throws IOException {
       this(var1, new Dh2(var2));
       this.L = true;
    }
 
-   QJ(InputStream var1, Dh2 var2) throws IOException {
+   public QJ(InputStream var1, Dh2 var2) throws IOException {
       this(var1, var2, a(23509, 3142985755786231048L));
    }
 
-   QJ(InputStream var1, Dh2 var2, int var3) throws IOException {
+   public QJ(InputStream var1, Dh2 var2, int var3) throws IOException {
       this(var1, var2, var3, true);
    }
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   QJ(InputStream var1, Dh2 var2, int var3, boolean var4) throws IOException {
+   public QJ(InputStream var1, Dh2 var2, int var3, boolean var4) throws IOException {
+   super(var1);
       label30: {
-         super(var1);
          this.w = false;
          this.n = false;
          this.W = true;
@@ -541,7 +541,7 @@ public final class QJ extends FilterInputStream {
       // 63: return
    }
 
-   protected void f() throws IOException {
+   public void f() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -674,15 +674,15 @@ public final class QJ extends FilterInputStream {
       throw new IOException(a(-3304, -8201));
    }
 
-   long m() {
+   public long m() {
       return this.k.z();
    }
 
-   long K() {
+   public long K() {
       return this.k.N();
    }
 
-   byte[] X() {
+   public byte[] X() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -727,7 +727,7 @@ public final class QJ extends FilterInputStream {
       // 44: areturn
    }
 
-   void q() throws IOException {
+   public void q() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -820,7 +820,7 @@ public final class QJ extends FilterInputStream {
       // a8: return
    }
 
-   Dh2 h() {
+   public Dh2 h() {
       return this.k;
    }
 

@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class KI implements Runnable {
-   final Uf4 z;
-   final Connection4 D;
+   public final Uf4 z;
+   public final Connection4 D;
 
-   KI(Connection4 var1, Uf4 var2) {
+   public KI(Connection4 var1, Uf4 var2) {
       this.D = var1;
       this.z = var2;
    }

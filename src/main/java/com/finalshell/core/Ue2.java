@@ -8,9 +8,6 @@ public final class Ue2 implements Aj2 {
    public static long[] c;
    public static Long[] d;
 
-   Ue2() {
-   }
-
    @Override
    public void A(byte[] var1, int var2, int var3) {
       int[] var10000 = Nm4.g();
@@ -50,7 +47,7 @@ public final class Ue2 implements Aj2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   static long j(long var0, long var2, long var4) {
+   public static long j(long var0, long var2, long var4) {
       int[] var10000 = Nm4.g();
       long[] var9 = new long[a(10829, 7117853909133175431L)];
       int[] var6 = var10000;
@@ -171,7 +168,7 @@ public final class Ue2 implements Aj2 {
       return var7;
    }
 
-   static final void Y(long[] var0, long[] var1) {
+   public static final void Y(long[] var0, long[] var1) {
       int[] var10000 = Nm4.g();
       int var3 = 0;
       int[] var2 = var10000;
@@ -191,7 +188,7 @@ public final class Ue2 implements Aj2 {
       return var1;
    }
 
-   static int[] k() {
+   public static int[] k() {
       int[] var0 = new int[z.length];
       System.arraycopy(z, 0, var0, 0, var0.length);
       return var0;

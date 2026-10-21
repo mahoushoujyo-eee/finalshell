@@ -28,17 +28,17 @@ public class IQ extends IB {
       return var3;
    }
 
-   protected void Q(JComboBox var1) {
+   public void Q(JComboBox var1) {
       this.J = new com.finalshell.ui.listener.UD(this);
       var1.addActionListener(this.J);
    }
 
-   protected void t(JComboBox var1) {
+   public void t(JComboBox var1) {
       var1.removeActionListener(this.J);
       this.J = null;
    }
 
-   protected void L(JComboBox var1) {
+   public void L(JComboBox var1) {
       String[] var10000 = IH.M();
       Integer var3 = (Integer)this.o();
       String[] var2 = var10000;
@@ -88,27 +88,27 @@ public class IQ extends IB {
       var6.setSelectedIndex(var3);
    }
 
-   protected void i(JComboBox var1) {
+   public void i(JComboBox var1) {
       this.J(Integer.valueOf(var1.getSelectedIndex()));
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.i((JComboBox)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.L((JComboBox)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.t((JComboBox)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.Q((JComboBox)var1);
    }
 

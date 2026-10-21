@@ -9,21 +9,21 @@ public abstract class Yf2_2 extends Yi2 {
       return var6.intersection(var1.getVisibleRect());
    }
 
-   protected Object j(com.finalshell.ui.panel.CI var1, int var2, int var3) {
+   public Object j(com.finalshell.ui.panel.CI var1, int var2, int var3) {
       return var1.D$Object(var2);
    }
 
-   protected boolean p(com.finalshell.ui.panel.CI var1, int var2, int var3) {
+   public boolean p(com.finalshell.ui.panel.CI var1, int var2, int var3) {
       return var1.isSelectedIndex(var2);
    }
 
    @Override
-   protected boolean M(JComponent var1, int var2, int var3) {
+   public boolean M(JComponent var1, int var2, int var3) {
       return this.p((com.finalshell.ui.panel.CI)var1, var2, var3);
    }
 
    @Override
-   protected Object c(JComponent var1, int var2, int var3) {
+   public Object c(JComponent var1, int var2, int var3) {
       return this.j((com.finalshell.ui.panel.CI)var1, var2, var3);
    }
 

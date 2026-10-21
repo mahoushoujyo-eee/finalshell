@@ -9,15 +9,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
 public abstract class Ra2 {
-   protected static Object x;
-   protected static com.finalshell.ui.model.Cs2 R;
-   protected static ActionListener Q;
-   protected java.lang.Class C;
-   protected String j;
-   protected String g;
-   protected String F;
-   protected PZ V;
-   protected JComponent p;
+   public static Object x;
+   public static com.finalshell.ui.model.Cs2 R;
+   public static ActionListener Q;
+   public java.lang.Class C;
+   public String j;
+   public String g;
+   public String F;
+   public PZ V;
+   public JComponent p;
    public static String[] Y;
    public static String[] b;
    public static String[] c;
@@ -175,7 +175,7 @@ public abstract class Ra2 {
       return var6;
    }
 
-   protected QW I(Object var1, String var2, com.finalshell.ui.model.Cs2 var3, boolean var4, ActionListener var5) {
+   public QW I(Object var1, String var2, com.finalshell.ui.model.Cs2 var3, boolean var4, ActionListener var5) {
       QW var6 = new QW();
       var6.setIcon(this.t(var1));
       var6.u(this.I(var2), new Object[0]);
@@ -219,7 +219,7 @@ public abstract class Ra2 {
       return var7;
    }
 
-   protected LZ z(Object var1, String var2, com.finalshell.ui.model.Cs2 var3, boolean var4, boolean var5, ActionListener var6) {
+   public LZ z(Object var1, String var2, com.finalshell.ui.model.Cs2 var3, boolean var4, boolean var5, ActionListener var6) {
       LZ var7 = new LZ();
       var7.setIcon(this.t(var1));
       var7.u(this.I(var2), new Object[0]);
@@ -265,7 +265,7 @@ public abstract class Ra2 {
       return var7;
    }
 
-   protected Cu4 c(Object var1, String var2, com.finalshell.ui.model.Cs2 var3, boolean var4, boolean var5, ActionListener var6) {
+   public Cu4 c(Object var1, String var2, com.finalshell.ui.model.Cs2 var3, boolean var4, boolean var5, ActionListener var6) {
       Cu4 var8 = new Cu4();
       F();
       var8.setIcon(this.t(var1));
@@ -327,7 +327,7 @@ public abstract class Ra2 {
       return var7;
    }
 
-   protected WA3 y$wA_3(Object var1, String var2, boolean var3, ActionListener var4) {
+   public WA3 y$wA_3(Object var1, String var2, boolean var3, ActionListener var4) {
       WA3 var5 = new WA3();
       var5.setIcon(this.t(var1));
       var5.u(this.I(var2), new Object[0]);

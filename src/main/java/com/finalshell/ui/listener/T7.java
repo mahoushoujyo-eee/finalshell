@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class T7 implements ActionListener {
-   final CopyMenu o;
+   public final CopyMenu o;
 
-   T7(CopyMenu var1) {
+   public T7(CopyMenu var1) {
       this.o = var1;
    }
 

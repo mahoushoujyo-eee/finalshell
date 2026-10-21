@@ -19,8 +19,8 @@ import javax.swing.JPasswordField;
 import net.miginfocom.swing.MigLayout;
 
 public class SyncPasswordDialog2 extends JDialog {
-   JPasswordField f;
-   JPasswordField m;
+   public JPasswordField f;
+   public JPasswordField m;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -88,14 +88,14 @@ public class SyncPasswordDialog2 extends JDialog {
       }
    }
 
-   void J() {
+   public void J() {
       Object var1 = 240001478134891022L;
       ((JPasswordField)Ref.g(240001478134891022L, var1)).setText("");
       Object var3 = 126392943304858444L;
       ((JPasswordField)Ref.g(126392943304858444L, var3)).setText("");
    }
 
-   void Q() {
+   public void Q() {
       User.c$int();
       String var10001;
       Object var12 = 240001478134891022L;
@@ -106,11 +106,11 @@ public class SyncPasswordDialog2 extends JDialog {
       Object var14 = 126392943304858444L;
       super(((JPasswordField)Ref.g(126392943304858444L, var14)).getPassword());
       String var3 = var10002;
-      if (var1 == false) {
+      if (var1 == null) {
          label92:
          if (var2.length() >= a(2389, 7498614023425906222L)) {
             int var21 = var3.length();
-            if (var1 == false) {
+            if (var1 == null) {
                if (var21 < a(3783, 7118769469375435199L)) {
                   break label92;
                }
@@ -137,11 +137,11 @@ public class SyncPasswordDialog2 extends JDialog {
                if (var10 < var9) {
                   char var11 = var8[var10];
                   var10003 = Character.isLowerCase(var11);
-                  if (var1 != false) {
+                  if (var1 == null) {
                      break;
                   }
 
-                  if (var1 == false) {
+                  if (var1 == null) {
                      if (var10003) {
                         var6 = true;
                      }
@@ -149,7 +149,7 @@ public class SyncPasswordDialog2 extends JDialog {
                      var10003 = Character.isUpperCase(var11);
                   }
 
-                  if (var1 == false) {
+                  if (var1 == null) {
                      if (var10003) {
                         var5 = true;
                      }
@@ -158,7 +158,7 @@ public class SyncPasswordDialog2 extends JDialog {
                   }
 
                   label73: {
-                     if (var1 == false) {
+                     if (var1 == null) {
                         if (!var10003) {
                            break label73;
                         }
@@ -170,7 +170,7 @@ public class SyncPasswordDialog2 extends JDialog {
                   }
 
                   var10++;
-                  if (var1 == false) {
+                  if (var1 == null) {
                      continue;
                   }
                }
@@ -179,7 +179,7 @@ public class SyncPasswordDialog2 extends JDialog {
                break;
             }
 
-            if (var1 == false) {
+            if (var1 == null) {
                if (!var10003) {
                   JOptionPane.showMessageDialog(this, a(4167, -14574));
                   return;
@@ -188,7 +188,7 @@ public class SyncPasswordDialog2 extends JDialog {
                var10003 = var6;
             }
 
-            if (var1 == false) {
+            if (var1 == null) {
                if (!var10003) {
                   JOptionPane.showMessageDialog(this, a(4165, 23207));
                   return;
@@ -218,7 +218,7 @@ public class SyncPasswordDialog2 extends JDialog {
       }
    }
 
-   void F(String param1) {
+   public void F(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

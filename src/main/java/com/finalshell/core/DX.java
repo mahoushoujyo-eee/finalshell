@@ -64,7 +64,7 @@ public class DX implements A0_2 {
       // 48: return
    }
 
-   static int n(DX var0) {
+   public static int n(DX var0) {
       return var0.D;
    }
 

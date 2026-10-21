@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.frame.CloudSyncFrame;
 
 public class Ow2 implements Runnable {
-   final CloudSyncFrame z;
+   public final CloudSyncFrame z;
 
-   Ow2(CloudSyncFrame var1) {
+   public Ow2(CloudSyncFrame var1) {
       this.z = var1;
    }
 

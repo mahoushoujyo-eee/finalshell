@@ -6,13 +6,13 @@ import java.io.InputStream;
 import java.io.Reader;
 
 public abstract class Ps2 implements Cloneable, Closeable {
-   protected boolean o;
-   protected int p = -1;
-   protected char D;
-   protected com.finalshell.ui.model.HF r;
+   public boolean o;
+   public int p = -1;
+   public char D;
+   public com.finalshell.ui.model.HF r;
    public Boolean k;
-   protected int K = 0;
-   protected boolean w = false;
+   public int K = 0;
+   public boolean w = false;
    public static long[] f;
    public static Integer[] g;
 
@@ -71,7 +71,7 @@ public abstract class Ps2 implements Cloneable, Closeable {
       // 26: areturn
    }
 
-   abstract void c();
+   public abstract void c();
 
    public boolean y() {
       // $VF: Couldn't be decompiled
@@ -1174,7 +1174,7 @@ public abstract class Ps2 implements Cloneable, Closeable {
       // 948: ireturn
    }
 
-   protected void B() {
+   public void B() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1258,7 +1258,7 @@ public abstract class Ps2 implements Cloneable, Closeable {
       // a2: return
    }
 
-   protected boolean K() {
+   public boolean K() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1350,7 +1350,7 @@ public abstract class Ps2 implements Cloneable, Closeable {
       // b0: ireturn
    }
 
-   void N() {
+   public void N() {
       String var1 = Hi2.C();
 
       while (O(this.D)) {
@@ -1361,7 +1361,7 @@ public abstract class Ps2 implements Cloneable, Closeable {
       }
    }
 
-   static final boolean O(char param0) {
+   public static final boolean O(char param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

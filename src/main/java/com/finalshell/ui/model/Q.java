@@ -7,9 +7,9 @@ import java.text.Collator;
 import java.util.Comparator;
 
 public class Q implements Comparator {
-   final Collator x;
+   public final Collator x;
 
-   Q(Collator var1) {
+   public Q(Collator var1) {
       this.x = var1;
    }
 

@@ -15,8 +15,8 @@ public class XQ {
    public final PG3[] i;
 
    public XQ(int var1, int var2, @NotNull YP var3, boolean var4, boolean var5, R3 var6) {
+   super();
       boolean var10000 = com.finalshell.ui.model.J2.g();
-      super();
       this.i = new PG3[4];
       boolean var7 = var10000;
       this.U = var1;

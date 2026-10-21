@@ -10,27 +10,27 @@ import java.sql.Timestamp;
 import javax.swing.filechooser.FileSystemView;
 
 public class Ck4 implements Serializable {
-   long f;
-   long L;
-   String S;
-   long r;
-   String X;
-   Timestamp H;
-   File v;
-   int R;
-   String o;
-   String t;
-   boolean I;
-   long x;
-   int V;
-   boolean G;
-   int a;
-   String m;
-   String q;
-   int y;
-   int l;
-   static FileSystemView U;
-   Ln4_2 O;
+   public long f;
+   public long L;
+   public String S;
+   public long r;
+   public String X;
+   public Timestamp H;
+   public File v;
+   public int R;
+   public String o;
+   public String t;
+   public boolean I;
+   public long x;
+   public int V;
+   public boolean G;
+   public int a;
+   public String m;
+   public String q;
+   public int y;
+   public int l;
+   public static FileSystemView U;
+   public Ln4_2 O;
 
    public Ck4(File var1) {
       Registry.lookupField(124607656514820922L).setBoolean(this, false);

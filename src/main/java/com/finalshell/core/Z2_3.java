@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class Z2_3 implements A_4 {
-   static boolean m;
-   final String C;
-   final boolean B;
-   final X_6 M;
+   public static boolean m;
+   public final String C;
+   public final boolean B;
+   public final X_6 M;
    public static long a;
 
-   Z2_3(X_6 var1, String var2, boolean var3) {
+   public Z2_3(X_6 var1, String var2, boolean var3) {
       this.M = var1;
       this.C = var2;
       this.B = var3;
@@ -55,7 +55,7 @@ public class Z2_3 implements A_4 {
          if (var2 != null) {
             return var8 != 0;
          } else {
-            return (boolean)(var8 == -1 ? 1 : 0);
+            return (boolean)((var8 == -1 ? 1 : 0) != 0);
          }
       }
    }

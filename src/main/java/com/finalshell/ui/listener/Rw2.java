@@ -6,11 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Rw2 implements ActionListener {
-   final EX U;
-   final KD3 x;
+   public final EX U;
+   public final KD3 x;
    public static long a;
 
-   Rw2(KD3 var1, EX var2) {
+   public Rw2(KD3 var1, EX var2) {
       this.x = var1;
       this.U = var2;
    }

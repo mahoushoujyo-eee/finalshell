@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.util.Hashtable;
 
 public class DB3 extends Dq4 {
-   byte[] O = new byte[0];
+   public byte[] O = new byte[0];
    public static String[] a;
    public static String[] f;
 
@@ -122,7 +122,7 @@ public class DB3 extends Dq4 {
    }
 
    @Override
-   void n() throws Pc2 {
+   public void n() throws Pc2 {
       this.o.U(this.T().O);
       this.o.H(this.T().l);
    }

@@ -4,25 +4,25 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class GH_2 {
-   boolean V;
-   boolean B;
-   int U;
-   Runnable N;
+   public boolean V;
+   public boolean B;
+   public int U;
+   public Runnable N;
    public static int m;
    public static int E;
    public static int y;
-   Thread K;
-   long Q;
-   int w;
-   boolean k;
-   boolean a;
-   String C;
+   public Thread K;
+   public long Q;
+   public int w;
+   public boolean k;
+   public boolean a;
+   public String C;
 
    static {
       __vfClinit__();
    }
 
-   GH_2(Runnable var1, int var2) {
+   public GH_2(Runnable var1, int var2) {
       Registry.lookupField(564555266966771525L).setBoolean(this, false);
       long var4 = 257596131995932042L;
       Ref.s(257596131995932042L, var1, var4);

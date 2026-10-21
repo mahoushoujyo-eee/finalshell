@@ -7,9 +7,6 @@ public class OJ implements Runnable {
    public static long[] a;
    public static Integer[] b;
 
-   OJ() {
-   }
-
    @Override
    public void run() {
       long var1 = (long)((5 + new Random().nextInt(a(13154, 2478924074353434229L))) * a(31350, 998398688498734944L));

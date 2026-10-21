@@ -6,13 +6,13 @@ import org.pcap4j.core.PcapHandle;
 import org.pcap4j.core.PcapNativeException;
 
 public class K0 implements Runnable {
-   final Connect w;
+   public final Connect w;
    public final PcapHandle U;
    public final PacketListener I;
    public static String[] a;
    public static String[] b;
 
-   K0(Connect var1, PcapHandle var2, PacketListener var3) {
+   public K0(Connect var1, PcapHandle var2, PacketListener var3) {
       this.w = var1;
       this.U = var2;
       this.I = var3;

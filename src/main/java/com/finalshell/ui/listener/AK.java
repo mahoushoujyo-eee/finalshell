@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class AK implements ActionListener {
-   final Copy d;
+   public final Copy d;
 
-   AK(Copy var1) {
+   public AK(Copy var1) {
       this.d = var1;
    }
 

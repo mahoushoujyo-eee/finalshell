@@ -695,11 +695,11 @@ public class W3_2 implements A0_2 {
       return var1.N(var2, this.e, this.v);
    }
 
-   static boolean Z(W3_2 var0) {
+   public static boolean Z(W3_2 var0) {
       return var0.v;
    }
 
-   static String h(W3_2 var0) {
+   public static String h(W3_2 var0) {
       return var0.e;
    }
 

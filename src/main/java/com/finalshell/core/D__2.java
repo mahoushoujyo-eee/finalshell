@@ -12,13 +12,13 @@ import java.lang.reflect.InvocationTargetException;
 
 public class D__2 {
    public boolean g;
-   protected XE T;
+   public XE T;
    public RP3 X;
    public boolean I;
    public boolean p;
    public long v;
    public boolean j;
-   final SetBackgroundImagePanel i;
+   public final SetBackgroundImagePanel i;
    public static long[] a;
    public static Integer[] b;
 
@@ -80,7 +80,7 @@ public class D__2 {
       if (var1 != 0) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 > 0 ? 1 : 0);
+         return (boolean)((var10000 > 0 ? 1 : 0) != 0);
       }
    }
 
@@ -166,7 +166,7 @@ public class D__2 {
       return !var10000 ? Oz4.NO_FOCUS : this.M();
    }
 
-   void Z(String var1, Graphics2D var2, YP var3) {
+   public void Z(String var1, Graphics2D var2, YP var3) {
       int var10000 = ConnectionProperty.M$int();
       Oz4 var5 = this.Y();
       int var4 = var10000;
@@ -250,11 +250,11 @@ public class D__2 {
       }
    }
 
-   void p(RP3 var1) {
+   public void p(RP3 var1) {
       this.X = var1;
    }
 
-   static boolean p(D__2 var0, boolean var1) {
+   public static boolean p(D__2 var0, boolean var1) {
       return var0.p = var1;
    }
 

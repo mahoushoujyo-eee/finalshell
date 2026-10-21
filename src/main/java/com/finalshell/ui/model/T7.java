@@ -4,9 +4,9 @@ import com.finalshell.ui.frame.XD3;
 import java.util.Comparator;
 
 public class T7 implements Comparator {
-   final XD3 l;
+   public final XD3 l;
 
-   T7(XD3 var1) {
+   public T7(XD3 var1) {
       this.l = var1;
    }
 

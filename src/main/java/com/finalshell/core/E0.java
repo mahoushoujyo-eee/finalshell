@@ -22,7 +22,7 @@ public class E0 implements PD3 {
    public Fv2_2 o;
    public Wq2_2 j;
    public ScheduledExecutorService c = Executors.newSingleThreadScheduledExecutor();
-   Y42 N;
+   public Y42 N;
    public static String[] a;
    public static String[] b;
 
@@ -35,7 +35,7 @@ public class E0 implements PD3 {
       this.j = var4;
    }
 
-   protected SelectUploadFile S(Cj4 var1, PD3 var2, QT var3, SetBackgroundImagePanel var4) {
+   public SelectUploadFile S(Cj4 var1, PD3 var2, QT var3, SetBackgroundImagePanel var4) {
       return new SelectUploadFile(var1, this.N, var2, var3, var4);
    }
 

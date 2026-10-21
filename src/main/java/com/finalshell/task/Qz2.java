@@ -8,11 +8,11 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qz2 implements Runnable {
-   final File j;
-   final U I;
-   final D92 g;
+   public final File j;
+   public final U I;
+   public final D92 g;
 
-   Qz2(D92 var1, File var2, U var3) {
+   public Qz2(D92 var1, File var2, U var3) {
       this.g = var1;
       this.j = var2;
       this.I = var3;

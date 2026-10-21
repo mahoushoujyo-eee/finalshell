@@ -22,25 +22,25 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import net.miginfocom.swing.MigLayout;
 
 public class Tv2 extends JComponent {
-   Connection5 f;
-   DefaultMutableTreeNode T;
-   Object E;
-   JButton D;
-   JButton G;
-   DefaultMutableTreeNode V;
-   int o;
-   int p;
-   int y;
-   Ck4 B;
-   Tf4 i;
-   ImageIcon N;
-   JT X;
+   public Connection5 f;
+   public DefaultMutableTreeNode T;
+   public Object E;
+   public JButton D;
+   public JButton G;
+   public DefaultMutableTreeNode V;
+   public int o;
+   public int p;
+   public int y;
+   public Ck4 B;
+   public Tf4 i;
+   public ImageIcon N;
+   public JT X;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Tv2(ShowDeletedPanel var1, Connection5 var2) {
+   public Tv2(ShowDeletedPanel var1, Connection5 var2) {
       Registry.lookupField(504435072987539564L).setInt(this, 1);
       Registry.lookupField(576113159822762720L).setInt(this, a(31344, 9212724110090153151L));
       Registry.emptyArgs();
@@ -100,10 +100,10 @@ public class Tv2 extends JComponent {
       }
    }
 
-   void i(String var1) {
+   public void i(String var1) {
    }
 
-   void Y() {
+   public void Y() {
       String var10000 = AA.z();
       Window var2 = SwingUtilities.getWindowAncestor(this);
       String var1 = var10000;
@@ -129,7 +129,7 @@ public class Tv2 extends JComponent {
       ((JButton)Ref.g(380141997612823997L, var7)).setVisible(var4);
    }
 
-   JButton r(String var1) {
+   public JButton r(String var1) {
       JButton var2 = new JButton(var1);
       var2.setFocusable(false);
       var2.addMouseMotionListener(new ZY(this, var2));
@@ -160,7 +160,7 @@ public class Tv2 extends JComponent {
          Object var11 = 195368811645526446L;
          Tv2 var10005 = Ref.g(195368811645526446L, var11).getClass().equals(Ck4.class);
          if (this == null) {
-            if (var10005 != false) {
+            if (var10005 == null) {
                Registry.lookupField(572581878532286424L).setInt(this, Registry.lookupField(504435072987539564L).getInt(this));
                Object var13 = 195368811645526446L;
                Ck4 var10007 = (Ck4)Ref.g(195368811645526446L, var13);
@@ -188,7 +188,7 @@ public class Tv2 extends JComponent {
             Ref.g(195368811645526446L, var23).getClass().equals(Tf4.class);
          }
 
-         if (var10005 == false) {
+         if (var10005 == null) {
             return;
          }
 
@@ -210,7 +210,7 @@ public class Tv2 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
    }
 

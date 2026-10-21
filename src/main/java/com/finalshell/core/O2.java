@@ -5,7 +5,7 @@ import com.finalshell.ui.panel.Ky4;
 import java.io.File;
 
 public class O2 {
-   static Ip5 R;
+   public static Ip5 R;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -150,7 +150,7 @@ public class O2 {
       // 11a: return
    }
 
-   static synchronized void R() {
+   public static synchronized void R() {
       if (R == null) {
          String var0 = (String)Registry.lookupField(417253634927399276L).get(null) + File.separator + a(-26794, 30242);
 

@@ -4,21 +4,21 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class BN3 {
-   protected static volatile String C;
-   protected static volatile XJ_2 V;
+   public static volatile String C;
+   public static volatile XJ_2 V;
    public static volatile long u;
-   protected static volatile OutputStream y;
-   protected static volatile InputStream J;
-   protected static volatile int[] l;
-   protected static int k;
-   protected static int I;
+   public static volatile OutputStream y;
+   public static volatile InputStream J;
+   public static volatile int[] l;
+   public static int k;
+   public static int I;
    public static int j;
    public static String[] d;
    public static String[] e;
    public static long[] h;
    public static Integer[] p;
 
-   protected static void E(int param0) throws InterruptedException {
+   public static void E(int param0) throws InterruptedException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -77,7 +77,7 @@ public class BN3 {
       // 55: return
    }
 
-   protected static void m() throws Exception {
+   public static void m() throws Exception {
       try {
          L2 var0 = L2.f(C);
          V = (XJ_2)var0.r(a(-15876, 7212), a(11602, 7318272813032031441L));
@@ -89,7 +89,7 @@ public class BN3 {
       }
    }
 
-   protected static void Y() {
+   public static void Y() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -128,7 +128,7 @@ public class BN3 {
       // 3b: return
    }
 
-   protected static void w(InputStream var0) throws Exception {
+   public static void w(InputStream var0) throws Exception {
       int var10000 = Z();
       D(a(30734, 2259246585652679048L));
       int var1 = var10000;
@@ -164,18 +164,18 @@ public class BN3 {
       }
    }
 
-   static void r(String var0) {
+   public static void r(String var0) {
       System.out.printf(a(-15879, 5256), var0);
       k = a(26247, 4467211618054344453L);
       u = System.currentTimeMillis();
       I = 0;
    }
 
-   protected static void B() throws InterruptedException {
+   public static void B() throws InterruptedException {
       D(a(5019, 4741806893637630494L));
    }
 
-   protected static void D(int param0) throws InterruptedException {
+   public static void D(int param0) throws InterruptedException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -245,7 +245,7 @@ public class BN3 {
       // 71: return
    }
 
-   static void Z(String var0, Object[] var1) throws Jz2 {
+   public static void Z(String var0, Object[] var1) throws Jz2 {
       System.out.println(a(-15880, 26179));
       System.out.println(a(-15874, -26736));
       System.out.printf(var0, var1);
@@ -254,11 +254,11 @@ public class BN3 {
       throw new Jz2();
    }
 
-   static void i() {
+   public static void i() {
       G("", new Object[0]);
    }
 
-   static void G(String var0, Object[] var1) {
+   public static void G(String var0, Object[] var1) {
       int var10000 = C();
       int var3 = 0;
       int var2 = var10000;

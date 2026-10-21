@@ -6,10 +6,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class Ly4 implements ChangeListener {
-   final IL3 b;
-   final SetBackgroundImagePanel F;
+   public final IL3 b;
+   public final SetBackgroundImagePanel F;
 
-   Ly4(SetBackgroundImagePanel var1, IL3 var2) {
+   public Ly4(SetBackgroundImagePanel var1, IL3 var2) {
       this.F = var1;
       this.b = var2;
    }

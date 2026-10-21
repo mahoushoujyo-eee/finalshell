@@ -10,9 +10,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class JW implements MouseListener {
-   final Address O;
+   public final Address O;
 
-   JW(Address var1) {
+   public JW(Address var1) {
       this.O = var1;
    }
 
@@ -30,7 +30,7 @@ public class JW implements MouseListener {
          Object var11 = 389694495067679276L;
          Object var10009 = Ref.g(389694495067679276L, var11);
          Object var13 = 627973027287447539L;
-new JW(this, (Kl4)var10009, (Connection4)Ref.g(627973027287447539L, var13));
+var10007 = new JW(this, (Kl4)var10009, (Connection4)Ref.g(627973027287447539L, var13));
          Object var2 = var10006;
          ((SetExternalEditorPanel)var2).show((Component)var1.getSource(), var1.getX(), var1.getY());
       }
@@ -52,7 +52,7 @@ new JW(this, (Kl4)var10009, (Connection4)Ref.g(627973027287447539L, var13));
       Ref.g(389694495067679276L, var11);
       Object var13 = 150762093507542450L;
       Object var10006 = ((com.finalshell.core.Km2)Ref.g(150762093507542450L, var13)).getCellEditor();
-      if (var2 == false) {
+      if (var2 == null) {
          if (var10006 == null) {
             return;
          }

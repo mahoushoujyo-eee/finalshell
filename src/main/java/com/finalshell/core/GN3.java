@@ -72,7 +72,7 @@ public class GN3 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       int var4 = this.F(var1, var2);
       var3[0] = (float)var1 + this.T[var4];
       var3[1] = (float)var2 + this.M[var4];

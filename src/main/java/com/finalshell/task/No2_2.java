@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.U;
 import java.lang.reflect.InvocationTargetException;
 
 public class No2_2 implements Runnable {
-   final U i;
+   public final U i;
 
-   No2_2(U var1) {
+   public No2_2(U var1) {
       this.i = var1;
    }
 

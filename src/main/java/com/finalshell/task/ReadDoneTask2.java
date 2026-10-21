@@ -6,13 +6,13 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class ReadDoneTask2 extends Thread {
-   final Connection7 d;
+   public final Connection7 d;
    public final InputStream q;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   ReadDoneTask2(Connection7 var1, InputStream var2) {
+   public ReadDoneTask2(Connection7 var1, InputStream var2) {
       this.d = var1;
       this.q = var2;
    }

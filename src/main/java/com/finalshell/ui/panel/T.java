@@ -99,50 +99,50 @@ public class T extends Ky4 {
    public static ImageIcon hw;
    public static ImageIcon j;
    public static LV3 X;
-   protected boolean Z;
-   protected P B;
-   protected boolean v = false;
-   protected V3 O;
-   protected List hM;
-   protected com.finalshell.ui.model.M2 T = com.finalshell.ui.model.M2.tiles;
-   protected boolean y = false;
-   protected java.io.File S = null;
-   protected int e = -1;
-   protected List d = new ArrayList();
-   protected ActionListener h6;
-   protected ActionListener k;
-   protected List u = new ArrayList(1);
-   protected int h2 = P_2_2.Q;
-   protected KD hf;
-   protected KD A;
-   protected KD g;
-   protected Kz4 D;
-   protected Kn2_2 Q;
-   protected KD s;
-   protected KD p;
-   protected KD h;
-   protected KD m;
-   protected KD M;
-   protected KD q;
-   protected Ky4 hp;
-   protected O2 K;
-   protected U22 H;
-   protected TreeSelectionListener U;
-   protected SZ h4;
-   protected Co2 E;
-   protected SZ c;
-   protected Pg2 hD;
-   protected SZ t;
-   protected K42 l;
-   protected Ne4 R;
-   protected Ky4 W;
-   protected Ky4 n;
-   protected X2 i;
-   protected KD I;
-   protected KD a;
-   protected JComponent J;
-   protected E_2 N = new M4(this);
-   protected I2 z = new I2(this);
+   public boolean Z;
+   public P B;
+   public boolean v = false;
+   public V3 O;
+   public List hM;
+   public com.finalshell.ui.model.M2 T = com.finalshell.ui.model.M2.tiles;
+   public boolean y = false;
+   public java.io.File S = null;
+   public int e = -1;
+   public List d = new ArrayList();
+   public ActionListener h6;
+   public ActionListener k;
+   public List u = new ArrayList(1);
+   public int h2 = P_2_2.Q;
+   public KD hf;
+   public KD A;
+   public KD g;
+   public Kz4 D;
+   public Kn2_2 Q;
+   public KD s;
+   public KD p;
+   public KD h;
+   public KD m;
+   public KD M;
+   public KD q;
+   public Ky4 hp;
+   public O2 K;
+   public U22 H;
+   public TreeSelectionListener U;
+   public SZ h4;
+   public Co2 E;
+   public SZ c;
+   public Pg2 hD;
+   public SZ t;
+   public K42 l;
+   public Ne4 R;
+   public Ky4 W;
+   public Ky4 n;
+   public X2 i;
+   public KD I;
+   public KD a;
+   public JComponent J;
+   public E_2 N = new M4(this);
+   public I2 z = new I2(this);
    public static String F;
    public static String[] cb;
    public static String[] db;
@@ -175,7 +175,7 @@ public class T extends Ky4 {
       this.b$void();
    }
 
-   protected Component l() {
+   public Component l() {
       XT3 var2 = new XT3(0);
       var2.X(LS.attached);
       var2.Z(0);
@@ -259,7 +259,7 @@ public class T extends Ky4 {
       return var2;
    }
 
-   protected void a(int var1) {
+   public void a(int var1) {
       String var2 = v$String();
       int var10000 = var1;
       if (var2 == null) {
@@ -276,7 +276,7 @@ public class T extends Ky4 {
       }
    }
 
-   protected Component p$Component() {
+   public Component p$Component() {
       this.G();
       this.j();
       this.a();
@@ -291,7 +291,7 @@ public class T extends Ky4 {
       return this.hp;
    }
 
-   protected void G() {
+   public void G() {
       this.H = new U22();
       this.H.o(true);
       this.H.T(1);
@@ -301,7 +301,7 @@ public class T extends Ky4 {
       this.h4.setPreferredSize(new Dimension(this.h2, 1));
    }
 
-   protected void j() {
+   public void j() {
       this.E = new Co2();
       this.E.y(true);
       this.E.setDropMode(DropMode.ON);
@@ -319,7 +319,7 @@ public class T extends Ky4 {
       this.c.setVerticalScrollBarPolicy(a(15672, 4719930615273581291L));
    }
 
-   protected void a() {
+   public void a() {
       this.hD = new Pg2();
       this.hD.setOpaque(false);
       this.hD.setRowSorter(this.Q());
@@ -336,7 +336,7 @@ public class T extends Ky4 {
       this.t.setVerticalScrollBarPolicy(a(8630, 7914268820569290337L));
    }
 
-   protected TableRowSorter Q() {
+   public TableRowSorter Q() {
       Pl2 var2 = this.hD.G();
       TableRowSorter var3 = new TableRowSorter<>(var2);
       String var10000 = v$String();
@@ -411,7 +411,7 @@ public class T extends Ky4 {
       return var3;
    }
 
-   protected Component F$Component() {
+   public Component F$Component() {
       v$String();
       Ky4 var2 = new Ky4();
       var2.setLayout(new TA(4));
@@ -584,7 +584,7 @@ public class T extends Ky4 {
       this.M(var1, D2.other);
    }
 
-   protected void M(java.io.File var1, D2 var2) {
+   public void M(java.io.File var1, D2 var2) {
       String var3;
       java.io.File var4;
       label105: {
@@ -706,7 +706,7 @@ public class T extends Ky4 {
       this.S();
    }
 
-   protected void S() {
+   public void S() {
       String var1 = v$String();
       int var10001 = this.e;
       if (var1 == null) {
@@ -765,11 +765,11 @@ public class T extends Ky4 {
       return this.F(var2);
    }
 
-   protected List F(Collection var1) {
+   public List F(Collection var1) {
       return Cz2.F(var1, this.O);
    }
 
-   protected List N() {
+   public List N() {
       String var1;
       T var3;
       label30: {
@@ -885,12 +885,12 @@ public class T extends Ky4 {
       var3.Z(var1);
    }
 
-   protected void f() {
+   public void f() {
       List var1 = this.N();
       this.Z(var1);
    }
 
-   protected void Z(Collection var1) {
+   public void Z(Collection var1) {
       String var2;
       List var3;
       int var10001;
@@ -973,15 +973,15 @@ public class T extends Ky4 {
       return var10000 == var10001 ? this.p((java.io.File)var1.get(0)) : "";
    }
 
-   protected String p(java.io.File var1) {
+   public String p(java.io.File var1) {
       return var1.getName();
    }
 
-   protected String s(List var1) {
+   public String s(List var1) {
       return NE.b(var1, b(-20695, 12991), X);
    }
 
-   protected void b(List var1) {
+   public void b(List var1) {
       String var2;
       label46: {
          var2 = v$String();
@@ -1028,7 +1028,7 @@ public class T extends Ky4 {
       var5.setEnabled((boolean)var6);
    }
 
-   protected void o$void() {
+   public void o$void() {
       T var2;
       label14: {
          String var10000 = v$String();
@@ -1051,13 +1051,13 @@ public class T extends Ky4 {
       this.W.revalidate();
    }
 
-   protected void U(java.io.File var1) {
+   public void U(java.io.File var1) {
       this.D.B(this.Q);
       this.D.E(var1);
       this.D.z(this.Q);
    }
 
-   protected void o(java.io.File var1) {
+   public void o(java.io.File var1) {
       String var2 = v$String();
       if (var2 == null) {
          if (var1 != null) {
@@ -1073,15 +1073,15 @@ public class T extends Ky4 {
       this.H.J();
    }
 
-   protected void J(java.io.File var1) {
+   public void J(java.io.File var1) {
       this.E.e(var1);
    }
 
-   protected void d(java.io.File var1) {
+   public void d(java.io.File var1) {
       this.hD.k(var1);
    }
 
-   protected void c() {
+   public void c() {
       this.i.setModel(new DefaultComboBoxModel<>(this.hM.toArray()));
    }
 
@@ -1089,7 +1089,7 @@ public class T extends Ky4 {
       this.R(var1, true);
    }
 
-   protected void R(V3 var1, boolean var2) {
+   public void R(V3 var1, boolean var2) {
       String var3 = v$String();
       boolean var10000 = this.hM.contains(var1);
       if (var3 == null) {
@@ -1112,21 +1112,21 @@ public class T extends Ky4 {
       this.s$void();
    }
 
-   protected void s$void() {
+   public void s$void() {
       this.E.N(this.O(this.x(this.O)));
       this.hD.V(this.O(this.x(this.O)));
    }
 
-   protected void v$void() {
+   public void v$void() {
       this.D.F(this.O(DE.Y));
       this.H.M(this.O(DE.Y));
    }
 
-   protected F3_2 x(V3 var1) {
+   public F3_2 x(V3 var1) {
       return new F3_2(A_3.OR, new FileFilter[]{var1, DE.Y});
    }
 
-   protected F3_2 O(V3 var1) {
+   public F3_2 O(V3 var1) {
       return new F3_2(A_3.AND, new FileFilter[]{var1, this.z});
    }
 
@@ -1213,7 +1213,7 @@ public class T extends Ky4 {
       this.k = var1;
    }
 
-   protected void v(ActionEvent var1) {
+   public void v(ActionEvent var1) {
       String var2 = v$String();
       ActionListener var10000 = this.h6;
       if (var2 == null) {
@@ -1227,7 +1227,7 @@ public class T extends Ky4 {
       var10000.actionPerformed(var1);
    }
 
-   protected void h(ActionEvent var1) {
+   public void h(ActionEvent var1) {
       String var2 = v$String();
       ActionListener var10000 = this.k;
       if (var2 == null) {
@@ -1356,7 +1356,7 @@ public class T extends Ky4 {
       this.B$void();
    }
 
-   protected void B$void() {
+   public void B$void() {
       T var2;
       label14: {
          String var10000 = v$String();
@@ -1457,7 +1457,7 @@ public class T extends Ky4 {
       this.u.remove(var1);
    }
 
-   protected void G(java.io.File var1) {
+   public void G(java.io.File var1) {
       String var10000 = v$String();
       Iterator var3 = AL_2.J((Collection)this.u).iterator();
       String var2 = var10000;
@@ -1471,7 +1471,7 @@ public class T extends Ky4 {
       }
    }
 
-   protected void K(List var1) {
+   public void K(List var1) {
       String var10000 = v$String();
       Iterator var3 = AL_2.J((Collection)this.u).iterator();
       String var2 = var10000;
@@ -1494,7 +1494,7 @@ public class T extends Ky4 {
       this.F$void();
    }
 
-   protected void F$void() {
+   public void F$void() {
       String var1;
       byte var4;
       label26: {

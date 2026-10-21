@@ -7,7 +7,7 @@ import com.finalshell.ui.panel.QX;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class TM extends Enum {
+public final class TM {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -34,11 +34,10 @@ public final class TM extends Enum {
    }
 
    public static TM valueOf(String var0) {
-      return Enum.valueOf(TM.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public TM(String var1, int var2) {
-      super(var1, var2);
    }
 
    public synchronized Og4 F() {

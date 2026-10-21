@@ -8,7 +8,7 @@ import java.util.Map;
 
 public abstract class UT_2 {
    public final Ph2 p;
-   protected final java.lang.Class w;
+   public final java.lang.Class w;
    public static String[] a;
    public static String[] b;
 

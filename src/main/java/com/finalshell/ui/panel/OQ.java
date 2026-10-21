@@ -23,11 +23,11 @@ public class OQ extends Oq2 {
    public static Dimension b;
    public static Insets C;
    public static Insets r;
-   protected Co2 s;
-   protected O z;
-   protected O a;
-   protected O U;
-   protected O o;
+   public Co2 s;
+   public O z;
+   public O a;
+   public O U;
+   public O o;
    public static String[] d;
    public static String[] e;
    public static long[] f;
@@ -226,7 +226,7 @@ public class OQ extends Oq2 {
       return this;
    }
 
-   protected boolean i() {
+   public boolean i() {
       return this.s.Q().equals(G6.tiles);
    }
 

@@ -7,9 +7,9 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 public class Yt4 implements FocusListener {
-   final KC x;
+   public final KC x;
 
-   Yt4(KC var1) {
+   public Yt4(KC var1) {
       this.x = var1;
    }
 

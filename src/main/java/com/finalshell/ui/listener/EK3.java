@@ -23,7 +23,7 @@ public abstract class EK3 implements DocumentListener {
 
    public abstract void u(DocumentEvent var1);
 
-   protected String Y(DocumentEvent var1) {
+   public String Y(DocumentEvent var1) {
       Document var2 = var1.getDocument();
 
       String var3;

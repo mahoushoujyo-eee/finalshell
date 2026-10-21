@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TV implements ActionListener {
-   final ConnectionProperty U;
+   public final ConnectionProperty U;
 
-   TV(ConnectionProperty var1) {
+   public TV(ConnectionProperty var1) {
       this.U = var1;
    }
 

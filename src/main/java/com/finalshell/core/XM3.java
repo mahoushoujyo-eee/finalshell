@@ -11,10 +11,10 @@ public class XM3 {
    public transient String H;
 
    public XM3(XM3 var1, Object var2, Object var3) {
+   super();
       int var5;
       label14: {
          boolean var10000 = Yn4.Y();
-         super();
          boolean var4 = var10000;
          this.G = var1;
          this.T = var2;

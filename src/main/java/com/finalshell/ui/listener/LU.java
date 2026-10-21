@@ -8,9 +8,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class LU extends MouseAdapter {
-   final Edit K;
+   public final Edit K;
 
-   LU(Edit var1) {
+   public LU(Edit var1) {
       this.K = var1;
    }
 

@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class YK {
    public static Properties s;
-   static File W;
+   public static File W;
 
    static {
       __vfClinit__();

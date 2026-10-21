@@ -7,10 +7,10 @@ import java.awt.event.KeyEvent;
 import javax.swing.JList;
 
 public class Xo4 extends KeyAdapter {
-   final JList F;
-   final W22 C;
+   public final JList F;
+   public final W22 C;
 
-   Xo4(W22 var1, JList var2) {
+   public Xo4(W22 var1, JList var2) {
       this.C = var1;
       this.F = var2;
    }

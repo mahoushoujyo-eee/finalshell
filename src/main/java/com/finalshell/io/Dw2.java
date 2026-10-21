@@ -7,36 +7,36 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public final class Dw2 extends FilterOutputStream {
-   protected final D8 e;
-   protected byte[] E;
+   public final D8 e;
+   public byte[] E;
    public boolean O;
    public boolean R;
    public final byte[] U;
-   protected boolean m;
+   public boolean m;
    public boolean B;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Dw2(OutputStream var1) throws IOException {
+   public Dw2(OutputStream var1) throws IOException {
       this(var1, new D8(-1), a(16245, 8803217142060803622L), true);
       this.m = true;
    }
 
-   Dw2(OutputStream var1, D8 var2) throws IOException {
+   public Dw2(OutputStream var1, D8 var2) throws IOException {
       this(var1, var2, a(31944, 3103209374615184793L), true);
    }
 
-   Dw2(OutputStream var1, D8 var2, int var3) throws IOException {
+   public Dw2(OutputStream var1, D8 var2, int var3) throws IOException {
       this(var1, var2, var3, true);
    }
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   Dw2(OutputStream var1, D8 var2, int var3, boolean var4) throws IOException {
+   public Dw2(OutputStream var1, D8 var2, int var3, boolean var4) throws IOException {
+   super(var1);
       label30: {
-         super(var1);
          this.O = false;
          this.R = false;
          this.U = new byte[1];
@@ -195,7 +195,7 @@ public final class Dw2 extends FilterOutputStream {
       // dd: return
    }
 
-   void s$void() throws IOException {
+   public void s$void() throws IOException {
       int[] var1 = Nm4.g();
 
       while (!this.e.h$boolean()) {
@@ -266,7 +266,7 @@ public final class Dw2 extends FilterOutputStream {
       // 67: return
    }
 
-   protected int b(int param1) throws IOException {
+   public int b(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -436,23 +436,23 @@ public final class Dw2 extends FilterOutputStream {
       // 78: return
    }
 
-   long K() {
+   public long K() {
       return this.e.z();
    }
 
-   long S() {
+   public long S() {
       return this.e.N();
    }
 
-   void q(boolean var1) {
+   public void q(boolean var1) {
       this.R = var1;
    }
 
-   boolean G() {
+   public boolean G() {
       return this.R;
    }
 
-   D8 s$D8() {
+   public D8 s$D8() {
       return this.e;
    }
 

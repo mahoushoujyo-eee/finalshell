@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class UZ implements E32, SC, R__2 {
    public static Random q;
-   static int[] U;
-   static float[][] Z;
-   static float[][] m;
-   static float[] u;
-   static boolean D;
+   public static int[] U;
+   public static float[][] Z;
+   public static float[][] m;
+   public static float[] u;
+   public static boolean D;
    public static String R;
    public static long[] a;
    public static Integer[] b;
@@ -243,7 +243,7 @@ public class UZ implements E32, SC, R__2 {
       var0[1] /= var1;
    }
 
-   static void x(float[] var0) {
+   public static void x(float[] var0) {
       float var1 = (float)Math.sqrt((double)(var0[0] * var0[0] + var0[1] * var0[1] + var0[2] * var0[2]));
       var0[0] /= var1;
       var0[1] /= var1;

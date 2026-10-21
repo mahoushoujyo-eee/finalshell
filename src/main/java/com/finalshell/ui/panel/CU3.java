@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class CU3 extends JLabel {
-   boolean e;
-   boolean U;
-   boolean x;
-   boolean r;
-   LI3_2 W;
+   public boolean e;
+   public boolean U;
+   public boolean x;
+   public boolean r;
+   public LI3_2 W;
 
    public CU3() {
       Registry.lookupField(597442836434941703L).setBoolean(this, false);

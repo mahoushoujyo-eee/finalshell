@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.SpeedTestFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class QC implements Runnable {
-   final SpeedTestFrame O;
+   public final SpeedTestFrame O;
 
-   QC(SpeedTestFrame var1) {
+   public QC(SpeedTestFrame var1) {
       this.O = var1;
    }
 

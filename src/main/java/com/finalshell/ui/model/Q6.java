@@ -7,11 +7,11 @@ import javax.swing.table.AbstractTableModel;
 
 public class Q6 extends AbstractTableModel {
    public ArrayList v;
-   String[] N;
-   Class[] j;
+   public String[] N;
+   public Class[] j;
    public static long a;
 
-   Q6() {
+   public Q6() {
       ArrayList var10001 = new ArrayList();
       long var2 = 593268998095649359L;
       ArrayList var1 = var10001;

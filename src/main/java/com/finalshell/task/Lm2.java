@@ -5,9 +5,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.frame.KeyManagerFrame;
 
 public class Lm2 implements Runnable {
-   final YT3_2 i;
+   public final YT3_2 i;
 
-   Lm2(YT3_2 var1) {
+   public Lm2(YT3_2 var1) {
       this.i = var1;
    }
 

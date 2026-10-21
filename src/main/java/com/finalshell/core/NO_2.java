@@ -3,11 +3,11 @@ package com.finalshell.core;
 public final class NO_2 extends NV_2 {
    public final Nt2_2 w;
    @C_9
-   C_q_2_2 H;
+   public C_q_2_2 H;
    @C_9
-   FW_2 Z;
+   public FW_2 Z;
    @C_9
-   Q4_3 B;
+   public Q4_3 B;
    public static String a;
 
    public NO_2(com.finalshell.ui.model.I var1, Nt2_2 var2) {

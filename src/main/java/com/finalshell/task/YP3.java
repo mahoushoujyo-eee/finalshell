@@ -4,11 +4,11 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.listener.T82;
 
 public class YP3 implements Runnable {
-   String A;
-   final T82 F;
+   public String A;
+   public final T82 F;
    public static String a;
 
-   YP3(T82 var1) {
+   public YP3(T82 var1) {
       this.F = var1;
       long var3 = 330726748034299838L;
       Object var2 = null;

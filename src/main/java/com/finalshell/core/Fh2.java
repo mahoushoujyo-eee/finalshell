@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.IOException;
 
 public class Fh2 implements HH_2 {
-   final File A;
-   final W3_6 x;
+   public final File A;
+   public final W3_6 x;
 
-   Fh2(W3_6 var1, File var2) {
+   public Fh2(W3_6 var1, File var2) {
       this.x = var1;
       this.A = var2;
    }

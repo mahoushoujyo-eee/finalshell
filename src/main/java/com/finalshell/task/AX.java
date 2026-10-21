@@ -13,11 +13,11 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 public class AX implements Runnable {
-   final La2 i;
+   public final La2 i;
    public static String[] a;
    public static String[] b;
 
-   AX(La2 var1) {
+   public AX(La2 var1) {
       this.i = var1;
    }
 

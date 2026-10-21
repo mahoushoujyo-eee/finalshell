@@ -7,9 +7,9 @@ import java.awt.event.KeyEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dk2 {
-   Km2 r;
+   public Km2 r;
 
-   Dk2(Km2 var1) {
+   public Dk2(Km2 var1) {
       long var3 = 491511652548502544L;
       Ref.s(491511652548502544L, var1, var3);
    }
@@ -33,7 +33,7 @@ public class Dk2 {
 
          Dk2 var64 = var3.length();
          if (var2 == null) {
-            if (var64 != 1) {
+            if (var64 != null) {
                return;
             }
 
@@ -74,7 +74,7 @@ public class Dk2 {
                label191: {
                   label192: {
                      if (var2 == null) {
-                        if (var67 != 0) {
+                        if (var67 != null) {
                            com.finalshell.ui.model.Ck4 var12 = (com.finalshell.ui.model.Ck4)var10;
                            String var10006 = (String)(Registry.emptyArgs());
                            long var26 = 396085629172753019L;
@@ -100,7 +100,7 @@ public class Dk2 {
                         break label191;
                      }
 
-                     if (var67 != 0) {
+                     if (var67 != null) {
                         Tf4 var61 = (Tf4)var10;
                         String var70 = (String)(Registry.emptyArgs());
                         long var28 = 179612178163941306L;
@@ -125,7 +125,7 @@ public class Dk2 {
                   var67 = var11.startsWith(var3);
                }
 
-               if (var67 != 0) {
+               if (var67 != null) {
                   var67 = this;
                   Object var29 = 491511652548502544L;
                   Ref.g(491511652548502544L, var29);
@@ -156,7 +156,7 @@ public class Dk2 {
          }
 
          if (var2 == null) {
-            if (var67 != 0) {
+            if (var67 != null) {
                return;
             }
 

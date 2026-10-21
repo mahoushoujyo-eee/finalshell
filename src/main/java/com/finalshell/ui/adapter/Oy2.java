@@ -8,10 +8,10 @@ import javax.swing.JTable;
 import javax.swing.border.Border;
 
 public class Oy2 extends O7 {
-   Border c;
-   final WK_2 O;
+   public Border c;
+   public final WK_2 O;
 
-   Oy2(WK_2 var1) {
+   public Oy2(WK_2 var1) {
       this.O = var1;
       this.c = Sm2.H();
    }

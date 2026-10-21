@@ -5,10 +5,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class C extends ByteArrayOutputStream {
-   final String J;
-   final I_6 u;
+   public final String J;
+   public final I_6 u;
 
-   C(I_6 var1, String var2) {
+   public C(I_6 var1, String var2) {
       this.u = var1;
       this.J = var2;
    }

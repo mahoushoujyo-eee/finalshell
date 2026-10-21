@@ -1,10 +1,10 @@
 package com.finalshell.task;
 
 public class V8 implements Runnable {
-   final BT3 s;
+   public final BT3 s;
    public static long a;
 
-   V8(BT3 var1) {
+   public V8(BT3 var1) {
       this.s = var1;
    }
 

@@ -4,7 +4,7 @@ import com.finalshell.core.XF3;
 import java.util.Locale;
 import org.jetbrains.annotations.NotNull;
 
-public final class GS extends Enum {
+public final class GS {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -22,11 +22,10 @@ public final class GS extends Enum {
    }
 
    public static GS valueOf(String var0) {
-      return Enum.valueOf(GS.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public GS(String var1, int var2) {
-      super(var1, var2);
    }
 
    @NotNull

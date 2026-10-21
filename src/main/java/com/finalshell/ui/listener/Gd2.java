@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Gd2 implements ActionListener {
-   final Backspace G;
+   public final Backspace G;
 
-   Gd2(Backspace var1) {
+   public Gd2(Backspace var1) {
       this.G = var1;
    }
 

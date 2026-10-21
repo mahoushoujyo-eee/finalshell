@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Cl2 implements Fq2_2 {
-   final Cs2_2 a;
+   public final Cs2_2 a;
 
-   Cl2(Cs2_2 var1) {
+   public Cl2(Cs2_2 var1) {
       this.a = var1;
    }
 

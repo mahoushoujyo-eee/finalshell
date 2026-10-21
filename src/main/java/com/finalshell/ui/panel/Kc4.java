@@ -36,23 +36,23 @@ import javax.swing.ImageIcon;
 
 public class Kc4 extends Ky4 implements Au2 {
    public static ImageIcon x;
-   protected static BasicStroke R;
-   protected int k = GO.Fx;
-   protected int C = a(19829, 4603493099291900748L);
-   protected Color P = new Color(a(22771, 2767082641087590088L), a(5640, 8817336692447551536L), a(5640, 8817336692447551536L));
-   protected Color K = new Color(a(16443, 4004741338188936708L), a(30220, 2937408803649830962L), a(30220, 2937408803649830962L));
-   protected final List J = new ArrayList(1);
-   protected boolean i = true;
-   protected boolean l = false;
-   protected boolean M = false;
-   protected int t = a(4663, 8095145250011128845L);
-   protected boolean e = true;
-   protected boolean Y = false;
-   protected V3 O = null;
-   protected boolean N = true;
-   protected float q = 1.0F;
-   protected String W = null;
-   protected List m = new ArrayList();
+   public static BasicStroke R;
+   public int k = GO.Fx;
+   public int C = a(19829, 4603493099291900748L);
+   public Color P = new Color(a(22771, 2767082641087590088L), a(5640, 8817336692447551536L), a(5640, 8817336692447551536L));
+   public Color K = new Color(a(16443, 4004741338188936708L), a(30220, 2937408803649830962L), a(30220, 2937408803649830962L));
+   public final List J = new ArrayList(1);
+   public boolean i = true;
+   public boolean l = false;
+   public boolean M = false;
+   public int t = a(4663, 8095145250011128845L);
+   public boolean e = true;
+   public boolean Y = false;
+   public V3 O = null;
+   public boolean N = true;
+   public float q = 1.0F;
+   public String W = null;
+   public List m = new ArrayList();
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -225,7 +225,7 @@ public class Kc4 extends Ky4 implements Au2 {
       var10000.n();
    }
 
-   protected boolean F(java.io.File var1) {
+   public boolean F(java.io.File var1) {
       String var2 = Kz4.M();
       Kc4 var10000 = this;
       if (var2 != null) {
@@ -422,7 +422,7 @@ public class Kc4 extends Ky4 implements Au2 {
       var10000.n();
    }
 
-   protected boolean R(java.io.File var1, boolean var2) {
+   public boolean R(java.io.File var1, boolean var2) {
       String var3 = Kz4.M();
       boolean var10000 = Cz2.y(this.m, var1);
       if (var3 != null) {
@@ -656,7 +656,7 @@ public class Kc4 extends Ky4 implements Au2 {
       }
    }
 
-   protected K02 R(java.io.File var1) {
+   public K02 R(java.io.File var1) {
       K02 var2 = new K02(var1);
       var2.V(this.l);
       this.addMouseListener(new LX3(this));
@@ -665,7 +665,7 @@ public class Kc4 extends Ky4 implements Au2 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String var10000 = Kz4.M();
       super.paintComponent(var1);
       String var2 = var10000;
@@ -722,7 +722,7 @@ public class Kc4 extends Ky4 implements Au2 {
       this.J.remove(var1);
    }
 
-   protected void n() {
+   public void n() {
       String var10000 = Kz4.M();
       Iterator var2 = AL_2.J((Collection)this.J).iterator();
       String var1 = var10000;

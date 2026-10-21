@@ -9,11 +9,11 @@ import com.finalshell.ui.panel.ShowDeletedPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class YE3 implements Runnable {
-   final String t;
-   final Connection5 I;
-   final ShowDeletedPanel R;
+   public final String t;
+   public final Connection5 I;
+   public final ShowDeletedPanel R;
 
-   YE3(ShowDeletedPanel var1, String var2, Connection5 var3) {
+   public YE3(ShowDeletedPanel var1, String var2, Connection5 var3) {
       this.R = var1;
       this.t = var2;
       this.I = var3;

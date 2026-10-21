@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yi2 implements Runnable {
-   final T32 n;
+   public final T32 n;
 
-   Yi2(T32 var1) {
+   public Yi2(T32 var1) {
       this.n = var1;
    }
 

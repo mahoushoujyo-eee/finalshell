@@ -8,7 +8,7 @@ public final class Cv2_2 extends CB_3 {
    }
 
    @Override
-   protected Object b(G2_3 var1) throws Throwable {
+   public Object b(G2_3 var1) throws Throwable {
       return var1.k(this);
    }
 

@@ -6,10 +6,10 @@ import java.awt.event.AWTEventListener;
 import java.awt.event.MouseEvent;
 
 public class Oc4 implements AWTEventListener {
-   final com.finalshell.ui.panel.QB A;
+   public final com.finalshell.ui.panel.QB A;
    public static long a;
 
-   Oc4(com.finalshell.ui.panel.QB var1) {
+   public Oc4(com.finalshell.ui.panel.QB var1) {
       this.A = var1;
    }
 

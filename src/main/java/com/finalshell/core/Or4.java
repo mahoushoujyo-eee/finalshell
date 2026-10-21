@@ -11,26 +11,26 @@ import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
 public class Or4 {
-   List q;
-   boolean V = false;
-   int A = a(10004, 242278767978422633L);
-   int m = a(2570, 8430846948041362548L);
-   int Z = 0;
-   int U;
-   String z = "";
-   byte[] t;
-   Socket H;
-   Socket e;
-   boolean l = false;
-   int c;
-   ArrayList W = new ArrayList();
-   Semaphore T = new Semaphore(0);
-   int r = 0;
-   int p = -1;
-   static int k;
-   static int R;
-   int v = 0;
-   YM o;
+   public List q;
+   public boolean V = false;
+   public int A = a(10004, 242278767978422633L);
+   public int m = a(2570, 8430846948041362548L);
+   public int Z = 0;
+   public int U;
+   public String z = "";
+   public byte[] t;
+   public Socket H;
+   public Socket e;
+   public boolean l = false;
+   public int c;
+   public ArrayList W = new ArrayList();
+   public Semaphore T = new Semaphore(0);
+   public int r = 0;
+   public int p = -1;
+   public static int k;
+   public static int R;
+   public int v = 0;
+   public YM o;
    public static String a;
    public static long[] b;
    public static Integer[] d;
@@ -54,7 +54,7 @@ public class Or4 {
       LA3.b.execute(var8);
    }
 
-   void G() {
+   public void G() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -122,7 +122,7 @@ public class Or4 {
       // 7e: return
    }
 
-   GI_2 H(String var1) {
+   public GI_2 H(String var1) {
       GI_2 var3 = new GI_2(this);
       String var4 = null;
       Ky4[] var10000 = Qm2.J();
@@ -167,7 +167,7 @@ public class Or4 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void g() {
+   public void g() {
       Ky4[] var1 = Qm2.J();
       Iterator var3 = this.q.iterator();
       if (var1 == null || var3.hasNext()) {

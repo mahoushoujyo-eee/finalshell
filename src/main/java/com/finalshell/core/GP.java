@@ -8,15 +8,15 @@ import java.awt.Graphics;
 import java.awt.RenderingHints;
 
 public class GP extends KD {
-   RenderingHints r;
+   public RenderingHints r;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
    public GP(String var1) {
+   super(var1);
       short var10000 = 10555;
-      super(var1);
       this.setFont((Font)Registry.lookupField(164046876459002055L).get(null));
       RenderingHints var10003 = new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB);
       long var5 = 303137625108552514L;

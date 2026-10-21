@@ -9,10 +9,10 @@ import javax.swing.JList;
 import javax.swing.SwingUtilities;
 
 public class DD extends MouseAdapter {
-   final JList Q;
-   final WO3 X;
+   public final JList Q;
+   public final WO3 X;
 
-   DD(WO3 var1, JList var2) {
+   public DD(WO3 var1, JList var2) {
       this.X = var1;
       this.Q = var2;
    }

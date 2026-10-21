@@ -6,11 +6,11 @@ import java.awt.event.ActionListener;
 import javax.swing.ButtonGroup;
 
 public class Y7 implements ActionListener {
-   final com.finalshell.ui.panel.T l;
+   public final com.finalshell.ui.panel.T l;
    public static String[] a;
    public static String[] b;
 
-   Y7(com.finalshell.ui.panel.T var1) {
+   public Y7(com.finalshell.ui.panel.T var1) {
       this.l = var1;
    }
 

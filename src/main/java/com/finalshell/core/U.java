@@ -5,12 +5,12 @@ import java.awt.Shape;
 import javax.swing.JComponent;
 
 public class U implements E_2 {
-   final JComponent v;
-   final Dimension C;
-   final boolean U;
-   final W_2 p;
+   public final JComponent v;
+   public final Dimension C;
+   public final boolean U;
+   public final W_2 p;
 
-   U(W_2 var1, JComponent var2, Dimension var3, boolean var4) {
+   public U(W_2 var1, JComponent var2, Dimension var3, boolean var4) {
       this.p = var1;
       this.v = var2;
       this.C = var3;

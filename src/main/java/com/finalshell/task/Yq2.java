@@ -6,10 +6,10 @@ import com.finalshell.ui.listener.TL;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yq2 implements Runnable {
-   final String N;
-   final TL E;
+   public final String N;
+   public final TL E;
 
-   Yq2(TL var1, String var2) {
+   public Yq2(TL var1, String var2) {
       this.E = var1;
       this.N = var2;
    }

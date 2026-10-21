@@ -5,11 +5,11 @@ import javax.swing.JPasswordField;
 import javax.swing.SwingUtilities;
 
 public class Fz4 implements Runnable {
-   final JPasswordField i;
-   final Yy4_2 G;
+   public final JPasswordField i;
+   public final Yy4_2 G;
    public static long a;
 
-   Fz4(Yy4_2 var1, JPasswordField var2) {
+   public Fz4(Yy4_2 var1, JPasswordField var2) {
       this.G = var1;
       this.i = var2;
    }

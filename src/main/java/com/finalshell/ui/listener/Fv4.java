@@ -8,9 +8,9 @@ import java.awt.event.ItemListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fv4 implements ItemListener {
-   final ApplyToFileAndDirDialog q;
+   public final ApplyToFileAndDirDialog q;
 
-   Fv4(ApplyToFileAndDirDialog var1) {
+   public Fv4(ApplyToFileAndDirDialog var1) {
       this.q = var1;
    }
 

@@ -4,11 +4,11 @@ import java.io.File;
 import java.util.Iterator;
 
 public class Z3_3 {
-   final Iterator w;
-   final Iterator Y;
-   final W3_5 M;
+   public final Iterator w;
+   public final Iterator Y;
+   public final W3_5 M;
 
-   Z3_3(W3_5 param1, File param2) {
+   public Z3_3(W3_5 param1, File param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

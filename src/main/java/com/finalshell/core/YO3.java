@@ -60,7 +60,7 @@ public final class YO3 extends YA3 {
       return ((YO3)var10000).W();
    }
 
-   YO3(Runnable var1, Ca4_2 var2, OX3 var3, Bg2 var4) {
+   public YO3(Runnable var1, Ca4_2 var2, OX3 var3, Bg2 var4) {
       this(var1, var2, var3);
    }
 

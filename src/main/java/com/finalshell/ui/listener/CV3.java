@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class CV3 implements ActionListener {
-   final SyncPasswordDialog G;
+   public final SyncPasswordDialog G;
 
-   CV3(SyncPasswordDialog var1) {
+   public CV3(SyncPasswordDialog var1) {
       this.G = var1;
    }
 

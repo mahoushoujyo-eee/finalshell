@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class Ff2 implements C_e_2_2 {
-   final FF_2 M;
+   public final FF_2 M;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Ff2(FF_2 var1) {
+   public Ff2(FF_2 var1) {
       this.M = var1;
    }
 

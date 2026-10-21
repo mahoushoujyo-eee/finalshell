@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class KM extends MouseAdapter {
-   final Nx4 i;
+   public final Nx4 i;
 
-   KM(Nx4 var1) {
+   public KM(Nx4 var1) {
       this.i = var1;
    }
 

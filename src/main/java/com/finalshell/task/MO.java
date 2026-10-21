@@ -6,9 +6,9 @@ import com.finalshell.reflect.Ref;
 import java.io.IOException;
 
 public class MO implements Runnable {
-   final YT3_2 j;
+   public final YT3_2 j;
 
-   MO(YT3_2 var1) {
+   public MO(YT3_2 var1) {
       this.j = var1;
    }
 

@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextArea;
 
 public class U9 implements ActionListener {
-   final SendSyncMailPanel h;
+   public final SendSyncMailPanel h;
 
-   U9(SendSyncMailPanel var1) {
+   public U9(SendSyncMailPanel var1) {
       this.h = var1;
    }
 

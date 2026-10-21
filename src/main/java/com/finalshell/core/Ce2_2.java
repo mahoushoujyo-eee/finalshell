@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Ce2_2 extends Y_3 {
    public final short G;
 
-   Ce2_2(short var1, short var2) {
+   public Ce2_2(short var1, short var2) {
       super(var1);
       this.G = var2;
    }
@@ -21,11 +21,11 @@ public class Ce2_2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeShort(this.G);
    }
 
-   static Y_3 n(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 n(short var0, DataInputStream var1) throws IOException {
       return x(var0, var1);
    }
 }

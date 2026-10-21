@@ -5,19 +5,19 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 public class WI extends WC {
-   short F = D6.nu;
-   int o = 0;
-   int i = 0;
-   byte[] K;
-   byte[] y;
-   int Q;
-   InetAddress J;
-   int p;
-   int P;
-   static String s;
-   static byte[] b;
-   int B;
-   long h;
+   public short F = D6.nu;
+   public int o = 0;
+   public int i = 0;
+   public byte[] K;
+   public byte[] y;
+   public int Q;
+   public InetAddress J;
+   public int p;
+   public int P;
+   public static String s;
+   public static byte[] b;
+   public int B;
+   public long h;
    public static long[] a;
    public static Integer[] c;
 

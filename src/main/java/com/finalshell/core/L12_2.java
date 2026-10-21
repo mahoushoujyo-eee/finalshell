@@ -6,7 +6,7 @@ import java.util.List;
 public class L12_2 implements Bk2 {
    public final XE_2 W;
 
-   L12_2(XE_2 var1) {
+   public L12_2(XE_2 var1) {
       this.W = var1;
    }
 

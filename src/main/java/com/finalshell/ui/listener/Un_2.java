@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 public class Un_2 implements ActionListener {
-   final BK2 g;
+   public final BK2 g;
 
-   Un_2(BK2 var1) {
+   public Un_2(BK2 var1) {
       this.g = var1;
    }
 

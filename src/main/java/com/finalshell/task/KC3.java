@@ -8,12 +8,12 @@ import com.finalshell.ui.panel.Connection4;
 import java.lang.reflect.InvocationTargetException;
 
 public class KC3 implements Runnable {
-   final Connection4 o;
-   final Tf4 L;
-   final Tf4 w;
-   final File8 Y;
+   public final Connection4 o;
+   public final Tf4 L;
+   public final Tf4 w;
+   public final File8 Y;
 
-   KC3(File8 var1, Connection4 var2, Tf4 var3, Tf4 var4) {
+   public KC3(File8 var1, Connection4 var2, Tf4 var3, Tf4 var4) {
       this.Y = var1;
       this.o = var2;
       this.L = var3;

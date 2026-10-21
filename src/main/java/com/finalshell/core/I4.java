@@ -3,15 +3,15 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class I4 {
-   protected int X;
-   protected byte[] c;
-   protected int u;
-   protected int d;
-   protected int[][] m;
-   protected int[] q = new int[a(5290, 1521622656332694852L)];
-   protected int[] l = new int[a(5321, 3772957331856065837L)];
-   protected int[] B;
-   protected int[] g;
+   public int X;
+   public byte[] c;
+   public int u;
+   public int d;
+   public int[][] m;
+   public int[] q = new int[a(5290, 1521622656332694852L)];
+   public int[] l = new int[a(5321, 3772957331856065837L)];
+   public int[] B;
+   public int[] g;
    public static long[] a;
    public static Integer[] b;
 
@@ -601,7 +601,7 @@ public class I4 {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   protected void i(int var1, int var2, int var3, int var4, int var5) {
+   public void i(int var1, int var2, int var3, int var4, int var5) {
       Ky4[] var10000 = Kj4.d();
       int var9 = var2 - var1;
       Ky4[] var6 = var10000;
@@ -759,14 +759,14 @@ public class I4 {
       }
    }
 
-   protected void u(int var1, int var2, int var3, int var4, int var5) {
+   public void u(int var1, int var2, int var3, int var4, int var5) {
       int[] var6 = this.m[var2];
       var6[0] -= var1 * (var6[0] - var3) / a(8276, 5155741919219036588L);
       var6[1] -= var1 * (var6[1] - var4) / a(8276, 5155741919219036588L);
       var6[2] -= var1 * (var6[2] - var5) / a(8276, 5155741919219036588L);
    }
 
-   protected int z(int var1, int var2, int var3) {
+   public int z(int var1, int var2, int var3) {
       int var12 = a(31094, 8481115058235566235L);
       Ky4[] var10000 = Kj4.d();
       int var13 = var12;

@@ -89,7 +89,7 @@ public class GE3 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var4 = (float)var1 - this.b;
       float var5 = (float)var2 - this.M;
       float var6 = (float)Math.atan2((double)(-var5), (double)(-var4)) + this.h;

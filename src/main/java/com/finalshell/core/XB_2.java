@@ -8,17 +8,17 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class XB_2 {
-   ServerSocket y;
-   int d;
-   String H;
-   int x;
-   String p;
-   int F;
-   Object v;
-   Lv4_2 R;
-   int g;
+   public ServerSocket y;
+   public int d;
+   public String H;
+   public int x;
+   public String p;
+   public int F;
+   public Object v;
+   public Lv4_2 R;
+   public int g;
 
-   XB_2(int var1, String var2, int var3, String var4, int var5, Lv4_2 var6, int var7) {
+   public XB_2(int var1, String var2, int var3, String var4, int var5, Lv4_2 var6, int var7) {
       Object var10001 = new Object();
       long var11 = 488475715146941343L;
       Object var10 = var10001;
@@ -63,7 +63,7 @@ public class XB_2 {
       }
    }
 
-   void Y(Socket var1) {
+   public void Y(Socket var1) {
       Object var3 = 336797495140939972L;
       String var10003 = (String)Ref.g(336797495140939972L, var3);
       int var10004 = Registry.lookupField(450411236977093372L).getInt(this);
@@ -71,7 +71,7 @@ public class XB_2 {
       String var10006 = (String)Ref.g(460017230843248271L, var5);
       Object var10007 = Registry.lookupField(440223267543010105L).getInt(this);
       Object var7 = 257654343460162399L;
-new XB_2(this, (int)var10006, (String)var10007, (int)this, (Lv4_2)Ref.g(257654343460162399L, var7), Registry.lookupField(256861225427482174L).getInt(this));
+var10004 = new XB_2(this, (int)var10006, (String)var10007, (int)this, (Lv4_2)Ref.g(257654343460162399L, var7), Registry.lookupField(256861225427482174L).getInt(this));
 
 
       Object[] var12 = Registry.packArgs(var1);

@@ -47,11 +47,11 @@ public class Cb2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       Cr2_2.D(var1, this.F);
    }
 
-   static Y_3 f(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 f(short var0, DataInputStream var1) throws IOException {
       return A(var0, var1);
    }
 }

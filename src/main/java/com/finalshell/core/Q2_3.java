@@ -27,7 +27,7 @@ public class Q2_3 extends D2_5 {
 
    @C_9
    @Override
-   protected final File C(String var1) {
+   public final File C(String var1) {
       int var2 = var1.lastIndexOf(a(9789, 2025309590594404909L));
       String var3 = var2 == -1 ? null : var1.substring(0, var2).replace((char)a(9789, 2025309590594404909L), File.separatorChar);
       Set var4 = this.x(var3);

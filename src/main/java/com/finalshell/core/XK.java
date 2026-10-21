@@ -4,9 +4,6 @@ import com.finalshell.ui.model.Oj4;
 import java.util.List;
 
 public class XK implements YW3 {
-   XK() {
-   }
-
    @Override
    public void Z(String var1, String var2) {
       this.I();

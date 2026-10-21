@@ -15,12 +15,12 @@ import javax.imageio.ImageIO;
 import javax.swing.SwingUtilities;
 
 public class KM {
-   static U72 S;
+   public static U72 S;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   static String P(String var0, int var1) {
+   public static String P(String var0, int var1) {
       Registry.packArgs(var0 + "-" + var1);
       long var4 = 417955638237048558L;
       String var10001 = (String)Ref.h2(417955638237048558L, var4);
@@ -184,7 +184,7 @@ public class KM {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   static int O(String var0) {
+   public static int O(String var0) {
       Ky4[] var10000 = EnableBackgroundImage.I();
       Object[] var2 = 0;
       Ky4[] var1 = var10000;
@@ -198,7 +198,7 @@ public class KM {
                      break label40;
                   }
 
-                  if (var10000 == 0) {
+                  if (var10000 == null) {
                      break label42;
                   }
                } catch (IOException var9) {

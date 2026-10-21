@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 public class As2 extends AO_2 {
    public static List J;
    public static List O;
-   protected int t = -1;
+   public int t = -1;
    public static long[] a;
    public static Integer[] b;
 
@@ -78,7 +78,7 @@ public class As2 extends AO_2 {
       if (!var1) {
          return (boolean)var3.t;
       } else {
-         return (boolean)(var3.t == 3 ? 1 : 0);
+         return (boolean)((var3.t == 3 ? 1 : 0) != 0);
       }
    }
 

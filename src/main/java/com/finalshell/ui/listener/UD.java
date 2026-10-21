@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class UD implements ActionListener {
-   final IQ Y;
+   public final IQ Y;
 
-   UD(IQ var1) {
+   public UD(IQ var1) {
       this.Y = var1;
    }
 

@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.ui.panel.KE3;
 import javax.swing.JComponent;
 
-public final class BU extends Enum {
+public final class BU {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -18,11 +18,10 @@ public final class BU extends Enum {
    }
 
    public static BU valueOf(String var0) {
-      return Enum.valueOf(BU.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public BU(String var1, int var2) {
-      super(var1, var2);
    }
 
    public static BU I(JComponent var0, KE3 var1) {

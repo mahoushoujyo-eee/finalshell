@@ -5,10 +5,10 @@ import com.finalshell.ui.panel.Copy2;
 import javax.swing.JSplitPane;
 
 public class On2 implements Runnable {
-   final JSplitPane N;
-   final Copy2 v;
+   public final JSplitPane N;
+   public final Copy2 v;
 
-   On2(Copy2 var1, JSplitPane var2) {
+   public On2(Copy2 var1, JSplitPane var2) {
       this.v = var1;
       this.N = var2;
    }

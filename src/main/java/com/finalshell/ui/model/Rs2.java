@@ -6,8 +6,8 @@ import java.io.File;
 import java.util.List;
 
 public final class Rs2 extends RK {
-   Rs2(String var1, int var2) {
-      super(null);
+   public Rs2(String var1, int var2) {
+      super(var1, var2, null);
    }
 
    @Override

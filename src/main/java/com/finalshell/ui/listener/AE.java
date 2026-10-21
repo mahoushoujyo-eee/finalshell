@@ -7,10 +7,10 @@ import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
 public class AE extends MouseAdapter {
-   final JComponent k;
-   final com.finalshell.core.G_2 l;
+   public final JComponent k;
+   public final com.finalshell.core.G_2 l;
 
-   AE(com.finalshell.core.G_2 var1, JComponent var2) {
+   public AE(com.finalshell.core.G_2 var1, JComponent var2) {
       this.l = var1;
       this.k = var2;
    }

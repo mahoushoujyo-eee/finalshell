@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Xy_2 implements ActionListener {
-   final SelectDownloadFolderPanel a;
+   public final SelectDownloadFolderPanel a;
 
-   Xy_2(SelectDownloadFolderPanel var1) {
+   public Xy_2(SelectDownloadFolderPanel var1) {
       this.a = var1;
    }
 

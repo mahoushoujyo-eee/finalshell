@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Os4 implements MouseListener {
-   final Copy T;
+   public final Copy T;
 
-   Os4(Copy var1) {
+   public Os4(Copy var1) {
       this.T = var1;
    }
 

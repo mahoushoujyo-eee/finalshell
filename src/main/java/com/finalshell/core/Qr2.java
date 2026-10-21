@@ -16,8 +16,8 @@ import javax.crypto.spec.DESKeySpec;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Qr2 {
-   static int t;
-   static int b;
+   public static int t;
+   public static int b;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -67,7 +67,7 @@ public class Qr2 {
       return var1;
    }
 
-   static byte[] u(byte[] var0) {
+   public static byte[] u(byte[] var0) {
       Ky4[] var10000 = YT3_2.c();
       Random var2 = new Random((long)var0[5]);
       long var3 = (long)(5 + var2.nextInt(a(757, 2493245420898990152L)));
@@ -334,7 +334,7 @@ public class Qr2 {
       return var10004;
    }
 
-   static byte[] O(int var0) {
+   public static byte[] O(int var0) {
       byte[] var2 = new byte[var0];
       Ky4[] var10000 = YT3_2.c();
       int var3 = 0;
@@ -363,12 +363,12 @@ public class Qr2 {
       return var4;
    }
 
-   void p(byte[] var1, long var2) {
+   public void p(byte[] var1, long var2) {
       Random var4 = new Random();
       var4.nextLong();
    }
 
-   void Q() {
+   public void Q() {
    }
 
    public static byte[] x(byte[] var0, byte[] var1) throws Exception {

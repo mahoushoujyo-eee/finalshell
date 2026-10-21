@@ -7,9 +7,9 @@ import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
 public class FS3 implements Runnable {
-   final Qn2 i;
+   public final Qn2 i;
 
-   FS3(Qn2 var1) {
+   public FS3(Qn2 var1) {
       this.i = var1;
    }
 
@@ -36,7 +36,7 @@ public class FS3 implements Runnable {
 
       label47: {
          if (var1 == null) {
-            if (var10003 == false) {
+            if (var10003 == null) {
                return;
             }
 
@@ -52,7 +52,7 @@ public class FS3 implements Runnable {
             var10005.isVisible();
          }
 
-         if (var10003 == false) {
+         if (var10003 == null) {
             return;
          }
 

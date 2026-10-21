@@ -6,12 +6,12 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class DL implements PropertyChangeListener {
-   final Component m;
-   final E_2 a;
-   final Rt2 Q;
-   final com.finalshell.ui.dialog.Ds2 D;
+   public final Component m;
+   public final E_2 a;
+   public final Rt2 Q;
+   public final com.finalshell.ui.dialog.Ds2 D;
 
-   DL(com.finalshell.ui.dialog.Ds2 var1, Component var2, E_2 var3, Rt2 var4) {
+   public DL(com.finalshell.ui.dialog.Ds2 var1, Component var2, E_2 var3, Rt2 var4) {
       this.D = var1;
       this.m = var2;
       this.a = var3;

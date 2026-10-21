@@ -6,10 +6,10 @@ import javax.swing.ButtonModel;
 import javax.swing.JMenuItem;
 
 public class Dl4 implements PropertyChangeListener {
-   final XN z;
-   final JMenuItem u;
+   public final XN z;
+   public final JMenuItem u;
 
-   Dl4(XN var1, JMenuItem var2) {
+   public Dl4(XN var1, JMenuItem var2) {
       this.z = var1;
       this.u = var2;
    }

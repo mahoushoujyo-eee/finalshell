@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class TP implements ActionListener {
-   final com.finalshell.ui.frame.U h;
+   public final com.finalshell.ui.frame.U h;
 
-   TP(com.finalshell.ui.frame.U var1) {
+   public TP(com.finalshell.ui.frame.U var1) {
       this.h = var1;
    }
 

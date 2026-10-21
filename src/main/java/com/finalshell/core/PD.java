@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class PD extends Pc2 {
-   String V;
+   public String V;
 
    public PD() {
    }

@@ -5,7 +5,7 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
 public class D9 implements TableModelListener {
-   final com.finalshell.core.DE3 o;
+   public final com.finalshell.core.DE3 o;
 
    public D9(com.finalshell.core.DE3 var1) {
       this.o = var1;

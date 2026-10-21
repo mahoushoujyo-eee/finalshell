@@ -6,8 +6,8 @@ import java.awt.image.ColorModel;
 import java.awt.image.WritableRaster;
 
 public abstract class GT3 extends W5 {
-   protected Rectangle l;
-   protected Rectangle H;
+   public Rectangle l;
+   public Rectangle H;
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {
@@ -37,10 +37,10 @@ public abstract class GT3 extends W5 {
       return var2;
    }
 
-   protected void J(Rectangle var1) {
+   public void J(Rectangle var1) {
    }
 
-   protected abstract int[] K(int var1, int var2, int[] var3, Rectangle var4);
+   public abstract int[] K(int var1, int var2, int[] var3, Rectangle var4);
 }
 
 

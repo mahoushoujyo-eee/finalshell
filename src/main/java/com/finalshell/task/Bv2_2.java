@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.ConnectionProperty;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bv2_2 implements Runnable {
-   final ConnectionProperty R;
+   public final ConnectionProperty R;
 
-   Bv2_2(ConnectionProperty var1) {
+   public Bv2_2(ConnectionProperty var1) {
       this.R = var1;
    }
 

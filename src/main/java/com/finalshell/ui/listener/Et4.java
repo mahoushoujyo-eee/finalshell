@@ -7,10 +7,10 @@ import java.awt.event.ItemListener;
 import java.util.Date;
 
 public class Et4 implements ItemListener {
-   final Date e;
-   final KV3 i;
+   public final Date e;
+   public final KV3 i;
 
-   Et4(KV3 var1, Date var2) {
+   public Et4(KV3 var1, Date var2) {
       this.i = var1;
       this.e = var2;
    }

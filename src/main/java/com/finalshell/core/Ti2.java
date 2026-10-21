@@ -7,8 +7,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class Ti2 extends TN {
-   String w;
-   String V;
+   public String w;
+   public String V;
 
    public Ti2(String var1, String var2) {
       this.n = Dq2.M;

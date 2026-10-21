@@ -5,10 +5,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class GB implements Runnable {
-   final BufferedReader a;
-   final CH i;
+   public final BufferedReader a;
+   public final CH i;
 
-   GB(BufferedReader var1, CH var2) {
+   public GB(BufferedReader var1, CH var2) {
       this.a = var1;
       this.i = var2;
    }

@@ -17,10 +17,10 @@ import javax.swing.plaf.ComboBoxUI;
 import javax.swing.plaf.basic.BasicComboPopup;
 
 public class L extends W_2 implements HQ {
-   protected int e = Cq4.y;
-   protected boolean k = Cq4.d;
-   protected EL3 K = null;
-   protected com.finalshell.ui.model.L92 s = null;
+   public int e = Cq4.y;
+   public boolean k = Cq4.d;
+   public EL3 K = null;
+   public com.finalshell.ui.model.L92 s = null;
    public static String[] g;
    public static String[] h;
    public static long[] l;
@@ -73,7 +73,7 @@ public class L extends W_2 implements HQ {
       return var2;
    }
 
-   protected void t(Graphics2D var1, JPopupMenu var2) {
+   public void t(Graphics2D var1, JPopupMenu var2) {
       Dimension var3 = var2.getSize();
       this.E(var1, var2, var3);
       this.s(var1, var2, var3);
@@ -81,7 +81,7 @@ public class L extends W_2 implements HQ {
       this.S(var1, var2, var3);
    }
 
-   protected void B(Graphics2D var1, JPopupMenu var2, Dimension var3) {
+   public void B(Graphics2D var1, JPopupMenu var2, Dimension var3) {
       int[] var4 = W_2.B$arrint();
       L var10000 = this;
       if (var4 == null) {
@@ -303,7 +303,7 @@ public class L extends W_2 implements HQ {
       var1.fill(this.d(var2, var3, true));
    }
 
-   protected M3 O(JPopupMenu var1) {
+   public M3 O(JPopupMenu var1) {
       int[] var10000 = W_2.B$arrint();
       JComboBox var3 = (JComboBox)Kp2.G(var1, b(-4787, 13469));
       int[] var2 = var10000;
@@ -872,7 +872,7 @@ public class L extends W_2 implements HQ {
    }
 
    @Override
-   protected void C(Graphics2D var1, JComponent var2) {
+   public void C(Graphics2D var1, JComponent var2) {
       this.t(var1, (JPopupMenu)var2);
    }
 

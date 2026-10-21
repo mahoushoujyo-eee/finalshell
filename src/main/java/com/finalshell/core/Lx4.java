@@ -7,11 +7,11 @@ import java.awt.Graphics2D;
 import javax.swing.Icon;
 
 public class Lx4 implements Icon {
-   final com.finalshell.ui.listener.YM k;
+   public final com.finalshell.ui.listener.YM k;
    public static long[] a;
    public static Integer[] b;
 
-   Lx4(com.finalshell.ui.listener.YM var1) {
+   public Lx4(com.finalshell.ui.listener.YM var1) {
       this.k = var1;
    }
 

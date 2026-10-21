@@ -44,19 +44,19 @@ public final class BB3 implements LengthBuilder {
       return this.a(var1);
    }
 
-   static List B(BB3 var0) {
+   public static List B(BB3 var0) {
       return var0.O;
    }
 
-   static boolean t(BB3 var0) {
+   public static boolean t(BB3 var0) {
       return var0.C;
    }
 
-   static byte A(BB3 var0) {
+   public static byte A(BB3 var0) {
       return var0.v;
    }
 
-   BB3(Fi2 var1, BB3 var2) {
+   public BB3(Fi2 var1, BB3 var2) {
       this(var1);
    }
 }

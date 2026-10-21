@@ -5,9 +5,9 @@ import java.net.DatagramPacket;
 import java.util.ArrayList;
 
 public class W0 extends WC {
-   ArrayList J;
-   byte[] h = null;
-   int U;
+   public ArrayList J;
+   public byte[] h = null;
+   public int U;
    public static long[] a;
    public static Integer[] b;
 

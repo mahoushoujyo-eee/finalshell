@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Ct4 implements PA {
-   byte[] r;
-   byte[] z;
-   int G;
-   String X;
+   public byte[] r;
+   public byte[] z;
+   public int G;
+   public String X;
    public static String[] a;
    public static String[] b;
 

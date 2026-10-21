@@ -6,9 +6,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class HZ extends KeyAdapter {
-   final Oj2 B;
+   public final Oj2 B;
 
-   HZ(Oj2 var1) {
+   public HZ(Oj2 var1) {
       this.B = var1;
    }
 

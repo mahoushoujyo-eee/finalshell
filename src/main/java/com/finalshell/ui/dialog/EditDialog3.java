@@ -30,21 +30,21 @@ import org.fife.ui.rtextarea.RTextScrollPane;
 public class EditDialog3 extends JDialog {
    public static int Y;
    public static int s;
-   int L;
-   boolean H;
-   Copy3 d;
-   T32 t;
-   Lj4_2 x;
+   public int L;
+   public boolean H;
+   public Copy3 d;
+   public T32 t;
+   public Lj4_2 x;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] e;
 
    public EditDialog3(Copy3 var1, boolean var2, Component var3, T32 var4) {
+   super();
       int[] var5;
       label87: {
          int[] var10000 = AppendCarriageReturnCRPanel.Y();
-         super();
          Registry.lookupField(464276435262449023L).setBoolean(this, false);
          var5 = var10000;
          long var16 = 161484386776875275L;

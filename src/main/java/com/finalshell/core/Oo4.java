@@ -6,9 +6,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class Oo4 implements Fb2 {
-   final com.finalshell.ui.dialog.DU C;
+   public final com.finalshell.ui.dialog.DU C;
 
-   Oo4(com.finalshell.ui.dialog.DU var1) {
+   public Oo4(com.finalshell.ui.dialog.DU var1) {
       this.C = var1;
    }
 

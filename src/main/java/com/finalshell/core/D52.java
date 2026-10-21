@@ -7,10 +7,10 @@ import org.bouncycastle.crypto.params.X448PrivateKeyParameters;
 import org.bouncycastle.crypto.params.X448PublicKeyParameters;
 
 public class D52 implements Ow2 {
-   byte[] L;
-   Object e;
-   int h;
-   String W;
+   public byte[] L;
+   public Object e;
+   public int h;
+   public String W;
    public static String[] a;
    public static String[] b;
 

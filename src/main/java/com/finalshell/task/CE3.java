@@ -6,10 +6,10 @@ import com.finalshell.ui.model.Tf4;
 import java.lang.reflect.InvocationTargetException;
 
 public class CE3 implements Runnable {
-   final Tf4 H;
-   final YY3 y;
+   public final Tf4 H;
+   public final YY3 y;
 
-   CE3(YY3 var1, Tf4 var2) {
+   public CE3(YY3 var1, Tf4 var2) {
       this.y = var1;
       this.H = var2;
    }

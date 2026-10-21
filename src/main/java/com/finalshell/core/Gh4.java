@@ -87,7 +87,7 @@ public class Gh4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       double var5 = (double)((float)var1 - this.T);
       double var7 = (double)((float)var2 - this.u);
       String[] var10000 = W5.q();

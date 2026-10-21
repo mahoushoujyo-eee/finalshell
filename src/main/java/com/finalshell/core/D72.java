@@ -4,10 +4,10 @@ import javax.swing.RowSorter.SortKey;
 import javax.swing.table.TableRowSorter;
 
 public class D72 extends TableRowSorter {
-   final Y62_2 P;
+   public final Y62_2 P;
    public static String a;
 
-   D72(Y62_2 var1, com.finalshell.ui.model.GR var2) {
+   public D72(Y62_2 var1, com.finalshell.ui.model.GR var2) {
       super(var2);
       this.P = var1;
    }

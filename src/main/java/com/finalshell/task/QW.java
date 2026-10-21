@@ -6,10 +6,10 @@ import com.finalshell.ui.listener.ML;
 import java.lang.reflect.InvocationTargetException;
 
 public class QW implements Runnable {
-   final String I;
-   final ML l;
+   public final String I;
+   public final ML l;
 
-   QW(ML var1, String var2) {
+   public QW(ML var1, String var2) {
       this.l = var1;
       this.I = var2;
    }

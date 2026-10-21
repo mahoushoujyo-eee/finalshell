@@ -9,17 +9,17 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
 public class IcpmPing {
-   static int a;
-   static int y;
-   static String N;
-   static int p;
-   static SynchronousQueue j;
-   static ExecutorService m;
-   int U = a(13455, 7707183670918119012L);
-   int n = 0;
-   Yu2 C = new Yu2();
-   int G;
-   int k;
+   public static int a;
+   public static int y;
+   public static String N;
+   public static int p;
+   public static SynchronousQueue j;
+   public static ExecutorService m;
+   public int U = a(13455, 7707183670918119012L);
+   public int n = 0;
+   public Yu2 C = new Yu2();
+   public int G;
+   public int k;
    public static Ky4[] J;
    public static String[] b;
    public static String[] c;
@@ -33,7 +33,7 @@ public class IcpmPing {
       System.exit(0);
    }
 
-   void P() throws Exception {
+   public void P() throws Exception {
       Ky4[] var10000 = W();
       InetAddress var2 = InetAddress.getByName(N);
       int var3 = 0;
@@ -62,7 +62,7 @@ public class IcpmPing {
       }
    }
 
-   static short l() {
+   public static short l() {
       int var1 = a(14239, 2910624779212389747L);
       int var2 = a(26581, 3478907113862049083L);
       Ky4[] var10000 = W();
@@ -80,7 +80,7 @@ public class IcpmPing {
       return var4;
    }
 
-   void g() throws Exception {
+   public void g() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

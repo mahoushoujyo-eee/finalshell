@@ -27,9 +27,9 @@ public class Kb4 extends Ky4 {
    }
 
    public Kb4(Component var1) {
+   super();
       label13: {
          int[] var10000 = K32.L$arrint();
-         super();
          this.g = 0;
          this.b = 0;
          this.e = -1;
@@ -74,7 +74,7 @@ public class Kb4 extends Ky4 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       GA.z(
          (Graphics2D)var1,
@@ -104,59 +104,59 @@ public class Kb4 extends Ky4 {
       this.revalidate();
    }
 
-   static int y(Kb4 var0, int var1) {
+   public static int y(Kb4 var0, int var1) {
       return var0.e = var1;
    }
 
-   static int z(Kb4 var0) {
+   public static int z(Kb4 var0) {
       return var0.e;
    }
 
-   static boolean Y(Kb4 var0, boolean var1) {
+   public static boolean Y(Kb4 var0, boolean var1) {
       return var0.v = var1;
    }
 
-   static int n(Kb4 var0, int var1) {
+   public static int n(Kb4 var0, int var1) {
       return var0.C = var1;
    }
 
-   static int i(Kb4 var0, int var1) {
+   public static int i(Kb4 var0, int var1) {
       return var0.m = var1;
    }
 
-   static boolean r(Kb4 var0) {
+   public static boolean r(Kb4 var0) {
       return var0.v;
    }
 
-   static int A(Kb4 var0) {
+   public static int A(Kb4 var0) {
       return var0.C;
    }
 
-   static int Q(Kb4 var0) {
+   public static int Q(Kb4 var0) {
       return var0.m;
    }
 
-   static int H(Kb4 var0, int var1) {
+   public static int H(Kb4 var0, int var1) {
       return var0.g += var1;
    }
 
-   static int t(Kb4 var0, int var1) {
+   public static int t(Kb4 var0, int var1) {
       return var0.g = var1;
    }
 
-   static int J(Kb4 var0) {
+   public static int J(Kb4 var0) {
       return var0.g;
    }
 
-   static int A(Kb4 var0, int var1) {
+   public static int A(Kb4 var0, int var1) {
       return var0.b += var1;
    }
 
-   static int T(Kb4 var0, int var1) {
+   public static int T(Kb4 var0, int var1) {
       return var0.b = var1;
    }
 
-   static int v(Kb4 var0) {
+   public static int v(Kb4 var0) {
       return var0.b;
    }
 

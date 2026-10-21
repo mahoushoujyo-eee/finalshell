@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Hw2_2 implements M_2_2 {
-   final FF_2 b;
+   public final FF_2 b;
 
-   Hw2_2(FF_2 var1) {
+   public Hw2_2(FF_2 var1) {
       this.b = var1;
    }
 

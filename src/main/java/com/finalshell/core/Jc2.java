@@ -6,22 +6,22 @@ import com.finalshell.ui.panel.Bq2;
 import java.awt.Window;
 
 public class Jc2 {
-   com.finalshell.ui.panel.AM f;
-   com.finalshell.ui.panel.AM o;
-   Bq2 I;
-   Bq2 F;
-   Window h;
-   Window s;
-   boolean m;
-   boolean n;
-   int Y;
-   static int g;
-   static int S;
-   static int w;
-   static int p;
-   static int e;
+   public com.finalshell.ui.panel.AM f;
+   public com.finalshell.ui.panel.AM o;
+   public Bq2 I;
+   public Bq2 F;
+   public Window h;
+   public Window s;
+   public boolean m;
+   public boolean n;
+   public int Y;
+   public static int g;
+   public static int S;
+   public static int w;
+   public static int p;
+   public static int e;
 
-   Jc2() {
+   public Jc2() {
       Registry.lookupField(148152484588410919L).setInt(this, Registry.lookupField(299739253213373636L).getInt(null));
    }
 

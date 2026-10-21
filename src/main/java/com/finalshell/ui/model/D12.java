@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
 public class D12 extends AbstractTableModel {
-   ArrayList X;
+   public ArrayList X;
    public static String r;
    public static String N;
    public static String I;
-   String[] n;
+   public String[] n;
 
-   D12() {
+   public D12() {
       ArrayList var10001 = new ArrayList();
       long var2 = 581913258836698333L;
       ArrayList var1 = var10001;

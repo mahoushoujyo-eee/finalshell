@@ -5,8 +5,8 @@ import javax.swing.JComponent;
 import javax.swing.JPopupMenu;
 
 public class Y12_2 {
-   long f;
-   boolean b;
+   public long f;
+   public boolean b;
 
    public Y12_2(JComponent var1, JPopupMenu var2) {
       Registry.lookupField(436558571101672386L).setBoolean(this, false);

@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Od4 implements ActionListener {
-   final com.finalshell.ui.frame.U h;
+   public final com.finalshell.ui.frame.U h;
 
-   Od4(com.finalshell.ui.frame.U var1) {
+   public Od4(com.finalshell.ui.frame.U var1) {
       this.h = var1;
    }
 

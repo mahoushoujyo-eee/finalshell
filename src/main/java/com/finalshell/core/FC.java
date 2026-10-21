@@ -8,36 +8,36 @@ public class FC {
    public static String[] a;
    public static String[] b;
 
-   FC(Y2_3[] var1, Y2_3[] var2) {
+   public FC(Y2_3[] var1, Y2_3[] var2) {
       this.u = (Y2_3[])var1.clone();
       this.t = (Y2_3[])var2.clone();
    }
 
-   FC g(Y2_3 var1) {
+   public FC g(Y2_3 var1) {
       return new FC(k(this.u, var1), this.t);
    }
 
-   FC t() {
+   public FC t() {
       return new FC(O(this.u), this.t);
    }
 
-   Y2_3 f() {
+   public Y2_3 f() {
       return this.u[this.u.length - 1];
    }
 
-   Y2_3[] u() {
+   public Y2_3[] u() {
       return (Y2_3[])this.u.clone();
    }
 
-   FC x(Y2_3 var1) {
+   public FC x(Y2_3 var1) {
       return new FC(this.u, k(this.t, var1));
    }
 
-   FC C() {
+   public FC C() {
       return new FC(this.u, O(this.t));
    }
 
-   Y2_3 n() {
+   public Y2_3 n() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -77,7 +77,7 @@ public class FC {
       // 38: areturn
    }
 
-   Y2_3[] N() {
+   public Y2_3[] N() {
       return (Y2_3[])this.t.clone();
    }
 

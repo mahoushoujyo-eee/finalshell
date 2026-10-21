@@ -333,7 +333,7 @@ public class Hg2 implements Ak2, X4 {
       // 264: return
    }
 
-   protected char W(YM3 var1, java.lang.Class var2, char var3) {
+   public char W(YM3 var1, java.lang.Class var2, char var3) {
       String var4 = Nv4.o();
 
       try {
@@ -518,7 +518,7 @@ public class Hg2 implements Ak2, X4 {
       // 15f: areturn
    }
 
-   protected Font T(Yn4 param1) {
+   public Font T(Yn4 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -748,7 +748,7 @@ public class Hg2 implements Ak2, X4 {
       // 20a: areturn
    }
 
-   protected Color K(Yn4 param1) {
+   public Color K(Yn4 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -951,7 +951,7 @@ public class Hg2 implements Ak2, X4 {
       // 1bb: areturn
    }
 
-   protected Rectangle W(Yn4 param1) {
+   public Rectangle W(Yn4 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1177,7 +1177,7 @@ public class Hg2 implements Ak2, X4 {
       // 1f1: areturn
    }
 
-   protected Point i(Yn4 param1, Object param2) {
+   public Point i(Yn4 param1, Object param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

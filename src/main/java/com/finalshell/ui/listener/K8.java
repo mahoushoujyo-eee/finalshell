@@ -6,10 +6,10 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class K8 extends WindowAdapter {
-   final Frame L;
-   final Frame N;
+   public final Frame L;
+   public final Frame N;
 
-   K8(Frame var1, Frame var2) {
+   public K8(Frame var1, Frame var2) {
       this.L = var1;
       this.N = var2;
    }

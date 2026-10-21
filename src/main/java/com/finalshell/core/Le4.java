@@ -11,8 +11,8 @@ import java.security.spec.DSAPrivateKeySpec;
 import java.security.spec.DSAPublicKeySpec;
 
 public class Le4 implements C_H {
-   Signature H;
-   KeyFactory F;
+   public Signature H;
+   public KeyFactory F;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -366,7 +366,7 @@ public class Le4 implements C_H {
       }
    }
 
-   protected byte[] W(byte[] var1) {
+   public byte[] W(byte[] var1) {
       boolean var2 = Y12.D();
       byte[] var10000 = var1;
       if (!var2) {

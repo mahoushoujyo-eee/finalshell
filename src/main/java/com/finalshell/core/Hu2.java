@@ -8,8 +8,8 @@ public abstract class Hu2 implements P3_2 {
    public F3_4 u;
    @C_9
    public Hd2[] S;
-   static boolean L;
-   final Hd2 W;
+   public static boolean L;
+   public final Hd2 W;
    public static String[] g;
    public static String[] j;
 

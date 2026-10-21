@@ -7,19 +7,19 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 public class Tb4 {
-   InputStream y;
-   OutputStream t;
-   InputStream n;
-   OutputStream T;
-   String s;
-   int L;
-   String z;
-   int M;
-   boolean U;
-   Lv4_2 B;
-   int X;
+   public InputStream y;
+   public OutputStream t;
+   public InputStream n;
+   public OutputStream T;
+   public String s;
+   public int L;
+   public String z;
+   public int M;
+   public boolean U;
+   public Lv4_2 B;
+   public int X;
 
-   Tb4(String var1, int var2, String var3, int var4, Lv4_2 var5, int var6) {
+   public Tb4(String var1, int var2, String var3, int var4, Lv4_2 var5, int var6) {
       long var8 = 387347256520815117L;
       Object var7 = null;
       Ref.s(387347256520815117L, var7, var8);
@@ -44,7 +44,7 @@ public class Tb4 {
       Ref.s(545945209183732401L, var5, var20);
    }
 
-   void l(Socket param1) {
+   public void l(Socket param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -686,7 +686,7 @@ public class Tb4 {
       // 5cc: return
    }
 
-   void c() {
+   public void c() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

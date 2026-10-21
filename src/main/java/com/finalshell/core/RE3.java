@@ -60,7 +60,7 @@ public class RE3 {
       // 3c: areturn
    }
 
-   RE3 W(int var1, int var2) {
+   public RE3 W(int var1, int var2) {
       int var3 = this.V;
 
       try {

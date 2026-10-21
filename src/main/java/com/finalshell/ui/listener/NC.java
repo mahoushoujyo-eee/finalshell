@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class NC implements ActionListener {
-   final AppendCarriageReturnCRPanel K;
+   public final AppendCarriageReturnCRPanel K;
 
-   NC(AppendCarriageReturnCRPanel var1) {
+   public NC(AppendCarriageReturnCRPanel var1) {
       this.K = var1;
    }
 

@@ -17,26 +17,26 @@ import java.util.Map.Entry;
 import javax.swing.JComponent;
 
 public class Cl4_2 {
-   protected static Map X;
-   protected static String D;
-   protected static String f;
-   protected static String S;
-   protected static String H;
-   protected static String Q;
-   protected static Map B;
-   protected static Map u;
-   protected static Map e;
-   protected static Map m;
-   protected static boolean U;
-   protected static boolean R;
-   protected static Object V;
-   protected static long a;
-   protected static WC_2 c;
-   protected static List J;
-   protected static boolean A;
-   protected static boolean L;
-   protected static boolean C;
-   protected static boolean h;
+   public static Map X;
+   public static String D;
+   public static String f;
+   public static String S;
+   public static String H;
+   public static String Q;
+   public static Map B;
+   public static Map u;
+   public static Map e;
+   public static Map m;
+   public static boolean U;
+   public static boolean R;
+   public static Object V;
+   public static long a;
+   public static WC_2 c;
+   public static List J;
+   public static boolean A;
+   public static boolean L;
+   public static boolean C;
+   public static boolean h;
    public static String d;
    public static String[] b;
    public static String[] g;
@@ -578,7 +578,7 @@ public class Cl4_2 {
       // 33: areturn
    }
 
-   protected static UX i(String param0) {
+   public static UX i(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1081,15 +1081,15 @@ public class Cl4_2 {
       // 138: return
    }
 
-   protected static File w(String var0, File var1) {
+   public static File w(String var0, File var1) {
       return new File(var1, var0 + D);
    }
 
-   protected static File U(String var0, File var1) {
+   public static File U(String var0, File var1) {
       return new File(var1, var0 + D + f);
    }
 
-   protected static void x(String param0) {
+   public static void x(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1293,7 +1293,7 @@ public class Cl4_2 {
       }
    }
 
-   protected static void P(String var0, Object var1) {
+   public static void P(String var0, Object var1) {
       try {
          if (C) {
             PM.b(var1, T$File(var0));
@@ -1307,7 +1307,7 @@ public class Cl4_2 {
       return T$File(var0).exists();
    }
 
-   protected static File T$File(String var0) {
+   public static File T$File(String var0) {
       return new File(Z(), var0);
    }
 
@@ -1600,7 +1600,7 @@ public class Cl4_2 {
       // 65: return
    }
 
-   protected static void L(String param0, String param1, Object param2) {
+   public static void L(String param0, String param1, Object param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

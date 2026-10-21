@@ -5,9 +5,6 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class BG implements Runnable {
-   BG() {
-   }
-
    @Override
    public void run() {
       Registry.emptyArgs();

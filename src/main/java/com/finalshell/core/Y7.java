@@ -9,12 +9,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 public class Y7 {
-   String L;
-   String o;
-   int x;
-   int C;
-   String J;
-   HashMap f;
+   public String L;
+   public String o;
+   public int x;
+   public int C;
+   public String J;
+   public HashMap f;
    public static String[] a;
    public static String[] b;
 

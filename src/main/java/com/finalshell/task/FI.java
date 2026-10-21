@@ -5,11 +5,11 @@ import com.finalshell.core.B22;
 import com.finalshell.core.Cm4;
 
 public class FI implements Runnable {
-   final Cm4 f;
+   public final Cm4 f;
    public final com.finalshell.core.PacketLoss j;
    public final A6 h;
 
-   FI(Cm4 var1, com.finalshell.core.PacketLoss var2, A6 var3) {
+   public FI(Cm4 var1, com.finalshell.core.PacketLoss var2, A6 var3) {
       this.f = var1;
       this.j = var2;
       this.h = var3;

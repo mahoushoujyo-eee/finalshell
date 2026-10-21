@@ -9,10 +9,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class XL implements Runnable {
-   final DefaultMutableTreeNode q;
-   final TM T;
+   public final DefaultMutableTreeNode q;
+   public final TM T;
 
-   XL(TM var1, DefaultMutableTreeNode var2) {
+   public XL(TM var1, DefaultMutableTreeNode var2) {
       this.T = var1;
       this.q = var2;
    }

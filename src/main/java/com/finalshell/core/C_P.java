@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.FileFilter;
 
 public class C_P implements FileFilter {
-   final QR G;
+   public final QR G;
    public static String[] a;
    public static String[] b;
 
-   C_P(QR var1) {
+   public C_P(QR var1) {
       this.G = var1;
    }
 

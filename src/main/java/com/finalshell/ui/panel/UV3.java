@@ -16,9 +16,9 @@ import net.miginfocom.swing.MigLayout;
 
 public class UV3 extends JComponent {
    public Connection5 W;
-   ShowDeletedPanel I;
-   boolean t;
-   JScrollPane F;
+   public ShowDeletedPanel I;
+   public boolean t;
+   public JScrollPane F;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -222,7 +222,7 @@ public class UV3 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
    }
 

@@ -26,17 +26,17 @@ public class Tv4 extends InputStream {
    public int f;
    public boolean Q;
    public int Y;
-   final X3_3 K;
+   public final X3_3 K;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Tv4(X3_3 var1) {
+   public Tv4(X3_3 var1) {
+   super();
       Ky4[] var10000 = XA.P();
       this.K = var1;
       Ky4[] var2 = var10000;
-      super();
       this.p = new int[]{0};
       this.P = new byte[a(8353, 365282560026429949L)];
       this.X = -1;

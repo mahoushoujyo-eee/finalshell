@@ -706,7 +706,7 @@ public class Ru2 extends ReflectionConverter {
       // 43a: areturn
    }
 
-   protected void H(HierarchicalStreamReader param1, UnmarshallingContext param2, String param3, Map param4, java.lang.Class param5, String param6) {
+   public void H(HierarchicalStreamReader param1, UnmarshallingContext param2, String param3, Map param4, java.lang.Class param5, String param6) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -18,17 +18,17 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class Lc2 extends DefaultTableCellRenderer {
-   Border e;
-   SimpleDateFormat t;
-   CU3 n;
-   Color Q;
-   Color Y;
-   Color C;
+   public Border e;
+   public SimpleDateFormat t;
+   public CU3 n;
+   public Color Q;
+   public Color Y;
+   public Color C;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   Lc2() {
+   public Lc2() {
       Border var10001 = BorderFactory.createEmptyBorder(0, 2, 0, 2);
       long var2 = 200208962451721363L;
       Border var1 = var10001;

@@ -11,9 +11,9 @@ public class VO {
    public static int Y;
    public static int T;
    public static int h;
-   int u;
-   YI o;
-   boolean a;
+   public int u;
+   public YI o;
+   public boolean a;
 
    public VO(YI var1, int var2) {
       long var4 = 617652087972751592L;

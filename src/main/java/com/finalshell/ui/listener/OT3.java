@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class OT3 implements ActionListener {
-   final SetBackgroundImagePanel U;
-   final com.finalshell.ui.panel.Y3 a;
+   public final SetBackgroundImagePanel U;
+   public final com.finalshell.ui.panel.Y3 a;
 
-   OT3(com.finalshell.ui.panel.Y3 var1, SetBackgroundImagePanel var2) {
+   public OT3(com.finalshell.ui.panel.Y3 var1, SetBackgroundImagePanel var2) {
       this.a = var1;
       this.U = var2;
    }

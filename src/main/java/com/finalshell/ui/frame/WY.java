@@ -9,9 +9,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTree;
 
 public class WY extends JFrame {
-   Ts2 K;
-   Aq2 O;
-   JTree W;
+   public Ts2 K;
+   public Aq2 O;
+   public JTree W;
    public static String[] a;
    public static String[] b;
    public static long[] c;

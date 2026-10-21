@@ -15,16 +15,16 @@ import javax.swing.JScrollBar;
 import javax.swing.plaf.ButtonUI;
 
 public class G2 extends Lz2_2 implements AC {
-   protected Color x = V_3.C;
-   protected Color S;
-   protected Color l;
-   protected Color e;
-   protected Color z;
-   protected Color Q;
-   protected Color B;
-   protected Color T;
-   protected Ex4 J;
-   protected JScrollBar O;
+   public Color x = V_3.C;
+   public Color S;
+   public Color l;
+   public Color e;
+   public Color z;
+   public Color Q;
+   public Color B;
+   public Color T;
+   public Ex4 J;
+   public JScrollBar O;
    public static String a;
 
    public G2() {
@@ -304,15 +304,15 @@ public class G2 extends Lz2_2 implements AC {
       var1.draw(var10);
    }
 
-   protected Shape v(Rectangle var1, AbstractButton var2) {
+   public Shape v(Rectangle var1, AbstractButton var2) {
       return O42.k(var2, a, new R(this, var1, var2), this.W(var2));
    }
 
-   protected Object[] W(AbstractButton var1) {
+   public Object[] W(AbstractButton var1) {
       return new Object[]{var1.getSize(), var1.getInsets(), this.J, var1.getComponentOrientation().isLeftToRight(), this.O.getOrientation()};
    }
 
-   protected Shape d(Rectangle var1, AbstractButton var2) {
+   public Shape d(Rectangle var1, AbstractButton var2) {
       int[] var10000 = W_2.B$arrint();
       int var4 = this.O.getOrientation();
       Insets var5 = var2.getInsets();

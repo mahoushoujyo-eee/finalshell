@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.ConnectionProperty;
 import com.finalshell.ui.panel.SetBackgroundImagePanel;
 
 public class Yu2 implements Runnable {
-   final SetBackgroundImagePanel P;
+   public final SetBackgroundImagePanel P;
 
-   Yu2(SetBackgroundImagePanel var1) {
+   public Yu2(SetBackgroundImagePanel var1) {
       this.P = var1;
    }
 

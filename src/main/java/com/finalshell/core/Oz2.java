@@ -11,9 +11,9 @@ import java.util.Iterator;
 import javax.swing.SwingUtilities;
 
 public class Oz2 implements KeyEventDispatcher {
-   final PG_2 G;
+   public final PG_2 G;
 
-   Oz2(PG_2 var1) {
+   public Oz2(PG_2 var1) {
       this.G = var1;
    }
 

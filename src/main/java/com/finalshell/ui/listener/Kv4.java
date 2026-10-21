@@ -5,9 +5,9 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class Kv4 extends WindowAdapter {
-   final E_ k;
+   public final E_ k;
 
-   Kv4(E_ var1) {
+   public Kv4(E_ var1) {
       this.k = var1;
    }
 

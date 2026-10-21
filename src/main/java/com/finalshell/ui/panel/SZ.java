@@ -29,8 +29,8 @@ public class SZ extends JScrollPane implements W2_3, Sa2, CX3_2 {
    }
 
    public SZ(Component var1, boolean var2, boolean var3) {
+   super(var1);
       String var10000 = L();
-      super(var1);
       String var4 = var10000;
       this.u(var2);
       this.A$R8().L(var3);

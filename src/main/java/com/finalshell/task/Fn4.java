@@ -7,13 +7,13 @@ import javax.swing.SwingUtilities;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 public class Fn4 implements Runnable {
-   final Component S;
-   final RSyntaxTextArea U;
-   final EditDialog3 p;
+   public final Component S;
+   public final RSyntaxTextArea U;
+   public final EditDialog3 p;
    public static long[] a;
    public static Integer[] b;
 
-   Fn4(EditDialog3 var1, Component var2, RSyntaxTextArea var3) {
+   public Fn4(EditDialog3 var1, Component var2, RSyntaxTextArea var3) {
       this.p = var1;
       this.S = var2;
       this.U = var3;

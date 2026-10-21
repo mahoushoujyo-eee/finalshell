@@ -11,7 +11,7 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class Gk2 extends AbstractTableModel {
-   ArrayList y;
+   public ArrayList y;
    public static String t;
    public static String i;
    public static String s;
@@ -25,14 +25,14 @@ public class Gk2 extends AbstractTableModel {
    public static String K;
    public static String O;
    public static String W;
-   String[] l;
-   boolean g;
+   public String[] l;
+   public boolean g;
    public static long[] b;
    public static Integer[] c;
 
    public Gk2(boolean var1) {
+   super();
       boolean var10000 = Uo2.i();
-      super();
       boolean var2 = var10000;
       ArrayList var10001 = new ArrayList();
       long var4 = 495825152703202012L;
@@ -131,7 +131,7 @@ public class Gk2 extends AbstractTableModel {
       while (var4.hasNext()) {
          LI3_2 var5 = (LI3_2)var4.next();
          var3++;
-         if (var2 != false && var5 == null) {
+         if (var2 == null && var5 == null) {
             return var3;
          }
 
@@ -146,7 +146,7 @@ public class Gk2 extends AbstractTableModel {
             throw var10.getTargetException();
          }
 
-         if (var12 == var1 && var2 != false || var2 == false) {
+         if (var12 == var1 && var2 == null || var2 == false) {
             break;
          }
       }

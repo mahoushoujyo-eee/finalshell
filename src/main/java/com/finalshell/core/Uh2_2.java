@@ -28,7 +28,7 @@ public class Uh2_2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   protected void g(StringBuilder var1) {
+   public void g(StringBuilder var1) {
       String var2 = Nv4.o();
       Object var10000 = this.M;
       if (var2 != null) {

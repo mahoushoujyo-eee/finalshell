@@ -109,12 +109,12 @@ public class Zm2 extends Z7 {
       Object var1 = var10010;
       var2.addActionListener(new YU(this, var2));
       var3.addActionListener(new T5(this, var3));
-      if (var1 != false) {
+      if (var1 == null) {
          Ky4.K(new String[5]);
       }
    }
 
-   JComboBox N() {
+   public JComboBox N() {
       JComboBox var1 = new JComboBox();
       Object[] var10001 = Registry.packArgs(Registry.lookupField(518223218338208363L).getInt(null));
       long var2 = 466872375824762096L;

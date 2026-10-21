@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 
 public class KG {
    public File s;
-   long x;
+   public long x;
    public static String a;
    public static long[] b;
    public static Integer[] c;

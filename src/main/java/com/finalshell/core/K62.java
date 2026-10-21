@@ -10,9 +10,6 @@ public class K62 {
    public static long c;
    public static long d;
 
-   K62() {
-   }
-
    public void E(@NotNull Nd2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
@@ -178,7 +175,7 @@ public class K62 {
       return new Long[var0];
    }
 
-   static int m(K62 var0) {
+   public static int m(K62 var0) {
       return var0.p();
    }
 

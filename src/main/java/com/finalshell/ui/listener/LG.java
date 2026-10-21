@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextField;
 
 public class LG implements KeyListener {
-   final PathPanel s;
+   public final PathPanel s;
    public static long a;
 
-   LG(PathPanel var1) {
+   public LG(PathPanel var1) {
       this.s = var1;
    }
 

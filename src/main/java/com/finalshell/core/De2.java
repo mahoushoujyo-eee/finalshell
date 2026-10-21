@@ -1,14 +1,14 @@
 package com.finalshell.core;
 
 public class De2 {
-   int p;
-   int W;
+   public int p;
+   public int W;
    public int s;
    public int[] O;
    public static long[] a;
    public static Integer[] b;
 
-   void B(F_2 var1, RE3 var2, int var3, boolean var4) {
+   public void B(F_2 var1, RE3 var2, int var3, boolean var4) {
       int[] var5 = XB.X();
       int var10000 = this.p & 2;
       if (var5 == null) {
@@ -66,7 +66,7 @@ public class De2 {
       var10000.O[this.s++] = var2 | var3;
    }
 
-   void y(F_2 var1, int var2, byte[] var3) {
+   public void y(F_2 var1, int var2, byte[] var3) {
       this.p |= 2;
       int[] var10000 = XB.X();
       this.W = var2;

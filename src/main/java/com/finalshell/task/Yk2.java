@@ -10,10 +10,10 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class Yk2 implements Runnable {
-   final KR Z;
+   public final KR Z;
    public static long a;
 
-   Yk2(KR var1) {
+   public Yk2(KR var1) {
       this.Z = var1;
    }
 
@@ -38,7 +38,7 @@ public class Yk2 implements Runnable {
       Object var18 = 477342503026871908L;
       Object var10010 = Ref.g(477342503026871908L, var18);
       Object var20 = 228183978052282907L;
-new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPassword());
+var10010 = new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPassword());
       Object var2 = var10009;
       if (var1 != null) {
          Object var22 = 427592903543022635L;
@@ -111,7 +111,7 @@ new T9(((JPasswordField)Ref.g(228183978052282907L, var20)).getPassword());
          Object var60 = 477342503026871908L;
          Object var10028 = Ref.g(477342503026871908L, var60);
          Object var62 = 228183978052282907L;
-new T9(((JPasswordField)Ref.g(228183978052282907L, var62)).getPassword());
+var10028 = new T9(((JPasswordField)Ref.g(228183978052282907L, var62)).getPassword());
          var10027 = Registry.packArgs(var10027);
          long var65 = 583865646792521502L;
          Object[] var64 = (Object[])var10027;

@@ -2,9 +2,9 @@ package com.finalshell.core;
 
 public class DW3 extends Exception {
    public static long serialVersionUID;
-   String y;
+   public String y;
 
-   DW3(String var1) {
+   public DW3(String var1) {
       this.y = var1;
    }
 

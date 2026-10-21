@@ -90,18 +90,18 @@ public class CK extends UV implements UE3{
    public QE UG;
    public Bc4 a;
    public V6 f;
-   boolean Ue;
-   int Uu;
-   Y42 Ud;
+   public boolean Ue;
+   public int Uu;
+   public Y42 Ud;
    public static int U4;
    public static boolean Ur;
    public static boolean X;
-   boolean U6;
-   boolean c;
-   boolean U3;
+   public boolean U6;
+   public boolean c;
+   public boolean U3;
    public static byte[] UF;
-   boolean Up;
-   boolean r;
+   public boolean Up;
+   public boolean r;
    public String UM;
    public SimpleDateFormat UK;
    public String V;
@@ -116,7 +116,7 @@ public class CK extends UV implements UE3{
    public static long[] eb;
    public static Long[] fb;
 
-   static void s() {
+   public static void s() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -475,7 +475,7 @@ public class CK extends UV implements UE3{
       // 344: return
    }
 
-   static ArrayList a(Component param0) {
+   public static ArrayList a(Component param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -996,11 +996,11 @@ public class CK extends UV implements UE3{
       return this.Ue;
    }
 
-   protected void o(boolean var1) {
+   public void o(boolean var1) {
       this.U1 = var1;
    }
 
-   protected boolean Y() {
+   public boolean Y() {
       return this.U1;
    }
 
@@ -1066,35 +1066,35 @@ public class CK extends UV implements UE3{
       return this.n;
    }
 
-   protected void K(byte var1) {
+   public void K(byte var1) {
       this.U = var1;
    }
 
-   protected byte X$byte() {
+   public byte X$byte() {
       return this.U;
    }
 
-   protected void b(byte var1) {
+   public void b(byte var1) {
       this.Q = var1;
    }
 
-   protected byte n() {
+   public byte n() {
       return this.Q;
    }
 
-   protected void V(byte var1) {
+   public void V(byte var1) {
       this.UZ = var1;
    }
 
-   protected byte q$byte() {
+   public byte q$byte() {
       return this.UZ;
    }
 
-   protected void H(boolean var1) {
+   public void H(boolean var1) {
       this.U8 = var1;
    }
 
-   protected boolean F$boolean() {
+   public boolean F$boolean() {
       return this.U8;
    }
 
@@ -1147,11 +1147,11 @@ public class CK extends UV implements UE3{
       this.a(var1, var2);
    }
 
-   protected void w(File[] var1) throws IOException {
+   public void w(File[] var1) throws IOException {
       this.a(var1, b(24218, 7781705028033205433L));
    }
 
-   protected void a(File[] param1, long param2) throws IOException {
+   public void a(File[] param1, long param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1565,7 +1565,7 @@ public class CK extends UV implements UE3{
       this.I.removeElement(var1);
    }
 
-   protected void F(String var1, long var2) {
+   public void F(String var1, long var2) {
       boolean var10000 = Z$boolean();
       this.Uu = Math.abs(new Random().nextInt());
       boolean var4 = var10000;
@@ -1581,7 +1581,7 @@ public class CK extends UV implements UE3{
       }
    }
 
-   protected void q(long var1, int var3) {
+   public void q(long var1, int var3) {
       boolean var10000 = r$boolean();
       int var5 = 0;
       boolean var4 = var10000;
@@ -1596,7 +1596,7 @@ public class CK extends UV implements UE3{
       }
    }
 
-   protected void l$void() {
+   public void l$void() {
       boolean var10000 = r$boolean();
       this.c = true;
       int var2 = 0;
@@ -1672,7 +1672,7 @@ public class CK extends UV implements UE3{
       // 64: return
    }
 
-   protected String G(int param1) {
+   public String G(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1710,7 +1710,7 @@ public class CK extends UV implements UE3{
    public synchronized void P(int var1) {
    }
 
-   protected void a$void() {
+   public void a$void() {
       String var2 = a(29311, 28817) + this.l;
       String var3 = a(29237, 20556);
       boolean var10000 = r$boolean();
@@ -1747,7 +1747,7 @@ public class CK extends UV implements UE3{
       }
    }
 
-   protected void f() throws IOException {
+   public void f() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1827,7 +1827,7 @@ public class CK extends UV implements UE3{
       // c7: goto 09
    }
 
-   protected void Z$void() throws IOException {
+   public void Z$void() throws IOException {
       this.d(a(29235, -30579));
 
       while (true) {
@@ -1846,7 +1846,7 @@ public class CK extends UV implements UE3{
       }
    }
 
-   protected void k$void() throws IOException {
+   public void k$void() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2181,7 +2181,7 @@ public class CK extends UV implements UE3{
       // 2e3: return
    }
 
-   protected void M(byte[] var1, int var2) {
+   public void M(byte[] var1, int var2) {
       boolean var10000 = r$boolean();
       int var4 = 0;
       boolean var3 = var10000;
@@ -2202,7 +2202,7 @@ public class CK extends UV implements UE3{
       }
    }
 
-   protected void F$void() throws IOException {
+   public void F$void() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2339,7 +2339,7 @@ public class CK extends UV implements UE3{
       // 115: athrow
    }
 
-   protected void W(int param1) throws IOException {
+   public void W(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2368,7 +2368,7 @@ public class CK extends UV implements UE3{
       // 23: return
    }
 
-   protected void g(int param1) throws IOException {
+   public void g(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2528,7 +2528,7 @@ public class CK extends UV implements UE3{
       // 17e: return
    }
 
-   protected void H(byte[] param1, int param2, int param3) throws IOException {
+   public void H(byte[] param1, int param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2855,12 +2855,12 @@ public class CK extends UV implements UE3{
       // 30f: athrow
    }
 
-   protected void m(int var1) throws IOException {
+   public void m(int var1) throws IOException {
       this.W(t[(var1 & a(11714, 3636356043306929879L)) >> 4]);
       this.W(t[var1 & a(1032, 8723585488884180754L)]);
    }
 
-   protected void u(int param1, byte[] param2, int param3) throws IOException {
+   public void u(int param1, byte[] param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3087,7 +3087,7 @@ public class CK extends UV implements UE3{
       // 208: return
    }
 
-   protected void X(int param1, byte[] param2, int param3, int param4) throws IOException {
+   public void X(int param1, byte[] param2, int param3, int param4) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3176,7 +3176,7 @@ public class CK extends UV implements UE3{
       // 9f: return
    }
 
-   protected void b(int param1, byte[] param2, int param3) throws IOException {
+   public void b(int param1, byte[] param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3358,7 +3358,7 @@ public class CK extends UV implements UE3{
       // 18c: return
    }
 
-   protected void V(byte[] param1, int param2, int param3) throws IOException {
+   public void V(byte[] param1, int param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3551,7 +3551,7 @@ public class CK extends UV implements UE3{
       // 1a7: return
    }
 
-   protected void J(byte[] var1, int var2, int var3) throws IOException {
+   public void J(byte[] var1, int var2, int var3) throws IOException {
       boolean var10000 = Z$boolean();
       int var5 = -1;
       boolean var4 = var10000;
@@ -3596,7 +3596,7 @@ public class CK extends UV implements UE3{
       }
    }
 
-   protected void E(byte[] param1, int param2, int param3) throws IOException {
+   public void E(byte[] param1, int param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3898,7 +3898,7 @@ public class CK extends UV implements UE3{
       // 2b0: return
    }
 
-   protected int X(File param1) throws IOException {
+   public int X(File param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4597,7 +4597,7 @@ public class CK extends UV implements UE3{
       // 650: athrow
    }
 
-   protected int F$int() throws IOException {
+   public int F$int() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5177,7 +5177,7 @@ public class CK extends UV implements UE3{
       // 55e: ireturn
    }
 
-   protected int c(int param1) throws IOException {
+   public int c(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5444,7 +5444,7 @@ public class CK extends UV implements UE3{
       // 282: goto 004
    }
 
-   protected int D$int() throws IOException {
+   public int D$int() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5513,7 +5513,7 @@ public class CK extends UV implements UE3{
       // 81: ireturn
    }
 
-   protected void M(int var1) {
+   public void M(int var1) {
       this.U5[0] = (byte)(var1 & a(1966, 8195886785838785578L));
       this.U5[1] = (byte)(var1 >>> a(31152, 4352002580915673645L) & a(1966, 8195886785838785578L));
       this.U5[2] = (byte)(var1 >>> a(29726, 5499157266564700119L) & a(1966, 8195886785838785578L));
@@ -5521,7 +5521,7 @@ public class CK extends UV implements UE3{
       this.d(a(29346, -15722) + this.U5[0] + a(29265, 15440) + this.U5[1] + a(29265, 15440) + this.U5[2] + a(29265, 15440) + this.U5[3] + a(29199, 6141) + var1);
    }
 
-   protected int M(File param1) throws IOException {
+   public int M(File param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5633,7 +5633,7 @@ public class CK extends UV implements UE3{
       // c4: ireturn
    }
 
-   protected int o(File param1) throws IOException {
+   public int o(File param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5692,7 +5692,7 @@ public class CK extends UV implements UE3{
       return this.U3;
    }
 
-   protected int u(File param1) throws IOException {
+   public int u(File param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6195,7 +6195,7 @@ public class CK extends UV implements UE3{
       // 4c3: goto 040
    }
 
-   protected int J(byte[] param1, File param2) throws IOException {
+   public int J(byte[] param1, File param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6892,7 +6892,7 @@ public class CK extends UV implements UE3{
       // 5f7: ireturn
    }
 
-   protected long g(File param1, String param2, boolean param3) throws IOException {
+   public long g(File param1, String param2, boolean param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6981,7 +6981,7 @@ public class CK extends UV implements UE3{
       // b1: lreturn
    }
 
-   protected void u() {
+   public void u() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7034,7 +7034,7 @@ public class CK extends UV implements UE3{
       // 5d: return
    }
 
-   protected int v() throws IOException {
+   public int v() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7235,7 +7235,7 @@ public class CK extends UV implements UE3{
       // 19e: athrow
    }
 
-   protected int I(byte[] param1) throws IOException {
+   public int I(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7325,7 +7325,7 @@ public class CK extends UV implements UE3{
       // bd: ireturn
    }
 
-   protected int v(byte[] param1, int param2) throws IOException {
+   public int v(byte[] param1, int param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7785,7 +7785,7 @@ public class CK extends UV implements UE3{
       // 3ea: ireturn
    }
 
-   protected int N() throws IOException {
+   public int N() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -8153,7 +8153,7 @@ public class CK extends UV implements UE3{
       // 34e: ireturn
    }
 
-   protected int q(byte[] param1, int param2) throws IOException {
+   public int q(byte[] param1, int param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -8441,7 +8441,7 @@ public class CK extends UV implements UE3{
       // 2b3: ireturn
    }
 
-   protected int e(byte[] param1, int param2) throws IOException {
+   public int e(byte[] param1, int param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -8680,7 +8680,7 @@ public class CK extends UV implements UE3{
       // 236: ireturn
    }
 
-   protected int P(byte[] param1, int param2) throws IOException {
+   public int P(byte[] param1, int param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -9197,7 +9197,7 @@ public class CK extends UV implements UE3{
       // 4c1: ireturn
    }
 
-   protected int V(byte[] param1) throws IOException {
+   public int V(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10032,7 +10032,7 @@ public class CK extends UV implements UE3{
       // 835: ireturn
    }
 
-   protected int R(int param1) throws IOException {
+   public int R(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10095,7 +10095,7 @@ public class CK extends UV implements UE3{
       // 72: ireturn
    }
 
-   protected int r$int() throws IOException {
+   public int r$int() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10167,7 +10167,7 @@ public class CK extends UV implements UE3{
       // c5: ireturn
    }
 
-   protected int q$int() throws IOException {
+   public int q$int() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10275,7 +10275,7 @@ public class CK extends UV implements UE3{
       // c2: ireturn
    }
 
-   protected int c$int() throws IOException {
+   public int c$int() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10560,7 +10560,7 @@ public class CK extends UV implements UE3{
       // 2cd: ireturn
    }
 
-   protected int L(int param1) throws IOException {
+   public int L(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -10831,7 +10831,7 @@ public class CK extends UV implements UE3{
       // 2b9: ireturn
    }
 
-   protected int U(byte[] param1) throws IOException {
+   public int U(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11002,7 +11002,7 @@ public class CK extends UV implements UE3{
       // 149: ireturn
    }
 
-   protected int v$int(byte[] param1) throws IOException {
+   public int v$int(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11178,7 +11178,7 @@ public class CK extends UV implements UE3{
       // 15d: ireturn
    }
 
-   protected int T(byte[] param1) throws IOException {
+   public int T(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11365,16 +11365,16 @@ public class CK extends UV implements UE3{
       // 15d: ireturn
    }
 
-   protected int W$int() {
+   public int W$int() {
       return a(24515, 2692429719738350667L);
    }
 
-   protected void p() throws IOException {
+   public void p() throws IOException {
       this.M(0);
       this.b(a(31152, 4352002580915673645L), this.U5, 4);
    }
 
-   protected void W$void() {
+   public void W$void() {
    }
 
    public void D$void() throws IOException {
@@ -11428,7 +11428,7 @@ public class CK extends UV implements UE3{
       return this.Up;
    }
 
-   protected void A(byte[] param1) throws IOException {
+   public void A(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11489,7 +11489,7 @@ public class CK extends UV implements UE3{
       // 85: return
    }
 
-   protected void v$void(byte[] param1) throws IOException {
+   public void v$void(byte[] param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11551,7 +11551,7 @@ public class CK extends UV implements UE3{
       // 88: return
    }
 
-   protected void u(byte[] param1, int param2) throws IOException {
+   public void u(byte[] param1, int param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11646,7 +11646,7 @@ public class CK extends UV implements UE3{
       // b0: return
    }
 
-   protected int h(byte[] var1) {
+   public int h(byte[] var1) {
       int var2 = var1[3] & a(1966, 8195886785838785578L);
       var2 = var2 << a(31152, 4352002580915673645L) | var1[2] & a(1966, 8195886785838785578L);
       var2 = var2 << a(31152, 4352002580915673645L) | var1[1] & a(1966, 8195886785838785578L);
@@ -11655,7 +11655,7 @@ public class CK extends UV implements UE3{
       return var2;
    }
 
-   protected void y() {
+   public void y() {
    }
 
    public void g(String var1) {
@@ -11896,39 +11896,39 @@ public class CK extends UV implements UE3{
       this.Ud = var1;
    }
 
-   static String X$String(CK var0) {
+   public static String X$String(CK var0) {
       return var0.l;
    }
 
-   static byte[] k(CK var0) {
+   public static byte[] k(CK var0) {
       return var0.U5;
    }
 
-   static OutputStream X$OutputStream(CK var0) {
+   public static OutputStream X$OutputStream(CK var0) {
       return var0.UT;
    }
 
-   static int K(CK var0) {
+   public static int K(CK var0) {
       return var0.m++;
    }
 
-   static RandomAccessFile c(CK var0, RandomAccessFile var1) {
+   public static RandomAccessFile c(CK var0, RandomAccessFile var1) {
       return var0.q = var1;
    }
 
-   static RandomAccessFile I(CK var0) {
+   public static RandomAccessFile I(CK var0) {
       return var0.q;
    }
 
-   static boolean i(CK var0, boolean var1) {
+   public static boolean i(CK var0, boolean var1) {
       return var0.w = var1;
    }
 
-   static boolean P(CK var0) {
+   public static boolean P(CK var0) {
       return var0.US;
    }
 
-   static String T(CK var0, String var1) {
+   public static String T(CK var0, String var1) {
       return var0.v = var1;
    }
 

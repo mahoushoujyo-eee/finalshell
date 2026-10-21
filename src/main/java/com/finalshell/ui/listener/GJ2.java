@@ -9,9 +9,9 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class GJ2 extends MouseAdapter {
-   final KA_3 T;
+   public final KA_3 T;
 
-   GJ2(KA_3 var1) {
+   public GJ2(KA_3 var1) {
       this.T = var1;
    }
 

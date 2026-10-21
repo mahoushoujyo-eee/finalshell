@@ -13,21 +13,18 @@ import java.security.spec.NamedParameterSpec;
 import java.util.Arrays;
 
 public abstract class Ej4 implements Wt2_2 {
-   Signature v;
-   KeyFactory d;
+   public Signature v;
+   public KeyFactory d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] e;
 
-   Ej4() {
-   }
+   public abstract String g();
 
-   abstract String g();
+   public abstract String I();
 
-   abstract String I();
-
-   abstract int D();
+   public abstract int D();
 
    @Override
    public void k$void() throws Exception {

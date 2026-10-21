@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ll2 implements ActionListener {
-   final Ox4 J;
+   public final Ox4 J;
 
-   Ll2(Ox4 var1) {
+   public Ll2(Ox4 var1) {
       this.J = var1;
    }
 

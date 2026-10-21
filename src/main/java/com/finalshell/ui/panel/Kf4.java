@@ -215,15 +215,15 @@ public class Kf4 extends Ky4 {
       }
    }
 
-   static boolean I(Kf4 var0) {
+   public static boolean I(Kf4 var0) {
       return var0.j;
    }
 
-   static boolean R(Kf4 var0, boolean var1) {
+   public static boolean R(Kf4 var0, boolean var1) {
       return var0.U = var1;
    }
 
-   static WC_2 f(Kf4 var0) {
+   public static WC_2 f(Kf4 var0) {
       return var0.I;
    }
 

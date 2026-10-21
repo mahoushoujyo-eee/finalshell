@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.net.InetSocketAddress;
 
 public class BR {
-   InetSocketAddress m;
-   InetSocketAddress a;
+   public InetSocketAddress m;
+   public InetSocketAddress a;
 
-   BR(InetSocketAddress var1, InetSocketAddress var2) {
+   public BR(InetSocketAddress var1, InetSocketAddress var2) {
       this.m = var1;
       this.a = var2;
    }

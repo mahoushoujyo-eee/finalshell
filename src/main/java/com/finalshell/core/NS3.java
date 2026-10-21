@@ -247,7 +247,7 @@ public class NS3 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   protected void r() {
+   public void r() {
       Ky4[] var1;
       int var3;
       NS3 var23;
@@ -538,7 +538,7 @@ public class NS3 {
       }
    }
 
-   protected boolean o() {
+   public boolean o() {
       Ky4[] var1 = Kj4.d();
       int var10000 = this.A;
       if (var1 != null) {
@@ -548,7 +548,7 @@ public class NS3 {
       return (boolean)var10000;
    }
 
-   protected void E() {
+   public void E() {
       this.A = 0;
       this.o = 0;
       this.R = new ArrayList();
@@ -556,7 +556,7 @@ public class NS3 {
       this.T = null;
    }
 
-   protected int M$int() {
+   public int M$int() {
       int var1 = 0;
 
       try {
@@ -568,7 +568,7 @@ public class NS3 {
       return var1;
    }
 
-   protected int L$int() {
+   public int L$int() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -656,7 +656,7 @@ public class NS3 {
       // 94: ireturn
    }
 
-   protected int[] K(int param1) {
+   public int[] K(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -775,7 +775,7 @@ public class NS3 {
       // df: areturn
    }
 
-   protected void C() {
+   public void C() {
       Ky4[] var10000 = Kj4.d();
       boolean var2 = false;
       Ky4[] var1 = var10000;
@@ -878,7 +878,7 @@ public class NS3 {
       }
    }
 
-   protected void q() {
+   public void q() {
       Ky4[] var10000 = Kj4.d();
       this.M$int();
       Ky4[] var1 = var10000;
@@ -904,7 +904,7 @@ public class NS3 {
       this.M$int();
    }
 
-   protected void k() {
+   public void k() {
       Ky4[] var10000 = Kj4.d();
       String var2 = "";
       int var3 = 0;
@@ -966,7 +966,7 @@ public class NS3 {
       var5.J = this.t[this.d];
    }
 
-   protected void h() {
+   public void h() {
       Ky4[] var10000 = Kj4.d();
       this.i = this.v();
       Ky4[] var1 = var10000;
@@ -1073,7 +1073,7 @@ public class NS3 {
       var7.F();
    }
 
-   protected void M$void() {
+   public void M$void() {
       Ky4[] var10000 = Kj4.d();
       this.n = this.v();
       this.g = this.v();
@@ -1090,7 +1090,7 @@ public class NS3 {
       this.a = this.M$int();
    }
 
-   protected void W() {
+   public void W() {
       Ky4[] var1 = Kj4.d();
 
       label25:
@@ -1121,11 +1121,11 @@ public class NS3 {
       }
    }
 
-   protected int v() {
+   public int v() {
       return this.M$int() | this.M$int() << a(6751, 5214305717958681354L);
    }
 
-   protected void F() {
+   public void F() {
       this.C = this.z;
       this.O = new Rectangle(this.i, this.k, this.q, this.h);
       this.x = this.u;
@@ -1133,7 +1133,7 @@ public class NS3 {
       this.T = null;
    }
 
-   protected void L$void() {
+   public void L$void() {
       Ky4[] var1;
       int[] var2;
       int var18;
@@ -1326,7 +1326,7 @@ public class NS3 {
       }
    }
 
-   protected void K() {
+   public void K() {
       do {
          this.L$int();
       } while (this.r > 0 && !this.o());

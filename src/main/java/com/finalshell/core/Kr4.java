@@ -142,12 +142,12 @@ public class Kr4 {
       return var1;
    }
 
-   static JButton p(Kr4 var0) {
+   public static JButton p(Kr4 var0) {
       Object var1 = 359675764887674108L;
       return (JButton)Ref.g(359675764887674108L, var1);
    }
 
-   static Ll4 y(Kr4 var0) {
+   public static Ll4 y(Kr4 var0) {
       Object var1 = 255566354579761910L;
       return (Ll4)Ref.g(255566354579761910L, var1);
    }

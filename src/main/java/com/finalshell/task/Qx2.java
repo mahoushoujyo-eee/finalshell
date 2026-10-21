@@ -3,11 +3,11 @@ package com.finalshell.task;
 import com.finalshell.config.DnsResolveFailedSetting;
 
 public class Qx2 extends Thread {
-   final DnsResolveFailedSetting q;
+   public final DnsResolveFailedSetting q;
    public static long a;
    public static long b;
 
-   Qx2(DnsResolveFailedSetting var1) {
+   public Qx2(DnsResolveFailedSetting var1) {
       this.q = var1;
    }
 

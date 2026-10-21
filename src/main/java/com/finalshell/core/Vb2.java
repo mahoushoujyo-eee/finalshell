@@ -5,9 +5,9 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 public abstract class Vb2 {
-   protected short V = Cs2.a;
-   protected short E = 0;
-   protected DatagramPacket O;
+   public short V = Cs2.a;
+   public short E = 0;
+   public DatagramPacket O;
    public int p;
    public int x;
    public static Ky4[] h;

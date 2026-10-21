@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import javax.swing.JPasswordField;
 
 public class OL implements Runnable {
-   final Qv2 n;
+   public final Qv2 n;
 
-   OL(Qv2 var1) {
+   public OL(Qv2 var1) {
       this.n = var1;
    }
 

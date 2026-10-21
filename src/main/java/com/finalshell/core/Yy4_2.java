@@ -19,32 +19,32 @@ import org.apache.commons.io.FileUtils;
 import org.apache.hc.client5.http.classic.HttpClient;
 
 public class Yy4_2 implements C22 {
-   static String a;
-   static String t;
-   static String s;
-   static String O;
-   static String j;
-   static String J;
+   public static String a;
+   public static String t;
+   public static String s;
+   public static String O;
+   public static String j;
+   public static String J;
    public static int W;
    public static String B;
    public static String V;
-   boolean w;
-   boolean R;
-   static String P;
-   Kz2 K;
-   Pz4 D;
-   long c;
-   long T;
-   boolean n;
-   String h;
-   String N;
-   boolean p;
-   boolean I;
-   boolean F;
-   boolean g;
-   TL3 x;
+   public boolean w;
+   public boolean R;
+   public static String P;
+   public Kz2 K;
+   public Pz4 D;
+   public long c;
+   public long T;
+   public boolean n;
+   public String h;
+   public String N;
+   public boolean p;
+   public boolean I;
+   public boolean F;
+   public boolean g;
+   public TL3 x;
    public static String Y;
-   Component S;
+   public Component S;
    public static String[] b;
    public static String[] d;
    public static long[] e;
@@ -184,7 +184,7 @@ public class Yy4_2 implements C22 {
       }
    }
 
-   static void o() {
+   public static void o() {
       File var0 = new File((String)Registry.lookupField(592839404584749312L).get(null));
 
       try {
@@ -867,7 +867,7 @@ public class Yy4_2 implements C22 {
                            if (var7 == 0) {
                               Object[] var119 = Registry.lookupField(249008812215255527L).getBoolean(this);
                               if (this == null) {
-                                 if (var119 != false) {
+                                 if (var119 == null) {
                                     Registry.emptyArgs();
                                     long var37 = 253808553645062345L;
                                     Object var128 = Ref.h2(253808553645062345L, var37);
@@ -880,7 +880,7 @@ public class Yy4_2 implements C22 {
 
                                     label366: {
                                        if (this == null) {
-                                          if (var128 != false) {
+                                          if (var128 == null) {
                                              Registry.packArgs(true);
                                              long var39 = 305534704297365543L;
                                              Ref.h2(305534704297365543L, var39);
@@ -910,7 +910,7 @@ public class Yy4_2 implements C22 {
                                        }
 
                                        if (this == null) {
-                                          if (var128 != false) {
+                                          if (var128 == null) {
                                              Object[] var133 = Registry.emptyArgs();
                                              long var46 = 296340191854217930L;
                                              Object[] var45 = var133;
@@ -937,7 +937,7 @@ public class Yy4_2 implements C22 {
                                           }
                                        }
 
-                                       if (var128 != false) {
+                                       if (var128 == null) {
                                           Object[] var135 = Registry.emptyArgs();
                                           long var50 = 537578433846072104L;
                                           Object[] var49 = var135;
@@ -981,7 +981,7 @@ public class Yy4_2 implements C22 {
                               }
 
                               if (this == null) {
-                                 if (var119 != false) {
+                                 if (var119 == null) {
                                     Registry.packArgs(true);
                                     long var57 = 305534704297365543L;
                                     Ref.h2(305534704297365543L, var57);
@@ -1011,7 +1011,7 @@ public class Yy4_2 implements C22 {
                               }
 
                               if (this == null) {
-                                 if (var119 != false) {
+                                 if (var119 == null) {
                                     Registry.emptyArgs();
                                     long var63 = 270389152141252877L;
                                     Ref.h2(270389152141252877L, var63);
@@ -1098,7 +1098,7 @@ public class Yy4_2 implements C22 {
                                  }
                               }
 
-                              if (var119 != false) {
+                              if (var119 == null) {
                                  Registry.emptyArgs();
                                  long var73 = 270389152141252877L;
                                  Ref.h2(270389152141252877L, var73);
@@ -1191,7 +1191,7 @@ public class Yy4_2 implements C22 {
       Registry.lookupField(368493757138273669L).setBoolean(this, true);
    }
 
-   String M() {
+   public String M() {
       String var1 = null;
       JPanel var2 = new JPanel();
       JLabel var3 = new JLabel(a(19631, 22442));
@@ -1221,7 +1221,7 @@ public class Yy4_2 implements C22 {
       return var1;
    }
 
-   void a(String var1, String var2) {
+   public void a(String var1, String var2) {
       Registry.packArgs(new File(var1), new File(var2));
       long var3 = 178971664395933635L;
       Ref.h2(178971664395933635L, var3);

@@ -5,9 +5,9 @@ import java.io.File;
 import java.util.List;
 
 public class EH extends EY {
-   final com.finalshell.ui.panel.U22 r;
+   public final com.finalshell.ui.panel.U22 r;
 
-   EH(com.finalshell.ui.panel.U22 var1) {
+   public EH(com.finalshell.ui.panel.U22 var1) {
       this.r = var1;
    }
 

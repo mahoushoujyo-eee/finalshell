@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.RouteTracePanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Da2 implements Runnable {
-   final RouteTracePanel y;
+   public final RouteTracePanel y;
 
-   Da2(RouteTracePanel var1) {
+   public Da2(RouteTracePanel var1) {
       this.y = var1;
    }
 

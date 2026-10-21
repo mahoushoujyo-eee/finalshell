@@ -88,7 +88,7 @@ public class G42 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var5;
       float var6;
       float var16;

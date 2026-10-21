@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Sh2 implements ActionListener {
-   final int I;
-   final HD P;
+   public final int I;
+   public final HD P;
 
-   Sh2(HD var1, int var2) {
+   public Sh2(HD var1, int var2) {
       this.P = var1;
       this.I = var2;
    }

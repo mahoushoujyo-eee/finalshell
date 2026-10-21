@@ -7,10 +7,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fh4 implements Runnable {
-   final D82_2 L;
+   public final D82_2 L;
    public final GH_2 p;
 
-   Fh4(D82_2 var1, GH_2 var2) {
+   public Fh4(D82_2 var1, GH_2 var2) {
       this.L = var1;
       this.p = var2;
    }
@@ -61,7 +61,7 @@ public class Fh4 implements Runnable {
 
       label79: {
          if (var1 == null) {
-            if (var10006 != 0) {
+            if (var10006 != null) {
                return;
             }
 

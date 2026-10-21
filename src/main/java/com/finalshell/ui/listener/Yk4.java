@@ -10,15 +10,15 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Yk4 implements TreeSelectionListener {
-   final DefaultMutableTreeNode l;
-   final DefaultMutableTreeNode u;
-   final DefaultMutableTreeNode E;
-   final DefaultMutableTreeNode M;
-   final DefaultMutableTreeNode L;
-   final DefaultMutableTreeNode Q;
-   final Ox4 X;
+   public final DefaultMutableTreeNode l;
+   public final DefaultMutableTreeNode u;
+   public final DefaultMutableTreeNode E;
+   public final DefaultMutableTreeNode M;
+   public final DefaultMutableTreeNode L;
+   public final DefaultMutableTreeNode Q;
+   public final Ox4 X;
 
-   Yk4(
+   public Yk4(
       Ox4 var1,
       DefaultMutableTreeNode var2,
       DefaultMutableTreeNode var3,
@@ -27,6 +27,7 @@ public class Yk4 implements TreeSelectionListener {
       DefaultMutableTreeNode var6,
       DefaultMutableTreeNode var7
    ) {
+   super();
       this.X = var1;
       this.l = var2;
       this.u = var3;
@@ -35,7 +36,6 @@ public class Yk4 implements TreeSelectionListener {
       Ox4.D();
       this.L = var6;
       this.Q = var7;
-      super();
       if (Ky4.F$arrString() != null) {
          Ox4.M("TIBij");
       }
@@ -66,7 +66,7 @@ public class Yk4 implements TreeSelectionListener {
             Object var10 = 204087973105645159L;
             DefaultMutableTreeNode var110 = this.equals((DefaultMutableTreeNode)Ref.g(204087973105645159L, var10));
             if (var2 == null) {
-               if (var110 != false) {
+               if (var110 == null) {
                   Object var12 = 220809625428848429L;
                   Ref.g(220809625428848429L, var12);
                   Object var14 = 271121671883085064L;
@@ -96,7 +96,7 @@ public class Yk4 implements TreeSelectionListener {
             }
 
             if (var2 == null) {
-               if (var110 != false) {
+               if (var110 == null) {
                   Object var24 = 220809625428848429L;
                   Ref.g(220809625428848429L, var24);
                   Object var26 = 271121671883085064L;
@@ -126,7 +126,7 @@ public class Yk4 implements TreeSelectionListener {
             }
 
             if (var2 == null) {
-               if (var110 != false) {
+               if (var110 == null) {
                   Object var36 = 220809625428848429L;
                   Ref.g(220809625428848429L, var36);
                   Object var38 = 271121671883085064L;
@@ -156,7 +156,7 @@ public class Yk4 implements TreeSelectionListener {
             }
 
             if (var2 == null) {
-               if (var110 != false) {
+               if (var110 == null) {
                   Object var48 = 220809625428848429L;
                   Ref.g(220809625428848429L, var48);
                   Object var50 = 271121671883085064L;
@@ -186,7 +186,7 @@ public class Yk4 implements TreeSelectionListener {
             }
 
             if (var2 == null) {
-               if (var110 != false) {
+               if (var110 == null) {
                   Object var60 = 220809625428848429L;
                   Ref.g(220809625428848429L, var60);
                   Object var62 = 271121671883085064L;
@@ -216,7 +216,7 @@ public class Yk4 implements TreeSelectionListener {
             }
 
             if (var2 == null) {
-               if (var110 != false) {
+               if (var110 == null) {
                   Object var72 = 220809625428848429L;
                   Ref.g(220809625428848429L, var72);
                   Object var74 = 271121671883085064L;
@@ -247,7 +247,7 @@ public class Yk4 implements TreeSelectionListener {
                var10006.equals((DefaultMutableTreeNode)Ref.g(240689802017866820L, var84));
             }
 
-            if (var110 != false) {
+            if (var110 == null) {
                Object var86 = 220809625428848429L;
                Ref.g(220809625428848429L, var86);
                Object var88 = 271121671883085064L;

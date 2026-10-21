@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class B4 implements ActionListener {
-   final KeyManagerFrame I;
+   public final KeyManagerFrame I;
 
-   B4(KeyManagerFrame var1) {
+   public B4(KeyManagerFrame var1) {
       this.I = var1;
    }
 

@@ -14,11 +14,11 @@ import javax.swing.JFileChooser;
 import javax.swing.SwingUtilities;
 
 public class Oi2 implements ActionListener {
-   final U62 p;
-   final EnableBackgroundImage c;
+   public final U62 p;
+   public final EnableBackgroundImage c;
    public static String a;
 
-   Oi2(EnableBackgroundImage var1, U62 var2) {
+   public Oi2(EnableBackgroundImage var1, U62 var2) {
       this.c = var1;
       this.p = var2;
    }

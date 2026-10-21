@@ -8,9 +8,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class O6 implements MouseListener {
-   final Address I;
+   public final Address I;
 
-   O6(Address var1) {
+   public O6(Address var1) {
       this.I = var1;
    }
 

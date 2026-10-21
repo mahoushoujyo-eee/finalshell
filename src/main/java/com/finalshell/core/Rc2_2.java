@@ -10,8 +10,8 @@ public final class Rc2_2 extends R7_2 {
    public static String d;
 
    public Rc2_2(com.finalshell.ui.model.I var1, @C_9 C_r_2 var2, @C_9 NV_2 var3, @C_9 NV_2[] var4, C_r_2 var5) {
+   super(var1, var5);
       String[] var10000 = RG_2.C();
-      super(var1, var5);
       String[] var6 = var10000;
       this.p = var2;
       if (var6 != null) {

@@ -7,9 +7,6 @@ public abstract class Ye2 implements EU {
    public static long[] a;
    public static Integer[] b;
 
-   Ye2() {
-   }
-
    @Override
    public int w() {
       return a(9789, 5678904237608000688L);

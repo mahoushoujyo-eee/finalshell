@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LU_3 implements ActionListener {
-   final ResetPanel t;
+   public final ResetPanel t;
 
-   LU_3(ResetPanel var1) {
+   public LU_3(ResetPanel var1) {
       this.t = var1;
    }
 

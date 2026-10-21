@@ -15,12 +15,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
 public class Le2 implements MouseListener {
-   final JMenuItem K;
-   final JMenuItem x;
-   final JPopupMenu i;
-   final TerminateProcessPanel Y;
+   public final JMenuItem K;
+   public final JMenuItem x;
+   public final JPopupMenu i;
+   public final TerminateProcessPanel Y;
 
-   Le2(TerminateProcessPanel var1, JMenuItem var2, JMenuItem var3, JPopupMenu var4) {
+   public Le2(TerminateProcessPanel var1, JMenuItem var2, JMenuItem var3, JPopupMenu var4) {
       this.Y = var1;
       this.K = var2;
       this.x = var3;
@@ -47,7 +47,7 @@ public class Le2 implements MouseListener {
                var4 = true;
                Le2 var83 = var1.getButton();
                if (var2) {
-                  if (var83 != 1) {
+                  if (var83 != null) {
                      var10000 = var1.getButton();
                      if (!var2) {
                         break label196;
@@ -290,7 +290,7 @@ public class Le2 implements MouseListener {
       }
 
       label136: {
-         if (var10004 != false) {
+         if (var10004 == null) {
             Object var59 = 516502371225412576L;
             ((JMenuItem)Ref.g(516502371225412576L, var59)).setEnabled(true);
             if (var2) {

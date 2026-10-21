@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class B3 implements X9 {
-   final M3 l;
+   public final M3 l;
 
-   B3(M3 var1) {
+   public B3(M3 var1) {
       this.l = var1;
    }
 

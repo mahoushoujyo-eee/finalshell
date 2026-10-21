@@ -13,8 +13,8 @@ public class R3 {
    public static Integer[] b;
 
    public R3() {
+   super();
       int[] var10000 = XP.j();
-      super();
       this.B = new PX[4];
       int[] var1 = var10000;
       int var2 = 0;

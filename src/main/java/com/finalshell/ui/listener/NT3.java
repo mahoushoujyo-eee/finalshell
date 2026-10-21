@@ -7,8 +7,8 @@ import java.lang.ref.WeakReference;
 
 public class NT3 implements ActionListener {
    public WeakReference y;
-   long O;
-   final SetBackgroundImagePanel R;
+   public long O;
+   public final SetBackgroundImagePanel R;
    public static String a;
 
    public NT3(SetBackgroundImagePanel var1, SetBackgroundImagePanel var2) {

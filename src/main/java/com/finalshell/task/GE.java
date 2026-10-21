@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.AM;
 import javax.swing.SwingUtilities;
 
 public class GE implements Runnable {
-   final AM Q;
+   public final AM Q;
    public static long a;
 
-   GE(AM var1) {
+   public GE(AM var1) {
       this.Q = var1;
    }
 

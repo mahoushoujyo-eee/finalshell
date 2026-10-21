@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class Ff2 extends ClearListDialog {
-   SetBackgroundImagePanel xu;
+   public SetBackgroundImagePanel xu;
    public static long[] cb;
    public static Integer[] db;
 
@@ -102,11 +102,11 @@ public class Ff2 extends ClearListDialog {
       }
    }
 
-   protected void h(JButton var1) {
+   public void h(JButton var1) {
    }
 
    @Override
-   protected void i(L1 var1, int var2) {
+   public void i(L1 var1, int var2) {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 197395297555400075L;
       Object[] var3 = var10001;
@@ -138,11 +138,11 @@ public class Ff2 extends ClearListDialog {
    }
 
    @Override
-   protected void L(String var1) {
+   public void L(String var1) {
    }
 
    @Override
-   protected void k(L1 var1) {
+   public void k(L1 var1) {
       String[] var2 = Backspace.F();
       if (var2 != null) {
          if (!Registry.lookupField(461146548297071424L).getBoolean(this) && !CK.Ur) {
@@ -170,12 +170,12 @@ public class Ff2 extends ClearListDialog {
    }
 
    @Override
-   protected Dx4_2 n() {
+   public Dx4_2 n() {
       return new Dx4_2();
    }
 
    @Override
-   protected Dx4_2 k$dx_4() {
+   public Dx4_2 k$dx_4() {
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
       Ref.h2(270389152141252877L, var2);
@@ -197,7 +197,7 @@ public class Ff2 extends ClearListDialog {
       return var10003;
    }
 
-   void u(L1 var1) {
+   public void u(L1 var1) {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 197395297555400075L;
       Object[] var3 = var10001;
@@ -260,11 +260,11 @@ public class Ff2 extends ClearListDialog {
    }
 
    @Override
-   protected void u(KeyEvent var1) {
+   public void u(KeyEvent var1) {
    }
 
    @Override
-   protected String c() {
+   public String c() {
       Object var1 = 265132846717086219L;
       return ((Dv2)Ref.g(265132846717086219L, var1)).getText().trim();
    }

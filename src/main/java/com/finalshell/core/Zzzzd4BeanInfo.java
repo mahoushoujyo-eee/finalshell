@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class Zzzzd4BeanInfo {
-   protected final java.lang.Class x;
-   protected final String j;
-   protected final String z;
-   protected final O4 L;
-   protected final Ph2[] b;
-   protected final Ph2[] D;
-   protected int P;
+   public final java.lang.Class x;
+   public final String j;
+   public final String z;
+   public final O4 L;
+   public final Ph2[] b;
+   public final Ph2[] D;
+   public int P;
 
    public Zzzzd4BeanInfo(java.lang.Class var1, O4 var2, String var3, String var4, int var5, Ph2[] var6, Ph2[] var7) {
       this.x = var1;

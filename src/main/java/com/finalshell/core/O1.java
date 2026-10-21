@@ -14,11 +14,11 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.MouseInputAdapter;
 
 public class O1 extends MouseInputAdapter {
-   Toolkit k;
-   Component e;
-   JMenuBar n;
-   QG F;
-   Container M;
+   public Toolkit k;
+   public Component e;
+   public JMenuBar n;
+   public QG F;
+   public Container M;
 
    public O1(Component var1, JMenuBar var2, QG var3, Container var4) {
       Toolkit var10001 = Toolkit.getDefaultToolkit();
@@ -191,7 +191,7 @@ public class O1 extends MouseInputAdapter {
          var10003 = (Component)var2;
       }
 
-      if (var10003 != false) {
+      if (var10003 == null) {
          Object var21 = 486361035811796603L;
          Ref.g(486361035811796603L, var21);
          Object[] var10005 = Registry.packArgs(var4);

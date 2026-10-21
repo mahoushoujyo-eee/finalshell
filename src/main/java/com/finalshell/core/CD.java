@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class CD implements V_2_2 {
-   final Cs2_2 e;
+   public final Cs2_2 e;
 
-   CD(Cs2_2 var1) {
+   public CD(Cs2_2 var1) {
       this.e = var1;
    }
 

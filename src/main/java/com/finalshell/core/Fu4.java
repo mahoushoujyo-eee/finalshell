@@ -79,7 +79,7 @@ public class Fu4 implements Ky2 {
       return new byte[]{u[var0 >> 4 & a(7873, 6849712489932089084L)], u[var0 & a(1012, 8315339687666809812L)]};
    }
 
-   protected Fu4(ByteBuffer var1) {
+   public Fu4(ByteBuffer var1) {
       this.U = var1;
    }
 

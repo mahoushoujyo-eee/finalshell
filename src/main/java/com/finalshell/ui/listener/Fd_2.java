@@ -4,9 +4,9 @@ import com.finalshell.ui.model.IC3;
 import javax.swing.event.AncestorEvent;
 
 public class Fd_2 extends FY {
-   final com.finalshell.ui.panel.QX X;
+   public final com.finalshell.ui.panel.QX X;
 
-   Fd_2(com.finalshell.ui.panel.QX var1) {
+   public Fd_2(com.finalshell.ui.panel.QX var1) {
       this.X = var1;
    }
 

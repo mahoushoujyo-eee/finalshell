@@ -6,9 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Ex2 extends EY {
-   final Kz4 K;
+   public final Kz4 K;
 
-   Ex2(Kz4 var1) {
+   public Ex2(Kz4 var1) {
       this.K = var1;
    }
 

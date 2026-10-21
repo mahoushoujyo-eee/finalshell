@@ -37,8 +37,8 @@ public class Dn4 implements Serializable, Cloneable {
    }
 
    public Dn4(String var1, String var2, String var3, String var4) {
+   super();
       int[] var10000 = SW.P();
-      super();
       this.X = false;
       this.h = null;
       int[] var5 = var10000;
@@ -171,7 +171,7 @@ public class Dn4 implements Serializable, Cloneable {
       return a(21052, -4711) + var3 + this.a() + ":" + this.s() + a(21053, 10765);
    }
 
-   protected Dn4 C() {
+   public Dn4 C() {
       Dn4 var1 = new Dn4();
       var1.T(this.z());
       var1.W(this.a());
@@ -184,7 +184,7 @@ public class Dn4 implements Serializable, Cloneable {
    }
 
    @Override
-   protected Object clone() throws CloneNotSupportedException {
+   public Object clone() throws CloneNotSupportedException {
       return this.C();
    }
 

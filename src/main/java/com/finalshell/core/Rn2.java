@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Rn2 {
-   protected static Map c;
-   protected static com.finalshell.ui.panel.Qm2 f;
-   protected static Object b;
-   protected static BufferedImage W;
-   protected static Component h;
-   protected static Up2 F;
-   protected static boolean x;
+   public static Map c;
+   public static com.finalshell.ui.panel.Qm2 f;
+   public static Object b;
+   public static BufferedImage W;
+   public static Component h;
+   public static Up2 F;
+   public static boolean x;
    public static int V;
 
    public static synchronized void z() {

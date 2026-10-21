@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Td2 implements ActionListener {
-   final AppendCarriageReturnCRPanel a;
+   public final AppendCarriageReturnCRPanel a;
 
-   Td2(AppendCarriageReturnCRPanel var1) {
+   public Td2(AppendCarriageReturnCRPanel var1) {
       this.a = var1;
    }
 

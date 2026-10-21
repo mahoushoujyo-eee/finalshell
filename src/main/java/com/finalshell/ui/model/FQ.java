@@ -8,10 +8,10 @@ import java.text.Collator;
 import java.util.Comparator;
 
 public class FQ implements Comparator {
-   final Collator O;
-   final Connection12 d;
+   public final Collator O;
+   public final Connection12 d;
 
-   FQ(Connection12 var1, Collator var2) {
+   public FQ(Connection12 var1, Collator var2) {
       this.d = var1;
       this.O = var2;
    }

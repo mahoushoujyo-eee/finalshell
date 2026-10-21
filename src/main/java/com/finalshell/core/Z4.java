@@ -8,8 +8,8 @@ public class Z4 extends Z8 {
    public final boolean e;
 
    public Z4(String var1, boolean var2, String var3, String var4, String[] var5, boolean var6) {
+   super(var1, var2);
       String var10000 = Hi2.C();
-      super(var1, var2);
       String var7 = var10000;
       this.c = var3;
       this.A = var4;

@@ -12,8 +12,8 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class CC3 extends DefaultTableCellRenderer {
-   Border j;
-   JLabel s;
+   public Border j;
+   public JLabel s;
    public static long[] a;
    public static Integer[] b;
 
@@ -41,7 +41,7 @@ public class CC3 extends DefaultTableCellRenderer {
       boolean var7 = var10000;
       CC3 var28 = var2.getClass().equals(String.class);
       if (!var7) {
-         if (var28 != false) {
+         if (var28 == null) {
             var8 = (String)var2;
          }
 
@@ -52,7 +52,7 @@ public class CC3 extends DefaultTableCellRenderer {
 
       label36: {
          if (!var7) {
-            if (var28 != false) {
+            if (var28 == null) {
                Object var12 = 328499212841214311L;
                ((JLabel)Ref.g(328499212841214311L, var12)).setBackground((Color)Registry.lookupField(623875439513009390L).get(null));
                Object var14 = 328499212841214311L;
@@ -72,7 +72,7 @@ public class CC3 extends DefaultTableCellRenderer {
          ((JLabel)Ref.g(328499212841214311L, var18))
             .setForeground(new Color(a(18064, 8934967926841968094L), a(29928, 4784423068431398816L), a(29928, 4784423068431398816L)));
          if (!var7) {
-            if (var9 == false) {
+            if (var9 == null) {
                Object var20 = 328499212841214311L;
                ((JLabel)Ref.g(328499212841214311L, var20)).setOpaque(false);
                if (!var7) {

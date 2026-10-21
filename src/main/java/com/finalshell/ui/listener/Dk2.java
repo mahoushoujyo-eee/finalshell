@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Dk2 implements PropertyChangeListener {
-   final com.finalshell.core.O52 h;
+   public final com.finalshell.core.O52 h;
 
-   Dk2(com.finalshell.core.O52 var1) {
+   public Dk2(com.finalshell.core.O52 var1) {
       this.h = var1;
    }
 

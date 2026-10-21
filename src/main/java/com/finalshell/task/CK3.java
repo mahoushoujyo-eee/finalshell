@@ -1,9 +1,6 @@
 package com.finalshell.task;
 
 public class CK3 implements Runnable {
-   CK3() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

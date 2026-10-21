@@ -15,10 +15,10 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class Yf2 {
-   HashMap P;
-   HashMap e;
-   HashMap k;
-   boolean o;
+   public HashMap P;
+   public HashMap e;
+   public HashMap k;
+   public boolean o;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -2593,7 +2593,7 @@ public class Yf2 {
       // 518: return
    }
 
-   void G(File param1, ArrayList param2) {
+   public void G(File param1, ArrayList param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5283,7 +5283,7 @@ public class Yf2 {
       }
    }
 
-   void o(File var1, ArrayList var2) {
+   public void o(File var1, ArrayList var2) {
       int[] var10000 = Lv4_2.H$arrint();
       File[] var4 = var1.listFiles();
       int[] var3 = var10000;

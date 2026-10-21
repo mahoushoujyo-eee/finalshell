@@ -8,9 +8,9 @@ import java.awt.event.ItemListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class WF implements ItemListener {
-   final LocalDrive W;
+   public final LocalDrive W;
 
-   WF(LocalDrive var1) {
+   public WF(LocalDrive var1) {
       this.W = var1;
    }
 

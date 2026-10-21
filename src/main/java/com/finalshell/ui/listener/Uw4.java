@@ -13,9 +13,9 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 public class Uw4 implements ActionListener {
-   final PublicKey U;
+   public final PublicKey U;
 
-   Uw4(PublicKey var1) {
+   public Uw4(PublicKey var1) {
       this.U = var1;
    }
 
@@ -27,7 +27,7 @@ public class Uw4 implements ActionListener {
       SelectPrivateKeyDialog var4 = new SelectPrivateKeyDialog(var3);
       var4.setLocationRelativeTo(var3);
       var4.setVisible(true);
-      if (this == false) {
+      if (this == null) {
          Object[] var10002 = Registry.emptyArgs();
          long var8 = 232671688978587550L;
          Object[] var7 = var10002;
@@ -56,7 +56,7 @@ public class Uw4 implements ActionListener {
 
       Object var15 = 590487090493354324L;
       PublicKey var33 = (PublicKey)Ref.g(590487090493354324L, var15);
-      if (this == false) {
+      if (this == null) {
          Object var17 = 581836656594480986L;
          if ((com.finalshell.core.LN3)Ref.g(581836656594480986L, var17) == null) {
             return;

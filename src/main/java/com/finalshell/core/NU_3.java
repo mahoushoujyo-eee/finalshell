@@ -6,10 +6,10 @@ import java.util.Map;
 
 public final class NU_3 extends N6_2 {
    @C_9
-   Hv2_2 u;
+   public Hv2_2 u;
    @C_9
    public final NL_2 U;
-   final Map I = new HashMap();
+   public final Map I = new HashMap();
    public static String[] h;
    public static String[] j;
    public static long[] l;

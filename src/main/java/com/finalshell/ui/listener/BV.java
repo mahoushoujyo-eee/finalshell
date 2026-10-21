@@ -10,10 +10,10 @@ import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BV implements KeyListener {
-   final Address n;
+   public final Address n;
    public static long a;
 
-   BV(Address var1) {
+   public BV(Address var1) {
       this.n = var1;
    }
 

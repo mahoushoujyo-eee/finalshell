@@ -20,10 +20,10 @@ import javax.swing.ImageIcon;
 import javax.swing.JPopupMenu;
 
 public class KP extends KD implements MouseMotionListener, MouseListener, ActionListener, Serializable {
-   protected boolean J = W6_2.c;
-   protected EL3 N = W6_2.b;
-   protected JPopupMenu c = null;
-   protected boolean v = false;
+   public boolean J = W6_2.c;
+   public EL3 N = W6_2.b;
+   public JPopupMenu c = null;
+   public boolean v = false;
    public static long[] a;
    public static Integer[] b;
 
@@ -63,7 +63,7 @@ public class KP extends KD implements MouseMotionListener, MouseListener, Action
    }
 
    @Override
-   protected void init(String var1, Icon var2) {
+   public void init(String var1, Icon var2) {
       super.init(var1, var2);
       this.addMouseMotionListener(this);
       this.addMouseListener(this);
@@ -283,7 +283,7 @@ public class KP extends KD implements MouseMotionListener, MouseListener, Action
       var4.repaint(this.z().D(this));
    }
 
-   protected void n(ActionEvent var1) {
+   public void n(ActionEvent var1) {
       Object[] var3 = this.listenerList.getListenerList();
       boolean var10000 = Tk2.B();
       ActionEvent var4 = null;
@@ -326,7 +326,7 @@ public class KP extends KD implements MouseMotionListener, MouseListener, Action
       }
    }
 
-   protected void X(ActionEvent var1) {
+   public void X(ActionEvent var1) {
       boolean var10000 = Tk2.B();
       Object[] var3 = this.listenerList.getListenerList();
       boolean var2 = var10000;

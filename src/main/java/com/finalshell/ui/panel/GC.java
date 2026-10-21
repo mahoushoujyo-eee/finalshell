@@ -9,7 +9,7 @@ public class GC extends JScrollPane {
    public static long[] a;
    public static Integer[] b;
 
-   GC(Component var1) {
+   public GC(Component var1) {
       super(var1);
    }
 

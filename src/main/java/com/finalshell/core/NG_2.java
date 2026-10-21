@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 public final class NG_2 extends NV_2 {
    @C_9
-   Hd2 B;
+   public Hd2 B;
    public static String a;
 
    public NG_2(com.finalshell.ui.model.I var1) {

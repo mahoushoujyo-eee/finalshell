@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class QO implements ActionListener {
-   final EditDialog2 C;
+   public final EditDialog2 C;
    public static String a;
 
-   QO(EditDialog2 var1) {
+   public QO(EditDialog2 var1) {
       this.C = var1;
    }
 

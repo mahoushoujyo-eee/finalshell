@@ -9,10 +9,10 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 
 public class Yz4 implements Runnable {
-   final com.finalshell.core.PacketLoss k;
+   public final com.finalshell.core.PacketLoss k;
    public static long a;
 
-   Yz4(com.finalshell.core.PacketLoss var1) {
+   public Yz4(com.finalshell.core.PacketLoss var1) {
       this.k = var1;
    }
 

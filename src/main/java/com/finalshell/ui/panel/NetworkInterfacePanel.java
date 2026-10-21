@@ -20,21 +20,21 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class NetworkInterfacePanel extends JPanel {
-   JTextField X;
-   JTextField m;
-   JTextField L;
-   JTextField M;
-   JTextField w;
-   JTextField R;
-   JTextField s;
-   JTextArea I;
-   JTextArea Z;
-   JTextArea n;
-   JTextArea Q;
-   String J;
-   String W;
-   boolean b;
-   ConnectionProperty i;
+   public JTextField X;
+   public JTextField m;
+   public JTextField L;
+   public JTextField M;
+   public JTextField w;
+   public JTextField R;
+   public JTextField s;
+   public JTextArea I;
+   public JTextArea Z;
+   public JTextArea n;
+   public JTextArea Q;
+   public String J;
+   public String W;
+   public boolean b;
+   public ConnectionProperty i;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -42,7 +42,7 @@ public class NetworkInterfacePanel extends JPanel {
    public static long[] f;
    public static Long[] g;
 
-   NetworkInterfacePanel() {
+   public NetworkInterfacePanel() {
       String var10001 = a(12996, -26648);
       long var8 = 556219558628308046L;
       String var7 = var10001;
@@ -1161,7 +1161,7 @@ public class NetworkInterfacePanel extends JPanel {
       this.doLayout();
    }
 
-   C_C N() {
+   public C_C N() {
       C_C var1 = new C_C();
       var1.setEditable(false);
       Registry.packArgs(var1, false);
@@ -1170,7 +1170,7 @@ public class NetworkInterfacePanel extends JPanel {
       return var1;
    }
 
-   Ne4 c() {
+   public Ne4 c() {
       Ne4 var1 = new Ne4();
       var1.setEditable(false);
       var1.y(false);
@@ -1180,13 +1180,13 @@ public class NetworkInterfacePanel extends JPanel {
       return var1;
    }
 
-   JLabel i(String var1) {
+   public JLabel i(String var1) {
       JLabel var2 = new JLabel(var1 + "");
       var2.setOpaque(false);
       return var2;
    }
 
-   JPanel o() {
+   public JPanel o() {
       JPanel var1 = new JPanel(new MigLayout(a(13016, -2216), a(12995, -19450), a(13037, 1317)));
       var1.setOpaque(false);
       return var1;

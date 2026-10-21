@@ -27,8 +27,8 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
    public JMenuItem l;
    public JMenuItem P;
    public JMenuItem k;
-   static long q;
-   boolean e;
+   public static long q;
+   public boolean e;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -111,7 +111,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
       }
 
       if (var2 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             var6 = 4;
          }
 
@@ -130,7 +130,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
 
       label91:
       if (var2 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             var10001 = var1;
             if (var2 != null) {
                break label91;
@@ -186,7 +186,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
 
       if (var2 != null) {
          return (boolean)var7;
-      } else if (var7 == false) {
+      } else if (var7 == null) {
          Object[] var29 = Registry.emptyArgs();
          long var18 = 129058574427582046L;
          Object var31 = Ref.h2(129058574427582046L, var18);
@@ -311,7 +311,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
       this.setFont((Font)Registry.lookupField(395970988011231853L).get(null));
    }
 
-   JMenuItem F(String var1) {
+   public JMenuItem F(String var1) {
       JMenuItem var2 = new JMenuItem(var1);
       var2.setFont((Font)Registry.lookupField(395970988011231853L).get(null));
       return var2;
@@ -331,7 +331,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
       ((JMenuItem)Ref.g(195824488389063206L, var7)).addActionListener(this);
    }
 
-   static void H(JTextComponent var0) {
+   public static void H(JTextComponent var0) {
       var0.addFocusListener(new DR3(var0));
    }
 
@@ -365,7 +365,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
       JTextComponent var3 = (JTextComponent)var10;
       var10 = Boolean.TRUE.equals(var3.getClientProperty(a(-741, 14885)));
       if (var2 == null) {
-         if (var10 != false) {
+         if (var10 == null) {
             return;
          }
 
@@ -381,7 +381,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
 
       label66: {
          if (var2 == null) {
-            if (var10 == false) {
+            if (var10 == null) {
                break label66;
             }
 
@@ -625,7 +625,7 @@ public class YJ extends JPopupMenu implements MouseListener, ActionListener {
       }
    }
 
-   static YJ o() {
+   public static YJ o() {
       return (YJ)Registry.lookupField(618328928296237087L).get(null);
    }
 

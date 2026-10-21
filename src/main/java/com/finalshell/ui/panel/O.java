@@ -35,7 +35,7 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 public class O extends JLabel implements D7, Pp2, RF3, Au2, Yb4, Sa2 {
-   boolean P = false;
+   public boolean P = false;
    public static int[] R;
    public static long[] ab;
    public static Integer[] bb;

@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class F_2 implements WS {
-   F_2 X;
-   final W02 V;
+   public F_2 X;
+   public final W02 V;
    public int T;
    public final int A;
    public final int J;
-   int s;
-   int[] Q;
+   public int s;
+   public int[] Q;
    public RE3 p;
    public int d;
    public int S;
@@ -551,7 +551,7 @@ public class F_2 implements WS {
    public void J() {
    }
 
-   final int A() {
+   public final int A() {
       int[] var10000 = XB.X();
       int var2 = a(31672, 4241364992867011551L);
       int[] var1 = var10000;
@@ -595,7 +595,7 @@ public class F_2 implements WS {
       return var2;
    }
 
-   final void S(RE3 param1) {
+   public final void S(RE3 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -13,7 +13,7 @@ public class SW extends Authenticator {
    public static int[] e;
 
    @Override
-   protected PasswordAuthentication getPasswordAuthentication() {
+   public PasswordAuthentication getPasswordAuthentication() {
       return this.D();
    }
 

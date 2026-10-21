@@ -4,10 +4,10 @@ import java.util.Iterator;
 
 public class Ww4 implements Iterator {
    public int p;
-   final J2 E;
+   public final J2 E;
    public static String a;
 
-   Ww4(J2 var1) {
+   public Ww4(J2 var1) {
       this.E = var1;
       this.p = J2.C(this.E);
    }

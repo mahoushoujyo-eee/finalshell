@@ -3,18 +3,15 @@ package com.finalshell.core;
 import com.finalshell.crypto.ConnectHost;
 
 public class Qk2 extends Qi2 {
-   int M = a(13042, 2469231811144375953L);
-   int o = a(26646, 2466085370004767856L);
-   int C = a(32220, 976909586951770557L);
-   int L = a(8224, 4816381615494908992L);
+   public int M = a(13042, 2469231811144375953L);
+   public int o = a(26646, 2466085370004767856L);
+   public int C = a(32220, 976909586951770557L);
+   public int L = a(8224, 4816381615494908992L);
    public static String a;
    public static long[] d;
    public static Integer[] e;
 
-   Qk2() {
-   }
-
-   void u(int var1, int var2, int var3, int var4) {
+   public void u(int var1, int var2, int var3, int var4) {
       this.M = var1;
       this.o = var2;
       this.C = var3;

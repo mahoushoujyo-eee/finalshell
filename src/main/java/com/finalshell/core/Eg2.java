@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.Kc4;
 import java.util.List;
 
 public class Eg2 extends EY {
-   final Kc4 h;
+   public final Kc4 h;
 
-   Eg2(Kc4 var1) {
+   public Eg2(Kc4 var1) {
       this.h = var1;
    }
 

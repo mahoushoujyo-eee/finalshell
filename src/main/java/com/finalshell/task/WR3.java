@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.crypto.ConnectHost;
 
 public class WR3 implements Runnable {
-   final ConnectHost A;
+   public final ConnectHost A;
 
-   WR3(ConnectHost var1) {
+   public WR3(ConnectHost var1) {
       this.A = var1;
    }
 

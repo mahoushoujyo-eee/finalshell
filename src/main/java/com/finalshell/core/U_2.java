@@ -92,19 +92,19 @@ public class U_2 extends BasicColorChooserUI {
       this.K.U(var1);
    }
 
-   static boolean x(U_2 var0) {
+   public static boolean x(U_2 var0) {
       return var0.p;
    }
 
-   static boolean N(U_2 var0, boolean var1) {
+   public static boolean N(U_2 var0, boolean var1) {
       return var0.p = var1;
    }
 
-   static com.finalshell.ui.panel.N_2 c(U_2 var0) {
+   public static com.finalshell.ui.panel.N_2 c(U_2 var0) {
       return var0.K;
    }
 
-   static ColorSelectionModel k(U_2 var0) {
+   public static ColorSelectionModel k(U_2 var0) {
       return var0.o;
    }
 

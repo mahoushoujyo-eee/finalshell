@@ -205,7 +205,7 @@ public class Le4_2 {
                Ln4_2 var8 = (Ln4_2)var1.get(1);
                Y9 var66 = var4;
                if (!var3) {
-                  if (var4 == false) {
+                  if (var4 == null) {
                      Object[] var10002 = Registry.emptyArgs();
                      long var16 = 145535910876897139L;
                      Object[] var15 = var10002;
@@ -671,7 +671,7 @@ public class Le4_2 {
       long var4 = var26;
       long var31;
       int var27 = (var31 = var4 - 0L) == 0L ? 0 : (var31 < 0L ? -1 : 1);
-      if (var1 == false) {
+      if (var1 == null) {
          if (var27 > 0) {
             Object[] var10006 = Registry.emptyArgs();
             long var19 = 162488024198852693L;
@@ -687,7 +687,7 @@ public class Le4_2 {
             long var6 = var29;
             long var32;
             int var30 = (var32 = var4 - var6) == 0L ? 0 : (var32 < 0L ? -1 : 1);
-            if (var1 == false) {
+            if (var1 == null) {
                var30 = var30 > 0 ? 1 : 0;
             }
 
@@ -2044,14 +2044,14 @@ public class Le4_2 {
       Ln4_2 var10001;
       label125: {
          String var3 = var1.C$String(a(-30874, -11363));
-         if (var0 != false) {
+         if (var0 == null) {
             if (var3 != null) {
                var10001 = var3.equals(a(-30857, -9105));
-               if (var0 == false) {
+               if (var0 == null) {
                   break label125;
                }
 
-               if (var10001 != false) {
+               if (var10001 == null) {
                   var3 = a(-30869, -27987);
                }
             }
@@ -2071,8 +2071,8 @@ public class Le4_2 {
          var10001 = var1.containsKey(a(-30907, -14136));
       }
 
-      if (var0 != false) {
-         if (var10001 != false) {
+      if (var0 == null) {
+         if (var10001 == null) {
             var10002 = Registry.packArgs(var1.b(a(-30907, -14136)));
             long var9 = 470936572593593753L;
             Object[] var8 = var10002;
@@ -2088,8 +2088,8 @@ public class Le4_2 {
          var10001 = var1.containsKey(a(-30859, -11238));
       }
 
-      if (var0 != false) {
-         if (var10001 == false) {
+      if (var0 == null) {
+         if (var10001 == null) {
             var1.C(a(-30859, -11238), var1.C$String(a(-30867, 1361)));
          }
 
@@ -2160,14 +2160,14 @@ public class Le4_2 {
             throw var28.getTargetException();
          }
 
-         if (var0 == false) {
+         if (var0 == null) {
             return;
          }
 
          var1.containsKey(a(-30872, 31801));
       }
 
-      if (var10001 != false) {
+      if (var10001 == null) {
          var10002 = Registry.e(var1.I(a(-30872, 31801)));
          long var23 = 561144248899778332L;
          Object[] var22 = var10002;

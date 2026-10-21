@@ -8,9 +8,9 @@ import java.awt.event.MouseMotionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class JQ implements MouseMotionListener {
-   final Bq2 H;
+   public final Bq2 H;
 
-   JQ(Bq2 var1) {
+   public JQ(Bq2 var1) {
       this.H = var1;
    }
 

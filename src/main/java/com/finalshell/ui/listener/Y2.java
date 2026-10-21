@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Y2 implements ActionListener {
-   final ClearListDialog y;
+   public final ClearListDialog y;
    public static long a;
 
-   Y2(ClearListDialog var1) {
+   public Y2(ClearListDialog var1) {
       this.y = var1;
    }
 
@@ -40,7 +40,7 @@ public class Y2 implements ActionListener {
                Object var10 = 603322144267344178L;
                var10003 = ((ClearListDialog)Ref.g(603322144267344178L, var10)).isVisible();
                if (this == null) {
-                  if (var10003 != 0) {
+                  if (var10003 != null) {
                      Object var12 = 603322144267344178L;
                      Ref.g(603322144267344178L, var12);
                      Object[] var10005 = Registry.emptyArgs();
@@ -106,7 +106,7 @@ public class Y2 implements ActionListener {
             Registry.lookupField(433591404553967252L).getBoolean(var45);
          }
 
-         if (var10003 != 0) {
+         if (var10003 != null) {
             Object var26 = 603322144267344178L;
             Ref.g(603322144267344178L, var26);
             Object[] var48 = Registry.packArgs(true);

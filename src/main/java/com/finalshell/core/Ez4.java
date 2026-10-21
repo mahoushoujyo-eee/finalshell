@@ -7,9 +7,9 @@ import java.awt.Rectangle;
 import javax.swing.Icon;
 
 public class Ez4 implements Icon {
-   final Fm2 X;
+   public final Fm2 X;
 
-   protected Ez4(Fm2 var1) {
+   public Ez4(Fm2 var1) {
       this.X = var1;
    }
 

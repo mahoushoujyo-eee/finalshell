@@ -6,7 +6,7 @@ import java.awt.Dimension;
 import javax.swing.JPanel;
 
 public class Ki_4 extends JPanel {
-   Y3 y;
+   public Y3 y;
    public static long[] a;
    public static Integer[] b;
 

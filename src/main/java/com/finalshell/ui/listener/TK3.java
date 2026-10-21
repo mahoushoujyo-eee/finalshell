@@ -7,10 +7,10 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class TK3 implements PopupMenuListener {
-   final com.finalshell.ui.dialog.KQ m;
-   final OQ3 z;
+   public final com.finalshell.ui.dialog.KQ m;
+   public final OQ3 z;
 
-   TK3(OQ3 var1, com.finalshell.ui.dialog.KQ var2) {
+   public TK3(OQ3 var1, com.finalshell.ui.dialog.KQ var2) {
       this.z = var1;
       this.m = var2;
    }

@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Kh4;
 
 public class Ys2 extends YO {
-   final Kh4 C;
+   public final Kh4 C;
 
-   Ys2(Kh4 var1) {
+   public Ys2(Kh4 var1) {
       this.C = var1;
    }
 

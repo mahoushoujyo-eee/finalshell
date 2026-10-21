@@ -11,11 +11,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class C_r_2 implements ActionListener {
-   final KF3 A;
+   public final KF3 A;
    public static String[] a;
    public static String[] b;
 
-   C_r_2(KF3 var1) {
+   public C_r_2(KF3 var1) {
       this.A = var1;
    }
 

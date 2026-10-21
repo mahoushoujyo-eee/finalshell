@@ -7,9 +7,9 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class LR extends Lz2_2 {
-   final com.finalshell.ui.listener.YM P;
+   public final com.finalshell.ui.listener.YM P;
 
-   LR(com.finalshell.ui.listener.YM var1) {
+   public LR(com.finalshell.ui.listener.YM var1) {
       this.P = var1;
    }
 

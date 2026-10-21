@@ -9,15 +9,12 @@ import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
 
 public abstract class YZ implements Ip4 {
-   Signature k;
-   KeyFactory n;
+   public Signature k;
+   public KeyFactory n;
    public static String[] a;
    public static String[] b;
 
-   YZ() {
-   }
-
-   abstract String d();
+   public abstract String d();
 
    @Override
    public void k$void() throws Exception {

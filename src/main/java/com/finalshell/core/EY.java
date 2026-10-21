@@ -9,9 +9,9 @@ import javax.swing.TransferHandler;
 import javax.swing.TransferHandler.TransferSupport;
 
 public class EY extends TransferHandler {
-   protected boolean o;
-   protected int R = 1;
-   protected boolean O;
+   public boolean o;
+   public int R = 1;
+   public boolean O;
    public static int H;
 
    public EY() {
@@ -45,7 +45,7 @@ public class EY extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       int var2 = P$int();
       EY var10000 = this;
       if (var2 == 0) {

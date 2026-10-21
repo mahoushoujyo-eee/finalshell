@@ -1,12 +1,12 @@
 package com.finalshell.core;
 
 public class DW {
-   String F;
-   int l;
-   final A0 z;
+   public String F;
+   public int l;
+   public final A0 z;
    public static long a;
 
-   DW(A0 var1) {
+   public DW(A0 var1) {
       this.z = var1;
       this.l = (int)a;
    }

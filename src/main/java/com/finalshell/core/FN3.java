@@ -1,13 +1,10 @@
 package com.finalshell.core;
 
 public class FN3 {
-   static int[] E;
-   static int[] d;
+   public static int[] E;
+   public static int[] d;
    public static long[] a;
    public static Integer[] b;
-
-   FN3() {
-   }
 
    public static int l(int var0, int var1) {
       return E[(var1 ^ var0) & a(21725, 3598448011523510947L)] ^ var1 >>> a(8821, 3170362179982075337L);

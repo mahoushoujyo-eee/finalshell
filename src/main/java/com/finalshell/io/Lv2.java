@@ -15,16 +15,16 @@ public class Lv2 extends OutputStream {
    public int F;
    public int b;
    public S_2_2 G;
-   byte[] r;
-   final byte[] t;
-   final long[] y;
-   final PO3 g;
-   final DY3 l;
+   public byte[] r;
+   public final byte[] t;
+   public final long[] y;
+   public final PO3 g;
+   public final DY3 l;
    public static String[] a;
    public static String[] c;
    public static long d;
 
-   Lv2(DY3 var1, byte[] var2, long[] var3, PO3 var4) {
+   public Lv2(DY3 var1, byte[] var2, long[] var3, PO3 var4) {
       this.l = var1;
       this.t = var2;
       this.y = var3;

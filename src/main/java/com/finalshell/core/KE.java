@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class KE {
-   final KE O;
-   final boolean o;
-   Object t;
+   public final KE O;
+   public final boolean o;
+   public Object t;
 
    public KE(KE var1, boolean var2) {
       this.O = var1;

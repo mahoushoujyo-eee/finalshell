@@ -16,11 +16,11 @@ import javax.swing.plaf.basic.BasicSplitPaneDivider;
 import javax.swing.plaf.basic.BasicSplitPaneUI;
 
 public class Y3 extends BasicSplitPaneUI implements L0_2 {
-   protected Insets b = C3_3.L;
-   protected Color Z;
-   protected boolean B;
-   protected Color m;
-   protected PropertyChangeListener L;
+   public Insets b = C3_3.L;
+   public Color Z;
+   public boolean B;
+   public Color m;
+   public PropertyChangeListener L;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -119,7 +119,7 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
       return new F2(this, this);
    }
 
-   protected ImageIcon N(boolean var1, boolean var2) {
+   public ImageIcon N(boolean var1, boolean var2) {
       String var5;
       label20: {
          boolean var3 = com.finalshell.ui.panel.O2.r$boolean();
@@ -140,14 +140,14 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
       return Xg2.d(Y3.class.getResource(a(6885, 12412) + var4 + a(6883, 28305)), true);
    }
 
-   protected Dimension E(boolean var1) {
+   public Dimension E(boolean var1) {
       return new Dimension(
          var1 ? a(32149, 1239188166226460575L) : a(9598, 7818254236030855031L), var1 ? a(30694, 226528596870215150L) : a(6479, 5207710223314836292L)
       );
    }
 
    @Override
-   protected Component createDefaultNonContinuousLayoutDivider() {
+   public Component createDefaultNonContinuousLayoutDivider() {
       return new X3(this);
    }
 
@@ -203,15 +203,15 @@ public class Y3 extends BasicSplitPaneUI implements L0_2 {
       }
    }
 
-   static JSplitPane X(Y3 var0) {
+   public static JSplitPane X(Y3 var0) {
       return var0.splitPane;
    }
 
-   static int J(Y3 var0) {
+   public static int J(Y3 var0) {
       return var0.dividerSize;
    }
 
-   static int H(Y3 var0) {
+   public static int H(Y3 var0) {
       return var0.dividerSize;
    }
 

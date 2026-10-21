@@ -6,16 +6,16 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class Kn4 implements Runnable {
-   Object[] T;
-   String K;
-   String N;
+   public Object[] T;
+   public String K;
+   public String N;
 
-   Kn4(Object[] var1) {
+   public Kn4(Object[] var1) {
       this.T = var1;
       this.K = this.N = null;
    }
 
-   Kn4(Object[] var1, String var2, String var3) {
+   public Kn4(Object[] var1, String var2, String var3) {
       this.T = var1;
       this.K = var2;
       this.N = var3;

@@ -16,10 +16,10 @@ import java.util.Map.Entry;
 @XStreamAlias("ValuesTable")
 @XStreamConverter(YF_2.class)
 public class U0 implements Serializable {
-   protected List l;
-   protected List I;
-   protected Map b;
-   protected Map n;
+   public List l;
+   public List I;
+   public Map b;
+   public Map n;
    public static String[] A;
    public static String[] c;
    public static String[] d;
@@ -295,7 +295,7 @@ public class U0 implements Serializable {
       this.n.put(var3, var2);
    }
 
-   protected void Y(int var1) {
+   public void Y(int var1) {
       Object var2 = this.l.remove(var1);
       Object var3 = this.I.remove(var1);
       this.b.remove(var2);
@@ -354,7 +354,7 @@ public class U0 implements Serializable {
       return this.l.size();
    }
 
-   protected String A(int var1) {
+   public String A(int var1) {
       return a(16687, 32083) + var1 + a(16686, 28605) + this.v();
    }
 

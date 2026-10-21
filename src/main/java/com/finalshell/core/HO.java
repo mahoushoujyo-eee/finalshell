@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class HO {
-   protected static boolean k;
+   public static boolean k;
 
    public static synchronized void n() {
       boolean var0 = I22.X$boolean();

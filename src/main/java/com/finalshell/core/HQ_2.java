@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class HQ_2 extends HP_2 {
-   static boolean b;
-   final Hg2_2 h;
+   public static boolean b;
+   public final Hg2_2 h;
    public static String c;
 
-   HQ_2(Hg2_2 var1) {
+   public HQ_2(Hg2_2 var1) {
       super(var1);
       this.h = var1;
    }

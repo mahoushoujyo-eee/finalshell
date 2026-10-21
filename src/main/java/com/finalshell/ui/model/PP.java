@@ -6,7 +6,7 @@ import java.util.EnumMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
 
-public final class PP extends Enum {
+public final class PP {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -46,11 +46,10 @@ public final class PP extends Enum {
    }
 
    public static PP valueOf(String var0) {
-      return Enum.valueOf(PP.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public PP(String var1, int var2) {
-      super(var1, var2);
    }
 
    public ImageIcon S() {
@@ -1041,7 +1040,7 @@ public final class PP extends Enum {
                                     table = new PP(a(14213, -21714), a(17391, 7135001358361734432L));
                                     map = new PP(a(14212, 12098), a(4715, 3447654108622257325L));
                                     N = g();
-                                    m = new EnumMap<>(PP.class);
+                                    m = new EnumMap(PP.class);
                                     return;
                                  }
                                  break;

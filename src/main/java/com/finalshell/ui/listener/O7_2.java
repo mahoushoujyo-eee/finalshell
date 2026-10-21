@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class O7_2 implements ActionListener {
-   final LoginDialog U;
+   public final LoginDialog U;
 
-   O7_2(LoginDialog var1) {
+   public O7_2(LoginDialog var1) {
       this.U = var1;
    }
 

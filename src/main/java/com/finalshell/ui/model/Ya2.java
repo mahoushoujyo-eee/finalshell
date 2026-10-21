@@ -7,9 +7,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Ya2 implements Comparator {
-   Ya2() {
-   }
-
    public int m(L1 var1, L1 var2) {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 162488024198852693L;

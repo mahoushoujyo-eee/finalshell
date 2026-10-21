@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Fx2;
 import java.lang.reflect.InvocationTargetException;
 
 public class B6 implements Runnable {
-   final Fx2 Y;
+   public final Fx2 Y;
 
-   B6(Fx2 var1) {
+   public B6(Fx2 var1) {
       this.Y = var1;
    }
 

@@ -16,12 +16,12 @@ public class KN3 extends Ky4 implements Au2 {
    public static ImageIcon m;
    public static ImageIcon M;
    public static ImageIcon g;
-   protected String h;
-   protected Dh4 n;
-   protected final Ky4 o;
-   protected final O X;
-   protected final Ky4 P;
-   protected final KD N;
+   public String h;
+   public Dh4 n;
+   public final Ky4 o;
+   public final O X;
+   public final Ky4 P;
+   public final KD N;
    public static String[] a;
    public static String[] b;
 
@@ -156,7 +156,7 @@ public class KN3 extends Ky4 implements Au2 {
       this.X.setText(var1);
    }
 
-   protected Icon a(Dh4 var1) {
+   public Icon a(Dh4 var1) {
       int var2 = Ku4.H();
       boolean var10000 = var1.equals(Dh4.top);
       if (var2 == 0) {

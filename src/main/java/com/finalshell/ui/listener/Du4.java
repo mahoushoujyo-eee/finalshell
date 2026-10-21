@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Du4 implements ActionListener {
-   final HD q;
+   public final HD q;
 
-   Du4(HD var1) {
+   public Du4(HD var1) {
       this.q = var1;
    }
 

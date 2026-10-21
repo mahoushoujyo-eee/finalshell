@@ -4,23 +4,20 @@ import com.finalshell.crypto.ConnectHost;
 
 public abstract class CL extends Cv2 {
    public int W;
-   byte[] o;
-   byte[] z;
-   byte[] e;
-   byte[] i;
-   byte[] Q;
+   public byte[] o;
+   public byte[] z;
+   public byte[] e;
+   public byte[] i;
+   public byte[] Q;
    public UJ Z;
    public YU K;
    public C_3_2 O;
-   protected String Y;
-   protected int N;
+   public String Y;
+   public int N;
    public static String[] d;
    public static String[] f;
    public static long[] l;
    public static Integer[] m;
-
-   CL() {
-   }
 
    @Override
    public void x(ConnectHost param1, byte[] param2, byte[] param3, byte[] param4, byte[] param5) throws Exception {

@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.awt.image.BufferedImage;
 
 public abstract class Gj4 extends HN3 {
-   protected int[] f;
-   protected int[] d;
-   protected int[] M;
-   protected boolean N = false;
+   public int[] f;
+   public int[] d;
+   public int[] M;
+   public boolean N = false;
    public static long[] c;
    public static Integer[] e;
 
@@ -41,12 +41,12 @@ public abstract class Gj4 extends HN3 {
       return var10000.filter(var1, var2);
    }
 
-   protected void D() {
+   public void D() {
       this.N = true;
       this.f = this.d = this.M = this.f();
    }
 
-   protected int[] f() {
+   public int[] f() {
       int[] var2 = new int[a(25968, 6046869089493836850L)];
       String[] var10000 = W5.q();
       int var3 = 0;
@@ -75,7 +75,7 @@ public abstract class Gj4 extends HN3 {
       return var4;
    }
 
-   protected float q(float var1) {
+   public float q(float var1) {
       return 0.0F;
    }
 

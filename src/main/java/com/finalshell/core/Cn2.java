@@ -31,7 +31,7 @@ public class Cn2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeShort(this.P.length);
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       F2_3[] var3 = this.P;
@@ -49,7 +49,7 @@ public class Cn2 extends Y_3 {
       }
    }
 
-   static Y_3 Z(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 Z(short var0, DataInputStream var1) throws IOException {
       return Q(var0, var1);
    }
 }

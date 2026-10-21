@@ -565,7 +565,7 @@ public class AN_2 implements LayoutManager {
       // f4: return
    }
 
-   AN_2(Rb4 var1) {
+   public AN_2(Rb4 var1) {
       this();
    }
 

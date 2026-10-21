@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Kq4 {
-   String q;
-   int F;
-   String o;
-   String H;
+   public String q;
+   public int F;
+   public String o;
+   public String H;
 
    public String R() {
       return this.q;

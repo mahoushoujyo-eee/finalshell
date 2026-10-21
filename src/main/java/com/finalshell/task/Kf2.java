@@ -7,9 +7,6 @@ public class Kf2 implements Runnable {
    public static Integer[] d;
    public static long e;
 
-   Kf2() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

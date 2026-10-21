@@ -14,19 +14,19 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class SPanel extends JPanel {
-   Lv4_2 U;
-   boolean F;
-   Kz_4 w;
-   JLabel g;
+   public Lv4_2 U;
+   public boolean F;
+   public Kz_4 w;
+   public JLabel g;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   SPanel(Lv4_2 var1, boolean var2) {
+   public SPanel(Lv4_2 var1, boolean var2) {
+   super();
       String var6;
       label17: {
-         super();
          Registry.lookupField(411215649304430257L).setBoolean(this, var2);
          SpeedTestFrame.K();
          long var8 = 544833948968310431L;
@@ -85,7 +85,7 @@ public class SPanel extends JPanel {
          Ky4[] var2 = var10000;
          KV var30 = Registry.lookupField(411215649304430257L).getBoolean(this);
          if (var2 != null) {
-            if (var30 != 0) {
+            if (var30 != null) {
                ArrayList var10001 = (ArrayList)(Registry.emptyArgs());
                long var5 = 342518482064718676L;
                Object[] var4 = var10001;

@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Z4 implements ActionListener {
-   final Y7 R;
+   public final Y7 R;
 
-   Z4(Y7 var1) {
+   public Z4(Y7 var1) {
       this.R = var1;
    }
 

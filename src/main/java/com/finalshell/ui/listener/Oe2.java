@@ -11,9 +11,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Oe2 implements ActionListener {
-   final AccelerateRdpHelpPanel s;
+   public final AccelerateRdpHelpPanel s;
 
-   Oe2(AccelerateRdpHelpPanel var1) {
+   public Oe2(AccelerateRdpHelpPanel var1) {
       this.s = var1;
    }
 

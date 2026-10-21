@@ -5,10 +5,10 @@ import com.finalshell.ui.panel.XT3;
 import javax.swing.event.AncestorEvent;
 
 public class N_2 extends FY {
-   final XT3 f;
-   final com.finalshell.ui.panel.T M;
+   public final XT3 f;
+   public final com.finalshell.ui.panel.T M;
 
-   N_2(com.finalshell.ui.panel.T var1, XT3 var2) {
+   public N_2(com.finalshell.ui.panel.T var1, XT3 var2) {
       this.M = var1;
       this.f = var2;
    }

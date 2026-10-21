@@ -16,7 +16,7 @@ public final class NI_3 extends NV_2 {
       this.Y = null;
    }
 
-   NI_3(com.finalshell.ui.model.I var1, Hd2 var2, NJ_3 var3) {
+   public NI_3(com.finalshell.ui.model.I var1, Hd2 var2, NJ_3 var3) {
       super(var1);
       this.U = null;
       this.L = var3;

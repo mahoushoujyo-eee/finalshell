@@ -3,11 +3,11 @@ package com.finalshell.task;
 import com.finalshell.core.M6;
 
 public class Gm2 implements Runnable {
-   final boolean v;
-   final M6 J;
+   public final boolean v;
+   public final M6 J;
    public static long a;
 
-   Gm2(M6 var1, boolean var2) {
+   public Gm2(M6 var1, boolean var2) {
       this.J = var1;
       this.v = var2;
    }

@@ -59,7 +59,7 @@ import javax.swing.JInternalFrame.JDesktopIcon;
 import javax.swing.JPopupMenu.Separator;
 import javax.swing.table.JTableHeader;
 
-public final class KH extends Enum {
+public final class KH {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -112,10 +112,10 @@ public final class KH extends Enum {
    public static KH desktopIcon;
    public static KH internalFrame;
    public static KH optionPane;
-   protected final boolean a;
-   protected final Class P;
-   protected final String x;
-   protected final String s;
+   public final boolean a;
+   public final Class P;
+   public final String x;
+   public final String s;
    public static Map W;
    public static Map V;
    public static KH[] L;
@@ -129,11 +129,10 @@ public final class KH extends Enum {
    }
 
    public static KH valueOf(String var0) {
-      return Enum.valueOf(KH.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public KH(String var1, int var2, boolean var3, Class var4, String var5, String var6) {
-      super(var1, var2);
       this.a = var3;
       this.P = var4;
       this.x = var5;
@@ -1422,7 +1421,7 @@ public final class KH extends Enum {
                                     internalFrame = new KH(a(32186, -18355), a(7112, 8086494144891738450L), false, JInternalFrame.class, a(32182, 10704), A9.zh);
                                     optionPane = new KH(a(32230, -26862), a(7941, 387151002176839078L), false, JOptionPane.class, a(32178, 30371), A9.zw);
                                     L = r();
-                                    W = new EnumMap<>(KH.class);
+                                    W = new EnumMap(KH.class);
                                     V = new HashMap(values().length);
                                     return;
                                  }

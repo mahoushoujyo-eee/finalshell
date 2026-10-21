@@ -4,7 +4,7 @@ import com.finalshell.ui.model.QE;
 
 // $VF: synthetic class
 public class WN3 {
-   static int[] Z;
+   public static int[] Z;
 
    static {
       __vfClinit__();

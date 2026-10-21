@@ -35,21 +35,21 @@ import javax.swing.text.View;
 public class OC3 extends BasicMenuUI implements L0_2 {
    public static ImageIcon r;
    public static ImageIcon U;
-   protected int n;
-   protected int b;
-   protected Insets W;
-   protected int J;
-   protected Color v;
-   protected Color V;
-   protected Color y;
-   protected int D;
-   protected boolean Y;
-   protected int a;
-   protected Og4 o;
-   protected PropertyChangeListener c;
-   protected MouseAdapter w;
-   protected XN u;
-   protected boolean i;
+   public int n;
+   public int b;
+   public Insets W;
+   public int J;
+   public Color v;
+   public Color V;
+   public Color y;
+   public int D;
+   public boolean Y;
+   public int a;
+   public Og4 o;
+   public PropertyChangeListener c;
+   public MouseAdapter w;
+   public XN u;
+   public boolean i;
    public static String[] d;
    public static String[] e;
    public static long[] f;
@@ -459,7 +459,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       }
    }
 
-   protected void M(Graphics2D var1, JMenu var2, boolean var3, boolean var4) {
+   public void M(Graphics2D var1, JMenu var2, boolean var3, boolean var4) {
       int[] var5;
       label73: {
          var5 = Pb4.g();
@@ -553,7 +553,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       GA.R(var1, var2, var10002, var10003, var10004, var10005, var10006, var3 ? GO.J : GO.N);
    }
 
-   protected void v(Graphics2D var1, JMenu var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
+   public void v(Graphics2D var1, JMenu var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
       int[] var9;
       Icon var14;
       label83: {
@@ -656,7 +656,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       }
    }
 
-   protected void C(Graphics2D var1, JMenu var2, FontMetrics var3, int var4, int var5, int var6, int var7, boolean var8, boolean var9) {
+   public void C(Graphics2D var1, JMenu var2, FontMetrics var3, int var4, int var5, int var6, int var7, boolean var8, boolean var9) {
       int[] var10;
       Color var14;
       label36: {
@@ -701,7 +701,7 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       FN.W(var1, var2.getText(), var12, var4, var5 + var7 / 2 + GA.d(var3));
    }
 
-   protected Icon d(JMenu var1) {
+   public Icon d(JMenu var1) {
       int[] var2 = Pb4.g();
       boolean var10000 = var1.getParent() instanceof JPopupMenu;
       if (var2 != null) {
@@ -841,11 +841,11 @@ public class OC3 extends BasicMenuUI implements L0_2 {
       return new Dimension(var4.left + var7 + var16 + var9 + var13 + var4.right, var4.top + var15 + var4.bottom);
    }
 
-   static JMenuItem l(OC3 var0) {
+   public static JMenuItem l(OC3 var0) {
       return var0.menuItem;
    }
 
-   static JMenuItem w(OC3 var0) {
+   public static JMenuItem w(OC3 var0) {
       return var0.menuItem;
    }
 

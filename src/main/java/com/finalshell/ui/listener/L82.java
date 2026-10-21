@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class L82 implements ActionListener {
-   final JCheckBox a;
-   final AutoSelectTab g;
+   public final JCheckBox a;
+   public final AutoSelectTab g;
 
-   L82(AutoSelectTab var1, JCheckBox var2) {
+   public L82(AutoSelectTab var1, JCheckBox var2) {
       this.g = var1;
       this.a = var2;
    }

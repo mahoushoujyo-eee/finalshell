@@ -26,17 +26,17 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicPopupMenuUI;
 
 public class FJ extends BasicPopupMenuUI implements SwingConstants, D7, W2_3, L0_2 {
-   protected Insets Q = Cq4.V;
-   protected int R = Cq4.y;
-   protected boolean U = Cq4.d;
-   protected HQ E;
-   protected PropertyChangeListener J;
-   protected PropertyChangeListener g;
-   protected PropertyChangeListener f;
-   protected PropertyChangeListener p;
-   protected String S = null;
-   protected boolean N = false;
-   protected EL3 P = null;
+   public Insets Q = Cq4.V;
+   public int R = Cq4.y;
+   public boolean U = Cq4.d;
+   public HQ E;
+   public PropertyChangeListener J;
+   public PropertyChangeListener g;
+   public PropertyChangeListener f;
+   public PropertyChangeListener p;
+   public String S = null;
+   public boolean N = false;
+   public EL3 P = null;
    public static String[] a;
    public static String[] b;
 
@@ -386,7 +386,7 @@ public class FJ extends BasicPopupMenuUI implements SwingConstants, D7, W2_3, L0
       GA.q(this.popupMenu, var3, var2);
    }
 
-   protected void v(HQ var1) {
+   public void v(HQ var1) {
       int[] var2 = Pb4.g();
       HQ var10000 = var1;
       if (var2 != null) {
@@ -510,19 +510,19 @@ public class FJ extends BasicPopupMenuUI implements SwingConstants, D7, W2_3, L0
       var10000.u((Graphics2D)var1, FN.N(var2), var2);
    }
 
-   static JPopupMenu T(FJ var0) {
+   public static JPopupMenu T(FJ var0) {
       return var0.popupMenu;
    }
 
-   static JPopupMenu C(FJ var0) {
+   public static JPopupMenu C(FJ var0) {
       return var0.popupMenu;
    }
 
-   static JPopupMenu P(FJ var0) {
+   public static JPopupMenu P(FJ var0) {
       return var0.popupMenu;
    }
 
-   static JPopupMenu V(FJ var0) {
+   public static JPopupMenu V(FJ var0) {
       return var0.popupMenu;
    }
 

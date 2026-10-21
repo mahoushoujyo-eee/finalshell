@@ -5,10 +5,10 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class RL implements DocumentListener {
-   final Runnable z;
-   final Xv4 U;
+   public final Runnable z;
+   public final Xv4 U;
 
-   RL(Xv4 var1, Runnable var2) {
+   public RL(Xv4 var1, Runnable var2) {
       this.U = var1;
       this.z = var2;
    }

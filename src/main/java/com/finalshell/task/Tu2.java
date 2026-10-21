@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Cd2;
 
 public class Tu2 implements Runnable {
-   final V v;
+   public final V v;
    public final Cd2 S;
 
-   Tu2(V var1, Cd2 var2) {
+   public Tu2(V var1, Cd2 var2) {
       this.v = var1;
       this.S = var2;
    }

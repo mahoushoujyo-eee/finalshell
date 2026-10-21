@@ -89,7 +89,7 @@ public class N92 {
       return this.S(var1.I) ? var1.I + a(4839, 7920) : a(4832, 8068) + B8_2.A$long(var1.I);
    }
 
-   boolean S(String var1) {
+   public boolean S(String var1) {
       Ky4[] var10000 = ZS.p();
       int var3 = 0;
       Ky4[] var2 = var10000;
@@ -142,27 +142,27 @@ public class N92 {
       return (boolean)var5;
    }
 
-   static ZzzzF6BeanInfo m(N92 var0) {
+   public static ZzzzF6BeanInfo m(N92 var0) {
       return var0.E;
    }
 
-   static int K(N92 var0) {
+   public static int K(N92 var0) {
       return var0.r;
    }
 
-   static Ph2[] k(N92 var0) {
+   public static Ph2[] k(N92 var0) {
       return var0.v;
    }
 
-   static Ph2[] M(N92 var0, Ph2[] var1) {
+   public static Ph2[] M(N92 var0, Ph2[] var1) {
       return var0.v = var1;
    }
 
-   static String Z(N92 var0) {
+   public static String Z(N92 var0) {
       return var0.s;
    }
 
-   static java.lang.Class O(N92 var0) {
+   public static java.lang.Class O(N92 var0) {
       return var0.V;
    }
 

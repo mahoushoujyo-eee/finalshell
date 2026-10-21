@@ -32,8 +32,8 @@ import org.apache.hc.core5.ssl.SSLContexts;
 import org.apache.hc.core5.util.TimeValue;
 
 public class TL3 {
-   String e;
-   HttpClient d;
+   public String e;
+   public HttpClient d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -157,7 +157,7 @@ public class TL3 {
                   break label42;
                }
 
-               if (var10000 == false) {
+               if (var10000 == null) {
                   return var4;
                }
             } catch (Exception var20) {
@@ -175,7 +175,7 @@ public class TL3 {
          }
 
          try {
-            if (var10000 != false) {
+            if (var10000 == null) {
             }
          } catch (URISyntaxException var18) {
             boolean var27 = false;

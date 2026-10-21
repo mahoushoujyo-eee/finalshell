@@ -14,9 +14,6 @@ public class TE {
    public static String[] a;
    public static String[] b;
 
-   TE() {
-   }
-
    public static void h(Oc2 var0) {
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
@@ -388,22 +385,22 @@ public class TE {
       }
 
       String var3 = var0.C$String(a(13149, -23364));
-      if (var2 == false) {
+      if (var2 == null) {
          label51:
          if (var3 == null) {
             label67: {
                boolean var16 = var0.containsKey(a(13137, -24336));
-               if (var2 == false) {
+               if (var2 == null) {
                   if (var16) {
                      var3 = var0.C$String(a(13147, 3509));
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label51;
                      }
                   }
 
                   var10003 = var0;
                   var10004 = a(13144, 14022);
-                  if (var2 != false) {
+                  if (var2 == null) {
                      break label67;
                   }
 
@@ -536,12 +533,12 @@ public class TE {
             }
 
             O0 var5 = var10005;
-            if (var0 != false) {
+            if (var0 == null) {
                break;
             }
 
             var1.add(var5);
-            if (var0 == false) {
+            if (var0 == null) {
                continue;
             }
          }

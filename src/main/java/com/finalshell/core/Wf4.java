@@ -9,10 +9,10 @@ import javax.swing.TransferHandler;
 import javax.swing.TransferHandler.TransferSupport;
 
 public class Wf4 extends TransferHandler {
-   protected final BX N;
-   protected final com.finalshell.ui.panel.Hd2 I;
-   protected int g = -1;
-   protected At2 P = null;
+   public final BX N;
+   public final com.finalshell.ui.panel.Hd2 I;
+   public int g = -1;
+   public At2 P = null;
    public static long[] a;
    public static Integer[] b;
 
@@ -59,7 +59,7 @@ public class Wf4 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       String[] var2 = BX.B$arrString();
       Wf4 var10000 = this;
       if (var2 == null) {
@@ -75,7 +75,7 @@ public class Wf4 extends TransferHandler {
    }
 
    @Override
-   protected void exportDone(JComponent var1, Transferable var2, int var3) {
+   public void exportDone(JComponent var1, Transferable var2, int var3) {
       Wf4 var7;
       label25: {
          String[] var10000 = BX.B$arrString();
@@ -444,7 +444,7 @@ public class Wf4 extends TransferHandler {
       // 264: ireturn
    }
 
-   protected void e(BX var1) {
+   public void e(BX var1) {
       SwingUtilities.invokeLater(new com.finalshell.task.Hu2(this, var1));
    }
 

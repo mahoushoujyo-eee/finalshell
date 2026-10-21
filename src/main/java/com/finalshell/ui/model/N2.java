@@ -8,14 +8,14 @@ import java.util.Iterator;
 import java.util.zip.ZipFile;
 
 public class N2 extends O_3 {
-   final Y2 Z;
+   public final Y2 Z;
 
-   N2(Y2 var1, Iterator var2) {
+   public N2(Y2 var1, Iterator var2) {
       super(var2);
       this.Z = var1;
    }
 
-   protected J_5 c(Object var1) {
+   public J_5 c(Object var1) {
       File var2 = (File)var1;
 
       try {
@@ -26,7 +26,7 @@ public class N2 extends O_3 {
    }
 
    @Override
-   protected Object w(Object var1) {
+   public Object w(Object var1) {
       return this.c(var1);
    }
 }

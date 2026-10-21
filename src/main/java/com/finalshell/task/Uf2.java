@@ -5,15 +5,15 @@ import com.finalshell.core.Qm2;
 import java.util.HashMap;
 
 public class Uf2 implements Runnable {
-   Thread L;
-   HashMap Z = new HashMap();
+   public Thread L;
+   public HashMap Z = new HashMap();
 
    public Uf2() {
       this.L = new Thread(this);
       this.L.start();
    }
 
-   synchronized void S(Qm2 var1, int var2) {
+   public synchronized void S(Qm2 var1, int var2) {
       com.finalshell.ui.panel.Ky4[] var3 = Qm2.J();
       HashMap var10000 = this.Z;
       Integer var10001 = var1.W;
@@ -31,7 +31,7 @@ public class Uf2 implements Runnable {
       var5.C(var2);
    }
 
-   synchronized void e(Qm2 var1) {
+   public synchronized void e(Qm2 var1) {
       if (!this.Z.containsKey(var1.W)) {
          AT var2 = new AT(var1);
          this.Z.put(var1.W, var2);

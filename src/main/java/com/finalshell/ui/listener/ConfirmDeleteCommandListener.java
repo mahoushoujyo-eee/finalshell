@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteCommandListener implements ActionListener {
-   final Copy3 v;
+   public final Copy3 v;
    public static String[] a;
    public static String[] b;
 
-   ConfirmDeleteCommandListener(Copy3 var1) {
+   public ConfirmDeleteCommandListener(Copy3 var1) {
       this.v = var1;
    }
 

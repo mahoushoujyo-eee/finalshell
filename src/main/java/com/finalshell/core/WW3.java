@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class WW3 implements Q0 {
-   final com.finalshell.task.Ah2 C;
+   public final com.finalshell.task.Ah2 C;
 
-   WW3(com.finalshell.task.Ah2 var1) {
+   public WW3(com.finalshell.task.Ah2 var1) {
       this.C = var1;
    }
 

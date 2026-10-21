@@ -6,8 +6,8 @@ public class NH3 extends Ne4 {
    public boolean G;
 
    public NH3() {
+   super(false);
       Rq4.G();
-      super(false);
       this.G = false;
       this.n(0);
       this.J(0);

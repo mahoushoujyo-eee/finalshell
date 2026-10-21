@@ -9,9 +9,9 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 public class J_2 extends V2 {
-   protected ContainerAdapter F;
-   protected com.finalshell.ui.listener.FY z;
-   protected com.finalshell.ui.panel.KE3 O = null;
+   public ContainerAdapter F;
+   public com.finalshell.ui.listener.FY z;
+   public com.finalshell.ui.panel.KE3 O = null;
 
    public void l(Ov2 var1) {
       this.F = new com.finalshell.ui.listener.P2(this, var1);
@@ -26,7 +26,7 @@ public class J_2 extends V2 {
       this.z = null;
    }
 
-   protected void U() {
+   public void U() {
       int[] var1 = W_2.B$arrint();
       com.finalshell.ui.panel.KE3 var10000 = this.O;
       if (var1 == null) {

@@ -16,17 +16,17 @@ import javax.swing.JLabel;
 import javax.swing.JPopupMenu;
 
 public class K52 implements ActionListener {
-   final String Q;
-   final FX3 W;
-   final JPopupMenu z;
-   final Component a;
-   final JLabel Z;
-   final Color e;
-   final com.finalshell.ui.panel.W8 V;
-   final SelectDownloadFolderPanel c;
+   public final String Q;
+   public final FX3 W;
+   public final JPopupMenu z;
+   public final Component a;
+   public final JLabel Z;
+   public final Color e;
+   public final com.finalshell.ui.panel.W8 V;
+   public final SelectDownloadFolderPanel c;
    public static String b;
 
-   K52(SelectDownloadFolderPanel var1, String var2, FX3 var3, JPopupMenu var4, Component var5, JLabel var6, Color var7, com.finalshell.ui.panel.W8 var8) {
+   public K52(SelectDownloadFolderPanel var1, String var2, FX3 var3, JPopupMenu var4, Component var5, JLabel var6, Color var7, com.finalshell.ui.panel.W8 var8) {
       this.c = var1;
       this.Q = var2;
       this.W = var3;

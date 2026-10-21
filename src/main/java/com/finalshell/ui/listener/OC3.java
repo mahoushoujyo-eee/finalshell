@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class OC3 implements ActionListener {
-   final User Q;
+   public final User Q;
 
-   OC3(User var1) {
+   public OC3(User var1) {
       this.Q = var1;
    }
 

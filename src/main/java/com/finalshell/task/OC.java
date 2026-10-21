@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.io.To2;
 
 public class OC implements Runnable {
-   final To2 w;
+   public final To2 w;
 
-   OC(To2 var1) {
+   public OC(To2 var1) {
       this.w = var1;
    }
 

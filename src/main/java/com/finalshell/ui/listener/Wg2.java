@@ -6,9 +6,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class Wg2 implements ChangeListener {
-   final SetBackgroundImagePanel o;
+   public final SetBackgroundImagePanel o;
 
-   Wg2(SetBackgroundImagePanel var1) {
+   public Wg2(SetBackgroundImagePanel var1) {
       this.o = var1;
    }
 

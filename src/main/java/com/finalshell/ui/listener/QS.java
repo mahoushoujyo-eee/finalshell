@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComboBox;
 
 public class QS implements ActionListener {
-   final JComboBox Q;
-   final AppendCarriageReturnCRPanel p;
+   public final JComboBox Q;
+   public final AppendCarriageReturnCRPanel p;
 
-   QS(AppendCarriageReturnCRPanel var1, JComboBox var2) {
+   public QS(AppendCarriageReturnCRPanel var1, JComboBox var2) {
       this.p = var1;
       this.Q = var2;
    }

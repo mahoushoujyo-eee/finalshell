@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.Address;
 
 public class DF3 implements Runnable {
-   final Address h;
+   public final Address h;
 
-   DF3(Address var1) {
+   public DF3(Address var1) {
       this.h = var1;
    }
 

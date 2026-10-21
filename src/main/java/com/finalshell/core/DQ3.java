@@ -6,7 +6,7 @@ public class DQ3 extends Dq4 {
    public static String[] a;
    public static String[] f;
 
-   DQ3() {
+   public DQ3() {
       this.A = true;
    }
 
@@ -112,7 +112,7 @@ public class DQ3 extends Dq4 {
    }
 
    @Override
-   void n() throws Pc2 {
+   public void n() throws Pc2 {
       this.o.U(this.T().O);
       this.o.H(this.T().l);
    }

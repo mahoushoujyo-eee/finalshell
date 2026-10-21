@@ -4,8 +4,8 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class Fp2 {
-   String W;
-   boolean v;
+   public String W;
+   public boolean v;
 
    public Fp2(String var1, boolean var2) {
       long var4 = 288266638735159654L;

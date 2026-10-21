@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Rf4 implements ActionListener {
-   final OG V;
+   public final OG V;
 
-   Rf4(OG var1) {
+   public Rf4(OG var1) {
       this.V = var1;
    }
 

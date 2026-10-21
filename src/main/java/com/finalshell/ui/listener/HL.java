@@ -5,10 +5,10 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class HL extends WindowAdapter {
-   final Frame c;
-   final Frame e;
+   public final Frame c;
+   public final Frame e;
 
-   HL(Frame var1, Frame var2) {
+   public HL(Frame var1, Frame var2) {
       this.c = var1;
       this.e = var2;
    }

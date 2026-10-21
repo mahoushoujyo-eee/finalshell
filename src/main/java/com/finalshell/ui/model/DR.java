@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
 public class DR extends AbstractTableModel {
-   ArrayList s;
+   public ArrayList s;
    public static String Z;
    public static String M;
    public static String G;
@@ -16,7 +16,7 @@ public class DR extends AbstractTableModel {
    public static String I;
    public static String i;
    public static String j;
-   String[] S;
+   public String[] S;
 
    public DR() {
       ArrayList var10001 = new ArrayList();

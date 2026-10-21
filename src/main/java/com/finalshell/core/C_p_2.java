@@ -3,14 +3,14 @@ package com.finalshell.core;
 import java.util.Date;
 
 public class C_p_2 {
-   int g = 0;
-   long z;
-   int l;
-   int W;
-   int x;
-   int Y;
-   int X;
-   String[] Q = null;
+   public int g = 0;
+   public long z;
+   public int l;
+   public int W;
+   public int x;
+   public int Y;
+   public int X;
+   public String[] Q = null;
    public static long[] a;
    public static Integer[] b;
    public static long[] c;
@@ -178,7 +178,7 @@ public class C_p_2 {
       return var1.toString();
    }
 
-   static C_p_2 Z(UJ var0) {
+   public static C_p_2 Z(UJ var0) {
       C_p_2 var2 = new C_p_2();
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;
       var2.g = var0.d();
@@ -260,7 +260,7 @@ public class C_p_2 {
       return var2;
    }
 
-   int u$int() {
+   public int u$int() {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var2 = 4;
       boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -332,7 +332,7 @@ public class C_p_2 {
       return var10000;
    }
 
-   void c(UJ var1) {
+   public void c(UJ var1) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       var1.u(this.g);
       boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -408,7 +408,7 @@ public class C_p_2 {
       }
    }
 
-   void c(int var1) {
+   public void c(int var1) {
       this.g = var1;
    }
 
@@ -449,7 +449,7 @@ public class C_p_2 {
       if (!var2) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == var1 ? 1 : 0);
+         return (boolean)((var10000 == var1 ? 1 : 0) != 0);
       }
    }
 

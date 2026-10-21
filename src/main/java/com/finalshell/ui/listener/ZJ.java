@@ -12,10 +12,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class ZJ implements TreeSelectionListener {
-   final Kl4 H;
-   final Connection4 b;
+   public final Kl4 H;
+   public final Connection4 b;
 
-   ZJ(Connection4 var1, Kl4 var2) {
+   public ZJ(Connection4 var1, Kl4 var2) {
       this.b = var1;
       this.H = var2;
    }

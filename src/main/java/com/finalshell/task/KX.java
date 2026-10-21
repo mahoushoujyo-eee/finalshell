@@ -1,10 +1,10 @@
 package com.finalshell.task;
 
 public class KX implements Runnable {
-   final com.finalshell.core.PacketLoss e;
+   public final com.finalshell.core.PacketLoss e;
    public final int u;
 
-   KX(com.finalshell.core.PacketLoss var1, int var2) {
+   public KX(com.finalshell.core.PacketLoss var1, int var2) {
       this.e = var1;
       this.u = var2;
    }

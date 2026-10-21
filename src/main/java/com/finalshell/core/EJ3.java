@@ -5,9 +5,6 @@ import java.sql.Time;
 import java.sql.Timestamp;
 
 public class EJ3 implements PK3 {
-   EJ3() {
-   }
-
    public Object i(Object var1, java.lang.Class var2) {
       int var3 = Ph2.u();
       java.lang.Class var10000 = var2;

@@ -2,24 +2,24 @@ package com.finalshell.core;
 
 public class YU {
    public static I82 e;
-   UJ P;
-   byte[] p = new byte[4];
+   public UJ P;
+   public byte[] p = new byte[4];
    public static long[] a;
    public static Integer[] b;
 
-   static void c(I82 var0) {
+   public static void c(I82 var0) {
       e = var0;
    }
 
-   YU(UJ var1) {
+   public YU(UJ var1) {
       this.P = var1;
    }
 
-   void M() {
+   public void M() {
       this.P.X = a(21690, 6771670974593680585L);
    }
 
-   void d(int var1, boolean var2) {
+   public void d(int var1, boolean var2) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var4 = this.P.X;
       boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -65,7 +65,7 @@ public class YU {
       this.P.S(var5);
    }
 
-   int h(int var1, int var2, int var3) {
+   public int h(int var1, int var2, int var3) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var5 = var1 + 5 + a(28033, 1716368427774639606L);
       boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -101,7 +101,7 @@ public class YU {
       return var5;
    }
 
-   void u(byte var1, int var2, int var3, int var4) {
+   public void u(byte var1, int var2, int var3, int var4) {
       System.arraycopy(this.P.g, var3, this.P.g, a(18374, 7143747033848010679L), var4);
       this.P.g[5] = var1;
       this.P.X = a(26882, 721737783733778808L);
@@ -110,7 +110,7 @@ public class YU {
       this.P.X = var4 + 5 + a(9438, 1740106895197123758L);
    }
 
-   UJ I() {
+   public UJ I() {
       return this.P;
    }
 

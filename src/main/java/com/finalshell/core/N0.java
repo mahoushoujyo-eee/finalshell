@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class N0 implements Q0 {
-   final Ty2 N;
+   public final Ty2 N;
 
-   N0(Ty2 var1) {
+   public N0(Ty2 var1) {
       this.N = var1;
    }
 

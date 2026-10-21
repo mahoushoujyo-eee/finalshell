@@ -7,9 +7,9 @@ import java.awt.Graphics;
 import javax.swing.Icon;
 
 public class T2 implements Icon {
-   final Icon V;
+   public final Icon V;
 
-   T2(Icon var1) {
+   public T2(Icon var1) {
       this.V = var1;
    }
 

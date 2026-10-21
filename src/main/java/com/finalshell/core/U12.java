@@ -4,7 +4,7 @@ import com.finalshell.connection.DelayedAckSACK;
 import java.util.HashMap;
 
 public class U12 {
-   HashMap B = new HashMap();
+   public HashMap B = new HashMap();
    public static String a;
 
    public DelayedAckSACK V(String var1, int var2) {

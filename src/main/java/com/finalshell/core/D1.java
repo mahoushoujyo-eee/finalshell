@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class D1 implements Dm2 {
-   final Na4 U;
+   public final Na4 U;
 
-   D1(Na4 var1) {
+   public D1(Na4 var1) {
       this.U = var1;
    }
 

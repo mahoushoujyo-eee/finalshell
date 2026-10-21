@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 
 public class Iu4 implements ActionListener {
    public int M;
-   final int x;
-   final CC D;
+   public final int x;
+   public final CC D;
    public static long a;
 
-   Iu4(CC var1, int var2) {
+   public Iu4(CC var1, int var2) {
       this.D = var1;
       this.x = var2;
       this.M = (int)a;

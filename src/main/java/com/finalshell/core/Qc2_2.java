@@ -7,9 +7,6 @@ public class Qc2_2 extends Qi2 {
    public static String[] d;
    public static long e;
 
-   Qc2_2() {
-   }
-
    public void Z(String var1) {
       De4.a = E8.J(var1);
    }

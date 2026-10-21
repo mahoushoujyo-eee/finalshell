@@ -4,21 +4,21 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class YA3_2 {
-   int w;
-   String G;
-   int b;
-   String r;
-   int d;
-   int v;
+   public int w;
+   public String G;
+   public int b;
+   public String r;
+   public int d;
+   public int v;
    public static int h;
    public static int m;
-   int z;
+   public int z;
    public static int f;
    public static int R;
-   int F;
-   long N;
-   long J;
-   String K;
+   public int F;
+   public long N;
+   public long J;
+   public String K;
 
    public YA3_2() {
       Registry.lookupField(190631636615254067L).setInt(this, Registry.lookupField(606321257807092289L).getInt(null));

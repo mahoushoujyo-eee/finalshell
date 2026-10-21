@@ -17,15 +17,15 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class KC extends DefaultCellEditor {
-   Ne4 b;
-   com.finalshell.ui.panel.Wb2 O;
-   final Connection4 x;
+   public Ne4 b;
+   public com.finalshell.ui.panel.Wb2 O;
+   public final Connection4 x;
    public static String[] a;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   KC(Connection4 var1, JTextField var2) {
+   public KC(Connection4 var1, JTextField var2) {
       super(var2);
       this.x = var1;
       DN var10001 = new DN();
@@ -572,7 +572,7 @@ public class KC extends DefaultCellEditor {
                      byte var10007 = 1;
                      if (var2 != null) {
                         label73: {
-                           if (var5 == 1) {
+                           if (var5 == null) {
                               var10006 = this;
                               Object var20 = 489572751534480599L;
                               boolean var37 = Registry.lookupField(257707175806650747L).getBoolean(Ref.g(489572751534480599L, var20));

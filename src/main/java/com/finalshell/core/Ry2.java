@@ -8,17 +8,17 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JComponent;
 
 public class Ry2 extends R7 {
-   final Window c;
-   final ComponentAdapter j;
-   final com.finalshell.ui.listener.Rt2 Q;
-   final Component u;
-   final ComponentAdapter A;
-   final com.finalshell.ui.listener.FY i;
-   final PropertyChangeListener f;
-   final Ds2 H;
+   public final Window c;
+   public final ComponentAdapter j;
+   public final com.finalshell.ui.listener.Rt2 Q;
+   public final Component u;
+   public final ComponentAdapter A;
+   public final com.finalshell.ui.listener.FY i;
+   public final PropertyChangeListener f;
+   public final Ds2 H;
    public static String a;
 
-   Ry2(
+   public Ry2(
       Ds2 var1,
       Window var2,
       ComponentAdapter var3,
@@ -48,7 +48,7 @@ public class Ry2 extends R7 {
       this.T();
    }
 
-   protected void T() {
+   public void T() {
       this.H.b(this);
       this.c.removeComponentListener(this.j);
       int[] var10000 = Ds2.U$arrint();

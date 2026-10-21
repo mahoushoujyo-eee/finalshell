@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
 public class UJ implements ActionListener {
-   final JFrame E;
-   final com.finalshell.ui.frame.U f;
-   final AcceleratePanel S;
+   public final JFrame E;
+   public final com.finalshell.ui.frame.U f;
+   public final AcceleratePanel S;
 
-   UJ(AcceleratePanel var1, JFrame var2, com.finalshell.ui.frame.U var3) {
+   public UJ(AcceleratePanel var1, JFrame var2, com.finalshell.ui.frame.U var3) {
       this.S = var1;
       this.E = var2;
       this.f = var3;

@@ -8,28 +8,28 @@ import java.io.OutputStream;
 import java.util.Vector;
 
 public abstract class Dm4 {
-   static int H;
+   public static int H;
    public static Vector I;
-   int t;
-   volatile int V = -1;
-   protected byte[] Y = E8.J(a(31478, -13144));
-   volatile int y = a(1122, 6484861095692639415L);
-   volatile int e = this.y;
-   volatile int B = a(32488, 917304917054842422L);
-   volatile long z = 0L;
-   volatile int c = 0;
-   Cs4 o = null;
-   Thread Z = null;
-   volatile boolean K = false;
-   volatile boolean E = false;
-   volatile boolean S = false;
-   volatile boolean X = false;
-   volatile boolean m = false;
-   volatile int d = -1;
-   volatile int b = 0;
-   volatile int j = 0;
-   protected ConnectHost w;
-   int r = 0;
+   public int t;
+   public volatile int V = -1;
+   public byte[] Y = E8.J(a(31478, -13144));
+   public volatile int y = a(1122, 6484861095692639415L);
+   public volatile int e = this.y;
+   public volatile int B = a(32488, 917304917054842422L);
+   public volatile long z = 0L;
+   public volatile int c = 0;
+   public Cs4 o = null;
+   public Thread Z = null;
+   public volatile boolean K = false;
+   public volatile boolean E = false;
+   public volatile boolean S = false;
+   public volatile boolean X = false;
+   public volatile boolean m = false;
+   public volatile int d = -1;
+   public volatile int b = 0;
+   public volatile int j = 0;
+   public ConnectHost w;
+   public int r = 0;
    public static boolean k;
    public static String[] ab;
    public static String[] bb;
@@ -37,7 +37,7 @@ public abstract class Dm4 {
    public static Integer[] ib;
    public static long nb;
 
-   static Dm4 a(String param0, ConnectHost param1) {
+   public static Dm4 a(String param0, ConnectHost param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -208,7 +208,7 @@ public abstract class Dm4 {
       // 169: areturn
    }
 
-   static Dm4 A(int param0, ConnectHost param1) {
+   public static Dm4 A(int param0, ConnectHost param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -282,20 +282,20 @@ public abstract class Dm4 {
       // 7f: areturn
    }
 
-   static void x(Dm4 var0) {
+   public static void x(Dm4 var0) {
       synchronized (I) {
          I.removeElement(var0);
       }
    }
 
-   Dm4() {
+   public Dm4() {
       synchronized (I) {
          this.t = H++;
          I.addElement(this);
       }
    }
 
-   synchronized void N(int param1) {
+   public synchronized void N(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -325,11 +325,11 @@ public abstract class Dm4 {
       // 26: return
    }
 
-   int J$int() {
+   public int J$int() {
       return this.V;
    }
 
-   void n() throws Pc2 {
+   public void n() throws Pc2 {
    }
 
    public void I() throws Pc2 {
@@ -395,7 +395,7 @@ public abstract class Dm4 {
       return this.E;
    }
 
-   void D(UJ var1) {
+   public void D(UJ var1) {
       this.N(var1.d());
       this.X(var1.K());
       this.A(var1.d());
@@ -555,23 +555,23 @@ public abstract class Dm4 {
       return new ED(this, this);
    }
 
-   void M(int var1) {
+   public void M(int var1) {
       this.y = var1;
    }
 
-   void Q(int var1) {
+   public void Q(int var1) {
       this.e = var1;
    }
 
-   void f(int var1) {
+   public void f(int var1) {
       this.B = var1;
    }
 
-   synchronized void X(long var1) {
+   public synchronized void X(long var1) {
       this.z = var1;
    }
 
-   synchronized void p(long param1) {
+   public synchronized void p(long param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -604,31 +604,31 @@ public abstract class Dm4 {
       // 2b: return
    }
 
-   void A(int var1) {
+   public void A(int var1) {
       this.c = var1;
    }
 
-   abstract void S();
+   public abstract void S();
 
-   void Q(byte[] var1) throws IOException {
+   public void Q(byte[] var1) throws IOException {
       this.Y(var1, 0, var1.length);
    }
 
-   void Y(byte[] var1, int var2, int var3) throws IOException {
+   public void Y(byte[] var1, int var2, int var3) throws IOException {
       try {
          this.o.z(var1, var2, var3);
       } catch (NullPointerException var5) {
       }
    }
 
-   void n(byte[] var1, int var2, int var3) throws IOException {
+   public void n(byte[] var1, int var2, int var3) throws IOException {
       try {
          this.o.m(var1, var2, var3);
       } catch (NullPointerException var5) {
       }
    }
 
-   void x$void() {
+   public void x$void() {
       this.E = true;
 
       try {
@@ -639,7 +639,7 @@ public abstract class Dm4 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void F$void() {
+   public void F$void() {
       boolean var1 = J$boolean();
 
       int var10000;
@@ -698,7 +698,7 @@ public abstract class Dm4 {
       }
    }
 
-   void A() {
+   public void A() {
       boolean var1 = J$boolean();
 
       int var10000;
@@ -748,7 +748,7 @@ public abstract class Dm4 {
       return this.S;
    }
 
-   static void h(ConnectHost param0) {
+   public static void h(ConnectHost param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -928,7 +928,7 @@ public abstract class Dm4 {
       var2.Q(this.T(), this);
    }
 
-   void j(int var1) {
+   public void j(int var1) {
       this.d = var1;
    }
 
@@ -936,7 +936,7 @@ public abstract class Dm4 {
       return this.d;
    }
 
-   void D(ConnectHost var1) {
+   public void D(ConnectHost var1) {
       this.w = var1;
    }
 
@@ -978,7 +978,7 @@ public abstract class Dm4 {
       return this.t;
    }
 
-   protected void l() throws Exception {
+   public void l() throws Exception {
       UJ var1 = new UJ(a(24661, 4647585161351919753L));
       YU var2 = new YU(var1);
       var2.M();
@@ -990,7 +990,7 @@ public abstract class Dm4 {
       this.T().D(var2);
    }
 
-   protected void d(int var1) {
+   public void d(int var1) {
       try {
          UJ var2 = new UJ(a(19428, 5169469720928867124L));
          YU var3 = new YU(var2);
@@ -1005,7 +1005,7 @@ public abstract class Dm4 {
       }
    }
 
-   protected YU V() {
+   public YU V() {
       UJ var1 = new UJ(a(19428, 5169469720928867124L));
       YU var2 = new YU(var1);
       var2.M();
@@ -1017,7 +1017,7 @@ public abstract class Dm4 {
       return var2;
    }
 
-   protected void M() throws Exception {
+   public void M() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

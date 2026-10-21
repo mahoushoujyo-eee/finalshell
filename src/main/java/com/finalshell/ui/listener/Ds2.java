@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextField;
 
 public class Ds2 implements ActionListener {
-   final AW N;
+   public final AW N;
 
-   Ds2(AW var1) {
+   public Ds2(AW var1) {
       this.N = var1;
    }
 

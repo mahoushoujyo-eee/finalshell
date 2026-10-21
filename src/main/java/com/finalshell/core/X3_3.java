@@ -7,8 +7,8 @@ import java.util.TooManyListenersException;
 import jtermios.j;
 
 public class X3_3 extends XJ_2 {
-   final boolean e;
-   final boolean U;
+   public final boolean e;
+   public final boolean U;
    public Thread J;
    public volatile FW3 s;
    public volatile OutputStream i;
@@ -2075,7 +2075,7 @@ public class X3_3 extends XJ_2 {
       // 374: return
    }
 
-   X3_3(String param1, int param2) throws O {
+   public X3_3(String param1, int param2) throws O {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2937,119 +2937,119 @@ public class X3_3 extends XJ_2 {
       return this.w;
    }
 
-   static void W(X3_3 var0) {
+   public static void W(X3_3 var0) {
       var0.Q();
    }
 
-   static int i(X3_3 var0) {
+   public static int i(X3_3 var0) {
       return var0.j;
    }
 
-   static boolean J(X3_3 var0, boolean var1) {
+   public static boolean J(X3_3 var0, boolean var1) {
       return var0.K = var1;
    }
 
-   static int Y$int(X3_3 var0) {
+   public static int Y$int(X3_3 var0) {
       return var0.x;
    }
 
-   static boolean n$boolean(X3_3 var0) {
+   public static boolean n$boolean(X3_3 var0) {
       return var0.A;
    }
 
-   static boolean p(X3_3 var0) {
+   public static boolean p(X3_3 var0) {
       return var0.I;
    }
 
-   static Object n$Object(X3_3 var0) {
+   public static Object n$Object(X3_3 var0) {
       return var0.h;
    }
 
-   static boolean s(X3_3 var0) {
+   public static boolean s(X3_3 var0) {
       return var0.D;
    }
 
-   static int m(X3_3 var0) {
+   public static int m(X3_3 var0) {
       return var0.H;
    }
 
-   static boolean x(X3_3 var0) {
+   public static boolean x(X3_3 var0) {
       return var0.v;
    }
 
-   static int I(X3_3 var0) {
+   public static int I(X3_3 var0) {
       return var0.f;
    }
 
-   static jtermios.X P$X(X3_3 var0) {
+   public static jtermios.X P$X(X3_3 var0) {
       return var0.Z;
    }
 
-   static void c(X3_3 var0, int var1) {
+   public static void c(X3_3 var0, int var1) {
       var0.C(var1);
    }
 
-   static boolean H(X3_3 var0, boolean var1) {
+   public static boolean H(X3_3 var0, boolean var1) {
       return var0.I = var1;
    }
 
-   static boolean z(X3_3 var0, boolean var1) {
+   public static boolean z(X3_3 var0, boolean var1) {
       return var0.t = var1;
    }
 
-   static int B(X3_3 var0) {
+   public static int B(X3_3 var0) {
       return var0.X;
    }
 
-   static boolean Y$boolean(X3_3 var0) {
+   public static boolean Y$boolean(X3_3 var0) {
       return var0.b;
    }
 
-   static boolean o(X3_3 var0, boolean var1) {
+   public static boolean o(X3_3 var0, boolean var1) {
       return var0.w = var1;
    }
 
-   static boolean L(X3_3 var0) {
+   public static boolean L(X3_3 var0) {
       return var0.T;
    }
 
-   static boolean T(X3_3 var0) {
+   public static boolean T(X3_3 var0) {
       return var0.t;
    }
 
-   static boolean r(X3_3 var0) {
+   public static boolean r(X3_3 var0) {
       return var0.V;
    }
 
-   static boolean l(X3_3 var0) {
+   public static boolean l(X3_3 var0) {
       return var0.K;
    }
 
-   static boolean C(X3_3 var0) {
+   public static boolean C(X3_3 var0) {
       return var0.c;
    }
 
-   static boolean P$boolean(X3_3 var0) {
+   public static boolean P$boolean(X3_3 var0) {
       return var0.r;
    }
 
-   static boolean c(X3_3 var0) {
+   public static boolean c(X3_3 var0) {
       return var0.F;
    }
 
-   static boolean g(X3_3 var0) {
+   public static boolean g(X3_3 var0) {
       return var0.S;
    }
 
-   static FW3 U(X3_3 var0) {
+   public static FW3 U(X3_3 var0) {
       return var0.s;
    }
 
-   static void w(X3_3 var0, boolean var1, boolean var2) {
+   public static void w(X3_3 var0, boolean var1, boolean var2) {
       var0.K(var1, var2);
    }
 
-   static void j(X3_3 var0) {
+   public static void j(X3_3 var0) {
       var0.n();
    }
 

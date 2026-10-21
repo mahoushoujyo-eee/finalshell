@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CU implements ActionListener {
-   final Fg2 Z;
+   public final Fg2 Z;
 
-   CU(Fg2 var1) {
+   public CU(Fg2 var1) {
       this.Z = var1;
    }
 

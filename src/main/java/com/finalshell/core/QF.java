@@ -8,9 +8,6 @@ public class QF extends Qi2 {
    public static String[] e;
    public static long f;
 
-   QF() {
-   }
-
    public void i(String var1) {
       this.d = var1;
    }

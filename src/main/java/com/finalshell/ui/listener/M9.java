@@ -11,11 +11,11 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class M9 implements MouseListener {
-   final SelectDownloadFolderPanel P;
-   final Fr4 m;
-   final DT T;
+   public final SelectDownloadFolderPanel P;
+   public final Fr4 m;
+   public final DT T;
 
-   M9(DT var1, SelectDownloadFolderPanel var2, Fr4 var3) {
+   public M9(DT var1, SelectDownloadFolderPanel var2, Fr4 var3) {
       this.T = var1;
       this.P = var2;
       this.m = var3;
@@ -53,7 +53,7 @@ public class M9 implements MouseListener {
             Object var15 = 520595572764773303L;
             DT var10008 = (DT)Ref.g(520595572764773303L, var15);
             Object var17 = 504540812240479562L;
-new M9(var10008, this, (Fr4)Ref.g(504540812240479562L, var17));
+var10007 = new M9(var10008, this, (Fr4)Ref.g(504540812240479562L, var17));
             Object var19 = 256408289213989983L;
             Object var30 = Ref.g(256408289213989983L, var19);
             Object var21 = 520595572764773303L;

@@ -1,6 +1,6 @@
 package com.finalshell.ui.model;
 
-public final class S_3 extends Enum {
+public final class S_3 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -17,11 +17,10 @@ public final class S_3 extends Enum {
    }
 
    public static S_3 valueOf(String var0) {
-      return Enum.valueOf(S_3.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public S_3(String var1, int var2) {
-      super(var1, var2);
    }
 
    public static S_3 X(String param0) {

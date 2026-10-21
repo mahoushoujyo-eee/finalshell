@@ -12,7 +12,7 @@ public class GG3 extends Gj4 {
    public static Integer[] g;
 
    @Override
-   protected float q(float var1) {
+   public float q(float var1) {
       var1 *= this.Z;
       return (var1 - 0.5F) * this.m + 0.5F;
    }

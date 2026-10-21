@@ -7,7 +7,7 @@ public abstract class Fr2_2 implements C_u_2 {
    public final com.finalshell.ui.model.I y;
    public static Ky4[] c;
 
-   protected Fr2_2(com.finalshell.ui.model.I var1) {
+   public Fr2_2(com.finalshell.ui.model.I var1) {
       this.y = var1;
    }
 

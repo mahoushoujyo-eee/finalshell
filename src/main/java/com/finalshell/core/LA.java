@@ -12,10 +12,10 @@ import java.awt.geom.RoundRectangle2D.Double;
 import javax.swing.JComponent;
 
 public class LA extends Lz2_2 {
-   protected int i = FT.T;
-   protected int w = FT.y;
-   protected Color L = FT.q;
-   protected Stroke h = null;
+   public int i = FT.T;
+   public int w = FT.y;
+   public Color L = FT.q;
+   public Stroke h = null;
 
    public LA() {
       this.p();
@@ -73,7 +73,7 @@ public class LA extends Lz2_2 {
       this.l();
    }
 
-   protected void p() {
+   public void p() {
       this.h = new BasicStroke((float)this.a(), 1, 1);
    }
 
@@ -125,7 +125,7 @@ public class LA extends Lz2_2 {
       RV.X(var1, var5);
    }
 
-   protected RectangularShape v(Rectangle var1) {
+   public RectangularShape v(Rectangle var1) {
       double var5;
       label18: {
          int[] var2 = Lz2_2.M();

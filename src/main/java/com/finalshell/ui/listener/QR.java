@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class QR implements ActionListener {
-   final RouteTracePanel2 k;
+   public final RouteTracePanel2 k;
 
-   QR(RouteTracePanel2 var1) {
+   public QR(RouteTracePanel2 var1) {
       this.k = var1;
    }
 

@@ -23,18 +23,18 @@ import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
 public class U3 extends S {
-   protected Boolean r = Bt2.k;
-   protected Integer j = Bt2.N;
-   protected Boolean T = Bt2.O;
-   protected Boolean E = Bt2.Y;
-   protected Boolean Y = Bt2.E;
-   protected SV M;
-   protected P6 o;
-   protected TreeCellRenderer B;
-   protected Oh2 u;
-   protected Oh2 d;
-   protected WA G;
-   protected List n = new ArrayList(1);
+   public Boolean r = Bt2.k;
+   public Integer j = Bt2.N;
+   public Boolean T = Bt2.O;
+   public Boolean E = Bt2.Y;
+   public Boolean Y = Bt2.E;
+   public SV M;
+   public P6 o;
+   public TreeCellRenderer B;
+   public Oh2 u;
+   public Oh2 d;
+   public WA G;
+   public List n = new ArrayList(1);
 
    public U3() {
    }
@@ -64,7 +64,7 @@ public class U3 extends S {
    }
 
    @Override
-   protected void B$void() {
+   public void B$void() {
       this.M = this.p(this);
       this.G = new WA(this);
       this.addMouseListener(this.G);
@@ -103,7 +103,7 @@ public class U3 extends S {
       super.setCellRenderer(this.o);
    }
 
-   protected Q6 h$Q6() {
+   public Q6 h$Q6() {
       return new Q6(this);
    }
 
@@ -332,7 +332,7 @@ public class U3 extends S {
       }
    }
 
-   protected SV p(U3 var1) {
+   public SV p(U3 var1) {
       return new D5_2(var1);
    }
 

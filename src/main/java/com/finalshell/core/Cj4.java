@@ -27,14 +27,14 @@ public abstract class Cj4 extends Fv2_2{
    public Dimension C;
    public Dimension G;
    public OutputStreamWriter Y;
-   InputStreamReader W;
-   boolean e;
-   String c;
+   public InputStreamReader W;
+   public boolean e;
+   public String c;
    public ConnectionProperty R;
    public Lv4_2 U;
-   boolean y;
-   com.finalshell.io.To2 P;
-   boolean r;
+   public boolean y;
+   public com.finalshell.io.To2 P;
+   public boolean r;
    public static String[] t;
    public static String[] f;
    public static String[] h;
@@ -135,7 +135,7 @@ public abstract class Cj4 extends Fv2_2{
       // 2b: return
    }
 
-   protected abstract void D(Dm4 var1, int var2, int var3, int var4, int var5);
+   public abstract void D(Dm4 var1, int var2, int var3, int var4, int var5);
 
    public void T() {
       // $VF: Couldn't be decompiled
@@ -304,9 +304,9 @@ public abstract class Cj4 extends Fv2_2{
       return this.s;
    }
 
-   protected abstract Dm4 i(ConnectHost var1) throws Pc2;
+   public abstract Dm4 i(ConnectHost var1) throws Pc2;
 
-   protected abstract void U(Dm4 var1);
+   public abstract void U(Dm4 var1);
 
    public boolean q(AW param1, Ms2 param2, Lv4_2 param3, ConnectHost param4, int param5, String param6) {
       // $VF: Couldn't be decompiled
@@ -683,10 +683,10 @@ public abstract class Cj4 extends Fv2_2{
       // 121: areturn
    }
 
-   protected void L(Xe2 var1) throws Pc2 {
+   public void L(Xe2 var1) throws Pc2 {
    }
 
-   protected void S(ConnectHost var1, Properties var2) throws Pc2 {
+   public void S(ConnectHost var1, Properties var2) throws Pc2 {
       var1.o(var2);
       var1.b(b(9589, 4819), b(9576, 25264));
       var1.b(b(9591, 4621), b(9579, -18684));

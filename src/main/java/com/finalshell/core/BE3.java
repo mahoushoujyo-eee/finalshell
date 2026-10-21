@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class BE3 {
    public int M = 0;
    public UR I;
-   String w;
+   public String w;
 
    public BE3(UR var1, int var2) {
       this.M = var2;

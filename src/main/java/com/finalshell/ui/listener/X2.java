@@ -6,10 +6,10 @@ import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
 
 public class X2 extends ContainerAdapter {
-   final Qx2 O;
-   final A2_2 b;
+   public final Qx2 O;
+   public final A2_2 b;
 
-   X2(A2_2 var1, Qx2 var2) {
+   public X2(A2_2 var1, Qx2 var2) {
       this.b = var1;
       this.O = var2;
    }

@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class CI3 implements MouseListener {
-   final RouteTracePanel R;
+   public final RouteTracePanel R;
 
-   CI3(RouteTracePanel var1) {
+   public CI3(RouteTracePanel var1) {
       this.R = var1;
    }
 

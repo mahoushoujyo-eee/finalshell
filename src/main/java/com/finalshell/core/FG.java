@@ -5,8 +5,8 @@ import com.finalshell.ui.model.YR3;
 
 // $VF: synthetic class
 public class FG {
-   static int[] V;
-   static int[] L;
+   public static int[] V;
+   public static int[] L;
 
    static {
       __vfClinit__();

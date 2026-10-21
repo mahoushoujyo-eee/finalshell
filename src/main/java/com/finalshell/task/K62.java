@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Cc2;
 import java.lang.reflect.InvocationTargetException;
 
 public class K62 implements Runnable {
-   final Cc2 c;
+   public final Cc2 c;
 
-   K62(Cc2 var1) {
+   public K62(Cc2 var1) {
       this.c = var1;
    }
 

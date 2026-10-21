@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class K7 implements Runnable {
-   final YT3_2 p;
+   public final YT3_2 p;
 
-   K7(YT3_2 var1) {
+   public K7(YT3_2 var1) {
       this.p = var1;
    }
 

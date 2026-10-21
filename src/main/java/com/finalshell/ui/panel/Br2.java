@@ -367,43 +367,43 @@ public class Br2 extends JComponent {
       }
    }
 
-   static boolean P(Br2 var0, MouseEvent var1) {
+   public static boolean P(Br2 var0, MouseEvent var1) {
       return var0.C(var1);
    }
 
-   static boolean d(Br2 var0, MouseEvent var1) {
+   public static boolean d(Br2 var0, MouseEvent var1) {
       return var0.v(var1);
    }
 
-   static boolean k(Br2 var0, MouseEvent var1) {
+   public static boolean k(Br2 var0, MouseEvent var1) {
       return var0.r(var1);
    }
 
-   static Color E(Br2 var0) {
+   public static Color E(Br2 var0) {
       return var0.m;
    }
 
-   static Color a(Br2 var0, Color var1) {
+   public static Color a(Br2 var0, Color var1) {
       return var0.m = var1;
    }
 
-   static void Z(Br2 var0) {
+   public static void Z(Br2 var0) {
       var0.g();
    }
 
-   static boolean D(Br2 var0, MouseEvent var1) {
+   public static boolean D(Br2 var0, MouseEvent var1) {
       return var0.d(var1);
    }
 
-   static Color h(Br2 var0) {
+   public static Color h(Br2 var0) {
       return var0.n;
    }
 
-   static Color e(Br2 var0, Color var1) {
+   public static Color e(Br2 var0, Color var1) {
       return var0.n = var1;
    }
 
-   static void X(Br2 var0, Lg4 var1) {
+   public static void X(Br2 var0, Lg4 var1) {
       var0.X(var1);
    }
 

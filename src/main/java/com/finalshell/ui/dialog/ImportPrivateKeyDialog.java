@@ -15,16 +15,16 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class ImportPrivateKeyDialog extends JDialog {
-   JPanel k;
-   boolean T;
-   PrivateKeyPanel o;
-   LN3 w;
+   public JPanel k;
+   public boolean T;
+   public PrivateKeyPanel o;
+   public LN3 w;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   ImportPrivateKeyDialog(Window var1, boolean var2) {
+   public ImportPrivateKeyDialog(Window var1, boolean var2) {
       super(var1);
       Registry.lookupField(207574844696896658L).setBoolean(this, false);
       this.setLayout(new MigLayout(a(-14469, 26962), "", a(-14470, 25997)));

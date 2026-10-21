@@ -10,9 +10,9 @@ import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
 public class OK implements KeyListener {
-   final SetByKeyboardDialog R;
+   public final SetByKeyboardDialog R;
 
-   OK(SetByKeyboardDialog var1) {
+   public OK(SetByKeyboardDialog var1) {
       this.R = var1;
    }
 

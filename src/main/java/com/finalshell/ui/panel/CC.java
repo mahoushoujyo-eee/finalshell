@@ -14,7 +14,7 @@ import java.util.List;
 import javax.swing.ListCellRenderer;
 
 public class CC extends CI {
-   protected boolean h = G0.n;
+   public boolean h = G0.n;
    public static String a;
    public static long b;
 
@@ -50,7 +50,7 @@ public class CC extends CI {
    }
 
    @Override
-   protected K3_2 O() {
+   public K3_2 O() {
       return new Ws4();
    }
 
@@ -81,7 +81,7 @@ public class CC extends CI {
       return this.A$eR_3().a();
    }
 
-   protected void Y(int var1) {
+   public void Y(int var1) {
       label16: {
          String var2 = Co2.U$String();
          if (var2 != null) {

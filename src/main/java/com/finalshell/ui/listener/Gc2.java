@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 
 public class Gc2 implements ActionListener {
    public S3 q;
-   final KD3 w;
+   public final KD3 w;
    public static String[] a;
    public static String[] b;
 
-   Gc2(KD3 var1) {
+   public Gc2(KD3 var1) {
       this.w = var1;
       this.q = null;
    }

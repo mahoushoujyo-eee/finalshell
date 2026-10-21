@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Cf_3 implements FE {
-   final Cs2_2 g;
+   public final Cs2_2 g;
 
-   Cf_3(Cs2_2 var1) {
+   public Cf_3(Cs2_2 var1) {
       this.g = var1;
    }
 

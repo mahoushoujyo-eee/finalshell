@@ -5,9 +5,9 @@ import com.finalshell.ui.panel.KC3;
 import java.awt.event.KeyEvent;
 
 public class We2_2 extends Wc2{
-   final KC3 S;
+   public final KC3 S;
 
-   We2_2(KC3 var1) {
+   public We2_2(KC3 var1) {
       this.S = var1;
    }
 
@@ -31,7 +31,7 @@ public class We2_2 extends Wc2{
                   }
                }
 
-               var10000 = KC3.E(this.S);
+               var10000 = (KC3.E(this.S)) ? 1 : 0;
             }
 
             if (var2 != null) {

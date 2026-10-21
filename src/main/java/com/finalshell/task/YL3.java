@@ -5,9 +5,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class YL3 implements Runnable {
-   final YT3_2 l;
+   public final YT3_2 l;
 
-   YL3(YT3_2 var1) {
+   public YL3(YT3_2 var1) {
       this.l = var1;
    }
 

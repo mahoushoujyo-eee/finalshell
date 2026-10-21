@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class C_A implements Y_5 {
-   final W3_6 i;
+   public final W3_6 i;
    public static String[] a;
    public static String[] b;
 
-   C_A(W3_6 var1) {
+   public C_A(W3_6 var1) {
       this.i = var1;
    }
 

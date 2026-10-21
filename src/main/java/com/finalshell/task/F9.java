@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Cc2;
 import java.lang.reflect.InvocationTargetException;
 
 public class F9 implements Runnable {
-   final Cc2 F;
+   public final Cc2 F;
 
-   F9(Cc2 var1) {
+   public F9(Cc2 var1) {
       this.F = var1;
    }
 

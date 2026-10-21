@@ -12,15 +12,15 @@ import java.util.regex.Pattern;
 import javax.swing.JTextField;
 
 public class Lj4_2 extends Ln4_2 {
-   String F;
-   HashMap g;
-   boolean w;
+   public String F;
+   public HashMap g;
+   public boolean w;
    public static int m;
    public static String c;
 
    public Lj4_2() {
+   super();
       int[] var10000 = AppendCarriageReturnCRPanel.Y();
-      super();
       int[] var1 = var10000;
       HashMap var10001 = new HashMap();
       long var6 = 129501355937067347L;
@@ -166,7 +166,7 @@ public class Lj4_2 extends Ln4_2 {
 
          label128:
          while (true) {
-            if (var10002 == false) {
+            if (var10002 == null) {
                break label130;
             }
 

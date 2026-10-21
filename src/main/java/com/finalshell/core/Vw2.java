@@ -4,17 +4,17 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 public class Vw2 extends Vb2 {
-   short b = BN.B;
-   int u = 0;
-   int D = 0;
-   byte[] k;
-   byte[] H;
-   int y;
-   InetAddress z;
-   int L;
-   int j;
-   int i;
-   long m;
+   public short b = BN.B;
+   public int u = 0;
+   public int D = 0;
+   public byte[] k;
+   public byte[] H;
+   public int y;
+   public InetAddress z;
+   public int L;
+   public int j;
+   public int i;
+   public long m;
    public static long[] a;
    public static Integer[] c;
 

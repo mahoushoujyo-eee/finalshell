@@ -28,13 +28,13 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class EnableBackgroundImage extends Z7 {
-   JList O;
-   ListModel o;
-   JTextField P;
-   int v;
-   int f;
-   JComboBox g;
-   boolean F;
+   public JList O;
+   public ListModel o;
+   public JTextField P;
+   public int v;
+   public int f;
+   public JComboBox g;
+   public boolean F;
    public static Ky4[] Y;
    public static String[] a;
    public static String[] b;
@@ -76,7 +76,7 @@ public class EnableBackgroundImage extends Z7 {
          throw var59.getTargetException();
       }
 
-new com.finalshell.ui.listener.Oi2(var2, var66);
+var10005 = new com.finalshell.ui.listener.Oi2(var2, var66);
       JCheckBox var4 = var64;
       var4.setForeground(new Color(a(16906, 6456310998628703149L), 0, a(18249, 1688511695136890605L)));
       var3.add(var4, "");
@@ -189,7 +189,7 @@ new com.finalshell.ui.listener.Oi2(var2, var66);
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void g(String var1) {
+   public void g(String var1) {
       I();
       Registry.emptyArgs();
       long var4 = 270389152141252877L;
@@ -216,7 +216,7 @@ new com.finalshell.ui.listener.Oi2(var2, var66);
          var2 = var10003;
          var10003 = var1.startsWith(a(9165, 1668));
          if (var2 != null) {
-            if (var10003 != false) {
+            if (var10003 == null) {
                var10003 = Registry.emptyArgs();
                long var10 = 270389152141252877L;
                Ref.h2(270389152141252877L, var10);
@@ -258,7 +258,7 @@ new com.finalshell.ui.listener.Oi2(var2, var66);
          }
 
          if (var2 != null) {
-            if (var10003 != false) {
+            if (var10003 == null) {
                var10004 = Registry.packArgs(var1);
                long var17 = 586754005152705687L;
                Object[] var16 = var10004;
@@ -391,7 +391,7 @@ new com.finalshell.ui.listener.Oi2(var2, var66);
       }
    }
 
-   void o() {
+   public void o() {
       I();
       Registry.emptyArgs();
       long var6 = 270389152141252877L;

@@ -10,37 +10,37 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class B2 {
-   int O;
-   Object P = new Object();
-   long t = 0L;
-   int G = a(28572, 1782366320909803639L);
-   int u = this.G;
-   int T = this.u;
-   int H = -1;
-   Object Q = new Object();
-   long v = 0L;
-   long W = 0L;
-   long A;
-   long J = System.currentTimeMillis();
-   Random n = new Random();
-   HashMap F = new HashMap();
+   public int O;
+   public Object P = new Object();
+   public long t = 0L;
+   public int G = a(28572, 1782366320909803639L);
+   public int u = this.G;
+   public int T = this.u;
+   public int H = -1;
+   public Object Q = new Object();
+   public long v = 0L;
+   public long W = 0L;
+   public long A;
+   public long J = System.currentTimeMillis();
+   public Random n = new Random();
+   public HashMap F = new HashMap();
    public int E = a(18285, 6620142799166425219L);
-   int D = -1;
-   long d;
-   long M;
-   int X = 0;
-   PingMessageR V;
-   InetAddress U;
-   int y;
+   public int D = -1;
+   public long d;
+   public long M;
+   public int X = 0;
+   public PingMessageR V;
+   public InetAddress U;
+   public int y;
    public HashMap k = new HashMap();
    public HashMap h = new HashMap();
-   Object w = new Object();
-   Object e = new Object();
+   public Object w = new Object();
+   public Object e = new Object();
    public Mo2 x;
-   boolean m = false;
-   int C;
-   int Z = Yh2.D;
-   Object l = new Object();
+   public boolean m = false;
+   public int C;
+   public int Z = Yh2.D;
+   public Object l = new Object();
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -48,7 +48,7 @@ public class B2 {
    public static long[] g;
    public static Long[] i;
 
-   B2(PingMessageR var1, int var2, InetAddress var3, int var4) {
+   public B2(PingMessageR var1, int var2, InetAddress var3, int var4) {
       this.x = new Mo2();
       this.O = var2;
       this.V = var1;
@@ -117,7 +117,7 @@ public class B2 {
       }
    }
 
-   boolean y() {
+   public boolean y() {
       this.K();
       String[] var10000 = PingMessageR.N();
       byte var2 = 0;
@@ -135,32 +135,32 @@ public class B2 {
       return var3 != 0;
    }
 
-   void J() {
+   public void J() {
       synchronized (this.l) {
          this.l.notifyAll();
       }
    }
 
-   void K() {
+   public void K() {
    }
 
    public void P(DatagramPacket var1) throws IOException {
       this.V.e(var1);
    }
 
-   void z(UR var1) {
+   public void z(UR var1) {
       synchronized (this.w) {
          this.k.put(var1.v, var1);
       }
    }
 
-   void e(Qu2 var1) {
+   public void e(Qu2 var1) {
       synchronized (this.e) {
          this.h.put(var1.a, var1);
       }
    }
 
-   void O(UR var1) {
+   public void O(UR var1) {
       synchronized (this.w) {
          this.k.remove(var1.v);
       }
@@ -226,7 +226,7 @@ public class B2 {
       // 63: return
    }
 
-   Iterator h$Iterator() {
+   public Iterator h$Iterator() {
       Object var1 = null;
       synchronized (this.w) {
          return new com.finalshell.ui.model.GN(this.k.keySet().iterator());
@@ -302,10 +302,10 @@ public class B2 {
       return (int)((var1 - this.t) / b(14283, 7235391077982440310L));
    }
 
-   void U() {
+   public void U() {
    }
 
-   void A() {
+   public void A() {
    }
 
    public synchronized void z(long param1, int param3) {

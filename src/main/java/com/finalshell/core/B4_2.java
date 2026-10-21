@@ -4,8 +4,8 @@ import com.finalshell.ui.panel.Ky4;
 import javax.swing.ImageIcon;
 
 public abstract class B4_2 extends V3 {
-   protected ImageIcon V;
-   protected String h;
+   public ImageIcon V;
+   public String h;
 
    public B4_2(ImageIcon var1, String var2) {
       V3.L();

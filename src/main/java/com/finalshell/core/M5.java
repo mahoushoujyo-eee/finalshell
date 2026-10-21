@@ -6,13 +6,13 @@ import com.finalshell.ui.panel.Ky4;
 import java.lang.reflect.InvocationTargetException;
 
 public class M5 implements Qa2 {
-   boolean B;
-   boolean c;
-   String d;
-   boolean m;
-   final YT3_2 J;
+   public boolean B;
+   public boolean c;
+   public String d;
+   public boolean m;
+   public final YT3_2 J;
 
-   M5(YT3_2 var1) {
+   public M5(YT3_2 var1) {
       this.J = var1;
       Registry.lookupField(351602801032386416L).setBoolean(this, false);
       Registry.lookupField(267771528325621470L).setBoolean(this, false);

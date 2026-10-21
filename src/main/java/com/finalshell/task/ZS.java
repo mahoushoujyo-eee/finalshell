@@ -7,9 +7,9 @@ import com.finalshell.ui.dialog.KQ;
 import java.lang.reflect.InvocationTargetException;
 
 public class ZS implements Runnable {
-   final KQ l;
+   public final KQ l;
 
-   ZS(KQ var1) {
+   public ZS(KQ var1) {
       this.l = var1;
    }
 

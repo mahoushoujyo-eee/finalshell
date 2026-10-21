@@ -9,18 +9,18 @@ import java.awt.Component;
 import java.util.ArrayList;
 
 public class ZH implements Runnable {
-   String u;
-   final Connection12 R;
-   final String l;
-   final ArrayList D;
-   final ProgressDialog w;
-   final Tf4 s;
-   final boolean E;
-   final Component n;
-   final Address g;
+   public String u;
+   public final Connection12 R;
+   public final String l;
+   public final ArrayList D;
+   public final ProgressDialog w;
+   public final Tf4 s;
+   public final boolean E;
+   public final Component n;
+   public final Address g;
    public static String a;
 
-   ZH(Address var1, Connection12 var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
+   public ZH(Address var1, Connection12 var2, String var3, ArrayList var4, ProgressDialog var5, Tf4 var6, boolean var7, Component var8) {
       this.g = var1;
       this.R = var2;
       this.l = var3;

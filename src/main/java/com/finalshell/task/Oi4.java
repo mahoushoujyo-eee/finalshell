@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Oi4 implements Runnable {
-   final CB X;
+   public final CB X;
 
-   Oi4(CB var1) {
+   public Oi4(CB var1) {
       this.X = var1;
    }
 

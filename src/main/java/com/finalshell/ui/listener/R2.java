@@ -7,9 +7,9 @@ import java.io.File;
 import java.util.List;
 
 public class R2 implements ActionListener {
-   final A4_2 k;
+   public final A4_2 k;
 
-   R2(A4_2 var1) {
+   public R2(A4_2 var1) {
       this.k = var1;
    }
 

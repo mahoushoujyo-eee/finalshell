@@ -17,13 +17,13 @@ import javax.swing.border.Border;
 import javax.swing.table.TableModel;
 
 public class Bx2 extends Oe2 {
-   Color t;
-   Border y;
-   JLabel z;
-   final N22 A;
-   final JR d;
+   public Color t;
+   public Border y;
+   public JLabel z;
+   public final N22 A;
+   public final JR d;
 
-   Bx2(JR var1, N22 var2) {
+   public Bx2(JR var1, N22 var2) {
       this.d = var1;
       this.A = var2;
       long var4 = 283651054618121503L;

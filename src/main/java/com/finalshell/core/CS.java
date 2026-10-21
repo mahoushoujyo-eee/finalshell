@@ -4,11 +4,11 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class CS {
-   int U;
-   int K;
-   String Z;
-   String x;
-   String q;
+   public int U;
+   public int K;
+   public String Z;
+   public String x;
+   public String q;
 
    public int N() {
       return Registry.lookupField(211185170955060940L).getInt(this);

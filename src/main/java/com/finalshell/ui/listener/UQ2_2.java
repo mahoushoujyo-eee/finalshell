@@ -6,11 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class UQ2_2 implements ActionListener {
-   final BX G;
-   final com.finalshell.core.At2 J;
-   final Bw2_2 B;
+   public final BX G;
+   public final com.finalshell.core.At2 J;
+   public final Bw2_2 B;
 
-   UQ2_2(Bw2_2 var1, BX var2, com.finalshell.core.At2 var3) {
+   public UQ2_2(Bw2_2 var1, BX var2, com.finalshell.core.At2 var3) {
       this.B = var1;
       this.G = var2;
       this.J = var3;

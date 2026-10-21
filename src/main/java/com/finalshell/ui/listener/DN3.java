@@ -12,10 +12,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JFileChooser;
 
 public class DN3 implements ActionListener {
-   final PrivateKeyPanel S;
+   public final PrivateKeyPanel S;
    public static String a;
 
-   DN3(PrivateKeyPanel var1) {
+   public DN3(PrivateKeyPanel var1) {
       this.S = var1;
    }
 

@@ -6,11 +6,11 @@ import java.util.Iterator;
 import org.icmp4j.j;
 
 public class Yu2 {
-   ArrayList Z = new ArrayList();
-   int H;
-   int c;
-   boolean a;
-   int n;
+   public ArrayList Z = new ArrayList();
+   public int H;
+   public int c;
+   public boolean a;
+   public int n;
    public static int[] d;
    public static long b;
 

@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.SZ;
 
 public class Cz4 extends C42 {
-   final Y9_2 F;
+   public final Y9_2 F;
 
-   Cz4(Y9_2 var1) {
+   public Cz4(Y9_2 var1) {
       this.F = var1;
    }
 

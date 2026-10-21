@@ -4,10 +4,10 @@ import com.finalshell.core.CK;
 import com.finalshell.core.SelectUploadFile;
 
 public class XU3 implements Runnable {
-   final CK q;
-   final SelectUploadFile i;
+   public final CK q;
+   public final SelectUploadFile i;
 
-   XU3(SelectUploadFile var1, CK var2) {
+   public XU3(SelectUploadFile var1, CK var2) {
       this.i = var1;
       this.q = var2;
    }

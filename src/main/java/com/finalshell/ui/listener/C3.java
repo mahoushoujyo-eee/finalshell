@@ -4,9 +4,9 @@ import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 
 public class C3 implements CaretListener {
-   final com.finalshell.ui.panel.T z;
+   public final com.finalshell.ui.panel.T z;
 
-   C3(com.finalshell.ui.panel.T var1) {
+   public C3(com.finalshell.ui.panel.T var1) {
       this.z = var1;
    }
 

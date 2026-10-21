@@ -6,11 +6,11 @@ import java.awt.Rectangle;
 import javax.swing.event.AncestorEvent;
 
 public class Ff2 extends FY {
-   final Component G;
-   final E_2 g;
-   final com.finalshell.ui.panel.QX E;
+   public final Component G;
+   public final E_2 g;
+   public final com.finalshell.ui.panel.QX E;
 
-   Ff2(com.finalshell.ui.panel.QX var1, Component var2, E_2 var3) {
+   public Ff2(com.finalshell.ui.panel.QX var1, Component var2, E_2 var3) {
       this.E = var1;
       this.G = var2;
       this.g = var3;

@@ -5,9 +5,9 @@ import java.awt.event.FocusEvent;
 import javax.swing.JSpinner;
 
 public class Z2 extends FocusAdapter {
-   final JSpinner f;
+   public final JSpinner f;
 
-   Z2(JSpinner var1) {
+   public Z2(JSpinner var1) {
       this.f = var1;
    }
 

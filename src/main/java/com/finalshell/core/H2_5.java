@@ -5,9 +5,9 @@ import java.io.InputStream;
 import java.net.URL;
 
 public class H2_5 extends ClassLoader {
-   final J_5 M;
+   public final J_5 M;
 
-   H2_5(ClassLoader var1, J_5 var2) {
+   public H2_5(ClassLoader var1, J_5 var2) {
       super(var1);
       this.M = var2;
    }

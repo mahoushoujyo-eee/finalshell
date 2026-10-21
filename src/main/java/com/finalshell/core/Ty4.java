@@ -18,8 +18,8 @@ public class Ty4 {
    public static int W;
    public static int E;
    public static int s;
-   String o;
-   int n;
+   public String o;
+   public int n;
    public static Ky4[] k;
 
    public Ty4() {

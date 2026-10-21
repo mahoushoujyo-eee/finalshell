@@ -4,9 +4,9 @@ import com.finalshell.ui.dialog.D2;
 import java.awt.Dimension;
 
 public class BE extends By_2 {
-   final D2 C;
+   public final D2 C;
 
-   BE(D2 var1, int var2, int var3, int var4) {
+   public BE(D2 var1, int var2, int var3, int var4) {
       super(var2, var3, var4);
       this.C = var1;
    }

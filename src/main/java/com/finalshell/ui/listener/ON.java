@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class ON implements ActionListener {
-   final CompleteFullPathPanel v;
+   public final CompleteFullPathPanel v;
 
-   ON(CompleteFullPathPanel var1) {
+   public ON(CompleteFullPathPanel var1) {
       this.v = var1;
    }
 

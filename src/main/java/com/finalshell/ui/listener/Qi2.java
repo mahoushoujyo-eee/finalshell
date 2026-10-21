@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPopupMenu;
 
 public class Qi2 implements ActionListener {
-   final Y12_2 Y;
-   final com.finalshell.core.C Z;
-   final ResetPanel R;
+   public final Y12_2 Y;
+   public final com.finalshell.core.C Z;
+   public final ResetPanel R;
 
-   Qi2(ResetPanel var1, Y12_2 var2, com.finalshell.core.C var3) {
+   public Qi2(ResetPanel var1, Y12_2 var2, com.finalshell.core.C var3) {
       this.R = var1;
       this.Y = var2;
       this.Z = var3;

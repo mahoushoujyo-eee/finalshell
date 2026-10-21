@@ -13,15 +13,15 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class YX3 extends JPanel implements AL {
-   CE O;
-   KV t;
-   String f;
-   AM u;
-   Ge2 P;
+   public CE O;
+   public KV t;
+   public String f;
+   public AM u;
+   public Ge2 P;
    public static String[] a;
    public static String[] b;
 
-   YX3(CE var1) {
+   public YX3(CE var1) {
       long var3 = 194663324335640157L;
       Ref.s(194663324335640157L, var1, var3);
       this.setOpaque(false);

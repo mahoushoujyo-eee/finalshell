@@ -8,9 +8,9 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 
 public class Pw4 extends KeyAdapter {
-   final Ic2 V;
+   public final Ic2 V;
 
-   Pw4(Ic2 var1) {
+   public Pw4(Ic2 var1) {
       this.V = var1;
    }
 

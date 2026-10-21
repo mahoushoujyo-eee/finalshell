@@ -9,10 +9,7 @@ import java.util.Comparator;
 import java.util.Locale;
 
 public class Y22 implements Comparator {
-   final Comparator d = Collator.getInstance(Locale.CHINA);
-
-   Y22() {
-   }
+   public final Comparator d = Collator.getInstance(Locale.CHINA);
 
    public int M(YE var1, YE var2) {
       Object var3 = 371381669271200112L;

@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JMenuItem;
 
 public class DI implements ActionListener {
-   final U62 r;
-   final JMenuItem Y;
-   final CompleteFullPathPanel P;
+   public final U62 r;
+   public final JMenuItem Y;
+   public final CompleteFullPathPanel P;
 
-   DI(CompleteFullPathPanel var1, U62 var2, JMenuItem var3) {
+   public DI(CompleteFullPathPanel var1, U62 var2, JMenuItem var3) {
       this.P = var1;
       this.r = var2;
       this.Y = var3;

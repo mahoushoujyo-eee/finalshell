@@ -8,7 +8,7 @@ public class BS3 extends BN3 {
    public static String a;
    public static long b;
 
-   static void L() throws Exception {
+   public static void L() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -80,28 +80,28 @@ public class BS3 extends BN3 {
       // 92: return
    }
 
-   static long F() {
+   public static long F() {
       return L;
    }
 
-   static Exception m() {
+   public static Exception m() {
       return E;
    }
 
-   static Exception w(Exception var0) {
+   public static Exception w(Exception var0) {
       E = var0;
       return var0;
    }
 
-   static Thread G() {
+   public static Thread G() {
       return c;
    }
 
-   static Thread D() {
+   public static Thread D() {
       return n;
    }
 
-   static long v(long var0) {
+   public static long v(long var0) {
       L = var0;
       return var0;
    }

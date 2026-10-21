@@ -4,11 +4,11 @@ import com.finalshell.ui.panel.Ky4;
 import java.net.InetAddress;
 
 public class ON3_2 {
-   InetAddress l;
-   int W;
-   int n;
+   public InetAddress l;
+   public int W;
+   public int n;
 
-   ON3_2(InetAddress var1, int var2) {
+   public ON3_2(InetAddress var1, int var2) {
       int[] var10000 = Cy2.u();
       this.l = var1;
       int[] var3 = var10000;

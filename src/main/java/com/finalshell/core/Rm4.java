@@ -7,11 +7,11 @@ public class Rm4 implements Cd4 {
    public Vector v = new Vector();
    public boolean e = false;
 
-   Rm4(Cd4 var1) {
+   public Rm4(Cd4 var1) {
       this(var1, false);
    }
 
-   Rm4(Cd4 var1, boolean var2) {
+   public Rm4(Cd4 var1, boolean var2) {
       this.g = var1;
       this.e = var2;
    }
@@ -94,7 +94,7 @@ public class Rm4 implements Cd4 {
       return var8;
    }
 
-   void N(AB_2 param1) {
+   public void N(AB_2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -157,7 +157,7 @@ public class Rm4 implements Cd4 {
       // 75: return
    }
 
-   void N() {
+   public void N() {
       boolean var1 = Dm4.J$boolean();
       Vector var10000 = this.v;
       if (!var1) {

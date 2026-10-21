@@ -33,7 +33,7 @@ public class Ig2 extends IB {
       return var3;
    }
 
-   protected void A(JPasswordField var1) {
+   public void A(JPasswordField var1) {
       this.R = new EZ3(this);
       var1.addActionListener(this.R);
       this.V = new X32(this);
@@ -45,7 +45,7 @@ public class Ig2 extends IB {
       }
    }
 
-   protected void q(JPasswordField var1) {
+   public void q(JPasswordField var1) {
       IH.M();
       var1.removeActionListener(this.R);
       this.R = null;
@@ -56,31 +56,31 @@ public class Ig2 extends IB {
       }
    }
 
-   protected void S(JPasswordField var1) {
+   public void S(JPasswordField var1) {
       var1.setText(LE_2.o((String)this.o()));
    }
 
-   protected void f(JPasswordField var1) {
+   public void f(JPasswordField var1) {
       this.J(LE_2.E(new String(var1.getPassword())));
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.f((JPasswordField)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.S((JPasswordField)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.q((JPasswordField)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.A((JPasswordField)var1);
    }
 

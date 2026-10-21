@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class U8 implements R5 {
-   final IB r;
+   public final IB r;
 
-   U8(IB var1) {
+   public U8(IB var1) {
       this.r = var1;
    }
 

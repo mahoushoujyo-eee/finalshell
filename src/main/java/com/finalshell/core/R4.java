@@ -19,8 +19,8 @@ public class R4 implements Ic4 {
    public static Integer[] e;
 
    public R4(String var1) {
+   super();
       boolean var10000 = Dm4.J$boolean();
-      super();
       int var3 = m;
       String var4 = var1;
       boolean var2 = var10000;

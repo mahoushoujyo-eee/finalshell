@@ -7,9 +7,9 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class DG implements PopupMenuListener {
-   final Y12_2 W;
+   public final Y12_2 W;
 
-   DG(Y12_2 var1) {
+   public DG(Y12_2 var1) {
       this.W = var1;
    }
 

@@ -8,10 +8,10 @@ import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 
 public class BL extends MouseAdapter {
-   final JComponent j;
-   final WQ3 l;
+   public final JComponent j;
+   public final WQ3 l;
 
-   BL(WQ3 var1, JComponent var2) {
+   public BL(WQ3 var1, JComponent var2) {
       this.l = var1;
       this.j = var2;
    }

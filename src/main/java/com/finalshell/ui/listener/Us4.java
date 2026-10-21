@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Us4 implements ActionListener {
-   final EditProxyServerDialog f;
+   public final EditProxyServerDialog f;
 
-   Us4(EditProxyServerDialog var1) {
+   public Us4(EditProxyServerDialog var1) {
       this.f = var1;
    }
 

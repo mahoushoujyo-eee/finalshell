@@ -9,11 +9,11 @@ import java.io.File;
 
 public class RK3 implements ActionListener {
    public Long f;
-   final File G;
-   final O32 x;
-   final WC_2 V;
+   public final File G;
+   public final O32 x;
+   public final WC_2 V;
 
-   RK3(File var1, O32 var2, WC_2 var3) {
+   public RK3(File var1, O32 var2, WC_2 var3) {
       this.G = var1;
       this.x = var2;
       this.V = var3;

@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class IQ3 implements PropertyChangeListener {
-   final com.finalshell.core.Lk4 s;
+   public final com.finalshell.core.Lk4 s;
 
-   IQ3(com.finalshell.core.Lk4 var1) {
+   public IQ3(com.finalshell.core.Lk4 var1) {
       this.s = var1;
    }
 

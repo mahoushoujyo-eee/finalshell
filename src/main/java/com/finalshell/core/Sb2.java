@@ -4,14 +4,14 @@ import com.finalshell.ui.model.CB3;
 import java.util.List;
 
 public class Sb2 extends ST {
-   final CB3 d;
-   final S5 r;
-   final List K;
-   final boolean z;
-   final boolean Q;
-   final com.finalshell.ui.panel.Us2 q;
+   public final CB3 d;
+   public final S5 r;
+   public final List K;
+   public final boolean z;
+   public final boolean Q;
+   public final com.finalshell.ui.panel.Us2 q;
 
-   Sb2(com.finalshell.ui.panel.Us2 var1, CB3 var2, S5 var3, List var4, boolean var5, boolean var6) {
+   public Sb2(com.finalshell.ui.panel.Us2 var1, CB3 var2, S5 var3, List var4, boolean var5, boolean var6) {
       this.q = var1;
       this.d = var2;
       this.r = var3;

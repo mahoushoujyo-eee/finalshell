@@ -3,47 +3,47 @@ package com.finalshell.core;
 import com.finalshell.ui.model.D92;
 
 public class Df2 {
-   byte[] x;
-   int f;
-   int L;
-   long O;
-   byte[] h;
-   int V;
-   int g;
-   long F;
-   String t;
-   Wa2_2 d;
-   A4_3 T;
-   int s;
-   Aj2 e;
+   public byte[] x;
+   public int f;
+   public int L;
+   public long O;
+   public byte[] h;
+   public int V;
+   public int g;
+   public long F;
+   public String t;
+   public Wa2_2 d;
+   public A4_3 T;
+   public int s;
+   public Aj2 e;
    public static long[] c;
    public static Integer[] i;
 
-   Df2() {
+   public Df2() {
       this(new DG3());
    }
 
-   Df2(Aj2 var1) {
+   public Df2(Aj2 var1) {
       this.e = var1;
    }
 
-   int S() {
+   public int S() {
       return this.v(a(8603, 6257372309529097965L));
    }
 
-   int x(boolean var1) {
+   public int x(boolean var1) {
       return this.A(a(8603, 6257372309529097965L), var1);
    }
 
-   int v(int var1) {
+   public int v(int var1) {
       return this.A(var1, false);
    }
 
-   int W(D92 var1) {
+   public int W(D92 var1) {
       return this.X(a(8603, 6257372309529097965L), var1);
    }
 
-   int X(int var1, D92 var2) {
+   public int X(int var1, D92 var2) {
       int[] var10000 = Nm4.g();
       boolean var4 = false;
       int[] var3 = var10000;
@@ -91,7 +91,7 @@ public class Df2 {
       return this.A(var1, var4);
    }
 
-   int A(int var1, boolean var2) {
+   public int A(int var1, boolean var2) {
       int[] var10000 = Nm4.g();
       this.T = new A4_3(this);
       int[] var3 = var10000;
@@ -103,7 +103,7 @@ public class Df2 {
       return this.T.e(var10001);
    }
 
-   int Q(int var1) {
+   public int Q(int var1) {
       int[] var2 = Nm4.g();
       A4_3 var10000 = this.T;
       if (var2 == null) {
@@ -117,7 +117,7 @@ public class Df2 {
       return var10000.N(var1);
    }
 
-   int M() {
+   public int M() {
       int[] var1 = Nm4.g();
       A4_3 var10000 = this.T;
       if (var1 == null) {
@@ -131,7 +131,7 @@ public class Df2 {
       return var10000.m();
    }
 
-   int n$int() {
+   public int n$int() {
       int[] var1 = Nm4.g();
       A4_3 var10000 = this.T;
       if (var1 == null) {
@@ -145,7 +145,7 @@ public class Df2 {
       return var10000.D();
    }
 
-   int W() {
+   public int W() {
       int[] var1 = Nm4.g();
       A4_3 var10000 = this.T;
       if (var1 == null) {
@@ -159,7 +159,7 @@ public class Df2 {
       return var10000.i();
    }
 
-   int a(byte[] var1, int var2) {
+   public int a(byte[] var1, int var2) {
       int[] var3 = Nm4.g();
       A4_3 var10000 = this.T;
       if (var3 == null) {
@@ -173,7 +173,7 @@ public class Df2 {
       return var10000.I(var1, var2);
    }
 
-   boolean N$boolean() {
+   public boolean N$boolean() {
       int[] var1 = Nm4.g();
       int var10000 = this.T.O;
       if (var1 == null) {
@@ -183,19 +183,19 @@ public class Df2 {
       return var10000 != 0;
    }
 
-   int D(int var1) {
+   public int D(int var1) {
       return this.q(var1, a(8603, 6257372309529097965L));
    }
 
-   int U(int var1, boolean var2) {
+   public int U(int var1, boolean var2) {
       return this.Y(var1, a(8603, 6257372309529097965L), var2);
    }
 
-   int q(int var1, int var2) {
+   public int q(int var1, int var2) {
       return this.Y(var1, var2, false);
    }
 
-   int w(int var1, int var2, int var3, D92 var4) {
+   public int w(int var1, int var2, int var3, D92 var4) {
       int[] var5 = Nm4.g();
       int var10000 = var2;
       if (var5 == null) {
@@ -253,12 +253,12 @@ public class Df2 {
       return var10000;
    }
 
-   int r(int var1, int var2, int var3) {
+   public int r(int var1, int var2, int var3) {
       this.d = new Wa2_2(this);
       return this.d.m(var1, var2, var3);
    }
 
-   int Y(int var1, int var2, boolean var3) {
+   public int Y(int var1, int var2, boolean var3) {
       int[] var10000 = Nm4.g();
       this.d = new Wa2_2(this);
       int[] var4 = var10000;
@@ -270,7 +270,7 @@ public class Df2 {
       return this.d.Q(var1, var10002);
    }
 
-   int o(int var1) {
+   public int o(int var1) {
       int[] var2 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var2 == null) {
@@ -284,7 +284,7 @@ public class Df2 {
       return var10000.a(var1);
    }
 
-   int I() {
+   public int I() {
       int[] var1 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var1 == null) {
@@ -300,7 +300,7 @@ public class Df2 {
       return var2;
    }
 
-   int m(int var1, int var2) {
+   public int m(int var1, int var2) {
       int[] var3 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var3 == null) {
@@ -314,7 +314,7 @@ public class Df2 {
       return var10000.K(var1, var2);
    }
 
-   int I(byte[] var1, int var2) {
+   public int I(byte[] var1, int var2) {
       int[] var3 = Nm4.g();
       Wa2_2 var10000 = this.d;
       if (var3 == null) {
@@ -328,7 +328,7 @@ public class Df2 {
       return var10000.x(var1, var2);
    }
 
-   void O() {
+   public void O() {
       int[] var10000 = Nm4.g();
       int var2 = this.d.I;
       int[] var1 = var10000;
@@ -393,7 +393,7 @@ public class Df2 {
       var4.W = 0;
    }
 
-   int H(byte[] var1, int var2, int var3) {
+   public int H(byte[] var1, int var2, int var3) {
       int[] var10000 = Nm4.g();
       int var5 = this.L;
       int[] var4 = var10000;
@@ -429,35 +429,35 @@ public class Df2 {
       return var6;
    }
 
-   long U() {
+   public long U() {
       return this.e.u();
    }
 
-   void n$void() {
+   public void n$void() {
       this.x = null;
       this.h = null;
       this.t = null;
    }
 
-   void j(byte[] var1) {
+   public void j(byte[] var1) {
       this.U(var1, 0, var1.length);
    }
 
-   void U(byte[] var1, int var2, int var3) {
+   public void U(byte[] var1, int var2, int var3) {
       this.h = var1;
       this.V = var2;
       this.g = var3;
    }
 
-   void b(byte[] var1) {
+   public void b(byte[] var1) {
       this.Z(var1, 0, var1.length, false);
    }
 
-   void X(byte[] var1, boolean var2) {
+   public void X(byte[] var1, boolean var2) {
       this.Z(var1, 0, var1.length, var2);
    }
 
-   void Z(byte[] var1, int var2, int var3, boolean var4) {
+   public void Z(byte[] var1, int var2, int var3, boolean var4) {
       int[] var10000;
       Df2 var7;
       label54: {
@@ -525,71 +525,71 @@ public class Df2 {
       var7.L = var3;
    }
 
-   byte[] y() {
+   public byte[] y() {
       return this.x;
    }
 
-   void B(byte[] var1) {
+   public void B(byte[] var1) {
       this.x = var1;
    }
 
-   int b() {
+   public int b() {
       return this.f;
    }
 
-   void x(int var1) {
+   public void x(int var1) {
       this.f = var1;
    }
 
-   int s() {
+   public int s() {
       return this.L;
    }
 
-   void O(int var1) {
+   public void O(int var1) {
       this.L = var1;
    }
 
-   byte[] D() {
+   public byte[] D() {
       return this.h;
    }
 
-   void e(byte[] var1) {
+   public void e(byte[] var1) {
       this.h = var1;
    }
 
-   int h$int() {
+   public int h$int() {
       return this.V;
    }
 
-   void h(int var1) {
+   public void h(int var1) {
       this.V = var1;
    }
 
-   int e() {
+   public int e() {
       return this.g;
    }
 
-   void u(int var1) {
+   public void u(int var1) {
       this.g = var1;
    }
 
-   long N$long() {
+   public long N$long() {
       return this.F;
    }
 
-   long z() {
+   public long z() {
       return this.O;
    }
 
-   String R() {
+   public String R() {
       return this.t;
    }
 
-   int v() {
+   public int v() {
       return 0;
    }
 
-   boolean h$boolean() {
+   public boolean h$boolean() {
       return false;
    }
 

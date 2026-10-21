@@ -4,8 +4,8 @@ import com.finalshell.ui.panel.SetBackgroundImagePanel;
 import java.util.HashMap;
 
 public class Pr2 {
-   HashMap N = new HashMap();
-   SetBackgroundImagePanel Q;
+   public HashMap N = new HashMap();
+   public SetBackgroundImagePanel Q;
    public static long a;
 
    public Pr2(SetBackgroundImagePanel var1) {

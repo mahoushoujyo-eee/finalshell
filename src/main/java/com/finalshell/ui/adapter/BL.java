@@ -16,9 +16,9 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class BL extends DefaultTableCellRenderer {
-   Border r;
-   SimpleDateFormat P;
-   LI Y;
+   public Border r;
+   public SimpleDateFormat P;
+   public LI Y;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -300,7 +300,7 @@ public class BL extends DefaultTableCellRenderer {
       return var8;
    }
 
-   static String a(long var0) {
+   public static String a(long var0) {
       Registry.e(var0);
       long var2 = 148259110884974759L;
       Object var10001 = Ref.h2(148259110884974759L, var2);

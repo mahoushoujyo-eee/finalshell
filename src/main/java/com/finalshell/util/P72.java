@@ -6,7 +6,7 @@ public class P72 extends HashSet {
    public static String[] a;
    public static String[] b;
 
-   P72(int var1) {
+   public P72(int var1) {
       super(var1);
       this.add(a(-64, 14418));
       this.add(a(-58, 3725));

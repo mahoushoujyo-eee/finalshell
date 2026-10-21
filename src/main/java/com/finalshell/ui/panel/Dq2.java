@@ -645,7 +645,7 @@ public class Dq2 extends JComponent implements SwingConstants, W2_3 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String var10000 = Wb2.m$String();
       super.paintComponent(var1);
       String var2 = var10000;

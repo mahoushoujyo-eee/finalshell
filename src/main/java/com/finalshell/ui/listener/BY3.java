@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class BY3 implements ActionListener {
-   final JCheckBox L;
-   final AutoSelectTab T;
+   public final JCheckBox L;
+   public final AutoSelectTab T;
 
-   BY3(AutoSelectTab var1, JCheckBox var2) {
+   public BY3(AutoSelectTab var1, JCheckBox var2) {
       this.T = var1;
       this.L = var2;
    }
@@ -66,7 +66,7 @@ public class BY3 implements ActionListener {
       }
 
       if (Ky4.F$arrString() != null) {
-         AutoSelectTab.t(this == false);
+         AutoSelectTab.t(this == null);
       }
    }
 }

@@ -7,10 +7,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class Xp2 implements KeyListener {
-   final KC E;
+   public final KC E;
    public static long a;
 
-   Xp2(KC var1) {
+   public Xp2(KC var1) {
       this.E = var1;
    }
 

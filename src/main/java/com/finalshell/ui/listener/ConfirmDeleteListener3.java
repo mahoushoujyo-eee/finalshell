@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteListener3 implements ActionListener {
-   final AccelerateRdpHelpPanel q;
+   public final AccelerateRdpHelpPanel q;
    public static String[] a;
    public static String[] b;
 
-   ConfirmDeleteListener3(AccelerateRdpHelpPanel var1) {
+   public ConfirmDeleteListener3(AccelerateRdpHelpPanel var1) {
       this.q = var1;
    }
 
@@ -25,7 +25,7 @@ public class ConfirmDeleteListener3 implements ActionListener {
       Object var3 = JOptionPane.showConfirmDialog((AccelerateRdpHelpPanel)Ref.g(399264580851771094L, var6), a(-18826, 19813), a(-18825, -23149), 0);
       ConfirmDeleteListener3 var10001 = (ConfirmDeleteListener3)var3;
       if (this == null) {
-         if (var3 != 0) {
+         if (var3 != null) {
             return;
          }
 

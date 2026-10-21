@@ -4,12 +4,12 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class Kl2 {
-   String Y;
-   long w;
-   long s;
-   long T;
-   float j;
-   String b;
+   public String Y;
+   public long w;
+   public long s;
+   public long T;
+   public float j;
+   public String b;
 
    public String T() {
       Object var1 = 333475836043661432L;

@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class C2 implements ActionListener {
-   final Address B;
+   public final Address B;
 
-   C2(Address var1) {
+   public C2(Address var1) {
       this.B = var1;
    }
 

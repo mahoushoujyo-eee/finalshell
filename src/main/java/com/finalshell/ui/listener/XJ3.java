@@ -6,9 +6,9 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class XJ3 implements ActionListener {
-   final Kz4 I;
+   public final Kz4 I;
 
-   XJ3(Kz4 var1) {
+   public XJ3(Kz4 var1) {
       this.I = var1;
    }
 

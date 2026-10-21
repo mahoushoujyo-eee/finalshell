@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wc2 implements ActionListener {
-   final Address n;
+   public final Address n;
 
-   Wc2(Address var1) {
+   public Wc2(Address var1) {
       this.n = var1;
    }
 

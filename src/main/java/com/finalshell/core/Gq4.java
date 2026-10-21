@@ -4,7 +4,7 @@ public class Gq4 extends Gj4 {
    public static String a;
 
    @Override
-   protected float q(float var1) {
+   public float q(float var1) {
       String[] var2 = W5.q();
       float var10000 = var1;
       float var10001 = 0.5F;

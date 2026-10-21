@@ -12,15 +12,15 @@ public class RY3 extends V5_2 {
       this.m = new Xs4(this);
    }
 
-   static JComponent x(RY3 var0) {
+   public static JComponent x(RY3 var0) {
       return var0.G;
    }
 
-   static JComponent P(RY3 var0) {
+   public static JComponent P(RY3 var0) {
       return var0.G;
    }
 
-   static JComponent T(RY3 var0) {
+   public static JComponent T(RY3 var0) {
       return var0.G;
    }
 

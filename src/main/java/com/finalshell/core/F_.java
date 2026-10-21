@@ -9,7 +9,7 @@ import java.awt.Toolkit;
 import javax.swing.SwingConstants;
 
 public class F_ extends An2 implements SwingConstants {
-   protected final GraphicsDevice u;
+   public final GraphicsDevice u;
 
    public F_() {
       this(GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice());

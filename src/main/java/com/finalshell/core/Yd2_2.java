@@ -11,10 +11,10 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicPopupMenuSeparatorUI;
 
 public class Yd2_2 extends BasicPopupMenuSeparatorUI {
-   protected Color H = Eb2.M;
-   protected Stroke o = Eb2.L;
-   protected int I = Eb2.m;
-   protected int u = Eb2.i;
+   public Color H = Eb2.M;
+   public Stroke o = Eb2.L;
+   public int I = Eb2.m;
+   public int u = Eb2.i;
    public static String a;
 
    public static ComponentUI createUI(JComponent var0) {

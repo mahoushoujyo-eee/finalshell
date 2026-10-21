@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class V1 implements MouseListener {
-   final Lw4_2 z;
+   public final Lw4_2 z;
 
-   V1(Lw4_2 var1) {
+   public V1(Lw4_2 var1) {
       this.z = var1;
    }
 

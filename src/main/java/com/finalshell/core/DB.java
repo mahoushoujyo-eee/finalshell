@@ -4,8 +4,8 @@ import com.finalshell.ui.model.MR;
 
 // $VF: synthetic class
 public class DB {
-   static int[] t;
-   static int[] X;
+   public static int[] t;
+   public static int[] X;
 
    static {
       __vfClinit__();

@@ -6,12 +6,12 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class TI3 implements Runnable {
-   final String n;
-   final String W;
-   final String E;
-   final MT g;
+   public final String n;
+   public final String W;
+   public final String E;
+   public final MT g;
 
-   TI3(MT var1, String var2, String var3, String var4) {
+   public TI3(MT var1, String var2, String var3, String var4) {
       this.g = var1;
       this.n = var2;
       this.W = var3;

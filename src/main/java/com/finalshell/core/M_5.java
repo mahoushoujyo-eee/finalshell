@@ -9,24 +9,24 @@ import java.util.regex.Pattern;
 public abstract class M_5 extends K_4{
    public static boolean g;
    public static Pattern q;
-   protected J_5 R = J_5.a;
-   protected J_5 c = K_4.L;
-   protected H_4 Z;
+   public J_5 R = J_5.a;
+   public J_5 c = K_4.L;
+   public H_4 Z;
    public Charset m;
-   protected boolean Q;
-   protected boolean v;
-   protected boolean o;
-   protected int h;
-   protected int U;
-   protected File[] x;
-   protected File[] e;
+   public boolean Q;
+   public boolean v;
+   public boolean o;
+   public int h;
+   public int U;
+   public File[] x;
+   public File[] e;
    @C_9
-   protected File[] V;
+   public File[] V;
    @C_9
-   protected U_5 r;
+   public U_5 r;
    @C_9
-   protected Y_5 l;
-   static boolean P;
+   public Y_5 l;
+   public static boolean P;
    public static String[] a;
    public static String[] b;
 
@@ -214,7 +214,7 @@ public abstract class M_5 extends K_4{
       this.l = var1;
    }
 
-   static Pattern m() {
+   public static Pattern m() {
       return q;
    }
 

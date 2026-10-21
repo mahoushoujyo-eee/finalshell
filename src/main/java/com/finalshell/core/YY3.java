@@ -4,7 +4,7 @@ import java.awt.Rectangle;
 
 public class YY3 extends GT3 {
    public float x = 1.0F;
-   protected Po2 r;
+   public Po2 r;
    public boolean g = true;
    public boolean j = false;
    public boolean f = false;
@@ -68,7 +68,7 @@ public class YY3 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int[] var5 = new int[var1 * var2];
       this.O(var3, var5, var1, var2);
       int var6 = this.d(var5, var1, var2);

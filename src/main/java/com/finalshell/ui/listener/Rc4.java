@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Rc4 implements ActionListener {
-   final Fm2 M;
+   public final Fm2 M;
 
-   Rc4(Fm2 var1) {
+   public Rc4(Fm2 var1) {
       this.M = var1;
    }
 

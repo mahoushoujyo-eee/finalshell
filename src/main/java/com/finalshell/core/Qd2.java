@@ -4,11 +4,11 @@ import org.pcap4j.core.PacketListener;
 import org.pcap4j.packet.Packet;
 
 public class Qd2 implements PacketListener {
-   final Connect v;
+   public final Connect v;
    public static String[] a;
    public static String[] b;
 
-   Qd2(Connect var1) {
+   public Qd2(Connect var1) {
       this.v = var1;
    }
 

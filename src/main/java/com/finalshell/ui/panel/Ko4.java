@@ -11,7 +11,7 @@ public class Ko4 extends Ky4 {
    public final C42 C;
    public boolean p;
    public boolean b;
-   final KC3 V;
+   public final KC3 V;
    public static long[] a;
    public static Integer[] c;
 
@@ -163,15 +163,15 @@ public class Ko4 extends Ky4 {
       return this.V.v().z(this);
    }
 
-   static boolean r(Ko4 var0, boolean var1) {
+   public static boolean r(Ko4 var0, boolean var1) {
       return var0.p = var1;
    }
 
-   static boolean Q(Ko4 var0) {
+   public static boolean Q(Ko4 var0) {
       return var0.p;
    }
 
-   static boolean R(Ko4 var0, boolean var1) {
+   public static boolean R(Ko4 var0, boolean var1) {
       return var0.b = var1;
    }
 

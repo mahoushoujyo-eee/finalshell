@@ -1,19 +1,16 @@
 package com.finalshell.core;
 
 public abstract class Cx2_2 extends Cq2_2 {
-   static byte[] Q;
-   static byte[] H;
-
-   Cx2_2() {
-   }
+   public static byte[] Q;
+   public static byte[] H;
 
    @Override
-   byte[] l() {
+   public byte[] l() {
       return Q;
    }
 
    @Override
-   byte[] u() {
+   public byte[] u() {
       return H;
    }
 

@@ -11,8 +11,8 @@ import java.util.List;
 import javax.swing.SwingConstants;
 
 public class To2 extends T4 implements SwingConstants {
-   protected final List W = new ArrayList(2);
-   protected final Object B = new Object();
+   public final List W = new ArrayList(2);
+   public final Object B = new Object();
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

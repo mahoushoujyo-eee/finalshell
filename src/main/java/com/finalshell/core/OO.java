@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.awt.Component;
 
 public class OO implements C_7 {
-   final Component d;
-   final com.finalshell.ui.panel.Qj2 B;
+   public final Component d;
+   public final com.finalshell.ui.panel.Qj2 B;
 
-   OO(com.finalshell.ui.panel.Qj2 var1, Component var2) {
+   public OO(com.finalshell.ui.panel.Qj2 var1, Component var2) {
       this.B = var1;
       this.d = var2;
    }

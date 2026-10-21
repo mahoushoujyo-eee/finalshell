@@ -4,7 +4,7 @@ public class L9_2 extends Lr2_2 {
    public static String c;
 
    @Override
-   String X() {
+   public String X() {
       return c;
    }
 

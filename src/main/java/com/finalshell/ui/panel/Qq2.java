@@ -1007,19 +1007,19 @@ public class Qq2 extends QX {
       }
    }
 
-   static List u() {
+   public static List u() {
       return k;
    }
 
-   static KD m(Qq2 var0) {
+   public static KD m(Qq2 var0) {
       return var0.G;
    }
 
-   static void D(Qq2 var0, KD var1, KD var2) {
+   public static void D(Qq2 var0, KD var1, KD var2) {
       var0.V(var1, var2);
    }
 
-   static KD r(Qq2 var0) {
+   public static KD r(Qq2 var0) {
       return var0.l;
    }
 

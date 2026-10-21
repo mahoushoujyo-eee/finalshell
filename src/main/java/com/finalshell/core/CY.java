@@ -1,19 +1,16 @@
 package com.finalshell.core;
 
 public abstract class CY extends Cq2_2 {
-   static byte[] Y;
-   static byte[] y;
-
-   CY() {
-   }
+   public static byte[] Y;
+   public static byte[] y;
 
    @Override
-   byte[] l() {
+   public byte[] l() {
       return Y;
    }
 
    @Override
-   byte[] u() {
+   public byte[] u() {
       return y;
    }
 

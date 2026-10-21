@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class T82 implements ActionListener {
-   final FilePermissionPanel e;
+   public final FilePermissionPanel e;
 
-   T82(FilePermissionPanel var1) {
+   public T82(FilePermissionPanel var1) {
       this.e = var1;
    }
 

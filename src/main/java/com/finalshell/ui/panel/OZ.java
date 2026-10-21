@@ -12,12 +12,12 @@ import java.util.Collection;
 import java.util.List;
 
 public class OZ extends O {
-   protected List J = new ArrayList();
-   protected SimpleDateFormat O;
-   protected com.finalshell.ui.model.Bi2 j;
-   protected long k;
-   protected long t;
-   protected WC_2 M;
+   public List J = new ArrayList();
+   public SimpleDateFormat O;
+   public com.finalshell.ui.model.Bi2 j;
+   public long k;
+   public long t;
+   public WC_2 M;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -37,11 +37,11 @@ public class OZ extends O {
       }
    }
 
-   protected void P() {
+   public void P() {
       this.M = new WC_2(e, new Uq_2(this));
    }
 
-   protected void f() {
+   public void f() {
       label31: {
          OZ var3;
          label30: {

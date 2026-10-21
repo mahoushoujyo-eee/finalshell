@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class NE implements ActionListener {
-   final RouteTracePanel2 O;
+   public final RouteTracePanel2 O;
 
-   NE(RouteTracePanel2 var1) {
+   public NE(RouteTracePanel2 var1) {
       this.O = var1;
    }
 

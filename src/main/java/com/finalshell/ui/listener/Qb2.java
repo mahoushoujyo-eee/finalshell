@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qb2 implements ActionListener {
-   final RouteTracePanel2 f;
+   public final RouteTracePanel2 f;
 
-   Qb2(RouteTracePanel2 var1) {
+   public Qb2(RouteTracePanel2 var1) {
       this.f = var1;
    }
 

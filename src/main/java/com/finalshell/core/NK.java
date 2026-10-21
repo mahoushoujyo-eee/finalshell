@@ -7,9 +7,6 @@ public abstract class NK implements EU {
    public static long[] a;
    public static Integer[] b;
 
-   NK() {
-   }
-
    @Override
    public int w() {
       return a(25680, 8896557438840124926L);

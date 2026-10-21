@@ -6,12 +6,12 @@ import java.io.OutputStream;
 
 public class Az2 extends OutputStream {
    public byte[] p;
-   final X3_3 L;
+   public final X3_3 L;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   Az2(X3_3 var1) {
+   public Az2(X3_3 var1) {
       this.L = var1;
       this.p = new byte[(int)c];
    }

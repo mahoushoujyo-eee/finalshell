@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class F extends C42 {
-   final E J;
+   public final E J;
 
-   F(E var1, boolean var2) {
+   public F(E var1, boolean var2) {
       super(var2);
       this.J = var1;
    }

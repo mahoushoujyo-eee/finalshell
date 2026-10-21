@@ -24,7 +24,7 @@ public class T__2 implements Zv2_2 {
          throw var15.getTargetException();
       }
 
-new String(var10004);
+var3 = new String(var10004);
       File var4 = var10001;
       File var2 = var10001;
       boolean var5 = false;

@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class AQ implements Runnable {
-   final T9 C;
+   public final T9 C;
 
-   AQ(T9 var1) {
+   public AQ(T9 var1) {
       this.C = var1;
    }
 

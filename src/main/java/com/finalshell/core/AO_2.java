@@ -5,9 +5,9 @@ import java.awt.Component;
 import java.awt.Graphics2D;
 
 public abstract class AO_2 {
-   protected boolean h = true;
-   protected Pt2 D = Pt2.unchecked;
-   protected Pt2 A = null;
+   public boolean h = true;
+   public Pt2 D = Pt2.unchecked;
+   public Pt2 A = null;
 
    public boolean G$boolean() {
       return this.h;

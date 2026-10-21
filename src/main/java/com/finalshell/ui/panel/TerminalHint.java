@@ -18,19 +18,19 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class TerminalHint extends Z7 {
-   JComboBox Y;
-   String J;
-   String N;
-   String x;
-   JComboBox j;
-   JComboBox W;
+   public JComboBox Y;
+   public String J;
+   public String N;
+   public String x;
+   public JComboBox j;
+   public JComboBox W;
    public static int[] E;
    public static String[] a;
    public static String[] b;
 
    public TerminalHint() {
+   super();
       L();
-      super();
       String var10002 = a(13493, -7935);
       long var9 = 162797623991007040L;
       String var8 = var10002;
@@ -97,7 +97,7 @@ public class TerminalHint extends Z7 {
          throw var60.getTargetException();
       }
 
-new UW(var10011, var69);
+var10010 = new UW(var10011, var69);
       Object[] var61 = var10009;
       var61.addActionListener(new UW(this, var61));
       JPanel var62 = new JPanel(new MigLayout(a(13501, -31602)));

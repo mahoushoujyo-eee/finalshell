@@ -8,7 +8,7 @@ import java.util.Map;
 public class Ke4_2 {
    public InputStream K;
    public OutputStream Z;
-   boolean S = true;
+   public boolean S = true;
 
    public Ke4_2(InputStream var1, OutputStream var2) {
       this.K = var1;

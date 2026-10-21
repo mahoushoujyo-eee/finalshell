@@ -7,7 +7,7 @@ public class QN extends Qi2 {
    public static String[] d;
    public static long e;
 
-   QN() {
+   public QN() {
       this.T(true);
    }
 

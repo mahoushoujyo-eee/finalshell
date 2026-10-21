@@ -9,16 +9,16 @@ import java.io.File;
 import javax.swing.JList;
 
 public class W22 extends WO3 {
-   protected Object t = null;
+   public Object t = null;
 
    @Override
-   protected void W(JList var1) {
+   public void W(JList var1) {
       this.Q = new Xo4(this, var1);
       var1.addKeyListener(this.Q);
    }
 
    @Override
-   protected void H(JList var1) {
+   public void H(JList var1) {
       var1.removeKeyListener(this.Q);
    }
 
@@ -62,7 +62,7 @@ public class W22 extends WO3 {
       return var4 == null ? var8 : var8;
    }
 
-   protected Ne4 r(JList var1, int var2, Wo4 var3) {
+   public Ne4 r(JList var1, int var2, Wo4 var3) {
       Ne4 var5 = Ne4.r(true, Wx4.n, Wx4.y);
       String var10000 = com.finalshell.ui.panel.Co2.U$String();
       var5.c$void(false);
@@ -86,7 +86,7 @@ public class W22 extends WO3 {
       return var7;
    }
 
-   protected Rectangle U(JList var1, int var2, Wo4 var3, Rectangle var4) {
+   public Rectangle U(JList var1, int var2, Wo4 var3, Rectangle var4) {
       String var5 = com.finalshell.ui.panel.Co2.U$String();
       JList var10000 = var1;
       if (var5 != null) {
@@ -180,12 +180,12 @@ public class W22 extends WO3 {
    }
 
    @Override
-   protected Rectangle O(JList var1, int var2, Object var3, Rectangle var4) {
+   public Rectangle O(JList var1, int var2, Object var3, Rectangle var4) {
       return this.U(var1, var2, (Wo4)var3, var4);
    }
 
    @Override
-   protected Component j(JList var1, int var2, Object var3) {
+   public Component j(JList var1, int var2, Object var3) {
       return this.r(var1, var2, (Wo4)var3);
    }
 

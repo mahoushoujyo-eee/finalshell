@@ -21,10 +21,10 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class LoginDialog extends JDialog {
-   JTextField z;
-   ConnectHost R;
-   Lv4_2 Z;
-   JCheckBox W;
+   public JTextField z;
+   public ConnectHost R;
+   public Lv4_2 Z;
+   public JCheckBox W;
    public static String[] a;
    public static String[] b;
 
@@ -89,11 +89,11 @@ public class LoginDialog extends JDialog {
       this.setVisible(true);
    }
 
-   void T(JComponent var1) {
+   public void T(JComponent var1) {
       var1.addKeyListener(new Y1(this));
    }
 
-   void V() {
+   public void V() {
       Object var3 = 551683023645458635L;
       String var2 = ((JTextField)Ref.g(551683023645458635L, var3)).getText().trim();
       Object var5 = 599351420990196803L;

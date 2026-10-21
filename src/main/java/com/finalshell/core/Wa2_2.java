@@ -3,78 +3,78 @@ package com.finalshell.core;
 public final class Wa2_2 implements Cloneable {
    public static DT3[] r;
    public static String[] O;
-   Df2 Q;
-   int R;
-   byte[] F;
-   int a;
-   int W;
-   int I;
-   int Y = 1;
-   byte M;
-   byte T;
-   int c;
-   int Z;
-   int B;
-   int p;
-   byte[] D;
-   int x;
-   short[] i;
-   short[] k;
-   int U4;
-   int UK;
-   int S;
-   int w;
-   int C;
-   int q;
-   int E;
-   int e;
-   int d;
-   int f;
-   int j;
-   int U;
-   int Uj;
-   int u;
-   int P;
-   int N;
-   int b;
-   int l;
-   int g;
-   short[] L;
-   short[] Ue;
-   short[] Uf;
-   Xd2 UJ = new Xd2();
-   Xd2 s = new Xd2();
-   Xd2 m = new Xd2();
-   short[] v = new short[a(11385, 6033874610907855286L)];
-   short[] UW = new short[a(11385, 6033874610907855286L)];
-   int[] X = new int[a(19763, 7225873651125737694L)];
-   int h;
-   int H;
-   byte[] z = new byte[a(28674, 1165011225590556113L)];
-   byte[] G;
-   int K;
-   int n;
-   int y;
-   int V;
-   int t;
-   int A;
-   int U9;
-   short o;
-   int J;
-   DF_2 UV = null;
+   public Df2 Q;
+   public int R;
+   public byte[] F;
+   public int a;
+   public int W;
+   public int I;
+   public int Y = 1;
+   public byte M;
+   public byte T;
+   public int c;
+   public int Z;
+   public int B;
+   public int p;
+   public byte[] D;
+   public int x;
+   public short[] i;
+   public short[] k;
+   public int U4;
+   public int UK;
+   public int S;
+   public int w;
+   public int C;
+   public int q;
+   public int E;
+   public int e;
+   public int d;
+   public int f;
+   public int j;
+   public int U;
+   public int Uj;
+   public int u;
+   public int P;
+   public int N;
+   public int b;
+   public int l;
+   public int g;
+   public short[] L;
+   public short[] Ue;
+   public short[] Uf;
+   public Xd2 UJ = new Xd2();
+   public Xd2 s = new Xd2();
+   public Xd2 m = new Xd2();
+   public short[] v = new short[a(11385, 6033874610907855286L)];
+   public short[] UW = new short[a(11385, 6033874610907855286L)];
+   public int[] X = new int[a(19763, 7225873651125737694L)];
+   public int h;
+   public int H;
+   public byte[] z = new byte[a(28674, 1165011225590556113L)];
+   public byte[] G;
+   public int K;
+   public int n;
+   public int y;
+   public int V;
+   public int t;
+   public int A;
+   public int U9;
+   public short o;
+   public int J;
+   public DF_2 UV = null;
    public static long[] ab;
    public static Integer[] bb;
    public static long[] cb;
    public static Long[] db;
 
-   Wa2_2(Df2 var1) {
+   public Wa2_2(Df2 var1) {
       this.Q = var1;
       this.L = new short[a(30706, 2572097326115644012L)];
       this.Ue = new short[a(1533, 1726388448479842404L)];
       this.Uf = new short[a(28537, 3590607867828796089L)];
    }
 
-   void m() {
+   public void m() {
       int[] var10000 = Nm4.g();
       this.x = 2 * this.Z;
       this.k[this.UK - 1] = 0;
@@ -108,7 +108,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   void B() {
+   public void B() {
       this.UJ.V = this.L;
       this.UJ.n = GK.D;
       this.s.V = this.Ue;
@@ -121,7 +121,7 @@ public final class Wa2_2 implements Cloneable {
       this.X();
    }
 
-   void X() {
+   public void X() {
       int[] var10000 = Nm4.g();
       int var2 = 0;
       int[] var1 = var10000;
@@ -180,7 +180,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   void O(short[] var1, int var2) {
+   public void O(short[] var1, int var2) {
       int[] var10000 = Nm4.g();
       int var4 = this.X[var2];
       int[] var3 = var10000;
@@ -233,7 +233,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   static boolean m(short[] var0, int var1, int var2, byte[] var3) {
+   public static boolean m(short[] var0, int var1, int var2, byte[] var3) {
       int[] var10000 = Nm4.g();
       short var5 = var0[var1 * 2];
       int[] var4 = var10000;
@@ -267,7 +267,7 @@ public final class Wa2_2 implements Cloneable {
       return (boolean)var7;
    }
 
-   void B(short[] var1, int var2) {
+   public void B(short[] var1, int var2) {
       short var5 = -1;
       int[] var10002 = Nm4.g();
       short var7 = var1[1];
@@ -393,7 +393,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   int D() {
+   public int D() {
       this.B(this.L, this.UJ.J);
       this.B(this.Ue, this.s.J);
       this.m.t(this);
@@ -424,7 +424,7 @@ public final class Wa2_2 implements Cloneable {
       return var3;
    }
 
-   void f(int var1, int var2, int var3) {
+   public void f(int var1, int var2, int var3) {
       this.W(var1 - a(16642, 7579497002448737520L), 5);
       int[] var10000 = Nm4.g();
       this.W(var2 - 1, 5);
@@ -451,7 +451,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   void w(short[] var1, int var2) {
+   public void w(short[] var1, int var2) {
       short var5 = -1;
       int[] var10000 = Nm4.g();
       short var7 = var1[1];
@@ -582,31 +582,31 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   final void P(byte[] var1, int var2, int var3) {
+   public final void P(byte[] var1, int var2, int var3) {
       System.arraycopy(var1, var2, this.F, this.I, var3);
       this.I += var3;
    }
 
-   final void a(byte var1) {
+   public final void a(byte var1) {
       this.F[this.I++] = var1;
    }
 
-   final void C(int var1) {
+   public final void C(int var1) {
       this.a((byte)var1);
       this.a((byte)(var1 >>> a(674, 4619306808194668361L)));
    }
 
-   final void G(int var1) {
+   public final void G(int var1) {
       this.a((byte)(var1 >> a(674, 4619306808194668361L)));
       this.a((byte)var1);
    }
 
-   final void i(int var1, short[] var2) {
+   public final void i(int var1, short[] var2) {
       int var3 = var1 * 2;
       this.W(var2[var3] & a(10923, 7527050280887795560L), var2[var3 + 1] & a(14491, 9174950205415632236L));
    }
 
-   void W(int var1, int var2) {
+   public void W(int var1, int var2) {
       int[] var3 = Nm4.g();
       Wa2_2 var10000 = this;
       if (var3 == null) {
@@ -627,7 +627,7 @@ public final class Wa2_2 implements Cloneable {
       var10000.J += var2;
    }
 
-   void E() {
+   public void E() {
       int[] var10000 = Nm4.g();
       this.W(2, 3);
       int[] var1 = var10000;
@@ -644,7 +644,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   boolean Y(int var1, int var2) {
+   public boolean Y(int var1, int var2) {
       int[] var3;
       label68: {
          this.F[this.y + this.n * 2] = (byte)(var1 >>> a(674, 4619306808194668361L));
@@ -726,7 +726,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   void H(short[] var1, short[] var2) {
+   public void H(short[] var1, short[] var2) {
       int[] var10000 = Nm4.g();
       int var6 = 0;
       int[] var3 = var10000;
@@ -784,7 +784,7 @@ public final class Wa2_2 implements Cloneable {
       var11.U9 = var1[a(23070, 2628685220654927856L)];
    }
 
-   void A() {
+   public void A() {
       int[] var10000 = Nm4.g();
       int var2 = 0;
       int[] var1 = var10000;
@@ -844,7 +844,7 @@ public final class Wa2_2 implements Cloneable {
       this.M = (byte)var10001;
    }
 
-   void Z() {
+   public void Z() {
       Wa2_2 var2;
       label26: {
          int[] var1 = Nm4.g();
@@ -881,7 +881,7 @@ public final class Wa2_2 implements Cloneable {
       var2.J = var2.J - a(674, 4619306808194668361L);
    }
 
-   void F() {
+   public void F() {
       Wa2_2 var2;
       label23: {
          label22: {
@@ -915,7 +915,7 @@ public final class Wa2_2 implements Cloneable {
       var2.J = 0;
    }
 
-   void D(int var1, int var2, boolean var3) {
+   public void D(int var1, int var2, boolean var3) {
       int[] var10000 = Nm4.g();
       boolean var5 = false;
       int[] var4 = var10000;
@@ -931,7 +931,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   void b(boolean var1) {
+   public void b(boolean var1) {
       int[] var2 = Nm4.g();
       int var10001 = this.q;
       if (var2 == null) {
@@ -944,7 +944,7 @@ public final class Wa2_2 implements Cloneable {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   int P(int var1) {
+   public int P(int var1) {
       int[] var10000 = Nm4.g();
       int var3 = a(14491, 9174950205415632236L);
       int[] var2 = var10000;
@@ -1196,7 +1196,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   void l(int var1, int var2, boolean var3) {
+   public void l(int var1, int var2, boolean var3) {
       int[] var4 = Nm4.g();
       int var10002 = var3;
       if (var4 == null) {
@@ -1207,7 +1207,7 @@ public final class Wa2_2 implements Cloneable {
       this.D(var1, var2, true);
    }
 
-   void t(int var1, int var2, boolean var3) {
+   public void t(int var1, int var2, boolean var3) {
       int[] var4;
       int var5;
       int var6;
@@ -1323,7 +1323,7 @@ public final class Wa2_2 implements Cloneable {
       var11.F();
    }
 
-   void M() {
+   public void M() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1572,7 +1572,7 @@ public final class Wa2_2 implements Cloneable {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    // $VF: Irreducible bytecode has more than 5 nodes in sequence and was not entirely decomposed
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   int k(int var1) {
+   public int k(int var1) {
       int[] var10000 = Nm4.g();
       int var3 = 0;
       int[] var2 = var10000;
@@ -1994,7 +1994,7 @@ public final class Wa2_2 implements Cloneable {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   int f(int var1) {
+   public int f(int var1) {
       int[] var10000 = Nm4.g();
       int var3 = 0;
       int[] var2 = var10000;
@@ -2314,7 +2314,7 @@ public final class Wa2_2 implements Cloneable {
       return var16;
    }
 
-   int B(int param1) {
+   public int B(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2643,15 +2643,15 @@ public final class Wa2_2 implements Cloneable {
       // 277: ireturn
    }
 
-   int m(int var1, int var2, int var3) {
+   public int m(int var1, int var2, int var3) {
       return this.C(var1, a(674, 4619306808194668361L), var2, var3, 0);
    }
 
-   int Q(int var1, int var2) {
+   public int Q(int var1, int var2) {
       return this.C(var1, a(674, 4619306808194668361L), var2, a(674, 4619306808194668361L), 0);
    }
 
-   int x(int var1) {
+   public int x(int var1) {
       return this.Q(var1, a(12147, 2653577501029448333L));
    }
 
@@ -2782,7 +2782,7 @@ public final class Wa2_2 implements Cloneable {
       return a(11787, 3843511092555955169L);
    }
 
-   int Q() {
+   public int Q() {
       this.Q.O = this.Q.F = 0L;
       int[] var10000 = Nm4.g();
       this.Q.t = null;
@@ -2812,7 +2812,7 @@ public final class Wa2_2 implements Cloneable {
       return 0;
    }
 
-   int Y() {
+   public int Y() {
       int[] var1 = Nm4.g();
       int var10000 = this.R;
       int var10001 = a(43, 8757325055301948887L);
@@ -2853,7 +2853,7 @@ public final class Wa2_2 implements Cloneable {
       return var10000 == var10001 ? a(4162, 278793441181500800L) : 0;
    }
 
-   int K(int var1, int var2) {
+   public int K(int var1, int var2) {
       int[] var10000 = Nm4.g();
       int var4 = 0;
       int[] var3 = var10000;
@@ -2934,7 +2934,7 @@ public final class Wa2_2 implements Cloneable {
       return var5;
    }
 
-   int x(byte[] var1, int var2) {
+   public int x(byte[] var1, int var2) {
       int[] var10000 = Nm4.g();
       int var4 = var2;
       int var5 = 0;
@@ -2997,7 +2997,7 @@ public final class Wa2_2 implements Cloneable {
       }
    }
 
-   int a(int var1) {
+   public int a(int var1) {
       int[] var2 = Nm4.g();
       int var10000 = var1;
       if (var2 == null) {
@@ -3471,7 +3471,7 @@ public final class Wa2_2 implements Cloneable {
       return var10000;
    }
 
-   static int E(Df2 param0, Df2 param1) {
+   public static int E(Df2 param0, Df2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3745,7 +3745,7 @@ public final class Wa2_2 implements Cloneable {
       return var2;
    }
 
-   synchronized DF_2 x() {
+   public synchronized DF_2 x() {
       int[] var1 = Nm4.g();
       DF_2 var10000 = this.UV;
       if (var1 == null) {

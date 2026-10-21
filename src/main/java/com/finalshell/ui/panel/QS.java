@@ -24,21 +24,21 @@ import java.util.List;
 import javax.swing.Icon;
 
 public class QS extends QX {
-   protected List N = new ArrayList(1);
-   protected boolean a = true;
-   protected boolean O = true;
-   protected long E = 0L;
-   protected WC_2 j;
-   protected boolean d;
-   protected Icon r;
-   protected Component e;
-   protected List t;
-   protected Wb2 D;
-   protected Ky4 Y;
-   protected Ky4 S;
-   protected KR3 J;
-   protected KR3 l;
-   protected KR3 n;
+   public List N = new ArrayList(1);
+   public boolean a = true;
+   public boolean O = true;
+   public long E = 0L;
+   public WC_2 j;
+   public boolean d;
+   public Icon r;
+   public Component e;
+   public List t;
+   public Wb2 D;
+   public Ky4 Y;
+   public Ky4 S;
+   public KR3 J;
+   public KR3 l;
+   public KR3 n;
    public static String[] k;
    public static String[] m;
    public static long q;
@@ -65,7 +65,7 @@ public class QS extends QX {
       this.B();
    }
 
-   protected void B() {
+   public void B() {
       this.setLayout(new BorderLayout((int)q, 5));
       this.c(true);
       QQ.N$arrky_4();
@@ -146,7 +146,7 @@ public class QS extends QX {
       this.T(var1.S());
    }
 
-   protected void K() {
+   public void K() {
       QS var2;
       label29: {
          label31: {
@@ -202,7 +202,7 @@ public class QS extends QX {
       this.M(new O(var1));
    }
 
-   protected void L() {
+   public void L() {
       QS var10000;
       label29: {
          label31: {
@@ -259,7 +259,7 @@ public class QS extends QX {
       this.g();
    }
 
-   protected void g() {
+   public void g() {
       QS var10000;
       label55: {
          label54: {
@@ -425,11 +425,11 @@ public class QS extends QX {
       }
    }
 
-   static void I(QS var0) {
+   public static void I(QS var0) {
       var0.t();
    }
 
-   static void K(QS var0) {
+   public static void K(QS var0) {
       var0.v();
    }
 

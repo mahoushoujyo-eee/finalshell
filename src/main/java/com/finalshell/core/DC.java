@@ -2,29 +2,29 @@ package com.finalshell.core;
 
 public final class DC {
    public static int[] M;
-   static int[] b;
-   int N;
-   int p;
-   int q;
-   int J;
-   int[] P;
-   int[] u = new int[1];
-   int[] Q;
-   int[] G;
-   int[] H;
-   int[][] D;
-   int[][] o;
-   int[] y;
-   int[] w;
+   public static int[] b;
+   public int N;
+   public int p;
+   public int q;
+   public int J;
+   public int[] P;
+   public int[] u = new int[1];
+   public int[] Q;
+   public int[] G;
+   public int[] H;
+   public int[][] D;
+   public int[][] o;
+   public int[] y;
+   public int[] w;
    public final Re2 V;
-   int v;
-   int m;
-   int t;
-   int[] g;
-   byte[] B;
-   int Z;
-   int a;
-   int O;
+   public int v;
+   public int m;
+   public int t;
+   public int[] g;
+   public byte[] B;
+   public int Z;
+   public int a;
+   public int O;
    public boolean z;
    public final Ny2 n;
    public final Df2 h;
@@ -33,7 +33,7 @@ public final class DC {
    public static long[] e;
    public static Integer[] f;
 
-   DC(Df2 var1, int var2) {
+   public DC(Df2 var1, int var2) {
       int[] var10000 = Nm4.g();
       this.Q = new int[1];
       this.G = new int[1];
@@ -59,7 +59,7 @@ public final class DC {
       this.z();
    }
 
-   void z() {
+   public void z() {
       DC var2;
       label36: {
          label37: {
@@ -105,7 +105,7 @@ public final class DC {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   int S(int var1) {
+   public int S(int var1) {
       int[] var2;
       int var4;
       int var5;
@@ -1236,18 +1236,18 @@ public final class DC {
       return this.C(var1);
    }
 
-   void I() {
+   public void I() {
       this.z();
       this.B = null;
       this.g = null;
    }
 
-   void b(byte[] var1, int var2, int var3) {
+   public void b(byte[] var1, int var2, int var3) {
       System.arraycopy(var1, var2, this.B, 0, var3);
       this.a = this.O = var3;
    }
 
-   int F() {
+   public int F() {
       int[] var1 = Nm4.g();
       int var10000 = this.N;
       if (var1 == null) {
@@ -1257,7 +1257,7 @@ public final class DC {
       return var10000;
    }
 
-   int C(int var1) {
+   public int C(int var1) {
       int var4 = this.h.V;
       int[] var10000 = Nm4.g();
       int var5 = this.a;

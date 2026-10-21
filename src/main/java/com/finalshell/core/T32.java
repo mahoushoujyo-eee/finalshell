@@ -8,17 +8,17 @@ import com.finalshell.ui.panel.ConnectionProperty;
 import java.lang.reflect.InvocationTargetException;
 
 public class T32 {
-   Bq2 F;
-   com.finalshell.ui.panel.F8 I;
-   String U;
-   int C;
-   boolean g;
-   Address w;
-   Object O;
-   ConnectionProperty Z;
-   int q;
-   boolean b;
-   com.finalshell.ui.panel.AM h;
+   public Bq2 F;
+   public com.finalshell.ui.panel.F8 I;
+   public String U;
+   public int C;
+   public boolean g;
+   public Address w;
+   public Object O;
+   public ConnectionProperty Z;
+   public int q;
+   public boolean b;
+   public com.finalshell.ui.panel.AM h;
 
    public T32(String var1) {
       Registry.lookupField(297331912139463101L).setBoolean(this, false);

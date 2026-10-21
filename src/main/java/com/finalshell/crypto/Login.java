@@ -16,10 +16,7 @@ public class Login extends IM {
    public static long[] d;
    public static Integer[] e;
 
-   Login() {
-   }
-
-   void L(ConnectHost param1) throws Pc2 {
+   public void L(ConnectHost param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -137,7 +134,7 @@ public class Login extends IM {
       // f4: return
    }
 
-   boolean a(ConnectHost var1) throws Pc2 {
+   public boolean a(ConnectHost var1) throws Pc2 {
       boolean var2 = false;
       Lv4_2 var3 = var1.H();
       Object[] var10001 = Registry.emptyArgs();
@@ -161,7 +158,7 @@ public class Login extends IM {
       return var2;
    }
 
-   boolean p(ConnectHost param1) throws Exception {
+   public boolean p(ConnectHost param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

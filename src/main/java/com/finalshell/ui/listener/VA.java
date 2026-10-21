@@ -8,10 +8,10 @@ import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class VA implements KeyListener {
-   final PasswordDialog z;
+   public final PasswordDialog z;
    public static long a;
 
-   VA(PasswordDialog var1) {
+   public VA(PasswordDialog var1) {
       this.z = var1;
    }
 

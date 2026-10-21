@@ -7,10 +7,10 @@ import java.io.File;
 import javax.swing.SwingUtilities;
 
 public class H2 extends MouseAdapter {
-   final com.finalshell.ui.panel.T h;
+   public final com.finalshell.ui.panel.T h;
    public static String a;
 
-   H2(com.finalshell.ui.panel.T var1) {
+   public H2(com.finalshell.ui.panel.T var1) {
       this.h = var1;
    }
 

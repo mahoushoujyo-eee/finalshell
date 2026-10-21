@@ -4,15 +4,15 @@ import com.finalshell.ui.panel.Address;
 import java.util.ArrayList;
 
 public class FileJob2 implements Runnable {
-   final ArrayList a;
-   final String K;
-   final String f;
-   final ArrayList e;
-   final Address b;
+   public final ArrayList a;
+   public final String K;
+   public final String f;
+   public final ArrayList e;
+   public final Address b;
    public static String[] c;
    public static String[] d;
 
-   FileJob2(Address var1, ArrayList var2, String var3, String var4, ArrayList var5) {
+   public FileJob2(Address var1, ArrayList var2, String var3, String var4, ArrayList var5) {
       this.b = var1;
       this.a = var2;
       this.K = var3;

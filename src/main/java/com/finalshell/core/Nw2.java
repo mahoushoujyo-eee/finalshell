@@ -169,7 +169,7 @@ public class Nw2 extends NP {
    }
 
    @Override
-   protected int M(JComponent var1, JComponent var2, int var3, int var4) {
+   public int M(JComponent var1, JComponent var2, int var3, int var4) {
       String[] var10000 = XD3.U();
       var4 = super.M(var1, var2, var3, var4);
       String[] var5 = var10000;

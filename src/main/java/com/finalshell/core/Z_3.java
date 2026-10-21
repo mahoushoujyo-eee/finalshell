@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Z_3 implements HL {
-   final Cs2_2 b;
+   public final Cs2_2 b;
 
-   Z_3(Cs2_2 var1) {
+   public Z_3(Cs2_2 var1) {
       this.b = var1;
    }
 

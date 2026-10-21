@@ -10,8 +10,8 @@ public class BS implements Serializable {
    public int J;
    public String P;
    public String C;
-   boolean Y;
-   ServerSocket u;
+   public boolean Y;
+   public ServerSocket u;
    public static int l;
 
    public BS() {

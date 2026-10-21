@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class X62 extends WindowAdapter {
-   final com.finalshell.ui.frame.U J;
+   public final com.finalshell.ui.frame.U J;
 
-   X62(com.finalshell.ui.frame.U var1) {
+   public X62(com.finalshell.ui.frame.U var1) {
       this.J = var1;
    }
 

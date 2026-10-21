@@ -24,9 +24,9 @@ public class C_y_2_2 extends C_L {
    public static long eb;
 
    public C_y_2_2(J_5 var1, @C_9 String var2, @C_9 C_L var3) {
+   super(var3);
       Charset var5;
       label14: {
-         super(var3);
          this.Mv = EnumSet.noneOf(com.finalshell.ui.model.Rd2.class);
          String[] var10000 = RG_2.C();
          this.MZ = new HashSet();
@@ -341,7 +341,7 @@ public class C_y_2_2 extends C_L {
    }
 
    @C_9
-   protected RB l(String param1) throws IOException, B2_5 {
+   public RB l(String param1) throws IOException, B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -3,19 +3,16 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class Fr2 {
-   int C;
-   int N;
-   int R;
-   int c;
-   int q;
-   int O;
-   boolean z = false;
-   int U;
+   public int C;
+   public int N;
+   public int R;
+   public int c;
+   public int q;
+   public int O;
+   public boolean z = false;
+   public int U;
 
-   Fr2() {
-   }
-
-   float m() {
+   public float m() {
       Ky4[] var1;
       int var2;
       label23: {
@@ -47,7 +44,7 @@ public class Fr2 {
       return (float)var5 / (float)this.R();
    }
 
-   float y$float() {
+   public float y$float() {
       Ky4[] var10000 = Qm2.J();
       float var2 = 0.0F;
       Ky4[] var1 = var10000;
@@ -63,16 +60,16 @@ public class Fr2 {
       return (float)var3 / (float)this.Q();
    }
 
-   void h(int var1) {
+   public void h(int var1) {
       this.U += var1;
    }
 
-   void A(int var1) {
+   public void A(int var1) {
       this.R++;
       this.C += var1;
    }
 
-   void q(int var1) {
+   public void q(int var1) {
       this.N += var1;
    }
 

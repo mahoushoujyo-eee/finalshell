@@ -7,12 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class YP3 implements ActionListener {
-   final Qe2_2 w;
-   final KD3 B;
+   public final Qe2_2 w;
+   public final KD3 B;
    public static String[] a;
    public static String[] b;
 
-   YP3(KD3 var1, Qe2_2 var2) {
+   public YP3(KD3 var1, Qe2_2 var2) {
       this.B = var1;
       this.w = var2;
    }

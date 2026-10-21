@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class X72 implements ActionListener {
-   final K32 B;
+   public final K32 B;
 
-   X72(K32 var1) {
+   public X72(K32 var1) {
       this.B = var1;
    }
 

@@ -6,11 +6,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class M7 extends MouseAdapter {
-   final CI v;
-   final Pb4 H;
-   final I_2 T;
+   public final CI v;
+   public final Pb4 H;
+   public final I_2 T;
 
-   M7(I_2 var1, CI var2, Pb4 var3) {
+   public M7(I_2 var1, CI var2, Pb4 var3) {
       this.T = var1;
       this.v = var2;
       this.H = var3;

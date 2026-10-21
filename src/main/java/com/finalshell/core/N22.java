@@ -16,7 +16,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 public class N22 {
-   static boolean M;
+   public static boolean M;
    public static String a;
    public static long[] b;
    public static Integer[] c;

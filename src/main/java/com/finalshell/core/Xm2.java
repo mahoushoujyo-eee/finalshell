@@ -19,15 +19,15 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 
 public class Xm2 extends BasicScrollBarUI implements D7, L0_2 {
-   protected Insets g = V_3.B;
-   protected int B = V_3.k;
-   protected boolean e = V_3.d;
-   protected boolean Y = V_3.S;
-   protected Wt4 E;
-   protected AC X;
-   protected AC I;
-   protected PropertyChangeListener K;
-   protected String Q = null;
+   public Insets g = V_3.B;
+   public int B = V_3.k;
+   public boolean e = V_3.d;
+   public boolean Y = V_3.S;
+   public Wt4 E;
+   public AC X;
+   public AC I;
+   public PropertyChangeListener K;
+   public String Q = null;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -246,7 +246,7 @@ public class Xm2 extends BasicScrollBarUI implements D7, L0_2 {
    }
 
    @Override
-   protected void installComponents() {
+   public void installComponents() {
       Kw2_2 var1 = new Kw2_2(this, this.X);
       var1.setFocusable(false);
       var1.O$KD(0);
@@ -346,7 +346,7 @@ public class Xm2 extends BasicScrollBarUI implements D7, L0_2 {
       return var10;
    }
 
-   static JScrollBar x(Xm2 var0) {
+   public static JScrollBar x(Xm2 var0) {
       return var0.scrollbar;
    }
 

@@ -7,7 +7,7 @@ public class Y62 extends GT3 {
    public static long b;
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10000 = W5.q();
       int var6 = 0;
       int[] var7 = new int[var1 * var2];

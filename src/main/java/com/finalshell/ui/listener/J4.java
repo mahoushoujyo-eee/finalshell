@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class J4 implements ActionListener {
-   final AccelerateRdpHelpPanel b;
+   public final AccelerateRdpHelpPanel b;
    public static String a;
 
-   J4(AccelerateRdpHelpPanel var1) {
+   public J4(AccelerateRdpHelpPanel var1) {
       this.b = var1;
    }
 

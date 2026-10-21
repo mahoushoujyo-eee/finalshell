@@ -8,13 +8,13 @@ public abstract class NL_2 extends N_ implements C_r_2 {
    public X_3_2 x;
    @C_9
    public Map z;
-   static boolean i;
+   public static boolean i;
    public static String[] a;
    public static String[] b;
 
-   protected NL_2(com.finalshell.ui.model.I var1, NV_2[] var2) {
+   public NL_2(com.finalshell.ui.model.I var1, NV_2[] var2) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       this.f = var2;
       NV_2[] var4 = var2;
       int var5 = var2.length;

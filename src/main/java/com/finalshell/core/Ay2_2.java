@@ -74,7 +74,7 @@ public class Ay2_2 {
          var10001 = (var3.d) ? 1 : 0;
       }
 
-      return (boolean)(var4 == var10001 ? 1 : 0);
+      return (boolean)((var4 == var10001 ? 1 : 0) != 0);
    }
 
    @Override

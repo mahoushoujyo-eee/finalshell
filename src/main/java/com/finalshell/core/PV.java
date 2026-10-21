@@ -2,9 +2,9 @@ package com.finalshell.core;
 
 public class PV extends Exception {
    public static long serialVersionUID;
-   String x;
+   public String x;
 
-   PV(String var1) {
+   public PV(String var1) {
       this.x = var1;
    }
 

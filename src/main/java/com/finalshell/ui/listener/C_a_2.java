@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class C_a_2 implements PropertyChangeListener {
-   final Ej2 Z;
+   public final Ej2 Z;
 
-   C_a_2(Ej2 var1) {
+   public C_a_2(Ej2 var1) {
       this.Z = var1;
    }
 

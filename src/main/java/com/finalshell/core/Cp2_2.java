@@ -53,7 +53,7 @@ public class Cp2_2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeShort(this.D);
       var1.writeShort(this.Z);
       var1.writeInt(this.h.length);
@@ -99,7 +99,7 @@ public class Cp2_2 extends Y_3 {
       }
    }
 
-   static Y_3 E(short var0, Cr2_2 var1, DataInputStream var2) throws IOException {
+   public static Y_3 E(short var0, Cr2_2 var1, DataInputStream var2) throws IOException {
       return K(var0, var1, var2);
    }
 

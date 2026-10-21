@@ -4,7 +4,7 @@ import com.finalshell.ui.model.EL3;
 
 // $VF: synthetic class
 public class V_2 {
-   static int[] c;
+   public static int[] c;
 
    static {
       __vfClinit__();

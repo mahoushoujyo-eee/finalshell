@@ -12,10 +12,10 @@ import javax.swing.table.AbstractTableModel;
 
 public class Fr4 extends AbstractTableModel {
    public ArrayList M;
-   String[] p;
-   Class[] d;
+   public String[] p;
+   public Class[] d;
 
-   Fr4() {
+   public Fr4() {
       ArrayList var10001 = new ArrayList();
       long var2 = 400544122862714728L;
       ArrayList var1 = var10001;
@@ -309,7 +309,7 @@ public class Fr4 extends AbstractTableModel {
       return var10001;
    }
 
-   List y() {
+   public List y() {
       Object var1 = 400544122862714728L;
       return (ArrayList)Ref.g(400544122862714728L, var1);
    }

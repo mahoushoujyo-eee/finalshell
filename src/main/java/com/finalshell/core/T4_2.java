@@ -152,7 +152,7 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected Component createNextButton() {
+   public Component createNextButton() {
       KD var1 = KD.r(j, GO.Fx, 1, 2);
       var1.O$KD(1);
       var1.r(false);
@@ -163,7 +163,7 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected Component createPreviousButton() {
+   public Component createPreviousButton() {
       S$arrint();
       KD var2 = KD.r(A, GO.Fx, 1, 2);
       var2.O$KD(1);
@@ -179,7 +179,7 @@ public class T4_2 extends BasicSpinnerUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected JComponent createEditor() {
+   public JComponent createEditor() {
       int[] var10000 = S$arrint();
       JComponent var2 = super.createEditor();
       int[] var1 = var10000;

@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class Un2 implements ActionListener {
-   final JCheckBox z;
-   final User F;
+   public final JCheckBox z;
+   public final User F;
 
-   Un2(User var1, JCheckBox var2) {
+   public Un2(User var1, JCheckBox var2) {
       this.F = var1;
       this.z = var2;
    }

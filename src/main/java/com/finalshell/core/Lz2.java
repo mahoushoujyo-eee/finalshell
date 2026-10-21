@@ -7,14 +7,14 @@ import java.util.List;
 
 public class Lz2 extends ByteToMessageDecoder {
    public final int P = a(943, 6257116824906351519L);
-   static int d;
-   static int D;
-   static int F;
-   static int i;
-   static int x;
-   int p;
-   int t;
-   int I;
+   public static int d;
+   public static int D;
+   public static int F;
+   public static int i;
+   public static int x;
+   public int p;
+   public int t;
+   public int I;
    public static long[] a;
    public static Integer[] b;
 
@@ -28,7 +28,7 @@ public class Lz2 extends ByteToMessageDecoder {
    }
 
    @Override
-   protected void decode(ChannelHandlerContext param1, ByteBuf param2, List param3) throws Exception {
+   public void decode(ChannelHandlerContext param1, ByteBuf param2, List param3) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

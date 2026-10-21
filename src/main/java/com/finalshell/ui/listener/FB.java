@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FB implements ActionListener {
-   final Tb2 e;
+   public final Tb2 e;
 
-   FB(Tb2 var1) {
+   public FB(Tb2 var1) {
       this.e = var1;
    }
 

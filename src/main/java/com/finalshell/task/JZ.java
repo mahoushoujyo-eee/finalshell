@@ -3,11 +3,11 @@ package com.finalshell.task;
 import com.finalshell.core.OB3;
 
 public class JZ extends Thread {
-   final OB3 y;
+   public final OB3 y;
    public static long a;
    public static long b;
 
-   JZ(OB3 var1) {
+   public JZ(OB3 var1) {
       this.y = var1;
    }
 

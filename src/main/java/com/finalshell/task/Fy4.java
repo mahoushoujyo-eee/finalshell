@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fy4 implements Runnable {
-   final B72 n;
+   public final B72 n;
 
-   Fy4(B72 var1) {
+   public Fy4(B72 var1) {
       this.n = var1;
    }
 

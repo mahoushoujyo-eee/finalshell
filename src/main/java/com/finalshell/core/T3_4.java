@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class T3_4 implements C_J {
-   final F2_5 F;
-   final Z3_4 r;
+   public final F2_5 F;
+   public final Z3_4 r;
 
-   T3_4(Z3_4 var1, F2_5 var2) {
+   public T3_4(Z3_4 var1, F2_5 var2) {
       this.r = var1;
       this.F = var2;
    }

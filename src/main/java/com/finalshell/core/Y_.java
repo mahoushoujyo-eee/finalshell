@@ -8,27 +8,27 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class Y_ extends Lz2_2 implements WR_2 {
-   protected boolean N = false;
-   protected boolean E = false;
-   protected boolean J;
-   protected boolean f;
-   protected boolean r;
-   protected boolean o;
-   protected boolean P;
-   protected boolean s;
-   protected boolean R;
-   protected boolean g;
-   protected boolean K;
-   protected int a;
-   protected PF3 h;
-   protected PF3 W;
-   protected PF3 v;
-   protected PF3 S;
-   protected PF3 n;
-   protected PF3 C;
-   protected PF3 Y;
-   protected P62 x;
-   protected boolean i;
+   public boolean N = false;
+   public boolean E = false;
+   public boolean J;
+   public boolean f;
+   public boolean r;
+   public boolean o;
+   public boolean P;
+   public boolean s;
+   public boolean R;
+   public boolean g;
+   public boolean K;
+   public int a;
+   public PF3 h;
+   public PF3 W;
+   public PF3 v;
+   public PF3 S;
+   public PF3 n;
+   public PF3 C;
+   public PF3 Y;
+   public P62 x;
+   public boolean i;
 
    public Y_() {
       int var10000 = Yp2.f();
@@ -921,7 +921,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       var10.l(var1, var2.x + var2.width - var13.width, var2.y, var13.width, var2.height);
    }
 
-   protected PF3 J$pF_3() {
+   public PF3 J$pF_3() {
       int var1 = Yp2.f();
       Y_ var10000 = this;
       if (var1 == 0) {
@@ -941,7 +941,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var10000.h;
    }
 
-   protected PF3 K$pF_3() {
+   public PF3 K$pF_3() {
       int var1 = Yp2.T();
       Y_ var10000 = this;
       if (var1 != 0) {
@@ -955,7 +955,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var10000.v;
    }
 
-   protected PF3 L() {
+   public PF3 L() {
       int var1 = Yp2.T();
       Y_ var10000 = this;
       if (var1 != 0) {
@@ -969,7 +969,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var10000.v;
    }
 
-   protected PF3 M() {
+   public PF3 M() {
       int var1 = Yp2.f();
       Y_ var10000 = this;
       if (var1 == 0) {
@@ -983,7 +983,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var10000.v;
    }
 
-   protected PF3 h() {
+   public PF3 h() {
       int var1 = Yp2.f();
       Y_ var10000 = this;
       if (var1 == 0) {
@@ -997,7 +997,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var10000.v;
    }
 
-   protected boolean U() {
+   public boolean U() {
       int var1 = Yp2.f();
       boolean var10000 = this.J$boolean();
       if (var1 == 0) {
@@ -1032,7 +1032,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var10000;
    }
 
-   protected boolean J$boolean() {
+   public boolean J$boolean() {
       int var1 = Yp2.f();
       boolean var10000 = this.J;
       if (var1 == 0) {
@@ -1046,7 +1046,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var1 != 0 ? var10000 : var10000;
    }
 
-   protected boolean s() {
+   public boolean s() {
       int var1 = Yp2.f();
       boolean var10000 = this.f;
       if (var1 == 0) {
@@ -1060,7 +1060,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var1 != 0 ? var10000 : var10000;
    }
 
-   protected boolean u() {
+   public boolean u() {
       int var1 = Yp2.f();
       boolean var10000 = this.r;
       if (var1 == 0) {
@@ -1074,7 +1074,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var1 != 0 ? var10000 : var10000;
    }
 
-   protected boolean E() {
+   public boolean E() {
       int var1 = Yp2.f();
       boolean var10000 = this.o;
       if (var1 == 0) {
@@ -1088,7 +1088,7 @@ public class Y_ extends Lz2_2 implements WR_2 {
       return var1 != 0 ? var10000 : var10000;
    }
 
-   protected Rectangle R(PF3 var1, Rectangle var2, JComponent var3) {
+   public Rectangle R(PF3 var1, Rectangle var2, JComponent var3) {
       int var4 = Yp2.f();
       if (!this.N && var1 != null) {
          Insets var5 = this.K ? var1.U$Insets() : var1.x();

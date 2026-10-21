@@ -17,10 +17,10 @@ import javax.swing.event.CaretListener;
 public class Ic2 implements CaretListener {
    public CI O;
    public SZ t;
-   final Kz4 L;
+   public final Kz4 L;
    public static String a;
 
-   Ic2(Kz4 var1) {
+   public Ic2(Kz4 var1) {
       this.L = var1;
       this.O = null;
    }
@@ -171,19 +171,19 @@ public class Ic2 implements CaretListener {
       this.L.Z.setCaretPosition(var3.length());
    }
 
-   static void w(Ic2 var0) {
+   public static void w(Ic2 var0) {
       var0.H();
    }
 
-   static CI g(Ic2 var0) {
+   public static CI g(Ic2 var0) {
       return var0.O;
    }
 
-   static void i(Ic2 var0, File var1) {
+   public static void i(Ic2 var0, File var1) {
       var0.L(var1);
    }
 
-   static SZ a(Ic2 var0) {
+   public static SZ a(Ic2 var0) {
       return var0.t;
    }
 

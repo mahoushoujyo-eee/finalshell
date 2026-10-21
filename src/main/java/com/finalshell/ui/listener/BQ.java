@@ -6,11 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BQ implements ActionListener {
-   final KD3 N;
+   public final KD3 N;
    public static String[] a;
    public static String[] b;
 
-   BQ(KD3 var1) {
+   public BQ(KD3 var1) {
       this.N = var1;
    }
 

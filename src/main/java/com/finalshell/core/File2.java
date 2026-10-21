@@ -38,7 +38,7 @@ import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.commons.io.output.NullOutputStream;
 
 public class File2 {
-   Window l;
+   public Window l;
    public final long u;
    public final BigInteger G;
    public final long R;
@@ -55,10 +55,10 @@ public class File2 {
    public final BigInteger Q;
    public final BigInteger Z;
    public final File[] w;
-   UG D;
-   boolean j;
-   int U;
-   boolean O;
+   public UG D;
+   public boolean j;
+   public int U;
+   public boolean O;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -1733,7 +1733,7 @@ public class File2 {
       // 70: areturn
    }
 
-   String O(String param1) {
+   public String O(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5621,7 +5621,7 @@ public class File2 {
                   break label49;
                }
 
-               if (var10000 == false) {
+               if (var10000 == null) {
                   return;
                }
             } catch (IOException var11) {
@@ -5651,7 +5651,7 @@ public class File2 {
          }
 
          try {
-            if (var10000 != false) {
+            if (var10000 == null) {
                return;
             }
 

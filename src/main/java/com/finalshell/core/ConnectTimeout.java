@@ -5,16 +5,16 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class ConnectTimeout {
-   HashMap a = new HashMap();
-   static ConnectTimeout L;
-   SecondHandshake I;
-   Thread b;
-   Object E;
-   DnsResolveFailedSetting t;
+   public HashMap a = new HashMap();
+   public static ConnectTimeout L;
+   public SecondHandshake I;
+   public Thread b;
+   public Object E;
+   public DnsResolveFailedSetting t;
    public static String[] c;
    public static String[] d;
 
-   ConnectTimeout(DnsResolveFailedSetting var1) {
+   public ConnectTimeout(DnsResolveFailedSetting var1) {
       L = this;
       this.E = new Object();
       this.b = new com.finalshell.task.Oe4(this);
@@ -22,7 +22,7 @@ public class ConnectTimeout {
       this.t = var1;
    }
 
-   void s() {
+   public void s() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -120,7 +120,7 @@ public class ConnectTimeout {
       this.a.remove(var1.T);
    }
 
-   Iterator V() {
+   public Iterator V() {
       Object var1 = null;
       synchronized (this.E) {
          return new com.finalshell.ui.model.GN(this.a.keySet().iterator());

@@ -16,11 +16,11 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class SystemInfoPanel extends JPanel {
-   KD c;
-   JLabel X;
-   KV C;
-   KD M;
-   Lv4_2 E;
+   public KD c;
+   public JLabel X;
+   public KV C;
+   public KD M;
+   public Lv4_2 E;
    public static String[] a;
    public static String[] b;
    public static long[] d;

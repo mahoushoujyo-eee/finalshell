@@ -5,12 +5,12 @@ import java.awt.Color;
 import java.util.List;
 
 public class LS3 {
-   protected int g;
-   protected int c;
-   protected Color J;
-   protected Color K;
-   protected int j;
-   protected List a;
+   public int g;
+   public int c;
+   public Color J;
+   public Color K;
+   public int j;
+   public List a;
    public static String[] b;
    public static String[] d;
 
@@ -156,7 +156,7 @@ public class LS3 {
       return this.a;
    }
 
-   protected static K6[] A(LS3 var0) {
+   public static K6[] A(LS3 var0) {
       return var0.J().toArray(new K6[var0.J().size()]);
    }
 

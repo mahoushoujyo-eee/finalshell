@@ -10,9 +10,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class Gf2 implements ListSelectionListener {
-   final Zn2 B;
+   public final Zn2 B;
 
-   Gf2(Zn2 var1) {
+   public Gf2(Zn2 var1) {
       this.B = var1;
    }
 

@@ -13,10 +13,10 @@ import javax.swing.SwingUtilities;
 import javax.swing.text.JTextComponent;
 
 public class DR3 implements FocusListener {
-   boolean r;
-   final JTextComponent O;
+   public boolean r;
+   public final JTextComponent O;
 
-   DR3(JTextComponent var1) {
+   public DR3(JTextComponent var1) {
       this.O = var1;
       Registry.lookupField(404708917332303584L).setBoolean(this, false);
    }
@@ -75,7 +75,7 @@ public class DR3 implements FocusListener {
                break label48;
             }
 
-            if (var10 == false) {
+            if (var10 == null) {
                var3 = true;
             }
          }
@@ -84,7 +84,7 @@ public class DR3 implements FocusListener {
       }
 
       if (var2 == null) {
-         if (var10 == false) {
+         if (var10 == null) {
             return;
          }
 
@@ -101,14 +101,14 @@ public class DR3 implements FocusListener {
       }
 
       if (var2 == null) {
-         if (var10 == false) {
+         if (var10 == null) {
             return;
          }
 
          var10 = Registry.lookupField(404708917332303584L).getBoolean(this);
       }
 
-      if (var10 == false) {
+      if (var10 == null) {
          SwingUtilities.invokeLater(new Tk2(this));
       }
    }

@@ -14,11 +14,11 @@ public class B82 extends BN3 {
    public static long[] c;
    public static Integer[] f;
 
-   static void Q() throws Exception {
+   public static void Q() throws Exception {
       h(true);
    }
 
-   static void h(boolean param0) throws Exception {
+   public static void h(boolean param0) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

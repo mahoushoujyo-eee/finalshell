@@ -5,9 +5,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class Ba2 implements ChangeListener {
-   final IE O;
+   public final IE O;
 
-   Ba2(IE var1) {
+   public Ba2(IE var1) {
       this.O = var1;
    }
 

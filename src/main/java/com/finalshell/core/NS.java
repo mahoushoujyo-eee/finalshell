@@ -8,7 +8,7 @@ public final class NS extends N6_2 {
    @C_9
    public T4_3 T;
    @C_9
-   HP_2 U;
+   public HP_2 U;
    public static String[] h;
    public static String[] j;
    public static long[] l;
@@ -32,7 +32,7 @@ public final class NS extends N6_2 {
    }
 
    @C_9
-   C_U[] n() {
+   public C_U[] n() {
       return this.V;
    }
 

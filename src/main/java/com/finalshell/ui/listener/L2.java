@@ -5,9 +5,9 @@ import java.awt.Point;
 import java.awt.event.MouseEvent;
 
 public class L2 extends HG {
-   final com.finalshell.core.D z;
+   public final com.finalshell.core.D z;
 
-   L2(com.finalshell.core.D var1) {
+   public L2(com.finalshell.core.D var1) {
       this.z = var1;
    }
 

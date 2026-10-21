@@ -5,9 +5,9 @@ import javax.swing.JRootPane;
 
 public class Gm2 extends JRootPane {
    public boolean X;
-   final com.finalshell.ui.dialog.D3 j;
+   public final com.finalshell.ui.dialog.D3 j;
 
-   Gm2(com.finalshell.ui.dialog.D3 var1) {
+   public Gm2(com.finalshell.ui.dialog.D3 var1) {
       this.j = var1;
       this.X = false;
    }

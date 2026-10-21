@@ -4,11 +4,11 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class JM {
-   String K;
-   boolean B;
-   String q;
+   public String K;
+   public boolean B;
+   public String q;
 
-   JM(String var1) {
+   public JM(String var1) {
       long var3 = 136568670898850279L;
       String var2 = "";
       Ref.s(136568670898850279L, var2, var3);
@@ -20,11 +20,11 @@ public class JM {
       Ref.s(136568670898850279L, var1, var7);
    }
 
-   boolean w() {
+   public boolean w() {
       return Registry.lookupField(231748893861719771L).getBoolean(this);
    }
 
-   void u(boolean var1) {
+   public void u(boolean var1) {
       Registry.lookupField(231748893861719771L).setBoolean(this, var1);
    }
 }

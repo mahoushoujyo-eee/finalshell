@@ -1,17 +1,17 @@
 package com.finalshell.core;
 
 public class Cd2 {
-   int z;
-   Qu2 q;
-   int S;
-   long d;
+   public int z;
+   public Qu2 q;
+   public int S;
+   public long d;
 
-   Cd2(Qu2 var1, int var2) {
+   public Cd2(Qu2 var1, int var2) {
       this.q = var1;
       this.S = var2;
    }
 
-   void C() {
+   public void C() {
       this.z++;
    }
 

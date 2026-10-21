@@ -8,13 +8,13 @@ import java.awt.event.MouseListener;
 import javax.swing.JLabel;
 
 public class Mc2 implements MouseListener {
-   final JLabel m;
-   final Color x;
-   final com.finalshell.ui.panel.W8 t;
-   final Color e;
-   final RouteTracePanel3 Z;
+   public final JLabel m;
+   public final Color x;
+   public final com.finalshell.ui.panel.W8 t;
+   public final Color e;
+   public final RouteTracePanel3 Z;
 
-   Mc2(RouteTracePanel3 var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, Color var5) {
+   public Mc2(RouteTracePanel3 var1, JLabel var2, Color var3, com.finalshell.ui.panel.W8 var4, Color var5) {
       this.Z = var1;
       this.m = var2;
       this.x = var3;

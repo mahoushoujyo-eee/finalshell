@@ -7,9 +7,9 @@ import java.awt.event.ContainerAdapter;
 import javax.swing.JComponent;
 
 public class X extends Lz2_2 {
-   protected ContainerAdapter D;
-   protected com.finalshell.ui.listener.FY T;
-   protected com.finalshell.ui.panel.KE3 u = null;
+   public ContainerAdapter D;
+   public com.finalshell.ui.listener.FY T;
+   public com.finalshell.ui.panel.KE3 u = null;
 
    public void i(KR var1) {
       this.D = new com.finalshell.ui.listener.A(this, var1);
@@ -24,7 +24,7 @@ public class X extends Lz2_2 {
       this.T = null;
    }
 
-   protected void V() {
+   public void V() {
       int[] var1 = W_2.B$arrint();
       com.finalshell.ui.panel.KE3 var10000 = this.u;
       if (var1 == null) {

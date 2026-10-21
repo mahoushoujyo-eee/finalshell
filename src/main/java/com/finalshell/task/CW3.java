@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class CW3 implements Runnable {
-   final Connection5 Y;
+   public final Connection5 Y;
 
-   CW3(Connection5 var1) {
+   public CW3(Connection5 var1) {
       this.Y = var1;
    }
 

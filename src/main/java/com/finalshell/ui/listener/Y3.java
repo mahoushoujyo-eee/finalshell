@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Y3 implements PropertyChangeListener {
-   final com.finalshell.core.D Y;
+   public final com.finalshell.core.D Y;
 
-   Y3(com.finalshell.core.D var1) {
+   public Y3(com.finalshell.core.D var1) {
       this.Y = var1;
    }
 

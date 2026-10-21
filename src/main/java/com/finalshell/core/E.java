@@ -10,8 +10,8 @@ import java.util.List;
 import javax.swing.JWindow;
 
 public class E extends JWindow implements Pj2, CX3_2, Eh2, W_3 {
-   protected boolean U = false;
-   protected C42 B;
+   public boolean U = false;
+   public C42 B;
 
    public E() {
       this.b();
@@ -42,7 +42,7 @@ public class E extends JWindow implements Pj2, CX3_2, Eh2, W_3 {
       this.b();
    }
 
-   protected void b() {
+   public void b() {
       this.setFocusable(true);
       FN.Y(this);
       this.B = new F(this, true);

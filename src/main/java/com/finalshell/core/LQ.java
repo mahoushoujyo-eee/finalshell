@@ -9,12 +9,12 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 public class LQ extends JTable {
-   SwitchTabCommand m;
-   com.finalshell.ui.model.Oa4 O;
+   public SwitchTabCommand m;
+   public com.finalshell.ui.model.Oa4 O;
    public static long[] a;
    public static Integer[] b;
 
-   LQ(SwitchTabCommand var1, com.finalshell.ui.model.Oa4 var2) {
+   public LQ(SwitchTabCommand var1, com.finalshell.ui.model.Oa4 var2) {
       long var8 = 461718445990442402L;
       Ref.s(461718445990442402L, var1, var8);
       long var10 = 556189680979940906L;

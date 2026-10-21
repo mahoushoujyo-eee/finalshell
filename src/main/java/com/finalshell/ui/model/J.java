@@ -4,7 +4,7 @@ import com.finalshell.core.C_9;
 import java.util.ListIterator;
 
 public abstract class J implements ListIterator {
-   protected final ListIterator r;
+   public final ListIterator r;
 
    public J(ListIterator var1) {
       this.r = var1;

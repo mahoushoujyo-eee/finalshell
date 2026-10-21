@@ -4,7 +4,7 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.io.Serializable;
 
 @XStreamAlias("ResourceLocation")
-public final class Zo2 extends Enum implements Serializable {
+public final class Zo2 implements Serializable {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -18,11 +18,10 @@ public final class Zo2 extends Enum implements Serializable {
    }
 
    public static Zo2 valueOf(String var0) {
-      return Enum.valueOf(Zo2.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public Zo2(String var1, int var2) {
-      super(var1, var2);
    }
 
    static {

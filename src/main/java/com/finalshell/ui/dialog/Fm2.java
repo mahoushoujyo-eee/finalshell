@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class Fm2 extends ClearListDialog {
-   Address YA;
+   public Address YA;
    public static String[] cb;
    public static String[] db;
    public static long[] gb;
@@ -51,7 +51,7 @@ public class Fm2 extends ClearListDialog {
    }
 
    @Override
-   protected Dx4_2 k$dx_4() {
+   public Dx4_2 k$dx_4() {
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
       Ref.h2(270389152141252877L, var2);
@@ -74,11 +74,11 @@ public class Fm2 extends ClearListDialog {
    }
 
    @Override
-   protected void L(String var1) {
+   public void L(String var1) {
    }
 
    @Override
-   protected void i(L1 var1, int var2) {
+   public void i(L1 var1, int var2) {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 297906988633747514L;
       Object[] var3 = var10001;
@@ -110,7 +110,7 @@ public class Fm2 extends ClearListDialog {
    }
 
    @Override
-   protected void k(L1 var1) {
+   public void k(L1 var1) {
       boolean var2 = Address.i();
       Object var4 = 252529215946785084L;
       Address var10001 = (Address)Ref.g(252529215946785084L, var4);
@@ -209,11 +209,11 @@ public class Fm2 extends ClearListDialog {
    }
 
    @Override
-   protected void u(KeyEvent var1) {
+   public void u(KeyEvent var1) {
    }
 
    @Override
-   protected String c() {
+   public String c() {
       Object var1 = 265132846717086219L;
       return ((Dv2)Ref.g(265132846717086219L, var1)).getText().trim();
    }
@@ -233,11 +233,11 @@ public class Fm2 extends ClearListDialog {
    }
 
    @Override
-   protected Dx4_2 n() {
+   public Dx4_2 n() {
       return null;
    }
 
-   static Dv2 O(Fm2 var0) {
+   public static Dv2 O(Fm2 var0) {
       Object var1 = 334241381080505095L;
       return (Dv2)Ref.g(334241381080505095L, var1);
    }

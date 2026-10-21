@@ -9,11 +9,11 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class OV implements Runnable {
-   final Ck4 W;
-   final Address J;
+   public final Ck4 W;
+   public final Address J;
    public static String a;
 
-   OV(Address var1, Ck4 var2) {
+   public OV(Address var1, Ck4 var2) {
       this.J = var1;
       this.W = var2;
    }

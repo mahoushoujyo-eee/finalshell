@@ -1,17 +1,17 @@
 package com.finalshell.core;
 
 public class DV {
-   byte[] Q;
-   int r;
-   int F;
+   public byte[] Q;
+   public int r;
+   public int F;
    public static long[] a;
    public static Integer[] b;
 
-   DV(byte[] var1) throws Zx2 {
+   public DV(byte[] var1) throws Zx2 {
       this(var1, 0, var1.length);
    }
 
-   DV(byte[] var1, int var2, int var3) throws Zx2 {
+   public DV(byte[] var1, int var2, int var3) throws Zx2 {
       this.Q = var1;
       this.r = var2;
       this.F = var3;
@@ -20,11 +20,11 @@ public class DV {
       }
    }
 
-   int O() {
+   public int O() {
       return this.Q[this.r] & a(12224, 2723626974890989789L);
    }
 
-   boolean s() {
+   public boolean s() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -55,7 +55,7 @@ public class DV {
       // 2b: ireturn
    }
 
-   boolean b() {
+   public boolean b() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -84,7 +84,7 @@ public class DV {
       // 23: ireturn
    }
 
-   boolean N() {
+   public boolean N() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -115,7 +115,7 @@ public class DV {
       // 2b: ireturn
    }
 
-   boolean E() {
+   public boolean E() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -144,7 +144,7 @@ public class DV {
       // 23: ireturn
    }
 
-   boolean n() {
+   public boolean n() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -173,7 +173,7 @@ public class DV {
       // 23: ireturn
    }
 
-   boolean M() {
+   public boolean M() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -202,7 +202,7 @@ public class DV {
       // 23: ireturn
    }
 
-   boolean l(int param1) {
+   public boolean l(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -270,7 +270,7 @@ public class DV {
       // 7c: ireturn
    }
 
-   boolean U(int param1) {
+   public boolean U(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -382,7 +382,7 @@ public class DV {
       return var4;
    }
 
-   byte[] c() {
+   public byte[] c() {
       int[] var1 = new int[]{this.r + 1};
       int var2 = this.J(var1);
       int var3 = var1[0];
@@ -391,7 +391,7 @@ public class DV {
       return var4;
    }
 
-   DV[] P() throws Zx2 {
+   public DV[] P() throws Zx2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 public class DO implements MouseMotionListener {
-   final Connection4 F;
+   public final Connection4 F;
 
-   DO(Connection4 var1) {
+   public DO(Connection4 var1) {
       this.F = var1;
    }
 

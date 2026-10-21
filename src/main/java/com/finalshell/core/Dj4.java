@@ -15,9 +15,6 @@ public abstract class Dj4 implements EU {
    public static long[] c;
    public static Integer[] d;
 
-   Dj4() {
-   }
-
    @Override
    public int w() {
       return a(2063, 7760173041356337073L);

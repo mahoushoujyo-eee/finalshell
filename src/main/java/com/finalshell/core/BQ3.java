@@ -19,7 +19,7 @@ public class BQ3 extends BN3 {
    public static long[] f;
    public static Integer[] g;
 
-   static void n(int param0) throws Exception {
+   public static void n(int param0) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -280,40 +280,40 @@ public class BQ3 extends BN3 {
       }
    }
 
-   static boolean L$boolean() {
+   public static boolean L$boolean() {
       return t;
    }
 
-   static int Z(int var0) {
+   public static int Z(int var0) {
       return Y += var0;
    }
 
-   static void S(byte[] var0, int var1) {
+   public static void S(byte[] var0, int var1) {
       O(var0, var1);
    }
 
-   static int u() {
+   public static int u() {
       return m;
    }
 
-   static int J() {
+   public static int J() {
       return Z;
    }
 
-   static boolean y(boolean var0) {
+   public static boolean y(boolean var0) {
       t = var0;
       return var0;
    }
 
-   static int L$int() {
+   public static int L$int() {
       return Q;
    }
 
-   static byte[] q() {
+   public static byte[] q() {
       return X();
    }
 
-   static int V() {
+   public static int V() {
       return Q++;
    }
 

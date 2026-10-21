@@ -5,9 +5,9 @@ import java.net.DatagramPacket;
 import java.util.ArrayList;
 
 public class WA extends WC {
-   ArrayList b;
-   byte[] X = null;
-   int L;
+   public ArrayList b;
+   public byte[] X = null;
+   public int L;
    public static long[] a;
    public static Integer[] c;
 
@@ -62,8 +62,8 @@ public class WA extends WC {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public WA(DatagramPacket var1) {
+   super();
       Ky4[] var10000 = WC.U();
-      super();
       this.X = null;
       Ky4[] var2 = var10000;
       this.g = var1;

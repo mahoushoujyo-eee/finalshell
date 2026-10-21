@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 public final class Nz2_3 extends NV_2 {
    @C_9
-   final Object A;
+   public final Object A;
    public static long a;
 
    public Nz2_3(com.finalshell.ui.model.I var1) {

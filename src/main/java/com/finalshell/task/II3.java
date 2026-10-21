@@ -7,12 +7,12 @@ import javax.swing.JScrollBar;
 import javax.swing.SwingUtilities;
 
 public class II3 implements Runnable {
-   final JScrollBar A;
-   final int a;
-   final int B;
+   public final JScrollBar A;
+   public final int a;
+   public final int B;
    public static long b;
 
-   II3(JScrollBar var1, int var2, int var3) {
+   public II3(JScrollBar var1, int var2, int var3) {
       this.A = var1;
       this.a = var2;
       this.B = var3;

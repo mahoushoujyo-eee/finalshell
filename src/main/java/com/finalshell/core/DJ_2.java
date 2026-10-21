@@ -3,10 +3,7 @@ package com.finalshell.core;
 public final class DJ_2 {
    public static long a;
 
-   DJ_2() {
-   }
-
-   static int T() {
+   public static int T() {
       return (int)a;
    }
 

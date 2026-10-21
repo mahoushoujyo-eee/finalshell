@@ -17,11 +17,11 @@ public class Ct2_2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeShort(this.i);
    }
 
-   static Y_3 N(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 N(short var0, DataInputStream var1) throws IOException {
       return w(var0, var1);
    }
 }

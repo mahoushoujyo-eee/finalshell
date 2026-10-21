@@ -3,11 +3,8 @@ package com.finalshell.core;
 public class C9 extends C1 {
    public static String j;
 
-   C9() {
-   }
-
    @Override
-   String i() {
+   public String i() {
       return j;
    }
 

@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import java.util.ArrayList;
 
 public class D62_2 {
-   ArrayList a;
+   public ArrayList a;
 
    public D62_2() {
       ArrayList var10001 = new ArrayList();

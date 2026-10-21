@@ -823,7 +823,7 @@ public class U2_4 {
       // 4d: ireturn
    }
 
-   static boolean U(InetAddress param0, InetAddress param1, InetAddress param2) {
+   public static boolean U(InetAddress param0, InetAddress param1, InetAddress param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

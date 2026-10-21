@@ -7,8 +7,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class YS3 implements Runnable {
-   int w;
-   final A0 W;
+   public int w;
+   public final A0 W;
    public final byte[] g;
    public final DataOutputStream c;
    public final int x;
@@ -16,7 +16,7 @@ public class YS3 implements Runnable {
    public final int L;
    public static long a;
 
-   YS3(A0 var1, byte[] var2, DataOutputStream var3, int var4, DataInputStream var5, int var6) {
+   public YS3(A0 var1, byte[] var2, DataOutputStream var3, int var4, DataInputStream var5, int var6) {
       this.W = var1;
       this.g = var2;
       this.c = var3;

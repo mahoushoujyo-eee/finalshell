@@ -11,8 +11,8 @@ public final class RF extends R8_2 implements B_2_3, RO, C_8_2 {
    public static long g;
 
    public RF(com.finalshell.ui.model.I var1, @C_9 String var2, Fu2_2[] var3, Nt2_2 var4, Rq2_2[] var5) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       this.d = var2;
       String[] var6 = var10000;
       this.M = var3;

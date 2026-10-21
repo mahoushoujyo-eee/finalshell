@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class X6 implements PropertyChangeListener {
-   final A4_2 y;
+   public final A4_2 y;
 
-   X6(A4_2 var1) {
+   public X6(A4_2 var1) {
       this.y = var1;
    }
 

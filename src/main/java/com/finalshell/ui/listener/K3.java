@@ -7,11 +7,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class K3 extends MouseAdapter {
-   final com.finalshell.ui.panel.E2 j;
-   final QY W;
+   public final com.finalshell.ui.panel.E2 j;
+   public final QY W;
    public static String a;
 
-   K3(QY var1, com.finalshell.ui.panel.E2 var2) {
+   public K3(QY var1, com.finalshell.ui.panel.E2 var2) {
       this.W = var1;
       this.j = var2;
    }

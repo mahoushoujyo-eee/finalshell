@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Qy2 implements MouseListener {
-   final Connection4 n;
+   public final Connection4 n;
    public static long a;
 
-   Qy2(Connection4 var1) {
+   public Qy2(Connection4 var1) {
       this.n = var1;
    }
 
@@ -68,7 +68,7 @@ public class Qy2 implements MouseListener {
                   }
                }
 
-               if (var10003 == 0) {
+               if (var10003 == null) {
                   return;
                }
 

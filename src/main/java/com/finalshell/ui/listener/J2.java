@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class J2 implements PropertyChangeListener {
-   final com.finalshell.core.M3 u;
+   public final com.finalshell.core.M3 u;
 
-   J2(com.finalshell.core.M3 var1) {
+   public J2(com.finalshell.core.M3 var1) {
       this.u = var1;
    }
 

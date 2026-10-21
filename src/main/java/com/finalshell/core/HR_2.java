@@ -3,16 +3,16 @@ package com.finalshell.core;
 import java.util.Objects;
 
 public class HR_2 extends HP_2 {
-   final HP_2 N;
-   final Hd2[] U;
-   final H3_2 m;
+   public final HP_2 N;
+   public final Hd2[] U;
+   public final H3_2 m;
 
-   HR_2(H3_2 var1, Hd2 var2, HP_2 var3, Hd2[] var4) {
+   public HR_2(H3_2 var1, Hd2 var2, HP_2 var3, Hd2[] var4) {
+   super(var2);
       this.m = var1;
       this.N = var3;
       this.U = var4;
       Objects.requireNonNull(var2);
-      super(var2);
    }
 
    @Override

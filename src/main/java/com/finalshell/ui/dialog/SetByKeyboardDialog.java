@@ -23,25 +23,25 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class SetByKeyboardDialog extends JDialog {
-   SwitchTabCommand S;
-   ZG_2 P;
-   boolean i;
-   JPanel W;
-   JPanel T;
-   JTextField d;
-   Random z;
-   JLabel g;
-   KeyStroke a;
+   public SwitchTabCommand S;
+   public ZG_2 P;
+   public boolean i;
+   public JPanel W;
+   public JPanel T;
+   public JTextField d;
+   public Random z;
+   public JLabel g;
+   public KeyStroke a;
    public static String[] b;
    public static String[] c;
    public static long[] e;
    public static Integer[] f;
 
-   SetByKeyboardDialog(SwitchTabCommand var1, ZG_2 var2, boolean var3) {
+   public SetByKeyboardDialog(SwitchTabCommand var1, ZG_2 var2, boolean var3) {
+   super(SwingUtilities.getWindowAncestor(var1));
       String[] var4;
       label62: {
          String[] var10000 = SwitchTabCommand.B();
-         super(SwingUtilities.getWindowAncestor(var1));
          var4 = var10000;
          Random var10001 = new Random();
          long var14 = 386686818580790910L;
@@ -209,7 +209,7 @@ public class SetByKeyboardDialog extends JDialog {
       this.setVisible(true);
    }
 
-   void D() {
+   public void D() {
       Registry.emptyArgs();
       long var1 = 270389152141252877L;
       Ref.h2(270389152141252877L, var1);

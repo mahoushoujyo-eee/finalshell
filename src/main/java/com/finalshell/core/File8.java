@@ -19,12 +19,12 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class File8 extends TransferHandler {
-   DataFlavor J;
-   DataFlavor N;
-   DataFlavor[] w;
-   DefaultMutableTreeNode[] A;
-   DefaultMutableTreeNode q;
-   Connection4 B;
+   public DataFlavor J;
+   public DataFlavor N;
+   public DataFlavor[] w;
+   public DefaultMutableTreeNode[] A;
+   public DefaultMutableTreeNode q;
+   public Connection4 B;
    public static String[] a;
    public static String[] b;
 
@@ -63,7 +63,7 @@ public class File8 extends TransferHandler {
          var2 = Connection4.I();
          var10000 = var1.isDrop();
          if (var2 != null) {
-            if (var10000 == false) {
+            if (var10000 == null) {
                return false;
             }
 
@@ -77,7 +77,7 @@ public class File8 extends TransferHandler {
             this.isDataFlavorSupported((DataFlavor)Ref.g(372804674539901270L, var13));
          }
 
-         if (var10000 != false) {
+         if (var10000 == null) {
             var10000 = var1;
             if (var2 == null) {
                break label181;
@@ -177,13 +177,13 @@ public class File8 extends TransferHandler {
             var33 = var7.equals(Tf4.class);
             label129:
             if (var2 != null) {
-               if (var33 != false) {
+               if (var33 == null) {
                   var33 = var12.equals(com.finalshell.ui.model.Ck4.class);
                   if (var2 == null) {
                      break label129;
                   }
 
-                  if (var33 != false) {
+                  if (var33 == null) {
                      return false;
                   }
                }
@@ -193,13 +193,13 @@ public class File8 extends TransferHandler {
 
             label121:
             if (var2 != null) {
-               if (var33 != false) {
+               if (var33 == null) {
                   var33 = var12.equals(com.finalshell.ui.model.Ck4.class);
                   if (var2 == null) {
                      break label121;
                   }
 
-                  if (var33 != false) {
+                  if (var33 == null) {
                      return false;
                   }
                }
@@ -210,12 +210,12 @@ public class File8 extends TransferHandler {
             label114:
             if (var2 != null) {
                label112:
-               if (var33 != false) {
+               if (var33 == null) {
                   label110: {
                      label187: {
                         var33 = var7.equals(com.finalshell.ui.model.Ck4.class);
                         if (var2 != null) {
-                           if (var33 != false) {
+                           if (var33 == null) {
                               var34 = var12.equals(Tf4.class);
                               if (var2 == null) {
                                  break label110;
@@ -233,7 +233,7 @@ public class File8 extends TransferHandler {
                            break label114;
                         }
 
-                        if (var33 == false) {
+                        if (var33 == null) {
                            break label112;
                         }
 
@@ -242,7 +242,7 @@ public class File8 extends TransferHandler {
                            break label114;
                         }
 
-                        if (var33 == false) {
+                        if (var33 == null) {
       long var34;
       long var34;
                            break label112;
@@ -260,7 +260,7 @@ public class File8 extends TransferHandler {
             }
 
             if (var2 != null) {
-               if (var33 != false) {
+               if (var33 == null) {
                   return false;
                }
 
@@ -271,13 +271,13 @@ public class File8 extends TransferHandler {
                return (boolean)var33;
             }
 
-            if (var33 == false) {
+            if (var33 == null) {
                var33 = var12.equals(com.finalshell.ui.model.Ck4.class);
                if (var2 == null) {
                   return (boolean)var33;
                }
 
-               if (var33 == false) {
+               if (var33 == null) {
                   return false;
                }
             }
@@ -292,7 +292,7 @@ public class File8 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       int[] var10000 = Connection4.I();
       JTree var3 = (JTree)var1;
       int[] var2 = var10000;
@@ -414,7 +414,7 @@ public class File8 extends TransferHandler {
    }
 
    @Override
-   protected void exportDone(JComponent var1, Transferable var2, int var3) {
+   public void exportDone(JComponent var1, Transferable var2, int var3) {
       if ((var3 & 2) == 2) {
          JTree var4 = (JTree)var1;
          DefaultTreeModel var5 = (DefaultTreeModel)var4.getModel();

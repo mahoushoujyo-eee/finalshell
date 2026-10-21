@@ -7,9 +7,9 @@ import java.awt.event.FocusListener;
 import javax.swing.JTextField;
 
 public class Oq4 implements FocusListener {
-   final PathPanel u;
+   public final PathPanel u;
 
-   Oq4(PathPanel var1) {
+   public Oq4(PathPanel var1) {
       this.u = var1;
    }
 

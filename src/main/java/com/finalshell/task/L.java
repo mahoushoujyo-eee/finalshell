@@ -6,10 +6,10 @@ import com.finalshell.ui.panel.Tv2;
 import java.lang.reflect.InvocationTargetException;
 
 public class L implements Runnable {
-   final Tv2 U;
+   public final Tv2 U;
    public static long a;
 
-   L(Tv2 var1) {
+   public L(Tv2 var1) {
       this.U = var1;
    }
 

@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.ClearListDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yw4 implements Runnable {
-   final ClearListDialog G;
+   public final ClearListDialog G;
 
-   Yw4(ClearListDialog var1) {
+   public Yw4(ClearListDialog var1) {
       this.G = var1;
    }
 

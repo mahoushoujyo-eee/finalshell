@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mf2 implements ActionListener {
-   final Copy3 o;
+   public final Copy3 o;
 
-   Mf2(Copy3 var1) {
+   public Mf2(Copy3 var1) {
       this.o = var1;
    }
 

@@ -3,11 +3,11 @@ package com.finalshell.core;
 import java.util.Map;
 
 public class C22_3 implements H4_2 {
-   final Map o;
-   final Nt2_2 s;
-   final HT u;
+   public final Map o;
+   public final Nt2_2 s;
+   public final HT u;
 
-   C22_3(HT var1, Map var2, Nt2_2 var3) {
+   public C22_3(HT var1, Map var2, Nt2_2 var3) {
       this.u = var1;
       this.o = var2;
       this.s = var3;

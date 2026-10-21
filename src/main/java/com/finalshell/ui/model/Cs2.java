@@ -10,14 +10,14 @@ import javax.swing.KeyStroke;
 @XStreamAlias("HotkeyData")
 public class Cs2 implements Serializable, Cloneable {
    @XStreamAsAttribute
-   protected boolean A;
+   public boolean A;
    @XStreamAsAttribute
-   protected boolean e;
+   public boolean e;
    @XStreamAsAttribute
-   protected boolean L;
+   public boolean L;
    @XStreamAsAttribute
-   protected Integer W;
-   protected transient Integer O;
+   public Integer W;
+   public transient Integer O;
    public static long a;
 
    public Cs2() {
@@ -206,7 +206,7 @@ public class Cs2 implements Serializable, Cloneable {
       if (var2 == null) {
          return var3 != 0;
       } else {
-         return (boolean)(var3 == this.hashCode() ? 1 : 0);
+         return (boolean)((var3 == this.hashCode() ? 1 : 0) != 0);
       }
    }
 
@@ -230,12 +230,12 @@ public class Cs2 implements Serializable, Cloneable {
       return var10000;
    }
 
-   protected Cs2 D() {
+   public Cs2 D() {
       return new Cs2(this.I(), this.p(), this.w(), this.c());
    }
 
    @Override
-   protected Object clone() throws CloneNotSupportedException {
+   public Object clone() throws CloneNotSupportedException {
       return this.D();
    }
 

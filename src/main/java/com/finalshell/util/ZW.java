@@ -6,7 +6,7 @@ public class ZW extends HashMap {
    public static String[] a;
    public static String[] b;
 
-   ZW() {
+   public ZW() {
       this.put(a(6181, 4610), "I");
       this.put(a(6179, -22779), "Z");
       this.put(a(6180, 18431), "B");

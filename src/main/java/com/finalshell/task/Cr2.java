@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Cr2 implements Runnable {
-   final User z;
+   public final User z;
 
-   Cr2(User var1) {
+   public Cr2(User var1) {
       this.z = var1;
    }
 

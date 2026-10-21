@@ -8,9 +8,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class OO3 implements Runnable {
-   final Ln2 E;
+   public final Ln2 E;
 
-   OO3(Ln2 var1) {
+   public OO3(Ln2 var1) {
       this.E = var1;
    }
 

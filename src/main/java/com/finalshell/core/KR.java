@@ -4,8 +4,8 @@ import javax.swing.Action;
 import javax.swing.Icon;
 
 public class KR extends KD implements ND {
-   protected boolean E;
-   protected float P;
+   public boolean E;
+   public float P;
 
    public KR() {
       this.X();

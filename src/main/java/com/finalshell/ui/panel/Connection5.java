@@ -55,33 +55,33 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class Connection5 extends AA implements Xv2_2 {
-   Na2 B;
-   Yo4 j;
-   Connection5 D;
-   HashMap G;
-   Tf4 E;
-   DefaultMutableTreeNode p;
-   FileSystemView h;
-   As2 L;
-   long S;
-   boolean g;
-   TreePath N;
-   Object M;
-   DefaultMutableTreeNode Z;
-   int J;
-   boolean w;
-   int e;
-   com.finalshell.config.File d;
-   ShowDeletedPanel C;
-   RouteTracePanel2 k;
-   boolean K;
-   String W;
-   UG Y;
-   boolean T;
+   public Na2 B;
+   public Yo4 j;
+   public Connection5 D;
+   public HashMap G;
+   public Tf4 E;
+   public DefaultMutableTreeNode p;
+   public FileSystemView h;
+   public As2 L;
+   public long S;
+   public boolean g;
+   public TreePath N;
+   public Object M;
+   public DefaultMutableTreeNode Z;
+   public int J;
+   public boolean w;
+   public int e;
+   public com.finalshell.config.File d;
+   public ShowDeletedPanel C;
+   public RouteTracePanel2 k;
+   public boolean K;
+   public String W;
+   public UG Y;
+   public boolean T;
    public D62_2 I;
-   boolean x;
-   String H;
-   HashSet A;
+   public boolean x;
+   public String H;
+   public HashSet A;
    public static String[] a;
    public static String[] c;
    public static long[] f;
@@ -213,7 +213,7 @@ public class Connection5 extends AA implements Xv2_2 {
       return Registry.lookupField(557374830394047111L).getBoolean(this);
    }
 
-   void p$void() {
+   public void p$void() {
       DefaultMutableTreeNode var10001 = new DefaultMutableTreeNode(a(11169, -16171));
       long var2 = 312919167011526763L;
       DefaultMutableTreeNode var1 = var10001;
@@ -228,7 +228,7 @@ public class Connection5 extends AA implements Xv2_2 {
       this.setModel((Yo4)Ref.g(571388131590801605L, var7));
    }
 
-   void Y() {
+   public void Y() {
       AA.z();
       Tf4 var10002 = new Tf4();
       long var4 = 357561646207134153L;
@@ -345,7 +345,7 @@ var10006 = new TreePath(this, (DefaultMutableTreeNode)Ref.g(213130010239103238L,
 
             label406: {
                if (var1 == null) {
-                  if (var10002 != false) {
+                  if (var10002 == null) {
                      Ck4 var9 = (Ck4)var8.getUserObject();
                      var4.add(var9);
                      if (var1 == null) {
@@ -356,7 +356,7 @@ var10006 = new TreePath(this, (DefaultMutableTreeNode)Ref.g(213130010239103238L,
                   var10002 = var8.getUserObject().getClass().equals(Tf4.class);
                }
 
-               if (var10002 != false) {
+               if (var10002 == null) {
                   var10003 = Registry.packArgs(var8, var4);
                   long var22 = 363671406087219533L;
                   Object[] var21 = var10003;
@@ -380,7 +380,7 @@ var10006 = new TreePath(this, (DefaultMutableTreeNode)Ref.g(213130010239103238L,
          break;
       }
 
-      while (var10002 != false) {
+      while (var10002 == null) {
          Ck4 var110 = (Ck4)var7.next();
          var10002 = Registry.emptyArgs();
          long var23 = 270389152141252877L;
@@ -600,7 +600,7 @@ var10006 = new TreePath(this, (DefaultMutableTreeNode)Ref.g(213130010239103238L,
                            throw var98.getTargetException();
                         }
 
-new HashMap(var10017);
+var10016 = new HashMap(var10017);
                         Object[] var150 = Registry.packArgs(var10015, var111);
                         long var60 = 298666565248176577L;
                         Object[] var59 = var150;
@@ -631,7 +631,7 @@ new HashMap(var10017);
                            throw var96.getTargetException();
                         }
 
-new HashMap(var165);
+var161 = new HashMap(var165);
                         Object[] var152 = Registry.packArgs(var151, var111);
                         long var64 = 298666565248176577L;
                         Object[] var63 = var152;
@@ -697,7 +697,7 @@ new HashMap(var165);
                      throw var92.getTargetException();
                   }
 
-new HashMap(var171);
+var116 = new HashMap(var171);
                   Object[] var156 = Registry.packArgs(var155, true);
                   long var72 = 392275651608919501L;
                   Object[] var71 = var156;
@@ -746,7 +746,7 @@ new HashMap(var171);
                   throw var90.getTargetException();
                }
 
-new HashMap(var174);
+var162 = new HashMap(var174);
                Object[] var158 = Registry.packArgs(var157, var111);
                long var76 = 298666565248176577L;
                Object[] var75 = var158;
@@ -812,7 +812,7 @@ new HashMap(var174);
             throw var86.getTargetException();
          }
 
-new HashMap(var10019);
+var118 = new HashMap(var10019);
          Object[] var181 = Registry.packArgs(var180, true);
          long var84 = 392275651608919501L;
          Object[] var83 = var181;
@@ -2148,7 +2148,7 @@ new HashMap(var10019);
 
          label188:
          while (true) {
-            if (var10002 != false) {
+            if (var10002 == null) {
                DefaultMutableTreeNode var7 = (DefaultMutableTreeNode)var6.next();
                var68 = var5.add(var7);
                if (var1 != null) {
@@ -3256,7 +3256,7 @@ new HashMap(var10019);
       // 5f1: return
    }
 
-   void a(DefaultMutableTreeNode var1, ArrayList var2, ArrayList var3) {
+   public void a(DefaultMutableTreeNode var1, ArrayList var2, ArrayList var3) {
       String var10000 = AA.z();
       int var5 = 0;
       String var4 = var10000;
@@ -3541,7 +3541,7 @@ new HashMap(var10019);
       return var3 + java.io.File.separator + var4;
    }
 
-   void h(DefaultMutableTreeNode var1, ArrayList var2) {
+   public void h(DefaultMutableTreeNode var1, ArrayList var2) {
       String var10000 = AA.z();
       int var4 = 0;
       String var3 = var10000;
@@ -4011,7 +4011,7 @@ new HashMap(var10019);
       return var4;
    }
 
-   void V(DefaultMutableTreeNode var1, String var2, String var3) {
+   public void V(DefaultMutableTreeNode var1, String var2, String var3) {
       String var10000 = AA.z();
       int var5 = 0;
       String var4 = var10000;
@@ -4036,7 +4036,7 @@ new HashMap(var10019);
       }
    }
 
-   void J(DefaultMutableTreeNode var1, String var2, String var3) {
+   public void J(DefaultMutableTreeNode var1, String var2, String var3) {
       Object var52;
       label111: {
          var52 = AA.z();
@@ -5077,7 +5077,7 @@ new HashMap(var10019);
          break;
       }
 
-      while (var10003 != false) {
+      while (var10003 == null) {
          DefaultMutableTreeNode var18 = (DefaultMutableTreeNode)var5.next();
          this.expandPath(new TreePath(var18.getPath()));
          if (var2 != null) {
@@ -5105,7 +5105,7 @@ new HashMap(var10019);
       var10002.expandPath(var10002);
    }
 
-   void E(DefaultMutableTreeNode var1) {
+   public void E(DefaultMutableTreeNode var1) {
       String var2 = AA.z();
       Object var3 = 310302490302373526L;
       ShowDeletedPanel var10001 = (ShowDeletedPanel)Ref.g(310302490302373526L, var3);
@@ -5134,7 +5134,7 @@ new HashMap(var10019);
       }
    }
 
-   int y(Object var1) {
+   public int y(Object var1) {
       String var10000 = AA.z();
       int var3 = 0;
       String var2 = var10000;
@@ -5700,7 +5700,7 @@ new HashMap(var10019);
                                     var10013 = this.contains((String)Ref.g(119358758450406151L, var57));
                                     label374:
                                     if (var2 == null) {
-                                       if (var10013 == false) {
+                                       if (var10013 == null) {
                                           var10013 = var117;
                                           String var10014 = Registry.emptyArgs();
                                           long var60 = 286931176286176762L;
@@ -5947,7 +5947,7 @@ new HashMap(var10019);
                            var10011 = var16;
                         }
 
-                        if (var2 == null && var10011 != false) {
+                        if (var2 == null && var10011 == null) {
                            var6.add(var116);
                         }
                      }
@@ -5994,7 +5994,7 @@ new HashMap(var10019);
       return this.getRowForPath(this.getClosestPathForLocation(var1, var2));
    }
 
-   int v$int() {
+   public int v$int() {
       Connection5 var1 = this;
       int var2 = 0;
 
@@ -6009,7 +6009,7 @@ new HashMap(var10019);
       return var2;
    }
 
-   int u(int var1) {
+   public int u(int var1) {
       Connection5 var2 = this;
       byte var3 = 0;
 
@@ -6024,7 +6024,7 @@ new HashMap(var10019);
       return var3;
    }
 
-   DropLocation e(Point var1, TreePath var2, int var3) {
+   public DropLocation e(Point var1, TreePath var2, int var3) {
       Class<DropLocation> var4 = DropLocation.class;
       DropLocation var6 = null;
 
@@ -6039,7 +6039,7 @@ new HashMap(var10019);
       return var6;
    }
 
-   void l(DefaultMutableTreeNode var1) {
+   public void l(DefaultMutableTreeNode var1) {
    }
 
    public void j(java.io.File var1) {
@@ -6070,7 +6070,7 @@ new HashMap(var10019);
       return null;
    }
 
-   static void o(Connection5 var0) {
+   public static void o(Connection5 var0) {
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 459754285193734469L;
       Object[] var1 = var10001;

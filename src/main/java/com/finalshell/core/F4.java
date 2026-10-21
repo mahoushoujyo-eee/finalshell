@@ -8,7 +8,7 @@ public class F4 extends D_2_2 {
    }
 
    @Override
-   protected boolean j() {
+   public boolean j() {
       return false;
    }
 }

@@ -3,14 +3,14 @@ package com.finalshell.core;
 import java.lang.annotation.Annotation;
 
 public class Hk_2 implements H4_2 {
-   final Hd2 t;
-   final Annotation y;
-   final java.lang.Class g;
-   final HA X;
+   public final Hd2 t;
+   public final Annotation y;
+   public final java.lang.Class g;
+   public final HA X;
    public static String[] a;
    public static String[] b;
 
-   Hk_2(HA var1, Hd2 var2, Annotation var3, java.lang.Class var4) {
+   public Hk_2(HA var1, Hd2 var2, Annotation var3, java.lang.Class var4) {
       this.X = var1;
       this.t = var2;
       this.y = var3;

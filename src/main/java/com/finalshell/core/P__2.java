@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.io.IOException;
 
 public abstract class P__2 implements FO_2 {
-   protected final Y42 a;
-   protected final QT w;
+   public final Y42 a;
+   public final QT w;
    public boolean n = false;
-   int B = 0;
+   public int B = 0;
    public static long[] i;
    public static Integer[] j;
 
@@ -35,7 +35,7 @@ public abstract class P__2 implements FO_2 {
 
    public abstract boolean Q();
 
-   protected abstract void C(char var1, QT var2) throws IOException;
+   public abstract void C(char var1, QT var2) throws IOException;
 
    @Override
    public void C() throws IOException {
@@ -159,7 +159,7 @@ public abstract class P__2 implements FO_2 {
       // f8: return
    }
 
-   protected abstract void o(char var1, QT var2) throws IOException;
+   public abstract void o(char var1, QT var2) throws IOException;
 
    public static com.finalshell.io.P a(com.finalshell.io.P var0) {
       return var0;

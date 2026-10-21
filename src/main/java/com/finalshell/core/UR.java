@@ -13,14 +13,14 @@ public class UR {
    public Connect2 e;
    public BR3 l;
    public Br4 J;
-   long C;
-   PingMessageR Y;
-   int P;
+   public long C;
+   public PingMessageR Y;
+   public int P;
    public boolean F = true;
-   long w = System.currentTimeMillis();
-   long k = 0L;
-   static Random o;
-   int v;
+   public long w = System.currentTimeMillis();
+   public long k = 0L;
+   public static Random o;
+   public int v;
    public LinkedBlockingQueue q = new LinkedBlockingQueue();
    public B2 B;
    public boolean T = false;
@@ -185,7 +185,7 @@ public class UR {
    public void D() {
    }
 
-   void g() {
+   public void g() {
       this.w = System.currentTimeMillis();
    }
 

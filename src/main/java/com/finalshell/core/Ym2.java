@@ -7,14 +7,14 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
 public class Ym2 extends Y2 {
-   final ConnectionProperty s;
+   public final ConnectionProperty s;
 
-   Ym2(ConnectionProperty var1) {
+   public Ym2(ConnectionProperty var1) {
       this.s = var1;
    }
 
    @Override
-   protected void v(Graphics2D var1, Rectangle var2) {
+   public void v(Graphics2D var1, Rectangle var2) {
       int var10000 = ConnectionProperty.M$int();
       WZ var4 = this.s.kj.f$WZ();
       int var3 = var10000;

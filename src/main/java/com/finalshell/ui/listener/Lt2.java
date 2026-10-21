@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lt2 implements ActionListener {
-   final SetBackgroundImagePanel u;
+   public final SetBackgroundImagePanel u;
 
-   Lt2(SetBackgroundImagePanel var1) {
+   public Lt2(SetBackgroundImagePanel var1) {
       this.u = var1;
    }
 

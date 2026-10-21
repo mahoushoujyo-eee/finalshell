@@ -12,17 +12,17 @@ import java.awt.image.BufferedImage;
 import javax.swing.Icon;
 
 public abstract class ZJ implements Up2 {
-   protected static Insets T;
+   public static Insets T;
    public static long[] a;
    public static Integer[] b;
 
-   protected FontMetrics Z(Object var1) {
+   public FontMetrics Z(Object var1) {
       return FN.E$FontMetrics();
    }
 
-   protected abstract Icon n(Object var1);
+   public abstract Icon n(Object var1);
 
-   protected abstract String O(Object var1);
+   public abstract String O(Object var1);
 
    @Override
    public BufferedImage u(Object var1, DragSourceDragEvent var2) {

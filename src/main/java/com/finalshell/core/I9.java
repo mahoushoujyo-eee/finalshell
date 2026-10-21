@@ -27,41 +27,41 @@ public class I9 extends IB {
       return var3;
    }
 
-   protected void B(K32 var1) {
+   public void B(K32 var1) {
       this.V = new Ds4(this);
       var1.m(this.V);
    }
 
-   protected void b(K32 var1) {
+   public void b(K32 var1) {
       var1.B(this.V);
       this.V = null;
    }
 
-   protected void V(K32 var1) {
+   public void V(K32 var1) {
       var1.u((Boolean)this.o());
    }
 
-   protected void u(K32 var1) {
+   public void u(K32 var1) {
       this.J(Boolean.valueOf(var1.Y$boolean()));
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.u((K32)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.V((K32)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.b((K32)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.B((K32)var1);
    }
 

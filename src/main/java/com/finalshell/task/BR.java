@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.core.PK;
 
 public class BR implements Runnable {
-   final Ra4 N;
+   public final Ra4 N;
 
-   BR(Ra4 var1) {
+   public BR(Ra4 var1) {
       this.N = var1;
    }
 

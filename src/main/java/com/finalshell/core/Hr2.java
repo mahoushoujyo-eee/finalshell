@@ -1048,7 +1048,7 @@ public class Hr2 {
       // 34e: return
    }
 
-   protected void D(float[] param1, float[] param2, int param3, int param4, float[] param5, int param6, int param7) {
+   public void D(float[] param1, float[] param2, int param3, int param4, float[] param5, int param6, int param7) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1232,7 +1232,7 @@ public class Hr2 {
       // 128: return
    }
 
-   protected void G(float[] var1, float[] var2, int var3, float[] var4, int var5, int var6) {
+   public void G(float[] var1, float[] var2, int var3, float[] var4, int var5, int var6) {
       int var8 = var3;
       String[] var10000 = W5.q();
       float var9 = var1[var3];

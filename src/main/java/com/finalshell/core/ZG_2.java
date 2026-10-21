@@ -6,11 +6,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.KeyStroke;
 
 public class ZG_2 {
-   int m;
-   int X;
-   int S;
-   String B;
-   KeyStroke N;
+   public int m;
+   public int X;
+   public int S;
+   public String B;
+   public KeyStroke N;
    public static int[] e;
 
    public ZG_2(int var1, String var2, int var3, int var4) {

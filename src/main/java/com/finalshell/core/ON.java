@@ -14,13 +14,13 @@ import java.util.WeakHashMap;
 import java.util.Map.Entry;
 
 public class ON {
-   protected static Object A;
-   protected static Map r;
-   protected static Object x;
-   protected static List B;
-   protected static WeakReference y;
-   protected static WeakReference f;
-   protected static boolean I;
+   public static Object A;
+   public static Map r;
+   public static Object x;
+   public static List B;
+   public static WeakReference y;
+   public static WeakReference f;
+   public static boolean I;
    public static long a;
 
    public static synchronized void e() {
@@ -41,7 +41,7 @@ public class ON {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static Map d() {
+   public static Map d() {
       int[] var10000 = C42.g();
       Object var1 = A;
       synchronized (A){} // $VF: monitorenter 
@@ -128,7 +128,7 @@ public class ON {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static void u(Component var0, Component var1) {
+   public static void u(Component var0, Component var1) {
       int[] var10000 = C42.g();
       Object var4 = x;
       synchronized (x){} // $VF: monitorenter 

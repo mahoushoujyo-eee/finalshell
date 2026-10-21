@@ -1,8 +1,8 @@
 package com.finalshell.core;
 
 public class Hk4 extends HN3 {
-   protected static int[] P;
-   protected static int[] C;
+   public static int[] P;
+   public static int[] C;
    public static int[] L;
    public static int[] e;
    public static int[] Y;
@@ -56,7 +56,7 @@ public class Hk4 extends HN3 {
       return this.T;
    }
 
-   protected void C() {
+   public void C() {
       String[] var10000 = W5.q();
       this.f = this.p = (int)Math.sqrt((double)this.u.length);
       this.F = new int[this.k];

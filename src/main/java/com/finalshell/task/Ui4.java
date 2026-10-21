@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ui4 implements Runnable {
-   final Connection12 q;
+   public final Connection12 q;
 
-   Ui4(Connection12 var1) {
+   public Ui4(Connection12 var1) {
       this.q = var1;
    }
 

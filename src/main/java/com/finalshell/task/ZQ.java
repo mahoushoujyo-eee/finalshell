@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class ZQ implements Runnable {
-   final Ul2 A;
+   public final Ul2 A;
 
-   ZQ(Ul2 var1) {
+   public ZQ(Ul2 var1) {
       this.A = var1;
    }
 

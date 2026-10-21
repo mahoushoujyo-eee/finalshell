@@ -5,9 +5,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class X32 extends FocusAdapter {
-   final Ig2 Z;
+   public final Ig2 Z;
 
-   X32(Ig2 var1) {
+   public X32(Ig2 var1) {
       this.Z = var1;
    }
 

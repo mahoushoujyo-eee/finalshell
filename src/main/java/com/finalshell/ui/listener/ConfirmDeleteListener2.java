@@ -9,11 +9,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmDeleteListener2 implements ActionListener {
-   final ImportPanel A;
+   public final ImportPanel A;
    public static String[] a;
    public static String[] b;
 
-   ConfirmDeleteListener2(ImportPanel var1) {
+   public ConfirmDeleteListener2(ImportPanel var1) {
       this.A = var1;
    }
 

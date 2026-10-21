@@ -41,7 +41,7 @@ public abstract class DM3 extends RowSorter {
       Registry.lookupField(377572770107970079L).setInt(this, a(10542, 338652727483483887L));
    }
 
-   protected final void y(ZP_2 param1) {
+   public final void y(ZP_2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -148,7 +148,7 @@ public abstract class DM3 extends RowSorter {
       // d7: return
    }
 
-   protected final ZP_2 B() {
+   public final ZP_2 B() {
       Object var1 = 609384270617424667L;
       return (ZP_2)Ref.g(609384270617424667L, var1);
    }
@@ -191,7 +191,7 @@ public abstract class DM3 extends RowSorter {
             try {
                Object var7 = 129299070682169446L;
                var10002 = (boolean[])Ref.g(129299070682169446L, var7);
-               if (var3 != false) {
+               if (var3 == null) {
                   break label57;
                }
 
@@ -229,11 +229,11 @@ public abstract class DM3 extends RowSorter {
                   Object var17 = 129299070682169446L;
                   ((boolean[])Ref.g(129299070682169446L, var17))[var4] = true;
                   var4--;
-                  if (var3 != false) {
+                  if (var3 == null) {
                      return;
                   }
 
-                  if (var3 != false) {
+                  if (var3 == null) {
                      break;
                   }
                } catch (IllegalArgumentException var23) {
@@ -804,7 +804,7 @@ public abstract class DM3 extends RowSorter {
       // 1ce: return
    }
 
-   protected SortKey f(SortKey param1) {
+   public SortKey f(SortKey param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2166,7 +2166,7 @@ public abstract class DM3 extends RowSorter {
       }
    }
 
-   protected boolean f(int var1) {
+   public boolean f(int var1) {
       try {
          Comparator var10001 = (Comparator)(Registry.packArgs(var1));
          long var3 = 475220176856492685L;
@@ -2465,7 +2465,7 @@ public abstract class DM3 extends RowSorter {
       DM3 var2 = this;
 
       try {
-         if (var2 == false) {
+         if (var2 == null) {
             return var3;
          }
 
@@ -3284,7 +3284,7 @@ public abstract class DM3 extends RowSorter {
       DM3 var2 = this;
 
       try {
-         if (var2 == false && var3 == null) {
+         if (var2 == null && var3 == null) {
             return true;
          }
       } catch (IllegalArgumentException var10) {
@@ -4846,7 +4846,7 @@ public abstract class DM3 extends RowSorter {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   protected void x(int var1) {
+   public void x(int var1) {
       boolean var2 = Uo2.i();
 
       label49: {
@@ -4891,7 +4891,7 @@ public abstract class DM3 extends RowSorter {
       }
    }
 
-   static int e(DM3 var0, int var1, int var2) {
+   public static int e(DM3 var0, int var1, int var2) {
       Object[] var10001 = Registry.packArgs(var1, var2);
       long var4 = 165414353185358341L;
       Object[] var3 = var10001;

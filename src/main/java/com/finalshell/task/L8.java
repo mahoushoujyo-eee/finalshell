@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Aa2;
 import java.lang.reflect.InvocationTargetException;
 
 public class L8 implements Runnable {
-   final Aa2 X;
+   public final Aa2 X;
 
-   L8(Aa2 var1) {
+   public L8(Aa2 var1) {
       this.X = var1;
    }
 

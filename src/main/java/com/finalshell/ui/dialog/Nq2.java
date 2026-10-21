@@ -23,22 +23,22 @@ import javax.swing.text.BadLocationException;
 import net.miginfocom.swing.MigLayout;
 
 public class Nq2 extends JDialog implements CH {
-   Window m;
-   Address R;
-   String Y;
-   JTextArea f;
-   JScrollPane u;
-   String p;
-   final int N;
-   DB3 q;
+   public Window m;
+   public Address R;
+   public String Y;
+   public JTextArea f;
+   public JScrollPane u;
+   public String p;
+   public final int N;
+   public DB3 q;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
    public Nq2(Window var1, Address var2) {
+   super(var1);
       short var10000 = -12209;
-      super(var1);
       short var10001 = 16856;
       this.N = a(61, 3555413649256224722L);
       long var6 = 539025379907701382L;
@@ -160,7 +160,7 @@ public class Nq2 extends JDialog implements CH {
       }
    }
 
-   void F(String var1) {
+   public void F(String var1) {
       SwingUtilities.invokeLater(new OE3(this, var1));
    }
 

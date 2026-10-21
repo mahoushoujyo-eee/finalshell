@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class DW implements PropertyChangeListener {
-   final Hl2 S;
+   public final Hl2 S;
 
-   DW(Hl2 var1) {
+   public DW(Hl2 var1) {
       this.S = var1;
    }
 

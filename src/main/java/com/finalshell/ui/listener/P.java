@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class P implements ActionListener {
-   final com.finalshell.core.Y2 Z;
+   public final com.finalshell.core.Y2 Z;
 
-   P(com.finalshell.core.Y2 var1) {
+   public P(com.finalshell.core.Y2 var1) {
       this.Z = var1;
    }
 

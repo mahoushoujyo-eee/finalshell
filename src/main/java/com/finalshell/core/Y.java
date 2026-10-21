@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Y extends C42 {
-   final O_2 N;
+   public final O_2 N;
 
-   Y(O_2 var1) {
+   public Y(O_2 var1) {
       this.N = var1;
    }
 

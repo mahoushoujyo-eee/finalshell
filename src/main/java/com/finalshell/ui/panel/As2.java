@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComponent;
 
 public class As2 extends JComponent {
-   Connection5 U;
-   Tv2 V;
-   Dy4_2 q;
+   public Connection5 U;
+   public Tv2 V;
+   public Dy4_2 q;
 
    public As2(ShowDeletedPanel var1, Connection5 var2) {
       Dy4_2 var10001 = new Dy4_2();
@@ -23,7 +23,7 @@ public class As2 extends JComponent {
       Ref.s(539292081619626259L, var2, var8);
       Tv2 var10005;
       Object var9 = 539292081619626259L;
-new As2(this, (Connection5)Ref.g(539292081619626259L, var9));
+var1 = new As2(this, (Connection5)Ref.g(539292081619626259L, var9));
       long var12 = 229342211508771365L;
       Tv2 var11 = var10005;
       Ref.s(229342211508771365L, var11, var12);

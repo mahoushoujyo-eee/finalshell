@@ -43,7 +43,7 @@ public class Gk4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       String[] var10000 = W5.q();
       float var10 = 0.0F;
       String[] var4 = var10000;

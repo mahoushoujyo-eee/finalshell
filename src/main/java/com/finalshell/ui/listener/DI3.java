@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class DI3 implements ActionListener {
-   final Ty2 f;
-   final Refresh h;
+   public final Ty2 f;
+   public final Refresh h;
 
-   DI3(Refresh var1, Ty2 var2) {
+   public DI3(Refresh var1, Ty2 var2) {
       this.h = var1;
       this.f = var2;
    }

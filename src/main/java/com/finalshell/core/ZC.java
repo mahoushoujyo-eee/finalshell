@@ -3,9 +3,6 @@ package com.finalshell.core;
 public class ZC implements A0_2 {
    public static ZC Q;
 
-   ZC() {
-   }
-
    @Override
    public Object Y(Ph4 param1, Object param2, Object param3) {
       // $VF: Couldn't be decompiled

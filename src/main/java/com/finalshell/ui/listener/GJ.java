@@ -6,13 +6,13 @@ import java.awt.event.FocusEvent;
 import javax.swing.JTextField;
 
 public class GJ extends FocusAdapter {
-   final int W;
-   final Component N;
-   final JTextField v;
-   final com.finalshell.core.T5 S;
-   final com.finalshell.core.X0 Y;
+   public final int W;
+   public final Component N;
+   public final JTextField v;
+   public final com.finalshell.core.T5 S;
+   public final com.finalshell.core.X0 Y;
 
-   GJ(com.finalshell.core.X0 var1, int var2, Component var3, JTextField var4, com.finalshell.core.T5 var5) {
+   public GJ(com.finalshell.core.X0 var1, int var2, Component var3, JTextField var4, com.finalshell.core.T5 var5) {
       this.Y = var1;
       this.W = var2;
       this.N = var3;

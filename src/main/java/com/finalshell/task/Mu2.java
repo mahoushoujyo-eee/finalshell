@@ -4,11 +4,11 @@ import com.finalshell.core.CN3;
 import com.finalshell.core.Ku4;
 
 public class Mu2 extends Thread {
-   final Ku4 w;
+   public final Ku4 w;
    public static long[] a;
    public static Long[] b;
 
-   Mu2(Ku4 var1) {
+   public Mu2(Ku4 var1) {
       this.w = var1;
    }
 

@@ -28,14 +28,14 @@ import javax.swing.JRootPane;
 import javax.swing.SwingUtilities;
 
 public class Qm2 extends Ky4 {
-   protected String H;
-   protected Shape Y;
-   protected BufferedImage c;
-   protected Point w;
-   protected int n;
-   protected List U;
-   protected Component F;
-   protected int T;
+   public String H;
+   public Shape Y;
+   public BufferedImage c;
+   public Point w;
+   public int n;
+   public List U;
+   public Component F;
+   public int T;
    public static boolean s;
    public static String a;
    public static long[] b;
@@ -379,7 +379,7 @@ public class Qm2 extends Ky4 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Graphics2D var3;
       Object var4;
       label76: {

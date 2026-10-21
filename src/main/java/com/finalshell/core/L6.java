@@ -6,10 +6,10 @@ import java.lang.reflect.InvocationTargetException;
 
 public class L6 {
    public String W;
-   long N;
-   long F;
-   long U;
-   long l;
+   public long N;
+   public long F;
+   public long U;
+   public long l;
    public static String a;
    public static long[] b;
    public static Integer[] c;

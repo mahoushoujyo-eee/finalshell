@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.io.IOException;
 
 public class HV implements Y42 {
-   protected char[] K;
-   protected int X;
-   protected int t;
-   int b = 0;
+   public char[] K;
+   public int X;
+   public int t;
+   public int b = 0;
 
    @Override
    public int O() {

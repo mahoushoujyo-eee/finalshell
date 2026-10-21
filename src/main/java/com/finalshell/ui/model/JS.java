@@ -11,14 +11,14 @@ import java.util.Comparator;
 import java.util.Locale;
 
 public class JS implements Comparator {
-   final Comparator p;
-   final O8 S;
-   final Om2 k;
-   String q;
-   final String J;
-   final Uo2 H;
+   public final Comparator p;
+   public final O8 S;
+   public final Om2 k;
+   public String q;
+   public final String J;
+   public final Uo2 H;
 
-   JS(Uo2 var1, String var2) {
+   public JS(Uo2 var1, String var2) {
       this.H = var1;
       this.J = var2;
       this.p = Collator.getInstance(Locale.CHINA);
@@ -37,11 +37,11 @@ public class JS implements Comparator {
       JS var10001 = ((String)Ref.g(320721692123201197L, var8)).equals((String)Registry.lookupField(226109021265139345L).get(null));
       if (var3) {
          label244:
-         if (var10001 == 0) {
+         if (var10001 == null) {
             Object var10 = 320721692123201197L;
             JS var10002 = ((String)Ref.g(320721692123201197L, var10)).equals((String)Registry.lookupField(246644705461640101L).get(null));
             if (var3) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   break label244;
                }
 
@@ -51,7 +51,7 @@ public class JS implements Comparator {
             }
 
             if (var3) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   Object var20 = 396791488371189674L;
                   Comparator var94 = (Comparator)Ref.g(396791488371189674L, var20);
                   String var114 = (String)(Registry.emptyArgs());
@@ -85,7 +85,7 @@ public class JS implements Comparator {
             }
 
             if (var3) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   Object var28 = 576337950600267201L;
                   Ref.g(576337950600267201L, var28);
                   Object[] var111 = Registry.emptyArgs();
@@ -129,7 +129,7 @@ public class JS implements Comparator {
             }
 
             if (var3) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   Object var38 = 148056146191951030L;
                   Ref.g(148056146191951030L, var38);
                   Object[] var108 = Registry.emptyArgs();
@@ -173,7 +173,7 @@ public class JS implements Comparator {
             }
 
             if (var3) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   Object var48 = 576337950600267201L;
                   Ref.g(576337950600267201L, var48);
                   Object[] var105 = Registry.emptyArgs();
@@ -217,7 +217,7 @@ public class JS implements Comparator {
             }
 
             if (var3) {
-               if (var10002 != false) {
+               if (var10002 == null) {
                   String var4 = "";
                   U82 var10003 = (U82)(Registry.emptyArgs());
                   long var59 = 382054480216091309L;

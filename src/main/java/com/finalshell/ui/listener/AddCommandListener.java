@@ -12,12 +12,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
 public class AddCommandListener extends MouseAdapter {
-   final AppendCarriageReturnCRPanel j;
-   final Copy3 k;
+   public final AppendCarriageReturnCRPanel j;
+   public final Copy3 k;
    public static String[] a;
    public static String[] b;
 
-   AddCommandListener(Copy3 var1, AppendCarriageReturnCRPanel var2) {
+   public AddCommandListener(Copy3 var1, AppendCarriageReturnCRPanel var2) {
       this.k = var1;
       this.j = var2;
    }

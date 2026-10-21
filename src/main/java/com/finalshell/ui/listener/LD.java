@@ -9,9 +9,9 @@ import javax.swing.event.TreeWillExpandListener;
 import javax.swing.tree.ExpandVetoException;
 
 public class LD implements TreeWillExpandListener {
-   final Connection4 Y;
+   public final Connection4 Y;
 
-   LD(Connection4 var1) {
+   public LD(Connection4 var1) {
       this.Y = var1;
    }
 

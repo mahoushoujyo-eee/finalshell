@@ -7,9 +7,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class NZ3 extends KeyAdapter {
-   final OG t;
+   public final OG t;
 
-   NZ3(OG var1) {
+   public NZ3(OG var1) {
       this.t = var1;
    }
 

@@ -14,10 +14,10 @@ import java.util.ArrayList;
 import javax.swing.JPopupMenu;
 
 public class UW3 implements MouseListener {
-   final JPopupMenu O;
-   final CopyPanel M;
+   public final JPopupMenu O;
+   public final CopyPanel M;
 
-   UW3(CopyPanel var1, JPopupMenu var2) {
+   public UW3(CopyPanel var1, JPopupMenu var2) {
       this.M = var1;
       this.O = var2;
    }
@@ -38,7 +38,7 @@ public class UW3 implements MouseListener {
             int[] var2 = var10000;
             UW3 var61 = var1.getButton();
             if (var2 != null) {
-               if (var61 != 1) {
+               if (var61 != null) {
                   int var62 = var1.getButton();
                   if (var2 == null) {
                      break label95;

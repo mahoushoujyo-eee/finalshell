@@ -6,9 +6,6 @@ import java.util.NoSuchElementException;
 public class P_2 implements Iterator {
    public static String a;
 
-   P_2() {
-   }
-
    @Override
    public boolean hasNext() {
       return false;

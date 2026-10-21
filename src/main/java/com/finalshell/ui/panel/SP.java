@@ -8,7 +8,7 @@ import java.awt.Insets;
 import javax.swing.JPanel;
 
 public class SP extends JPanel {
-   protected Dimension K = new Dimension(a(22388, 1388335077066673046L), a(12892, 5118450692145278652L));
+   public Dimension K = new Dimension(a(22388, 1388335077066673046L), a(12892, 5118450692145278652L));
    public static long[] a;
    public static Integer[] b;
 
@@ -17,7 +17,7 @@ public class SP extends JPanel {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Insets var2 = this.getBorder().getBorderInsets(this);
       int var3 = var2.left;
       int var4 = this.getBorder().getBorderInsets(this).top;

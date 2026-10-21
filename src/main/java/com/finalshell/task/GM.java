@@ -6,10 +6,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class GM implements Runnable {
-   final Ca4 k;
+   public final Ca4 k;
    public static long a;
 
-   GM(Ca4 var1) {
+   public GM(Ca4 var1) {
       this.k = var1;
    }
 

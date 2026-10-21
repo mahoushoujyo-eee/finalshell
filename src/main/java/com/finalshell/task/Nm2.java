@@ -5,9 +5,9 @@ import com.finalshell.ui.panel.Connection4;
 import javax.swing.tree.TreePath;
 
 public class Nm2 implements Runnable {
-   final Kq2 P;
+   public final Kq2 P;
 
-   Nm2(Kq2 var1) {
+   public Nm2(Kq2 var1) {
       this.P = var1;
    }
 

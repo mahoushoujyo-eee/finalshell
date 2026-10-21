@@ -12,9 +12,9 @@ import java.awt.event.KeyEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fw2 extends ClearListDialog {
-   EditPanel eL;
-   String ed;
-   Lj4_2 eJ;
+   public EditPanel eL;
+   public String ed;
+   public Lj4_2 eJ;
    public static long[] cb;
    public static Integer[] db;
 
@@ -117,7 +117,7 @@ public class Fw2 extends ClearListDialog {
    }
 
    @Override
-   protected Dx4_2 k$dx_4() {
+   public Dx4_2 k$dx_4() {
       int[] var10000 = AppendCarriageReturnCRPanel.Y();
       Object var2 = null;
       int[] var1 = var10000;
@@ -148,7 +148,7 @@ public class Fw2 extends ClearListDialog {
    }
 
    @Override
-   protected void L(String var1) {
+   public void L(String var1) {
       Registry.packArgs(var1);
       long var3 = 330094358428833085L;
       Object var10001 = Ref.h2(330094358428833085L, var3);
@@ -179,7 +179,7 @@ public class Fw2 extends ClearListDialog {
    }
 
    @Override
-   protected void i(L1 var1, int var2) {
+   public void i(L1 var1, int var2) {
       Object[] var10001 = Registry.emptyArgs();
       long var4 = 247369048764074052L;
       Object[] var3 = var10001;
@@ -229,7 +229,7 @@ public class Fw2 extends ClearListDialog {
    }
 
    @Override
-   protected void k(L1 var1) {
+   public void k(L1 var1) {
       Object[] var10001 = Registry.packArgs(false);
       long var3 = 499180481011525071L;
       Object[] var2 = var10001;
@@ -260,11 +260,11 @@ public class Fw2 extends ClearListDialog {
    }
 
    @Override
-   protected void u(KeyEvent var1) {
+   public void u(KeyEvent var1) {
    }
 
    @Override
-   protected String c() {
+   public String c() {
       Object var1 = 265132846717086219L;
       return ((Dv2)Ref.g(265132846717086219L, var1)).getText().trim();
    }
@@ -297,7 +297,7 @@ public class Fw2 extends ClearListDialog {
    }
 
    @Override
-   protected Dx4_2 n() {
+   public Dx4_2 n() {
       return null;
    }
 

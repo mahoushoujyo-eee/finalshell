@@ -8,9 +8,9 @@ import java.awt.event.WindowEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ar2 extends WindowAdapter {
-   final TextEditorFrame M;
+   public final TextEditorFrame M;
 
-   Ar2(TextEditorFrame var1) {
+   public Ar2(TextEditorFrame var1) {
       this.M = var1;
    }
 

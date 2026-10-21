@@ -37,8 +37,8 @@ public class Ph4 implements Xd4 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    public Ph4(String var1, En2 var2, IG var3, boolean var4) {
+   super();
       String var10000 = Hi2.C();
-      super();
       String var5 = var10000;
 
       label41: {
@@ -84,7 +84,7 @@ public class Ph4 implements Xd4 {
       this.T = var4;
    }
 
-   protected void x() {
+   public void x() {
       String var1 = Hi2.C();
 
       try {
@@ -2782,7 +2782,7 @@ public class Ph4 implements Xd4 {
       return this.V;
    }
 
-   static int x(Object param0, Object param1) {
+   public static int x(Object param0, Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3246,7 +3246,7 @@ public class Ph4 implements Xd4 {
       // 3e7: ireturn
    }
 
-   protected Object n(Object param1, int param2) {
+   public Object n(Object param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3674,7 +3674,7 @@ public class Ph4 implements Xd4 {
       // bc: athrow
    }
 
-   protected Collection G(Object param1) {
+   public Collection G(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3762,7 +3762,7 @@ public class Ph4 implements Xd4 {
       // a3: athrow
    }
 
-   protected void X(Object var1, List var2) {
+   public void X(Object var1, List var2) {
       java.lang.Class var4 = var1.getClass();
       String var10000 = Hi2.C();
       Nj4 var5 = this.e(var4);
@@ -3894,7 +3894,7 @@ public class Ph4 implements Xd4 {
       }
    }
 
-   protected void u(Object param1, List param2) {
+   public void u(Object param1, List param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4031,7 +4031,7 @@ public class Ph4 implements Xd4 {
       // 121: athrow
    }
 
-   static boolean m(Object param0, Object param1) {
+   public static boolean m(Object param0, Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4123,7 +4123,7 @@ public class Ph4 implements Xd4 {
       // a0: ireturn
    }
 
-   static boolean A(Number param0, Number param1) {
+   public static boolean A(Number param0, Number param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4334,7 +4334,7 @@ public class Ph4 implements Xd4 {
       // 1b0: ireturn
    }
 
-   protected static boolean o(java.lang.Class param0) {
+   public static boolean o(java.lang.Class param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4367,7 +4367,7 @@ public class Ph4 implements Xd4 {
       // 2d: ireturn
    }
 
-   protected static boolean O(java.lang.Class param0) {
+   public static boolean O(java.lang.Class param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4422,7 +4422,7 @@ public class Ph4 implements Xd4 {
       // 5f: ireturn
    }
 
-   protected Object S(Object param1, String param2, long param3) {
+   public Object S(Object param1, String param2, long param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5071,7 +5071,7 @@ public class Ph4 implements Xd4 {
       // 5d1: areturn
    }
 
-   protected void L(Object param1, String param2, List param3) {
+   public void L(Object param1, String param2, List param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5363,7 +5363,7 @@ public class Ph4 implements Xd4 {
       // 29e: return
    }
 
-   protected void R(Object param1, String param2, long param3, Object param5) {
+   public void R(Object param1, String param2, long param3, Object param5) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5547,7 +5547,7 @@ public class Ph4 implements Xd4 {
       // 190: return
    }
 
-   protected boolean u(Object param1, String param2, long param3, Object param5) {
+   public boolean u(Object param1, String param2, long param3, Object param5) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5702,7 +5702,7 @@ public class Ph4 implements Xd4 {
       // 145: athrow
    }
 
-   protected boolean N(Object param1, String param2, boolean param3) {
+   public boolean N(Object param1, String param2, boolean param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5875,7 +5875,7 @@ public class Ph4 implements Xd4 {
       // 16e: athrow
    }
 
-   protected Nj4 e(java.lang.Class param1) {
+   public Nj4 e(java.lang.Class param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5911,7 +5911,7 @@ public class Ph4 implements Xd4 {
       // 31: areturn
    }
 
-   protected Ep4 Z(java.lang.Class param1) {
+   public Ep4 Z(java.lang.Class param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5947,7 +5947,7 @@ public class Ph4 implements Xd4 {
       // 31: areturn
    }
 
-   int T(Object param1) {
+   public int T(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6081,7 +6081,7 @@ public class Ph4 implements Xd4 {
       // 10b: athrow
    }
 
-   Set K(Object param1) {
+   public Set K(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

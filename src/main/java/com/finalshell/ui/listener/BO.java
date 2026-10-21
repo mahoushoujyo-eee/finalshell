@@ -5,9 +5,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class BO implements ChangeListener {
-   final Ir2 i;
+   public final Ir2 i;
 
-   BO(Ir2 var1) {
+   public BO(Ir2 var1) {
       this.i = var1;
    }
 

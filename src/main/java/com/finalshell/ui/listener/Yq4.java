@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yq4 implements ActionListener {
-   final DU H;
+   public final DU H;
 
-   Yq4(DU var1) {
+   public Yq4(DU var1) {
       this.H = var1;
    }
 

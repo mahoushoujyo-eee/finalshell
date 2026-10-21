@@ -5,9 +5,9 @@ import com.finalshell.ui.dialog.DU;
 import javax.swing.SwingUtilities;
 
 public class T9 implements Runnable {
-   final Yk2 O;
+   public final Yk2 O;
 
-   T9(Yk2 var1) {
+   public T9(Yk2 var1) {
       this.O = var1;
    }
 

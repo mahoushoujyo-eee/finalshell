@@ -47,14 +47,14 @@ public class S_2 extends BasicOptionPaneUI {
    }
 
    @Override
-   protected Container createMessageArea() {
+   public Container createMessageArea() {
       Container var1 = super.createMessageArea();
       FN.F(var1, false);
       return var1;
    }
 
    @Override
-   protected void addButtonComponents(Container var1, Object[] var2, int var3) {
+   public void addButtonComponents(Container var1, Object[] var2, int var3) {
       int var4;
       label149: {
          var4 = E2_2.D();
@@ -266,7 +266,7 @@ public class S_2 extends BasicOptionPaneUI {
    }
 
    @Override
-   protected Object[] getButtons() {
+   public Object[] getButtons() {
       int var1 = E2_2.D();
       JOptionPane var10000 = this.optionPane;
       if (var1 != 0) {
@@ -394,7 +394,7 @@ public class S_2 extends BasicOptionPaneUI {
    }
 
    @Override
-   protected Icon getIconForType(int var1) {
+   public Icon getIconForType(int var1) {
       return l(var1);
    }
 

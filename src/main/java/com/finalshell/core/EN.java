@@ -3,8 +3,8 @@ package com.finalshell.core;
 import com.finalshell.ui.model.Pf4;
 
 public class EN {
-   protected static Pf4 h;
-   protected static boolean U;
+   public static Pf4 h;
+   public static boolean U;
    public static String m;
    public static String b;
 

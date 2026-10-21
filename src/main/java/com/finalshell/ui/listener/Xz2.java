@@ -9,11 +9,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class Xz2 extends MouseAdapter {
-   final Kb4 j;
+   public final Kb4 j;
    public static long[] a;
    public static Integer[] b;
 
-   Xz2(Kb4 var1) {
+   public Xz2(Kb4 var1) {
       this.j = var1;
    }
 
@@ -172,7 +172,7 @@ public class Xz2 extends MouseAdapter {
    @Override
    public void mouseDragged(MouseEvent var1) {
       int[] var2 = K32.L$arrint();
-      int var10000 = Kb4.r(this.j);
+      int var10000 = (Kb4.r(this.j)) ? 1 : 0;
       if (var2 != null) {
          if (var10000) {
             var10000 = Kb4.A(this.j);

@@ -11,7 +11,7 @@ public class P_4 implements W2_4 {
    public final short y;
    public final short U;
    public final List E;
-   final Cr2_2 A;
+   public final Cr2_2 A;
    public static String a;
 
    public P_4(Cr2_2 var1, short var2, short var3, short var4, List var5) {

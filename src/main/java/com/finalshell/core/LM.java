@@ -3,8 +3,8 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 
 public class LM {
-   String W;
-   String E;
+   public String W;
+   public String E;
 
    public String W() {
       Object var1 = 122113484349625514L;

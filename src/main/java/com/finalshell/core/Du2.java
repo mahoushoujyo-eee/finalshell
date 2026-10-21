@@ -8,8 +8,8 @@ import javax.swing.AbstractListModel;
 
 public class Du2 extends AbstractListModel {
    public ArrayList x;
-   String[] a;
-   java.lang.Class[] W;
+   public String[] a;
+   public java.lang.Class[] W;
    public static String b;
 
    public Du2() {
@@ -52,7 +52,7 @@ public class Du2 extends AbstractListModel {
       ((ArrayList)Ref.g(587586177856690794L, var2)).add(var1);
    }
 
-   void R() {
+   public void R() {
       Object var1 = 587586177856690794L;
       this.fireContentsChanged(false, (int)this, ((ArrayList)Ref.g(587586177856690794L, var1)).size() - 1);
    }

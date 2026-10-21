@@ -8,9 +8,9 @@ import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mz2 implements Runnable {
-   final U N;
+   public final U N;
 
-   Mz2(U var1) {
+   public Mz2(U var1) {
       this.N = var1;
    }
 

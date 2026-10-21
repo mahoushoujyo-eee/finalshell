@@ -3,14 +3,14 @@ package com.finalshell.core;
 public class Nb2_3 extends Nt2_2 {
    @C_9
    public NH_2 s;
-   static boolean L;
-   final java.lang.Class j;
-   final com.finalshell.ui.model.I p;
-   final HO_2 f;
+   public static boolean L;
+   public final java.lang.Class j;
+   public final com.finalshell.ui.model.I p;
+   public final HO_2 f;
    public static String[] d;
    public static String[] e;
 
-   Nb2_3(HO_2 var1, com.finalshell.ui.model.I var2, java.lang.Class var3, com.finalshell.ui.model.I var4) {
+   public Nb2_3(HO_2 var1, com.finalshell.ui.model.I var2, java.lang.Class var3, com.finalshell.ui.model.I var4) {
       super(var2);
       this.f = var1;
       this.j = var3;

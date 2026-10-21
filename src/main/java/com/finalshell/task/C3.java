@@ -5,9 +5,6 @@ public class C3 implements Runnable {
    public static long[] b;
    public static Long[] c;
 
-   C3() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

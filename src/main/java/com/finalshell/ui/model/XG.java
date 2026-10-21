@@ -8,10 +8,10 @@ import javax.swing.table.AbstractTableModel;
 
 public class XG extends AbstractTableModel {
    public ArrayList Z;
-   String[] w;
-   Class[] E;
+   public String[] w;
+   public Class[] E;
 
-   XG() {
+   public XG() {
       ArrayList var10001 = new ArrayList();
       long var2 = 410487397827032565L;
       ArrayList var1 = var10001;

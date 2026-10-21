@@ -12,9 +12,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class UY implements ActionListener {
-   final RouteTracePanel2 b;
+   public final RouteTracePanel2 b;
 
-   UY(RouteTracePanel2 var1) {
+   public UY(RouteTracePanel2 var1) {
       this.b = var1;
    }
 

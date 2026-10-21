@@ -8,7 +8,7 @@ public class CD3 {
    public long D;
    public long L = 0L;
    public long O = 0L;
-   Calendar F = Calendar.getInstance();
+   public Calendar F = Calendar.getInstance();
 
    public void B() {
       this.v = 0L;

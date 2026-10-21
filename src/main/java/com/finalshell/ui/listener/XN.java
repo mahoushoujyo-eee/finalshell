@@ -11,7 +11,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.plaf.PopupMenuUI;
 
 public class XN implements ChangeListener {
-   protected JMenuItem U;
+   public JMenuItem U;
    public static String a;
 
    public static XN y(JMenuItem var0) {

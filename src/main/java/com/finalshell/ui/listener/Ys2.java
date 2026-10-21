@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ys2 implements ActionListener {
-   final RouteTracePanel2 u;
+   public final RouteTracePanel2 u;
 
-   Ys2(RouteTracePanel2 var1) {
+   public Ys2(RouteTracePanel2 var1) {
       this.u = var1;
    }
 

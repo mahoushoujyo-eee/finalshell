@@ -43,8 +43,8 @@ public class E extends Y2 {
    public static Integer[] k;
 
    public E(Component var1, Object var2, Object var3, String var4, int var5, int var6) {
+   super(com.finalshell.core.FN.L(var1), var4);
       String var10000 = U();
-      super(com.finalshell.core.FN.L(var1), var4);
       this.N = null;
       this.setIconImages(this.T(var6));
       this.setLayout(new BorderLayout());
@@ -172,7 +172,7 @@ public class E extends Y2 {
       }
    }
 
-   protected ImageIcon W(int var1) {
+   public ImageIcon W(int var1) {
       return S_2.l(var1);
    }
 
@@ -379,7 +379,7 @@ public class E extends Y2 {
       return var7;
    }
 
-   static void I(E var0, int var1) {
+   public static void I(E var0, int var1) {
       var0.V(var1);
    }
 

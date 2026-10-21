@@ -6,17 +6,17 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 public class An2 extends As2 {
-   final GradientPaint m;
-   final UV3 s;
+   public final GradientPaint m;
+   public final UV3 s;
 
-   An2(UV3 var1, ShowDeletedPanel var2, Connection5 var3, GradientPaint var4) {
+   public An2(UV3 var1, ShowDeletedPanel var2, Connection5 var3, GradientPaint var4) {
       super(var2, var3);
       this.s = var1;
       this.m = var4;
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       Object var3 = 625238686649497327L;

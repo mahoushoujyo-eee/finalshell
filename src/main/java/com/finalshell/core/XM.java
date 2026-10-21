@@ -22,12 +22,12 @@ public abstract class XM implements CompositeContext {
    public void dispose() {
    }
 
-   static int U(int var0, int var1) {
+   public static int U(int var0, int var1) {
       int var2 = var0 * var1 + a(29649, 5911693692162933165L);
       return (var2 >> a(1433, 331256653831534564L)) + var2 >> a(24853, 5482750089917076330L);
    }
 
-   static int c(int var0) {
+   public static int c(int var0) {
       String var1 = RA3.c();
       int var10000 = var0;
       if (var1 == null) {

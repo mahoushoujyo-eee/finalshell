@@ -6,9 +6,9 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class TZ3 implements KeyListener {
-   final Yz2 n;
+   public final Yz2 n;
 
-   TZ3(Yz2 var1) {
+   public TZ3(Yz2 var1) {
       this.n = var1;
    }
 

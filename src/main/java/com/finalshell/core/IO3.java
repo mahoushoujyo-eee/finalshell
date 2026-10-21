@@ -19,11 +19,11 @@ public class IO3 {
       return this.S;
    }
 
-   static String l(IO3 var0) {
+   public static String l(IO3 var0) {
       return var0.q();
    }
 
-   static Shape N(IO3 var0) {
+   public static Shape N(IO3 var0) {
       return var0.P();
    }
 }

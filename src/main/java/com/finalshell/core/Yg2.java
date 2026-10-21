@@ -4,7 +4,7 @@ public class Yg2 extends YZ {
    public static String c;
 
    @Override
-   String d() {
+   public String d() {
       return c;
    }
 

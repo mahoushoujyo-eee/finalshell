@@ -11,10 +11,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class Ly_4 implements ActionListener {
-   final FilePermissionPanel E;
+   public final FilePermissionPanel E;
    public static String a;
 
-   Ly_4(FilePermissionPanel var1) {
+   public Ly_4(FilePermissionPanel var1) {
       this.E = var1;
    }
 

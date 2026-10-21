@@ -84,7 +84,7 @@ public abstract class Yi2 implements Rq2 {
       }
    }
 
-   protected void z(JComponent var1, int var2, int var3) {
+   public void z(JComponent var1, int var2, int var3) {
       Object var4 = this.c(var1, var2, var3);
       boolean var5 = this.M(var1, var2, var3);
       this.l = this.y(var1, var4, var2, var3, var5);
@@ -92,9 +92,9 @@ public abstract class Yi2 implements Rq2 {
       Ac2.i(this.l);
    }
 
-   protected abstract Object c(JComponent var1, int var2, int var3);
+   public abstract Object c(JComponent var1, int var2, int var3);
 
-   protected abstract boolean M(JComponent var1, int var2, int var3);
+   public abstract boolean M(JComponent var1, int var2, int var3);
 }
 
 

@@ -3,12 +3,12 @@ package com.finalshell.core;
 import java.util.Map.Entry;
 
 public class NI implements Entry {
-   final Object V;
-   Object u;
-   NI N;
-   final int m;
+   public final Object V;
+   public Object u;
+   public NI N;
+   public final int m;
 
-   NI(int var1, Object var2, Object var3, NI var4) {
+   public NI(int var1, Object var2, Object var3, NI var4) {
       this.u = var3;
       this.N = var4;
       this.V = var2;

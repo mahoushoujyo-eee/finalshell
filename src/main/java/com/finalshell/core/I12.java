@@ -15,12 +15,12 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicLabelUI;
 
 public class I12 extends BasicLabelUI implements D7, L0_2 {
-   protected Insets C = O__2.u;
-   protected boolean V = O__2.U;
-   protected LJ3 W;
-   protected PropertyChangeListener z;
-   protected String Q = null;
-   protected JLabel c;
+   public Insets C = O__2.u;
+   public boolean V = O__2.U;
+   public LJ3 W;
+   public PropertyChangeListener z;
+   public String Q = null;
+   public JLabel c;
    public static String[] a;
    public static String[] b;
 
@@ -144,7 +144,7 @@ public class I12 extends BasicLabelUI implements D7, L0_2 {
       }
    }
 
-   protected void O(LJ3 var1) {
+   public void O(LJ3 var1) {
       int[] var2 = com.finalshell.ui.panel.O.D$arrint();
       LJ3 var10000 = var1;
       if (var2 != null) {

@@ -19,16 +19,16 @@ import javax.swing.SwingUtilities;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class TM extends DefaultCellEditor {
-   Ne4 v;
-   com.finalshell.ui.panel.Wb2 L;
-   final ShowDeletedPanel J;
-   final Connection5 T;
+   public Ne4 v;
+   public com.finalshell.ui.panel.Wb2 L;
+   public final ShowDeletedPanel J;
+   public final Connection5 T;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   TM(Connection5 var1, JTextField var2, ShowDeletedPanel var3) {
+   public TM(Connection5 var1, JTextField var2, ShowDeletedPanel var3) {
       super(var2);
       this.T = var1;
       this.J = var3;
@@ -537,7 +537,7 @@ public class TM extends DefaultCellEditor {
             var10 = a((int)var10004, (int)this);
             var71 = var9.getClass().equals(com.finalshell.ui.model.Ck4.class);
             if (var7 == null) {
-               if (var71 != false) {
+               if (var71 == null) {
                   com.finalshell.ui.model.Ck4 var11 = (com.finalshell.ui.model.Ck4)var9;
                   Registry.emptyArgs();
                   long var22 = 270389152141252877L;
@@ -604,7 +604,7 @@ public class TM extends DefaultCellEditor {
                break label136;
             }
 
-            if (var71 != false) {
+            if (var71 == null) {
                Tf4 var68 = (Tf4)var9;
                File var10005 = Registry.emptyArgs();
                long var37 = 543633160597441792L;
@@ -752,7 +752,7 @@ public class TM extends DefaultCellEditor {
             Object var5 = var10003;
             var10003 = (Object[])var5;
             if (var2 == null) {
-               if (var5 == 0) {
+               if (var5 == null) {
                   return false;
                }
 
@@ -766,7 +766,7 @@ public class TM extends DefaultCellEditor {
                   TM var27 = (TM)var6;
                   int var10004 = 1;
                   if (var2 == null) {
-                     if (var6 != 1) {
+                     if (var6 != null) {
                         break label62;
                      }
 
@@ -794,7 +794,7 @@ public class TM extends DefaultCellEditor {
             Object var30 = var6;
             byte var31 = 1;
             if (var2 == null) {
-               if (var6 == true) {
+               if (var6 != null) {
                   Object var17 = 123645524365861271L;
                   Registry.lookupField(281199022400540961L).setBoolean(Ref.g(123645524365861271L, var17), false);
                   new com.finalshell.task.Ax2(this).start();

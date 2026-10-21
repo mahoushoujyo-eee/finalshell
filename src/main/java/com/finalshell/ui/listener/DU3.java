@@ -8,13 +8,13 @@ import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 
 public class DU3 implements CaretListener {
-   final Ne4 J;
-   final Qe2_2 O;
-   final KD3 F;
+   public final Ne4 J;
+   public final Qe2_2 O;
+   public final KD3 F;
    public static String[] a;
    public static String[] b;
 
-   DU3(KD3 var1, Ne4 var2, Qe2_2 var3) {
+   public DU3(KD3 var1, Ne4 var2, Qe2_2 var3) {
       this.F = var1;
       this.J = var2;
       this.O = var3;

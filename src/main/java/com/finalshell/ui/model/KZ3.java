@@ -5,7 +5,7 @@ import com.finalshell.core.Uc2_2;
 import com.finalshell.ui.panel.Ky4;
 import javax.swing.ImageIcon;
 
-public final class KZ3 extends Enum {
+public final class KZ3 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -23,11 +23,10 @@ public final class KZ3 extends Enum {
    }
 
    public static KZ3 valueOf(String var0) {
-      return Enum.valueOf(KZ3.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public KZ3(String var1, int var2) {
-      super(var1, var2);
    }
 
    public ImageIcon X() {

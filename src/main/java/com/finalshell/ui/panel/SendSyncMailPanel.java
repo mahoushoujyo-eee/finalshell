@@ -22,11 +22,11 @@ import javax.swing.text.BadLocationException;
 import net.miginfocom.swing.MigLayout;
 
 public class SendSyncMailPanel extends JPanel {
-   JButton o;
-   JTextArea x;
-   boolean i;
-   final int I;
-   JScrollPane c;
+   public JButton o;
+   public JTextArea x;
+   public boolean i;
+   public final int I;
+   public JScrollPane c;
    public static String W;
    public static String[] a;
    public static String[] b;
@@ -126,10 +126,10 @@ public class SendSyncMailPanel extends JPanel {
       SwingUtilities.invokeLater(new Y92(this));
    }
 
-   void r() {
+   public void r() {
    }
 
-   JButton r(String var1) {
+   public JButton r(String var1) {
       JButton var2 = new JButton(var1);
       var2.setMargin(new Insets(0, 5, 0, 5));
       var2.setFocusPainted(false);

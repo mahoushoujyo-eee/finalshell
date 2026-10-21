@@ -8,11 +8,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class KP3 implements Runnable {
-   final String s;
-   final Ly_4 X;
+   public final String s;
+   public final Ly_4 X;
    public static String a;
 
-   KP3(Ly_4 var1, String var2) {
+   public KP3(Ly_4 var1, String var2) {
       this.X = var1;
       this.s = var2;
    }

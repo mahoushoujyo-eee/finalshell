@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.JTable;
 
 public class CN extends MouseAdapter {
-   final Copy2 I;
+   public final Copy2 I;
 
-   CN(Copy2 var1) {
+   public CN(Copy2 var1) {
       this.I = var1;
    }
 

@@ -13,9 +13,9 @@ import javax.swing.table.TableCellRenderer;
 import net.miginfocom.swing.MigLayout;
 
 public class AcceleratePanel3 extends JLabel implements TableCellRenderer {
-   JLabel a;
-   JLabel G;
-   com.finalshell.ui.model.BS x;
+   public JLabel a;
+   public JLabel G;
+   public com.finalshell.ui.model.BS x;
    public static String[] b;
    public static String[] c;
    public static long[] d;
@@ -53,7 +53,7 @@ public class AcceleratePanel3 extends JLabel implements TableCellRenderer {
       ((JLabel)Ref.g(290241751512044661L, var21)).setOpaque(false);
    }
 
-   void w(com.finalshell.ui.model.BS var1, JTable var2, int var3) {
+   public void w(com.finalshell.ui.model.BS var1, JTable var2, int var3) {
       label50: {
          AccelerateRdpHelpPanel.w();
          long var9 = 295327320820068244L;

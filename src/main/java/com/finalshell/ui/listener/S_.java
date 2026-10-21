@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class S_ implements PropertyChangeListener {
-   final Nx4 t;
+   public final Nx4 t;
 
-   S_(Nx4 var1) {
+   public S_(Nx4 var1) {
       this.t = var1;
    }
 

@@ -6,10 +6,10 @@ import java.lang.reflect.InvocationTargetException;
 
 public class W4 {
    public String V;
-   long u;
-   long S;
-   long B;
-   long Q;
+   public long u;
+   public long S;
+   public long B;
+   public long Q;
    public static String a;
    public static long b;
 

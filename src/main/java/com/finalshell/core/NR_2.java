@@ -3,7 +3,7 @@ package com.finalshell.core;
 public abstract class NR_2 extends NV_2 {
    public static boolean v;
 
-   protected NR_2(com.finalshell.ui.model.I var1) {
+   public NR_2(com.finalshell.ui.model.I var1) {
       super(var1);
    }
 

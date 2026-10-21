@@ -9,11 +9,11 @@ import java.awt.Point;
 import java.util.List;
 
 public class TI_2 extends T4 {
-   final OY3 r;
+   public final OY3 r;
    public static long[] a;
    public static Integer[] b;
 
-   protected TI_2(OY3 var1) {
+   public TI_2(OY3 var1) {
       this.r = var1;
    }
 
@@ -314,7 +314,7 @@ public class TI_2 extends T4 {
          boolean var10000 = OY3.y$boolean();
          var2 = new Dimension(0, 0);
          var1 = var10000;
-         int var5 = this.r.M;
+         int var5 = (this.r.M) ? 1 : 0;
          if (var1) {
             if (!this.r.M) {
                return var2;
@@ -353,7 +353,7 @@ public class TI_2 extends T4 {
       Object var4;
       label55: {
          var1 = OY3.y$boolean();
-         int var10000 = this.r.M;
+         int var10000 = (this.r.M) ? 1 : 0;
          if (var1) {
             if (!this.r.M) {
                return new Dimension(0, 0);

@@ -20,8 +20,8 @@ public class S0 {
    }
 
    public S0(Fv2_2 var1, ExecutorService var2) {
+   super();
       Ky4[] var10000 = p();
-      super();
       Ky4[] var3 = var10000;
       this.F = new ArrayBlockingQueue(1);
       this.j = var2.submit(new com.finalshell.task.N2(this, var1));
@@ -34,15 +34,15 @@ public class S0 {
       this.F.offer(var1);
    }
 
-   static Logger g() {
+   public static Logger g() {
       return L;
    }
 
-   static Future P(S0 var0) {
+   public static Future P(S0 var0) {
       return var0.j;
    }
 
-   static BlockingQueue a(S0 var0) {
+   public static BlockingQueue a(S0 var0) {
       return var0.F;
    }
 

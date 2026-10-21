@@ -17,15 +17,15 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class ReservedAddressAdapter extends DefaultTableCellRenderer {
-   Border a;
-   SimpleDateFormat M;
-   JLabel r;
+   public Border a;
+   public SimpleDateFormat M;
+   public JLabel r;
    public static String[] b;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   ReservedAddressAdapter() {
+   public ReservedAddressAdapter() {
       Border var10001 = BorderFactory.createEmptyBorder(0, a(27255, 3014337122543547044L), 2, 4);
       long var2 = 222484112996747555L;
       Border var1 = var10001;

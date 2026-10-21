@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class M4 implements E_2 {
-   final com.finalshell.ui.panel.T k;
+   public final com.finalshell.ui.panel.T k;
 
-   M4(com.finalshell.ui.panel.T var1) {
+   public M4(com.finalshell.ui.panel.T var1) {
       this.k = var1;
    }
 

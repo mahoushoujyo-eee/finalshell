@@ -5,9 +5,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class CE3 extends FocusAdapter {
-   final Nx4 n;
+   public final Nx4 n;
 
-   CE3(Nx4 var1) {
+   public CE3(Nx4 var1) {
       this.n = var1;
    }
 

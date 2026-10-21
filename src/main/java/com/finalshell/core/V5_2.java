@@ -7,7 +7,7 @@ import javax.swing.JTree;
 import javax.swing.plaf.TreeUI;
 
 public class V5_2 extends Rt4 {
-   protected boolean E = true;
+   public boolean E = true;
 
    public V5_2() {
       this(new Ne4());

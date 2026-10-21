@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class C32_3 implements C_J {
-   final C_U W;
-   final C_f_2[] Z;
-   final Hg2_2 E;
+   public final C_U W;
+   public final C_f_2[] Z;
+   public final Hg2_2 E;
 
-   C32_3(Hg2_2 var1, C_U var2, C_f_2[] var3) {
+   public C32_3(Hg2_2 var1, C_U var2, C_f_2[] var3) {
       this.E = var1;
       this.W = var2;
       this.Z = var3;

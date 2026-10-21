@@ -6,9 +6,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Py2 extends KeyAdapter {
-   final Nx4 o;
+   public final Nx4 o;
 
-   Py2(Nx4 var1) {
+   public Py2(Nx4 var1) {
       this.o = var1;
    }
 

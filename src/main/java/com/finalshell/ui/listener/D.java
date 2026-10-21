@@ -8,9 +8,9 @@ import javax.swing.JRootPane;
 import javax.swing.SwingUtilities;
 
 public class D implements HierarchyListener {
-   final com.finalshell.core.S_2 y;
+   public final com.finalshell.core.S_2 y;
 
-   D(com.finalshell.core.S_2 var1) {
+   public D(com.finalshell.core.S_2 var1) {
       this.y = var1;
    }
 

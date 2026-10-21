@@ -9,9 +9,9 @@ import java.util.Map;
 import javax.swing.SwingConstants;
 
 public class Tl2_2 extends T4 implements SwingConstants {
-   protected Map Z = new HashMap();
-   protected Insets N = null;
-   protected Insets r = null;
+   public Map Z = new HashMap();
+   public Insets N = null;
+   public Insets r = null;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -223,7 +223,7 @@ public class Tl2_2 extends T4 implements SwingConstants {
       // c1: areturn
    }
 
-   protected Insets K(Container param1) {
+   public Insets K(Container param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -685,7 +685,7 @@ public class Tl2_2 extends T4 implements SwingConstants {
       // 35f: return
    }
 
-   protected int g(Component param1, C_1 param2) {
+   public int g(Component param1, C_1 param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

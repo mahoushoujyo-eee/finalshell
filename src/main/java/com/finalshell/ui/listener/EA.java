@@ -7,18 +7,18 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class EA extends WindowAdapter {
-   final Xc4 v;
+   public final Xc4 v;
    public static String[] a;
    public static String[] b;
 
-   EA(Xc4 var1) {
+   public EA(Xc4 var1) {
       this.v = var1;
    }
 
    @Override
    public void windowClosing(WindowEvent var1) {
       int[] var2 = KD3.u();
-      byte var10000 = Xc4.x(this.v).v();
+      byte var10000 = (Xc4.x(this.v).v()) ? 1 : 0;
       if (var2 == null) {
          if (var10000 == 0) {
             return;

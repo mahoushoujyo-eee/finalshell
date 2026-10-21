@@ -5,9 +5,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class Uz_2 implements ChangeListener {
-   final KD3 U;
+   public final KD3 U;
 
-   Uz_2(KD3 var1) {
+   public Uz_2(KD3 var1) {
       this.U = var1;
    }
 

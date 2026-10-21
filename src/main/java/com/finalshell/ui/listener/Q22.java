@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Q22 implements PropertyChangeListener {
-   final Hl2 C;
+   public final Hl2 C;
 
-   Q22(Hl2 var1) {
+   public Q22(Hl2 var1) {
       this.C = var1;
    }
 

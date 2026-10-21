@@ -4,13 +4,13 @@ import com.finalshell.core.UM3;
 import com.finalshell.ui.frame.UpdateFrame;
 
 public class WW implements Runnable {
-   final UpdateFrame x;
-   final UM3 F;
+   public final UpdateFrame x;
+   public final UM3 F;
    public static long a;
    public static long[] b;
    public static Long[] c;
 
-   WW(UM3 var1, UpdateFrame var2) {
+   public WW(UM3 var1, UpdateFrame var2) {
       this.F = var1;
       this.x = var2;
    }

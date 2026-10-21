@@ -5,9 +5,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class Dh2 implements ListSelectionListener {
-   final CopyPanel a;
+   public final CopyPanel a;
 
-   Dh2(CopyPanel var1) {
+   public Dh2(CopyPanel var1) {
       this.a = var1;
    }
 

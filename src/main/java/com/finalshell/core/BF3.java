@@ -1,19 +1,19 @@
 package com.finalshell.core;
 
 public class BF3 extends BN3 {
-   static volatile boolean L;
-   static volatile int w;
-   static volatile long W;
-   static volatile long D;
-   static byte[] F;
-   static byte[] O;
+   public static volatile boolean L;
+   public static volatile int w;
+   public static volatile long W;
+   public static volatile long D;
+   public static byte[] F;
+   public static byte[] O;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] f;
    public static long g;
 
-   static void J() throws Exception {
+   public static void J() throws Exception {
       int var10000 = BN3.C();
       Thread var1 = new Thread(new com.finalshell.task.U8());
       int var0 = var10000;
@@ -29,7 +29,7 @@ public class BF3 extends BN3 {
       }
    }
 
-   static void c() throws Exception {
+   public static void c() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

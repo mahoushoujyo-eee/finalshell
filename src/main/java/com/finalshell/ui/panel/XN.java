@@ -15,13 +15,13 @@ import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class XN extends JLabel implements D2 {
-   float M;
-   JLabel R;
-   Lt4 H;
-   Color K;
-   Color u;
-   Color z;
-   BufferedImage s;
+   public float M;
+   public JLabel R;
+   public Lt4 H;
+   public Color K;
+   public Color u;
+   public Color z;
+   public BufferedImage s;
    public static boolean t;
    public static String[] a;
    public static String[] b;
@@ -71,7 +71,7 @@ public class XN extends JLabel implements D2 {
       ((JLabel)Ref.g(321784082643385098L, var23)).setHorizontalAlignment(4);
       Object var25 = 321784082643385098L;
       this.add((JLabel)Ref.g(321784082643385098L, var25), a(-11380, 9370));
-      if (this == false) {
+      if (this == null) {
          Ky4.K(new String[5]);
       }
    }
@@ -143,11 +143,11 @@ public class XN extends JLabel implements D2 {
                var9 = (int)(((float)this.getWidth() - (float)var8) * var4) + var7;
                float var19;
                int var10002 = (var19 = var4 - 0.006F) == 0.0F ? 0 : (var19 < 0.0F ? -1 : 1);
-               if (var3 == false) {
+               if (var3 == null) {
                   if (var10002 > 0) {
                      var10 = 2;
                      var10003 = var3;
-                     if (var3 != false) {
+                     if (var3 == null) {
                         break label46;
                      }
 
@@ -162,7 +162,7 @@ public class XN extends JLabel implements D2 {
                var10 = var10002;
                Object var15 = 283276599952960038L;
                this.setColor((Color)Ref.g(283276599952960038L, var15));
-               if (var3 != false) {
+               if (var3 == null) {
                   break label45;
                }
 
@@ -172,7 +172,7 @@ public class XN extends JLabel implements D2 {
 
             if (var10003 > 0) {
                var3.fillRect(var6, var10, var9, this.getHeight() - 2 * var5);
-               if (var3 == false) {
+               if (var3 == null) {
                   break label42;
                }
             }
@@ -186,7 +186,7 @@ public class XN extends JLabel implements D2 {
 
       super.paint(var1);
       if (Ky4.F$arrString() != null) {
-         W(var3 == false);
+         W(var3 == null);
       }
    }
 

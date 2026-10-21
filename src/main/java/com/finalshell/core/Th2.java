@@ -5,10 +5,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.tree.TreeCellEditor;
 
 public class Th2 extends T8_2 {
-   final TreeCellEditor v;
-   final com.finalshell.ui.panel.Us2 f;
+   public final TreeCellEditor v;
+   public final com.finalshell.ui.panel.Us2 f;
 
-   Th2(com.finalshell.ui.panel.Us2 var1, TreeCellEditor var2) {
+   public Th2(com.finalshell.ui.panel.Us2 var1, TreeCellEditor var2) {
       this.f = var1;
       this.v = var2;
    }

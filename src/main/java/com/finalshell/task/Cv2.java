@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Og2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Cv2 implements Runnable {
-   final Og2 s;
+   public final Og2 s;
 
-   Cv2(Og2 var1) {
+   public Cv2(Og2 var1) {
       this.s = var1;
    }
 

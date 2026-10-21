@@ -18,15 +18,15 @@ public class Dq4_2 implements TreeCellRenderer {
    public static String[] a;
    public static String[] c;
 
-   protected JCheckBox H() {
+   public JCheckBox H() {
       Object var1 = 193338774593183220L;
       return (JCheckBox)Ref.g(193338774593183220L, var1);
    }
 
    public Dq4_2() {
+   super();
       short var10000 = -23004;
       String var10001 = com.finalshell.ui.panel.AA.z();
-      super();
       String var1 = var10001;
       short var12 = -13229;
       JCheckBox var10003 = new JCheckBox();

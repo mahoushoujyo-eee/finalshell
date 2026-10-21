@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Fj4 implements ActionListener {
-   final ApplyToFileAndDirDialog L;
+   public final ApplyToFileAndDirDialog L;
 
-   Fj4(ApplyToFileAndDirDialog var1) {
+   public Fj4(ApplyToFileAndDirDialog var1) {
       this.L = var1;
    }
 

@@ -22,13 +22,13 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class US3 extends JPanel implements ListCellRenderer {
-   JLabel h;
-   L1 Q;
-   Color d;
-   boolean q;
+   public JLabel h;
+   public L1 Q;
+   public Color d;
+   public boolean q;
    public static int p;
    public static int C;
-   int Y;
+   public int Y;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -67,7 +67,7 @@ public class US3 extends JPanel implements ListCellRenderer {
       this.add((JLabel)Ref.g(350626890368158221L, var15), "");
    }
 
-   void K(L1 var1, JList var2, int var3) {
+   public void K(L1 var1, JList var2, int var3) {
       ClearListDialog.i$arrString();
       long var8 = 549061292458223709L;
       Ref.s(549061292458223709L, var1, var8);
@@ -276,7 +276,7 @@ public class US3 extends JPanel implements ListCellRenderer {
 
          Dimension var39;
          Object var30 = 350626890368158221L;
-new Point((int)this, ((JLabel)Ref.g(350626890368158221L, var30)).getPreferredSize().height);
+var13 = new Point((int)this, ((JLabel)Ref.g(350626890368158221L, var30)).getPreferredSize().height);
          var39.setPreferredSize(var39);
          var38 = this.getPreferredSize().height;
       }

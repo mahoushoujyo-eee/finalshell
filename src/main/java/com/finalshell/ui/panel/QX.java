@@ -36,20 +36,20 @@ import javax.swing.JComponent;
 import javax.swing.event.AncestorListener;
 
 public class QX extends Ky4 {
-   protected List w = new ArrayList(2);
-   protected boolean i = false;
-   protected boolean s = false;
-   protected boolean h = true;
-   protected Component v = null;
-   protected List u = new ArrayList();
-   protected Component b = null;
-   protected ComponentListener f = null;
-   protected AncestorListener V = null;
-   protected boolean p = false;
-   protected IC3 M;
-   protected float F = 0.0F;
-   protected WC_2 C;
-   protected C42 o;
+   public List w = new ArrayList(2);
+   public boolean i = false;
+   public boolean s = false;
+   public boolean h = true;
+   public Component v = null;
+   public List u = new ArrayList();
+   public Component b = null;
+   public ComponentListener f = null;
+   public AncestorListener V = null;
+   public boolean p = false;
+   public IC3 M;
+   public float F = 0.0F;
+   public WC_2 C;
+   public C42 o;
    public static String[] c;
    public static String g;
    public static long z;
@@ -72,7 +72,7 @@ public class QX extends Ky4 {
       this.P$void();
    }
 
-   protected void P$void() {
+   public void P$void() {
       this.setOpaque(false);
       this.setFocusCycleRoot(true);
       NQ3.S(this);
@@ -83,7 +83,7 @@ public class QX extends Ky4 {
       ON.b(this, this.o);
    }
 
-   protected void j(boolean var1) {
+   public void j(boolean var1) {
       String[] var2 = Y();
       boolean var10000 = this.isShowing();
       if (var2 == null) {
@@ -262,11 +262,11 @@ public class QX extends Ky4 {
       this.I(var1, var2);
    }
 
-   protected void A(Component var1, Rectangle var2) {
+   public void A(Component var1, Rectangle var2) {
       this.k(var1, var2.x, var2.y, var2.width, var2.height);
    }
 
-   protected void k(Component var1, int var2, int var3, int var4, int var5) {
+   public void k(Component var1, int var2, int var3, int var4, int var5) {
       String[] var6 = Y();
       Component var10000 = var1;
       if (var6 == null) {
@@ -283,7 +283,7 @@ public class QX extends Ky4 {
       this.repaint();
    }
 
-   protected void m(Component var1, int var2, int var3, int var4, int var5) {
+   public void m(Component var1, int var2, int var3, int var4, int var5) {
       this.k();
       String[] var10000 = Y();
       this.b = var1;
@@ -301,7 +301,7 @@ public class QX extends Ky4 {
       ((JComponent)var7).addAncestorListener(this.V);
    }
 
-   protected void I(Component var1, E_2 var2) {
+   public void I(Component var1, E_2 var2) {
       this.k();
       this.b = var1;
       String[] var10000 = Y();
@@ -321,7 +321,7 @@ public class QX extends Ky4 {
       ((JComponent)var4).addAncestorListener(this.V);
    }
 
-   protected void k() {
+   public void k() {
       String[] var1 = Y();
       Object var10000 = this;
       if (var1 == null) {
@@ -392,7 +392,7 @@ public class QX extends Ky4 {
       var10000.Z();
    }
 
-   protected void Z() {
+   public void Z() {
       String[] var10000 = Y();
       this.k();
       Qt2 var2 = (Qt2)this.getParent();
@@ -508,7 +508,7 @@ public class QX extends Ky4 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String[] var2 = Y();
       QX var10000 = this;
       if (var2 == null) {

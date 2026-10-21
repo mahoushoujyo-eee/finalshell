@@ -5,11 +5,11 @@ import com.finalshell.reflect.Registry;
 import org.icmp4j.j;
 
 public class Kk4 implements Q0 {
-   final j c;
-   final int Z;
-   final Dw4 b;
+   public final j c;
+   public final int Z;
+   public final Dw4 b;
 
-   Kk4(Dw4 var1, j var2, int var3) {
+   public Kk4(Dw4 var1, j var2, int var3) {
       this.b = var1;
       this.c = var2;
       this.Z = var3;

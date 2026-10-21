@@ -46,7 +46,7 @@ public class N_7 implements T_6 {
          var10001 = var1;
       }
 
-      return (boolean)(var10000 == var10001 ? 1 : 0);
+      return (boolean)((var10000 == var10001 ? 1 : 0) != 0);
    }
 
    @Override

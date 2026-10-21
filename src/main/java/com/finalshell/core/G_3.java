@@ -48,7 +48,7 @@ public class G_3 extends X2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == this.v ? 1 : 0);
+         return (boolean)((var10000 == this.v ? 1 : 0) != 0);
       }
    }
 
@@ -57,7 +57,7 @@ public class G_3 extends X2_3 {
       return this.v;
    }
 
-   static short Y(G_3 var0) {
+   public static short Y(G_3 var0) {
       return var0.v;
    }
 

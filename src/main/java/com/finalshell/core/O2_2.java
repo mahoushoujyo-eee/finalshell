@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.awt.event.WindowEvent;
 
 public class O2_2 extends C42 {
-   final com.finalshell.ui.dialog.Y2 R;
+   public final com.finalshell.ui.dialog.Y2 R;
    public static long a;
 
-   O2_2(com.finalshell.ui.dialog.Y2 var1, boolean var2) {
+   public O2_2(com.finalshell.ui.dialog.Y2 var1, boolean var2) {
       super(var2);
       this.R = var1;
    }

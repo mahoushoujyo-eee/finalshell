@@ -6,11 +6,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 public class HI {
-   static ConcurrentMap U;
-   protected final Type I;
+   public static ConcurrentMap U;
+   public final Type I;
    public static Type L;
 
-   protected HI() {
+   public HI() {
       Type var1 = this.getClass().getGenericSuperclass();
       Type var2 = ((ParameterizedType)var1).getActualTypeArguments()[0];
       Type var3 = (Type)U.get(var2);
@@ -22,7 +22,7 @@ public class HI {
       this.I = var3;
    }
 
-   protected HI(Type[] param1) {
+   public HI(Type[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

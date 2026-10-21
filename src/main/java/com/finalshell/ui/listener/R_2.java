@@ -4,9 +4,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class R_2 implements ListSelectionListener {
-   final com.finalshell.ui.panel.T E;
+   public final com.finalshell.ui.panel.T E;
 
-   R_2(com.finalshell.ui.panel.T var1) {
+   public R_2(com.finalshell.ui.panel.T var1) {
       this.E = var1;
    }
 

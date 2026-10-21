@@ -17,11 +17,11 @@ public class L22 extends Ls4 {
    public static long[] d;
    public static Integer[] f;
 
-   L22(Xe2 var1) {
+   public L22(Xe2 var1) {
       this(var1, null, null, null, null, null);
    }
 
-   L22(Xe2 var1, byte[] var2, byte[] var3, byte[] var4, byte[] var5, byte[] var6) {
+   public L22(Xe2 var1, byte[] var2, byte[] var3, byte[] var4, byte[] var5, byte[] var6) {
       super(var1);
       boolean var10000 = Dm4.F$boolean();
       this.a = b(14346, 2318369969496745296L);
@@ -44,7 +44,7 @@ public class L22 extends Ls4 {
    }
 
    @Override
-   void K(int var1) throws Pc2 {
+   public void K(int var1) throws Pc2 {
       this.a = var1;
 
       try {
@@ -63,17 +63,17 @@ public class L22 extends Ls4 {
    }
 
    @Override
-   byte[] Y() {
+   public byte[] Y() {
       return J;
    }
 
    @Override
-   byte[] d() {
+   public byte[] d() {
       return e;
    }
 
    @Override
-   byte[] r$arrbyte() {
+   public byte[] r$arrbyte() {
       int var1 = 1
          + this.M(1)
          + 1
@@ -106,7 +106,7 @@ public class L22 extends Ls4 {
    }
 
    @Override
-   boolean I(byte[] param1) {
+   public boolean I(byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -884,7 +884,7 @@ public class L22 extends Ls4 {
    }
 
    @Override
-   byte[] A() {
+   public byte[] A() {
       return j;
    }
 
@@ -1119,7 +1119,7 @@ public class L22 extends Ls4 {
       return this.R();
    }
 
-   static Ls4 c(Xe2 var0, UJ var1) throws Pc2 {
+   public static Ls4 c(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(b(17385, 731405911132184242L), b(24235, 32113));
       byte[] var3 = var2[1];
       byte[] var4 = var2[2];

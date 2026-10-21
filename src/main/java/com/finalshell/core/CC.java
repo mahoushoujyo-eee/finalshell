@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class CC implements Hj2 {
-   final Cs2_2 O;
+   public final Cs2_2 O;
 
-   CC(Cs2_2 var1) {
+   public CC(Cs2_2 var1) {
       this.O = var1;
    }
 

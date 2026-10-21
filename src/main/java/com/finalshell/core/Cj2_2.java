@@ -17,12 +17,12 @@ public class Cj2_2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeByte(this.S.s());
       this.S.E(var1);
    }
 
-   static Y_3 H(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 H(short var0, DataInputStream var1) throws IOException {
       return W(var0, var1);
    }
 }

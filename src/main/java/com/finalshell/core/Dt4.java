@@ -12,7 +12,7 @@ public class Dt4 extends Dm4 {
    public static long[] h;
    public static Integer[] i;
 
-   Dt4() {
+   public Dt4() {
       this.M(b(6575, 617275933438443246L));
       this.Q(b(31738, 5253584688844381372L));
       this.f(b(9506, 8550352363049075304L));
@@ -24,7 +24,7 @@ public class Dt4 extends Dm4 {
    }
 
    @Override
-   void S() {
+   public void S() {
       try {
          this.l();
       } catch (Exception var2) {
@@ -34,7 +34,7 @@ public class Dt4 extends Dm4 {
    }
 
    @Override
-   void Y(byte[] param1, int param2, int param3) throws IOException {
+   public void Y(byte[] param1, int param2, int param3) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -769,7 +769,7 @@ public class Dt4 extends Dm4 {
    }
 
    @Override
-   void x$void() {
+   public void x$void() {
       super.x$void();
       this.F();
    }

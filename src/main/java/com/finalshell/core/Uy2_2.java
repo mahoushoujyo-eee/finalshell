@@ -157,11 +157,11 @@ public final class Uy2_2 extends U9 {
    }
 
    @Override
-   protected final void l(int var1, int var2, char[] var3) {
+   public final void l(int var1, int var2, char[] var3) {
       this.w.getChars(var1, var1 + var2, var3, 0);
    }
 
-   static boolean S(String param0, int param1, char[] param2) {
+   public static boolean S(String param0, int param1, char[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4099,7 +4099,7 @@ public final class Uy2_2 extends U9 {
       // 1c50: ireturn
    }
 
-   protected void r(char var1, char var2, char var3, char var4, char var5, char var6) {
+   public void r(char var1, char var2, char var3, char var4, char var5, char var6) {
       int var7 = (var1 - b(23074, 7628798721044833029L)) * b(32031, 4081781654135456924L) + (var2 - b(23074, 7628798721044833029L));
       int var8 = (var3 - b(23074, 7628798721044833029L)) * b(32031, 4081781654135456924L) + (var4 - b(23074, 7628798721044833029L));
       int var9 = (var5 - b(23074, 7628798721044833029L)) * b(32031, 4081781654135456924L) + (var6 - b(23074, 7628798721044833029L));
@@ -4108,11 +4108,11 @@ public final class Uy2_2 extends U9 {
       this.M.set(b(13554, 1125396783262961108L), var9);
    }
 
-   protected void Q(char var1, char var2, char var3) {
+   public void Q(char var1, char var2, char var3) {
       this.l(var1, var2, var3, (char)b(23074, 7628798721044833029L), (char)b(23074, 7628798721044833029L));
    }
 
-   protected void l(char var1, char var2, char var3, char var4, char var5) {
+   public void l(char var1, char var2, char var3, char var4, char var5) {
       int var10000 = (Yn4.Y()) ? 1 : 0;
       int var7 = ((var2 - b(15650, 1724210850525906097L)) * b(15543, 3719175275312973160L) + (var3 - b(23074, 7628798721044833029L)))
          * b(19313, 7067112993015722732L)
@@ -4477,7 +4477,7 @@ public final class Uy2_2 extends U9 {
       this.M.set(5, var11);
    }
 
-   static boolean x(char param0, char param1, char param2, char param3, char param4, char param5, int param6, int param7) {
+   public static boolean x(char param0, char param1, char param2, char param3, char param4, char param5, int param6, int param7) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -11220,7 +11220,7 @@ public final class Uy2_2 extends U9 {
    }
 
    @Override
-   protected final void w(int var1, char[] var2, int var3, int var4) {
+   public final void w(int var1, char[] var2, int var3, int var4) {
       this.w.getChars(var1, var1 + var4, var2, var3);
    }
 

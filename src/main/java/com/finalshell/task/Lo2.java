@@ -5,9 +5,9 @@ import java.awt.Point;
 import javax.swing.JScrollPane;
 
 public class Lo2 implements Runnable {
-   final DY3 j;
+   public final DY3 j;
 
-   Lo2(DY3 var1) {
+   public Lo2(DY3 var1) {
       this.j = var1;
    }
 

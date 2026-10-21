@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Nv2 implements ActionListener {
-   final KD p;
+   public final KD p;
 
-   Nv2(KD var1) {
+   public Nv2(KD var1) {
       this.p = var1;
    }
 

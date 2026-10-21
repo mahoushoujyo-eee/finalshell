@@ -5,9 +5,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class Pp implements ListSelectionListener {
-   final TerminateProcessPanel U;
+   public final TerminateProcessPanel U;
 
-   Pp(TerminateProcessPanel var1) {
+   public Pp(TerminateProcessPanel var1) {
       this.U = var1;
    }
 

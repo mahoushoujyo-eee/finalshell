@@ -4,12 +4,12 @@ import com.finalshell.core.OB3;
 import java.net.UnknownHostException;
 
 public class Dp4 implements Runnable {
-   final OB3 x;
+   public final OB3 x;
    public final String F;
    public static String[] a;
    public static String[] b;
 
-   Dp4(OB3 var1, String var2) {
+   public Dp4(OB3 var1, String var2) {
       this.x = var1;
       this.F = var2;
    }

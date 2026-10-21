@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class Lb4 implements Runnable {
-   final F0 n;
+   public final F0 n;
    public final InputStream a;
    public static long b;
 
-   Lb4(F0 var1, InputStream var2) {
+   public Lb4(F0 var1, InputStream var2) {
       this.n = var1;
       this.a = var2;
    }

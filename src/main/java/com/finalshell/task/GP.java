@@ -3,12 +3,12 @@ package com.finalshell.task;
 import com.finalshell.core.SelectUploadFile;
 
 public class GP implements Runnable {
-   final long T;
-   final T_2 M;
+   public final long T;
+   public final T_2 M;
    public static long[] a;
    public static Long[] b;
 
-   GP(T_2 var1, long var2) {
+   public GP(T_2 var1, long var2) {
       this.M = var1;
       this.T = var2;
    }
@@ -18,7 +18,7 @@ public class GP implements Runnable {
       String var1 = SelectUploadFile.r$String();
 
       while (true) {
-         int var10000 = this.M.c.b;
+         int var10000 = (this.M.c.b) ? 1 : 0;
 
          do {
             if (var10000 != 0) {

@@ -3,7 +3,7 @@ package com.finalshell.util;
 import java.util.HashMap;
 
 public class XT extends HashMap {
-   XT(int var1) {
+   public XT(int var1) {
       super(var1);
       this.put(boolean.class, "Z");
       this.put(char.class, "C");

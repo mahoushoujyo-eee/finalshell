@@ -12,10 +12,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ls4 implements ActionListener {
-   final FT A;
-   final Tq4 K;
+   public final FT A;
+   public final Tq4 K;
 
-   Ls4(Tq4 var1, FT var2) {
+   public Ls4(Tq4 var1, FT var2) {
       this.K = var1;
       this.A = var2;
    }

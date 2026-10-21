@@ -7,10 +7,10 @@ import java.awt.event.ComponentEvent;
 import org.jdesktop.swingx.JXList;
 
 public class UF extends ComponentAdapter {
-   final ClearListDialog l;
+   public final ClearListDialog l;
    public static long a;
 
-   UF(ClearListDialog var1) {
+   public UF(ClearListDialog var1) {
       this.l = var1;
    }
 

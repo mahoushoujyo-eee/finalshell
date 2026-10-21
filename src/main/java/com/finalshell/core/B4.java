@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public class B4 implements Xq4 {
-   final List Q;
-   final Map r;
-   final QR N;
+   public final List Q;
+   public final Map r;
+   public final QR N;
 
-   B4(QR var1, List var2, Map var3) {
+   public B4(QR var1, List var2, Map var3) {
       this.N = var1;
       this.Q = var2;
       this.r = var3;

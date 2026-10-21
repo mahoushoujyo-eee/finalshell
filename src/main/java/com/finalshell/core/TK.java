@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TK extends T4 {
-   protected Map U = new HashMap();
+   public Map U = new HashMap();
    public static String[] a;
    public static String[] b;
 

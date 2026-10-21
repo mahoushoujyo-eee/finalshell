@@ -5,10 +5,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class Cm2 {
-   int l = -1;
-   boolean Q = false;
-   byte[] w;
-   int o;
+   public int l = -1;
+   public boolean Q = false;
+   public byte[] w;
+   public int o;
    public static long a;
 
    public void g(InputStream param1, BR3 param2, int param3, Cm2 param4) throws Exception {
@@ -63,7 +63,7 @@ public class Cm2 {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   void u(long var1, int var3, int var4) {
+   public void u(long var1, int var3, int var4) {
       long var14;
       String[] var10000 = PingMessageR.N();
       long var6 = (long)(1000.0F * (float)var4 / (float)var3);

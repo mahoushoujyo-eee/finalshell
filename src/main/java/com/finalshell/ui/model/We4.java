@@ -4,7 +4,7 @@ import com.finalshell.core.NU;
 import com.finalshell.core.Uc2_2;
 import javax.swing.ImageIcon;
 
-public final class We4 extends Enum {
+public final class We4 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -22,11 +22,10 @@ public final class We4 extends Enum {
    }
 
    public static We4 valueOf(String var0) {
-      return Enum.valueOf(We4.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public We4(String var1, int var2) {
-      super(var1, var2);
    }
 
    public ImageIcon t() {

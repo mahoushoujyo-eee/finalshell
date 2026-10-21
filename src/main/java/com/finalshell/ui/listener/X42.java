@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JMenuItem;
 
 public class X42 implements ActionListener {
-   final U62 B;
-   final JMenuItem o;
-   final CompleteFullPathPanel f;
+   public final U62 B;
+   public final JMenuItem o;
+   public final CompleteFullPathPanel f;
 
-   X42(CompleteFullPathPanel var1, U62 var2, JMenuItem var3) {
+   public X42(CompleteFullPathPanel var1, U62 var2, JMenuItem var3) {
       this.f = var1;
       this.B = var2;
       this.o = var3;

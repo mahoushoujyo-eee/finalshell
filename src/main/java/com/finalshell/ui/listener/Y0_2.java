@@ -7,13 +7,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Y0_2 implements ActionListener {
-   final boolean z;
-   final BS v;
-   final AccelerateRdpHelpPanel J;
-   final EditDialog r;
+   public final boolean z;
+   public final BS v;
+   public final AccelerateRdpHelpPanel J;
+   public final EditDialog r;
    public static String a;
 
-   Y0_2(EditDialog var1, boolean var2, BS var3, AccelerateRdpHelpPanel var4) {
+   public Y0_2(EditDialog var1, boolean var2, BS var3, AccelerateRdpHelpPanel var4) {
       this.r = var1;
       this.z = var2;
       this.v = var3;

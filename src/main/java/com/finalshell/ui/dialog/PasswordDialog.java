@@ -22,11 +22,11 @@ import javax.swing.JPasswordField;
 import net.miginfocom.swing.MigLayout;
 
 public class PasswordDialog extends JDialog {
-   String e;
-   Lv4_2 X;
-   ConnectHost d;
-   JPasswordField C;
-   JCheckBox B;
+   public String e;
+   public Lv4_2 X;
+   public ConnectHost d;
+   public JPasswordField C;
+   public JCheckBox B;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -141,7 +141,7 @@ public class PasswordDialog extends JDialog {
       this.setVisible(true);
    }
 
-   void h() {
+   public void h() {
       Object var3 = 492448585304602870L;
       Ref.g(492448585304602870L, var3);
       Object var5 = 512091547013986622L;
@@ -228,7 +228,7 @@ public class PasswordDialog extends JDialog {
       this.setVisible(false);
    }
 
-   void D(JComponent var1) {
+   public void D(JComponent var1) {
       var1.addKeyListener(new VA(this));
    }
 

@@ -11,17 +11,17 @@ public class Ir2 extends IB {
       super(var1);
    }
 
-   protected void H(JTabbedPane var1) {
+   public void H(JTabbedPane var1) {
       this.i = new com.finalshell.ui.listener.BO(this);
       var1.addChangeListener(this.i);
    }
 
-   protected void S(JTabbedPane var1) {
+   public void S(JTabbedPane var1) {
       var1.removeChangeListener(this.i);
       this.i = null;
    }
 
-   protected void E(JTabbedPane var1) {
+   public void E(JTabbedPane var1) {
       String[] var10000 = IH.M();
       Integer var3 = (Integer)this.o();
       String[] var2 = var10000;
@@ -58,27 +58,27 @@ public class Ir2 extends IB {
       }
    }
 
-   protected void N(JTabbedPane var1) {
+   public void N(JTabbedPane var1) {
       this.J(Integer.valueOf(var1.getSelectedIndex()));
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.N((JTabbedPane)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.E((JTabbedPane)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.S((JTabbedPane)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.H((JTabbedPane)var1);
    }
 }

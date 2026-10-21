@@ -232,7 +232,7 @@ public class W9 extends W2 {
       Ref.s(134673259912521572L, var2, var42);
    }
 
-   String r(String var1) {
+   public String r(String var1) {
       String var2 = null;
       int var3 = var1.indexOf(":");
       if (var3 > -1) {

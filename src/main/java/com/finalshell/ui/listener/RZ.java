@@ -3,9 +3,9 @@ package com.finalshell.ui.listener;
 import java.awt.Window;
 
 public class RZ extends Rt2 {
-   final com.finalshell.ui.dialog.Ds2 U;
+   public final com.finalshell.ui.dialog.Ds2 U;
 
-   RZ(com.finalshell.ui.dialog.Ds2 var1, Window var2, Window var3) {
+   public RZ(com.finalshell.ui.dialog.Ds2 var1, Window var2, Window var3) {
       super(var2, var3);
       this.U = var1;
    }

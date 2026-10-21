@@ -23,7 +23,7 @@ public class Gi4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       int var4 = (int)(Math.random() * 255.0);
       float var5 = (float)Math.random();
       var3[0] = (float)var1 + var5 * this.X[var4];

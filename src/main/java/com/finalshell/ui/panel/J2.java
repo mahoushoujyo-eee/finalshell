@@ -5,9 +5,9 @@ import java.awt.Dimension;
 import javax.swing.JComponent;
 
 public class J2 extends JComponent {
-   final R_2_2 U;
+   public final R_2_2 U;
 
-   J2(R_2_2 var1) {
+   public J2(R_2_2 var1) {
       this.U = var1;
       this.setOpaque(false);
    }

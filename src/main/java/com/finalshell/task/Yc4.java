@@ -4,13 +4,13 @@ import java.io.InputStream;
 import java.io.PipedOutputStream;
 
 public class Yc4 implements Runnable {
-   final InputStream B;
-   final int d;
-   final PipedOutputStream m;
+   public final InputStream B;
+   public final int d;
+   public final PipedOutputStream m;
    public static long a;
    public static long b;
 
-   Yc4(InputStream var1, int var2, PipedOutputStream var3) {
+   public Yc4(InputStream var1, int var2, PipedOutputStream var3) {
       this.B = var1;
       this.d = var2;
       this.m = var3;

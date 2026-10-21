@@ -6,11 +6,11 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowStateListener;
 
 public class TV implements WindowStateListener {
-   final com.finalshell.ui.frame.U l;
+   public final com.finalshell.ui.frame.U l;
    public static long[] a;
    public static Integer[] b;
 
-   TV(com.finalshell.ui.frame.U var1) {
+   public TV(com.finalshell.ui.frame.U var1) {
       this.l = var1;
    }
 

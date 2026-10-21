@@ -5,9 +5,9 @@ import java.awt.event.KeyEvent;
 import javax.swing.JComponent;
 
 public class EJ extends Wc2{
-   final JComponent O;
+   public final JComponent O;
 
-   EJ(JComponent var1) {
+   public EJ(JComponent var1) {
       this.O = var1;
    }
 

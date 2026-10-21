@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("ReadState")
-public final class W2 extends Enum {
+public final class W2 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -19,11 +19,10 @@ public final class W2 extends Enum {
    }
 
    public static W2 valueOf(String var0) {
-      return Enum.valueOf(W2.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public W2(String var1, int var2) {
-      super(var1, var2);
    }
 
    static {

@@ -5,16 +5,16 @@ import com.finalshell.ui.panel.Address;
 import java.util.ArrayList;
 
 public class FileJob implements Runnable {
-   final ArrayList e;
-   final Address Z;
-   final String f;
-   final String l;
-   final ArrayList i;
-   final File8 y;
+   public final ArrayList e;
+   public final Address Z;
+   public final String f;
+   public final String l;
+   public final ArrayList i;
+   public final File8 y;
    public static String[] a;
    public static String[] b;
 
-   FileJob(File8 var1, ArrayList var2, Address var3, String var4, String var5, ArrayList var6) {
+   public FileJob(File8 var1, ArrayList var2, Address var3, String var4, String var5, ArrayList var6) {
       this.y = var1;
       this.e = var2;
       this.Z = var3;

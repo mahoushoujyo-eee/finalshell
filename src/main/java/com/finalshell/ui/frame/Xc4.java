@@ -25,10 +25,10 @@ public class Xc4 extends C {
    }
 
    public Xc4(String var1) {
+   super();
       int[] var2;
       label50: {
          int[] var10001 = KD3.u();
-         super();
          this.O = null;
          var2 = var10001;
          this.setIconImages(A9.e());
@@ -149,11 +149,11 @@ public class Xc4 extends C {
       SwingUtilities.invokeLater(new OF3(var0));
    }
 
-   static void N(Xc4 var0) {
+   public static void N(Xc4 var0) {
       var0.F();
    }
 
-   static KD3 x(Xc4 var0) {
+   public static KD3 x(Xc4 var0) {
       return var0.O;
    }
 

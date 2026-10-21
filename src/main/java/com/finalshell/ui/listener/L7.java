@@ -11,11 +11,11 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class L7 implements MouseListener {
-   final C12 h;
-   final TunnelList B;
-   final NH d;
+   public final C12 h;
+   public final TunnelList B;
+   public final NH d;
 
-   L7(NH var1, C12 var2, TunnelList var3) {
+   public L7(NH var1, C12 var2, TunnelList var3) {
       this.d = var1;
       this.h = var2;
       this.B = var3;
@@ -30,7 +30,7 @@ public class L7 implements MouseListener {
       byte var10002 = 3;
       if (this != null) {
          label52: {
-            if (var10001 == 3) {
+            if (var10001 == null) {
                var10001 = this;
                Object var7 = 541009193423060093L;
                boolean var21 = ((NH)Ref.g(541009193423060093L, var7)).isRowSelected((int)var3);

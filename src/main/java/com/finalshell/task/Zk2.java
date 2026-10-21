@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.GJ2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Zk2 implements Runnable {
-   final GJ2 X;
+   public final GJ2 X;
 
-   Zk2(GJ2 var1) {
+   public Zk2(GJ2 var1) {
       this.X = var1;
    }
 

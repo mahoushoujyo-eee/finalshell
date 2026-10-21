@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class T6 implements ActionListener {
-   final Kr4 C;
+   public final Kr4 C;
 
-   T6(Kr4 var1) {
+   public T6(Kr4 var1) {
       this.C = var1;
    }
 

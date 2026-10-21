@@ -3,7 +3,7 @@ package com.finalshell.core;
 import java.util.Random;
 
 public class Wv2 {
-   static Random W;
+   public static Random W;
 
    static {
       __vfClinit__();

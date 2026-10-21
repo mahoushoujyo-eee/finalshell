@@ -6,10 +6,10 @@ import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
 
 public class J3 extends MouseAdapter {
-   final JComponent w;
-   final C4 M;
+   public final JComponent w;
+   public final C4 M;
 
-   J3(C4 var1, JComponent var2) {
+   public J3(C4 var1, JComponent var2) {
       this.M = var1;
       this.w = var2;
    }

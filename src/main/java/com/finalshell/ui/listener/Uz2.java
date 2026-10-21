@@ -7,12 +7,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Uz2 implements MouseListener {
-   final com.finalshell.core.C t;
-   final AM f;
+   public final com.finalshell.core.C t;
+   public final AM f;
    public static long[] a;
    public static Integer[] b;
 
-   Uz2(AM var1, com.finalshell.core.C var2) {
+   public Uz2(AM var1, com.finalshell.core.C var2) {
       this.f = var1;
       this.t = var2;
    }

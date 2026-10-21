@@ -7,10 +7,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BK3 implements ActionListener {
-   final com.finalshell.ui.frame.U I;
+   public final com.finalshell.ui.frame.U I;
    public static long a;
 
-   BK3(com.finalshell.ui.frame.U var1) {
+   public BK3(com.finalshell.ui.frame.U var1) {
       this.I = var1;
    }
 

@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class K9 implements Comparator {
-   final Yf2 Y;
+   public final Yf2 Y;
 
-   K9(Yf2 var1) {
+   public K9(Yf2 var1) {
       this.Y = var1;
    }
 

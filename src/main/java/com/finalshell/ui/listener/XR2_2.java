@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class XR2_2 implements ActionListener {
-   final ShowInFolderPanel m;
+   public final ShowInFolderPanel m;
 
-   XR2_2(ShowInFolderPanel var1) {
+   public XR2_2(ShowInFolderPanel var1) {
       this.m = var1;
    }
 

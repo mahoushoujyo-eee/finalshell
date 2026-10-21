@@ -5,9 +5,9 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 
 public class X3 extends Canvas {
-   final Y3 C;
+   public final Y3 C;
 
-   X3(Y3 var1) {
+   public X3(Y3 var1) {
       this.C = var1;
    }
 

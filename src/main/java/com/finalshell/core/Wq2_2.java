@@ -29,8 +29,8 @@ public class Wq2_2 {
    public static String[] d;
 
    public Wq2_2(@NotNull Ug2 var1) {
+   super();
       String[] var10000 = y();
-      super();
       String[] var2 = var10000;
 
       try {

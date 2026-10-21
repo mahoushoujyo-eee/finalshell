@@ -1,12 +1,12 @@
 package com.finalshell.core;
 
 public class Pz2 extends Pc2 {
-   String P;
+   public String P;
 
-   Pz2() {
+   public Pz2() {
    }
 
-   Pz2(String var1) {
+   public Pz2(String var1) {
       super(var1);
       this.P = var1;
    }

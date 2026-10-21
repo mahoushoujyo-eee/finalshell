@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class RI_2 implements S4 {
-   final Q4_3 x;
-   final Q4_3 d;
-   final H3_2 j;
+   public final Q4_3 x;
+   public final Q4_3 d;
+   public final H3_2 j;
    public static String[] a;
    public static String[] b;
 
-   RI_2(H3_2 var1, Q4_3 var2, Q4_3 var3) {
+   public RI_2(H3_2 var1, Q4_3 var2, Q4_3 var3) {
       this.j = var1;
       this.x = var2;
       this.d = var3;

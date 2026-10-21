@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class NT implements ActionListener {
-   final Fm2 g;
+   public final Fm2 g;
 
-   NT(Fm2 var1) {
+   public NT(Fm2 var1) {
       this.g = var1;
    }
 

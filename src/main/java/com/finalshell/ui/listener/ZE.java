@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class ZE implements ActionListener {
-   final UpdateDialog D;
+   public final UpdateDialog D;
    public static String a;
 
-   ZE(UpdateDialog var1) {
+   public ZE(UpdateDialog var1) {
       this.D = var1;
    }
 

@@ -13,10 +13,10 @@ import java.io.Serializable;
 import java.util.EventObject;
 
 public class XA3 implements ActionListener, ItemListener, Serializable {
-   protected Object j;
-   final Rt4 p;
+   public Object j;
+   public final Rt4 p;
 
-   protected XA3(Rt4 var1) {
+   public XA3(Rt4 var1) {
       this.p = var1;
    }
 

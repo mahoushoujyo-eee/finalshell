@@ -7,9 +7,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Xy2 extends MouseAdapter {
-   final QQ F;
+   public final QQ F;
 
-   Xy2(QQ var1) {
+   public Xy2(QQ var1) {
       this.F = var1;
    }
 

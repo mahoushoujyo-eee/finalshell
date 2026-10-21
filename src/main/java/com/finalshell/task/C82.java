@@ -5,9 +5,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.frame.TextEditorFrame;
 
 public class C82 implements Runnable {
-   final YT3_2 A;
+   public final YT3_2 A;
 
-   C82(YT3_2 var1) {
+   public C82(YT3_2 var1) {
       this.A = var1;
    }
 

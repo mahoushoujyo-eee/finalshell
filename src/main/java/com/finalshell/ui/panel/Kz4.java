@@ -50,26 +50,26 @@ import javax.swing.JWindow;
 import javax.swing.filechooser.FileSystemView;
 
 public class Kz4 extends Ky4 {
-   protected static ImageIcon Q;
-   protected static ImageIcon p;
-   protected static ImageIcon M;
-   protected static FileSystemView U;
-   protected List Y = new ArrayList(1);
-   protected Ky4 k;
-   protected Ne4 Z;
-   protected FocusAdapter s;
-   protected KD D = null;
-   protected boolean u = true;
-   protected JWindow d = null;
-   protected int v = 0;
-   protected Pb4 S = null;
-   protected Qe2_2 W = null;
-   protected V3 e = DE.Y;
-   protected int r = -1;
-   protected boolean y = true;
-   protected java.io.File b;
-   protected final C42 c;
-   protected boolean o = false;
+   public static ImageIcon Q;
+   public static ImageIcon p;
+   public static ImageIcon M;
+   public static FileSystemView U;
+   public List Y = new ArrayList(1);
+   public Ky4 k;
+   public Ne4 Z;
+   public FocusAdapter s;
+   public KD D = null;
+   public boolean u = true;
+   public JWindow d = null;
+   public int v = 0;
+   public Pb4 S = null;
+   public Qe2_2 W = null;
+   public V3 e = DE.Y;
+   public int r = -1;
+   public boolean y = true;
+   public java.io.File b;
+   public final C42 c;
+   public boolean o = false;
    public static String g;
    public static String[] a;
    public static String[] f;
@@ -110,7 +110,7 @@ public class Kz4 extends Ky4 {
       this.N(var1);
    }
 
-   protected void m() {
+   public void m() {
       String var1 = M();
       Ne4 var10000 = this.Z;
       if (var1 != null) {
@@ -147,7 +147,7 @@ public class Kz4 extends Ky4 {
       this.Z.addFocusListener(this.s);
    }
 
-   protected String y() {
+   public String y() {
       String var10000 = M();
       String var2 = this.b.getAbsolutePath();
       String var1 = var10000;
@@ -239,7 +239,7 @@ public class Kz4 extends Ky4 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    // $VF: Irreducible bytecode has more than 5 nodes in sequence and was not entirely decomposed
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected synchronized void N(java.io.File var1) {
+   public synchronized void N(java.io.File var1) {
       this.b = var1;
       this.Z.removeFocusListener(this.s);
       String var10000 = M();
@@ -482,7 +482,7 @@ public class Kz4 extends Ky4 {
       this.repaint();
    }
 
-   protected List q(java.io.File var1, String var2) {
+   public List q(java.io.File var1, String var2) {
       String var10000 = M();
       String var4 = var2.toLowerCase();
       java.io.File[] var5 = this.p(var1);
@@ -519,7 +519,7 @@ public class Kz4 extends Ky4 {
       return var6;
    }
 
-   protected java.io.File[] p(java.io.File var1) {
+   public java.io.File[] p(java.io.File var1) {
       String var2 = M();
       java.io.File var10000 = var1;
       if (var2 != null) {
@@ -533,7 +533,7 @@ public class Kz4 extends Ky4 {
       return var10000.listFiles(this.e);
    }
 
-   protected boolean O$boolean() {
+   public boolean O$boolean() {
       String var1 = M();
       int var10000 = this.k.getPreferredSize().width;
       int var10001 = this.k.getWidth();
@@ -553,7 +553,7 @@ public class Kz4 extends Ky4 {
       return (boolean)(var10000 > var10001 ? 1 : 0);
    }
 
-   protected KD l() {
+   public KD l() {
       String var1 = M();
       KD var10000 = this.D;
       if (var1 != null) {
@@ -589,7 +589,7 @@ public class Kz4 extends Ky4 {
       this.v = var2;
    }
 
-   protected Qe2_2 B(boolean var1) {
+   public Qe2_2 B(boolean var1) {
       String var2;
       label56: {
          var2 = M();
@@ -669,7 +669,7 @@ public class Kz4 extends Ky4 {
       return var9.W;
    }
 
-   protected void X(java.io.File var1) {
+   public void X(java.io.File var1) {
       var1 = Cz2.M(var1);
       this.N(var1);
       this.Q(var1);
@@ -684,7 +684,7 @@ public class Kz4 extends Ky4 {
       this.Y.remove(var1);
    }
 
-   protected void Q(java.io.File var1) {
+   public void Q(java.io.File var1) {
       String var10000 = M();
       Iterator var3 = AL_2.J((Collection)this.Y).iterator();
       String var2 = var10000;

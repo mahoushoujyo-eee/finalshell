@@ -5,11 +5,11 @@ import com.finalshell.core.Or4;
 import com.finalshell.core.YM;
 
 public class Lq4 implements Runnable {
-   final Du4 F;
+   public final Du4 F;
    public static long[] a;
    public static Integer[] b;
 
-   Lq4(Du4 var1) {
+   public Lq4(Du4 var1) {
       this.F = var1;
    }
 

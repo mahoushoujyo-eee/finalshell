@@ -29,41 +29,41 @@ public class Ia2 extends IB {
       return var3;
    }
 
-   protected void S(JSlider var1) {
+   public void S(JSlider var1) {
       this.f = new Gx2(this);
       var1.addChangeListener(this.f);
    }
 
-   protected void A(JSlider var1) {
+   public void A(JSlider var1) {
       var1.removeChangeListener(this.f);
       this.f = null;
    }
 
-   protected void p(JSlider var1) {
+   public void p(JSlider var1) {
       var1.setValue((Integer)this.o());
    }
 
-   protected void M(JSlider var1) {
+   public void M(JSlider var1) {
       Cl4_2.A(this.M(), this.S(), var1.getValue());
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.M((JSlider)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.p((JSlider)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.A((JSlider)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.S((JSlider)var1);
    }
 

@@ -13,10 +13,10 @@ import javax.swing.JLabel;
 import org.icmp4j.j;
 
 public class BA3 extends JLabel {
-   boolean C;
-   boolean E;
-   boolean k;
-   L9 z;
+   public boolean C;
+   public boolean E;
+   public boolean k;
+   public L9 z;
    public static long[] a;
    public static Integer[] b;
 

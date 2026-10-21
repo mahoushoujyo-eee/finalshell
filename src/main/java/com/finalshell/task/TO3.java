@@ -3,12 +3,12 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.ConnectionProperty;
 
 public class TO3 implements Runnable {
-   final ConnectionProperty n;
-   final ConnectionProperty P;
-   final Qw2 t;
+   public final ConnectionProperty n;
+   public final ConnectionProperty P;
+   public final Qw2 t;
    public static long a;
 
-   TO3(Qw2 var1, ConnectionProperty var2, ConnectionProperty var3) {
+   public TO3(Qw2 var1, ConnectionProperty var2, ConnectionProperty var3) {
       this.t = var1;
       this.n = var2;
       this.P = var3;

@@ -7,8 +7,8 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class TH implements Transferable {
-   DefaultMutableTreeNode[] M;
-   final Wa2 e;
+   public DefaultMutableTreeNode[] M;
+   public final Wa2 e;
 
    public TH(Wa2 var1, DefaultMutableTreeNode[] var2) {
       this.e = var1;

@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.U__2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Xn2 implements Runnable {
-   final U__2 I;
+   public final U__2 I;
 
-   Xn2(U__2 var1) {
+   public Xn2(U__2 var1) {
       this.I = var1;
    }
 

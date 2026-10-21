@@ -6,8 +6,8 @@ import java.io.OutputStream;
 import java.util.Hashtable;
 
 public class Dg4 extends Dq4 {
-   boolean N = true;
-   String U = "";
+   public boolean N = true;
+   public String U = "";
    public static String[] a;
    public static String[] f;
 
@@ -151,7 +151,7 @@ public class Dg4 extends Dq4 {
    }
 
    @Override
-   void n() throws Pc2 {
+   public void n() throws Pc2 {
       this.o.U(this.T().O);
       this.o.H(this.T().l);
    }

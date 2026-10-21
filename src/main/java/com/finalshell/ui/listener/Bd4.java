@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bd4 implements ActionListener {
-   final String W;
-   final Copy3 z;
+   public final String W;
+   public final Copy3 z;
 
-   Bd4(Copy3 var1, String var2) {
+   public Bd4(Copy3 var1, String var2) {
       this.z = var1;
       this.W = var2;
    }

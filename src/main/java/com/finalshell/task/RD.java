@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.PK;
 
 public class RD implements Runnable {
-   final String A;
+   public final String A;
    public static String a;
 
-   RD(String var1) {
+   public RD(String var1) {
       this.A = var1;
    }
 

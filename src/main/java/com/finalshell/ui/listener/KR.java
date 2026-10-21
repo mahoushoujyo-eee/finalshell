@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class KR implements ActionListener {
-   final DU d;
+   public final DU d;
    public static String a;
 
-   KR(DU var1) {
+   public KR(DU var1) {
       this.d = var1;
    }
 

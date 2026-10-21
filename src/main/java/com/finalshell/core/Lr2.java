@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Lr2 {
-   protected static Logger Q;
+   public static Logger Q;
    public Map J = new HashMap();
    public Map m = new HashMap();
    public static Lr2 l;
@@ -72,11 +72,11 @@ public class Lr2 {
       }
    }
 
-   static Map h(Lr2 var0) {
+   public static Map h(Lr2 var0) {
       return var0.m;
    }
 
-   static Map i(Lr2 var0) {
+   public static Map i(Lr2 var0) {
       return var0.J;
    }
 

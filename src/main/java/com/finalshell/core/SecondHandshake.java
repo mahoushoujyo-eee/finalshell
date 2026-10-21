@@ -15,48 +15,48 @@ import org.pcap4j.packet.TcpPacket;
 import org.pcap4j.util.MacAddress;
 
 public class SecondHandshake {
-   HashMap l = new HashMap();
-   HashMap h = new HashMap();
-   int x;
-   static Random W;
-   PcapHandle P;
-   HashSet A;
-   HashMap j;
-   MacAddress z;
-   int N;
-   boolean I;
-   short q;
-   ArrayList Z;
-   HashMap r;
-   HashMap s;
-   HashMap X;
-   HashMap Y;
-   ArrayList Q;
-   Object k;
-   int e;
-   int t;
-   long y;
-   long w;
-   Object U;
-   boolean n;
-   boolean v;
-   DnsResolveFailedSetting p;
+   public HashMap l = new HashMap();
+   public HashMap h = new HashMap();
+   public int x;
+   public static Random W;
+   public PcapHandle P;
+   public HashSet A;
+   public HashMap j;
+   public MacAddress z;
+   public int N;
+   public boolean I;
+   public short q;
+   public ArrayList Z;
+   public HashMap r;
+   public HashMap s;
+   public HashMap X;
+   public HashMap Y;
+   public ArrayList Q;
+   public Object k;
+   public int e;
+   public int t;
+   public long y;
+   public long w;
+   public Object U;
+   public boolean n;
+   public boolean v;
+   public DnsResolveFailedSetting p;
    public Inet4Address o;
    public short S;
-   int G;
-   int B;
-   int m;
-   Inet4Address f;
-   short i;
-   int c;
-   int b;
-   int u;
-   Object R;
-   long a;
-   long L;
-   long M;
-   String T;
-   Object J;
+   public int G;
+   public int B;
+   public int m;
+   public Inet4Address f;
+   public short i;
+   public int c;
+   public int b;
+   public int u;
+   public Object R;
+   public long a;
+   public long L;
+   public long M;
+   public String T;
+   public Object J;
    public static String[] d;
    public static String[] g;
    public static long[] C;
@@ -68,7 +68,7 @@ public class SecondHandshake {
       __vfClinit__();
    }
 
-   SecondHandshake(DnsResolveFailedSetting var1, Inet4Address var2, short var3, MacAddress var4, MacAddress var5) {
+   public SecondHandshake(DnsResolveFailedSetting var1, Inet4Address var2, short var3, MacAddress var4, MacAddress var5) {
       this.x = a(3703, 9014151815894142528L);
       this.A = new HashSet();
       this.j = new HashMap();
@@ -119,7 +119,7 @@ public class SecondHandshake {
       Jy2.g("" + var6);
    }
 
-   SecondHandshake(DnsResolveFailedSetting var1, Inet4Address var2, short var3) {
+   public SecondHandshake(DnsResolveFailedSetting var1, Inet4Address var2, short var3) {
       this.x = a(21189, 7510058056251560698L);
       this.A = new HashSet();
       this.j = new HashMap();
@@ -153,10 +153,10 @@ public class SecondHandshake {
       this.f = this.p.W;
    }
 
-   void b(Inet4Address var1, int var2, Inet4Address var3, int var4, int var5) {
+   public void b(Inet4Address var1, int var2, Inet4Address var3, int var4, int var5) {
    }
 
-   void E(Inet4Address var1, int var2, Inet4Address var3, int var4, int var5, int var6) {
+   public void E(Inet4Address var1, int var2, Inet4Address var3, int var4, int var5, int var6) {
    }
 
    public void w(Packet param1, EthernetPacket.EthernetHeader param2, IpV4Packet.IpV4Header param3, TcpPacket param4, boolean param5) {
@@ -883,7 +883,7 @@ public class SecondHandshake {
       // 2be: return
    }
 
-   void i(TcpPacket param1, TcpPacket.TcpHeader param2, IpV4Packet.IpV4Header param3) {
+   public void i(TcpPacket param1, TcpPacket.TcpHeader param2, IpV4Packet.IpV4Header param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -971,7 +971,7 @@ public class SecondHandshake {
       // ad: return
    }
 
-   void P(byte[] var1) {
+   public void P(byte[] var1) {
       Packet var2 = W1.V(this.p.F, this.p.c, this.f, this.i, this.o, this.S, this.b, this.m, var1, this.x());
       synchronized (this.R) {
          try {
@@ -986,7 +986,7 @@ public class SecondHandshake {
    // $VF: Could not inline inconsistent finally blocks
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   short x() {
+   public short x() {
       String[] var10000 = DnsResolveFailedSetting.I$arrString();
       Object var2 = this.J;
       synchronized (this.J){} // $VF: monitorenter 

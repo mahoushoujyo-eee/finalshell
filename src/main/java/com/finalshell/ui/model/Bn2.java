@@ -8,10 +8,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Bn2 implements Comparator {
-   final boolean H;
-   final YT3_2 d;
+   public final boolean H;
+   public final YT3_2 d;
 
-   Bn2(YT3_2 var1, boolean var2) {
+   public Bn2(YT3_2 var1, boolean var2) {
       this.d = var1;
       this.H = var2;
    }

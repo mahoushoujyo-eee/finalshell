@@ -204,7 +204,7 @@ public class O02 {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -225,7 +225,7 @@ public class O02 {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -246,7 +246,7 @@ public class O02 {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -267,7 +267,7 @@ public class O02 {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -288,7 +288,7 @@ public class O02 {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 
@@ -309,7 +309,7 @@ public class O02 {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 

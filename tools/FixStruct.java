@@ -31,11 +31,13 @@ public class FixStruct {
     // ---------- 错误模型 ----------
     static class Err {
         String file; int line; String msg; String detail;
-        String firstType, secondType, op;
+        String firstType, secondType, op, symbol, symKind;
     }
 
+    static final Set<String> SYM_KINDS = new HashSet<>(Arrays.asList(
+            "variable", "method", "class", "package", "interface", "enum"));
     static final Map<String, List<Err>> byFile = new LinkedHashMap<>();
-    static int statSuper = 0, statSuperSkip = 0, statOperand = 0, statOperandSkip = 0;
+    static int statSuper = 0, statSuperSkip = 0, statOperand = 0, statOperandSkip = 0, statEnumValueOf = 0, statMissingField = 0, statNotPublic = 0, statNotPublicSkip = 0;
     static final List<String> skipped = new ArrayList<>();
 
     // 数字基本类型（可以和 0/1 比较）
@@ -52,10 +54,12 @@ public class FixStruct {
 
         parseLog(log);
         System.out.println("errors parsed = " + total() + "  files = " + byFile.size());
+        buildClassIndex(root);
+        System.out.println("class index = " + CLASS_INDEX.size());
 
         int filesChanged = 0;
         for (Map.Entry<String, List<Err>> e : byFile.entrySet()) {
-            Path f = Paths.get(e.getKey());
+            Path f = resolve(root, e.getKey());
             if (!Files.exists(f)) continue;
             String src = new String(Files.readAllBytes(f), StandardCharsets.UTF_8);
             String out = src;
@@ -70,6 +74,27 @@ public class FixStruct {
                 String r = fixSuperFirst(er, out);
                 if (r != null) out = r;
             }
+            for (Err er : e.getValue()) {
+                boolean enumValueOf = er.msg.contains("cannot be converted to Class<Enum")
+                        || er.msg.contains("incompatible bounds")
+                        || er.detail.contains("incompatible bounds")
+                        || (er.msg.contains("cannot be applied to given types")
+                            && er.detail.contains("valueOf(Class<T>,String)"));
+                if (!enumValueOf) continue;
+                String r = fixEnumValueOf(er, out);
+                if (r != null) out = r;
+            }
+            for (Err er : e.getValue()) {
+                if (!er.msg.startsWith("cannot find symbol")) continue;
+                if (!"variable".equals(er.symKind)) continue;
+                String r = fixMissingField(er, out);
+                if (r != null) out = r;
+            }
+            for (Err er : e.getValue()) {
+                if (!er.msg.contains("cannot be applied to given types")) continue;
+                String r = fixNotPublic(er, out);
+                if (r != null) out = r;
+            }
             if (!out.equals(src)) {
                 Files.write(f, out.getBytes(StandardCharsets.UTF_8));
                 filesChanged++;
@@ -80,6 +105,10 @@ public class FixStruct {
         System.out.println("  super-first skipped      = " + statSuperSkip);
         System.out.println("  bad-operand rewritten    = " + statOperand);
         System.out.println("  bad-operand skipped      = " + statOperandSkip);
+        System.out.println("  enum valueOf stubbed     = " + statEnumValueOf);
+        System.out.println("  missing field declared   = " + statMissingField);
+        System.out.println("  not-public made public   = " + statNotPublic
+                + "  (skipped " + statNotPublicSkip + ")");
         if (!skipped.isEmpty()) {
             System.out.println("--- skipped (" + skipped.size() + ") ---");
             int n = 0;
@@ -98,7 +127,210 @@ public class FixStruct {
         }
     }
 
+    /**
+     * 枚举降级后的 {@code Enum.valueOf(X.class, name)} 没法编译。
+     *
+     * <p>字节码层把假枚举的父类从 java.lang.Enum 换成了 java.lang.Object，
+     * 于是 {@code Enum.valueOf} 要求 {@code T extends Enum<T>} 的约束不成立，
+     * javac 报 "incompatible types: Class<X> cannot be converted to Class<Enum<X>>"。
+     *
+     * <p>枚举常量的**名字**（name）在字节码里是运行期解密出来的字符串，
+     * 反编译后已经丢失，无法还原 valueOf 的查找逻辑。
+     * 这里按项目里既有的做法（见 FixVineflower.addCompareTo），
+     * 把它换成显式的"未实现"异常，至少保证能编译。
+     */
+    static String fixEnumValueOf(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        // javac 报的可能是 "method valueOf in class Enum<E> cannot be applied"，
+        // 出错行在 Enum.valueOf(...) 那一行；有时会偏一两行，所以前后都找一下。
+        int hit = -1;
+        for (int i = Math.max(0, idx - 3); i <= Math.min(lines.length - 1, idx + 3); i++) {
+            if (lines[i].contains("Enum.valueOf(")) { hit = i; break; }
+        }
+        if (hit < 0) return null;
+        String line = lines[hit];
+        Matcher m = Pattern.compile("^(\\s*)(return\\s+)?.*Enum\\.valueOf\\(.*$").matcher(line);
+        if (!m.matches()) return null;
+        String indent = m.group(1);
+        lines[hit] = indent + "throw new UnsupportedOperationException(\"valueOf not implemented\");";
+        statEnumValueOf++;
+        return String.join("\n", lines);
+    }
+
+    /**
+     * 降级后的枚举少了一个静态字段声明。
+     *
+     * <p>枚举的 {@code $VALUES} 数组是编译器生成的。Vineflower 在把类渲染成
+     * {@code enum X} 时会把它作为枚举体的一部分处理；一旦父类被换成 Object、
+     * 类被渲染成普通 class，它就不再声明这个字段了，于是
+     * {@code $VALUES = new X[0];} 报 "cannot find symbol: variable $VALUES"。
+     *
+     * <p>修法：按赋值语句反推出字段类型，在类体开头补一条静态字段声明。
+     */
+    static String fixMissingField(Err er, String src) {
+        String[] lines = src.split("\n", -1);
+        int idx = er.line - 1;
+        if (idx < 0 || idx >= lines.length) return null;
+        String var = er.symbol;
+        if (var == null || var.isEmpty()) return null;
+        Matcher m = Pattern.compile("^\\s*" + Pattern.quote(var)
+                + "\\s*=\\s*new\\s+([\\w.$]+)\\s*\\[[^\\]]*\\]\\s*;\\s*$").matcher(lines[idx]);
+        if (!m.matches()) return null;
+        String elemType = m.group(1);
+        // 简单名 -> 用同文件里的类声明决定要不要加包前缀
+        String decl = "private static " + elemType + "[] " + var + ";";
+        // 插到类体开头
+        int body = -1;
+        for (int i = 0; i < lines.length; i++) {
+            if (Pattern.compile("^\\s*(?:public\\s+|final\\s+|abstract\\s+)*class\\s+\\w+").matcher(lines[i]).find()) {
+                for (int k = i; k < lines.length; k++) {
+                    if (lines[k].contains("{")) { body = k; break; }
+                }
+                break;
+            }
+        }
+        if (body < 0) return null;
+        for (String l : lines) {
+            if (l.matches("^\\s*(?:private\\s+|public\\s+|protected\\s+)?static\\s+[\\w.$]+\\[\\]\\s+"
+                    + Pattern.quote(var) + "\\s*;.*")) return null;   // 已声明
+        }
+        String indent = indentOf(lines[body]);
+        String ins = indent + "   " + decl;
+        List<String> out = new ArrayList<>(Arrays.asList(lines));
+        out.add(body + 1, ins);
+        statMissingField++;
+        return String.join("\n", out);
+    }
+
+    /**
+     * "method X in class Y cannot be applied to given types;
+     *  reason: X(...) is not public in Y; cannot be accessed from outside package"
+     *
+     * <p>真实原因不是参数对不上（javac 的 required/found 两栏完全一样），
+     * 而是**可见性**：改名重排包之后，原本"同包互访"的包级私有成员变成了跨包访问。
+     *
+     * <p>修法：找到 Y 类里 X 方法的声明，加上 public。
+     * （字节码层的等价做法是 FixBytecode 的 --publicize 把包级私有成员也放开。）
+     */
+    static String fixNotPublic(Err er, String src) {
+        try {
+            return fixNotPublic0(er);
+        } catch (Exception e) {
+            statNotPublicSkip++;
+            skipped.add(er.file + ":" + er.line + "  处理失败: " + e);
+            return null;
+        }
+    }
+
+    static String fixNotPublic0(Err er) throws Exception {
+        Matcher rm = Pattern.compile("reason:\\s*(.*?)\\s+is not public in (\\w+);").matcher(er.detail);
+        Matcher pm = Pattern.compile("reason:\\s*(.*?)\\s+has protected access in (\\w+)").matcher(er.detail);
+        Matcher mm2 = Pattern.compile("reason:\\s*(.*?)\\s+has private access in (\\w+)").matcher(er.detail);
+        String sig = null, cls = null;
+        if (rm.find()) { sig = rm.group(1); cls = rm.group(2); }
+        else if (pm.find()) { sig = pm.group(1); cls = pm.group(2); }
+        else if (mm2.find()) { sig = mm2.group(1); cls = mm2.group(2); }
+        if (sig == null || cls == null) return null;
+        String name = sig;
+        int par = name.indexOf('(');
+        if (par > 0) name = name.substring(0, par);
+        if (name.isEmpty()) return null;
+        int nparams = -1;
+        if (par > 0) {
+            String ps = name.substring(0, par);
+            nparams = 0;
+        }
+        // 找 Y 类的源文件
+        Path file = CLASS_INDEX.get(cls);
+        if (file == null) {
+            statNotPublicSkip++;
+            skipped.add(er.file + ":" + er.line + "  找不到类 " + cls + " 的源文件");
+            return null;
+        }
+        String target = new String(Files.readAllBytes(file), StandardCharsets.UTF_8);
+        String[] lines = target.split("\n", -1);
+        // 找方法声明：<modifiers> <ret> <name>(<params>) ...
+        Pattern decl = Pattern.compile("^(\\s*)((?:public\\s+|private\\s+|protected\\s+|static\\s+|final\\s+|"
+                + "synchronized\\s+|abstract\\s+|native\\s+|strictfp\\s+)*)"
+                + "([\\w.$<>\\[\\], ?]+?)\\s+(" + Pattern.quote(name) + ")\\s*\\(([^)]*)\\)");
+        int found = -1;
+        for (int i = 0; i < lines.length; i++) {
+            Matcher m = decl.matcher(lines[i]);
+            if (!m.find()) continue;
+            // 修饰符可能在 group(2) 里，也可能在 group(3)（构造器没有返回类型时，
+            // "public" 会被当成"返回类型"那一段）—— 两边一起看
+            if ((m.group(2) + " " + m.group(3)).contains("public")) continue;
+            // 参数个数对得上更好（重载时避免改错）
+            String ps = m.group(5).trim();
+            int cnt = ps.isEmpty() ? 0 : ps.split(",").length;
+            if (nparams >= 0 && cnt != nparams) continue;
+            found = i;
+            break;
+        }
+        if (found < 0) {
+            statNotPublicSkip++;
+            skipped.add(er.file + ":" + er.line + "  类 " + cls + " 里找不到方法 " + name + " 的声明");
+            return null;
+        }
+        Matcher m = decl.matcher(lines[found]);
+        m.find();
+        String indent = m.group(1);
+        lines[found] = indent + "public " + lines[found].trim();
+        statNotPublic++;
+        try {
+            Files.write(file, String.join("\n", lines).getBytes(StandardCharsets.UTF_8));
+        } catch (Exception e) {
+            return null;
+        }
+        return null;   // 直接写盘，不返回新内容
+    }
+
+    /** 简单类名 -> 源文件（用于跨文件定位被调用的类） */
+    static final Map<String, Path> CLASS_INDEX = new HashMap<>();
+
+    static void buildClassIndex(String root) throws IOException {
+        try (java.util.stream.Stream<Path> st = Files.walk(Paths.get(root))) {
+            for (Path p : (Iterable<Path>) st.filter(x -> x.toString().endsWith(".java"))::iterator) {
+                String s = new String(Files.readAllBytes(p), StandardCharsets.UTF_8);
+                Matcher m = Pattern.compile("^\\s*(?:public\\s+|final\\s+|abstract\\s+|static\\s+)*"
+                        + "(?:class|interface|enum)\\s+(\\w+)", Pattern.MULTILINE).matcher(s);
+                if (m.find()) CLASS_INDEX.putIfAbsent(m.group(1), p);
+            }
+        }
+    }
+
     static int total() { int n = 0; for (List<Err> l : byFile.values()) n += l.size(); return n; }
+
+    /**
+     * 把日志里的绝对路径映射到当前源码树下。
+     *
+     * <p>【重要】javac 日志里记的是**编译时**的绝对路径。如果直接按日志里的路径去改文件，
+     * 改的就不是传进来的这棵树，而是当初编译时的那棵树 —— 之前就踩过：
+     * 在副本上跑 FixStruct，结果把"原始"那棵树改坏了。
+     * 所以这里统一按"根目录 + 相对路径"重新定位。
+     */
+    static Path resolve(String root, String logPath) {
+        Path r = Paths.get(root);
+        Path p = Paths.get(logPath);
+        if (p.startsWith(r)) return p;
+        // 取日志路径里从包名开始的那一段（com/... 或 xxx.java）
+        String s = logPath.replace('\\', '/');
+        int i = s.indexOf("/com/");
+        String rel = i >= 0 ? s.substring(i + 1) : p.getFileName().toString();
+        Path cand = r.resolve(rel);
+        if (Files.exists(cand)) return cand;
+        // 退一步：按文件名在整个树下找
+        String fn = p.getFileName().toString();
+        try (java.util.stream.Stream<Path> st = Files.walk(r)) {
+            for (Path x : (Iterable<Path>) st.filter(q -> q.getFileName().toString().equals(fn))::iterator) {
+                return x;
+            }
+        } catch (Exception ignore) {
+        }
+        return cand;
+    }
 
     // ---------- 解析 javac 日志 ----------
     static void parseLog(String logPath) throws IOException {
@@ -127,6 +359,12 @@ public class FixStruct {
                 if (st.find()) er.secondType = st.group(1);
                 Matcher op = Pattern.compile("bad operand types for binary operator '([^']+)'").matcher(er.msg);
                 if (op.find()) er.op = op.group(1);
+                // "symbol:   variable $VALUES" / "symbol:   method foo()"
+                Matcher sy = Pattern.compile("symbol:\\s+(\\w+)\\s+([^\\s]+)").matcher(er.detail);
+                if (sy.find()) {
+                    er.symKind = sy.group(1);
+                    er.symbol = sy.group(2);
+                }
                 byFile.computeIfAbsent(er.file, k -> new ArrayList<>()).add(er);
                 i = j;
             } else {
@@ -362,7 +600,9 @@ public class FixStruct {
                 return null;
             }
             repl = lit.text; flipOp = lit.flipOp;
-            at = opPos + er.op.length() - leadingWs(line, opPos + er.op.length());
+            // 右侧字面量的起始位置：跳过运算符后面的空白
+            at = opPos + er.op.length();
+            while (at < line.length() && Character.isWhitespace(line.charAt(at))) at++;
             len = right.length();
         } else if (leftIsLiteral) {
             String otherType = er.secondType;
@@ -374,7 +614,10 @@ public class FixStruct {
                 return null;
             }
             repl = lit.text; flipOp = lit.flipOp;
-            at = opPos - left.length() - trailingWs(line, opPos);
+            // 左侧字面量的起始位置：从运算符往前跳过空白
+            at = opPos - 1;
+            while (at >= 0 && Character.isWhitespace(line.charAt(at))) at--;
+            at = at - left.length() + 1;
             len = left.length();
         }
         if (repl == null) {
@@ -471,6 +714,15 @@ public class FixStruct {
         int i = pos - 1;
         while (i >= 0 && Character.isWhitespace(line.charAt(i))) i--;
         if (i < 0) return null;
+        // 负数字面量：-1
+        if ((line.charAt(i) == '-' || line.charAt(i) == '+') && i > 0
+                && Character.isDigit(line.charAt(i + 1))
+                && !Character.isJavaIdentifierPart(line.charAt(i - 1))) {
+            int st = i;
+            i--;
+            while (i >= 0 && Character.isDigit(line.charAt(i))) i--;
+            return line.substring(i + 1, st + 1);
+        }
         int end = i + 1;
         if (Character.isJavaIdentifierPart(line.charAt(i))) {
             while (i >= 0 && Character.isJavaIdentifierPart(line.charAt(i))) i--;
@@ -496,6 +748,14 @@ public class FixStruct {
         while (i < line.length() && Character.isWhitespace(line.charAt(i))) i++;
         if (i >= line.length()) return null;
         int start = i;
+        // 负数 / 正数字面量：-1 / +1
+        if ((line.charAt(i) == '-' || line.charAt(i) == '+') && i + 1 < line.length()
+                && Character.isDigit(line.charAt(i + 1))) {
+            i++;
+            while (i < line.length() && (Character.isLetterOrDigit(line.charAt(i))
+                    || line.charAt(i) == 'L' || line.charAt(i) == 'l')) i++;
+            return line.substring(start, i);
+        }
         if (Character.isJavaIdentifierStart(line.charAt(i))) {
             while (i < line.length() && Character.isJavaIdentifierPart(line.charAt(i))) i++;
             return line.substring(start, i);

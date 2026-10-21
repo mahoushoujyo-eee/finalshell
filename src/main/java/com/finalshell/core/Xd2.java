@@ -3,24 +3,21 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public final class Xd2 {
-   static int[] w;
-   static int[] A;
-   static int[] x;
-   static byte[] M;
-   static byte[] d;
-   static byte[] v;
-   static int[] j;
-   static int[] N;
-   short[] V;
-   int J;
-   GK n;
+   public static int[] w;
+   public static int[] A;
+   public static int[] x;
+   public static byte[] M;
+   public static byte[] d;
+   public static byte[] v;
+   public static int[] j;
+   public static int[] N;
+   public short[] V;
+   public int J;
+   public GK n;
    public static long[] a;
    public static Integer[] b;
 
-   Xd2() {
-   }
-
-   static int f(int var0) {
+   public static int f(int var0) {
       int[] var1 = Nm4.g();
       int var10000 = var0;
       if (var1 == null) {
@@ -31,7 +28,7 @@ public final class Xd2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void W(Wa2_2 var1) {
+   public void W(Wa2_2 var1) {
       short[] var3 = this.V;
       int[] var10000 = Nm4.g();
       short[] var4 = this.n.q;
@@ -239,7 +236,7 @@ public final class Xd2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void t(Wa2_2 var1) {
+   public void t(Wa2_2 var1) {
       int[] var10000 = Nm4.g();
       short[] var3 = this.V;
       int[] var2 = var10000;

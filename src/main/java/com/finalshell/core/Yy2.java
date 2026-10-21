@@ -12,14 +12,14 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 public class Yy2 extends JTable {
-   Edit n;
-   C62 f;
+   public Edit n;
+   public C62 f;
    public static long[] a;
    public static Integer[] b;
 
-   Yy2(Edit var1, C62 var2) {
+   public Yy2(Edit var1, C62 var2) {
+   super();
       short var10000 = 24765;
-      super();
       long var10001 = 747603782168300477L;
       Ky4[] var10002 = Edit.t();
       long var8 = 567473403098937361L;

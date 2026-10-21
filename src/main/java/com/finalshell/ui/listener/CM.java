@@ -4,9 +4,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class CM implements ChangeListener {
-   final com.finalshell.core.N2 p;
+   public final com.finalshell.core.N2 p;
 
-   CM(com.finalshell.core.N2 var1) {
+   public CM(com.finalshell.core.N2 var1) {
       this.p = var1;
    }
 

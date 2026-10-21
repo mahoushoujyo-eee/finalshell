@@ -10,9 +10,9 @@ import java.sql.Timestamp;
 import java.util.concurrent.Callable;
 
 public class RR3 implements Callable {
-   final IG x;
+   public final IG x;
 
-   RR3(IG var1) {
+   public RR3(IG var1) {
       this.x = var1;
    }
 

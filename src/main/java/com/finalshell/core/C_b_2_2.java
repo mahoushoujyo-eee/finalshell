@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.util.Map;
 
 public class C_b_2_2 implements HH_2 {
-   final Map y;
-   final C_g_2 C;
+   public final Map y;
+   public final C_g_2 C;
 
-   C_b_2_2(C_g_2 var1, Map var2) {
+   public C_b_2_2(C_g_2 var1, Map var2) {
       this.C = var1;
       this.y = var2;
    }

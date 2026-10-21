@@ -8,7 +8,7 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class Q_2 extends DefaultMutableTreeNode implements Serializable {
-   protected String R;
+   public String R;
    public static String a;
 
    public Q_2() {
@@ -38,7 +38,7 @@ public class Q_2 extends DefaultMutableTreeNode implements Serializable {
       this.R = var1;
    }
 
-   protected void b() {
+   public void b() {
       this.R = NE.E(a);
    }
 

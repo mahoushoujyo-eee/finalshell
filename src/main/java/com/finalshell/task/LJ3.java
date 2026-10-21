@@ -6,10 +6,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.Socket;
 
 public class LJ3 implements Runnable {
-   final Socket t;
-   final Ga2 I;
+   public final Socket t;
+   public final Ga2 I;
 
-   LJ3(Ga2 var1, Socket var2) {
+   public LJ3(Ga2 var1, Socket var2) {
       this.I = var1;
       this.t = var2;
    }

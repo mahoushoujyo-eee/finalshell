@@ -43,7 +43,7 @@ public class UG3 {
          throw var4.getTargetException();
       }
 
-new UG3((byte[])var10003, var1);
+var10002 = new UG3((byte[])var10003, var1);
       return var10001;
    }
 
@@ -467,7 +467,7 @@ new UG3((byte[])var10003, var1);
          throw var4.getTargetException();
       }
 
-new UG3((byte[])var10003, var1);
+var10002 = new UG3((byte[])var10003, var1);
       return var10001;
    }
 

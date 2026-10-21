@@ -7,10 +7,10 @@ import java.awt.event.MouseEvent;
 import javax.swing.JCheckBox;
 
 public class NI3 extends MouseAdapter {
-   final Fm2 Q;
+   public final Fm2 Q;
    public static long a;
 
-   NI3(Fm2 var1) {
+   public NI3(Fm2 var1) {
       this.Q = var1;
    }
 

@@ -14,9 +14,9 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class Af2 implements TreeSelectionListener {
-   final Connection5 x;
+   public final Connection5 x;
 
-   Af2(Connection5 var1) {
+   public Af2(Connection5 var1) {
       this.x = var1;
    }
 
@@ -96,7 +96,7 @@ public class Af2 implements TreeSelectionListener {
          throw var26.getTargetException();
       }
 
-new Af2(var10007);
+var28 = new Af2(var10007);
       String var33 = var32.getParent();
       long var25 = 348708854043337366L;
       String var24 = var33;

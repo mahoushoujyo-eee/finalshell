@@ -14,9 +14,9 @@ import javax.swing.JLayeredPane;
 import javax.swing.JRootPane;
 
 public class NC {
-   protected static Map U;
-   protected static Map G;
-   protected static com.finalshell.ui.model.TM q;
+   public static Map U;
+   public static Map G;
+   public static com.finalshell.ui.model.TM q;
    public static String[] a;
    public static String[] b;
 
@@ -338,7 +338,7 @@ public class NC {
       // 80: areturn
    }
 
-   protected static void k(Qt2 var0, JRootPane var1, JLayeredPane var2) {
+   public static void k(Qt2 var0, JRootPane var1, JLayeredPane var2) {
       JRootPane var6;
       var0.setBounds(0, 0, var2.getWidth(), var2.getHeight());
       var0.setVisible(true);

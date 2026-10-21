@@ -5,10 +5,10 @@ import java.util.List;
 import javax.swing.ImageIcon;
 
 public abstract class K9 {
-   protected QR Y;
-   protected Sg2 B;
-   protected HB e;
-   protected boolean i = true;
+   public QR Y;
+   public Sg2 B;
+   public HB e;
+   public boolean i = true;
    public static String[] a;
    public static String[] b;
 
@@ -16,7 +16,7 @@ public abstract class K9 {
       return this.Y;
    }
 
-   protected void e(QR var1) {
+   public void e(QR var1) {
       this.Y = var1;
    }
 
@@ -24,7 +24,7 @@ public abstract class K9 {
       return this.B;
    }
 
-   protected void O(Sg2 var1) {
+   public void O(Sg2 var1) {
       this.B = var1;
    }
 
@@ -110,7 +110,7 @@ public abstract class K9 {
       return var10000;
    }
 
-   protected HB a$HB() {
+   public HB a$HB() {
       return HB.A();
    }
 
@@ -144,7 +144,7 @@ public abstract class K9 {
       NE3.e(var10000, a(-25533, -27745) + this.Q() + a(-25532, 25068));
    }
 
-   protected void s() {
+   public void s() {
    }
 
    public final void d() {
@@ -177,7 +177,7 @@ public abstract class K9 {
       NE3.e(var10000, a(-25533, -27745) + this.Q() + a(-25535, 11211));
    }
 
-   protected void P() {
+   public void P() {
    }
 
    public boolean z() {

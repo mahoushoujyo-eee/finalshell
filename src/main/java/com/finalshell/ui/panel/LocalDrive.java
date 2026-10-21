@@ -19,29 +19,29 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class LocalDrive extends Z7 {
-   JTextField u;
-   JTextField N;
-   JTextField O;
-   JTextField Y;
-   JPasswordField r;
-   JComboBox J;
-   JComboBox C;
-   String i;
-   int H;
-   String G;
-   JTextArea F;
-   String w;
-   JPanel s;
-   JPanel y;
-   String p;
-   Lv4_2 E;
-   JCheckBox A;
-   JCheckBox z;
-   JTextField X;
-   JTextField S;
-   boolean v;
-   String g;
-   JCheckBox t;
+   public JTextField u;
+   public JTextField N;
+   public JTextField O;
+   public JTextField Y;
+   public JPasswordField r;
+   public JComboBox J;
+   public JComboBox C;
+   public String i;
+   public int H;
+   public String G;
+   public JTextArea F;
+   public String w;
+   public JPanel s;
+   public JPanel y;
+   public String p;
+   public Lv4_2 E;
+   public JCheckBox A;
+   public JCheckBox z;
+   public JTextField X;
+   public JTextField S;
+   public boolean v;
+   public String g;
+   public JCheckBox t;
    public static String[] a;
    public static String[] b;
    public static long d;
@@ -120,7 +120,7 @@ public class LocalDrive extends Z7 {
       this.add((JCheckBox)Ref.g(404502531953452066L, var20), a(-3063, -11470));
    }
 
-   JPanel S() {
+   public JPanel S() {
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-3060, 3591)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-3019, 2034)));
@@ -187,7 +187,7 @@ public class LocalDrive extends Z7 {
       return var1;
    }
 
-   JPanel q() {
+   public JPanel q() {
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-3060, 3591)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-3044, 16046)));
@@ -259,7 +259,7 @@ public class LocalDrive extends Z7 {
       return var1;
    }
 
-   JPanel B() {
+   public JPanel B() {
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-3060, 3591)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-3024, -19659)));
@@ -272,7 +272,7 @@ public class LocalDrive extends Z7 {
       return var1;
    }
 
-   void I() {
+   public void I() {
       label45: {
          Object var7 = 368767177165012471L;
          int var2 = ((JComboBox)Ref.g(368767177165012471L, var7)).getSelectedIndex();
@@ -280,7 +280,7 @@ public class LocalDrive extends Z7 {
          Object var9 = 368767177165012471L;
          String var3 = (String)((JComboBox)Ref.g(368767177165012471L, var9)).getSelectedItem();
          int var10002 = (var3.contains("x")) ? 1 : 0;
-         if (this == false) {
+         if (this == null) {
             if (var10002 == 0) {
                break label45;
             }
@@ -299,13 +299,13 @@ public class LocalDrive extends Z7 {
          ((JTextField)Ref.g(415056051757211192L, var15)).setEnabled(false);
          Object var17 = 363204830369816461L;
          ((JTextField)Ref.g(363204830369816461L, var17)).setEnabled(false);
-         if (this == false) {
+         if (this == null) {
             return;
          }
       }
 
       label37: {
-         if (this == false) {
+         if (this == null) {
             Object var19 = 151389623773796165L;
             if ((Lv4_2)Ref.g(151389623773796165L, var19) != null) {
                Object var21 = 415056051757211192L;
@@ -342,7 +342,7 @@ public class LocalDrive extends Z7 {
                }
 
                this.setText(var10014.append(var47).toString());
-               if (this == false) {
+               if (this == null) {
                   break label37;
                }
             }
@@ -361,7 +361,7 @@ public class LocalDrive extends Z7 {
       ((JTextField)Ref.g(363204830369816461L, var39)).setEnabled(true);
    }
 
-   JPanel U() {
+   public JPanel U() {
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-3055, -10212)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-3043, -8432)));
@@ -574,11 +574,11 @@ public class LocalDrive extends Z7 {
       label152: {
          label147: {
             var10019 = Registry.lookupField(613057195457720571L).getInt(null);
-            if (var2 == false) {
+            if (var2 == null) {
                if (var10018 == var10019) {
                   Object var39 = 468493916317149036L;
                   ((JComboBox)Ref.g(468493916317149036L, var39)).setSelectedIndex(0);
-                  if (var2 == false) {
+                  if (var2 == null) {
                      break label147;
                   }
                }
@@ -595,7 +595,7 @@ public class LocalDrive extends Z7 {
                   throw var66.getTargetException();
                }
 
-               if (var2 != false) {
+               if (var2 == null) {
                   break label152;
                }
 
@@ -624,7 +624,7 @@ public class LocalDrive extends Z7 {
          if (var10019 != 0) {
             Object var47 = 368767177165012471L;
             ((JComboBox)Ref.g(368767177165012471L, var47)).setSelectedItem(a(-3022, 15332));
-            if (var2 == false) {
+            if (var2 == null) {
                break label154;
             }
          }
@@ -1502,7 +1502,7 @@ public class LocalDrive extends Z7 {
          Object var40 = 468493916317149036L;
          int var8 = ((JComboBox)Ref.g(468493916317149036L, var40)).getSelectedIndex();
          int var10015 = var8;
-         if (this != false) {
+         if (this == null) {
             if (var8 == 0) {
                Object[] var10016 = Registry.packArgs(Registry.lookupField(613057195457720571L).getInt(null));
                long var43 = 465782969021020321L;
@@ -1515,7 +1515,7 @@ public class LocalDrive extends Z7 {
                   throw var72.getTargetException();
                }
 
-               if (this != false) {
+               if (this == null) {
                   break label126;
                }
             }

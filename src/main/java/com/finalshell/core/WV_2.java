@@ -5,10 +5,10 @@ import com.finalshell.ui.panel.QX;
 import java.awt.event.KeyEvent;
 
 public class WV_2 extends Wc2{
-   final QX F;
-   final Ie4 X;
+   public final QX F;
+   public final Ie4 X;
 
-   WV_2(Ie4 var1, QX var2) {
+   public WV_2(Ie4 var1, QX var2) {
       this.X = var1;
       this.F = var2;
    }

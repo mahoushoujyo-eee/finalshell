@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextField;
 
 public class Za2 implements ActionListener {
-   final U62 x;
-   final DU w;
-   final AW V;
+   public final U62 x;
+   public final DU w;
+   public final AW V;
 
-   Za2(AW var1, U62 var2, DU var3) {
+   public Za2(AW var1, U62 var2, DU var3) {
       this.V = var1;
       this.x = var2;
       this.w = var3;

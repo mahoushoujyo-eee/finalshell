@@ -7,9 +7,9 @@ import java.awt.event.MouseMotionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vl2 implements MouseMotionListener {
-   final com.finalshell.ui.panel.OG3 Q;
+   public final com.finalshell.ui.panel.OG3 Q;
 
-   Vl2(com.finalshell.ui.panel.OG3 var1) {
+   public Vl2(com.finalshell.ui.panel.OG3 var1) {
       this.Q = var1;
    }
 

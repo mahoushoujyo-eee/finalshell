@@ -5,9 +5,9 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class J5 extends WindowAdapter {
-   final S3 L;
+   public final S3 L;
 
-   J5(S3 var1) {
+   public J5(S3 var1) {
       this.L = var1;
    }
 

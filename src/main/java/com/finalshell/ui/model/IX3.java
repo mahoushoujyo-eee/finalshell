@@ -18,18 +18,18 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class IX3 implements LayoutManager2, Serializable, UL_2 {
-   protected static double[][] e;
-   protected static boolean K;
-   protected static Method h;
-   protected double[][] I = new double[][]{null, null};
-   protected int[][] H = new int[][]{null, null};
-   protected int[][] R = new int[][]{null, null};
-   protected LinkedList w;
-   protected boolean B;
-   protected int E;
-   protected int n;
-   protected int q;
-   protected int N;
+   public static double[][] e;
+   public static boolean K;
+   public static Method h;
+   public double[][] I = new double[][]{null, null};
+   public int[][] H = new int[][]{null, null};
+   public int[][] R = new int[][]{null, null};
+   public LinkedList w;
+   public boolean B;
+   public int E;
+   public int n;
+   public int q;
+   public int N;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -143,7 +143,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       this.t(var3, var4);
    }
 
-   protected void h(double[] param1, double[] param2) {
+   public void h(double[] param1, double[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -491,7 +491,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       this.X(1, var1);
    }
 
-   protected void X(int param1, double[] param2) {
+   public void X(int param1, double[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -628,7 +628,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       this.e(1, var1, var2);
    }
 
-   protected void e(int param1, int param2, double param3) {
+   public void e(int param1, int param2, double param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1052,7 +1052,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       this.H(1, var1);
    }
 
-   protected void H(int param1, int param2) {
+   public void H(int param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1674,7 +1674,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // 1bf: areturn
    }
 
-   protected void I(Container var1) {
+   public void I(Container var1) {
       int var10000 = T4.O();
       Insets var3 = var1.getInsets();
       Dimension var4 = var1.getSize();
@@ -1750,7 +1750,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       }
    }
 
-   protected int G(int param1, int param2) {
+   public int G(int param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1842,7 +1842,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // 8d: ireturn
    }
 
-   protected int T(int param1, int param2) {
+   public int T(int param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1948,7 +1948,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // a7: ireturn
    }
 
-   protected void p(int param1, int param2) {
+   public void p(int param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2095,7 +2095,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // ff: return
    }
 
-   protected void k(int param1, Insets param2) {
+   public void k(int param1, Insets param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2173,7 +2173,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // 71: return
    }
 
-   protected int x(int param1, int param2, double param3) {
+   public int x(int param1, int param2, double param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2828,7 +2828,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // 1d1: return
    }
 
-   protected ComponentOrientation k(Container param1) {
+   public ComponentOrientation k(Container param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2887,7 +2887,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // 6e: areturn
    }
 
-   protected int[] i(OU param1, int param2, boolean param3) {
+   public int[] i(OU param1, int param2, boolean param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3304,7 +3304,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       return this.X(var1, -3.0);
    }
 
-   protected Dimension X(Container param1, double param2) {
+   public Dimension X(Container param1, double param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3406,7 +3406,7 @@ public class IX3 implements LayoutManager2, Serializable, UL_2 {
       // ba: areturn
    }
 
-   protected int b(Container param1, int param2, double param3, OU[] param5, Dimension[] param6) {
+   public int b(Container param1, int param2, double param3, OU[] param5, Dimension[] param6) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -10,9 +10,6 @@ public class K_5 {
    public static String[] c;
    public static long e;
 
-   protected K_5() {
-   }
-
    public static Object E(java.lang.Class param0, String param1) throws NoSuchMethodException, InstantiationException, InvocationTargetException, IllegalAccessException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");

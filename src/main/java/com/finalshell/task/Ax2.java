@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import javax.swing.SwingUtilities;
 
 public class Ax2 extends Thread {
-   final TM i;
+   public final TM i;
 
-   Ax2(TM var1) {
+   public Ax2(TM var1) {
       this.i = var1;
    }
 

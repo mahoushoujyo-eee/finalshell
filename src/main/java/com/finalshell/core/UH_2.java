@@ -8,9 +8,6 @@ public class UH_2 implements AWTEventListener {
    public static long[] a;
    public static Integer[] b;
 
-   UH_2() {
-   }
-
    @Override
    public void eventDispatched(AWTEvent var1) {
       int[] var2 = C42.g();

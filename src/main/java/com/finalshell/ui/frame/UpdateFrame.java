@@ -27,18 +27,18 @@ import javax.swing.text.BadLocationException;
 import net.miginfocom.swing.MigLayout;
 
 public class UpdateFrame extends JFrame implements CH {
-   Yy4_2 s;
-   JTextArea b;
-   boolean Y;
-   JButton P;
-   JButton H;
-   JButton r;
-   JTextArea m;
-   JScrollPane u;
-   boolean a;
-   final int T;
-   boolean E;
-   boolean M;
+   public Yy4_2 s;
+   public JTextArea b;
+   public boolean Y;
+   public JButton P;
+   public JButton H;
+   public JButton r;
+   public JTextArea m;
+   public JScrollPane u;
+   public boolean a;
+   public final int T;
+   public boolean E;
+   public boolean M;
    public static String[] X;
    public static String[] c;
    public static String[] d;
@@ -46,9 +46,9 @@ public class UpdateFrame extends JFrame implements CH {
    public static Integer[] f;
 
    public UpdateFrame(JFrame var1) {
+   super();
       JPanel var5;
       label80: {
-         super();
          Registry.lookupField(618853683069368772L).setBoolean(this, false);
          Registry.lookupField(198290463385639860L).setBoolean(this, true);
          this.T = a(9134, 2451920808905915374L);
@@ -266,7 +266,7 @@ public class UpdateFrame extends JFrame implements CH {
       var4.printStackTrace();
    }
 
-   void g(String var1) {
+   public void g(String var1) {
       q();
       Object var4 = 406171939123952740L;
       ((JTextArea)Ref.g(406171939123952740L, var4)).append(var1);
@@ -358,7 +358,7 @@ public class UpdateFrame extends JFrame implements CH {
       }
 
       if (var2 == null) {
-         if (var9 != false) {
+         if (var9 == null) {
             return;
          }
 
@@ -366,7 +366,7 @@ public class UpdateFrame extends JFrame implements CH {
       }
 
       if (var2 == null) {
-         if (var9 == false) {
+         if (var9 == null) {
             return;
          }
 
@@ -375,7 +375,7 @@ public class UpdateFrame extends JFrame implements CH {
          ((JButton)Ref.g(141748913226340279L, var4)).isEnabled();
       }
 
-      if (var9 != false) {
+      if (var9 == null) {
          Registry.lookupField(388376917454860932L).get(null);
          Object[] var10001 = Registry.packArgs(new Kx2(this));
          long var7 = 434592463220957006L;
@@ -390,7 +390,7 @@ public class UpdateFrame extends JFrame implements CH {
       }
    }
 
-   void t() {
+   public void t() {
       String var2 = a(-11805, -12181);
       Object var5 = 215526989813745242L;
       Ref.g(215526989813745242L, var5);
@@ -438,7 +438,7 @@ public class UpdateFrame extends JFrame implements CH {
 
          label457: {
             if (var1 == null) {
-               if (var10006 != false) {
+               if (var10006 == null) {
                   var2 = a(-11779, -23122);
                   if (var1 == null) {
                      break label457;
@@ -460,7 +460,7 @@ public class UpdateFrame extends JFrame implements CH {
             }
 
             if (var1 == null) {
-               if (var10006 == false) {
+               if (var10006 == null) {
                   break label457;
                }
 
@@ -479,7 +479,7 @@ public class UpdateFrame extends JFrame implements CH {
             }
 
             if (var1 == null) {
-               if (var10006 != false) {
+               if (var10006 == null) {
                   if (var3 != null) {
                      new StringBuilder().append(a(-11795, -11989));
                      String var170 = (String)(Registry.emptyArgs());
@@ -621,7 +621,7 @@ public class UpdateFrame extends JFrame implements CH {
                }
             }
 
-            if (var10006 != false) {
+            if (var10006 == null) {
                var2 = a(-11803, -8243);
                if (var1 == null) {
                   break label457;
@@ -657,7 +657,7 @@ public class UpdateFrame extends JFrame implements CH {
          }
 
          if (var1 == null) {
-            if (var178 != false) {
+            if (var178 == null) {
                Object var57 = 141748913226340279L;
                JButton var180 = (JButton)Ref.g(141748913226340279L, var57);
                Object var59 = 215526989813745242L;
@@ -793,7 +793,7 @@ public class UpdateFrame extends JFrame implements CH {
          }
 
          if (var1 == null) {
-            if (var178 != false) {
+            if (var178 == null) {
                Object var83 = 141748913226340279L;
                JButton var182 = (JButton)Ref.g(141748913226340279L, var83);
                Object var85 = 215526989813745242L;
@@ -928,7 +928,7 @@ public class UpdateFrame extends JFrame implements CH {
             }
          }
 
-         if (var178 != false) {
+         if (var178 == null) {
             Object var109 = 141748913226340279L;
             JButton var184 = (JButton)Ref.g(141748913226340279L, var109);
             Object var111 = 215526989813745242L;

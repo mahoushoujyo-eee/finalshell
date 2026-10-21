@@ -5,14 +5,14 @@ public final class NA_3 extends Nt2_2 implements Hp2_2 {
    public final String[] k;
    @C_9
    public final Hp2_2[] C;
-   static boolean f;
+   public static boolean f;
    public static String d;
    public static long[] e;
    public static Integer[] h;
 
    public NA_3(com.finalshell.ui.model.I var1, HV_2[] var2, String[] var3, @C_9 Hp2_2[] var4) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       String[] var5 = var10000;
       boolean var6 = f;
       if (var5 != null) {

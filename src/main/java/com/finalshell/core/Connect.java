@@ -16,12 +16,12 @@ import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.core.Pcaps;
 
 public class Connect {
-   ServerSocket v;
-   int s = a(11320, 296150126274388367L);
-   PcapNetworkInterface H;
-   PcapHandle b;
-   String Y = "";
-   Fm4 j = new Fm4();
+   public ServerSocket v;
+   public int s = a(11320, 296150126274388367L);
+   public PcapNetworkInterface H;
+   public PcapHandle b;
+   public String Y = "";
+   public Fm4 j = new Fm4();
    public static int Z;
    public static int g;
    public static int A;
@@ -40,7 +40,7 @@ public class Connect {
       new Connect();
    }
 
-   Connect() {
+   public Connect() {
       try {
          this.B();
       } catch (Exception var3) {
@@ -64,11 +64,11 @@ public class Connect {
       this.b(a(-3938, 26156), this.s);
    }
 
-   void b(String var1, int var2) {
+   public void b(String var1, int var2) {
       PingMessageR.U.execute(new com.finalshell.task.TJ(this, var1, var2));
    }
 
-   void B() throws Exception {
+   public void B() throws Exception {
       List var1 = null;
 
       try {
@@ -82,7 +82,7 @@ public class Connect {
       this.n();
    }
 
-   void n() throws Exception {
+   public void n() throws Exception {
       PcapHandle var1 = this.H.openLive(a(18146, 6446883592048397143L), PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 0);
 
       try {
@@ -97,10 +97,10 @@ public class Connect {
       PingMessageR.U.execute(new com.finalshell.task.K0(this, var1, var2));
    }
 
-   void c(String var1, int var2) {
+   public void c(String var1, int var2) {
    }
 
-   void h() {
+   public void h() {
       try {
          this.v = new ServerSocket(this.s);
          Jm2 var1 = new Jm2(this);
@@ -110,7 +110,7 @@ public class Connect {
       }
    }
 
-   void T(Socket var1) throws IOException {
+   public void T(Socket var1) throws IOException {
       System.out.println(a(-3937, -15047) + var1.getRemoteSocketAddress());
       var1.setTcpNoDelay(true);
       var1.setSendBufferSize(1);

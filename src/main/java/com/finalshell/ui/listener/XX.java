@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class XX implements ActionListener {
-   final HD Y;
+   public final HD Y;
 
-   XX(HD var1) {
+   public XX(HD var1) {
       this.Y = var1;
    }
 

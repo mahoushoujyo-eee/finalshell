@@ -7,10 +7,10 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class W72 extends MouseAdapter {
-   final Ku4 N;
-   final Component W;
+   public final Ku4 N;
+   public final Component W;
 
-   W72(Ku4 var1, Component var2) {
+   public W72(Ku4 var1, Component var2) {
       this.N = var1;
       this.W = var2;
    }

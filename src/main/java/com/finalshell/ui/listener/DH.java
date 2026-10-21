@@ -7,12 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class DH implements ActionListener {
-   final Qe2_2 P;
-   final KD3 t;
+   public final Qe2_2 P;
+   public final KD3 t;
    public static String[] a;
    public static String[] b;
 
-   DH(KD3 var1, Qe2_2 var2) {
+   public DH(KD3 var1, Qe2_2 var2) {
       this.t = var1;
       this.P = var2;
    }

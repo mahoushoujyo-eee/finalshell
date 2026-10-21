@@ -4,12 +4,12 @@ import javax.swing.RowSorter.SortKey;
 import javax.swing.table.TableRowSorter;
 
 public class DP3 extends TableRowSorter {
-   final UT d;
+   public final UT d;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   DP3(UT var1, com.finalshell.ui.model.Cd4 var2) {
+   public DP3(UT var1, com.finalshell.ui.model.Cd4 var2) {
       super(var2);
       this.d = var1;
    }

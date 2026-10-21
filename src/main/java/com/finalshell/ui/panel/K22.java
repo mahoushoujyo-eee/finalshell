@@ -19,10 +19,10 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
 public class K22 extends Ky4 implements SwingConstants {
-   protected int F = -1;
-   protected boolean o = false;
-   protected PZ O;
-   protected PropertyChangeListener Z;
+   public int F = -1;
+   public boolean o = false;
+   public PZ O;
+   public PropertyChangeListener Z;
    public static String[] a;
    public static String[] b;
 
@@ -143,7 +143,7 @@ public class K22 extends Ky4 implements SwingConstants {
       return var10000;
    }
 
-   protected void L(Component var1) {
+   public void L(Component var1) {
       int[] var2;
       K22 var8;
       label35: {
@@ -182,7 +182,7 @@ public class K22 extends Ky4 implements SwingConstants {
       }
    }
 
-   protected void q(Component var1) {
+   public void q(Component var1) {
       int[] var2;
       K22 var8;
       label35: {
@@ -249,7 +249,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.Y();
    }
 
-   protected void Y() {
+   public void Y() {
       int[] var10000 = K32.L$arrint();
       Component[] var2 = this.getComponents();
       int[] var1 = var10000;
@@ -464,7 +464,7 @@ public class K22 extends Ky4 implements SwingConstants {
    }
 
    @Override
-   protected void addImpl(Component var1, Object var2, int var3) {
+   public void addImpl(Component var1, Object var2, int var3) {
       super.addImpl(var1, var2, var3);
       var1.addPropertyChangeListener(b(-2045, 21840), this.Z);
    }
@@ -475,11 +475,11 @@ public class K22 extends Ky4 implements SwingConstants {
       super.remove(var1);
    }
 
-   protected boolean N(Component var1) {
+   public boolean N(Component var1) {
       return var1 instanceof AbstractButton;
    }
 
-   protected boolean O(Component var1) {
+   public boolean O(Component var1) {
       int[] var2 = K32.L$arrint();
       boolean var10000 = this.N(var1);
       if (var2 != null) {
@@ -493,7 +493,7 @@ public class K22 extends Ky4 implements SwingConstants {
       return var2 == null ? var10000 : var10000;
    }
 
-   protected boolean m(Component var1) {
+   public boolean m(Component var1) {
       return var1 instanceof K22;
    }
 
@@ -501,7 +501,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.U(this, var1);
    }
 
-   protected void U(K22 var1, boolean var2) {
+   public void U(K22 var1, boolean var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -537,7 +537,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.P(this, var1);
    }
 
-   protected void P(K22 var1, Color var2) {
+   public void P(K22 var1, Color var2) {
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -573,7 +573,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.c(this, var1);
    }
 
-   protected void c(K22 var1, Color var2) {
+   public void c(K22 var1, Color var2) {
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -626,7 +626,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.H(this, var1);
    }
 
-   protected void H(K22 var1, boolean var2) {
+   public void H(K22 var1, boolean var2) {
       int[] var3 = K32.L$arrint();
       K22 var10000 = this;
       if (var3 != null) {
@@ -659,7 +659,7 @@ public class K22 extends Ky4 implements SwingConstants {
       var10000.J(this.K(), var2);
    }
 
-   protected void J(Component var1, boolean var2) {
+   public void J(Component var1, boolean var2) {
       K22 var5;
       Component var10001;
       label26: {
@@ -698,7 +698,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.A(this, var1);
    }
 
-   protected void A(K22 var1, boolean var2) {
+   public void A(K22 var1, boolean var2) {
       int[] var3 = K32.L$arrint();
       K22 var10000 = this;
       if (var3 != null) {
@@ -731,7 +731,7 @@ public class K22 extends Ky4 implements SwingConstants {
       var10000.Q(this.K(), var2);
    }
 
-   protected void Q(Component var1, boolean var2) {
+   public void Q(Component var1, boolean var2) {
       K22 var5;
       Component var10001;
       label26: {
@@ -770,7 +770,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.n(this, var1);
    }
 
-   protected void n(K22 var1, boolean var2) {
+   public void n(K22 var1, boolean var2) {
       int[] var3 = K32.L$arrint();
       K22 var10000 = this;
       if (var3 != null) {
@@ -803,7 +803,7 @@ public class K22 extends Ky4 implements SwingConstants {
       var10000.R(this.q(), var2);
    }
 
-   protected void R(Component var1, boolean var2) {
+   public void R(Component var1, boolean var2) {
       K22 var5;
       Component var10001;
       label26: {
@@ -842,7 +842,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.R(this, var1);
    }
 
-   protected void R(K22 var1, boolean var2) {
+   public void R(K22 var1, boolean var2) {
       int[] var3 = K32.L$arrint();
       K22 var10000 = this;
       if (var3 != null) {
@@ -875,7 +875,7 @@ public class K22 extends Ky4 implements SwingConstants {
       var10000.k(this.q(), var2);
    }
 
-   protected void k(Component var1, boolean var2) {
+   public void k(Component var1, boolean var2) {
       K22 var5;
       Component var10001;
       label26: {
@@ -921,7 +921,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.z(this, var1);
    }
 
-   protected void z(K22 var1, boolean var2) {
+   public void z(K22 var1, boolean var2) {
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -974,7 +974,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.C(this, var1);
    }
 
-   protected void C(K22 var1, boolean var2) {
+   public void C(K22 var1, boolean var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1023,7 +1023,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.M(this, var1);
    }
 
-   protected void M(K22 var1, Color var2) {
+   public void M(K22 var1, Color var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1072,7 +1072,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.m(this, var1);
    }
 
-   protected void m(K22 var1, int var2) {
+   public void m(K22 var1, int var2) {
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -1125,7 +1125,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.o(this, var1);
    }
 
-   protected void o(K22 var1, boolean var2) {
+   public void o(K22 var1, boolean var2) {
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
       int[] var10000 = K32.L$arrint();
@@ -1178,7 +1178,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.M(this, var1);
    }
 
-   protected void M(K22 var1, int var2) {
+   public void M(K22 var1, int var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1227,7 +1227,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.k(this, var1);
    }
 
-   protected void k(K22 var1, Color var2) {
+   public void k(K22 var1, Color var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1276,7 +1276,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.H(this, var1);
    }
 
-   protected void H(K22 var1, int var2) {
+   public void H(K22 var1, int var2) {
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -1329,7 +1329,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.Q(this, var1);
    }
 
-   protected void Q(K22 var1, Color var2) {
+   public void Q(K22 var1, Color var2) {
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
       int[] var10000 = K32.L$arrint();
@@ -1382,7 +1382,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.F(this, var1);
    }
 
-   protected void F(K22 var1, int var2) {
+   public void F(K22 var1, int var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;
@@ -1431,7 +1431,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.x(this, var1);
    }
 
-   protected void x(K22 var1, boolean var2) {
+   public void x(K22 var1, boolean var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1484,7 +1484,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.W(this, var1);
    }
 
-   protected void W(K22 var1, boolean var2) {
+   public void W(K22 var1, boolean var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1537,7 +1537,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.I(this, var1);
    }
 
-   protected void I(K22 var1, Og4 var2) {
+   public void I(K22 var1, Og4 var2) {
       Component[] var4 = var1.getComponents();
       int[] var10000 = K32.L$arrint();
       int var5 = var4.length;
@@ -1590,7 +1590,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.D(this, var1);
    }
 
-   protected void D(K22 var1, boolean var2) {
+   public void D(K22 var1, boolean var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1643,7 +1643,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.N(this, var1);
    }
 
-   protected void N(K22 var1, boolean var2) {
+   public void N(K22 var1, boolean var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int var5 = var4.length;
@@ -1704,7 +1704,7 @@ public class K22 extends Ky4 implements SwingConstants {
       this.W(var1, var1, var1, var1);
    }
 
-   protected void i(K22 var1, Insets var2) {
+   public void i(K22 var1, Insets var2) {
       int[] var10000 = K32.L$arrint();
       Component[] var4 = var1.getComponents();
       int[] var3 = var10000;

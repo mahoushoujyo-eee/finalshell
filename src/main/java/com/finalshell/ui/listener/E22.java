@@ -4,9 +4,9 @@ import com.finalshell.core.Nr4;
 import javax.swing.event.DocumentEvent;
 
 public class E22 extends Es4 {
-   final Nr4 H;
+   public final Nr4 H;
 
-   E22(Nr4 var1) {
+   public E22(Nr4 var1) {
       this.H = var1;
    }
 

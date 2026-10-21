@@ -16,7 +16,7 @@ import javax.swing.JDialog;
 
 public class U1 extends JDialog {
    public boolean i;
-   ExitFullScreenPanel w;
+   public ExitFullScreenPanel w;
    public static String[] N;
    public static String[] b;
    public static String[] c;

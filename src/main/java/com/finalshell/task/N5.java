@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.Backspace;
 import java.lang.reflect.InvocationTargetException;
 
 public class N5 implements Runnable {
-   final Backspace Y;
+   public final Backspace Y;
 
-   N5(Backspace var1) {
+   public N5(Backspace var1) {
       this.Y = var1;
    }
 

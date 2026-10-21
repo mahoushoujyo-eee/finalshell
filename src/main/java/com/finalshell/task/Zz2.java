@@ -10,10 +10,10 @@ import java.util.HashSet;
 import java.util.Hashtable;
 
 public class Zz2 implements Runnable {
-   final String A;
+   public final String A;
    public static long a;
 
-   Zz2(String var1) {
+   public Zz2(String var1) {
       this.A = var1;
    }
 

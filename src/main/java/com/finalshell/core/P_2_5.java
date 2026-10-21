@@ -7,8 +7,8 @@ public class P_2_5 extends U3_3 {
    public final Hd2 X;
 
    public P_2_5(Hd2 var1, String var2, Hd2 var3) {
+   super(var1);
       Objects.requireNonNull(var1);
-      super(var1);
       this.g = var2;
       this.X = var3;
    }

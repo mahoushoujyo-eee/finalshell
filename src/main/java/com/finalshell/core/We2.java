@@ -4,12 +4,12 @@ import java.io.UnsupportedEncodingException;
 import java.net.DatagramPacket;
 
 public class We2 extends WC {
-   short s = D6.nw;
-   int L;
-   String h;
-   int K;
-   int r;
-   byte[] u;
+   public short s = D6.nw;
+   public int L;
+   public String h;
+   public int K;
+   public int r;
+   public byte[] u;
    public static String[] a;
    public static String[] b;
    public static long[] c;

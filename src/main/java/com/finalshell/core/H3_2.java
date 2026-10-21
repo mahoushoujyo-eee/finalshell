@@ -43,7 +43,7 @@ public class H3_2 {
    public boolean p;
    public boolean x;
    public boolean q;
-   static boolean g;
+   public static boolean g;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -10072,7 +10072,7 @@ public class H3_2 {
       // aa: areturn
    }
 
-   protected void u(R6_2 var1, Map var2) throws B2_5 {
+   public void u(R6_2 var1, Map var2) throws B2_5 {
       HashMap var3 = new HashMap();
       var3.putAll(var2);
       S3_3 var4 = this.V(var1.r);
@@ -22450,7 +22450,7 @@ public class H3_2 {
       // 5c: areturn
    }
 
-   void s(NU_3 var1) throws B2_5 {
+   public void s(NU_3 var1) throws B2_5 {
       String[] var10000 = RG_2.C();
       Iterator var3 = var1.j().E.values().iterator();
       String[] var2 = var10000;
@@ -22476,7 +22476,7 @@ public class H3_2 {
       }
    }
 
-   void Z$void(NU_3 param1) throws B2_5 {
+   public void Z$void(NU_3 param1) throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -24716,7 +24716,7 @@ public class H3_2 {
    }
 
    @C_9
-   M3_2 t(RF param1, Rq2_2 param2) throws B2_5 {
+   public M3_2 t(RF param1, Rq2_2 param2) throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -29008,7 +29008,7 @@ public class H3_2 {
    }
 
    @C_9
-   S3_3 r(Nu2 param1) throws B2_5 {
+   public S3_3 r(Nu2 param1) throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -29393,7 +29393,7 @@ public class H3_2 {
    }
 
    @C_9
-   static K_2_2 V$K_2(K_2_2 param0) {
+   public static K_2_2 V$K_2(K_2_2 param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -29783,7 +29783,7 @@ public class H3_2 {
       // 2c: areturn
    }
 
-   Hv2_2 Z$hv_2(NU_3 param1) {
+   public Hv2_2 Z$hv_2(NU_3 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -39726,803 +39726,805 @@ public class H3_2 {
       // 278: return
    }
 
-   static void k(H3_2 var0, RD var1) throws B2_5 {
+   public static void k(H3_2 var0, RD var1) throws B2_5 {
       var0.B(var1);
    }
 
-   static void f(H3_2 var0, R1_2 var1) throws B2_5 {
+   public static void f(H3_2 var0, R1_2 var1) throws B2_5 {
       var0.u(var1);
    }
 
-   static void X(H3_2 var0, C_h_2_2 var1) throws B2_5 {
+   public static void X(H3_2 var0, C_h_2_2 var1) throws B2_5 {
       var0.B(var1);
    }
 
-   static void y(H3_2 var0, C_1_2 var1) throws B2_5 {
+   public static void y(H3_2 var0, C_1_2 var1) throws B2_5 {
       var0.U(var1);
    }
 
-   static void l(H3_2 var0, C_E_2 var1) throws B2_5 {
+   public static void l(H3_2 var0, C_E_2 var1) throws B2_5 {
       var0.b(var1);
    }
 
-   static void Z(H3_2 var0, C_n_2 var1) throws B2_5 {
+   public static void Z(H3_2 var0, C_n_2 var1) throws B2_5 {
       var0.A(var1);
    }
 
-   static void P(H3_2 var0, C_G var1) throws B2_5 {
+   public static void P(H3_2 var0, C_G var1) throws B2_5 {
       var0.X(var1);
    }
 
-   static void j(H3_2 var0, F22 var1) throws B2_5 {
+   public static void j(H3_2 var0, F22 var1) throws B2_5 {
       var0.E(var1);
    }
 
-   static void T(H3_2 var0, String var1, com.finalshell.ui.model.I var2) throws B2_5 {
+   public static void T(H3_2 var0, String var1, com.finalshell.ui.model.I var2) throws B2_5 {
       var0.U(var1, var2);
    }
 
-   static R2_3 W(H3_2 var0, T4_3 var1, Cr2_2 var2, boolean var3) throws B2_5 {
+   public static R2_3 W(H3_2 var0, T4_3 var1, Cr2_2 var2, boolean var3) throws B2_5 {
       return var0.K(var1, var2, var3);
    }
 
-   static N_ i(H3_2 var0, NQ var1) throws B2_5 {
+   public static N_ i(H3_2 var0, NQ var1) throws B2_5 {
       return var0.G(var1);
    }
 
-   static Hd2 Y(H3_2 var0, com.finalshell.ui.model.I var1, String var2) throws B2_5 {
+   public static Hd2 Y(H3_2 var0, com.finalshell.ui.model.I var1, String var2) throws B2_5 {
       return var0.K(var1, var2);
    }
 
-   static C_L Q(H3_2 var0) {
+   public static C_L Q(H3_2 var0) {
       return var0.t;
    }
 
-   static Hd2 c(H3_2 var0, Nt2_2 var1) throws B2_5 {
+   public static Hd2 c(H3_2 var0, Nt2_2 var1) throws B2_5 {
       return var0.q(var1);
    }
 
-   static boolean W(H3_2 var0, NT var1) throws B2_5 {
+   public static boolean W(H3_2 var0, NT var1) throws B2_5 {
       return var0.U(var1);
    }
 
-   static boolean c(H3_2 var0, RF var1) throws B2_5 {
+   public static boolean c(H3_2 var0, RF var1) throws B2_5 {
       return var0.n(var1);
    }
 
-   static boolean e(H3_2 var0, Ru2_2 var1) throws B2_5 {
+   public static boolean e(H3_2 var0, Ru2_2 var1) throws B2_5 {
       return var0.G(var1);
    }
 
-   static boolean s(H3_2 var0, RN_2 var1) throws B2_5 {
+   public static boolean s(H3_2 var0, RN_2 var1) throws B2_5 {
       return var0.q(var1);
    }
 
-   static boolean G(H3_2 var0, RY_2 var1) throws B2_5 {
+   public static boolean G(H3_2 var0, RY_2 var1) throws B2_5 {
       return var0.q(var1);
    }
 
-   static boolean k(H3_2 var0, RP_2 var1) throws B2_5 {
+   public static boolean k(H3_2 var0, RP_2 var1) throws B2_5 {
       return var0.x(var1);
    }
 
-   static boolean P(H3_2 var0, Rc2_2 var1) throws B2_5 {
+   public static boolean P(H3_2 var0, Rc2_2 var1) throws B2_5 {
       return var0.F(var1);
    }
 
-   static boolean h(H3_2 var0, R4_2 var1) throws B2_5 {
+   public static boolean h(H3_2 var0, R4_2 var1) throws B2_5 {
       return var0.o(var1);
    }
 
-   static boolean n(H3_2 var0, R22_2 var1) throws B2_5 {
+   public static boolean n(H3_2 var0, R22_2 var1) throws B2_5 {
       return var0.F(var1);
    }
 
-   static boolean s(H3_2 var0, Rx2_2 var1) throws B2_5 {
+   public static boolean s(H3_2 var0, Rx2_2 var1) throws B2_5 {
       return var0.Y(var1);
    }
 
-   static boolean v(H3_2 var0, Rv2 var1) throws B2_5 {
+   public static boolean v(H3_2 var0, Rv2 var1) throws B2_5 {
       return var0.g(var1);
    }
 
-   static boolean s(H3_2 var0, Ra2_2 var1) throws B2_5 {
+   public static boolean s(H3_2 var0, Ra2_2 var1) throws B2_5 {
       return var0.R(var1);
    }
 
-   static boolean o(H3_2 var0, R0_2 var1) throws B2_5 {
+   public static boolean o(H3_2 var0, R0_2 var1) throws B2_5 {
       return var0.g(var1);
    }
 
-   static boolean e(H3_2 var0, RX_2 var1) throws B2_5 {
+   public static boolean e(H3_2 var0, RX_2 var1) throws B2_5 {
       return var0.S(var1);
    }
 
-   static boolean F(H3_2 var0, RC_2 var1) throws B2_5 {
+   public static boolean F(H3_2 var0, RC_2 var1) throws B2_5 {
       return var0.z(var1);
    }
 
-   static boolean F(H3_2 var0, RZ var1) throws B2_5 {
+   public static boolean F(H3_2 var0, RZ var1) throws B2_5 {
       return var0.e(var1);
    }
 
-   static boolean n(H3_2 var0, Rl2_2 var1) throws B2_5 {
+   public static boolean n(H3_2 var0, Rl2_2 var1) throws B2_5 {
       return var0.k(var1);
    }
 
-   static boolean p(H3_2 var0, R5_2 var1) throws B2_5 {
+   public static boolean p(H3_2 var0, R5_2 var1) throws B2_5 {
       return var0.s(var1);
    }
 
-   static boolean V(H3_2 var0, Rw2 var1) throws B2_5 {
+   public static boolean V(H3_2 var0, Rw2 var1) throws B2_5 {
       return var0.l(var1);
    }
 
-   static boolean u(H3_2 var0, Ro2_2 var1) {
+   public static boolean u(H3_2 var0, Ro2_2 var1) {
       return var0.m(var1);
    }
 
-   static boolean V(H3_2 var0, RM_2 var1) throws B2_5 {
+   public static boolean V(H3_2 var0, RM_2 var1) throws B2_5 {
       return var0.I(var1);
    }
 
-   static boolean b(H3_2 var0, Nm2_2 var1) throws B2_5 {
+   public static boolean b(H3_2 var0, Nm2_2 var1) throws B2_5 {
       return var0.o(var1);
    }
 
-   static boolean k(H3_2 var0, Ns2_3 var1) throws B2_5 {
+   public static boolean k(H3_2 var0, Ns2_3 var1) throws B2_5 {
       return var0.Z(var1);
    }
 
-   static void e(H3_2 var0, NJ_3 var1, Q4_3 var2) throws B2_5 {
+   public static void e(H3_2 var0, NJ_3 var1, Q4_3 var2) throws B2_5 {
       var0.y(var1, var2);
    }
 
-   static Q4_3 X(H3_2 var0, NV_2 var1) throws B2_5 {
+   public static Q4_3 X(H3_2 var0, NV_2 var1) throws B2_5 {
       return var0.m(var1);
    }
 
-   static void h(H3_2 var0, C_u_2 var1, Q4_3 var2, Q4_3 var3, Object var4) throws B2_5 {
+   public static void h(H3_2 var0, C_u_2 var1, Q4_3 var2, Q4_3 var3, Object var4) throws B2_5 {
       var0.J(var1, var2, var3, var4);
    }
 
-   static boolean w$boolean(H3_2 var0, C_r_2 var1) throws B2_5 {
+   public static boolean w$boolean(H3_2 var0, C_r_2 var1) throws B2_5 {
       return var0.v(var1);
    }
 
-   static Q4_3 v(H3_2 var0, Nt2_2 var1) throws B2_5 {
+   public static Q4_3 v(H3_2 var0, Nt2_2 var1) throws B2_5 {
       return var0.r(var1);
    }
 
-   static S3_3 a(H3_2 var0, boolean var1, Q4_3 var2) {
+   public static S3_3 a(H3_2 var0, boolean var1, Q4_3 var2) {
       return var0.X(var1, var2);
    }
 
-   static void D(H3_2 var0, M3_2 var1, Q4_3 var2) throws B2_5 {
+   public static void D(H3_2 var0, M3_2 var1, Q4_3 var2) throws B2_5 {
       var0.B(var1, var2);
    }
 
-   static void g(H3_2 var0, C_u_2 var1, S3_3 var2) {
+   public static void g(H3_2 var0, C_u_2 var1, S3_3 var2) {
       var0.x(var1, var2);
    }
 
-   static EnumSet t(H3_2 var0) {
+   public static EnumSet t(H3_2 var0) {
       return var0.V;
    }
 
-   static boolean y(H3_2 var0, Rx2_2 var1, List var2, Hk3_2 var3, RN_2 var4) throws B2_5 {
+   public static boolean y(H3_2 var0, Rx2_2 var1, List var2, Hk3_2 var3, RN_2 var4) throws B2_5 {
       return var0.U(var1, var2, var3, var4);
    }
 
-   static Map N(NL_2 var0, Map var1) {
+   public static Map N(NL_2 var0, Map var1) {
       return h(var0, var1);
    }
 
-   static Map O(R8_2 var0, Map var1) {
+   public static Map O(R8_2 var0, Map var1) {
       return N(var0, var1);
    }
 
-   static void O(H3_2 var0, RN_2 var1, Map var2) throws B2_5 {
+   public static void O(H3_2 var0, RN_2 var1, Map var2) throws B2_5 {
       var0.h(var1, var2);
    }
 
-   static void P(H3_2 var0, R0_2 var1, Map var2) throws B2_5 {
+   public static void P(H3_2 var0, R0_2 var1, Map var2) throws B2_5 {
       var0.Y(var1, var2);
    }
 
-   static void t(H3_2 var0, Rc2_2 var1, Map var2) throws B2_5 {
+   public static void t(H3_2 var0, Rc2_2 var1, Map var2) throws B2_5 {
       var0.d(var1, var2);
    }
 
-   static void R(H3_2 var0, R4_2 var1, Map var2) throws B2_5 {
+   public static void R(H3_2 var0, R4_2 var1, Map var2) throws B2_5 {
       var0.M(var1, var2);
    }
 
-   static void p(H3_2 var0, RP_2 var1, Map var2) throws B2_5 {
+   public static void p(H3_2 var0, RP_2 var1, Map var2) throws B2_5 {
       var0.c(var1, var2);
    }
 
-   static void X(H3_2 var0, NT var1, Map var2) throws B2_5 {
+   public static void X(H3_2 var0, NT var1, Map var2) throws B2_5 {
       var0.y(var1, var2);
    }
 
-   static void B(H3_2 var0, Rv2 var1, Map var2) throws B2_5 {
+   public static void B(H3_2 var0, Rv2 var1, Map var2) throws B2_5 {
       var0.R(var1, var2);
    }
 
-   static void W(H3_2 var0, Ra2_2 var1, Map var2) throws B2_5 {
+   public static void W(H3_2 var0, Ra2_2 var1, Map var2) throws B2_5 {
       var0.J(var1, var2);
    }
 
-   static void l(H3_2 var0, Rx2_2 var1, Map var2) throws B2_5 {
+   public static void l(H3_2 var0, Rx2_2 var1, Map var2) throws B2_5 {
       var0.v(var1, var2);
    }
 
-   static void n(H3_2 var0, R22_2 var1, Map var2) throws B2_5 {
+   public static void n(H3_2 var0, R22_2 var1, Map var2) throws B2_5 {
       var0.D(var1, var2);
    }
 
-   static Map g(H3_2 var0, Ru2_2 var1, Map var2) throws B2_5 {
+   public static Map g(H3_2 var0, Ru2_2 var1, Map var2) throws B2_5 {
       return var0.S(var1, var2);
    }
 
-   static Map w(H3_2 var0, RX_2 var1, Map var2) throws B2_5 {
+   public static Map w(H3_2 var0, RX_2 var1, Map var2) throws B2_5 {
       return var0.a(var1, var2);
    }
 
-   static void x(H3_2 var0, NV_2 var1) throws B2_5 {
+   public static void x(H3_2 var0, NV_2 var1) throws B2_5 {
       var0.c(var1);
    }
 
-   static void I(H3_2 var0, Nh2_2 var1) throws B2_5 {
+   public static void I(H3_2 var0, Nh2_2 var1) throws B2_5 {
       var0.i(var1);
    }
 
-   static void X(H3_2 var0, NN_3 var1) throws B2_5 {
+   public static void X(H3_2 var0, NN_3 var1) throws B2_5 {
       var0.z(var1);
    }
 
-   static void n(H3_2 var0, Nu2 var1) throws B2_5 {
+   public static void n(H3_2 var0, Nu2 var1) throws B2_5 {
       var0.g(var1);
    }
 
-   static void M(H3_2 var0, NV_2 var1, FU var2, boolean var3) throws B2_5 {
+   public static void M(H3_2 var0, NV_2 var1, FU var2, boolean var3) throws B2_5 {
       var0.I(var1, var2, var3);
    }
 
-   static void t(H3_2 var0, Nh2_2 var1, FU var2, boolean var3) throws B2_5 {
+   public static void t(H3_2 var0, Nh2_2 var1, FU var2, boolean var3) throws B2_5 {
       var0.b(var1, var2, var3);
    }
 
-   static void Z(H3_2 var0, N7 var1, FU var2, boolean var3) throws B2_5 {
+   public static void Z(H3_2 var0, N7 var1, FU var2, boolean var3) throws B2_5 {
       var0.b(var1, var2, var3);
    }
 
-   static void Q(H3_2 var0, Ne2 var1, FU var2, boolean var3) throws B2_5 {
+   public static void Q(H3_2 var0, Ne2 var1, FU var2, boolean var3) throws B2_5 {
       var0.h(var1, var2, var3);
    }
 
-   static int N$int(H3_2 var0, NQ var1) throws B2_5 {
+   public static int N$int(H3_2 var0, NQ var1) throws B2_5 {
       return var0.B(var1);
    }
 
-   static int C(H3_2 var0, Nf2_2 var1) throws B2_5 {
+   public static int C(H3_2 var0, Nf2_2 var1) throws B2_5 {
       return var0.g(var1);
    }
 
-   static int m(H3_2 var0, N3_2 var1) throws B2_5 {
+   public static int m(H3_2 var0, N3_2 var1) throws B2_5 {
       return var0.D(var1);
    }
 
-   static int I(H3_2 var0, Ni2_2 var1) throws B2_5 {
+   public static int I(H3_2 var0, Ni2_2 var1) throws B2_5 {
       return var0.P(var1);
    }
 
-   static int j(H3_2 var0, NB_2 var1) throws B2_5 {
+   public static int j(H3_2 var0, NB_2 var1) throws B2_5 {
       return var0.R(var1);
    }
 
-   static int O$int(H3_2 var0, NV_2 var1) {
+   public static int O$int(H3_2 var0, NV_2 var1) {
       return var0.D(var1);
    }
 
-   static int D(H3_2 var0, Nh2_2 var1) throws B2_5 {
+   public static int D(H3_2 var0, Nh2_2 var1) throws B2_5 {
       return var0.j(var1);
    }
 
-   static int p(H3_2 var0, Nw2_2 var1) throws B2_5 {
+   public static int p(H3_2 var0, Nw2_2 var1) throws B2_5 {
       return var0.A(var1);
    }
 
-   static Q4_3 n(H3_2 var0, NQ var1) throws B2_5 {
+   public static Q4_3 n(H3_2 var0, NQ var1) throws B2_5 {
       return var0.i(var1);
    }
 
-   static Q4_3 A(H3_2 var0, Nf2_2 var1) throws B2_5 {
+   public static Q4_3 A(H3_2 var0, Nf2_2 var1) throws B2_5 {
       return var0.L(var1);
    }
 
-   static Q4_3 g(H3_2 var0, N3_2 var1) throws B2_5 {
+   public static Q4_3 g(H3_2 var0, N3_2 var1) throws B2_5 {
       return var0.z(var1);
    }
 
-   static Q4_3 j(H3_2 var0, Ni2_2 var1) throws B2_5 {
+   public static Q4_3 j(H3_2 var0, Ni2_2 var1) throws B2_5 {
       return var0.x(var1);
    }
 
-   static Q4_3 i(H3_2 var0, NB_2 var1) throws B2_5 {
+   public static Q4_3 i(H3_2 var0, NB_2 var1) throws B2_5 {
       return var0.d(var1);
    }
 
-   static Q4_3 G(H3_2 var0, Nq2 var1) {
+   public static Q4_3 G(H3_2 var0, Nq2 var1) {
       return var0.W(var1);
    }
 
-   static Q4_3 X(H3_2 var0, Nh2_2 var1) throws B2_5 {
+   public static Q4_3 X(H3_2 var0, Nh2_2 var1) throws B2_5 {
       return var0.c(var1);
    }
 
-   static Hd2 I(H3_2 var0, Nw2_2 var1) {
+   public static Hd2 I(H3_2 var0, Nw2_2 var1) {
       return var0.g(var1);
    }
 
-   static Q4_3 x(H3_2 var0, NN_3 var1) throws B2_5 {
+   public static Q4_3 x(H3_2 var0, NN_3 var1) throws B2_5 {
       return var0.q(var1);
    }
 
-   static Hd2 L(H3_2 var0, N7 var1) throws B2_5 {
+   public static Hd2 L(H3_2 var0, N7 var1) throws B2_5 {
       return var0.t(var1);
    }
 
-   static Q4_3 c(H3_2 var0, Ne2 var1) throws B2_5 {
+   public static Q4_3 c(H3_2 var0, Ne2 var1) throws B2_5 {
       return var0.n(var1);
    }
 
-   static Q4_3 h(H3_2 var0, N0_2 var1) throws B2_5 {
+   public static Q4_3 h(H3_2 var0, N0_2 var1) throws B2_5 {
       return var0.u(var1);
    }
 
-   static Hd2 M(H3_2 var0, Nc2_3 var1) throws B2_5 {
+   public static Hd2 M(H3_2 var0, Nc2_3 var1) throws B2_5 {
       return var0.g(var1);
    }
 
-   static Q4_3 P(H3_2 var0, N22_2 var1) throws B2_5 {
+   public static Q4_3 P(H3_2 var0, N22_2 var1) throws B2_5 {
       return var0.A(var1);
    }
 
-   static Q4_3 H(H3_2 var0, Nu2 var1) throws B2_5 {
+   public static Q4_3 H(H3_2 var0, Nu2 var1) throws B2_5 {
       return var0.I(var1);
    }
 
-   static Hd2 P(H3_2 var0, Nv2_2 var1) throws B2_5 {
+   public static Hd2 P(H3_2 var0, Nv2_2 var1) throws B2_5 {
       return var0.e(var1);
    }
 
-   static Hd2 I(H3_2 var0, No2 var1) throws B2_5 {
+   public static Hd2 I(H3_2 var0, No2 var1) throws B2_5 {
       return var0.n(var1);
    }
 
-   static Hd2 A(H3_2 var0, NY_2 var1) throws B2_5 {
+   public static Hd2 A(H3_2 var0, NY_2 var1) throws B2_5 {
       return var0.f(var1);
    }
 
-   static Hd2 c(H3_2 var0, NP_3 var1) throws B2_5 {
+   public static Hd2 c(H3_2 var0, NP_3 var1) throws B2_5 {
       return var0.P(var1);
    }
 
-   static Hd2 w(H3_2 var0, Nz2_3 var1) throws B2_5 {
+   public static Hd2 w(H3_2 var0, Nz2_3 var1) throws B2_5 {
       return var0.V(var1);
    }
 
-   static Hd2 Q(H3_2 var0, Nj2_2 var1) throws B2_5 {
+   public static Hd2 Q(H3_2 var0, Nj2_2 var1) throws B2_5 {
       return var0.Q(var1);
    }
 
-   static Hd2 z(H3_2 var0, Np2_2 var1) throws B2_5 {
+   public static Hd2 z(H3_2 var0, Np2_2 var1) throws B2_5 {
       return var0.c(var1);
    }
 
-   static Q4_3 y(H3_2 var0, NI_3 var1) throws B2_5 {
+   public static Q4_3 y(H3_2 var0, NI_3 var1) throws B2_5 {
       return var0.S(var1);
    }
 
-   static Q4_3 o(H3_2 var0, NE_2 var1) throws B2_5 {
+   public static Q4_3 o(H3_2 var0, NE_2 var1) throws B2_5 {
       return var0.x(var1);
    }
 
-   static Q4_3 X(H3_2 var0, Nn2_2 var1) throws B2_5 {
+   public static Q4_3 X(H3_2 var0, Nn2_2 var1) throws B2_5 {
       return var0.R(var1);
    }
 
-   static Q4_3 N(H3_2 var0, NO_2 var1) throws B2_5 {
+   public static Q4_3 N(H3_2 var0, NO_2 var1) throws B2_5 {
       return var0.h(var1);
    }
 
-   static Hd2 W(H3_2 var0, NG_2 var1) throws B2_5 {
+   public static Hd2 W(H3_2 var0, NG_2 var1) throws B2_5 {
       return var0.j(var1);
    }
 
-   static Hd2 Y(H3_2 var0, NF_2 var1) throws B2_5 {
+   public static Hd2 Y(H3_2 var0, NF_2 var1) throws B2_5 {
       return var0.B(var1);
    }
 
-   static Hd2 k(H3_2 var0, N1_2 var1) throws B2_5 {
+   public static Hd2 k(H3_2 var0, N1_2 var1) throws B2_5 {
       return var0.T(var1);
    }
 
-   static Hd2 q(H3_2 var0, N4_2 var1) throws B2_5 {
+   public static Hd2 q(H3_2 var0, N4_2 var1) throws B2_5 {
       return var0.D(var1);
    }
 
-   static Hd2 U(H3_2 var0, N8_2 var1) throws B2_5 {
+   public static Hd2 U(H3_2 var0, N8_2 var1) throws B2_5 {
       return var0.j(var1);
    }
 
-   static boolean v(M3_2[] var0) {
+   public static boolean v(M3_2[] var0) {
       return V(var0);
    }
 
-   static boolean H(M3_2 var0) {
+   public static boolean H(M3_2 var0) {
       return v(var0);
    }
 
-   static Object N$Object(H3_2 var0, NQ var1) throws B2_5 {
+   public static Object N$Object(H3_2 var0, NQ var1) throws B2_5 {
       return var0.h(var1);
    }
 
-   static Object u(H3_2 var0, NV_2 var1) {
+   public static Object u(H3_2 var0, NV_2 var1) {
       return var0.L(var1);
    }
 
-   static Object I(H3_2 var0, N3_2 var1) throws B2_5 {
+   public static Object I(H3_2 var0, N3_2 var1) throws B2_5 {
       return var0.j(var1);
    }
 
-   static Object L(H3_2 var0, Nq2 var1) throws B2_5 {
+   public static Object L(H3_2 var0, Nq2 var1) throws B2_5 {
       return var0.X(var1);
    }
 
-   static Object Q(H3_2 var0, Nh2_2 var1) throws B2_5 {
+   public static Object Q(H3_2 var0, Nh2_2 var1) throws B2_5 {
       return var0.I(var1);
    }
 
-   static Object m(H3_2 var0, N7 var1) throws B2_5 {
+   public static Object m(H3_2 var0, N7 var1) throws B2_5 {
       return var0.x(var1);
    }
 
-   static Object B(H3_2 var0, Ne2 var1) throws B2_5 {
+   public static Object B(H3_2 var0, Ne2 var1) throws B2_5 {
       return var0.O(var1);
    }
 
-   static Object L(H3_2 var0, N0_2 var1) throws B2_5 {
+   public static Object L(H3_2 var0, N0_2 var1) throws B2_5 {
       return var0.t(var1);
    }
 
-   static Object J(H3_2 var0, N22_2 var1) throws B2_5 {
+   public static Object J(H3_2 var0, N22_2 var1) throws B2_5 {
       return var0.a(var1);
    }
 
-   static Object w(H3_2 var0, Na2_2 var1) throws B2_5 {
+   public static Object w(H3_2 var0, Na2_2 var1) throws B2_5 {
       return var0.V(var1);
    }
 
-   static Object u(H3_2 var0, NC_2 var1) throws B2_5 {
+   public static Object u(H3_2 var0, NC_2 var1) throws B2_5 {
       return var0.c(var1);
    }
 
-   static boolean u(H3_2 var0, NM_2 var1) {
+   public static boolean u(H3_2 var0, NM_2 var1) {
       return var0.K$boolean(var1);
    }
 
-   static char m(H3_2 var0, NX_2 var1) throws B2_5 {
+   public static char m(H3_2 var0, NX_2 var1) throws B2_5 {
       return var0.q(var1);
    }
 
-   static String t(H3_2 var0, Nx2 var1) throws B2_5 {
+   public static String t(H3_2 var0, Nx2 var1) throws B2_5 {
       return var0.p(var1);
    }
 
-   static Object a(H3_2 var0, NZ var1) {
+   public static Object a(H3_2 var0, NZ var1) {
       return var0.C(var1);
    }
 
-   static Object c(H3_2 var0, Nz2_3 var1) {
+   public static Object c(H3_2 var0, Nz2_3 var1) {
       return var0.w(var1);
    }
 
-   static boolean z(H3_2 var0, NT var1) throws B2_5 {
+   public static boolean z(H3_2 var0, NT var1) throws B2_5 {
       return var0.Z(var1);
    }
 
-   static boolean y(H3_2 var0, RF var1) throws B2_5 {
+   public static boolean y(H3_2 var0, RF var1) throws B2_5 {
       return var0.k(var1);
    }
 
-   static boolean O(H3_2 var0, C_r_2 var1) {
+   public static boolean O(H3_2 var0, C_r_2 var1) {
       return var0.s(var1);
    }
 
-   static boolean l(H3_2 var0, RN_2 var1) throws B2_5 {
+   public static boolean l(H3_2 var0, RN_2 var1) throws B2_5 {
       return var0.e(var1);
    }
 
-   static boolean H(H3_2 var0, Rw2 var1) {
+   public static boolean H(H3_2 var0, Rw2 var1) {
       return var0.S(var1);
    }
 
-   static boolean t(H3_2 var0, Ro2_2 var1) {
+   public static boolean t(H3_2 var0, Ro2_2 var1) {
       return var0.n(var1);
    }
 
-   static boolean b(H3_2 var0, RM_2 var1) {
+   public static boolean b(H3_2 var0, RM_2 var1) {
       return var0.J(var1);
    }
 
-   static void w$void(H3_2 var0, C_r_2 var1) {
+   public static void w$void(H3_2 var0, C_r_2 var1) {
       var0.l(var1);
    }
 
-   static void Q(H3_2 var0, Rx2_2 var1) throws B2_5 {
+   public static void Q(H3_2 var0, Rx2_2 var1) throws B2_5 {
       var0.g(var1);
    }
 
-   static void h(H3_2 var0, Ra2_2 var1) {
+   public static void h(H3_2 var0, Ra2_2 var1) {
       var0.O(var1);
    }
 
-   static void L(H3_2 var0, NQ var1) throws B2_5 {
+   public static void L(H3_2 var0, NQ var1) throws B2_5 {
       var0.P(var1);
    }
 
-   static void E(H3_2 var0, Nf2_2 var1) throws B2_5 {
+   public static void E(H3_2 var0, Nf2_2 var1) throws B2_5 {
       var0.W(var1);
    }
 
-   static void S(H3_2 var0, N3_2 var1) throws B2_5 {
+   public static void S(H3_2 var0, N3_2 var1) throws B2_5 {
       var0.x(var1);
    }
 
-   static void c(H3_2 var0, Ni2_2 var1) throws B2_5 {
+   public static void c(H3_2 var0, Ni2_2 var1) throws B2_5 {
       var0.b(var1);
    }
 
-   static void A(H3_2 var0, NB_2 var1) throws B2_5 {
+   public static void A(H3_2 var0, NB_2 var1) throws B2_5 {
       var0.w(var1);
    }
 
-   static void Q(H3_2 var0, Nq2 var1) {
+   public static void Q(H3_2 var0, Nq2 var1) {
       var0.u(var1);
    }
 
-   static void w(H3_2 var0, Nh2_2 var1) throws B2_5 {
+   public static void w(H3_2 var0, Nh2_2 var1) throws B2_5 {
       var0.O(var1);
    }
 
-   static Hd2 i(H3_2 var0, Ny2_2 var1) throws B2_5 {
+   public static Hd2 i(H3_2 var0, Ny2_2 var1) throws B2_5 {
       return var0.c(var1);
    }
 
-   static Q4_3 O$q_4(H3_2 var0, NV_2 var1) throws B2_5 {
+   public static Q4_3 O$q_4(H3_2 var0, NV_2 var1) throws B2_5 {
       return var0.j(var1);
    }
 
-   static Hd2 P(H3_2 var0, NL_2 var1) throws B2_5 {
+   public static Hd2 P(H3_2 var0, NL_2 var1) throws B2_5 {
       return var0.o(var1);
    }
 
-   static Hd2 U(H3_2 var0, Nr2_2 var1) throws B2_5 {
+   public static Hd2 U(H3_2 var0, Nr2_2 var1) throws B2_5 {
       return var0.c(var1);
    }
 
-   static Hd2 q(H3_2 var0, NK_2 var1) {
+   public static Hd2 q(H3_2 var0, NK_2 var1) {
       return var0.r(var1);
    }
 
-   static Q4_3 A(H3_2 var0, NA_3 var1) throws B2_5 {
+   public static Q4_3 A(H3_2 var0, NA_3 var1) throws B2_5 {
       return var0.X(var1);
    }
 
-   static Hd2 u(H3_2 var0, Ng2 var1) throws B2_5 {
+   public static Hd2 u(H3_2 var0, Ng2 var1) throws B2_5 {
       return var0.r(var1);
    }
 
-   static Q4_3 A(H3_2 var0, NH_2 var1) {
+   public static Q4_3 A(H3_2 var0, NH_2 var1) {
       return var0.g(var1);
    }
 
-   static Q4_3 E(H3_2 var0, NR_2 var1) throws B2_5 {
+   public static Q4_3 E(H3_2 var0, NR_2 var1) throws B2_5 {
       return var0.H(var1);
    }
 
-   static Hd2 Y(H3_2 var0, Nw2_2 var1) {
+   public static Hd2 Y(H3_2 var0, Nw2_2 var1) {
       return var0.J(var1);
    }
 
-   static Q4_3 g(H3_2 var0, NN_3 var1) throws B2_5 {
+   public static Q4_3 g(H3_2 var0, NN_3 var1) throws B2_5 {
       return var0.H(var1);
    }
 
-   static Hd2 k(H3_2 var0, N7 var1) throws B2_5 {
+   public static Hd2 k(H3_2 var0, N7 var1) throws B2_5 {
       return var0.c(var1);
    }
 
-   static Q4_3 z(H3_2 var0, Ne2 var1) throws B2_5 {
+   public static Q4_3 z(H3_2 var0, Ne2 var1) throws B2_5 {
       return var0.i(var1);
    }
 
-   static Q4_3 y(H3_2 var0, N0_2 var1) throws B2_5 {
+   public static Q4_3 y(H3_2 var0, N0_2 var1) throws B2_5 {
       return var0.j(var1);
    }
 
-   static Hd2 O(H3_2 var0, Nc2_3 var1) {
+   public static Hd2 O(H3_2 var0, Nc2_3 var1) {
       return var0.L(var1);
    }
 
-   static Q4_3 t(H3_2 var0, N22_2 var1) throws B2_5 {
+   public static Q4_3 t(H3_2 var0, N22_2 var1) throws B2_5 {
       return var0.n(var1);
    }
 
-   static Q4_3 U(H3_2 var0, Nu2 var1) throws B2_5 {
+   public static Q4_3 U(H3_2 var0, Nu2 var1) throws B2_5 {
       return var0.M(var1);
    }
 
-   static Hd2 b(H3_2 var0, Nv2_2 var1) {
+   public static Hd2 b(H3_2 var0, Nv2_2 var1) {
       return var0.t(var1);
    }
 
-   static Hd2 s(H3_2 var0, No2 var1) throws B2_5 {
+   public static Hd2 s(H3_2 var0, No2 var1) throws B2_5 {
       return var0.a(var1);
    }
 
-   static Hd2 E(H3_2 var0, NY_2 var1) throws B2_5 {
+   public static Hd2 E(H3_2 var0, NY_2 var1) throws B2_5 {
       return var0.i(var1);
    }
 
-   static Hd2 d(H3_2 var0, Na2_2 var1) {
+   public static Hd2 d(H3_2 var0, Na2_2 var1) {
       return var0.I(var1);
    }
 
-   static Hd2 D(H3_2 var0, NC_2 var1) {
+   public static Hd2 D(H3_2 var0, NC_2 var1) {
       return var0.U(var1);
    }
 
-   static Hd2 p(H3_2 var0, NM_2 var1) {
+   public static Hd2 p(H3_2 var0, NM_2 var1) {
       return var0.K$hd_2(var1);
    }
 
-   static Hd2 D(H3_2 var0, NX_2 var1) {
+   public static Hd2 D(H3_2 var0, NX_2 var1) {
       return var0.N(var1);
    }
 
-   static Hd2 n(H3_2 var0, Nx2 var1) {
+   public static Hd2 n(H3_2 var0, Nx2 var1) {
       return var0.V(var1);
    }
 
-   static Hd2 i(H3_2 var0, NZ var1) {
+   public static Hd2 i(H3_2 var0, NZ var1) {
       return var0.D(var1);
    }
 
-   static Hd2 f(H3_2 var0, Nz2_3 var1) {
+   public static Hd2 f(H3_2 var0, Nz2_3 var1) {
       return var0.T(var1);
    }
 
-   static Hd2 P(H3_2 var0, Nj2_2 var1) {
+   public static Hd2 P(H3_2 var0, Nj2_2 var1) {
       return var0.m(var1);
    }
 
-   static Hd2 p(H3_2 var0, Np2_2 var1) throws B2_5 {
+   public static Hd2 p(H3_2 var0, Np2_2 var1) throws B2_5 {
       return var0.U(var1);
    }
 
-   static Q4_3 V(H3_2 var0, NI_3 var1) throws B2_5 {
+   public static Q4_3 V(H3_2 var0, NI_3 var1) throws B2_5 {
       return var0.i(var1);
    }
 
-   static Q4_3 u(H3_2 var0, NE_2 var1) throws B2_5 {
+   public static Q4_3 u(H3_2 var0, NE_2 var1) throws B2_5 {
       return var0.p(var1);
    }
 
-   static Q4_3 h(H3_2 var0, Nn2_2 var1) throws B2_5 {
+   public static Q4_3 h(H3_2 var0, Nn2_2 var1) throws B2_5 {
       return var0.D(var1);
    }
 
-   static Q4_3 q(H3_2 var0, NO_2 var1) throws B2_5 {
+   public static Q4_3 q(H3_2 var0, NO_2 var1) throws B2_5 {
       return var0.X$q_4(var1);
    }
 
-   static Hd2 X(H3_2 var0, NG_2 var1) throws B2_5 {
+   public static Hd2 X(H3_2 var0, NG_2 var1) throws B2_5 {
       return var0.G(var1);
    }
 
-   static Hd2 D(H3_2 var0, NF_2 var1) throws B2_5 {
+   public static Hd2 D(H3_2 var0, NF_2 var1) throws B2_5 {
       return var0.y(var1);
    }
 
-   static Hd2 L(H3_2 var0, N1_2 var1) throws B2_5 {
+   public static Hd2 L(H3_2 var0, N1_2 var1) throws B2_5 {
       return var0.Q(var1);
    }
 
-   static Hd2 W(H3_2 var0, N4_2 var1) throws B2_5 {
+   public static Hd2 W(H3_2 var0, N4_2 var1) throws B2_5 {
       return var0.x(var1);
    }
 
-   static Hd2 f(H3_2 var0, N8_2 var1) throws B2_5 {
+   public static Hd2 f(H3_2 var0, N8_2 var1) throws B2_5 {
       return var0.S(var1);
    }
 
-   static Q4_3 A(H3_2 var0, NQ var1) throws B2_5 {
+   public static Q4_3 A(H3_2 var0, NQ var1) throws B2_5 {
       return var0.n(var1);
    }
 
-   static Q4_3 J(H3_2 var0, Nf2_2 var1) throws B2_5 {
+   public static Q4_3 J(H3_2 var0, Nf2_2 var1) throws B2_5 {
       return var0.Q(var1);
    }
 
-   static Q4_3 U(H3_2 var0, N3_2 var1) throws B2_5 {
+   public static Q4_3 U(H3_2 var0, N3_2 var1) throws B2_5 {
       return var0.M(var1);
    }
 
-   static Q4_3 O(H3_2 var0, Ni2_2 var1) throws B2_5 {
+   public static Q4_3 O(H3_2 var0, Ni2_2 var1) throws B2_5 {
       return var0.E(var1);
    }
 
-   static Q4_3 p(H3_2 var0, NB_2 var1) throws B2_5 {
+   public static Q4_3 p(H3_2 var0, NB_2 var1) throws B2_5 {
       return var0.m(var1);
    }
 
-   static Q4_3 i(H3_2 var0, Nq2 var1) {
+   public static Q4_3 i(H3_2 var0, Nq2 var1) {
       return var0.O(var1);
    }
 
-   static Q4_3 E(H3_2 var0, Nh2_2 var1) throws B2_5 {
+   public static Q4_3 E(H3_2 var0, Nh2_2 var1) throws B2_5 {
       return var0.b(var1);
    }
 
-   static boolean b(H3_2 var0, N_ var1) {
+   public static boolean b(H3_2 var0, N_ var1) {
       return var0.Z$boolean(var1);
    }
 
-   static boolean p(H3_2 var0, NQ var1) throws B2_5 {
+   public static boolean p(H3_2 var0, NQ var1) throws B2_5 {
       return var0.a(var1);
    }
 
-   static H4_2[] R(H3_2 var0, HV_2[] var1) throws B2_5 {
+   public static H4_2[] R(H3_2 var0, HV_2[] var1) throws B2_5 {
       return var0.N(var1);
    }
 
-   static Object f(H3_2 var0, C_u_2 var1, Object var2, Q4_3 var3) throws B2_5 {
+   public static Object f(H3_2 var0, C_u_2 var1, Object var2, Q4_3 var3) throws B2_5 {
       return var0.m(var1, var2, var3);
    }
 
-   static H4_2 u(H3_2 var0, HV_2 var1) throws B2_5 {
+   public static H4_2 u(H3_2 var0, HV_2 var1) throws B2_5 {
       return var0.F(var1);
    }
 
-   static Hd2 e(H3_2 var0, K_2_2 var1) {
+   public static Hd2 e(H3_2 var0, K_2_2 var1) {
       return var0.V$hd_2(var1);
    }
 
-   static U3_3[] N(H3_2 var0, RF var1) {
+   public static U3_3[] N(H3_2 var0, RF var1) {
       return var0.R(var1);
    }
 
-   static U3_3 E(H3_2 var0, K_2_2 var1, HV_2[] var2, com.finalshell.ui.model.S_3 var3, boolean var4, boolean var5, Nt2_2 var6, int var7, String var8, M3_2 var9) {
+   public static U3_3 E(
+      H3_2 var0, K_2_2 var1, HV_2[] var2, com.finalshell.ui.model.S_3 var3, boolean var4, boolean var5, Nt2_2 var6, int var7, String var8, M3_2 var9
+   ) {
       return var0.T(var1, var2, var3, var4, var5, var6, var7, var8, var9);
    }
 
-   static boolean u(Q4_3 var0) {
+   public static boolean u(Q4_3 var0) {
       return m(var0);
    }
 
-   static Hd2 T(Q4_3 var0) {
+   public static Hd2 T(Q4_3 var0) {
       return k(var0);
    }
 
-   static Pattern F() {
+   public static Pattern F() {
       return F;
    }
 
-   static Q4_3 a(H3_2 var0, N6_2 var1) throws B2_5 {
+   public static Q4_3 a(H3_2 var0, N6_2 var1) throws B2_5 {
       return var0.r(var1);
    }
 

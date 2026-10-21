@@ -8,8 +8,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class B3 extends PrintStream {
-   HashSet K = new HashSet();
-   StringBuffer k = new StringBuffer();
+   public HashSet K = new HashSet();
+   public StringBuffer k = new StringBuffer();
    public static long a;
 
    public B3(OutputStream var1) {

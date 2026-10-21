@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lf4 implements ActionListener {
-   final SetExternalEditorPanel Z;
+   public final SetExternalEditorPanel Z;
 
-   Lf4(SetExternalEditorPanel var1) {
+   public Lf4(SetExternalEditorPanel var1) {
       this.Z = var1;
    }
 

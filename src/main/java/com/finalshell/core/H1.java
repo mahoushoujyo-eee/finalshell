@@ -128,7 +128,7 @@ public class H1 extends Fq2{
       return var3;
    }
 
-   H1(BufferedReader var1) throws IOException {
+   public H1(BufferedReader var1) throws IOException {
       this.J(var1);
    }
 
@@ -290,23 +290,23 @@ public class H1 extends Fq2{
       return new RI(this, var1);
    }
 
-   static Hashtable v() {
+   public static Hashtable v() {
       return J;
    }
 
-   static Hashtable H(H1 var0) {
+   public static Hashtable H(H1 var0) {
       return var0.m;
    }
 
-   static Vector T(H1 var0) {
+   public static Vector T(H1 var0) {
       return var0.g;
    }
 
-   static Hashtable l() {
+   public static Hashtable l() {
       return J;
    }
 
-   static Set e() {
+   public static Set e() {
       return B;
    }
 

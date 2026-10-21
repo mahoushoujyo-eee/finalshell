@@ -7,16 +7,16 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class Km2 implements ListSelectionListener {
-   final Yc2_2 O;
+   public final Yc2_2 O;
 
-   Km2(Yc2_2 var1) {
+   public Km2(Yc2_2 var1) {
       this.O = var1;
    }
 
    @Override
    public void valueChanged(ListSelectionEvent var1) {
       String[] var2 = CI.c();
-      int var10000 = this.O.V;
+      int var10000 = (this.O.V) ? 1 : 0;
       if (var2 == null) {
          if (!this.O.V) {
             return;

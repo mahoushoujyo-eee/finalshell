@@ -7,7 +7,7 @@ public abstract class H2 implements Wr4 {
    public static long[] a;
    public static Integer[] b;
 
-   final char y(NL3 var1, Object var2, char var3) {
+   public final char y(NL3 var1, Object var2, char var3) {
       NL3 var4 = (NL3)d.get();
       d.set(var1);
       H.set(var3);
@@ -16,7 +16,7 @@ public abstract class H2 implements Wr4 {
       return (Character)H.get();
    }
 
-   protected final void P(String var1, Object var2) {
+   public final void P(String var1, Object var2) {
       String var10000 = Nv4.o();
       NL3 var4 = (NL3)d.get();
       String var3 = var10000;

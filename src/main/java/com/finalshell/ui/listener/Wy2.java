@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wy2 implements ActionListener {
-   final SendSyncMailPanel m;
+   public final SendSyncMailPanel m;
 
-   Wy2(SendSyncMailPanel var1) {
+   public Wy2(SendSyncMailPanel var1) {
       this.m = var1;
    }
 

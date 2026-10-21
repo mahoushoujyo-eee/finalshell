@@ -9,11 +9,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class Tm4 implements AWTEventListener {
-   final Fx4 j;
+   public final Fx4 j;
    public static long[] a;
    public static Integer[] b;
 
-   Tm4(Fx4 var1) {
+   public Tm4(Fx4 var1) {
       this.j = var1;
    }
 

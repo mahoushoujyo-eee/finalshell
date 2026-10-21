@@ -6,8 +6,8 @@ import com.finalshell.ui.model.O0;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kj2 {
-   boolean q;
-   int C;
+   public boolean q;
+   public int C;
    public static String[] a;
    public static String[] b;
    public static long c;

@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class Listener implements ActionListener {
-   final AppendCarriageReturnCRPanel i;
+   public final AppendCarriageReturnCRPanel i;
    public static String[] a;
    public static String[] b;
 
-   Listener(AppendCarriageReturnCRPanel var1) {
+   public Listener(AppendCarriageReturnCRPanel var1) {
       this.i = var1;
    }
 
@@ -54,7 +54,7 @@ public class Listener implements ActionListener {
 
       Listener var32 = var10005.equals("0");
       if (var3 == null) {
-         if (var32 != false) {
+         if (var32 == null) {
             Object var16 = 251303419232849499L;
             JOptionPane.showMessageDialog((AppendCarriageReturnCRPanel)Ref.g(251303419232849499L, var16), a(-11829, -4809));
             return;
@@ -66,7 +66,7 @@ public class Listener implements ActionListener {
       }
 
       Listener var5 = var32;
-      if (var5 == false) {
+      if (var5 == null) {
          Object var20 = 251303419232849499L;
          Ref.g(251303419232849499L, var20);
          Object[] var10007 = Registry.packArgs(var3);

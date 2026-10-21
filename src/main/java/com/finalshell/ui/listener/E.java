@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class E implements ActionListener {
-   final com.finalshell.ui.panel.T N;
+   public final com.finalshell.ui.panel.T N;
 
-   E(com.finalshell.ui.panel.T var1) {
+   public E(com.finalshell.ui.panel.T var1) {
       this.N = var1;
    }
 

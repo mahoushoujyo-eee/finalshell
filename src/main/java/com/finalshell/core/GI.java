@@ -4,9 +4,6 @@ public class GI implements WE3 {
    public static String[] a;
    public static String[] b;
 
-   GI() {
-   }
-
    @Override
    public Object N(Object param1) {
       // $VF: Couldn't be decompiled

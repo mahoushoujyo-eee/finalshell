@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class K22 implements PropertyChangeListener {
-   final Xm2 x;
+   public final Xm2 x;
 
-   K22(Xm2 var1) {
+   public K22(Xm2 var1) {
       this.x = var1;
    }
 

@@ -6,12 +6,12 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Ng4 extends ComponentAdapter {
-   final Component y;
-   final E_2 P;
-   final Rt2 q;
-   final com.finalshell.ui.dialog.Ds2 L;
+   public final Component y;
+   public final E_2 P;
+   public final Rt2 q;
+   public final com.finalshell.ui.dialog.Ds2 L;
 
-   Ng4(com.finalshell.ui.dialog.Ds2 var1, Component var2, E_2 var3, Rt2 var4) {
+   public Ng4(com.finalshell.ui.dialog.Ds2 var1, Component var2, E_2 var3, Rt2 var4) {
       this.L = var1;
       this.y = var2;
       this.P = var3;

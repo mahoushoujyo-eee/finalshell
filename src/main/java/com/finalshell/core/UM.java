@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class UM extends UW {
-   final com.finalshell.ui.panel.KV3 d;
+   public final com.finalshell.ui.panel.KV3 d;
 
-   UM(com.finalshell.ui.panel.KV3 var1) {
+   public UM(com.finalshell.ui.panel.KV3 var1) {
       this.d = var1;
    }
 

@@ -35,7 +35,7 @@ public class Ui2 extends UE {
    }
 
    @Override
-   protected void firePropertyChange(String var1, Object var2, Object var3) {
+   public void firePropertyChange(String var1, Object var2, Object var3) {
       Ui2 var5;
       String var6;
       label44: {

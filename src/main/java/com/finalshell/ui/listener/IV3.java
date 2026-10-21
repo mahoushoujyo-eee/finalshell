@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class IV3 implements ActionListener {
-   final KD3 p;
+   public final KD3 p;
 
-   IV3(KD3 var1) {
+   public IV3(KD3 var1) {
       this.p = var1;
    }
 

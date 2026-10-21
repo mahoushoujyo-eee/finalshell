@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class UX3 implements Runnable {
-   final YT3_2 e;
+   public final YT3_2 e;
 
-   UX3(YT3_2 var1) {
+   public UX3(YT3_2 var1) {
       this.e = var1;
    }
 

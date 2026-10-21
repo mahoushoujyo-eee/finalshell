@@ -5,9 +5,9 @@ import com.finalshell.core.Bz4;
 import java.io.IOException;
 
 public class UO3 implements Runnable {
-   final byte[] u;
+   public final byte[] u;
 
-   UO3(byte[] var1) {
+   public UO3(byte[] var1) {
       this.u = var1;
    }
 

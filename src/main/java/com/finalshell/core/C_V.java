@@ -15,7 +15,7 @@ public class C_V extends C_L {
 
    @C_9
    @Override
-   protected Hd2 x(String param1) throws ClassNotFoundException {
+   public Hd2 x(String param1) throws ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

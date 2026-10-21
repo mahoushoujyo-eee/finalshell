@@ -3,24 +3,21 @@ package com.finalshell.core;
 import com.finalshell.ui.model.D92;
 
 public final class Ro2 {
-   static D92 W;
-   static D92 C;
-   static D92 k;
-   static D92 I;
+   public static D92 W;
+   public static D92 C;
+   public static D92 k;
+   public static D92 I;
    public static String a;
 
-   Ro2() {
-   }
-
-   static String Y() {
+   public static String Y() {
       return a;
    }
 
-   static long w(long var0, long var2, long var4) {
+   public static long w(long var0, long var2, long var4) {
       return DG3.h(var0, var2, var4);
    }
 
-   static long b(long var0, long var2, long var4) {
+   public static long b(long var0, long var2, long var4) {
       return Ue2.j(var0, var2, var4);
    }
 

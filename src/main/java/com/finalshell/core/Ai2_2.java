@@ -144,31 +144,31 @@ public class Ai2_2 implements Icon {
       this.F = var1;
    }
 
-   static boolean r(Ai2_2 var0) {
+   public static boolean r(Ai2_2 var0) {
       return var0.E;
    }
 
-   static int E(Ai2_2 var0) {
+   public static int E(Ai2_2 var0) {
       return var0.V;
    }
 
-   static Map q(Ai2_2 var0) {
+   public static Map q(Ai2_2 var0) {
       return var0.k;
    }
 
-   static int C(Ai2_2 var0) {
+   public static int C(Ai2_2 var0) {
       return var0.K;
    }
 
-   static int g(Ai2_2 var0, int var1) {
+   public static int g(Ai2_2 var0, int var1) {
       return var0.V = var1;
    }
 
-   static int z(Ai2_2 var0) {
+   public static int z(Ai2_2 var0) {
       return var0.V++;
    }
 
-   static CJ3 I(Ai2_2 var0) {
+   public static CJ3 I(Ai2_2 var0) {
       return var0.F;
    }
 }

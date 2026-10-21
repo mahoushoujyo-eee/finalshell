@@ -4,9 +4,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class X22 implements ChangeListener {
-   final com.finalshell.core.U_2 g;
+   public final com.finalshell.core.U_2 g;
 
-   X22(com.finalshell.core.U_2 var1) {
+   public X22(com.finalshell.core.U_2 var1) {
       this.g = var1;
    }
 

@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class Hm4 extends HG3 {
-   protected static float[] Q;
+   public static float[] Q;
    public static String b;
 
    public Hm4() {

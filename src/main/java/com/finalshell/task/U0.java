@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.TF;
 import java.lang.reflect.InvocationTargetException;
 
 public class U0 implements Runnable {
-   final TF L;
+   public final TF L;
 
-   U0(TF var1) {
+   public U0(TF var1) {
       this.L = var1;
    }
 

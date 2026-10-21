@@ -8,10 +8,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MA implements ActionListener {
-   final Qe2_2 c;
-   final ShowDeletedPanel L;
+   public final Qe2_2 c;
+   public final ShowDeletedPanel L;
 
-   MA(ShowDeletedPanel var1, Qe2_2 var2) {
+   public MA(ShowDeletedPanel var1, Qe2_2 var2) {
       this.L = var1;
       this.c = var2;
    }

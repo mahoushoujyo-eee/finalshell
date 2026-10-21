@@ -10,10 +10,10 @@ import java.net.Socket;
 import java.util.HashMap;
 
 public class Kt4 implements Runnable {
-   final Socket F;
-   final Wh2 f;
+   public final Socket F;
+   public final Wh2 f;
 
-   Kt4(Wh2 var1, Socket var2) {
+   public Kt4(Wh2 var1, Socket var2) {
       this.f = var1;
       this.F = var2;
    }
@@ -34,7 +34,7 @@ public class Kt4 implements Runnable {
          String var10007 = (String)Registry.lookupField(311768198477767120L).get(null);
          Object var10008 = Registry.lookupField(469230216286842026L).getInt(null);
          Object var14 = 611732392331370513L;
-new Kt4((String)var10008, (int)var2, (String)Ref.g(611732392331370513L, var14), Registry.lookupField(624294956745947517L).getInt(var2), null, Registry.lookupField(258191693237450664L).getInt(null));
+var10007 = new Kt4((String)var10008, (int)var2, (String)Ref.g(611732392331370513L, var14), Registry.lookupField(624294956745947517L).getInt(var2), null, Registry.lookupField(258191693237450664L).getInt(null));
 
 
 

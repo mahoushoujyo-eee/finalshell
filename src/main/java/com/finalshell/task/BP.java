@@ -11,7 +11,7 @@ public class BP implements Runnable {
    public final CyclicBarrier e;
    public String q;
    public String v;
-   final U2_4 f;
+   public final U2_4 f;
 
    public BP(U2_4 var1, PcapHandle var2, PacketListener var3, CyclicBarrier var4) {
       this.f = var1;

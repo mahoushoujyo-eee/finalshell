@@ -9,7 +9,7 @@ public class Q2_2 extends N2_3 {
    public static String b;
    public static long c;
 
-   Q2_2(short var1) {
+   public Q2_2(short var1) {
       this.Z = var1;
    }
 
@@ -49,7 +49,7 @@ public class Q2_2 extends N2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == this.Z ? 1 : 0);
+         return (boolean)((var10000 == this.Z ? 1 : 0) != 0);
       }
    }
 

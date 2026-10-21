@@ -7,8 +7,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class Tj2 extends TN {
-   boolean e;
-   long c;
+   public boolean e;
+   public long c;
 
    public Tj2(boolean var1, long var2) {
       this.n = Dq2.Z;

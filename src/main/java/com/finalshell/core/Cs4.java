@@ -6,68 +6,65 @@ import java.io.OutputStream;
 import java.net.SocketException;
 
 public class Cs4 {
-   InputStream I;
-   OutputStream X;
-   OutputStream K;
+   public InputStream I;
+   public OutputStream X;
+   public OutputStream K;
    public boolean G = false;
    public boolean O = false;
    public boolean J = false;
    public static String a;
 
-   Cs4() {
-   }
-
-   void H(OutputStream var1) {
+   public void H(OutputStream var1) {
       this.X = var1;
    }
 
-   void U(OutputStream var1, boolean var2) {
+   public void U(OutputStream var1, boolean var2) {
       this.O = var2;
       this.H(var1);
    }
 
-   void p(OutputStream var1) {
+   public void p(OutputStream var1) {
       this.K = var1;
    }
 
-   void m(OutputStream var1, boolean var2) {
+   public void m(OutputStream var1, boolean var2) {
       this.J = var2;
       this.p(var1);
    }
 
-   void U(InputStream var1) {
+   public void U(InputStream var1) {
       this.I = var1;
    }
 
-   void r(InputStream var1, boolean var2) {
+   public void r(InputStream var1, boolean var2) {
       this.G = var2;
       this.U(var1);
    }
 
-   void d(YU var1) throws IOException, SocketException {
+   public void d(YU var1) throws IOException, SocketException {
       this.X.write(var1.P.g, 0, var1.P.X);
       this.X.flush();
    }
 
-   void z(byte[] var1, int var2, int var3) throws IOException {
+   public void z(byte[] var1, int var2, int var3) throws IOException {
       this.X.write(var1, var2, var3);
       this.X.flush();
    }
 
-   void m(byte[] var1, int var2, int var3) throws IOException {
+   public void m(byte[] var1, int var2, int var3) throws IOException {
       this.K.write(var1, var2, var3);
       this.K.flush();
    }
 
-   int z() throws IOException {
+   public int z() throws IOException {
       return this.I.read();
    }
 
-   void u(byte[] var1) throws IOException {
+   public void u(byte[] var1) throws IOException {
       this.q(var1, 0, var1.length);
    }
 
-   void q(byte[] var1, int var2, int var3) throws IOException {
+   public void q(byte[] var1, int var2, int var3) throws IOException {
       do {
          int var4 = this.I.read(var1, var2, var3);
          if (var4 < 0) {
@@ -79,7 +76,7 @@ public class Cs4 {
       } while (var3 > 0);
    }
 
-   void l() {
+   public void l() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -123,7 +120,7 @@ public class Cs4 {
       // 46: return
    }
 
-   void Z() {
+   public void Z() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

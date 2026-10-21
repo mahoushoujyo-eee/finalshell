@@ -7,9 +7,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class NG extends MouseAdapter {
-   final ImportPanel I;
+   public final ImportPanel I;
 
-   NG(ImportPanel var1) {
+   public NG(ImportPanel var1) {
       this.I = var1;
    }
 

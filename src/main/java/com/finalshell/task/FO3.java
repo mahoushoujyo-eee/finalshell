@@ -4,9 +4,6 @@ public class FO3 implements Runnable {
    public static long[] a;
    public static Integer[] b;
 
-   FO3() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

@@ -10,10 +10,10 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class KT3 implements AWTEventListener {
-   final ClearListDialog F;
+   public final ClearListDialog F;
    public static long a;
 
-   KT3(ClearListDialog var1) {
+   public KT3(ClearListDialog var1) {
       this.F = var1;
    }
 

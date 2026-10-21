@@ -13,7 +13,7 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 
 public class Lg4 {
-   static int p;
+   public static int p;
    public static int h;
    public static String[] a;
    public static String[] b;
@@ -175,7 +175,7 @@ public class Lg4 {
       }
    }
 
-   static byte[] K(int var0) {
+   public static byte[] K(int var0) {
       byte[] var2 = new byte[var0];
       int var10000 = h();
       int var3 = 0;
@@ -204,12 +204,12 @@ public class Lg4 {
       return var4;
    }
 
-   void Z(byte[] var1, long var2) {
+   public void Z(byte[] var1, long var2) {
       Random var4 = new Random();
       var4.nextLong();
    }
 
-   void u() {
+   public void u() {
    }
 
    public static byte[] e(byte[] var0) throws Exception {

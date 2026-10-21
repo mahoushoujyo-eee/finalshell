@@ -21,13 +21,13 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class ImportPanel extends JPanel implements Fb2 {
-   VX w;
-   NA_2 j;
+   public VX w;
+   public NA_2 j;
    public static String[] E;
    public static String[] b;
    public static String[] c;
 
-   ImportPanel() {
+   public ImportPanel() {
       this.setLayout(new MigLayout(a(-15185, 29003)));
       String var1 = a(-15192, 22881);
       JPanel var2 = new JPanel();
@@ -182,7 +182,7 @@ public class ImportPanel extends JPanel implements Fb2 {
       }
    }
 
-   void g() {
+   public void g() {
       ImportPrivateKeyDialog var1 = new ImportPrivateKeyDialog(SwingUtilities.windowForComponent(this), false);
       var1.setLocationRelativeTo(this);
       var1.setVisible(true);

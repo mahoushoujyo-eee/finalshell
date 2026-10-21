@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class R62 extends Rp4 {
-   protected List l;
+   public List l;
 
    public R62(File[] var1) {
       this.l = AL_2.e(var1);
@@ -61,7 +61,7 @@ public class R62 extends Rp4 {
       }
    }
 
-   protected List F() {
+   public List F() {
       ArrayList var2 = new ArrayList(this.l.size());
       String[] var10000 = CB3.C$arrString();
       Iterator var3 = this.l.iterator();

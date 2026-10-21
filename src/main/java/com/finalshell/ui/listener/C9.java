@@ -9,11 +9,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class C9 implements ActionListener {
-   final U62 q;
-   final int m;
-   final CompleteFullPathPanel t;
+   public final U62 q;
+   public final int m;
+   public final CompleteFullPathPanel t;
 
-   C9(CompleteFullPathPanel var1, U62 var2, int var3) {
+   public C9(CompleteFullPathPanel var1, U62 var2, int var3) {
       this.t = var1;
       this.q = var2;
       this.m = var3;

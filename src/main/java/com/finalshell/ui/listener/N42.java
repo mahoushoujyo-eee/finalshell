@@ -6,10 +6,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class N42 extends MouseAdapter {
-   final HT C;
-   final com.finalshell.core.O5 E;
+   public final HT C;
+   public final com.finalshell.core.O5 E;
 
-   N42(HT var1, com.finalshell.core.O5 var2) {
+   public N42(HT var1, com.finalshell.core.O5 var2) {
       this.C = var1;
       this.E = var2;
    }

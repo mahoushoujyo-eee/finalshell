@@ -23,19 +23,19 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class AW extends JDialog {
-   JPasswordField l;
-   JTextField d;
+   public JPasswordField l;
+   public JTextField d;
    public static String G;
-   JLabel Z;
-   DU p;
-   JTextField y;
-   JTextField k;
+   public JLabel Z;
+   public DU p;
+   public JTextField y;
+   public JTextField k;
    public static String[] a;
    public static String[] b;
 
    public AW(DU var1) {
+   super((Dialog)var1);
       short var10000 = -28412;
-      super((Dialog)var1);
       short var10001 = 31671;
       Object[] var10002 = Registry.packArgs(this.getRootPane());
       long var30 = 560784054776466487L;
@@ -120,7 +120,7 @@ public class AW extends JDialog {
          throw var184.getTargetException();
       }
 
-new JPanel(var10011);
+var3 = new JPanel(var10011);
       long var47 = 614660311662874560L;
       JTextField var46 = var10009;
       Ref.s(614660311662874560L, var46, var47);
@@ -185,7 +185,7 @@ new JPanel(var10011);
          throw var180.getTargetException();
       }
 
-new JPanel(var10022);
+var3 = new JPanel(var10022);
       long var69 = 195109804691767143L;
       JPasswordField var68 = var10020;
       Ref.s(195109804691767143L, var68, var69);
@@ -250,7 +250,7 @@ new JPanel(var10022);
          throw var176.getTargetException();
       }
 
-new JPanel((String)var10033);
+var10032 = new JPanel((String)var10033);
       long var91 = 184823010927613107L;
       JTextField var90 = var10031;
       Ref.s(184823010927613107L, var90, var91);
@@ -534,7 +534,7 @@ new JPanel((String)var10033);
       }
    }
 
-   void C() {
+   public void C() {
    }
 
    public void X() {
@@ -622,7 +622,7 @@ new JPanel((String)var10033);
       var10017.setText((String)var10018);
    }
 
-   JButton e(String var1) {
+   public JButton e(String var1) {
       JButton var2 = new JButton(var1);
       Registry.packArgs(var2);
       long var3 = 560784054776466487L;

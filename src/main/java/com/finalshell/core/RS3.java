@@ -20,15 +20,15 @@ public class RS3 extends Rt4 {
       }
    }
 
-   static JComponent U(RS3 var0) {
+   public static JComponent U(RS3 var0) {
       return var0.G;
    }
 
-   static JComponent S(RS3 var0) {
+   public static JComponent S(RS3 var0) {
       return var0.G;
    }
 
-   static JComponent a(RS3 var0) {
+   public static JComponent a(RS3 var0) {
       return var0.G;
    }
 }

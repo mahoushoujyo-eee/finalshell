@@ -6,9 +6,9 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class LK_2 extends Lz2_2 {
-   protected int z = Pe2.q;
-   protected Color l = Pe2.B;
-   protected Color C = Pe2.S;
+   public int z = Pe2.q;
+   public Color l = Pe2.B;
+   public Color C = Pe2.S;
    public static long[] a;
    public static Integer[] b;
 

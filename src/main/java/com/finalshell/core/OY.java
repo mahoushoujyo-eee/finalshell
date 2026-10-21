@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class OY implements Comparable {
    public DM3 v;
-   int t;
+   public int t;
 
    public OY(DM3 var1, int var2) {
       long var4 = 159590777020539491L;

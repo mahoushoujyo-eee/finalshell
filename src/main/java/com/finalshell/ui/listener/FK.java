@@ -6,9 +6,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class FK extends FocusAdapter {
-   final SetBackgroundImagePanel L;
+   public final SetBackgroundImagePanel L;
 
-   FK(SetBackgroundImagePanel var1) {
+   public FK(SetBackgroundImagePanel var1) {
       this.L = var1;
    }
 

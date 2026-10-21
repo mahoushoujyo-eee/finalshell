@@ -7,9 +7,6 @@ public class Q4 extends Qi2 {
    public static String a;
    public static long d;
 
-   Q4() {
-   }
-
    public void J(ConnectHost var1, Dm4 var2, String var3, boolean var4) throws Exception {
       this.T(var4);
       this.U = var3;

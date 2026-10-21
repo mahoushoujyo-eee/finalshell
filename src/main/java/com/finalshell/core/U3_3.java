@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public abstract class U3_3 implements P3_2 {
-   final Hd2 u;
+   public final Hd2 u;
 
    public U3_3(Hd2 var1) {
       this.u = var1;

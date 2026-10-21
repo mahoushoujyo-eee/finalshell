@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.List;
 
 public class OpenFilesEvent extends FilesEvent {
-   OpenFilesEvent(List<File> files, String s) {
+   public OpenFilesEvent(List<File> files, String s) {
       super(files);
    }
 

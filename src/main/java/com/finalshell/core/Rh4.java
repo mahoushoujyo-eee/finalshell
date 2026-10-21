@@ -6,14 +6,14 @@ import java.util.List;
 import javax.swing.ImageIcon;
 
 public class Rh4 extends R82 {
-   final Dj2 W;
+   public final Dj2 W;
 
-   Rh4(Dj2 var1) {
+   public Rh4(Dj2 var1) {
       this.W = var1;
    }
 
    @Override
-   protected boolean h(List var1) {
+   public boolean h(List var1) {
       String var10000 = com.finalshell.ui.panel.Wb2.m$String();
       Iterator var3 = var1.iterator();
       String var2 = var10000;

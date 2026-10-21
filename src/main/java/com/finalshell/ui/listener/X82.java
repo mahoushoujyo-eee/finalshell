@@ -12,14 +12,14 @@ import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class X82 implements TreeSelectionListener {
-   final DefaultMutableTreeNode p;
-   final PublicKey l;
-   final DefaultMutableTreeNode q;
-   final Reconnect U;
-   final DefaultMutableTreeNode f;
-   final Km4 O;
+   public final DefaultMutableTreeNode p;
+   public final PublicKey l;
+   public final DefaultMutableTreeNode q;
+   public final Reconnect U;
+   public final DefaultMutableTreeNode f;
+   public final Km4 O;
 
-   X82(Km4 var1, DefaultMutableTreeNode var2, PublicKey var3, DefaultMutableTreeNode var4, Reconnect var5, DefaultMutableTreeNode var6) {
+   public X82(Km4 var1, DefaultMutableTreeNode var2, PublicKey var3, DefaultMutableTreeNode var4, Reconnect var5, DefaultMutableTreeNode var6) {
       this.O = var1;
       this.p = var2;
       this.l = var3;
@@ -50,13 +50,13 @@ public class X82 implements TreeSelectionListener {
 
       DefaultMutableTreeNode var3 = var10005;
       Object var2 = var10004;
-      if (var2 != false || var3 != null) {
+      if (var2 == null || var3 != null) {
          label145: {
             label146: {
                Object var13 = 420653482522025527L;
                var10005 = this.equals((DefaultMutableTreeNode)Ref.g(420653482522025527L, var13));
-               if (var2 == false) {
-                  if (var10005 != false) {
+               if (var2 == null) {
+                  if (var10005 == null) {
                      Object var15 = 496002419724426617L;
                      Ref.g(496002419724426617L, var15);
                      Object var17 = 631372995965003737L;
@@ -73,7 +73,7 @@ public class X82 implements TreeSelectionListener {
                         throw var95.getTargetException();
                      }
 
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label146;
                      }
                   }
@@ -83,8 +83,8 @@ public class X82 implements TreeSelectionListener {
                   this.equals((DefaultMutableTreeNode)Ref.g(441510664534739321L, var23));
                }
 
-               if (var2 == false) {
-                  if (var10005 != false) {
+               if (var2 == null) {
+                  if (var10005 == null) {
                      Object var25 = 496002419724426617L;
                      Ref.g(496002419724426617L, var25);
                      Object var27 = 631372995965003737L;
@@ -101,7 +101,7 @@ public class X82 implements TreeSelectionListener {
                         throw var94.getTargetException();
                      }
 
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label146;
                      }
                   }
@@ -113,8 +113,8 @@ public class X82 implements TreeSelectionListener {
                   var10007.equals((DefaultMutableTreeNode)Ref.g(140172852301764786L, var35));
                }
 
-               if (var2 == false) {
-                  if (var10005 != false) {
+               if (var2 == null) {
+                  if (var10005 == null) {
                      Object var37 = 496002419724426617L;
                      Ref.g(496002419724426617L, var37);
                      Object var39 = 631372995965003737L;
@@ -133,7 +133,7 @@ public class X82 implements TreeSelectionListener {
                         throw var93.getTargetException();
                      }
 
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label146;
                      }
                   }
@@ -145,8 +145,8 @@ public class X82 implements TreeSelectionListener {
                   var101.equals((DefaultMutableTreeNode)Ref.g(579289540698555524L, var49));
                }
 
-               if (var2 == false) {
-                  if (var10005 != false) {
+               if (var2 == null) {
+                  if (var10005 == null) {
                      Object var51 = 496002419724426617L;
                      Ref.g(496002419724426617L, var51);
                      Object var53 = 631372995965003737L;
@@ -165,7 +165,7 @@ public class X82 implements TreeSelectionListener {
                         throw var92.getTargetException();
                      }
 
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label146;
                      }
                   }
@@ -175,11 +175,11 @@ public class X82 implements TreeSelectionListener {
                   this.equals((DefaultMutableTreeNode)Ref.g(434086940570366327L, var61));
                }
 
-               if (var2 != false) {
+               if (var2 == null) {
                   break label145;
                }
 
-               if (var10005 != false) {
+               if (var10005 == null) {
                   Object var63 = 496002419724426617L;
                   Ref.g(496002419724426617L, var63);
                   Object var65 = 631372995965003737L;
@@ -220,8 +220,8 @@ public class X82 implements TreeSelectionListener {
 
          label151: {
             var10005 = (Object[])var4;
-            if (var2 == false) {
-               if (var4 != false) {
+            if (var2 == null) {
+               if (var4 == null) {
                   break label151;
                }
 
@@ -232,7 +232,7 @@ public class X82 implements TreeSelectionListener {
                var104.equals((DefaultMutableTreeNode)Ref.g(456154352713079276L, var79));
             }
 
-            if (var10005 != false) {
+            if (var10005 == null) {
                return;
             }
 
@@ -249,7 +249,7 @@ public class X82 implements TreeSelectionListener {
                throw var89.getTargetException();
             }
 
-            if (var2 == false) {
+            if (var2 == null) {
                return;
             }
          }

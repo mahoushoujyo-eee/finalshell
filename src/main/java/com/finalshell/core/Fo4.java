@@ -4,9 +4,9 @@ import com.finalshell.task.Bd2;
 import javax.swing.SwingUtilities;
 
 public class Fo4 implements Tk4 {
-   final M6 t;
+   public final M6 t;
 
-   Fo4(M6 var1) {
+   public Fo4(M6 var1) {
       this.t = var1;
    }
 

@@ -7,7 +7,7 @@ import com.finalshell.ui.panel.QQ;
 import java.util.EnumMap;
 import java.util.Map;
 
-public final class Nb4 extends Enum {
+public final class Nb4 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -23,11 +23,10 @@ public final class Nb4 extends Enum {
    }
 
    public static Nb4 valueOf(String var0) {
-      return Enum.valueOf(Nb4.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public Nb4(String var1, int var2) {
-      super(var1, var2);
    }
 
    public Og4 K() {
@@ -953,7 +952,7 @@ public final class Nb4 extends Enum {
                      web = new Nb4(a(29589, -23614), 0);
                      mac = new Nb4(a(29591, 27032), 1);
                      N = n();
-                     X = new EnumMap<>(Nb4.class);
+                     X = new EnumMap(Nb4.class);
                      return;
                   }
 

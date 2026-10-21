@@ -8,13 +8,13 @@ import java.util.WeakHashMap;
 import javax.swing.JComponent;
 
 public class Ox4 {
-   protected static Map Y;
-   protected static Map d;
-   protected static Map J;
-   protected static X62 k;
-   protected static X62 e;
-   protected static boolean o;
-   protected static boolean a;
+   public static Map Y;
+   public static Map d;
+   public static Map J;
+   public static X62 k;
+   public static X62 e;
+   public static boolean o;
+   public static boolean a;
    public static String[] b;
    public static String[] c;
 
@@ -51,7 +51,7 @@ public class Ox4 {
       o = var0;
    }
 
-   protected static void e(X62 param0) {
+   public static void e(X62 param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

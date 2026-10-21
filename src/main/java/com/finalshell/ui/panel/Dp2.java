@@ -12,7 +12,7 @@ public class Dp2 extends JPanel {
    public static String[] a;
    public static String[] b;
 
-   Dp2() {
+   public Dp2() {
       new Locale(a(-11772, -9001), a(-11771, 16638));
       Locale var3 = Locale.getDefault();
       int var10000 = n();

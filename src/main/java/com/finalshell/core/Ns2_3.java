@@ -6,8 +6,8 @@ public final class Ns2_3 extends NL_2 {
    public static String d;
 
    public Ns2_3(com.finalshell.ui.model.I var1, @C_9 NV_2 var2, NV_2[] var3) {
+   super(var1, var3);
       String[] var10000 = RG_2.C();
-      super(var1, var3);
       this.W = var2;
       String[] var4 = var10000;
       NV_2 var5 = var2;

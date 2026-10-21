@@ -4,7 +4,7 @@ import com.finalshell.ui.model.Zo2;
 
 // $VF: synthetic class
 public class Pd4 {
-   static int[] T;
+   public static int[] T;
 
    static {
       __vfClinit__();

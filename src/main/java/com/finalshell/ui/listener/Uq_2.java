@@ -6,11 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Uq_2 implements ActionListener {
-   final OZ N;
+   public final OZ N;
    public static long[] a;
    public static Long[] b;
 
-   Uq_2(OZ var1) {
+   public Uq_2(OZ var1) {
       this.N = var1;
    }
 

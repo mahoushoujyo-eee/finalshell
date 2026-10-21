@@ -16,38 +16,38 @@ import java.util.Random;
 public class Lv4_2 extends Ln4_2 {
    public static int C;
    public static int F;
-   int T;
-   String g;
-   int i;
-   String Q;
-   String h;
-   String z;
-   boolean k;
-   String D;
-   static String X;
+   public int T;
+   public String g;
+   public int i;
+   public String Q;
+   public String h;
+   public String z;
+   public boolean k;
+   public String D;
+   public static String X;
    public static int K;
    public static int n;
    public static int v;
-   int Y;
-   String r;
-   String W;
-   String l;
-   boolean f;
-   boolean B;
-   boolean V;
-   int q;
-   int t;
-   String E;
-   ArrayList d;
-   long J;
-   String w;
-   int e;
-   int N;
-   String H;
-   String p;
-   boolean x;
-   Ln4_2 c;
-   boolean o;
+   public int Y;
+   public String r;
+   public String W;
+   public String l;
+   public boolean f;
+   public boolean B;
+   public boolean V;
+   public int q;
+   public int t;
+   public String E;
+   public ArrayList d;
+   public long J;
+   public String w;
+   public int e;
+   public int N;
+   public String H;
+   public String p;
+   public boolean x;
+   public Ln4_2 c;
+   public boolean o;
    public static int[] m;
    public static String[] j;
    public static String[] u;
@@ -365,7 +365,7 @@ public class Lv4_2 extends Ln4_2 {
             break;
          }
 
-         if (var87 != false) {
+         if (var87 == null) {
          }
       }
 

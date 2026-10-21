@@ -24,23 +24,23 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 public abstract class QR {
-   protected List c = new ArrayList(1);
-   protected final Object Z = new Object();
-   protected final List z = new ArrayList();
-   protected List Q;
-   protected Map d = new HashMap();
-   protected List r;
-   protected On2 G = null;
-   protected boolean L = false;
-   protected boolean f = true;
-   protected List J;
-   protected Map w = new HashMap();
-   protected Map T = new HashMap();
-   protected List A;
-   protected String M;
-   protected boolean C;
-   protected FileFilter i;
-   protected boolean O = false;
+   public List c = new ArrayList(1);
+   public final Object Z = new Object();
+   public final List z = new ArrayList();
+   public List Q;
+   public Map d = new HashMap();
+   public List r;
+   public On2 G = null;
+   public boolean L = false;
+   public boolean f = true;
+   public List J;
+   public Map w = new HashMap();
+   public Map T = new HashMap();
+   public List A;
+   public String M;
+   public boolean C;
+   public FileFilter i;
+   public boolean O = false;
    public static String[] a;
    public static String[] b;
 
@@ -64,15 +64,15 @@ public abstract class QR {
       }
    }
 
-   protected String w() {
+   public String w() {
       return a(11258, 15158);
    }
 
-   protected String U() {
+   public String U() {
       return a(11229, -10894);
    }
 
-   protected String H$String() {
+   public String H$String() {
       return null;
    }
 
@@ -219,7 +219,7 @@ public abstract class QR {
       }
    }
 
-   protected boolean m(String var1, boolean var2) {
+   public boolean m(String var1, boolean var2) {
       Ky4[] var3 = M2_2.b();
       if (var3 == null) {
          if (var1 != null) {
@@ -234,7 +234,7 @@ public abstract class QR {
       return false;
    }
 
-   protected void V(File var1, boolean var2) {
+   public void V(File var1, boolean var2) {
       Ky4[] var3 = M2_2.b();
       StringBuilder var10001 = new StringBuilder();
       String var10002 = a(11247, 32149);
@@ -299,7 +299,7 @@ public abstract class QR {
       }
    }
 
-   protected boolean z(File var1) {
+   public boolean z(File var1) {
       Ky4[] var10000 = M2_2.b();
       Sg2 var3 = this.H(var1);
       Ky4[] var2 = var10000;
@@ -315,7 +315,7 @@ public abstract class QR {
       return true;
    }
 
-   protected void o() {
+   public void o() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -557,7 +557,7 @@ public abstract class QR {
       // 227: return
    }
 
-   protected Sg2 H(File var1) {
+   public Sg2 H(File var1) {
       Ky4[] var2 = M2_2.b();
 
       try {
@@ -647,7 +647,7 @@ public abstract class QR {
       return var4.H(var1);
    }
 
-   protected boolean a(String var1, String var2) {
+   public boolean a(String var1, String var2) {
       Ky4[] var10000 = M2_2.b();
       Iterator var4 = this.Q.iterator();
       Ky4[] var3 = var10000;
@@ -690,7 +690,7 @@ public abstract class QR {
       return false;
    }
 
-   protected void r() {
+   public void r() {
       Ky4[] var1 = M2_2.b();
       QR var10000 = this;
       if (var1 == null) {
@@ -713,7 +713,7 @@ public abstract class QR {
       NE3.n(var10000, a(11236, -17285), new Object[0]);
    }
 
-   protected void R() {
+   public void R() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1671,7 +1671,7 @@ public abstract class QR {
       return false;
    }
 
-   protected boolean f(Sg2 var1, List var2) {
+   public boolean f(Sg2 var1, List var2) {
       Ky4[] var10000 = M2_2.b();
       com.finalshell.ui.model.C0 var4 = var1.h();
       Iterator var5 = var2.iterator();
@@ -1735,7 +1735,7 @@ public abstract class QR {
       return false;
    }
 
-   protected void j() {
+   public void j() {
       Ky4[] var1 = M2_2.b();
       if (this.J.size() != 0) {
          ArrayList var2 = new ArrayList(this.J.size());

@@ -19,14 +19,14 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class OQ3 implements MouseListener {
-   long B;
-   final ShowDeletedPanel r;
-   final boolean F;
-   final Connection5 L;
+   public long B;
+   public final ShowDeletedPanel r;
+   public final boolean F;
+   public final Connection5 L;
    public static long[] a;
    public static Long[] b;
 
-   OQ3(Connection5 var1, ShowDeletedPanel var2, boolean var3) {
+   public OQ3(Connection5 var1, ShowDeletedPanel var2, boolean var3) {
       this.L = var1;
       this.r = var2;
       this.F = var3;
@@ -113,7 +113,7 @@ public class OQ3 implements MouseListener {
                }
 
                OQ3 var6 = var31;
-               if (var6 == 1) {
+               if (var6 == null) {
                   Object var25 = 414214645141473905L;
                   Registry.lookupField(137395258222385003L).setBoolean(Ref.g(414214645141473905L, var25), true);
                }
@@ -432,7 +432,7 @@ public class OQ3 implements MouseListener {
             Registry.lookupField(137395258222385003L).getBoolean(var93);
          }
 
-         if (var10006 == false) {
+         if (var10006 == null) {
             return;
          }
 

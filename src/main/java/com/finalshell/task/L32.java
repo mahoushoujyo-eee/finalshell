@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 
 public class L32 implements Runnable {
-   final FO F;
+   public final FO F;
    public static long a;
 
-   L32(FO var1) {
+   public L32(FO var1) {
       this.F = var1;
    }
 

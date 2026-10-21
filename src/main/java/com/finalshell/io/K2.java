@@ -10,11 +10,11 @@ import java.util.Iterator;
 public class K2 extends Reader {
    public final Iterator W;
    public Reader m;
-   final Iterable u;
+   public final Iterable u;
    public static long[] a;
    public static Long[] b;
 
-   K2(Iterable var1) {
+   public K2(Iterable var1) {
       this.u = var1;
       W_7.v();
       this.W = this.u.iterator();

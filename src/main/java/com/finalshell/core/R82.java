@@ -87,11 +87,11 @@ public class R82 extends TransferHandler {
       return var10000;
    }
 
-   protected boolean M() {
+   public boolean M() {
       return true;
    }
 
-   protected boolean h(List var1) {
+   public boolean h(List var1) {
       return true;
    }
 }

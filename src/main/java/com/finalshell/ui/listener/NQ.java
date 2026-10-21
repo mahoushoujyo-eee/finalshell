@@ -5,9 +5,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class NQ implements ListSelectionListener {
-   final RouteTracePanel D;
+   public final RouteTracePanel D;
 
-   NQ(RouteTracePanel var1) {
+   public NQ(RouteTracePanel var1) {
       this.D = var1;
    }
 

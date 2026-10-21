@@ -28,7 +28,7 @@ public class OJ {
       return var10000;
    }
 
-   static ConnectHost T(String var0, String var1, String var2, int var3) throws Pc2 {
+   public static ConnectHost T(String var0, String var1, String var2, int var3) throws Pc2 {
       String[] var10000 = Cj4.v$arrString();
       ConnectHost var5 = null;
       String[] var4 = var10000;
@@ -98,7 +98,7 @@ public class OJ {
       h = var0;
    }
 
-   static void D(boolean param0) {
+   public static void D(boolean param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -6,11 +6,11 @@ import java.util.List;
 
 public class W3_5 implements Z_5 {
    public final List W;
-   final File B;
-   final FilenameFilter h;
-   final FilenameFilter c;
+   public final File B;
+   public final FilenameFilter h;
+   public final FilenameFilter c;
 
-   W3_5(File var1, FilenameFilter var2, FilenameFilter var3) {
+   public W3_5(File var1, FilenameFilter var2, FilenameFilter var3) {
       this.B = var1;
       this.h = var2;
       this.c = var3;

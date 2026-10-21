@@ -7,10 +7,10 @@ import java.util.Vector;
 public class Mm2 {
    public long A;
    public long K;
-   Thread S;
-   int q;
-   Vector s;
-   Oh4_2 Q;
+   public Thread S;
+   public int q;
+   public Vector s;
+   public Oh4_2 Q;
    public int f = 0;
    public int F = 0;
    public static boolean Z;
@@ -84,7 +84,7 @@ public class Mm2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void M() {
+   public void M() {
       boolean var10000 = Q();
       int var2 = 0;
       int var3 = 0;

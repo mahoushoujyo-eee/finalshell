@@ -8,10 +8,10 @@ import java.awt.Container;
 import javax.swing.event.AncestorEvent;
 
 public class S extends FY {
-   final Qx2 Y;
-   final A2_2 U;
+   public final Qx2 Y;
+   public final A2_2 U;
 
-   S(A2_2 var1, Qx2 var2) {
+   public S(A2_2 var1, Qx2 var2) {
       this.U = var1;
       this.Y = var2;
    }

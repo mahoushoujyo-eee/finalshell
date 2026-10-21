@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Nt4 implements ActionListener {
-   final Xt2 G;
+   public final Xt2 G;
 
-   Nt4(Xt2 var1) {
+   public Nt4(Xt2 var1) {
       this.G = var1;
    }
 

@@ -7,11 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextArea;
 
 public class OE3 implements Runnable {
-   final String Z;
-   final Nq2 U;
+   public final String Z;
+   public final Nq2 U;
    public static String a;
 
-   OE3(Nq2 var1, String var2) {
+   public OE3(Nq2 var1, String var2) {
       this.U = var1;
       this.Z = var2;
    }

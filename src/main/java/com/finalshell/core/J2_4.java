@@ -6,9 +6,6 @@ public class J2_4 extends U2_3 {
    public static String[] b;
    public static String[] c;
 
-   J2_4() {
-   }
-
    @C_9
    @Override
    public N_6 J(String var1) {

@@ -10,14 +10,14 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTable;
 
 public class Vn2 extends JTable {
-   int K;
-   int q;
-   com.finalshell.ui.panel.CL I;
+   public int K;
+   public int q;
+   public com.finalshell.ui.panel.CL I;
    public static String r;
    public static long[] a;
    public static Integer[] b;
 
-   Vn2(com.finalshell.ui.panel.CL var1) {
+   public Vn2(com.finalshell.ui.panel.CL var1) {
       Registry.lookupField(244753811008757660L).setInt(this, -1);
       Registry.lookupField(506848354576877670L).setInt(this, -1);
       long var4 = 383013460463859310L;

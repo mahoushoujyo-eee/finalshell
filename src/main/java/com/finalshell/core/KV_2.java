@@ -353,17 +353,17 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected int getTabRunIndent(int var1, int var2) {
+   public int getTabRunIndent(int var1, int var2) {
       return this.K;
    }
 
    @Override
-   protected int getTabRunOverlay(int var1) {
+   public int getTabRunOverlay(int var1) {
       return this.n;
    }
 
    @Override
-   protected boolean shouldPadTabRun(int var1, int var2) {
+   public boolean shouldPadTabRun(int var1, int var2) {
       String var3 = com.finalshell.ui.panel.Hd2.X();
       int var10000 = (this.t.equals(So2.never)) ? 1 : 0;
       if (var3 != null) {
@@ -391,54 +391,54 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
          if (var3 == null) {
             return var10000 != 0;
          } else {
-            return (boolean)(var10000 > 1 ? 1 : 0);
+            return (boolean)((var10000 > 1 ? 1 : 0) != 0);
          }
       }
    }
 
    @Override
-   protected boolean shouldRotateTabRuns(int var1) {
+   public boolean shouldRotateTabRuns(int var1) {
       return true;
    }
 
    @Override
-   protected Insets getContentBorderInsets(int var1) {
+   public Insets getContentBorderInsets(int var1) {
       return new Insets(0, 0, 0, 0);
    }
 
    @Override
-   protected Insets getTabAreaInsets(int var1) {
+   public Insets getTabAreaInsets(int var1) {
       Insets var2 = new Insets(0, 0, 0, 0);
       rotateInsets(this.R.equals(Ij4.standalone) ? new Insets(var1 == 4 ? 1 : 0, 1, 0, 2) : new Insets(-1, -1, 0, 0), var2, var1);
       return var2;
    }
 
    @Override
-   protected Insets getTabInsets(int var1, int var2) {
+   public Insets getTabInsets(int var1, int var2) {
       return new Insets(3, 3, 3, 3);
    }
 
    @Override
-   protected Insets getSelectedTabPadInsets(int var1) {
+   public Insets getSelectedTabPadInsets(int var1) {
       return new Insets(0, 0, 0, 0);
    }
 
    @Override
-   protected int getTabLabelShiftX(int var1, int var2, boolean var3) {
+   public int getTabLabelShiftX(int var1, int var2, boolean var3) {
       return 0;
    }
 
    @Override
-   protected int getTabLabelShiftY(int var1, int var2, boolean var3) {
+   public int getTabLabelShiftY(int var1, int var2, boolean var3) {
       return 0;
    }
 
    @Override
-   protected void paintTabBorder(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+   public void paintTabBorder(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
    }
 
    @Override
-   protected void paintTabBackground(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+   public void paintTabBackground(Graphics var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
       Color var10 = (Color)Registry.lookupField(381952515264332318L).get(null);
       String var10000 = com.finalshell.ui.panel.Hd2.X();
       Graphics2D var11 = (Graphics2D)var1;
@@ -563,7 +563,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected void paintText(Graphics var1, int var2, Font var3, FontMetrics var4, int var5, String var6, Rectangle var7, boolean var8) {
+   public void paintText(Graphics var1, int var2, Font var3, FontMetrics var4, int var5, String var6, Rectangle var7, boolean var8) {
       String var9;
       label70: {
          String var10000 = com.finalshell.ui.panel.Hd2.X();
@@ -881,7 +881,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected void paintContentBorder(Graphics var1, int var2, int var3) {
+   public void paintContentBorder(Graphics var1, int var2, int var3) {
       String var4;
       Graphics2D var5;
       Object var6;
@@ -1578,7 +1578,7 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected void paintFocusIndicator(Graphics var1, int var2, Rectangle[] var3, int var4, Rectangle var5, Rectangle var6, boolean var7) {
+   public void paintFocusIndicator(Graphics var1, int var2, Rectangle[] var3, int var4, Rectangle var5, Rectangle var6, boolean var7) {
    }
 
    @Override
@@ -1602,11 +1602,11 @@ public class KV_2 extends BasicTabbedPaneUI implements W2_3, L0_2 {
       FN.O(var1, var4);
    }
 
-   static JTabbedPane q(KV_2 var0) {
+   public static JTabbedPane q(KV_2 var0) {
       return var0.tabPane;
    }
 
-   static JTabbedPane C(KV_2 var0) {
+   public static JTabbedPane C(KV_2 var0) {
       return var0.tabPane;
    }
 

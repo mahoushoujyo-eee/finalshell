@@ -232,7 +232,7 @@ public class Nk4 {
       }
    }
 
-   void b(int var1, int[] var2) {
+   public void b(int var1, int[] var2) {
       this.f.put(new Px2(var1, 0), Sd2.R(var2));
    }
 

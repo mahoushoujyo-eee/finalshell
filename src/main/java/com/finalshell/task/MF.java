@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.awt.Point;
 
 public class MF implements Runnable {
-   final X2 c;
+   public final X2 c;
 
-   MF(X2 var1) {
+   public MF(X2 var1) {
       this.c = var1;
    }
 

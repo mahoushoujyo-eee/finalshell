@@ -5,12 +5,12 @@ import com.finalshell.reflect.Registry;
 import java.util.HashMap;
 
 public class U82 {
-   int F;
-   String g;
-   HashMap P;
-   String u;
-   String j;
-   LI3_2 w;
+   public int F;
+   public String g;
+   public HashMap P;
+   public String u;
+   public String j;
+   public LI3_2 w;
 
    public U82() {
       HashMap var10001 = new HashMap();

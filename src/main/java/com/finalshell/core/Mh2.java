@@ -21,16 +21,16 @@ public class Mh2 {
       }
    }
 
-   void E() {
+   public void E() {
    }
 
-   void q() {
+   public void q() {
    }
 
-   void J() {
+   public void J() {
    }
 
-   void N() {
+   public void N() {
       String var2 = System.getProperty(a(-14048, -32406));
       String var10000 = Z();
       System.out.println(a(-14045, -4760) + var2);

@@ -9,11 +9,11 @@ import java.awt.Insets;
 import javax.swing.border.AbstractBorder;
 
 public class Bs2 extends AbstractBorder {
-   Insets x;
+   public Insets x;
    public static long[] a;
    public static Integer[] b;
 
-   Bs2() {
+   public Bs2() {
       Insets var10001 = new Insets(1, 2, 2, 2);
       long var2 = 522811950581095936L;
       Insets var1 = var10001;

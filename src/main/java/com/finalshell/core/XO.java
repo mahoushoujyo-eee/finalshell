@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public final class XO {
-   XO L;
+   public XO L;
    public final int E;
    public final int c;
    public final int j;
@@ -9,9 +9,9 @@ public final class XO {
    public static Integer[] b;
 
    public XO(W02 var1, int var2, String var3, String var4) {
+   super();
       label15: {
          int[] var10000 = XB.X();
-         super();
          int[] var5 = var10000;
          XO var6 = var1.s;
          if (var5 == null) {
@@ -37,11 +37,11 @@ public final class XO {
    public void b() {
    }
 
-   int h() {
+   public int h() {
       return a(28024, 8017337190419335230L);
    }
 
-   void S(RE3 var1) {
+   public void S(RE3 var1) {
       int var2 = a(4771, 1855237061617121254L);
       var1.G(this.E & a(9816, 5348132879023620895L)).G(this.c).G(this.j);
       byte var3 = 0;

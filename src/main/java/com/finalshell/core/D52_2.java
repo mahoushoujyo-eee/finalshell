@@ -13,7 +13,7 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 
 public class D52_2 {
-   static Key o;
+   public static Key o;
    public static String V;
    public static String[] a;
    public static String[] b;

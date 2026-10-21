@@ -3,9 +3,6 @@ package com.finalshell.core;
 public class W_6 implements I2_4 {
    public static String a;
 
-   W_6() {
-   }
-
    @Override
    public String toString() {
       return a;

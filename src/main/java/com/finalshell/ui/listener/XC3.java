@@ -8,11 +8,11 @@ import java.util.EventObject;
 import javax.swing.JComboBox;
 
 public class XC3 extends XA3 {
-   final JComboBox A;
-   final Rt4 s;
+   public final JComboBox A;
+   public final Rt4 s;
    public static long a;
 
-   XC3(Rt4 var1, JComboBox var2) {
+   public XC3(Rt4 var1, JComboBox var2) {
       super(var1);
       this.s = var1;
       this.A = var2;

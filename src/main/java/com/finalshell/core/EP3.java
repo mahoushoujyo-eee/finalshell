@@ -104,7 +104,7 @@ public class EP3 extends ED3 {
       this.K(this.v(var1));
    }
 
-   protected File[] i(File var1) {
+   public File[] i(File var1) {
       String var2 = com.finalshell.ui.panel.Co2.U$String();
       File var10000 = var1;
       if (var2 != null) {
@@ -118,7 +118,7 @@ public class EP3 extends ED3 {
       return var10000.listFiles();
    }
 
-   protected List J(File[] var1) {
+   public List J(File[] var1) {
       String var2 = com.finalshell.ui.panel.Co2.U$String();
       ArrayList var3 = new ArrayList(var1 != null ? var1.length : 0);
       File[] var10000 = var1;
@@ -155,7 +155,7 @@ public class EP3 extends ED3 {
       return var3;
    }
 
-   protected List v(List var1) {
+   public List v(List var1) {
       String var2 = com.finalshell.ui.panel.Co2.U$String();
       ArrayList var3 = new ArrayList(var1 != null ? var1.size() : 0);
       List var10000 = var1;

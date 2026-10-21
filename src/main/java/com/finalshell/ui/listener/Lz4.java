@@ -8,9 +8,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lz4 implements MouseListener {
-   final LocalMachinePanel H;
+   public final LocalMachinePanel H;
 
-   Lz4(LocalMachinePanel var1) {
+   public Lz4(LocalMachinePanel var1) {
       this.H = var1;
    }
 

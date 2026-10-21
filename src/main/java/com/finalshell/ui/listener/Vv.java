@@ -5,9 +5,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class Vv extends FocusAdapter {
-   final com.finalshell.core.Lk4 d;
+   public final com.finalshell.core.Lk4 d;
 
-   Vv(com.finalshell.core.Lk4 var1) {
+   public Vv(com.finalshell.core.Lk4 var1) {
       this.d = var1;
    }
 

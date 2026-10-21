@@ -5,9 +5,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class Rm2 extends MouseAdapter {
-   final com.finalshell.core.Lk4 K;
+   public final com.finalshell.core.Lk4 K;
 
-   Rm2(com.finalshell.core.Lk4 var1) {
+   public Rm2(com.finalshell.core.Lk4 var1) {
       this.K = var1;
    }
 

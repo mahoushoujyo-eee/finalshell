@@ -29,7 +29,7 @@ public class KW3 extends K52 {
       this.N();
    }
 
-   protected void N() {
+   public void N() {
       this.c = new Xt2(this);
       this.c.setVisible(false);
       this.A(this.c);
@@ -89,15 +89,15 @@ public class KW3 extends K52 {
       this.o = var1;
    }
 
-   static int e(KW3 var0) {
+   public static int e(KW3 var0) {
       return var0.R;
    }
 
-   static Color w(KW3 var0) {
+   public static Color w(KW3 var0) {
       return var0.o;
    }
 
-   static O82 P(KW3 var0) {
+   public static O82 P(KW3 var0) {
       return var0.x;
    }
 

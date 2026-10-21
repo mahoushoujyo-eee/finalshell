@@ -12,9 +12,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Q5 implements ActionListener {
-   final TerminateProcessPanel i;
+   public final TerminateProcessPanel i;
 
-   Q5(TerminateProcessPanel var1) {
+   public Q5(TerminateProcessPanel var1) {
       this.i = var1;
    }
 

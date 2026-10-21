@@ -6,11 +6,11 @@ import java.awt.Insets;
 import javax.swing.JScrollBar;
 
 public class Sq2 extends SZ {
-   final Co2 F;
+   public final Co2 F;
    public static long[] a;
    public static Integer[] c;
 
-   Sq2(Co2 var1, Component var2) {
+   public Sq2(Co2 var1, Component var2) {
       super(var2);
       this.F = var1;
    }

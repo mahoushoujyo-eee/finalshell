@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class U implements MouseListener {
-   final UA3 G;
+   public final UA3 G;
 
-   U(UA3 var1) {
+   public U(UA3 var1) {
       this.G = var1;
    }
 

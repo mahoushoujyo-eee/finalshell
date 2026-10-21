@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.UpdateDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class K4 implements Runnable {
-   final UpdateDialog v;
+   public final UpdateDialog v;
 
-   K4(UpdateDialog var1) {
+   public K4(UpdateDialog var1) {
       this.v = var1;
    }
 

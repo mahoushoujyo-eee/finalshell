@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class TU3 implements ActionListener {
-   final NetworkMonitorPanel R;
+   public final NetworkMonitorPanel R;
 
-   TU3(NetworkMonitorPanel var1) {
+   public TU3(NetworkMonitorPanel var1) {
       this.R = var1;
    }
 

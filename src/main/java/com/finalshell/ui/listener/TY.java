@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TY implements ActionListener {
-   final Xw2 a;
+   public final Xw2 a;
 
-   TY(Xw2 var1) {
+   public TY(Xw2 var1) {
       this.a = var1;
    }
 

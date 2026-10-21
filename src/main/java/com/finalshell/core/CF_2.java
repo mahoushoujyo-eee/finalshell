@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class CF_2 implements Po2, Cloneable {
-   protected int[] B;
+   public int[] B;
    public static long[] a;
    public static Integer[] b;
 

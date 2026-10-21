@@ -11,8 +11,8 @@ public abstract class C_D extends C_q_2_2 implements C_Y_2, RO {
    public static String[] h;
 
    public C_D(com.finalshell.ui.model.I var1, @C_9 String var2, Fu2_2[] var3, String var4, @C_9 C_U[] var5, @C_9 Nt2_2 var6, Nt2_2[] var7) {
+   super(var1, var3, var5);
       String[] var10000 = RG_2.C();
-      super(var1, var3, var5);
       this.R = var2;
       String[] var8 = var10000;
       this.H = var4;
@@ -65,7 +65,7 @@ public abstract class C_D extends C_q_2_2 implements C_Y_2, RO {
       if (var1 == null) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 != -1 ? 1 : 0);
+         return (boolean)((var2 != -1 ? 1 : 0) != 0);
       }
    }
 

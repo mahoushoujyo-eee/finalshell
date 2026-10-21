@@ -28,24 +28,24 @@ import javax.swing.tree.DefaultTreeModel;
 import net.miginfocom.swing.MigLayout;
 
 public class Ox4 extends JFrame {
-   JPanel b;
-   JPanel E;
-   Z8 K;
-   ArrayList V;
-   Vg2 h;
-   Ox4 o;
-   AA B;
+   public JPanel b;
+   public JPanel E;
+   public Z8 K;
+   public ArrayList V;
+   public Vg2 h;
+   public Ox4 o;
+   public AA B;
    public static boolean C;
-   DefaultMutableTreeNode M;
-   DefaultMutableTreeNode J;
-   Zm2 Q;
-   AutoSelectTab D;
-   TerminalHint X;
-   EnableBackgroundImage z;
-   SwitchTabCommand s;
-   EffectPreview R;
-   Zn2 P;
-   DefaultMutableTreeNode m;
+   public DefaultMutableTreeNode M;
+   public DefaultMutableTreeNode J;
+   public Zm2 Q;
+   public AutoSelectTab D;
+   public TerminalHint X;
+   public EnableBackgroundImage z;
+   public SwitchTabCommand s;
+   public EffectPreview R;
+   public Zn2 P;
+   public DefaultMutableTreeNode m;
    public static String W;
    public static String[] a;
    public static String[] c;
@@ -344,7 +344,7 @@ public class Ox4 extends JFrame {
       }
 
       if (this == null) {
-         if (var10075 == false) {
+         if (var10075 == null) {
             this.setAlwaysOnTop(true);
          }
 
@@ -359,7 +359,7 @@ public class Ox4 extends JFrame {
          }
       }
 
-      if (var10075 == false) {
+      if (var10075 == null) {
          this.setAlwaysOnTop(false);
       }
 

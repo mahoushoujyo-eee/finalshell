@@ -119,7 +119,7 @@ public class KG3 extends JComponent implements CX3_2 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       if (!this.Z) {
          Graphics2D var2 = (Graphics2D)var1;

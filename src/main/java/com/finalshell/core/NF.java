@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NF implements Np2 {
-   final com.finalshell.task.Um2 C;
+   public final com.finalshell.task.Um2 C;
 
-   NF(com.finalshell.task.Um2 var1) {
+   public NF(com.finalshell.task.Um2 var1) {
       this.C = var1;
    }
 

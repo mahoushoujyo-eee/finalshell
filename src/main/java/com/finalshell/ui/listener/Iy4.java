@@ -5,9 +5,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Iy4 extends MouseAdapter {
-   final Nr4 g;
+   public final Nr4 g;
 
-   Iy4(Nr4 var1) {
+   public Iy4(Nr4 var1) {
       this.g = var1;
    }
 

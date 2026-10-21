@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class K23 implements ActionListener {
-   final FilePermissionPanel z;
+   public final FilePermissionPanel z;
 
-   K23(FilePermissionPanel var1) {
+   public K23(FilePermissionPanel var1) {
       this.z = var1;
    }
 

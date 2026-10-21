@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class H implements ActionListener {
-   final RenameFolderDialog f;
+   public final RenameFolderDialog f;
 
-   H(RenameFolderDialog var1) {
+   public H(RenameFolderDialog var1) {
       this.f = var1;
    }
 

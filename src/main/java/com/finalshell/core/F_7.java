@@ -25,7 +25,7 @@ public final class F_7 {
       return Proxy.newProxyInstance(var2.getClassLoader(), L(var2), new F2_6(var0));
    }
 
-   protected static String K(String var0) {
+   public static String K(String var0) {
       int[] var1 = D_8.q();
       String var10000 = var0;
       if (var1 == null) {

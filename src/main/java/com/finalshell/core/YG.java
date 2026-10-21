@@ -8,10 +8,10 @@ import java.util.List;
 import jtermios.j;
 
 public class YG implements Enumeration {
-   List c = new LinkedList();
-   Iterator b;
+   public List c = new LinkedList();
+   public Iterator b;
 
-   YG() {
+   public YG() {
       Ky4[] var10000 = XA.P();
       Iterator var2 = L2.X().values().iterator();
       Ky4[] var1 = var10000;

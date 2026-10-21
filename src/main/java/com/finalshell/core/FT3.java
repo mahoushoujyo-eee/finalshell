@@ -9,9 +9,9 @@ import java.awt.event.WindowFocusListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class FT3 implements WindowFocusListener {
-   final TextEditorFrame q;
+   public final TextEditorFrame q;
 
-   FT3(TextEditorFrame var1) {
+   public FT3(TextEditorFrame var1) {
       this.q = var1;
    }
 

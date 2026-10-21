@@ -22,7 +22,7 @@ public class GV3 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var4 = this.i.h((float)var1, (float)var2);
       float var5 = this.z.h((float)var1, (float)var2);
       var3[0] = var4 * (float)this.r.width;

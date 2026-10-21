@@ -10,10 +10,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class OX3 implements ActionListener {
-   final Fl4 A;
-   final UpdateDialog k;
+   public final Fl4 A;
+   public final UpdateDialog k;
 
-   OX3(UpdateDialog var1, Fl4 var2) {
+   public OX3(UpdateDialog var1, Fl4 var2) {
       this.k = var1;
       this.A = var2;
    }

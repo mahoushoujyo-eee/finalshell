@@ -11,10 +11,10 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class Yo2 extends Fv2_2{
-   protected final InputStream t;
-   protected final OutputStream A;
-   protected final InputStreamReader R;
-   protected final Charset k;
+   public final InputStream t;
+   public final OutputStream A;
+   public final InputStreamReader R;
+   public final Charset k;
    public final Process g;
    @Nullable
    public final List l;

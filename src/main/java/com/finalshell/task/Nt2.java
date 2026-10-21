@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Cc2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Nt2 implements Runnable {
-   final Cc2 x;
+   public final Cc2 x;
 
-   Nt2(Cc2 var1) {
+   public Nt2(Cc2 var1) {
       this.x = var1;
    }
 

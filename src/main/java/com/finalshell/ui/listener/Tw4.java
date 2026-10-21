@@ -8,10 +8,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBoxMenuItem;
 
 public class Tw4 implements ActionListener {
-   final JCheckBoxMenuItem u;
-   final com.finalshell.ui.frame.U d;
+   public final JCheckBoxMenuItem u;
+   public final com.finalshell.ui.frame.U d;
 
-   Tw4(com.finalshell.ui.frame.U var1, JCheckBoxMenuItem var2) {
+   public Tw4(com.finalshell.ui.frame.U var1, JCheckBoxMenuItem var2) {
       this.d = var1;
       this.u = var2;
    }

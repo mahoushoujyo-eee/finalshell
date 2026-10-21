@@ -8,21 +8,21 @@ import java.io.OutputStream;
 import java.util.Map;
 
 public abstract class Ls4 {
-   int P = 0;
+   public int P = 0;
    public static byte[] v;
    public static byte[] t;
-   protected String m = a(14807, 18318);
-   Xe2 Q = null;
-   protected EU G;
+   public String m = a(14807, 18318);
+   public Xe2 Q = null;
+   public EU G;
    public Bx2 T;
    public Y_2 u;
    public Y_2 l;
    public I82 x;
    public byte[] F;
-   static byte[][] r;
+   public static byte[][] r;
    public static byte[] A;
-   protected boolean E = false;
-   protected byte[] R = null;
+   public boolean E = false;
+   public byte[] R = null;
    public byte[] W = null;
    public byte[] Z = null;
    public static String[] S;
@@ -130,11 +130,11 @@ public abstract class Ls4 {
       // b1: areturn
    }
 
-   abstract void K(int var1) throws Pc2;
+   public abstract void K(int var1) throws Pc2;
 
-   abstract byte[] Y();
+   public abstract byte[] Y();
 
-   abstract byte[] d();
+   public abstract byte[] d();
 
    public abstract int r$int();
 
@@ -160,7 +160,7 @@ public abstract class Ls4 {
       this.Q = var1;
    }
 
-   abstract byte[] r$arrbyte();
+   public abstract byte[] r$arrbyte();
 
    public void L(OutputStream var1) {
       this.Q(var1, null);
@@ -379,7 +379,7 @@ public abstract class Ls4 {
       // 1ac: return
    }
 
-   abstract byte[] A();
+   public abstract byte[] A();
 
    public abstract int y();
 
@@ -868,7 +868,7 @@ public abstract class Ls4 {
       // 151: areturn
    }
 
-   abstract boolean I(byte[] var1);
+   public abstract boolean I(byte[] var1);
 
    public byte[] l(byte[] param1, byte[] param2, byte[] param3) {
       // $VF: Couldn't be decompiled
@@ -937,33 +937,33 @@ public abstract class Ls4 {
       // 76: areturn
    }
 
-   int L(byte[] var1, int var2, int var3) {
+   public int L(byte[] var1, int var2, int var3) {
       var1[var2++] = (byte)a(14773, 1655428507611296485L);
       return this.m(var1, var2, var3);
    }
 
-   int O(byte[] var1, int var2, byte[] var3) {
+   public int O(byte[] var1, int var2, byte[] var3) {
       var1[var2++] = 2;
       var2 = this.m(var1, var2, var3.length);
       System.arraycopy(var3, 0, var1, var2, var3.length);
       return var2 + var3.length;
    }
 
-   int h(byte[] var1, int var2, byte[] var3) {
+   public int h(byte[] var1, int var2, byte[] var3) {
       var1[var2++] = 4;
       var2 = this.m(var1, var2, var3.length);
       System.arraycopy(var3, 0, var1, var2, var3.length);
       return var2 + var3.length;
    }
 
-   int c(byte[] var1, byte var2, int var3, byte[] var4) {
+   public int c(byte[] var1, byte var2, int var3, byte[] var4) {
       var1[var3++] = var2;
       var3 = this.m(var1, var3, var4.length);
       System.arraycopy(var4, 0, var1, var3, var4.length);
       return var3 + var4.length;
    }
 
-   int M(int param1) {
+   public int M(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1010,7 +1010,7 @@ public abstract class Ls4 {
       // 47: ireturn
    }
 
-   int m(byte[] param1, int param2, int param3) {
+   public int m(byte[] param1, int param2, int param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1276,7 +1276,7 @@ public abstract class Ls4 {
       // 71: areturn
    }
 
-   synchronized byte[] p(byte[] param1, byte[] param2) {
+   public synchronized byte[] p(byte[] param1, byte[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5590,7 +5590,7 @@ public abstract class Ls4 {
       // 1f06: athrow
    }
 
-   static Ls4 Q(Xe2 param0, byte[] param1) throws Pc2 {
+   public static Ls4 Q(Xe2 param0, byte[] param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6051,7 +6051,7 @@ public abstract class Ls4 {
       this.a$void();
    }
 
-   static Ls4 J(Xe2 param0, byte[] param1) throws Pc2 {
+   public static Ls4 J(Xe2 param0, byte[] param1) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7381,7 +7381,7 @@ public abstract class Ls4 {
       // 22c: ireturn
    }
 
-   void n(Ls4 var1) {
+   public void n(Ls4 var1) {
       this.Z = var1.Z;
       this.P = var1.P;
       this.m = var1.m;

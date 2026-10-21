@@ -20,11 +20,11 @@ public class KE3 extends Ky4 {
       this.i(true);
    }
 
-   protected boolean u() {
+   public boolean u() {
       return this.C;
    }
 
-   protected void U(boolean var1) {
+   public void U(boolean var1) {
       this.C = var1;
    }
 
@@ -67,7 +67,7 @@ public class KE3 extends Ky4 {
       return (TD_2)super.getLayout();
    }
 
-   protected static TD_2 C() {
+   public static TD_2 C() {
       return new TD_2(OT3.U + OT3.E);
    }
 

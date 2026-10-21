@@ -10,7 +10,7 @@ import java.util.Vector;
 import javax.swing.AbstractListModel;
 
 public class ED3 extends AbstractListModel {
-   protected Vector u = new Vector();
+   public Vector u = new Vector();
    public static String a;
 
    public ED3() {

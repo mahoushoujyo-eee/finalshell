@@ -662,7 +662,7 @@ public final class QC {
          var10001 = var5;
       }
 
-      return (boolean)(var15 < var10001 ? 1 : 0);
+      return (boolean)((var15 < var10001 ? 1 : 0) != 0);
    }
 
    static {

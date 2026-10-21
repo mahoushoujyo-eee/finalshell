@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class L22 implements ActionListener {
-   final Address j;
+   public final Address j;
 
-   L22(Address var1) {
+   public L22(Address var1) {
       this.j = var1;
    }
 

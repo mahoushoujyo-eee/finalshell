@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Dz4 extends ComponentAdapter {
-   final SetBackgroundImagePanel w;
+   public final SetBackgroundImagePanel w;
 
-   Dz4(SetBackgroundImagePanel var1) {
+   public Dz4(SetBackgroundImagePanel var1) {
       this.w = var1;
    }
 

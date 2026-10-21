@@ -13,15 +13,15 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicLabelUI;
 
 public class O52 extends BasicLabelUI implements D7, L0_2, SwingConstants {
-   protected Insets g = KG_2.L;
-   protected int I = KG_2.z;
-   protected boolean t = KG_2.C;
-   protected float j = KG_2.s;
-   protected String H = KG_2.j;
-   protected Wi2_2 G;
-   protected PropertyChangeListener h;
-   protected String R = null;
-   protected com.finalshell.ui.panel.Yy2 f;
+   public Insets g = KG_2.L;
+   public int I = KG_2.z;
+   public boolean t = KG_2.C;
+   public float j = KG_2.s;
+   public String H = KG_2.j;
+   public Wi2_2 G;
+   public PropertyChangeListener h;
+   public String R = null;
+   public com.finalshell.ui.panel.Yy2 f;
    public static String[] a;
    public static String[] b;
 
@@ -192,7 +192,7 @@ public class O52 extends BasicLabelUI implements D7, L0_2, SwingConstants {
       GA.q(this.f, var3, var2);
    }
 
-   protected void s(Wi2_2 var1) {
+   public void s(Wi2_2 var1) {
       boolean var2 = Oj2.g();
       Wi2_2 var10000 = var1;
       if (var2) {

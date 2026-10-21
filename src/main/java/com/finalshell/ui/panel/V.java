@@ -5,7 +5,7 @@ import com.finalshell.ui.dialog.Y2;
 import java.awt.Dimension;
 
 public class V extends O {
-   final D u;
+   public final D u;
 
    public V(D var1) {
       this.u = var1;

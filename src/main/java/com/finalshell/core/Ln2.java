@@ -12,15 +12,15 @@ import java.util.ArrayList;
 public class Ln2 {
    public static String a;
    public static String P;
-   Lp2 Y;
-   boolean l;
-   Fc2 L;
-   long B;
-   boolean r;
+   public Lp2 Y;
+   public boolean l;
+   public Fc2 L;
+   public long B;
+   public boolean r;
    public static int g;
-   boolean f;
-   boolean i;
-   boolean F;
+   public boolean f;
+   public boolean i;
+   public boolean F;
    public static String[] b;
    public static String[] c;
    public static long[] d;
@@ -236,7 +236,7 @@ public class Ln2 {
       // 15f: return
    }
 
-   void Z() {
+   public void Z() {
       Registry.emptyArgs();
       long var6 = 270389152141252877L;
       Ref.h2(270389152141252877L, var6);
@@ -288,7 +288,7 @@ public class Ln2 {
                throw var27.getTargetException();
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                return;
             }
 
@@ -344,7 +344,7 @@ public class Ln2 {
       }
 
       Ln2 var10001 = this;
-      if (this != false) {
+      if (this == null) {
          if (Registry.lookupField(257898823081515939L).getBoolean(this)) {
             return;
          }
@@ -490,8 +490,8 @@ public class Ln2 {
 
       label177: {
          label181: {
-            if (var1 != false) {
-               if (var10006 != false) {
+            if (var1 == null) {
+               if (var10006 == null) {
                   break label181;
                }
 
@@ -509,8 +509,8 @@ public class Ln2 {
                }
             }
 
-            if (var1 != false) {
-               if (var10006 != false) {
+            if (var1 == null) {
+               if (var10006 == null) {
                   break label181;
                }
 
@@ -528,8 +528,8 @@ public class Ln2 {
                }
             }
 
-            if (var1 != false) {
-               if (var10006 != false) {
+            if (var1 == null) {
+               if (var10006 == null) {
                   break label181;
                }
 
@@ -551,8 +551,8 @@ public class Ln2 {
                }
             }
 
-            if (var1 != false) {
-               if (var10006 == false) {
+            if (var1 == null) {
+               if (var10006 == null) {
                   break label181;
                }
 
@@ -568,19 +568,19 @@ public class Ln2 {
                }
             }
 
-            if (var1 != false) {
-               if (var10006 == false) {
+            if (var1 == null) {
+               if (var10006 == null) {
                   break label181;
                }
 
                var10006 = Registry.lookupField(271573489181596787L).getBoolean(this);
             }
 
-            if (var1 == false) {
+            if (var1 == null) {
                break label177;
             }
 
-            if (var10006 == false) {
+            if (var10006 == null) {
                var10006 = true;
                break label177;
             }
@@ -596,8 +596,8 @@ public class Ln2 {
          label144: {
             label187: {
                var62 = var4;
-               if (var1 != false) {
-                  if (var4 == false) {
+               if (var1 == null) {
+                  if (var4 == null) {
                      break label187;
                   }
 
@@ -615,11 +615,11 @@ public class Ln2 {
                   }
                }
 
-               if (var1 == false) {
+               if (var1 == null) {
                   break label144;
                }
 
-               if (var62 != false) {
+               if (var62 == null) {
                   var62 = true;
                   break label144;
                }
@@ -632,8 +632,8 @@ public class Ln2 {
             label189: {
                var4 = var62;
                var62 = var4;
-               if (var1 != false) {
-                  if (var4 == false) {
+               if (var1 == null) {
+                  if (var4 == null) {
                      break label189;
                   }
 
@@ -651,11 +651,11 @@ public class Ln2 {
                   }
                }
 
-               if (var1 == false) {
+               if (var1 == null) {
                   break label133;
                }
 
-               if (var62 == false) {
+               if (var62 == null) {
                   var62 = true;
                   break label133;
                }
@@ -1873,7 +1873,7 @@ public class Ln2 {
       // 9c3: return
    }
 
-   ArrayList s(Lp2 var1) throws Exception {
+   public ArrayList s(Lp2 var1) throws Exception {
       Object[] var10001 = Registry.packArgs(var1, false);
       long var3 = 454189016043226603L;
       Object[] var2 = var10001;
@@ -1886,7 +1886,7 @@ public class Ln2 {
       }
    }
 
-   ArrayList N(Lp2 param1, boolean param2) throws Exception {
+   public ArrayList N(Lp2 param1, boolean param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2713,7 +2713,7 @@ public class Ln2 {
       // 7a3: areturn
    }
 
-   static O0 g$O0() {
+   public static O0 g$O0() {
       O0 var0 = new O0();
       Registry.emptyArgs();
       long var4 = 270389152141252877L;

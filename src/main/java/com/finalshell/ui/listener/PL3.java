@@ -7,10 +7,10 @@ import java.awt.event.ActionListener;
 import java.util.Date;
 
 public class PL3 implements ActionListener {
-   final Date l;
-   final KV3 m;
+   public final Date l;
+   public final KV3 m;
 
-   PL3(KV3 var1, Date var2) {
+   public PL3(KV3 var1, Date var2) {
       this.m = var1;
       this.l = var2;
    }

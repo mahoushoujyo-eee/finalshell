@@ -9,10 +9,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ux4 implements ActionListener {
-   final Fl4 y;
-   final UpdateDialog i;
+   public final Fl4 y;
+   public final UpdateDialog i;
 
-   Ux4(UpdateDialog var1, Fl4 var2) {
+   public Ux4(UpdateDialog var1, Fl4 var2) {
       this.i = var1;
       this.y = var2;
    }

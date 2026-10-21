@@ -4,10 +4,10 @@ import com.finalshell.ui.listener.Ec2;
 import java.awt.Component;
 
 public final class DP_2 implements El2 {
-   protected final com.finalshell.ui.panel.O2 q;
-   protected int l;
-   protected El2 u;
-   protected El2 g;
+   public final com.finalshell.ui.panel.O2 q;
+   public int l;
+   public El2 u;
+   public El2 g;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -20,7 +20,7 @@ public final class DP_2 implements El2 {
       this.h(var1);
    }
 
-   protected com.finalshell.ui.panel.O2 Z(int var1, El2 var2, El2 var3) {
+   public com.finalshell.ui.panel.O2 Z(int var1, El2 var2, El2 var3) {
       com.finalshell.ui.panel.O2 var4 = new com.finalshell.ui.panel.O2(var1, var2.u(), var3.u());
       var4.putClientProperty(a(-26457, -23454), this);
       var4.setContinuousLayout(true);
@@ -31,7 +31,7 @@ public final class DP_2 implements El2 {
       return var4;
    }
 
-   protected void h(com.finalshell.ui.panel.QL var1) {
+   public void h(com.finalshell.ui.panel.QL var1) {
       String[] var10000 = BX.B$arrString();
       OR var3 = var1.P();
       String[] var2 = var10000;

@@ -9,7 +9,7 @@ import java.awt.RenderingHints;
 import javax.swing.JLabel;
 
 public class T2 extends JLabel {
-   RenderingHints z;
+   public RenderingHints z;
 
    public T2(String var1) {
       super(var1);

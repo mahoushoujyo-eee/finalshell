@@ -7,9 +7,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class A implements Comparator {
-   A() {
-   }
-
    public int Q(File var1, File var2) {
       return var1.getName().compareTo(var2.getName());
    }

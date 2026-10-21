@@ -8,17 +8,17 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 
 public class NN_2 {
-   static int Q;
-   static int c;
-   int y;
-   HashSet P;
-   HashSet Z;
-   char[] k;
-   char[] I;
-   char[] r;
-   int x;
-   static String o;
-   HashSet j;
+   public static int Q;
+   public static int c;
+   public int y;
+   public HashSet P;
+   public HashSet Z;
+   public char[] k;
+   public char[] I;
+   public char[] r;
+   public int x;
+   public static String o;
+   public HashSet j;
    public static Ky4[] C;
    public static String[] a;
    public static String[] b;
@@ -170,11 +170,11 @@ public class NN_2 {
       }
    }
 
-   static void Q(JM var0) {
+   public static void Q(JM var0) {
       new com.finalshell.task.KY3(var0).start();
    }
 
-   void C() throws Exception {
+   public void C() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -257,13 +257,13 @@ public class NN_2 {
       // 9b: return
    }
 
-   String o(String var1) {
+   public String o(String var1) {
       int var2 = var1.length() - 1;
       Object var3 = null;
       return var1;
    }
 
-   void e(String var1) {
+   public void e(String var1) {
       int var3 = var1.length();
       Ky4[] var10000 = J();
       int var4 = 0;

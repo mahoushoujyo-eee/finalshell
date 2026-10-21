@@ -4,7 +4,7 @@ public class By4 extends BN3 {
    public static String[] a;
    public static String[] b;
 
-   static void L() throws Exception {
+   public static void L() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

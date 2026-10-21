@@ -110,7 +110,7 @@ public abstract class X62 {
 
    public abstract com.finalshell.ui.model.BN G(JComponent var1, KH var2);
 
-   protected KH Q(JComponent param1) {
+   public KH Q(JComponent param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -153,11 +153,11 @@ public abstract class X62 {
       // 45: areturn
    }
 
-   protected com.finalshell.ui.model.BN D(JComponent var1) {
+   public com.finalshell.ui.model.BN D(JComponent var1) {
       return this.e(var1, this.Q(var1));
    }
 
-   protected com.finalshell.ui.model.BN e(JComponent param1, KH param2) {
+   public com.finalshell.ui.model.BN e(JComponent param1, KH param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -201,7 +201,7 @@ public abstract class X62 {
       // 47: areturn
    }
 
-   protected ComponentUI g(JComponent param1) {
+   public ComponentUI g(JComponent param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -399,7 +399,7 @@ public abstract class X62 {
       // 13f: ireturn
    }
 
-   protected Map Q(Map var1, XS var2, String var3) {
+   public Map Q(Map var1, XS var2, String var3) {
       int var4 = A$int();
 
       Map var10000;
@@ -556,7 +556,7 @@ public abstract class X62 {
       return false;
    }
 
-   protected void I(Object param1, Map param2, Map param3) {
+   public void I(Object param1, Map param2, Map param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

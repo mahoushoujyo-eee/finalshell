@@ -12,11 +12,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPopupMenu;
 
 public class KQ3 implements ActionListener {
-   final Y12_2 y;
-   final SelectDownloadFolderPanel Y;
+   public final Y12_2 y;
+   public final SelectDownloadFolderPanel Y;
    public static long a;
 
-   KQ3(SelectDownloadFolderPanel var1, Y12_2 var2) {
+   public KQ3(SelectDownloadFolderPanel var1, Y12_2 var2) {
       this.Y = var1;
       this.y = var2;
    }

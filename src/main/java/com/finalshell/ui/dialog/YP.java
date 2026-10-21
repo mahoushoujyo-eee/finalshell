@@ -7,8 +7,8 @@ import java.awt.Frame;
 import javax.swing.JDialog;
 
 public class YP extends JDialog {
-   U l;
-   SwitchTabCommand j;
+   public U l;
+   public SwitchTabCommand j;
    public static String a;
 
    public YP(U var1) {

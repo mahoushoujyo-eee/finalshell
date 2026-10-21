@@ -15,14 +15,14 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
 public class O52 implements MouseListener {
-   final F5 A;
-   final JMenuItem o;
-   final JMenuItem O;
-   final JPopupMenu p;
-   final RouteTracePanel x;
+   public final F5 A;
+   public final JMenuItem o;
+   public final JMenuItem O;
+   public final JPopupMenu p;
+   public final RouteTracePanel x;
    public static String a;
 
-   O52(RouteTracePanel var1, F5 var2, JMenuItem var3, JMenuItem var4, JPopupMenu var5) {
+   public O52(RouteTracePanel var1, F5 var2, JMenuItem var3, JMenuItem var4, JPopupMenu var5) {
       this.x = var1;
       this.A = var2;
       this.o = var3;

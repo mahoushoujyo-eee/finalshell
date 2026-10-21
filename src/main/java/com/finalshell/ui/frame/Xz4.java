@@ -16,7 +16,7 @@ import java.awt.Insets;
 import java.awt.LayoutManager;
 
 public class Xz4 extends C {
-   protected final Ky4 x;
+   public final Ky4 x;
    public static String[] a;
    public static String[] b;
 
@@ -89,9 +89,9 @@ public class Xz4 extends C {
    }
 
    public Xz4(LayoutManager var1, Component var2, Object var3, Insets var4) {
+   super(t(var2));
       label37: {
          int[] var10000 = Ds2.U$arrint();
-         super(t(var2));
          int[] var5 = var10000;
          this.setLayout(new BorderLayout());
          this.x = new Ky4(var1);

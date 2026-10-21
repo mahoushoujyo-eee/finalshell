@@ -26,20 +26,20 @@ import javax.swing.plaf.basic.BasicMenuItemUI;
 import javax.swing.text.View;
 
 public class Yh2_2 extends BasicMenuItemUI implements L0_2 {
-   protected Insets O = OP.c;
-   protected int J = OP.L;
-   protected Color P = OP.l;
-   protected Color e = OP.I;
-   protected Color p;
-   protected Color t;
-   protected Color B;
-   protected Color x;
-   protected int s;
-   protected boolean I;
-   protected int l;
-   protected Og4 w;
-   protected PropertyChangeListener C;
-   protected XN f;
+   public Insets O = OP.c;
+   public int J = OP.L;
+   public Color P = OP.l;
+   public Color e = OP.I;
+   public Color p;
+   public Color t;
+   public Color B;
+   public Color x;
+   public int s;
+   public boolean I;
+   public int l;
+   public Og4 w;
+   public PropertyChangeListener C;
+   public XN f;
    public static String[] a;
    public static String[] c;
    public static long[] i;
@@ -471,7 +471,7 @@ public class Yh2_2 extends BasicMenuItemUI implements L0_2 {
       }
    }
 
-   protected void W(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
+   public void W(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
       label18: {
          int[] var9 = Pb4.g();
          Og4 var10000 = this.w;
@@ -495,7 +495,7 @@ public class Yh2_2 extends BasicMenuItemUI implements L0_2 {
       }
    }
 
-   protected void j(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
+   public void j(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
       int[] var9;
       Icon var16;
       label91: {
@@ -600,7 +600,7 @@ public class Yh2_2 extends BasicMenuItemUI implements L0_2 {
       }
    }
 
-   protected void n(Graphics2D var1, JMenuItem var2, FontMetrics var3, int var4, int var5, int var6, int var7, boolean var8, boolean var9) {
+   public void n(Graphics2D var1, JMenuItem var2, FontMetrics var3, int var4, int var5, int var6, int var7, boolean var8, boolean var9) {
       int[] var10;
       Color var15;
       label36: {
@@ -651,7 +651,7 @@ public class Yh2_2 extends BasicMenuItemUI implements L0_2 {
       RV.j(var1, var11);
    }
 
-   protected void f(Graphics2D var1, JMenuItem var2, String var3, FontMetrics var4, int var5, int var6, int var7, int var8, boolean var9, boolean var10) {
+   public void f(Graphics2D var1, JMenuItem var2, String var3, FontMetrics var4, int var5, int var6, int var7, int var8, boolean var9, boolean var10) {
       if (var9 && this.t != null) {
          int var11 = var4.getHeight();
          var1.setPaint(this.t);

@@ -15,23 +15,23 @@ import javax.swing.JDialog;
 import javax.swing.JRadioButton;
 
 public class ApplyToFileAndDirDialog extends JDialog {
-   ArrayList q;
-   JRadioButton S;
-   JRadioButton v;
-   JRadioButton m;
-   CH3 K;
-   Ud2_2 H;
-   Ud2_2 Z;
-   Ud2_2 T;
-   Ud2_2 C;
-   Ud2_2 j;
-   Ud2_2 r;
-   Ud2_2 f;
-   Ud2_2 A;
-   Ud2_2 R;
-   Address U;
-   JCheckBox p;
-   boolean n;
+   public ArrayList q;
+   public JRadioButton S;
+   public JRadioButton v;
+   public JRadioButton m;
+   public CH3 K;
+   public Ud2_2 H;
+   public Ud2_2 Z;
+   public Ud2_2 T;
+   public Ud2_2 C;
+   public Ud2_2 j;
+   public Ud2_2 r;
+   public Ud2_2 f;
+   public Ud2_2 A;
+   public Ud2_2 R;
+   public Address U;
+   public JCheckBox p;
+   public boolean n;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -55,7 +55,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       new ApplyToFileAndDirDialog(null, var1, null);
    }
 
-   ApplyToFileAndDirDialog(Address param1, ArrayList param2, Window param3) {
+   public ApplyToFileAndDirDialog(Address param1, ArrayList param2, Window param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1869,7 +1869,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       // 1113: return
    }
 
-   void R() {
+   public void R() {
       Object var2 = 407652211073591669L;
       boolean var1 = ((JCheckBox)Ref.g(407652211073591669L, var2)).isSelected();
       Object var4 = 551807616942168493L;
@@ -1880,7 +1880,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       ((JRadioButton)Ref.g(411036142919789727L, var8)).setEnabled(var1);
    }
 
-   void p() {
+   public void p() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2881,7 +2881,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       // 917: return
    }
 
-   CH3 T(CH3 var1, CH3 var2) {
+   public CH3 T(CH3 var1, CH3 var2) {
       boolean var3;
       CH3 var4;
       label392: {
@@ -3367,7 +3367,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       }
    }
 
-   CH3 H() {
+   public CH3 H() {
       boolean var1;
       CH3 var2;
       label209: {
@@ -3668,7 +3668,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       return var2;
    }
 
-   void s() {
+   public void s() {
       boolean var1;
       label259: {
          var1 = Address.g();
@@ -4048,7 +4048,7 @@ public class ApplyToFileAndDirDialog extends JDialog {
       ((Ud2_2)var10027).setSelected(var171);
    }
 
-   Ud2_2 w(String var1) {
+   public Ud2_2 w(String var1) {
       Ud2_2 var2 = new Ud2_2(var1);
       var2.X(Pt2.mixed);
       return var2;

@@ -587,7 +587,7 @@ public abstract class Zq2 extends ZS implements X4 {
       // 575: areturn
    }
 
-   protected abstract Object m(Yn4 var1, Type var2, Object var3, Object var4);
+   public abstract Object m(Yn4 var1, Type var2, Object var3, Object var4);
 
    public static IllegalArgumentException a(IllegalArgumentException var0) {
       return var0;

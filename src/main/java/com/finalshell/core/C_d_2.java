@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class C_d_2 implements F_3_2 {
-   final HT J;
+   public final HT J;
    public static String[] a;
    public static String[] b;
 
-   C_d_2(HT var1) {
+   public C_d_2(HT var1) {
       this.J = var1;
    }
 

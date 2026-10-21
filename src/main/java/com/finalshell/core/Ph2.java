@@ -775,7 +775,7 @@ public class Ph2 implements Comparable {
       // 37: lreturn
    }
 
-   protected char[] l() {
+   public char[] l() {
       int var1 = this.I.length();
       char[] var2 = new char[var1 + 3];
       this.I.getChars(0, this.I.length(), var2, 1);
@@ -1571,7 +1571,7 @@ public class Ph2 implements Comparable {
       // 23: areturn
    }
 
-   protected java.lang.Class W() {
+   public java.lang.Class W() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

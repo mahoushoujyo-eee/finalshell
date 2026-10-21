@@ -28,7 +28,7 @@ public class C_H_3 extends C_g_2 {
 
    @C_9
    @Override
-   protected Map Q(String param1) throws ClassNotFoundException {
+   public Map Q(String param1) throws ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

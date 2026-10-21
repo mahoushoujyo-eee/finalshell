@@ -35,7 +35,7 @@ public class G extends O {
    }
 
    @Override
-   protected void firePropertyChange(String var1, Object var2, Object var3) {
+   public void firePropertyChange(String var1, Object var2, Object var3) {
       G var5;
       String var6;
       label44: {

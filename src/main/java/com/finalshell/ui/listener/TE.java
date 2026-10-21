@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TE implements ActionListener {
-   final Nr4 T;
+   public final Nr4 T;
 
-   TE(Nr4 var1) {
+   public TE(Nr4 var1) {
       this.T = var1;
    }
 

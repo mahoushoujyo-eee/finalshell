@@ -3,11 +3,11 @@ package com.finalshell.task;
 import java.io.File;
 
 public class IH3 implements Runnable {
-   final File L;
-   final Ih2 V;
+   public final File L;
+   public final Ih2 V;
    public static long a;
 
-   IH3(Ih2 var1, File var2) {
+   public IH3(Ih2 var1, File var2) {
       this.V = var1;
       this.L = var2;
    }

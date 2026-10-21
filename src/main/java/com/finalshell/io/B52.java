@@ -4,10 +4,10 @@ import com.finalshell.core.Jk2;
 import java.io.IOException;
 
 public class B52 extends IOException {
-   static String[] l;
-   static String[] x;
-   String z;
-   int c;
+   public static String[] l;
+   public static String[] x;
+   public String z;
+   public int c;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -18,8 +18,8 @@ public class B52 extends IOException {
    }
 
    public B52(int var1) {
+   super();
       String[] var10000 = Jk2.Y();
-      super();
       this.c = var1;
       String[] var2 = var10000;
       int var4 = var1 >> a(21712, 33302789667053597L);

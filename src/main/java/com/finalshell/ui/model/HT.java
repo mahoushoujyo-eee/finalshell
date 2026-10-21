@@ -4,7 +4,7 @@ import com.finalshell.core.FN;
 import com.finalshell.core.WC_2;
 import java.awt.event.MouseEvent;
 
-public final class HT extends Enum {
+public final class HT {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -19,11 +19,10 @@ public final class HT extends Enum {
    }
 
    public static HT valueOf(String var0) {
-      return Enum.valueOf(HT.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public HT(String var1, int var2, int var3) {
-      super(var1, var2);
       this.s = var3;
    }
 

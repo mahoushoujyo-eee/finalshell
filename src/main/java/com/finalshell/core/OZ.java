@@ -4,19 +4,16 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class OZ {
-   String W;
-   int R;
-   String K;
-   int r;
-   long A;
-   long M;
-   long P;
-   long c;
-   long i;
-   long l;
-
-   OZ() {
-   }
+   public String W;
+   public int R;
+   public String K;
+   public int r;
+   public long A;
+   public long M;
+   public long P;
+   public long c;
+   public long i;
+   public long l;
 
    public String b() {
       Object var1 = 587030028602773555L;

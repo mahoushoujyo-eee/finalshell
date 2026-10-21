@@ -7,9 +7,9 @@ import java.text.Collator;
 import java.util.Comparator;
 
 public class TY3 implements Comparator {
-   final Collator z;
+   public final Collator z;
 
-   TY3(Collator var1) {
+   public TY3(Collator var1) {
       this.z = var1;
    }
 

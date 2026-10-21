@@ -40,42 +40,42 @@ public class D extends BasicRootPaneUI implements SwingConstants {
    public static ImageIcon H;
    public static ImageIcon o;
    public static ImageIcon Z;
-   protected Color R;
-   protected Color J;
-   protected Color r;
-   protected Color v;
-   protected int X;
-   protected int I;
-   protected int Y;
-   protected Insets T;
-   protected boolean G;
-   protected ImageIcon a;
-   protected int z;
-   protected String s;
-   protected boolean f;
-   protected boolean t;
-   protected boolean p;
-   protected boolean q;
-   protected boolean g;
-   protected boolean k;
-   protected boolean Q;
-   protected boolean C;
-   protected boolean F;
-   protected boolean M;
-   protected JRootPane N;
-   protected Window x;
-   protected Frame P;
-   protected Dialog j;
-   protected int B;
-   protected LayoutManager E;
-   protected LayoutManager h;
-   protected WindowFocusListener y;
-   protected PropertyChangeListener D;
-   protected PropertyChangeListener u;
-   protected WindowStateListener n;
-   protected JComponent V;
-   protected K22 S;
-   protected com.finalshell.ui.panel.M2 A;
+   public Color R;
+   public Color J;
+   public Color r;
+   public Color v;
+   public int X;
+   public int I;
+   public int Y;
+   public Insets T;
+   public boolean G;
+   public ImageIcon a;
+   public int z;
+   public String s;
+   public boolean f;
+   public boolean t;
+   public boolean p;
+   public boolean q;
+   public boolean g;
+   public boolean k;
+   public boolean Q;
+   public boolean C;
+   public boolean F;
+   public boolean M;
+   public JRootPane N;
+   public Window x;
+   public Frame P;
+   public Dialog j;
+   public int B;
+   public LayoutManager E;
+   public LayoutManager h;
+   public WindowFocusListener y;
+   public PropertyChangeListener D;
+   public PropertyChangeListener u;
+   public WindowStateListener n;
+   public JComponent V;
+   public K22 S;
+   public com.finalshell.ui.panel.M2 A;
    public static String[] b;
    public static String[] c;
    public static long[] d;
@@ -523,7 +523,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var7.N();
    }
 
-   protected void N() {
+   public void N() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -589,7 +589,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       this.M = true;
    }
 
-   protected void d$void() {
+   public void d$void() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -612,10 +612,10 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.M = false;
    }
 
-   protected void f$void() {
+   public void f$void() {
    }
 
-   protected void q$void() {
+   public void q$void() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -629,7 +629,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.P.setMaximizedBounds(null);
    }
 
-   protected void O() {
+   public void O() {
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.y = new B_2(this);
       int[] var1 = var10000;
@@ -653,7 +653,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var2.x.addWindowStateListener(this.n);
    }
 
-   protected void A$void() {
+   public void A$void() {
       this.x.removeWindowFocusListener(this.y);
       int[] var10000 = com.finalshell.ui.dialog.Y2.M$arrint();
       this.x.removePropertyChangeListener(a(-27695, 7361), this.D);
@@ -672,7 +672,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var2.x.removeWindowStateListener(this.n);
    }
 
-   protected void X() {
+   public void X() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       if (var1 != null) {
          if (!Xk2.R()) {
@@ -685,7 +685,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       Xk2.Z(this.x, false);
    }
 
-   protected void r$void() {
+   public void r$void() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       if (var1 != null) {
          if (!Xk2.R()) {
@@ -698,7 +698,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       Xk2.Z(this.x, true);
    }
 
-   protected void R$void() {
+   public void R$void() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -718,11 +718,11 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.N.setBorder(BorderFactory.createEmptyBorder(1 + this.T.top, 1 + this.T.left, 1 + this.T.bottom, 1 + this.T.right));
    }
 
-   protected void m() {
+   public void m() {
       this.N.setBorder(null);
    }
 
-   protected void b() {
+   public void b() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -737,7 +737,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.N.setLayout(this.E);
    }
 
-   protected void T() {
+   public void T() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -752,7 +752,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.h = null;
    }
 
-   protected void j$void() {
+   public void j$void() {
       this.V = this.I();
       this.N.add(this.V);
       this.Z$void();
@@ -760,7 +760,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       this.N.add(this.A);
    }
 
-   protected JComponent I() {
+   public JComponent I() {
       com.finalshell.ui.panel.W var1 = new com.finalshell.ui.panel.W(this);
       com.finalshell.ui.panel.V var2 = new com.finalshell.ui.panel.V(this);
       var2.D(true);
@@ -778,7 +778,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return var3;
    }
 
-   protected void Z$void() {
+   public void Z$void() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -868,7 +868,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.N.add(this.S);
    }
 
-   protected void n() {
+   public void n() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       K22 var10000 = this.S;
       if (var1 != null) {
@@ -901,7 +901,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var2.S.P((boolean)var10001);
    }
 
-   protected void h() {
+   public void h() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var1 != null) {
@@ -934,7 +934,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.A = null;
    }
 
-   protected String i$String() {
+   public String i$String() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       boolean var10000 = this.Z$boolean();
       if (var1 != null) {
@@ -952,7 +952,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return !var10000 ? null : this.P.getTitle();
    }
 
-   protected ImageIcon k$ImageIcon() {
+   public ImageIcon k$ImageIcon() {
       int[] var1;
       List var7;
       label67: {
@@ -1029,7 +1029,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return var7.size() == 1 ? this.Y((Image)var2.get(0)) : new ImageIcon();
    }
 
-   protected ImageIcon Y(Image var1) {
+   public ImageIcon Y(Image var1) {
       int[] var2 = com.finalshell.ui.dialog.Y2.M$arrint();
       Image var10000 = var1;
       if (var2 != null) {
@@ -1043,7 +1043,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return Xg2.T(var10000, a(16986, 928103912585202500L));
    }
 
-   protected void Q() {
+   public void Q() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       Window var10000 = this.x;
       if (var1 != null) {
@@ -1057,7 +1057,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.dispatchEvent(new WindowEvent(this.x, a(16848, 4512645558544861387L)));
    }
 
-   protected void U() {
+   public void U() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       Frame var10000 = this.P;
       if (var1 != null) {
@@ -1071,7 +1071,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.setExtendedState(1);
    }
 
-   protected void p() {
+   public void p() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       Frame var10000 = this.P;
       if (var1 != null) {
@@ -1087,7 +1087,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       this.P.setExtendedState(a(31005, 2934375978528878596L));
    }
 
-   protected void J() {
+   public void J() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       Frame var10000 = this.P;
       if (var1 != null) {
@@ -1101,7 +1101,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       var10000.setExtendedState(0);
    }
 
-   protected boolean f$boolean() {
+   public boolean f$boolean() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       boolean var10000 = this.Z$boolean();
       if (var1 != null) {
@@ -1123,11 +1123,11 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return var1 == null ? var10000 : var10000;
    }
 
-   protected boolean u$boolean() {
+   public boolean u$boolean() {
       return this.P != null;
    }
 
-   protected boolean j$boolean() {
+   public boolean j$boolean() {
       int[] var1 = com.finalshell.ui.dialog.Y2.M$arrint();
       int var10000 = (this.u$boolean()) ? 1 : 0;
       if (var1 != null) {
@@ -1141,11 +1141,11 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       if (var1 == null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == a(2628, 5593412264602878814L) ? 1 : 0);
+         return (boolean)((var10000 == a(2628, 5593412264602878814L) ? 1 : 0) != 0);
       }
    }
 
-   protected boolean Z$boolean() {
+   public boolean Z$boolean() {
       return this.j != null;
    }
 
@@ -1246,7 +1246,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       }
    }
 
-   protected Double Z(JComponent var1) {
+   public Double Z(JComponent var1) {
       return new Double(
          (double)(this.X + 2),
          (double)(this.X + 2),
@@ -1257,7 +1257,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       );
    }
 
-   protected PF3 q(JComponent var1) {
+   public PF3 q(JComponent var1) {
       int[] var2 = com.finalshell.ui.dialog.Y2.M$arrint();
       int var10000 = this.X;
       if (var2 != null) {
@@ -1271,7 +1271,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return Fk2.I(var10000, this.Y, 0.8F);
    }
 
-   protected int H(JComponent var1) {
+   public int H(JComponent var1) {
       int[] var2 = com.finalshell.ui.dialog.Y2.M$arrint();
       D var10000 = this;
       if (var2 != null) {
@@ -1285,7 +1285,7 @@ public class D extends BasicRootPaneUI implements SwingConstants {
       return var10000.I;
    }
 
-   protected boolean x(JComponent var1) {
+   public boolean x(JComponent var1) {
       return FN.L(var1).isFocused();
    }
 

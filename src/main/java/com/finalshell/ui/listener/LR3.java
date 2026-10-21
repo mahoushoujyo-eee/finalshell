@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class LR3 implements ActionListener {
-   final CopyPanel Y;
+   public final CopyPanel Y;
 
-   LR3(CopyPanel var1) {
+   public LR3(CopyPanel var1) {
       this.Y = var1;
    }
 

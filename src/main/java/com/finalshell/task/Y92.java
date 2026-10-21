@@ -7,9 +7,9 @@ import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 
 public class Y92 implements Runnable {
-   final SendSyncMailPanel H;
+   public final SendSyncMailPanel H;
 
-   Y92(SendSyncMailPanel var1) {
+   public Y92(SendSyncMailPanel var1) {
       this.H = var1;
    }
 

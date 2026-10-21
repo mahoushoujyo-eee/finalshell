@@ -3,9 +3,6 @@ package com.finalshell.core;
 public class He2_2 {
    public static String a;
 
-   He2_2() {
-   }
-
    @Override
    public String toString() {
       return a;

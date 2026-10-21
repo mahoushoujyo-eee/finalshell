@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dt2 implements ActionListener {
-   final ApplyToFileAndDirDialog C;
+   public final ApplyToFileAndDirDialog C;
 
-   Dt2(ApplyToFileAndDirDialog var1) {
+   public Dt2(ApplyToFileAndDirDialog var1) {
       this.C = var1;
    }
 

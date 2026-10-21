@@ -5,10 +5,10 @@ import com.finalshell.core.DH;
 import java.io.IOException;
 
 public class Cu2 implements Runnable {
-   final AU Y;
-   final DH q;
+   public final AU Y;
+   public final DH q;
 
-   Cu2(DH var1, AU var2) {
+   public Cu2(DH var1, AU var2) {
       this.q = var1;
       this.Y = var2;
    }

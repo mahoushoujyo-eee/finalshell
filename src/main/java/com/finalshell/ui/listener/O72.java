@@ -6,11 +6,11 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class O72 extends KeyAdapter {
-   final Bq_2 Q;
+   public final Bq_2 Q;
    public static long[] a;
    public static Integer[] b;
 
-   O72(Bq_2 var1) {
+   public O72(Bq_2 var1) {
       this.Q = var1;
    }
 

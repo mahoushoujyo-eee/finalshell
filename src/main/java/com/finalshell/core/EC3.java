@@ -5,9 +5,9 @@ import com.finalshell.ui.panel.KC3;
 import java.awt.event.KeyEvent;
 
 public class EC3 extends Wc2{
-   final KC3 I;
+   public final KC3 I;
 
-   EC3(KC3 var1) {
+   public EC3(KC3 var1) {
       this.I = var1;
    }
 
@@ -31,7 +31,7 @@ public class EC3 extends Wc2{
                   }
                }
 
-               var10000 = KC3.E(this.I);
+               var10000 = (KC3.E(this.I)) ? 1 : 0;
             }
 
             if (var2 != null) {

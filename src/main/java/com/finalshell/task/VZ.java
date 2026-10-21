@@ -6,12 +6,12 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class VZ implements Runnable {
-   final String Q;
-   final boolean H;
-   final boolean n;
-   final Address u;
+   public final String Q;
+   public final boolean H;
+   public final boolean n;
+   public final Address u;
 
-   VZ(Address var1, String var2, boolean var3, boolean var4) {
+   public VZ(Address var1, String var2, boolean var3, boolean var4) {
       this.u = var1;
       this.Q = var2;
       this.H = var3;

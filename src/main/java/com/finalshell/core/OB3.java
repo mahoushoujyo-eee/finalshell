@@ -12,8 +12,8 @@ import javax.crypto.spec.DESKeySpec;
 import javax.naming.NamingException;
 
 public class OB3 {
-   String k = null;
-   boolean I = true;
+   public String k = null;
+   public boolean I = true;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -145,7 +145,7 @@ public class OB3 {
       // f7: areturn
    }
 
-   static boolean S() {
+   public static boolean S() {
       boolean var0 = false;
 
       try {
@@ -157,7 +157,7 @@ public class OB3 {
       return var0;
    }
 
-   static String w() {
+   public static String w() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

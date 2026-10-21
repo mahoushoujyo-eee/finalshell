@@ -7,9 +7,9 @@ import java.beans.PropertyChangeListener;
 import javax.swing.SwingUtilities;
 
 public class Ec2 implements PropertyChangeListener {
-   final DP_2 X;
+   public final DP_2 X;
 
-   Ec2(DP_2 var1) {
+   public Ec2(DP_2 var1) {
       this.X = var1;
    }
 

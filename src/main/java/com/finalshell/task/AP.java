@@ -4,13 +4,13 @@ import com.finalshell.core.L9;
 import com.finalshell.ui.panel.RouteTracePanel;
 
 public class AP implements Runnable {
-   final String Q;
-   final L9 s;
-   final RouteTracePanel x;
+   public final String Q;
+   public final L9 s;
+   public final RouteTracePanel x;
    public static long a;
    public static long b;
 
-   AP(String var1, L9 var2, RouteTracePanel var3) {
+   public AP(String var1, L9 var2, RouteTracePanel var3) {
       this.Q = var1;
       this.s = var2;
       this.x = var3;

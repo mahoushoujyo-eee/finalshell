@@ -4,7 +4,7 @@ public class FV_3 implements Hp2_2 {
    public final int a;
    @C_9
    public final NA_3 q;
-   static boolean A;
+   public static boolean A;
    public static String[] b;
    public static String[] c;
 
@@ -13,8 +13,8 @@ public class FV_3 implements Hp2_2 {
    }
 
    public FV_3(int var1, @C_9 NA_3 var2) {
+   super();
       String[] var10000 = RG_2.C();
-      super();
       String[] var3 = var10000;
       if (var2 == null) {
          label39: {

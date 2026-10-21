@@ -5,9 +5,9 @@ import com.finalshell.core.YT3_2;
 import com.finalshell.reflect.Ref;
 
 public class Zu2 implements Runnable {
-   final YT3_2 t;
+   public final YT3_2 t;
 
-   Zu2(YT3_2 var1) {
+   public Zu2(YT3_2 var1) {
       this.t = var1;
    }
 

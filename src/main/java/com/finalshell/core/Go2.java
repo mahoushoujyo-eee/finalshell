@@ -3,20 +3,20 @@ package com.finalshell.core;
 import java.awt.Color;
 
 public class Go2 implements Cloneable {
-   int T = 0;
-   Od4 j;
-   Od4 r;
-   O_3 H = new O_3();
-   int Y = -1;
-   float L;
-   float D;
-   float F;
-   float w = 0.5F;
-   float V = 0.5F;
-   float u = 0.5F;
-   float v = (float) (Math.PI / 6);
-   float X;
-   float k = 100.0F;
+   public int T = 0;
+   public Od4 j;
+   public Od4 r;
+   public O_3 H = new O_3();
+   public int Y = -1;
+   public float L;
+   public float D;
+   public float F;
+   public float w = 0.5F;
+   public float V = 0.5F;
+   public float u = 0.5F;
+   public float v = (float) (Math.PI / 6);
+   public float X;
+   public float k = 100.0F;
    public static String a;
 
    public Go2() {

@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class U_4 implements Fq2_2 {
-   final K2_3 P;
+   public final K2_3 P;
 
-   U_4(K2_3 var1) {
+   public U_4(K2_3 var1) {
       this.P = var1;
    }
 

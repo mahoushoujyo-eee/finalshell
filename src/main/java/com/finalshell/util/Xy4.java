@@ -21,14 +21,14 @@ import java.util.Map.Entry;
 
 /** @deprecated */
 public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
-   transient volatile Set n = null;
-   transient volatile Collection r = null;
-   transient NI[] v;
-   transient int t;
-   int c;
-   final float X;
-   transient volatile int b;
-   final int U = new Random().nextInt(a(12263, 374339204641768926L));
+   public transient volatile Set n = null;
+   public transient volatile Collection r = null;
+   public transient NI[] v;
+   public transient int t;
+   public int c;
+   public final float X;
+   public transient volatile int b;
+   public final int U = new Random().nextInt(a(12263, 374339204641768926L));
    public transient Set L = null;
    public static String[] a;
    public static String[] d;
@@ -217,16 +217,16 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       this.m(var1);
    }
 
-   void y() {
+   public void y() {
    }
 
-   static int d(int var0) {
+   public static int d(int var0) {
       var0 *= var0;
       var0 ^= var0 >>> a(5549, 6129187728456679318L) ^ var0 >>> a(5148, 5925496626712149549L);
       return var0 ^ var0 >>> a(29800, 8549009448377753181L) ^ var0 >>> 4;
    }
 
-   static int O(int var0, int var1) {
+   public static int O(int var0, int var1) {
       return var0 & var1 - 1;
    }
 
@@ -415,7 +415,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       return false;
    }
 
-   final NI j(Object param1) {
+   public final NI j(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -836,7 +836,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       }
    }
 
-   void j(int param1) {
+   public void j(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -891,7 +891,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       // 56: return
    }
 
-   void g(NI[] param1) {
+   public void g(NI[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1104,7 +1104,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       // 25: areturn
    }
 
-   final NI O(Object param1) {
+   public final NI O(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1254,7 +1254,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       // 120: areturn
    }
 
-   final NI H(Object param1) {
+   public final NI H(Object param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1562,7 +1562,7 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       return var1;
    }
 
-   void E(int param1, Object param2, Object param3, int param4) {
+   public void E(int param1, Object param2, Object param3, int param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1617,21 +1617,21 @@ public class Xy4 extends AbstractMap implements Map, Cloneable, Serializable {
       // 51: return
    }
 
-   void Y(int var1, Object var2, Object var3, int var4) {
+   public void Y(int var1, Object var2, Object var3, int var4) {
       NI var5 = this.v[var4];
       this.v[var4] = new NI(var1, var2, var3, var5);
       this.t++;
    }
 
-   Iterator e() {
+   public Iterator e() {
       return new A_2(this, null);
    }
 
-   Iterator P() {
+   public Iterator P() {
       return new O_2(this, null);
    }
 
-   Iterator O() {
+   public Iterator O() {
       return new K(this, null);
    }
 

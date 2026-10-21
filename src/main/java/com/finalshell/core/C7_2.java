@@ -3,11 +3,8 @@ package com.finalshell.core;
 public class C7_2 extends C1 {
    public static String j;
 
-   C7_2() {
-   }
-
    @Override
-   String i() {
+   public String i() {
       return j;
    }
 

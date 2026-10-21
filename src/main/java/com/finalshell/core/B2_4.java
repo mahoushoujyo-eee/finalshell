@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class B2_4 implements H22_2 {
-   final Cs2_2 v;
+   public final Cs2_2 v;
 
-   B2_4(Cs2_2 var1) {
+   public B2_4(Cs2_2 var1) {
       this.v = var1;
    }
 

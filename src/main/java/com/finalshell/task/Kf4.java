@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Kf4 implements Runnable {
-   final int a;
-   final AM w;
+   public final int a;
+   public final AM w;
 
-   Kf4(AM var1, int var2) {
+   public Kf4(AM var1, int var2) {
       this.w = var1;
       this.a = var2;
    }

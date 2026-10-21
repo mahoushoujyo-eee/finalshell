@@ -13,14 +13,14 @@ import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 
 public class ZO implements MouseListener {
-   final String U;
-   final JLabel g;
-   final Color P;
-   final com.finalshell.ui.panel.W8 p;
-   final JPopupMenu w;
-   final RouteTracePanel3 u;
+   public final String U;
+   public final JLabel g;
+   public final Color P;
+   public final com.finalshell.ui.panel.W8 p;
+   public final JPopupMenu w;
+   public final RouteTracePanel3 u;
 
-   ZO(RouteTracePanel3 var1, String var2, JLabel var3, Color var4, com.finalshell.ui.panel.W8 var5, JPopupMenu var6) {
+   public ZO(RouteTracePanel3 var1, String var2, JLabel var3, Color var4, com.finalshell.ui.panel.W8 var5, JPopupMenu var6) {
       this.u = var1;
       this.U = var2;
       this.g = var3;

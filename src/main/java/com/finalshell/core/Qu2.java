@@ -13,38 +13,38 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class Qu2 {
-   InetAddress s;
-   String M;
-   int F;
-   InetAddress l;
-   int r;
-   int a;
-   B2 P;
-   static Random U;
-   PingMessageR m;
-   DatagramSocket T;
-   boolean n = true;
-   int y;
-   FO K;
-   int B;
-   HashMap b;
+   public InetAddress s;
+   public String M;
+   public int F;
+   public InetAddress l;
+   public int r;
+   public int a;
+   public B2 P;
+   public static Random U;
+   public PingMessageR m;
+   public DatagramSocket T;
+   public boolean n = true;
+   public int y;
+   public FO K;
+   public int B;
+   public HashMap b;
    public HashMap c;
-   boolean V;
-   static int Y;
-   static int w;
-   int q;
-   Object t;
-   HashSet A;
-   ArrayList p;
-   boolean N;
-   Object f;
+   public boolean V;
+   public static int Y;
+   public static int w;
+   public int q;
+   public Object t;
+   public HashSet A;
+   public ArrayList p;
+   public boolean N;
+   public Object f;
    public static long d;
 
    static {
       __vfClinit__();
    }
 
-   Qu2(PingMessageR var1, FO var2, InetAddress var3, int var4, int var5, B2 var6) {
+   public Qu2(PingMessageR var1, FO var2, InetAddress var3, int var4, int var5, B2 var6) {
       this.y = (int)d;
       this.B = -1;
       this.b = new HashMap();
@@ -73,7 +73,7 @@ public class Qu2 {
       PingMessageR.U.execute(new com.finalshell.task.Z6(this));
    }
 
-   void T() {
+   public void T() {
       String[] var1 = PingMessageR.N();
       Qu2 var10000 = this;
       if (var1 != null) {
@@ -89,7 +89,7 @@ public class Qu2 {
       var10000.T.close();
    }
 
-   void K(DatagramPacket var1) {
+   public void K(DatagramPacket var1) {
       this.B++;
       byte[] var2 = new byte[var1.getLength()];
       System.arraycopy(var1.getData(), 0, var2, 0, var1.getLength());
@@ -97,7 +97,7 @@ public class Qu2 {
       this.m.e.p(this, this.B);
    }
 
-   void O(String var1, int var2) {
+   public void O(String var1, int var2) {
       this.M = var1;
       this.F = var2;
    }
@@ -140,7 +140,7 @@ public class Qu2 {
       this.k(var1.f());
    }
 
-   void k(byte[] var1) {
+   public void k(byte[] var1) {
       DatagramPacket var2 = new DatagramPacket(var1, var1.length);
       var2.setAddress(this.l);
       var2.setPort(this.r);
@@ -152,7 +152,7 @@ public class Qu2 {
       }
    }
 
-   void J(Wr2 var1) {
+   public void J(Wr2 var1) {
       DatagramPacket var2 = new DatagramPacket(var1.M(), var1.M().length);
       var2.setAddress(this.s);
       var2.setPort(this.F);
@@ -306,7 +306,7 @@ public class Qu2 {
    // $VF: Could not inline inconsistent finally blocks
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void b() {
+   public void b() {
       String[] var10000 = PingMessageR.N();
       Object var2 = this.t;
       synchronized (this.t){} // $VF: monitorenter 
@@ -384,7 +384,7 @@ public class Qu2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void X() {
+   public void X() {
       String[] var1 = PingMessageR.N();
       Object var10000 = this.p;
       if (var1 != null) {

@@ -4,7 +4,7 @@ import com.finalshell.connection.DelayedAckSACK;
 import java.util.HashMap;
 
 public class Fm4 {
-   HashMap A = new HashMap();
+   public HashMap A = new HashMap();
    public static String a;
 
    public DelayedAckSACK d(String var1, int var2) {

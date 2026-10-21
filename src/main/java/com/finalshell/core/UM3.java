@@ -6,11 +6,11 @@ import com.finalshell.ui.frame.UpdateFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class UM3 {
-   long m;
-   TL3 u;
+   public long m;
+   public TL3 u;
    public static long a;
 
-   UM3() {
+   public UM3() {
       UpdateFrame var1 = new UpdateFrame(null);
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new com.finalshell.task.WW(this, var1), (int)a);

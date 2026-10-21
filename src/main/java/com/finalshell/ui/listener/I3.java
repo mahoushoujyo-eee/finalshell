@@ -5,9 +5,9 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 public class I3 implements ItemListener {
-   final IY o;
+   public final IY o;
 
-   I3(IY var1) {
+   public I3(IY var1) {
       this.o = var1;
    }
 

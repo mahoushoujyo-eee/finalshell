@@ -6,9 +6,9 @@ import com.finalshell.ui.adapter.FolderAdapter;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mg2 implements Runnable {
-   final FolderAdapter j;
+   public final FolderAdapter j;
 
-   Mg2(FolderAdapter var1) {
+   public Mg2(FolderAdapter var1) {
       this.j = var1;
    }
 

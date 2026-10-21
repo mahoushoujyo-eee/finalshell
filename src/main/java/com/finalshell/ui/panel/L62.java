@@ -5,7 +5,7 @@ import java.awt.Component;
 import javax.swing.JPanel;
 
 public class L62 extends JPanel {
-   final XW3 G;
+   public final XW3 G;
 
    public L62(XW3 var1) {
       this.G = var1;
@@ -18,7 +18,7 @@ public class L62 extends JPanel {
       XW3.w(this.G).repaint();
    }
 
-   L62(XW3 var1, ZK var2) {
+   public L62(XW3 var1, ZK var2) {
       this(var1);
    }
 }

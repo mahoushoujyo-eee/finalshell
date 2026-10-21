@@ -9,13 +9,13 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 
 public class X1 implements ActionListener {
-   final JProgressBar H;
-   final Ej2 V;
+   public final JProgressBar H;
+   public final Ej2 V;
    public static long[] a;
    public static Integer[] b;
    public static long c;
 
-   X1(Ej2 var1, JProgressBar var2) {
+   public X1(Ej2 var1, JProgressBar var2) {
       this.V = var1;
       this.H = var2;
    }

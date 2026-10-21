@@ -6,12 +6,12 @@ import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.packet.Packet;
 
 public class Kg2 implements PacketListener {
-   final XQ_2 s;
+   public final XQ_2 s;
    public final PcapNetworkInterface m;
    public final PcapHandle X;
    public static long a;
 
-   Kg2(XQ_2 var1, PcapNetworkInterface var2, PcapHandle var3) {
+   public Kg2(XQ_2 var1, PcapNetworkInterface var2, PcapHandle var3) {
       this.s = var1;
       this.m = var2;
       this.X = var3;

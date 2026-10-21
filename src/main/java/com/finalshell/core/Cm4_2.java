@@ -7,9 +7,6 @@ public class Cm4_2 implements PrivilegedAction {
    public static String[] a;
    public static String[] b;
 
-   Cm4_2() {
-   }
-
    public InputStream y() {
       int var10000 = Ph2.u();
       ClassLoader var2 = Thread.currentThread().getContextClassLoader();

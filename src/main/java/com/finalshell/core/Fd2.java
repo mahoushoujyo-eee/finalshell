@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Fd2 implements M_2_2 {
-   final N6_2 w;
-   final H3_2 s;
+   public final N6_2 w;
+   public final H3_2 s;
 
-   Fd2(H3_2 var1, N6_2 var2) {
+   public Fd2(H3_2 var1, N6_2 var2) {
       this.s = var1;
       this.w = var2;
    }

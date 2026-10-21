@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.util.List;
 
 public class F5_2 implements H22_2 {
-   final List i;
-   final H3_2 Q;
+   public final List i;
+   public final H3_2 Q;
 
-   F5_2(H3_2 var1, List var2) {
+   public F5_2(H3_2 var1, List var2) {
       this.Q = var1;
       this.i = var2;
    }

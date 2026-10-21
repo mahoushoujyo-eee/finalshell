@@ -5,11 +5,11 @@ import java.awt.event.MouseEvent;
 import java.util.List;
 
 public class Gj2 implements CS3_2 {
-   final Ca4_2 A;
-   final MouseEvent h;
-   final SetBackgroundImagePanel e;
+   public final Ca4_2 A;
+   public final MouseEvent h;
+   public final SetBackgroundImagePanel e;
 
-   Gj2(SetBackgroundImagePanel var1, Ca4_2 var2, MouseEvent var3) {
+   public Gj2(SetBackgroundImagePanel var1, Ca4_2 var2, MouseEvent var3) {
       this.e = var1;
       this.A = var2;
       this.h = var3;

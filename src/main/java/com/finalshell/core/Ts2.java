@@ -16,11 +16,11 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 
 public class Ts2 implements DragSourceListener, DragGestureListener {
-   DragSource y;
-   DragGestureRecognizer B;
-   OP3_2 i;
-   DefaultMutableTreeNode p;
-   JTree R;
+   public DragSource y;
+   public DragGestureRecognizer B;
+   public OP3_2 i;
+   public DefaultMutableTreeNode p;
+   public JTree R;
    public static String[] a;
    public static String[] b;
 

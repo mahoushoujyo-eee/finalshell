@@ -8,11 +8,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class ConfirmCloseWindowListener implements ActionListener {
-   final com.finalshell.ui.frame.U T;
+   public final com.finalshell.ui.frame.U T;
    public static String[] a;
    public static String[] b;
 
-   ConfirmCloseWindowListener(com.finalshell.ui.frame.U var1) {
+   public ConfirmCloseWindowListener(com.finalshell.ui.frame.U var1) {
       this.T = var1;
    }
 

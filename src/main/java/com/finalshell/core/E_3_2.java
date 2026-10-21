@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.io.IOException;
 
 public class E_3_2 extends J_5 {
-   final W3_6 v;
+   public final W3_6 v;
 
-   E_3_2(W3_6 var1) {
+   public E_3_2(W3_6 var1) {
       this.v = var1;
    }
 

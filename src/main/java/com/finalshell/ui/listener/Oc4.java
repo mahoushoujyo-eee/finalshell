@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class Oc4 implements ActionListener {
-   final JCheckBox g;
-   final ZU k;
+   public final JCheckBox g;
+   public final ZU k;
 
-   Oc4(ZU var1, JCheckBox var2) {
+   public Oc4(ZU var1, JCheckBox var2) {
       this.k = var1;
       this.g = var2;
    }

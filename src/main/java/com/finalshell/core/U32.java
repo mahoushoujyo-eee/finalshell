@@ -6,9 +6,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class U32 implements Fb2 {
-   final com.finalshell.ui.dialog.AW l;
+   public final com.finalshell.ui.dialog.AW l;
 
-   U32(com.finalshell.ui.dialog.AW var1) {
+   public U32(com.finalshell.ui.dialog.AW var1) {
       this.l = var1;
    }
 

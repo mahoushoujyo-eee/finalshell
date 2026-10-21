@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class A9 implements ActionListener {
-   final RouteTracePanel3 W;
+   public final RouteTracePanel3 W;
 
-   A9(RouteTracePanel3 var1) {
+   public A9(RouteTracePanel3 var1) {
       this.W = var1;
    }
 

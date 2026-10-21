@@ -1138,7 +1138,7 @@ public class It2 extends CharsetDecoder {
    }
 
    @Override
-   protected CoderResult decodeLoop(ByteBuffer var1, CharBuffer var2) {
+   public CoderResult decodeLoop(ByteBuffer var1, CharBuffer var2) {
       return this.W(var1, var2);
    }
 

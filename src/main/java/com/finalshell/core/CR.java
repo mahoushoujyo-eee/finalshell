@@ -6,11 +6,11 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class CR implements Cq2 {
-   final YI C;
-   final String m;
-   final Address I;
+   public final YI C;
+   public final String m;
+   public final Address I;
 
-   CR(Address var1, YI var2, String var3) {
+   public CR(Address var1, YI var2, String var3) {
       this.I = var1;
       this.C = var2;
       this.m = var3;

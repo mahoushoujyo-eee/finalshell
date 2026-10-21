@@ -22,10 +22,10 @@ import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
 public class U22 extends Us2 {
-   protected boolean i;
-   protected EY Z;
-   protected final Object G;
-   protected int l;
+   public boolean i;
+   public EY Z;
+   public final Object G;
+   public int l;
 
    public U22() {
       this(RK.drives);
@@ -44,11 +44,11 @@ public class U22 extends Us2 {
    }
 
    public U22(List var1) {
+   super(new R62(var1));
       int var3;
       label22: {
          label24: {
             String[] var10000 = CB3.C$arrString();
-            super(new R62(var1));
             this.i = Nk2.m;
             this.Z = null;
             this.G = new Object();
@@ -96,7 +96,7 @@ public class U22 extends Us2 {
       this.q(var2);
    }
 
-   protected EY V$EY() {
+   public EY V$EY() {
       String[] var1 = CB3.C$arrString();
       EY var10000 = this.Z;
       if (var1 != null) {
@@ -247,7 +247,7 @@ public class U22 extends Us2 {
                         var14 = var3;
                      }
 
-                     if (var14 != 0) {
+                     if (var14 != null) {
                         this.P(var7);
                      }
 
@@ -306,7 +306,7 @@ public class U22 extends Us2 {
       }
    }
 
-   protected void G(CY3 param1, boolean param2) {
+   public void G(CY3 param1, boolean param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -663,7 +663,7 @@ public class U22 extends Us2 {
       return this.m((CY3)this.getModel().getRoot(), Cz2.c(var1));
    }
 
-   protected CY3 m(CY3 var1, List var2) {
+   public CY3 m(CY3 var1, List var2) {
       String[] var3;
       byte var9;
       label43: {
@@ -715,7 +715,7 @@ public class U22 extends Us2 {
       return null;
    }
 
-   protected CY3 U(CY3 var1, List var2) {
+   public CY3 U(CY3 var1, List var2) {
       String[] var3 = CB3.C$arrString();
       int var10000 = var2.size();
       if (var3 != null) {

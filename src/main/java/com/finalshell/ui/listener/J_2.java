@@ -8,9 +8,9 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.plaf.PopupMenuUI;
 
 public class J_2 implements ListSelectionListener {
-   final C_4 B;
+   public final C_4 B;
 
-   J_2(C_4 var1) {
+   public J_2(C_4 var1) {
       this.B = var1;
    }
 

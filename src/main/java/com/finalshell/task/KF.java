@@ -8,10 +8,10 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
 public class KF implements Runnable {
-   final U I;
+   public final U I;
    public static String a;
 
-   KF(U var1) {
+   public KF(U var1) {
       this.I = var1;
    }
 

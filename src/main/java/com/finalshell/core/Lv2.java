@@ -5,23 +5,23 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lv2 {
-   boolean Z;
-   int p;
-   int y;
-   String Y;
-   String j;
-   String L;
-   float M;
-   final W9 S;
+   public boolean Z;
+   public int p;
+   public int y;
+   public String Y;
+   public String j;
+   public String L;
+   public float M;
+   public final W9 S;
    public static String[] a;
    public static String[] b;
 
-   Lv2(W9 var1) {
+   public Lv2(W9 var1) {
       this.S = var1;
       Registry.lookupField(449638412839983005L).setBoolean(this, false);
    }
 
-   void d(String var1) {
+   public void d(String var1) {
       W2.F();
       Object[] var10001 = Registry.packArgs(var1);
       long var9 = 492930666611970668L;

@@ -260,7 +260,7 @@ public class DY3 extends Dq4 {
    }
 
    @Override
-   void n() {
+   public void n() {
    }
 
    @Override
@@ -8760,55 +8760,55 @@ public class DY3 extends Dq4 {
       super.y(var1);
    }
 
-   static int X(DY3 var0) {
+   public static int X(DY3 var0) {
       return var0.f;
    }
 
-   static int t(DY3 var0, byte[] var1, long var2, byte[] var4, int var5, int var6) throws Exception {
+   public static int t(DY3 var0, byte[] var1, long var2, byte[] var4, int var5, int var6) throws Exception {
       return var0.c(var1, var2, var4, var5, var6);
    }
 
-   static InputStream P(DY3 var0) {
+   public static InputStream P(DY3 var0) {
       return var0.U;
    }
 
-   static boolean q(DY3 var0, int[] var1, S_2_2 var2) throws IOException, Dn2_2 {
+   public static boolean q(DY3 var0, int[] var1, S_2_2 var2) throws IOException, Dn2_2 {
       return var0.c(var1, var2);
    }
 
-   static boolean a(DY3 var0, byte[] var1, S_2_2 var2) throws Exception {
+   public static boolean a(DY3 var0, byte[] var1, S_2_2 var2) throws Exception {
       return var0.F(var1, var2);
    }
 
-   static S_2_2 b(DY3 var0, UJ var1, S_2_2 var2) throws IOException {
+   public static S_2_2 b(DY3 var0, UJ var1, S_2_2 var2) throws IOException {
       return var0.v(var1, var2);
    }
 
-   static void B(DY3 var0, long var1) throws IOException {
+   public static void B(DY3 var0, long var1) throws IOException {
       var0.s(var1);
    }
 
-   static UJ Z(DY3 var0) {
+   public static UJ Z(DY3 var0) {
       return var0.G;
    }
 
-   static int l(DY3 var0) {
+   public static int l(DY3 var0) {
       return var0.fp;
    }
 
-   static Y4 A(DY3 var0) {
+   public static Y4 A(DY3 var0) {
       return var0.fB;
    }
 
-   static void U(DY3 var0, byte[] var1, long var2, int var4, Y4 var5) throws Exception {
+   public static void U(DY3 var0, byte[] var1, long var2, int var4, Y4 var5) throws Exception {
       var0.b(var1, var2, var4, var5);
    }
 
-   static void N(DY3 var0, UJ var1, int var2) throws IOException {
+   public static void N(DY3 var0, UJ var1, int var2) throws IOException {
       var0.N(var1, var2);
    }
 
-   static int z(DY3 var0, byte[] var1, int var2, int var3) throws IOException {
+   public static int z(DY3 var0, byte[] var1, int var2, int var3) throws IOException {
       return var0.x(var1, var2, var3);
    }
 

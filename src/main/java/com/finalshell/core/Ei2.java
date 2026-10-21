@@ -19,8 +19,8 @@ public class Ei2 implements Ic4 {
    public static Integer[] d;
 
    public Ei2(String var1) {
+   super();
       boolean var10000 = Dm4.J$boolean();
-      super();
       boolean var2 = var10000;
       int var3 = Y;
       String var4 = var1;

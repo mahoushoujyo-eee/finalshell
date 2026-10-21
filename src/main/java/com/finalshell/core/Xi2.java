@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 
 public class Xi2 implements SyntaxConstants {
-   String P;
+   public String P;
    public static String a;
 
    public Xi2() {

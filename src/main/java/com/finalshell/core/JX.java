@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 public class JX extends Jk2 {
    public int t;
    public byte[] Q;
-   static boolean J;
+   public static boolean J;
    public static String[] a;
    public static String[] d;
    public static long[] h;
@@ -29,11 +29,11 @@ public class JX extends Jk2 {
    }
 
    public JX(int var1, InetAddress var2, int var3) {
+   super(var1, var2, var3);
       String[] var4;
       String var7;
       label34: {
          String[] var10000 = Jk2.Y();
-         super(var1, var2, var3);
          var4 = var10000;
          InetAddress var10001 = var2;
          if (var4 != null) {

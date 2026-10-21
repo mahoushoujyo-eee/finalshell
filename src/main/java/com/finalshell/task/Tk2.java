@@ -5,9 +5,9 @@ import com.finalshell.ui.listener.DR3;
 import javax.swing.text.JTextComponent;
 
 public class Tk2 implements Runnable {
-   final DR3 p;
+   public final DR3 p;
 
-   Tk2(DR3 var1) {
+   public Tk2(DR3 var1) {
       this.p = var1;
    }
 

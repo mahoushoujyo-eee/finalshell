@@ -5,7 +5,7 @@ import java.awt.CardLayout;
 import javax.swing.JComponent;
 
 public class Z8 extends JComponent {
-   CardLayout G;
+   public CardLayout G;
 
    public Z8() {
       CardLayout var10001 = new CardLayout();

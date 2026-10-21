@@ -4,10 +4,10 @@ import com.finalshell.core.Qg2;
 import java.net.Socket;
 
 public class WD3 implements Runnable {
-   final Socket h;
-   final Qg2 T;
+   public final Socket h;
+   public final Qg2 T;
 
-   WD3(Qg2 var1, Socket var2) {
+   public WD3(Qg2 var1, Socket var2) {
       this.T = var1;
       this.h = var2;
    }

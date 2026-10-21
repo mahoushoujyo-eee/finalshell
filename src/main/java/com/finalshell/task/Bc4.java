@@ -6,11 +6,11 @@ import java.io.File;
 public class Bc4 extends Thread {
    public File V;
    public CK d;
-   final CK H;
+   public final CK H;
    public static String[] a;
    public static String[] b;
 
-   Bc4(CK var1, File var2) {
+   public Bc4(CK var1, File var2) {
       this.H = var1;
       this.d = null;
       this.V = var2;

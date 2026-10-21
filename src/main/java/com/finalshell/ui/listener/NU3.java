@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class NU3 extends ComponentAdapter {
-   final Nx4 k;
+   public final Nx4 k;
 
-   NU3(Nx4 var1) {
+   public NU3(Nx4 var1) {
       this.k = var1;
    }
 

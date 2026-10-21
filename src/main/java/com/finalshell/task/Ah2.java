@@ -9,11 +9,11 @@ import org.pcap4j.core.NotOpenException;
 import org.pcap4j.core.PcapNativeException;
 
 public class Ah2 implements Runnable {
-   final InetAddress k;
-   final int Y;
-   final IcpmPing c;
+   public final InetAddress k;
+   public final int Y;
+   public final IcpmPing c;
 
-   Ah2(IcpmPing var1, InetAddress var2, int var3) {
+   public Ah2(IcpmPing var1, InetAddress var2, int var3) {
       this.c = var1;
       this.k = var2;
       this.Y = var3;

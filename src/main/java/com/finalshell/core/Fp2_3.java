@@ -3,15 +3,15 @@ package com.finalshell.core;
 import java.util.Map;
 
 public class Fp2_3 implements C_e_2_2 {
-   static boolean i;
-   final Hd2 B;
-   final Map w;
-   final Cr2_2 k;
-   final H3_2 G;
+   public static boolean i;
+   public final Hd2 B;
+   public final Map w;
+   public final Cr2_2 k;
+   public final H3_2 G;
    public static String[] a;
    public static String[] b;
 
-   Fp2_3(H3_2 var1, Hd2 var2, Map var3, Cr2_2 var4) {
+   public Fp2_3(H3_2 var1, Hd2 var2, Map var3, Cr2_2 var4) {
       this.G = var1;
       this.B = var2;
       this.w = var3;

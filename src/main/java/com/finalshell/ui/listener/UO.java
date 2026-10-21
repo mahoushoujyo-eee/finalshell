@@ -5,9 +5,9 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 public class UO implements FocusListener {
-   final RouteTracePanel3 e;
+   public final RouteTracePanel3 e;
 
-   UO(RouteTracePanel3 var1) {
+   public UO(RouteTracePanel3 var1) {
       this.e = var1;
    }
 

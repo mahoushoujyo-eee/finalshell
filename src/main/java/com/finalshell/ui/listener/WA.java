@@ -13,9 +13,9 @@ import java.util.List;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class WA implements MouseListener, KeyListener {
-   final com.finalshell.ui.panel.U3 n;
+   public final com.finalshell.ui.panel.U3 n;
 
-   protected WA(com.finalshell.ui.panel.U3 var1) {
+   public WA(com.finalshell.ui.panel.U3 var1) {
       this.n = var1;
    }
 

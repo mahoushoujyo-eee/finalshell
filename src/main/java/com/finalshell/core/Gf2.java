@@ -9,9 +9,9 @@ import javax.swing.JComponent;
 import javax.swing.plaf.ComponentUI;
 
 public class Gf2 extends Gi2 {
-   protected ImageIcon rZ = W6_2.H;
-   protected int r6 = W6_2.A;
-   protected int rq = W6_2.v;
+   public ImageIcon rZ = W6_2.H;
+   public int r6 = W6_2.A;
+   public int rq = W6_2.v;
 
    public static ComponentUI createUI(JComponent var0) {
       return new Gf2();
@@ -41,7 +41,7 @@ public class Gf2 extends Gi2 {
       this.rq = var1;
    }
 
-   protected Insets g$Insets() {
+   public Insets g$Insets() {
       Insets var2;
       int var4;
       label16: {

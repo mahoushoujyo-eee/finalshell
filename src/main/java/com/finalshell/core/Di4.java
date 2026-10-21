@@ -25,12 +25,12 @@ public class Di4 implements CompositeContext {
    public void dispose() {
    }
 
-   static int N(int var0, int var1) {
+   public static int N(int var0, int var1) {
       int var2 = var0 * var1 + a(31172, 2028901699679707892L);
       return (var2 >> a(6724, 227922682202980732L)) + var2 >> a(14759, 7758752785333953169L);
    }
 
-   static int F(int var0) {
+   public static int F(int var0) {
       String[] var1 = ZH.U();
       int var10000 = var0;
       if (var1 == null) {

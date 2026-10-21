@@ -6,10 +6,10 @@ import java.awt.event.AWTEventListener;
 import java.awt.event.MouseEvent;
 
 public class Ru4 implements AWTEventListener {
-   final com.finalshell.ui.panel.Wd2 m;
+   public final com.finalshell.ui.panel.Wd2 m;
    public static long a;
 
-   Ru4(com.finalshell.ui.panel.Wd2 var1) {
+   public Ru4(com.finalshell.ui.panel.Wd2 var1) {
       this.m = var1;
    }
 

@@ -5,7 +5,7 @@ import java.io.Reader;
 
 public class P2_2 extends Ps2 {
    public static ThreadLocal i;
-   final Reader j;
+   public final Reader j;
    public char[] d;
    public int A;
    public int u;
@@ -13,7 +13,7 @@ public class P2_2 extends Ps2 {
    public static String[] b;
    public static long c;
 
-   P2_2(Reader param1) {
+   public P2_2(Reader param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -72,7 +72,7 @@ public class P2_2 extends Ps2 {
    }
 
    @Override
-   void c() {
+   public void c() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

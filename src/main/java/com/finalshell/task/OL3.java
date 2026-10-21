@@ -4,9 +4,9 @@ import com.finalshell.ui.dialog.DownloadDialog;
 import java.io.IOException;
 
 public class OL3 implements Runnable {
-   final DownloadDialog R;
+   public final DownloadDialog R;
 
-   OL3(DownloadDialog var1) {
+   public OL3(DownloadDialog var1) {
       this.R = var1;
    }
 

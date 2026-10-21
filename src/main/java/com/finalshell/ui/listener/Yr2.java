@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yr2 implements ActionListener {
-   final ShowDeletedPanel s;
+   public final ShowDeletedPanel s;
 
-   Yr2(ShowDeletedPanel var1) {
+   public Yr2(ShowDeletedPanel var1) {
       this.s = var1;
    }
 

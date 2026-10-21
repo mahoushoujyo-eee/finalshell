@@ -49,39 +49,39 @@ public class K5_2 extends BasicTreeUI {
    public static ImageIcon w;
    public static ImageIcon a;
    public static ImageIcon s;
-   protected static float[] V;
-   protected boolean U = N2_2.o;
-   protected boolean h = N2_2.a;
-   protected boolean J = N2_2.A;
-   protected Color i = N2_2.x;
-   protected com.finalshell.ui.model.T Q = N2_2.Y;
-   protected int T = N2_2.Q;
-   protected int S;
-   protected boolean v;
-   protected Color W;
-   protected Color m;
-   protected int I;
-   protected BasicStroke z;
-   protected int B;
-   protected PropertyChangeListener O;
-   protected PropertyChangeListener A;
-   protected TreeSelectionListener d;
-   protected TreeExpansionListener N;
-   protected MouseAdapter C;
-   protected int g;
-   protected List P;
-   protected Point n;
-   protected Point q;
-   protected boolean k;
-   protected TreePath G;
-   boolean p;
-   DefaultMutableTreeNode F;
-   long R;
-   long r;
-   protected Color K;
-   protected Color D;
-   protected boolean H;
-   Color b;
+   public static float[] V;
+   public boolean U = N2_2.o;
+   public boolean h = N2_2.a;
+   public boolean J = N2_2.A;
+   public Color i = N2_2.x;
+   public com.finalshell.ui.model.T Q = N2_2.Y;
+   public int T = N2_2.Q;
+   public int S;
+   public boolean v;
+   public Color W;
+   public Color m;
+   public int I;
+   public BasicStroke z;
+   public int B;
+   public PropertyChangeListener O;
+   public PropertyChangeListener A;
+   public TreeSelectionListener d;
+   public TreeExpansionListener N;
+   public MouseAdapter C;
+   public int g;
+   public List P;
+   public Point n;
+   public Point q;
+   public boolean k;
+   public TreePath G;
+   public boolean p;
+   public DefaultMutableTreeNode F;
+   public long R;
+   public long r;
+   public Color K;
+   public Color D;
+   public boolean H;
+   public Color b;
    public static String[] c;
    public static String[] e;
    public static long[] f;
@@ -160,7 +160,7 @@ public class K5_2 extends BasicTreeUI {
       super.uninstallUI(var1);
    }
 
-   protected boolean V() {
+   public boolean V() {
       String var1 = com.finalshell.ui.panel.S.d();
       JTree var10000 = this.tree;
       if (var1 != null) {
@@ -206,7 +206,7 @@ public class K5_2 extends BasicTreeUI {
       if (var1 == null) {
          return var5 != 0;
       } else {
-         return (boolean)(var5 > 0 ? 1 : 0);
+         return (boolean)((var5 > 0 ? 1 : 0) != 0);
       }
    }
 
@@ -346,7 +346,7 @@ public class K5_2 extends BasicTreeUI {
       if (var1 == null) {
          return var3 != 0;
       } else {
-         return (boolean)(var3 != 1 ? 1 : 0);
+         return (boolean)((var3 != 1 ? 1 : 0) != 0);
       }
    }
 
@@ -414,12 +414,12 @@ public class K5_2 extends BasicTreeUI {
    }
 
    @Override
-   protected TreeCellEditor createDefaultCellEditor() {
+   public TreeCellEditor createDefaultCellEditor() {
       return new V5_2();
    }
 
    @Override
-   protected void selectPathForEvent(TreePath var1, MouseEvent var2) {
+   public void selectPathForEvent(TreePath var1, MouseEvent var2) {
       String var3 = com.finalshell.ui.panel.S.d();
       K5_2 var10000 = this;
       TreePath var10001 = var1;
@@ -437,7 +437,7 @@ public class K5_2 extends BasicTreeUI {
       var10000.selectPathForEvent(var10001, var10002);
    }
 
-   protected boolean v(TreePath var1, int var2, int var3) {
+   public boolean v(TreePath var1, int var2, int var3) {
       String var4 = com.finalshell.ui.panel.S.d();
       boolean var10000 = this.tree instanceof com.finalshell.ui.panel.U3;
       if (var4 != null) {
@@ -498,7 +498,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    @Override
-   protected Color getHashColor() {
+   public Color getHashColor() {
       return this.i;
    }
 
@@ -513,11 +513,11 @@ public class K5_2 extends BasicTreeUI {
    }
 
    @Override
-   protected void drawCentered(Component var1, Graphics var2, Icon var3, int var4, int var5) {
+   public void drawCentered(Component var1, Graphics var2, Icon var3, int var4, int var5) {
       var3.paintIcon(var1, var2, this.C(var4, var3.getIconWidth()), var5 - var3.getIconHeight() / 2);
    }
 
-   protected int C(int var1, int var2) {
+   public int C(int var1, int var2) {
       String var3 = com.finalshell.ui.panel.S.d();
       int var10000 = (this.k) ? 1 : 0;
       if (var3 != null) {
@@ -531,7 +531,7 @@ public class K5_2 extends BasicTreeUI {
       return var10000 - (int)Math.floor((double)var2 / 2.0);
    }
 
-   protected void F() {
+   public void F() {
       String var1 = com.finalshell.ui.panel.S.d();
       K5_2 var10000 = this;
       if (var1 != null) {
@@ -550,7 +550,7 @@ public class K5_2 extends BasicTreeUI {
       }
    }
 
-   protected List L() {
+   public List L() {
       String var10000 = com.finalshell.ui.panel.S.d();
       ArrayList var2 = new ArrayList();
       String var1 = var10000;
@@ -660,7 +660,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    @Override
-   protected int getHorizontalLegBuffer() {
+   public int getHorizontalLegBuffer() {
       return a(25568, 9085472095170124865L);
    }
 
@@ -685,7 +685,7 @@ public class K5_2 extends BasicTreeUI {
       }
    }
 
-   protected void i(Graphics2D var1) {
+   public void i(Graphics2D var1) {
       String var10000 = com.finalshell.ui.panel.S.d();
       this.S = 0;
       this.T = 0;
@@ -726,7 +726,7 @@ public class K5_2 extends BasicTreeUI {
       }
    }
 
-   protected void N(Graphics2D var1) {
+   public void N(Graphics2D var1) {
       String var2 = com.finalshell.ui.panel.S.d();
       int var10000 = (this.tree.isEnabled()) ? 1 : 0;
       if (var2 != null) {
@@ -797,7 +797,7 @@ public class K5_2 extends BasicTreeUI {
       var1.fillRect(var3.x + 1, var3.y, var3.width, var3.height);
    }
 
-   protected void c(Graphics2D var1) {
+   public void c(Graphics2D var1) {
       Rectangle var3 = var1.getClipBounds();
       Insets var4 = this.tree.getInsets();
       TreePath var5 = this.getClosestPathForLocation(this.tree, 0, var3.y);
@@ -966,7 +966,7 @@ public class K5_2 extends BasicTreeUI {
       }
    }
 
-   protected void o(Graphics2D var1) {
+   public void o(Graphics2D var1) {
       String var10000 = com.finalshell.ui.panel.S.d();
       DropLocation var3 = this.tree.getDropLocation();
       String var2 = var10000;
@@ -1001,7 +1001,7 @@ public class K5_2 extends BasicTreeUI {
       var9.n(var1, var8);
    }
 
-   protected Rectangle p(TreePath var1) {
+   public Rectangle p(TreePath var1) {
       Rectangle var2 = this.tree.getPathBounds(var1);
       var2.x = var2.x - this.B;
       var2.y = var2.y - this.B;
@@ -1010,7 +1010,7 @@ public class K5_2 extends BasicTreeUI {
       return var2;
    }
 
-   protected void D(Graphics2D var1) {
+   public void D(Graphics2D var1) {
       String var2 = com.finalshell.ui.panel.S.d();
       K5_2 var10000 = this;
       if (var2 != null) {
@@ -1053,7 +1053,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    @Override
-   protected boolean isDropLine(DropLocation var1) {
+   public boolean isDropLine(DropLocation var1) {
       String var2 = com.finalshell.ui.panel.S.d();
       DropLocation var10000 = var1;
       if (var2 != null) {
@@ -1081,7 +1081,7 @@ public class K5_2 extends BasicTreeUI {
    }
 
    @Override
-   protected Rectangle getDropLineRect(DropLocation var1) {
+   public Rectangle getDropLineRect(DropLocation var1) {
       String var2;
       Rectangle var4;
       K5_2 var29;
@@ -1157,7 +1157,7 @@ public class K5_2 extends BasicTreeUI {
             }
 
             label78:
-            if (var29 != 0) {
+            if (var29 != null) {
                Connection5 var25 = (Connection5)this.tree;
                var29 = this;
                Object[] var10002 = Registry.packArgs(var7);
@@ -1225,14 +1225,14 @@ public class K5_2 extends BasicTreeUI {
       }
 
       if (var2 != null) {
-         if (var29 != false) {
+         if (var29 == null) {
             var4.y--;
          }
 
          var29 = this.k;
       }
 
-      if (var29 == false) {
+      if (var29 == null) {
          var4.x = var4.x + var4.width - a(18770, 2251216943926441718L);
       }
 
@@ -1241,7 +1241,7 @@ public class K5_2 extends BasicTreeUI {
       return var4;
    }
 
-   protected Rectangle A(TreePath var1, Insets var2, Rectangle var3) {
+   public Rectangle A(TreePath var1, Insets var2, Rectangle var3) {
       String var10000 = com.finalshell.ui.panel.S.d();
       var3 = this.treeState.getBounds(var1, var3);
       String var4 = var10000;
@@ -1268,7 +1268,7 @@ public class K5_2 extends BasicTreeUI {
       return var6;
    }
 
-   protected Shape B(Rectangle var1, boolean var2) {
+   public Shape B(Rectangle var1, boolean var2) {
       String var3 = com.finalshell.ui.panel.S.d();
       int var10000 = var2;
       if (var3 != null) {
@@ -1292,147 +1292,147 @@ public class K5_2 extends BasicTreeUI {
       return this.F;
    }
 
-   static JTree l(K5_2 var0) {
+   public static JTree l(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree B(K5_2 var0) {
+   public static JTree B(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree K(K5_2 var0) {
+   public static JTree K(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree V(K5_2 var0) {
+   public static JTree V(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree h(K5_2 var0) {
+   public static JTree h(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree x(K5_2 var0) {
+   public static JTree x(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree r(K5_2 var0) {
+   public static JTree r(K5_2 var0) {
       return var0.tree;
    }
 
-   static boolean i(K5_2 var0, TreePath var1, int var2, int var3) {
+   public static boolean i(K5_2 var0, TreePath var1, int var2, int var3) {
       return var0.isLocationInExpandControl(var1, var2, var3);
    }
 
-   static JTree f(K5_2 var0) {
+   public static JTree f(K5_2 var0) {
       return var0.tree;
    }
 
-   static int g(K5_2 var0, int var1, int var2) {
+   public static int g(K5_2 var0, int var1, int var2) {
       return var0.getRowX(var1, var2);
    }
 
-   static JTree s(K5_2 var0) {
+   public static JTree s(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree b(K5_2 var0) {
+   public static JTree b(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree w(K5_2 var0) {
+   public static JTree w(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree E(K5_2 var0) {
+   public static JTree E(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree k(K5_2 var0) {
+   public static JTree k(K5_2 var0) {
       return var0.tree;
    }
 
-   static boolean K(K5_2 var0, TreePath var1, int var2, int var3) {
+   public static boolean K(K5_2 var0, TreePath var1, int var2, int var3) {
       return var0.isLocationInExpandControl(var1, var2, var3);
    }
 
-   static JTree U(K5_2 var0) {
+   public static JTree U(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree g(K5_2 var0) {
+   public static JTree g(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree L(K5_2 var0) {
+   public static JTree L(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree C(K5_2 var0) {
+   public static JTree C(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree e(K5_2 var0) {
+   public static JTree e(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree D(K5_2 var0) {
+   public static JTree D(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree F(K5_2 var0) {
+   public static JTree F(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree R(K5_2 var0) {
+   public static JTree R(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree t(K5_2 var0) {
+   public static JTree t(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree v(K5_2 var0) {
+   public static JTree v(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree Y(K5_2 var0) {
+   public static JTree Y(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree n(K5_2 var0) {
+   public static JTree n(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree j(K5_2 var0) {
+   public static JTree j(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree y(K5_2 var0) {
+   public static JTree y(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree I(K5_2 var0) {
+   public static JTree I(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree p(K5_2 var0) {
+   public static JTree p(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree a(K5_2 var0) {
+   public static JTree a(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree H(K5_2 var0) {
+   public static JTree H(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree G(K5_2 var0) {
+   public static JTree G(K5_2 var0) {
       return var0.tree;
    }
 
-   static JTree i(K5_2 var0) {
+   public static JTree i(K5_2 var0) {
       return var0.tree;
    }
 

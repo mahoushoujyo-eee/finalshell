@@ -5,9 +5,9 @@ import com.finalshell.ui.dialog.Y2;
 import javax.swing.JComponent;
 
 public class J extends K22 {
-   final D y;
+   public final D y;
 
-   J(D var1, JComponent[] var2) {
+   public J(D var1, JComponent[] var2) {
       super(var2);
       this.y = var1;
    }

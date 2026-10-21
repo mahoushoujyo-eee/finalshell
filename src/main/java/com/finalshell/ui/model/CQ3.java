@@ -1,9 +1,9 @@
 package com.finalshell.ui.model;
 
 public class CQ3 extends CB3 {
-   protected String v;
-   protected GQ h;
-   protected long k;
+   public String v;
+   public GQ h;
+   public long k;
    public static String d;
 
    public CQ3(String var1, GQ var2) {

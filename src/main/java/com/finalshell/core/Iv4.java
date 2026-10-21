@@ -5,7 +5,7 @@ import java.util.AbstractSet;
 import java.util.Iterator;
 
 public final class Iv4 extends AbstractSet {
-   final Xy4 s;
+   public final Xy4 s;
 
    public Iv4(Xy4 var1) {
       this.s = var1;
@@ -36,7 +36,7 @@ public final class Iv4 extends AbstractSet {
       this.s.clear();
    }
 
-   Iv4(Xy4 var1, Oi4 var2) {
+   public Iv4(Xy4 var1, Oi4 var2) {
       this(var1);
    }
 }

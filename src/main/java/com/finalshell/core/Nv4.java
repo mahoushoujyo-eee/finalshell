@@ -6,15 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Nv4 {
-   protected List J = null;
-   protected List s = null;
-   protected List m = null;
-   protected List p = null;
-   protected List U = null;
-   protected List K = null;
-   protected List d = null;
-   protected List x = null;
-   protected boolean Q = true;
+   public List J = null;
+   public List s = null;
+   public List m = null;
+   public List p = null;
+   public List U = null;
+   public List K = null;
+   public List d = null;
+   public List x = null;
+   public boolean Q = true;
    public static String o;
 
    public List z() {
@@ -326,7 +326,7 @@ public abstract class Nv4 {
       return true;
    }
 
-   protected String i(NL3 var1, Object var2, String var3, Object var4) {
+   public String i(NL3 var1, Object var2, String var3, Object var4) {
       String var5 = o();
       List var10000 = var1.U;
       if (var5 != null) {
@@ -369,11 +369,11 @@ public abstract class Nv4 {
       return var3;
    }
 
-   protected Object c(NL3 var1, DL3 var2, Object var3, String var4, Object var5) {
+   public Object c(NL3 var1, DL3 var2, Object var3, String var4, Object var5) {
       return this.L(var1, var2, var3, var4, var5, 0);
    }
 
-   protected Object L(NL3 var1, DL3 var2, Object var3, String var4, Object var5, int var6) {
+   public Object L(NL3 var1, DL3 var2, Object var3, String var4, Object var5, int var6) {
       String var7;
       var7 = o();
       label167:
@@ -557,7 +557,7 @@ public abstract class Nv4 {
       }
    }
 
-   protected boolean q(NL3 var1) {
+   public boolean q(NL3 var1) {
       String var2 = o();
       boolean var10000 = var1.w.D;
       if (var2 != null) {

@@ -7,10 +7,10 @@ import com.finalshell.ui.listener.U2;
 import java.lang.reflect.InvocationTargetException;
 
 public class YL implements Runnable {
-   final String c;
-   final U2 j;
+   public final String c;
+   public final U2 j;
 
-   YL(U2 var1, String var2) {
+   public YL(U2 var1, String var2) {
       this.j = var1;
       this.c = var2;
    }

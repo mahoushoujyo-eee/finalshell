@@ -7,24 +7,24 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class X52 extends InputStream {
-   long k;
-   boolean V;
-   int j;
-   byte[] m;
-   byte[] Q;
-   S_2_2 u;
-   int Z;
-   long n;
-   final long G;
-   final PO3 O;
-   final byte[] c;
-   final DY3 Y;
+   public long k;
+   public boolean V;
+   public int j;
+   public byte[] m;
+   public byte[] Q;
+   public S_2_2 u;
+   public int Z;
+   public long n;
+   public final long G;
+   public final PO3 O;
+   public final byte[] c;
+   public final DY3 Y;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   X52(DY3 var1, long var2, PO3 var4, byte[] var5) {
+   public X52(DY3 var1, long var2, PO3 var4, byte[] var5) {
       this.Y = var1;
       this.G = var2;
       this.O = var4;

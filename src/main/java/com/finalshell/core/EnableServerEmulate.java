@@ -23,26 +23,26 @@ import org.pcap4j.packet.namednumber.TcpPort;
 import org.pcap4j.util.MacAddress;
 
 public class EnableServerEmulate {
-   InetAddress U;
-   int k;
-   HashMap O = new HashMap();
-   HashMap b = new HashMap();
-   int p = a(27671, 8373575933482908695L);
-   Random t = new Random();
-   PcapHandle K;
-   HashSet a = new HashSet();
-   HashMap x = new HashMap();
-   MacAddress d;
-   int H;
-   Packet L = null;
-   int u = 0;
+   public InetAddress U;
+   public int k;
+   public HashMap O = new HashMap();
+   public HashMap b = new HashMap();
+   public int p = a(27671, 8373575933482908695L);
+   public Random t = new Random();
+   public PcapHandle K;
+   public HashSet a = new HashSet();
+   public HashMap x = new HashMap();
+   public MacAddress d;
+   public int H;
+   public Packet L = null;
+   public int u = 0;
    public static String[] c;
    public static String[] e;
    public static long[] f;
    public static Integer[] g;
    public static long h;
 
-   EnableServerEmulate(int var1, PcapHandle var2) {
+   public EnableServerEmulate(int var1, PcapHandle var2) {
       this.K = var2;
       this.H = var1;
    }
@@ -377,7 +377,7 @@ public class EnableServerEmulate {
       // 2f7: return
    }
 
-   void B() {
+   public void B() {
       int var1 = 0;
 
       while (true) {
@@ -405,7 +405,7 @@ public class EnableServerEmulate {
       }
    }
 
-   static Packet Y(Packet var0, int var1, byte[] var2) {
+   public static Packet Y(Packet var0, int var1, byte[] var2) {
       Packet var4 = null;
       EthernetPacket var5 = (EthernetPacket)var0;
       EthernetPacket.EthernetHeader var6 = var5.getHeader$EthernetPacket_EthernetHeader();
@@ -477,7 +477,7 @@ public class EnableServerEmulate {
       return var4;
    }
 
-   Packet a(Packet var1, int var2) {
+   public Packet a(Packet var1, int var2) {
       Packet var4 = null;
       EthernetPacket var5 = (EthernetPacket)var1;
       EthernetPacket.EthernetHeader var6 = var5.getHeader$EthernetPacket_EthernetHeader();
@@ -540,7 +540,7 @@ public class EnableServerEmulate {
       return var4;
    }
 
-   Packet f(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
+   public Packet f(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
       TcpPacket.Builder var9 = new TcpPacket.Builder();
       var9.correctChecksumAtBuild$TcpPacket_Builder(true);
       var9.correctLengthAtBuild$TcpPacket_Builder(true);

@@ -11,11 +11,11 @@ import java.security.Security;
 import org.bouncycastle.crypto.params.X25519PrivateKeyParameters;
 
 public class Al2 implements Runnable {
-   final YT3_2 H;
+   public final YT3_2 H;
    public static String[] a;
    public static String[] b;
 
-   Al2(YT3_2 var1) {
+   public Al2(YT3_2 var1) {
       this.H = var1;
    }
 

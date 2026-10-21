@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.Kz4;
 import java.awt.event.KeyEvent;
 
 public class Is4 extends Wc2{
-   final Kz4 p;
+   public final Kz4 p;
 
-   Is4(Kz4 var1) {
+   public Is4(Kz4 var1) {
       this.p = var1;
    }
 

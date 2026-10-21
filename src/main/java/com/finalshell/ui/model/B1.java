@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.LB3;
 import com.finalshell.ui.dialog.Ds2;
 
-public final class B1 extends Enum {
+public final class B1 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -19,11 +19,10 @@ public final class B1 extends Enum {
    }
 
    public static B1 valueOf(String var0) {
-      return Enum.valueOf(B1.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public B1(String var1, int var2) {
-      super(var1, var2);
    }
 
    public B1[] r() {

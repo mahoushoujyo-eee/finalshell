@@ -22,7 +22,7 @@ public final class EW extends EC {
       return this.t.toString();
    }
 
-   static int c(@NotNull MouseEvent var0) {
+   public static int c(@NotNull MouseEvent var0) {
       String var1 = V();
       int var10000 = (SwingUtilities.isLeftMouseButton(var0)) ? 1 : 0;
       if (var1 == null) {
@@ -69,7 +69,7 @@ public final class EW extends EC {
       return var10000;
    }
 
-   static int q(@NotNull MouseEvent var0) {
+   public static int q(@NotNull MouseEvent var0) {
       String var10000 = V();
       int var2 = 0;
       String var1 = var10000;

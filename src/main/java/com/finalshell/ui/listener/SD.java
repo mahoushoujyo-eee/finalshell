@@ -4,9 +4,9 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
 public class SD implements MouseWheelListener {
-   final com.finalshell.core.N2 l;
+   public final com.finalshell.core.N2 l;
 
-   SD(com.finalshell.core.N2 var1) {
+   public SD(com.finalshell.core.N2 var1) {
       this.l = var1;
    }
 

@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTable;
 
 public class Cv4 implements ActionListener {
-   final Copy2 A;
+   public final Copy2 A;
 
-   Cv4(Copy2 var1) {
+   public Cv4(Copy2 var1) {
       this.A = var1;
    }
 

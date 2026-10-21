@@ -10,9 +10,9 @@ import java.io.File;
 import javax.swing.text.JTextComponent;
 
 public class Xs4 extends XA3 {
-   final RY3 U;
+   public final RY3 U;
 
-   protected Xs4(RY3 var1) {
+   public Xs4(RY3 var1) {
       super(var1);
       this.U = var1;
    }

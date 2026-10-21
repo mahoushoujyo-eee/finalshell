@@ -11,17 +11,17 @@ public class I1 extends IB {
       super(var1);
    }
 
-   protected void s(Ks4 var1) {
+   public void s(Ks4 var1) {
       this.O = new C92_2(this);
       var1.j(this.O);
    }
 
-   protected void P(Ks4 var1) {
+   public void P(Ks4 var1) {
       var1.N(this.O);
       this.O = null;
    }
 
-   protected void K(Ks4 var1) {
+   public void K(Ks4 var1) {
       List var6;
       label23: {
          label25: {
@@ -58,7 +58,7 @@ public class I1 extends IB {
       var1.h(var4);
    }
 
-   protected void G(Ks4 var1) {
+   public void G(Ks4 var1) {
       String[] var10000 = IH.M();
       String var3 = NE.I(var1.P(), ",");
       String[] var2 = var10000;
@@ -71,22 +71,22 @@ public class I1 extends IB {
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.G((Ks4)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.K((Ks4)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.P((Ks4)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.s((Ks4)var1);
    }
 }

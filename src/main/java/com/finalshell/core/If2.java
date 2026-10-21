@@ -6,17 +6,17 @@ public class If2 extends Ii2 {
    public static long e;
 
    @Override
-   String k$String() {
+   public String k$String() {
       return b(21833, 20599);
    }
 
    @Override
-   String F() {
+   public String F() {
       return b(21832, -201);
    }
 
    @Override
-   int M() {
+   public int M() {
       return (int)e;
    }
 

@@ -17,7 +17,7 @@ public class Cy4 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       String var10000 = SZ.L();
       byte var3 = (this.getComponentOrientation().isLeftToRight()) ? 1 : 0;

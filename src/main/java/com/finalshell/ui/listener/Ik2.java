@@ -6,9 +6,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class Ik2 extends KeyAdapter {
-   final Nr4 Q;
+   public final Nr4 Q;
 
-   Ik2(Nr4 var1) {
+   public Ik2(Nr4 var1) {
       this.Q = var1;
    }
 

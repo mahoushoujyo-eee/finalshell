@@ -11,8 +11,8 @@ public class YQ3 extends JDialog {
    public static Integer[] c;
 
    public YQ3() {
+   super();
       int var10000 = Dp2.n();
-      super();
       int var1 = var10000;
       Dp2 var2 = new Dp2();
       this.setContentPane(var2);

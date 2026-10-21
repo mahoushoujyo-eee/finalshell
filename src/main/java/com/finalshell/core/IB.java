@@ -4,9 +4,9 @@ import java.io.Serializable;
 import javax.swing.JComponent;
 
 public abstract class IB {
-   protected boolean k;
-   protected boolean n;
-   protected AS t;
+   public boolean k;
+   public boolean n;
+   public AS t;
    public static String[] a;
    public static String[] b;
 
@@ -248,21 +248,21 @@ public abstract class IB {
       this.t = null;
    }
 
-   protected Serializable o() {
+   public Serializable o() {
       return (Serializable)Cl4_2.v(this.M$String(), this.S(), this.Y());
    }
 
-   protected void J(Serializable var1) {
+   public void J(Serializable var1) {
       Cl4_2.A(this.M$String(), this.S(), var1);
    }
 
-   protected abstract void F(JComponent var1);
+   public abstract void F(JComponent var1);
 
-   protected abstract void r(JComponent var1);
+   public abstract void r(JComponent var1);
 
-   protected abstract void s(JComponent var1);
+   public abstract void s(JComponent var1);
 
-   protected abstract void T(JComponent var1);
+   public abstract void T(JComponent var1);
 
    public static Throwable a(Throwable var0) {
       return var0;

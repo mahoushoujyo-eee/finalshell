@@ -7,10 +7,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class J extends KeyAdapter {
-   final Cs2 I;
-   final Sr2 W;
+   public final Cs2 I;
+   public final Sr2 W;
 
-   J(Cs2 var1, Sr2 var2) {
+   public J(Cs2 var1, Sr2 var2) {
       this.I = var1;
       this.W = var2;
    }

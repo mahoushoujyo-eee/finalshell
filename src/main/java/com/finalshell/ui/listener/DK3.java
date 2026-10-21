@@ -8,9 +8,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class DK3 implements PropertyChangeListener {
-   final com.finalshell.core.FJ O;
+   public final com.finalshell.core.FJ O;
 
-   DK3(com.finalshell.core.FJ var1) {
+   public DK3(com.finalshell.core.FJ var1) {
       this.O = var1;
    }
 

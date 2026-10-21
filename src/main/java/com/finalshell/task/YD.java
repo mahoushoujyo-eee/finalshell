@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.UpdateDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class YD implements Runnable {
-   final UpdateDialog O;
+   public final UpdateDialog O;
 
-   YD(UpdateDialog var1) {
+   public YD(UpdateDialog var1) {
       this.O = var1;
    }
 

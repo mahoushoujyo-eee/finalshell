@@ -20,22 +20,22 @@ public class EG {
    public static String[] b;
    public static String[] c;
 
-   EG(@NotNull Im4 var1, int var2, int var3) {
+   public EG(@NotNull Im4 var1, int var2, int var3) {
       this.L = var1;
       this.I = var2;
       this.V = var3;
    }
 
-   void W(@NotNull XE var1) {
+   public void W(@NotNull XE var1) {
       this.Y.put(new Ay2_2(var1, false), null);
    }
 
-   void U(@NotNull XE var1, boolean var2) {
+   public void U(@NotNull XE var1, boolean var2) {
       this.Y.put(new Ay2_2(var1, var2), null);
    }
 
    @NotNull
-   XE d(@NotNull XE param1) {
+   public XE d(@NotNull XE param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -104,7 +104,7 @@ public class EG {
       // 7d: areturn
    }
 
-   void i() {
+   public void i() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

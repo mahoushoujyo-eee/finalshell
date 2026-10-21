@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OW3_2 {
-   List u;
+   public List u;
 
    public OW3_2() {
+   super();
       int var10000 = WV.G();
-      super();
       int var1 = var10000;
       this.u = new ArrayList();
       if (Ky4.F$arrString() != null) {

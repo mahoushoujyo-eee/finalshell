@@ -4,11 +4,11 @@ import com.finalshell.core.SelectUploadFile;
 import com.finalshell.ui.panel.SetBackgroundImagePanel;
 
 public class Xh2 implements Runnable {
-   final SetBackgroundImagePanel n;
-   final SelectUploadFile i;
+   public final SetBackgroundImagePanel n;
+   public final SelectUploadFile i;
    public static long a;
 
-   Xh2(SelectUploadFile var1, SetBackgroundImagePanel var2) {
+   public Xh2(SelectUploadFile var1, SetBackgroundImagePanel var2) {
       this.i = var1;
       this.n = var2;
    }
@@ -16,7 +16,7 @@ public class Xh2 implements Runnable {
    @Override
    public void run() {
       String var1 = SelectUploadFile.r$String();
-      int var10000 = this.i.N;
+      int var10000 = (this.i.N) ? 1 : 0;
       if (var1 == null) {
          if (!this.i.N) {
             return;

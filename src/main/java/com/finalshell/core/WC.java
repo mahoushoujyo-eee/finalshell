@@ -5,9 +5,9 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 public abstract class WC {
-   protected short W = Yh2.i;
-   protected short T = 0;
-   protected DatagramPacket g;
+   public short W = Yh2.i;
+   public short T = 0;
+   public DatagramPacket g;
    public int l;
    public int H;
    public static Ky4[] d;

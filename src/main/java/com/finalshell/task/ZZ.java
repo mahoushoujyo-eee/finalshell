@@ -8,10 +8,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.Callable;
 
 public class ZZ implements Callable {
-   final BufferedReader F;
-   final StringBuffer u;
+   public final BufferedReader F;
+   public final StringBuffer u;
 
-   ZZ(BufferedReader var1, StringBuffer var2) {
+   public ZZ(BufferedReader var1, StringBuffer var2) {
       this.F = var1;
       this.u = var2;
    }

@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 public class Zg2_2 {
-   static HashMap a;
+   public static HashMap a;
 
    public void D() {
       ((HashMap)Registry.lookupField(323929397643124273L).get(null)).clear();

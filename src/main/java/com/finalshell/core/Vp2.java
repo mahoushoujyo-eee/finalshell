@@ -6,7 +6,7 @@ import com.finalshell.ui.panel.Ky4;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vp2 {
-   static boolean T;
+   public static boolean T;
    public static long[] a;
    public static Integer[] b;
 

@@ -7,9 +7,9 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class UC3 implements UG {
-   final Connection5 Z;
+   public final Connection5 Z;
 
-   UC3(Connection5 var1) {
+   public UC3(Connection5 var1) {
       this.Z = var1;
    }
 

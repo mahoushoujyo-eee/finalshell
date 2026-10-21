@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class YK3_2 implements FW3 {
-   final int[] M;
+   public final int[] M;
    public static long[] a;
    public static Integer[] b;
 
-   YK3_2(int[] var1) {
+   public YK3_2(int[] var1) {
       this.M = var1;
    }
 

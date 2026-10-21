@@ -15,22 +15,22 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class FilePanel extends JPanel implements AL {
-   ConnectionProperty p;
-   String Y;
-   AM h;
-   Ge2 b;
-   Address j;
-   Lh2 r;
-   boolean A;
-   T32 y;
-   T32 d;
-   T32 B;
-   AppendCarriageReturnCRPanel n;
-   Cp2 g;
-   int R;
-   boolean D;
-   String i;
-   boolean f;
+   public ConnectionProperty p;
+   public String Y;
+   public AM h;
+   public Ge2 b;
+   public Address j;
+   public Lh2 r;
+   public boolean A;
+   public T32 y;
+   public T32 d;
+   public T32 B;
+   public AppendCarriageReturnCRPanel n;
+   public Cp2 g;
+   public int R;
+   public boolean D;
+   public String i;
+   public boolean f;
    public static boolean m;
    public static String[] a;
    public static String[] c;
@@ -163,7 +163,7 @@ public class FilePanel extends JPanel implements AL {
       long var56 = 497053271897858177L;
       Cp2 var55 = var10027;
       Ref.s(497053271897858177L, var55, var56);
-      if (var2 == false) {
+      if (var2 == null) {
          Object var57 = 165652197740112410L;
          if ((AppendCarriageReturnCRPanel)Ref.g(165652197740112410L, var57) == null) {
             AppendCarriageReturnCRPanel var10030;
@@ -211,13 +211,13 @@ public class FilePanel extends JPanel implements AL {
       }
 
       Registry.lookupField(373201485708422755L).setBoolean(this, true);
-      if (var2 != false) {
+      if (var2 == null) {
          Ky4.K(new String[2]);
       }
    }
 
    @Override
-   protected void finalize() throws Throwable {
+   public void finalize() throws Throwable {
    }
 
    public void v() {
@@ -435,7 +435,7 @@ public class FilePanel extends JPanel implements AL {
       }
 
       boolean var40 = Registry.lookupField(373201485708422755L).getBoolean(this);
-      if (var3 != false) {
+      if (var3 == null) {
          if (!var40) {
             return;
          }
@@ -444,7 +444,7 @@ public class FilePanel extends JPanel implements AL {
       }
 
       label83: {
-         if (var3 != false) {
+         if (var3 == null) {
             if (var40) {
                Registry.emptyArgs();
                long var14 = 270389152141252877L;
@@ -464,7 +464,7 @@ public class FilePanel extends JPanel implements AL {
                   throw var32.getTargetException();
                }
 
-               if (var3 != false) {
+               if (var3 == null) {
                   break label83;
                }
             }

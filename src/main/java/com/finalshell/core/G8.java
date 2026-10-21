@@ -11,7 +11,7 @@ public class G8 extends Gi2 {
    }
 
    @Override
-   protected String getPropertyPrefix() {
+   public String getPropertyPrefix() {
       return cb;
    }
 

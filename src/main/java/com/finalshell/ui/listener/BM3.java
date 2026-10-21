@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class BM3 implements ActionListener {
-   final JCheckBox u;
-   final ShowDeletedPanel L;
+   public final JCheckBox u;
+   public final ShowDeletedPanel L;
 
-   BM3(ShowDeletedPanel var1, JCheckBox var2) {
+   public BM3(ShowDeletedPanel var1, JCheckBox var2) {
       this.L = var1;
       this.u = var2;
    }

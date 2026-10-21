@@ -349,11 +349,11 @@ public class C_c_2 extends BasicTextAreaUI implements L0_2, SwingConstants {
    }
 
    @Override
-   protected void paintBackground(Graphics var1) {
+   public void paintBackground(Graphics var1) {
    }
 
    @Override
-   protected void paintSafely(Graphics var1) {
+   public void paintSafely(Graphics var1) {
       boolean var2;
       Graphics2D var3;
       JTextComponent var4;

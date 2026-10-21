@@ -3,10 +3,10 @@ package com.finalshell.core;
 public class NU_2 extends Exception {
    public static long serialVersionUID;
 
-   NU_2() {
+   public NU_2() {
    }
 
-   NU_2(String var1) {
+   public NU_2(String var1) {
       super(var1);
    }
 

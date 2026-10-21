@@ -7,9 +7,6 @@ import java.awt.event.KeyEvent;
 public class Bm2 implements AWTEventListener {
    public static long a;
 
-   Bm2() {
-   }
-
    @Override
    public void eventDispatched(AWTEvent var1) {
       String[] var2;

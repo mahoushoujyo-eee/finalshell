@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextArea;
 
 public class Up4 implements Runnable {
-   final String t;
-   final DownloadDialog j;
+   public final String t;
+   public final DownloadDialog j;
 
-   Up4(DownloadDialog var1, String var2) {
+   public Up4(DownloadDialog var1, String var2) {
       this.j = var1;
       this.t = var2;
    }

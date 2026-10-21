@@ -4,9 +4,9 @@ import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 
 public class WI3 implements AncestorListener {
-   final com.finalshell.core.Lk4 R;
+   public final com.finalshell.core.Lk4 R;
 
-   WI3(com.finalshell.core.Lk4 var1) {
+   public WI3(com.finalshell.core.Lk4 var1) {
       this.R = var1;
    }
 

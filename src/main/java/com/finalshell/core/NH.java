@@ -9,12 +9,12 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 public class NH extends JTable {
-   TunnelList T;
-   com.finalshell.ui.model.C12 u;
+   public TunnelList T;
+   public com.finalshell.ui.model.C12 u;
    public static long[] a;
    public static Integer[] b;
 
-   NH(TunnelList var1, com.finalshell.ui.model.C12 var2) {
+   public NH(TunnelList var1, com.finalshell.ui.model.C12 var2) {
       long var8 = 224289223987730926L;
       Ref.s(224289223987730926L, var1, var8);
       long var10 = 272693378417955390L;

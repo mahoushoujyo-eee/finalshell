@@ -14,15 +14,15 @@ public abstract class E12 implements Ld4 {
       }
    }
 
-   protected String q(com.finalshell.ui.model.G9 var1, Object[] var2) {
+   public String q(com.finalshell.ui.model.G9 var1, Object[] var2) {
       return this.P(null, var1, var2);
    }
 
-   protected String P(String var1, com.finalshell.ui.model.G9 var2, Object[] var3) {
+   public String P(String var1, com.finalshell.ui.model.G9 var2, Object[] var3) {
       return this.I(var1, false, var2, var3);
    }
 
-   protected String I(String var1, boolean var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
+   public String I(String var1, boolean var2, com.finalshell.ui.model.G9 var3, Object[] var4) {
       String[] var10000 = A();
       String var6 = var3.J(var1, var2);
       String[] var5 = var10000;

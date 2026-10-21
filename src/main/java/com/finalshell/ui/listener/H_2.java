@@ -12,10 +12,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class H_2 implements ActionListener {
-   final FT C;
-   final Tq4 S;
+   public final FT C;
+   public final Tq4 S;
 
-   H_2(Tq4 var1, FT var2) {
+   public H_2(Tq4 var1, FT var2) {
       this.S = var1;
       this.C = var2;
    }

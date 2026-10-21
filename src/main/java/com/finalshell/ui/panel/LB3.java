@@ -20,30 +20,30 @@ import javax.swing.JLabel;
 import org.icmp4j.j;
 
 public class LB3 extends JLabel implements D2 {
-   Stroke p;
-   Stroke n;
-   int S;
-   KV F;
-   GradientPaint V;
-   String m;
-   BufferedImage j;
-   Lt4 v;
-   ArrayList L;
-   int O;
-   int G;
-   int E;
-   int N;
-   Color I;
-   Color T;
-   Stroke a;
-   Color B;
-   Color x;
+   public Stroke p;
+   public Stroke n;
+   public int S;
+   public KV F;
+   public GradientPaint V;
+   public String m;
+   public BufferedImage j;
+   public Lt4 v;
+   public ArrayList L;
+   public int O;
+   public int G;
+   public int E;
+   public int N;
+   public Color I;
+   public Color T;
+   public Stroke a;
+   public Color B;
+   public Color x;
    public static String b;
    public static long[] c;
    public static Integer[] d;
    public static long e;
 
-   LB3() {
+   public LB3() {
       BasicStroke var10001 = new BasicStroke(1.0F, 0, 2, 0.0F, new float[]{1.0F, 3.0F}, 0.0F);
       long var4 = 381681083975472286L;
       BasicStroke var3 = var10001;

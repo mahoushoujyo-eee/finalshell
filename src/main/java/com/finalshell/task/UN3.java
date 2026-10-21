@@ -7,10 +7,10 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class UN3 implements Runnable {
-   final ConnectHost k;
-   final Address n;
+   public final ConnectHost k;
+   public final Address n;
 
-   UN3(Address var1, ConnectHost var2) {
+   public UN3(Address var1, ConnectHost var2) {
       this.n = var1;
       this.k = var2;
    }

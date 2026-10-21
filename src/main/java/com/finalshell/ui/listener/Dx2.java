@@ -6,10 +6,10 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
 public class Dx2 implements MouseWheelListener {
-   final K42 a;
+   public final K42 a;
    public static long b;
 
-   Dx2(K42 var1) {
+   public Dx2(K42 var1) {
       this.a = var1;
    }
 

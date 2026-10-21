@@ -6,8 +6,8 @@ import com.finalshell.core.W82;
 import java.util.List;
 
 public final class L4 extends LN {
-   L4(String var1, int var2) {
-      super(null);
+   public L4(String var1, int var2) {
+      super(var1, var2, null);
    }
 
    @Override

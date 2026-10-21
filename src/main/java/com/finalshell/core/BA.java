@@ -12,8 +12,8 @@ import java.io.UnsupportedEncodingException;
 public class BA extends ChannelInboundHandlerAdapter {
    public static AttributeKey i;
    public static AttributeKey j;
-   XE_2 O = null;
-   ChannelHandlerContext P;
+   public XE_2 O = null;
+   public ChannelHandlerContext P;
    public static String[] a;
    public static String[] b;
 
@@ -28,7 +28,7 @@ public class BA extends ChannelInboundHandlerAdapter {
       var1.channel().<BA>attr(j).set(this);
    }
 
-   void U() throws UnsupportedEncodingException {
+   public void U() throws UnsupportedEncodingException {
       O0 var2 = new O0();
       int var10000 = XE_2.I();
       var2.C(a(-10971, 30472), a(-10969, -13406));

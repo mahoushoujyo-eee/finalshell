@@ -5,11 +5,11 @@ public class Wj4 {
    public final int s;
    public int P;
    public final StringBuilder K;
-   protected boolean o;
+   public boolean o;
    public static String a;
    public static long b;
 
-   protected Wj4(int var1, int var2) {
+   public Wj4(int var1, int var2) {
       this.s = var1;
       this.R = var2;
       int[] var10000 = XB.X();
@@ -24,7 +24,7 @@ public class Wj4 {
       this.o = (boolean)var10001;
    }
 
-   protected void p(String var1, int var2) {
+   public void p(String var1, int var2) {
       int var10000;
       label29: {
          int[] var3 = XB.X();
@@ -59,7 +59,7 @@ public class Wj4 {
       this.P++;
    }
 
-   protected String E() {
+   public String E() {
       int[] var1 = XB.X();
       StringBuilder var10000 = this.K;
       if (var1 == null) {

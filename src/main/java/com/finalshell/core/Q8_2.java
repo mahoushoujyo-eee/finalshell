@@ -3,15 +3,12 @@ package com.finalshell.core;
 import com.finalshell.crypto.ConnectHost;
 
 public class Q8_2 extends Qi2 {
-   byte[] a = new byte[0];
-   byte[] t = new byte[0];
+   public byte[] a = new byte[0];
+   public byte[] t = new byte[0];
    public static String d;
    public static long e;
 
-   Q8_2() {
-   }
-
-   void r(byte[] var1, byte[] var2) {
+   public void r(byte[] var1, byte[] var2) {
       this.a = var1;
       this.t = var2;
    }

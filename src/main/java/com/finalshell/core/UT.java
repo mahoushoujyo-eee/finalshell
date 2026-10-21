@@ -14,10 +14,10 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
 
 public class UT extends JTable {
-   com.finalshell.ui.model.Cd4 u;
-   int C;
-   int H;
-   boolean S;
+   public com.finalshell.ui.model.Cd4 u;
+   public int C;
+   public int H;
+   public boolean S;
    public static long[] a;
    public static Integer[] b;
 
@@ -126,7 +126,7 @@ public class UT extends JTable {
       }
    }
 
-   protected TableRowSorter s() {
+   public TableRowSorter s() {
       int[] var10000 = com.finalshell.ui.panel.CE.S$arrint();
       com.finalshell.ui.model.Cd4 var2 = (com.finalshell.ui.model.Cd4)this.getModel();
       int[] var1 = var10000;

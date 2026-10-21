@@ -49,7 +49,7 @@ public class AN implements Or2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   byte[] p() {
+   public byte[] p() {
       int var2 = a(4408, 2080477985942892031L) + new Random().nextInt(a(9523, 5087991631801833973L));
       byte[] var3 = new byte[var2];
       String[] var10000 = UD.L();

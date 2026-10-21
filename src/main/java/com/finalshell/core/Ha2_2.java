@@ -5,9 +5,9 @@ import java.lang.reflect.Modifier;
 
 public class Ha2_2 extends HP_2 {
    public final Method O;
-   final HA I;
+   public final HA I;
 
-   Ha2_2(HA var1, Method var2) {
+   public Ha2_2(HA var1, Method var2) {
       super(var1);
       this.I = var1;
       this.O = var2;

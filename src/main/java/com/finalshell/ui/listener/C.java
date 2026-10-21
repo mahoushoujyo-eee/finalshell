@@ -5,10 +5,10 @@ import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
 
 public class C extends ContainerAdapter {
-   final Ki4 K;
-   final com.finalshell.core.I z;
+   public final Ki4 K;
+   public final com.finalshell.core.I z;
 
-   C(com.finalshell.core.I var1, Ki4 var2) {
+   public C(com.finalshell.core.I var1, Ki4 var2) {
       this.z = var1;
       this.K = var2;
    }

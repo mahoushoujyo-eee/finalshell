@@ -40,45 +40,45 @@ import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
 
 public class AM extends JPanel {
-   AM v;
-   Ge2 W;
-   static TH3 g;
-   static DP t;
-   JScrollPane F;
-   Bq2 i;
-   ArrayList c;
-   int a;
-   T32 E;
-   JPanel h;
-   ArrayList M;
-   int X;
-   int I;
-   FlowLayout p;
-   NY V;
-   Thread q;
-   boolean Y;
-   boolean k;
-   boolean b;
-   boolean G;
-   boolean S;
-   boolean R;
-   boolean l;
-   int K;
-   boolean f;
-   JComponent m;
-   JComponent n;
-   HashMap A;
-   static Jc2 T;
-   int y;
-   com.finalshell.ui.frame.U j;
-   boolean s;
-   Copy3 B;
-   boolean U;
-   boolean C;
-   boolean O;
-   boolean P;
-   Color u;
-   Color Q;
+   public AM v;
+   public Ge2 W;
+   public static TH3 g;
+   public static DP t;
+   public JScrollPane F;
+   public Bq2 i;
+   public ArrayList c;
+   public int a;
+   public T32 E;
+   public JPanel h;
+   public ArrayList M;
+   public int X;
+   public int I;
+   public FlowLayout p;
+   public NY V;
+   public Thread q;
+   public boolean Y;
+   public boolean k;
+   public boolean b;
+   public boolean G;
+   public boolean S;
+   public boolean R;
+   public boolean l;
+   public int K;
+   public boolean f;
+   public JComponent m;
+   public JComponent n;
+   public HashMap A;
+   public static Jc2 T;
+   public int y;
+   public com.finalshell.ui.frame.U j;
+   public boolean s;
+   public Copy3 B;
+   public boolean U;
+   public boolean C;
+   public boolean O;
+   public boolean P;
+   public Color u;
+   public Color Q;
    public static String[] N;
    public static long[] d;
    public static Integer[] e;
@@ -88,9 +88,9 @@ public class AM extends JPanel {
    }
 
    public AM(boolean var1) {
+   super();
       JFrame var3;
       label48: {
-         super();
          long var6 = 199288150985905138L;
          Object var5 = null;
          Ref.s(199288150985905138L, var5, var6);
@@ -278,7 +278,7 @@ public class AM extends JPanel {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String[] var2;
       AM var10001;
       label40: {
@@ -420,7 +420,7 @@ public class AM extends JPanel {
       }
    }
 
-   protected void P(Graphics var1) {
+   public void P(Graphics var1) {
       Object var5 = 497629741148939873L;
       if ((NY)Ref.g(497629741148939873L, var5) != null) {
          Graphics2D var2 = (Graphics2D)var1;
@@ -463,7 +463,7 @@ public class AM extends JPanel {
             throw var17.getTargetException();
          }
 
-new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var10013);
+0.0F = new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var10013);
          Object var3 = 0.0F;
          var2.setPaint((Paint)var3);
          var2.fillRect(0, 0, this.getWidth(), this.getHeight());
@@ -618,7 +618,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
             T32 var5 = (T32)var4.next();
             T32 var16 = var5.equals(var1);
             if (var2 == null) {
-               if (var16 != false) {
+               if (var16 == null) {
                   break label37;
                }
 
@@ -638,7 +638,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
                }
             }
 
-            if (var16 != false) {
+            if (var16 == null) {
                Object[] var17 = Registry.packArgs(var5);
                long var13 = 267026473738179692L;
                Object[] var12 = var17;
@@ -803,7 +803,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       if (this != null) {
          T32 var3 = var10002;
          SwingUtilities.invokeLater(new com.finalshell.task.Kf4(this, (int)var3));
-      } else if (var10002 != 0) {
+      } else if (var10002 != null) {
          var10002 = var1;
          Object[] var10003 = Registry.emptyArgs();
          long var9 = 328118709254946779L;
@@ -863,7 +863,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
 
          label188:
          if (var5 == null) {
-            if (var10002 != false) {
+            if (var10002 == null) {
                var10002 = this;
                Object var16 = 417119238929760524L;
                int var10003 = ((ArrayList)Ref.g(417119238929760524L, var16)).size();
@@ -914,7 +914,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
          }
 
          if (var5 == null) {
-            if (var10002 != false) {
+            if (var10002 == null) {
                Object var26 = 426406158494779427L;
                Ref.g(426406158494779427L, var26);
                Object[] var10004 = Registry.emptyArgs();
@@ -1437,7 +1437,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       }
    }
 
-   int N() {
+   public int N() {
       String[] var10000 = s$arrString();
       Object var2 = false;
       Object var3 = 1;
@@ -1456,7 +1456,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
 
             label23: {
                if (var1 == null) {
-                  if (var10001 != false) {
+                  if (var10001 == null) {
                      break label23;
                   }
 
@@ -1588,7 +1588,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
          }
 
          if (var2 == null) {
-            if (var10003 != false) {
+            if (var10003 == null) {
                continue;
             }
 
@@ -1607,7 +1607,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
             var10004.equals(var1);
          }
 
-         if (var10003 != false) {
+         if (var10003 == null) {
             var3 = var5;
             break;
          }
@@ -1708,7 +1708,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
          }
 
          if (var2 == null) {
-            if (var10003 == false) {
+            if (var10003 == null) {
                continue;
             }
 
@@ -1727,7 +1727,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
             var10004.equals(var1);
          }
 
-         if (var10003 != false) {
+         if (var10003 == null) {
             var3 = var5;
             break;
          }
@@ -2006,7 +2006,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
          } catch (InvocationTargetException var20) {
             throw var20.getTargetException();
          }
-      } else if (var10000 == 0) {
+      } else if (var10000 == null) {
          Registry.lookupField(501692309218203508L).setBoolean(this, true);
          var10000 = var1;
          Object[] var27 = Registry.emptyArgs();
@@ -2037,7 +2037,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       }
    }
 
-   void h(T32 var1) {
+   public void h(T32 var1) {
       s$arrString();
       Object var5 = 417119238929760524L;
       Iterator var3 = ((ArrayList)Ref.g(417119238929760524L, var5)).iterator();
@@ -2180,7 +2180,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       }
    }
 
-   void e(T32 var1, int var2, int var3) {
+   public void e(T32 var1, int var2, int var3) {
       s$arrString();
       Object[] var10003 = Registry.emptyArgs();
       long var12 = 584096728105558414L;
@@ -2354,7 +2354,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       }
    }
 
-   void B() {
+   public void B() {
       this.doLayout();
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new GE(this));
@@ -2369,7 +2369,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       }
    }
 
-   void U() {
+   public void U() {
       String[] var10000 = s$arrString();
       int var2 = 0;
       String[] var1 = var10000;
@@ -2401,7 +2401,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       } while (var1 == null);
    }
 
-   void R() {
+   public void R() {
       String[] var10000 = s$arrString();
       int var2 = 0;
       String[] var1 = var10000;
@@ -2455,7 +2455,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       } while (var1 == null);
    }
 
-   int X(Component var1) {
+   public int X(Component var1) {
       int var3 = 0;
       Component[] var4 = this.getComponents();
       String[] var10000 = s$arrString();
@@ -2938,7 +2938,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       return var43;
    }
 
-   Bq2 y(T32 var1, AM var2, boolean var3, boolean var4) {
+   public Bq2 y(T32 var1, AM var2, boolean var3, boolean var4) {
       return new Bq2(
          var1,
          var2,
@@ -3073,7 +3073,7 @@ new AM((float)var10008, 0.0F, (Color)var10010, (float)this, (float)var10012, var
       }
    }
 
-   void f() {
+   public void f() {
       label24: {
          String[] var1 = s$arrString();
          AM var10000 = this;

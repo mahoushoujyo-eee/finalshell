@@ -22,17 +22,17 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicListUI;
 
 public class Yc2_2 extends BasicListUI {
-   protected boolean O = Wx4.S;
-   protected boolean H = Wx4.a;
-   protected int l = Wx4.n;
-   protected int g = Wx4.y;
-   protected boolean b = Wx4.H;
-   protected Color u = Wx4.Q;
-   protected Color d = Wx4.F;
-   protected boolean V = Wx4.r;
-   protected MouseAdapter X;
-   protected ListSelectionListener x;
-   protected int h = -1;
+   public boolean O = Wx4.S;
+   public boolean H = Wx4.a;
+   public int l = Wx4.n;
+   public int g = Wx4.y;
+   public boolean b = Wx4.H;
+   public Color u = Wx4.Q;
+   public Color d = Wx4.F;
+   public boolean V = Wx4.r;
+   public MouseAdapter X;
+   public ListSelectionListener x;
+   public int h = -1;
    public static String a;
 
    public static ComponentUI createUI(JComponent var0) {
@@ -65,7 +65,7 @@ public class Yc2_2 extends BasicListUI {
       super.uninstallUI(var1);
    }
 
-   protected Rq2 A() {
+   public Rq2 A() {
       String[] var1 = com.finalshell.ui.panel.CI.c();
       JList var10000 = this.list;
       if (var1 == null) {
@@ -148,7 +148,7 @@ public class Yc2_2 extends BasicListUI {
    }
 
    @Override
-   protected void paintCell(Graphics var1, int var2, Rectangle var3, ListCellRenderer var4, ListModel var5, ListSelectionModel var6, int var7) {
+   public void paintCell(Graphics var1, int var2, Rectangle var3, ListCellRenderer var4, ListModel var5, ListSelectionModel var6, int var7) {
       String[] var8;
       Object var9;
       byte var10;
@@ -259,51 +259,51 @@ public class Yc2_2 extends BasicListUI {
       this.rendererPane.paintComponent(var1, var15, this.list, var3.x, var3.y, var3.width, var3.height, true);
    }
 
-   static JList q(Yc2_2 var0) {
+   public static JList q(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList V(Yc2_2 var0) {
+   public static JList V(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList k(Yc2_2 var0) {
+   public static JList k(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList C(Yc2_2 var0) {
+   public static JList C(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList Q(Yc2_2 var0) {
+   public static JList Q(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList T(Yc2_2 var0) {
+   public static JList T(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList l(Yc2_2 var0) {
+   public static JList l(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList o(Yc2_2 var0) {
+   public static JList o(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList W(Yc2_2 var0) {
+   public static JList W(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList i(Yc2_2 var0) {
+   public static JList i(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList b(Yc2_2 var0) {
+   public static JList b(Yc2_2 var0) {
       return var0.list;
    }
 
-   static JList O(Yc2_2 var0) {
+   public static JList O(Yc2_2 var0) {
       return var0.list;
    }
 

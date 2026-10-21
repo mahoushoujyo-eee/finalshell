@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class R22 implements ActionListener {
-   final KD g;
+   public final KD g;
 
-   R22(KD var1) {
+   public R22(KD var1) {
       this.g = var1;
    }
 

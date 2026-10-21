@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Dv4 implements ActionListener {
-   final QB X;
+   public final QB X;
 
-   Dv4(QB var1) {
+   public Dv4(QB var1) {
       this.X = var1;
    }
 

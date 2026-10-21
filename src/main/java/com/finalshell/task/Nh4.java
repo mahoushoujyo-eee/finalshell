@@ -5,9 +5,9 @@ import com.finalshell.crypto.ConnectHost;
 import com.finalshell.reflect.Registry;
 
 public class Nh4 implements Runnable {
-   final ConnectHost t;
+   public final ConnectHost t;
 
-   Nh4(ConnectHost var1) {
+   public Nh4(ConnectHost var1) {
       this.t = var1;
    }
 

@@ -62,23 +62,23 @@ public class Yw2 extends YP {
       return this.Y();
    }
 
-   static YA3 L(Yw2 var0) {
+   public static YA3 L(Yw2 var0) {
       return var0.s;
    }
 
-   static YP h(Yw2 var0) {
+   public static YP h(Yw2 var0) {
       return var0.Y;
    }
 
-   static YP J(Yw2 var0) {
+   public static YP J(Yw2 var0) {
       return var0.T;
    }
 
-   static KO x(Yw2 var0) {
+   public static KO x(Yw2 var0) {
       return var0.F;
    }
 
-   Yw2(boolean var1, Et2 var2, Et2 var3, YA3 var4, KO var5, YP var6, AK var7) {
+   public Yw2(boolean var1, Et2 var2, Et2 var3, YA3 var4, KO var5, YP var6, AK var7) {
       this(var1, var2, var3, var4, var5, var6);
    }
 }

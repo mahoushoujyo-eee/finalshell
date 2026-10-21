@@ -40,7 +40,7 @@ public class Ku4 extends Ky4 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       int var2;
       Graphics2D var3;
       R0 var5;

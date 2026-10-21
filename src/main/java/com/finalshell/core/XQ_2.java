@@ -37,29 +37,29 @@ public class XQ_2 {
    public MacAddress T;
    public MacAddress i;
    public PcapHandle z;
-   String A;
-   int k;
-   String v;
-   PcapNetworkInterface B;
-   PcapNetworkInterface c;
+   public String A;
+   public int k;
+   public String v;
+   public PcapNetworkInterface B;
+   public PcapNetworkInterface c;
    public final int S;
    public int u;
    public static D82_2 x;
    public final int M;
-   LinkedBlockingQueue n;
-   Random I;
-   boolean G;
-   short V;
-   boolean E;
+   public LinkedBlockingQueue n;
+   public Random I;
+   public boolean G;
+   public short V;
+   public boolean E;
    public boolean h;
-   boolean e;
+   public boolean e;
    public boolean R;
-   Inet4Address j;
+   public Inet4Address j;
    public static ScheduledExecutorService W;
-   HashMap Q;
-   HashMap s;
-   HashSet t;
-   HashSet C;
+   public HashMap Q;
+   public HashMap s;
+   public HashSet t;
+   public HashSet C;
    public static String[] b;
    public static String[] d;
    public static String[] f;
@@ -101,7 +101,7 @@ public class XQ_2 {
 
       label51: {
          if (var3 != null) {
-            if (var10001 != false) {
+            if (var10001 == null) {
                this.u = 1;
                if (var3 != null) {
                   break label51;
@@ -119,7 +119,7 @@ public class XQ_2 {
          }
 
          if (var3 != null) {
-            if (var10001 != false) {
+            if (var10001 == null) {
                this.u = 0;
                if (var3 != null) {
                   break label51;
@@ -136,7 +136,7 @@ public class XQ_2 {
             }
          }
 
-         if (var10001 != false) {
+         if (var10001 == null) {
             this.u = 1;
          }
       }
@@ -156,7 +156,7 @@ public class XQ_2 {
       Ref.h(201859364639460244L, var1, var2);
    }
 
-   void x() {
+   public void x() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -244,7 +244,7 @@ public class XQ_2 {
       // ac: return
    }
 
-   void D(PcapNetworkInterface var1) throws PcapNativeException, NotOpenException {
+   public void D(PcapNetworkInterface var1) throws PcapNativeException, NotOpenException {
       PcapHandle var2 = var1.openLive(a(19596, 7166196519583858892L), this.r(var1), this.u);
       String var3 = "";
       String var10000 = this.A;
@@ -254,7 +254,7 @@ public class XQ_2 {
       var5.start();
    }
 
-   PcapNetworkInterface.PromiscuousMode r(PcapNetworkInterface var1) {
+   public PcapNetworkInterface.PromiscuousMode r(PcapNetworkInterface var1) {
       PcapNetworkInterface.PromiscuousMode var2 = null;
       String var3 = (var1.getDescription() + ":" + var1.getName()).toLowerCase();
       if (var3.contains(a(7883, 15128))) {
@@ -734,7 +734,7 @@ public class XQ_2 {
       var4.getType();
    }
 
-   IpV4Packet n(EthernetPacket param1) throws IllegalRawDataException {
+   public IpV4Packet n(EthernetPacket param1) throws IllegalRawDataException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

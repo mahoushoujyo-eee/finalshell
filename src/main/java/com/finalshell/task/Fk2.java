@@ -12,12 +12,12 @@ import java.util.HashSet;
 import java.util.Hashtable;
 
 public class Fk2 implements Runnable {
-   final L9 U;
-   final RouteTracePanel d;
-   final String Q;
+   public final L9 U;
+   public final RouteTracePanel d;
+   public final String Q;
    public static long a;
 
-   Fk2(L9 var1, RouteTracePanel var2, String var3) {
+   public Fk2(L9 var1, RouteTracePanel var2, String var3) {
       this.U = var1;
       this.d = var2;
       this.Q = var3;

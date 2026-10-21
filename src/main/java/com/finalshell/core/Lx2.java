@@ -8,8 +8,8 @@ public class Lx2 {
    public static Map B;
    public final String r;
    public final java.lang.Class[] P;
-   protected Wj4 k;
-   protected boolean D;
+   public Wj4 k;
+   public boolean D;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -21,7 +21,7 @@ public class Lx2 {
       this.k = null;
    }
 
-   protected Wj4 g(int var1, String var2, String var3) {
+   public Wj4 g(int var1, String var2, String var3) {
       int[] var4 = XB.X();
       if (this.k != null) {
          return null;

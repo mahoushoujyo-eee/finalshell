@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class MK implements ActionListener {
-   final EffectPreview Q;
+   public final EffectPreview Q;
    public static String a;
 
-   MK(EffectPreview var1) {
+   public MK(EffectPreview var1) {
       this.Q = var1;
    }
 

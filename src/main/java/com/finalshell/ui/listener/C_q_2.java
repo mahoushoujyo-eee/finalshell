@@ -4,9 +4,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class C_q_2 implements PropertyChangeListener {
-   final com.finalshell.core.QH I;
+   public final com.finalshell.core.QH I;
 
-   C_q_2(com.finalshell.core.QH var1) {
+   public C_q_2(com.finalshell.core.QH var1) {
       this.I = var1;
    }
 

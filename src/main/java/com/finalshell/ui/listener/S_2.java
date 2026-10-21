@@ -4,9 +4,9 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
 public class S_2 implements TreeSelectionListener {
-   final com.finalshell.ui.panel.T B;
+   public final com.finalshell.ui.panel.T B;
 
-   S_2(com.finalshell.ui.panel.T var1) {
+   public S_2(com.finalshell.ui.panel.T var1) {
       this.B = var1;
    }
 

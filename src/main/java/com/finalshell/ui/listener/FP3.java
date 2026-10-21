@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FP3 implements ActionListener {
-   final EditProxyServerDialog N;
+   public final EditProxyServerDialog N;
 
-   FP3(EditProxyServerDialog var1) {
+   public FP3(EditProxyServerDialog var1) {
       this.N = var1;
    }
 

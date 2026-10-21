@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class L3 implements ActionListener {
-   final ShowDeletedPanel m;
+   public final ShowDeletedPanel m;
 
-   L3(ShowDeletedPanel var1) {
+   public L3(ShowDeletedPanel var1) {
       this.m = var1;
    }
 

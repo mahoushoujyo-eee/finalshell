@@ -6,7 +6,7 @@ public class G62 extends Gj4 {
    public static String a;
 
    @Override
-   protected float q(float var1) {
+   public float q(float var1) {
       var1 *= this.h;
       return (var1 - 0.5F) * this.W + 0.5F;
    }

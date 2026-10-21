@@ -31,18 +31,18 @@ import javax.swing.filechooser.FileSystemView;
 import net.miginfocom.swing.MigLayout;
 
 public class Xw2 extends JDialog {
-   PathPanel Y;
-   JPanel B;
+   public PathPanel Y;
+   public JPanel B;
    public static int u;
    public static int C;
-   int S;
+   public int S;
    public static int v;
    public static int K;
-   int f;
-   ArrayList Z;
-   String V;
-   Km2 p;
-   Connection4 d;
+   public int f;
+   public ArrayList Z;
+   public String V;
+   public Km2 p;
+   public Connection4 d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -165,11 +165,11 @@ public class Xw2 extends JDialog {
                Object var36 = 246429828742070477L;
                ((JPanel)Ref.g(246429828742070477L, var36)).add(var14, a(2104, 17686));
                var14.addMouseListener(new T62(this, var13, var14, var16));
-               if (var3 == false) {
+               if (var3 == null) {
                   break;
                }
 
-               if (var3 != false) {
+               if (var3 == null) {
                   continue;
                }
             }
@@ -225,7 +225,7 @@ public class Xw2 extends JDialog {
             Object var60 = 295254898775337161L;
             ((Km2)Ref.g(295254898775337161L, var60)).setDragEnabled(false);
             var10021 = var6;
-            if (var3 == false) {
+            if (var3 == null) {
                break label151;
             }
 
@@ -301,8 +301,8 @@ public class Xw2 extends JDialog {
       }
 
       label133: {
-         if (var3 != false) {
-            if (var10025 == false) {
+         if (var3 == null) {
+            if (var10025 == null) {
                Object[] var10026 = Registry.packArgs(var103, true, false);
                long var79 = 633945515680537718L;
                Object[] var78 = var10026;
@@ -314,7 +314,7 @@ public class Xw2 extends JDialog {
                   throw var89.getTargetException();
                }
 
-               if (var3 != false) {
+               if (var3 == null) {
                   break label133;
                }
             }
@@ -329,7 +329,7 @@ public class Xw2 extends JDialog {
             }
          }
 
-         if (var10025 == false) {
+         if (var10025 == null) {
             FileSystemView var17 = FileSystemView.getFileSystemView();
             Object[] var115 = Registry.packArgs(Registry.lookupField(149082991182987426L).get(null), true, true);
             long var83 = 633945515680537718L;
@@ -357,7 +357,7 @@ public class Xw2 extends JDialog {
       }
    }
 
-   void F() {
+   public void F() {
       Address.g();
       boolean var2 = false;
       Object var14 = 540498928662567395L;
@@ -424,22 +424,22 @@ public class Xw2 extends JDialog {
             Object var32 = 599144936174029496L;
             ((ArrayList)Ref.g(599144936174029496L, var32)).add(var12);
             boolean var10010 = var12.getClass().equals(Tf4.class);
-            if (var1 != false) {
+            if (var1 == null) {
                break;
             }
 
             label109: {
                label119: {
-                  if (var1 == false) {
+                  if (var1 == null) {
                      if (var10010) {
                         Tf4 var13 = (Tf4)var12;
-                        if (var1 == false) {
+                        if (var1 == null) {
                            break label109;
                         }
                      }
 
                      var68 = var12.getClass();
-                     if (var1 != false) {
+                     if (var1 == null) {
                         break label119;
                      }
 
@@ -459,7 +459,7 @@ public class Xw2 extends JDialog {
             }
 
             var9++;
-            if (var1 == false) {
+            if (var1 == null) {
                continue;
             }
          }
@@ -469,7 +469,7 @@ public class Xw2 extends JDialog {
          break;
       }
 
-      if (var1 == false) {
+      if (var1 == null) {
          if (!(var10008 > 0)) {
             return;
          }

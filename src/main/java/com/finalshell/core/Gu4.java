@@ -46,7 +46,7 @@ public class Gu4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       String[] var4 = W5.q();
       if (var4 != null) {
          if (this.i) {

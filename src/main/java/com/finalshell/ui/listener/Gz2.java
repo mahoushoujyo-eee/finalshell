@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Gz2 implements MouseListener {
-   final PathPanel w;
+   public final PathPanel w;
 
-   Gz2(PathPanel var1) {
+   public Gz2(PathPanel var1) {
       this.w = var1;
    }
 

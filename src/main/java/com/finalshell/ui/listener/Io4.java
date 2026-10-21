@@ -4,10 +4,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Io4 implements PropertyChangeListener {
-   final com.finalshell.core.A9 U;
+   public final com.finalshell.core.A9 U;
    public static String a;
 
-   Io4(com.finalshell.core.A9 var1) {
+   public Io4(com.finalshell.core.A9 var1) {
       this.U = var1;
    }
 

@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 public class GD extends AbstractAction {
-   final SetBackgroundImagePanel T;
+   public final SetBackgroundImagePanel T;
 
-   GD(SetBackgroundImagePanel var1, String var2) {
+   public GD(SetBackgroundImagePanel var1, String var2) {
       super(var2);
       this.T = var1;
    }

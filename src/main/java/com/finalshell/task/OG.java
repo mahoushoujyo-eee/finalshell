@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class OG implements Runnable {
-   final ArrayList R;
-   final CB V;
+   public final ArrayList R;
+   public final CB V;
 
-   OG(CB var1, ArrayList var2) {
+   public OG(CB var1, ArrayList var2) {
       this.V = var1;
       this.R = var2;
    }

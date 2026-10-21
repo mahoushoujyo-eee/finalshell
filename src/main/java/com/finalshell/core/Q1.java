@@ -11,7 +11,7 @@ public class Q1 extends QH {
    }
 
    @Override
-   protected String getPropertyPrefix() {
+   public String getPropertyPrefix() {
       return g;
    }
 

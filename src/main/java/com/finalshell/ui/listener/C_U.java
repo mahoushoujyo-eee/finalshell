@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class C_U implements ActionListener {
-   final QB o;
+   public final QB o;
 
-   C_U(QB var1) {
+   public C_U(QB var1) {
       this.o = var1;
    }
 

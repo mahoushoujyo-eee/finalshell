@@ -90,7 +90,7 @@ public class S3 extends Y2 implements OM {
       }
    }
 
-   static B6 K(S3 var0) {
+   public static B6 K(S3 var0) {
       return var0.q;
    }
 

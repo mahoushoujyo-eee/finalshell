@@ -55,7 +55,7 @@ public class I2_3 implements Y2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == this.d ? 1 : 0);
+         return (boolean)((var10000 == this.d ? 1 : 0) != 0);
       }
    }
 

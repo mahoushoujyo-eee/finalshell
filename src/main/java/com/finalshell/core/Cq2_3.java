@@ -11,12 +11,12 @@ import java.util.List;
 public class Cq2_3 extends Y_3 {
    public final List q;
 
-   Cq2_3(short var1) {
+   public Cq2_3(short var1) {
       super(var1);
       this.q = new ArrayList();
    }
 
-   Cq2_3(short var1, CX_2[] var2) {
+   public Cq2_3(short var1, CX_2[] var2) {
       super(var1);
       this.q = new ArrayList<>(Arrays.asList(var2));
    }
@@ -43,7 +43,7 @@ public class Cq2_3 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       var1.writeShort(this.q.size());
       Ky4[] var2 = var10000;
@@ -59,7 +59,7 @@ public class Cq2_3 extends Y_3 {
       }
    }
 
-   static Y_3 T(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 T(short var0, DataInputStream var1) throws IOException {
       return s(var0, var1);
    }
 }

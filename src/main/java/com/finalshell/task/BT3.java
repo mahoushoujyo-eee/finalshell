@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JFrame;
 
 public class BT3 implements Runnable {
-   final YT3_2 j;
+   public final YT3_2 j;
 
-   BT3(YT3_2 var1) {
+   public BT3(YT3_2 var1) {
       this.j = var1;
    }
 

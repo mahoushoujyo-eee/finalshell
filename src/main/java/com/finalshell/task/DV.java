@@ -4,9 +4,6 @@ import com.finalshell.core.BN3;
 import com.finalshell.core.Bi4;
 
 public class DV implements Runnable {
-   DV() {
-   }
-
    @Override
    public void run() {
       Bi4.O = true;

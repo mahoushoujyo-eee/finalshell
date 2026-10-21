@@ -3,11 +3,11 @@ package com.finalshell.ui.panel;
 import com.finalshell.core.KD;
 
 public class Xl4 extends XT3 {
-   final KD A;
-   final KD d;
-   final KD v;
+   public final KD A;
+   public final KD d;
+   public final KD v;
 
-   Xl4(KD var1, KD var2, KD var3) {
+   public Xl4(KD var1, KD var2, KD var3) {
       this.A = var1;
       this.d = var2;
       this.v = var3;

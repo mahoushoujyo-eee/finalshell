@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qo2 implements ActionListener {
-   final Connection5 w;
-   final ShowDeletedPanel l;
-   final Tv2 u;
+   public final Connection5 w;
+   public final ShowDeletedPanel l;
+   public final Tv2 u;
 
-   Qo2(Tv2 var1, Connection5 var2, ShowDeletedPanel var3) {
+   public Qo2(Tv2 var1, Connection5 var2, ShowDeletedPanel var3) {
       this.u = var1;
       this.w = var2;
       this.l = var3;

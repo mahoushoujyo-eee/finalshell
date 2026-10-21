@@ -8,9 +8,9 @@ import java.io.File;
 import javax.swing.JWindow;
 
 public class Ou2 extends KeyAdapter {
-   final Kz4 y;
+   public final Kz4 y;
 
-   Ou2(Kz4 var1) {
+   public Ou2(Kz4 var1) {
       this.y = var1;
    }
 

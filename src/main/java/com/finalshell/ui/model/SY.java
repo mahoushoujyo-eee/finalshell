@@ -4,7 +4,7 @@ import com.finalshell.core.Dx4;
 import java.util.EnumSet;
 import org.jetbrains.annotations.NotNull;
 
-public final class SY extends Enum {
+public final class SY {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -25,11 +25,10 @@ public final class SY extends Enum {
    }
 
    public static SY valueOf(String var0) {
-      return Enum.valueOf(SY.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public SY(String var1, int var2) {
-      super(var1, var2);
    }
 
    public void d(@NotNull EnumSet var1, boolean var2) {
@@ -58,7 +57,7 @@ public final class SY extends Enum {
       return var10000;
    }
 
-   static void L(SY var0, EnumSet var1, boolean var2) {
+   public static void L(SY var0, EnumSet var1, boolean var2) {
       var0.d(var1, var2);
    }
 

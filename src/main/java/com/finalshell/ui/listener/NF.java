@@ -10,11 +10,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPopupMenu;
 
 public class NF implements ActionListener {
-   final Y12_2 b;
-   final com.finalshell.core.C M;
-   final LocalMachinePanel u;
+   public final Y12_2 b;
+   public final com.finalshell.core.C M;
+   public final LocalMachinePanel u;
 
-   NF(LocalMachinePanel var1, Y12_2 var2, com.finalshell.core.C var3) {
+   public NF(LocalMachinePanel var1, Y12_2 var2, com.finalshell.core.C var3) {
       this.u = var1;
       this.b = var2;
       this.M = var3;

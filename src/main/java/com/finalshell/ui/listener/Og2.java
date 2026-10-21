@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.SwingUtilities;
 
 public class Og2 implements ActionListener {
-   final RouteTracePanel2 R;
+   public final RouteTracePanel2 R;
 
-   Og2(RouteTracePanel2 var1) {
+   public Og2(RouteTracePanel2 var1) {
       this.R = var1;
    }
 

@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class JE implements ActionListener {
-   final User H;
+   public final User H;
    public static String a;
 
-   JE(User var1) {
+   public JE(User var1) {
       this.H = var1;
    }
 

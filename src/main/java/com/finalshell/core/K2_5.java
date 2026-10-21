@@ -13,7 +13,7 @@ public final class K2_5 {
    public static ClassLoader r;
    public static ClassLoader c;
    public static S_6 L;
-   static boolean p;
+   public static boolean p;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -422,7 +422,7 @@ public final class K2_5 {
       }
    }
 
-   static Map Z(URL var0, JarFile var1, String var2, boolean var3, boolean var4) {
+   public static Map Z(URL var0, JarFile var1, String var2, boolean var3, boolean var4) {
       return C(var0, var1, var2, var3, var4);
    }
 

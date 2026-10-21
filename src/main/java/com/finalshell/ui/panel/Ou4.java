@@ -526,7 +526,7 @@ public class Ou4 extends JComponent implements MouseListener, MouseMotionListene
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       Object var3 = RV.X(var2);

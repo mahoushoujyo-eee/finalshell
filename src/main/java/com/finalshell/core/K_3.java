@@ -48,7 +48,7 @@ public class K_3 extends X2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 == this.T ? 1 : 0);
+         return (boolean)((var10000 == this.T ? 1 : 0) != 0);
       }
    }
 

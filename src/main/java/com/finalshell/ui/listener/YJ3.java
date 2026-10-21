@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YJ3 implements ActionListener {
-   final FilePermissionPanel W;
+   public final FilePermissionPanel W;
 
-   YJ3(FilePermissionPanel var1) {
+   public YJ3(FilePermissionPanel var1) {
       this.W = var1;
    }
 

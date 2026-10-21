@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.util.Collection;
 
 public class FN_2 implements HH_2 {
-   final Collection F;
-   final HO_2 q;
+   public final Collection F;
+   public final HO_2 q;
 
-   FN_2(HO_2 var1, Collection var2) {
+   public FN_2(HO_2 var1, Collection var2) {
       this.q = var1;
       this.F = var2;
    }

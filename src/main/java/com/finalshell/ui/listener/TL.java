@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class TL implements ActionListener {
-   final Address W;
+   public final Address W;
 
-   TL(Address var1) {
+   public TL(Address var1) {
       this.W = var1;
    }
 

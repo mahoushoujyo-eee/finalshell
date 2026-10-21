@@ -68,7 +68,7 @@ public final class XE {
          var10001 = var3.r;
       }
 
-      return (boolean)(var4 == var10001 ? 1 : 0);
+      return (boolean)((var4 == var10001 ? 1 : 0) != 0);
    }
 
    @Override

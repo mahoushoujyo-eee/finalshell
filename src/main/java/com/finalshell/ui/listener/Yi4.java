@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JRadioButtonMenuItem;
 
 public class Yi4 implements ActionListener {
-   final JRadioButtonMenuItem l;
-   final ResetPanel u;
+   public final JRadioButtonMenuItem l;
+   public final ResetPanel u;
 
-   Yi4(ResetPanel var1, JRadioButtonMenuItem var2) {
+   public Yi4(ResetPanel var1, JRadioButtonMenuItem var2) {
       this.u = var1;
       this.l = var2;
    }

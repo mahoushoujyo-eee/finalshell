@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YH implements ActionListener {
-   final Ox4 t;
+   public final Ox4 t;
 
-   YH(Ox4 var1) {
+   public YH(Ox4 var1) {
       this.t = var1;
    }
 

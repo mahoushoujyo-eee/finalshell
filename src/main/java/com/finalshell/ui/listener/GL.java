@@ -5,9 +5,9 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class GL implements DocumentListener {
-   final Bq_2 p;
+   public final Bq_2 p;
 
-   GL(Bq_2 var1) {
+   public GL(Bq_2 var1) {
       this.p = var1;
    }
 

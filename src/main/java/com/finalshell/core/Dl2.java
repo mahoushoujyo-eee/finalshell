@@ -6,23 +6,23 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class Dl2 {
-   HashMap t = new HashMap();
-   Thread W;
-   LA3 e;
-   int q = a(24232, 5758382157581959059L);
-   int o = a(21290, 7845052718463431184L);
-   Object y = new Object();
+   public HashMap t = new HashMap();
+   public Thread W;
+   public LA3 e;
+   public int q = a(24232, 5758382157581959059L);
+   public int o = a(21290, 7845052718463431184L);
+   public Object y = new Object();
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   Dl2(LA3 var1) {
+   public Dl2(LA3 var1) {
       this.e = var1;
       this.W = new com.finalshell.task.P2(this);
       this.W.start();
    }
 
-   void D() {
+   public void D() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -116,18 +116,18 @@ public class Dl2 {
       // af: return
    }
 
-   void J(int var1) {
+   public void J(int var1) {
       this.t.remove(var1);
    }
 
-   Iterator u() {
+   public Iterator u() {
       Object var1 = null;
       synchronized (this.y) {
          return new com.finalshell.ui.model.TQ(this.t.keySet().iterator());
       }
    }
 
-   F92 d(int var1, InetAddress var2, int var3) {
+   public F92 d(int var1, InetAddress var2, int var3) {
       Ky4[] var10000 = Qm2.J();
       F92 var5 = (F92)this.t.get(var1);
       Ky4[] var4 = var10000;

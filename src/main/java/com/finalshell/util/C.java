@@ -38,11 +38,11 @@ public class C extends AbstractCollection {
       return var2;
    }
 
-   static List K(C var0) {
+   public static List K(C var0) {
       return var0.N;
    }
 
-   static Iterator R(C var0) {
+   public static Iterator R(C var0) {
       return var0.s;
    }
 }

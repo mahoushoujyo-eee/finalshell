@@ -287,7 +287,7 @@ public class XK_2 {
       return (String)var19;
    }
 
-   static String i(int var0) {
+   public static String i(int var0) {
       int[] var10000 = ZG_2.Z();
       StringBuilder var2 = new StringBuilder();
       int[] var1 = var10000;

@@ -11,41 +11,41 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Du4 implements Fs2 {
-   Socket R;
-   Socket N;
+   public Socket R;
+   public Socket N;
    public DataInputStream r;
    public DataOutputStream x;
    public DataInputStream d;
    public DataOutputStream z;
-   Object C = new Object();
-   Object Y = new Object();
-   Object q = new Object();
-   Object G = new Object();
-   ArrayList m = new ArrayList();
-   ArrayList w = new ArrayList();
-   byte[] D = new byte[0];
-   int c = 1;
-   int E = 1;
-   boolean t = false;
-   boolean p = false;
-   boolean j = false;
-   boolean s = false;
-   boolean o = false;
-   boolean h = false;
-   boolean L = false;
-   String H;
-   String e;
-   static int K;
-   Random F;
-   long U;
-   static int Z;
-   boolean B;
-   long i;
-   static ExecutorService k;
-   Socket O;
-   Socket J;
-   int W;
-   String M;
+   public Object C = new Object();
+   public Object Y = new Object();
+   public Object q = new Object();
+   public Object G = new Object();
+   public ArrayList m = new ArrayList();
+   public ArrayList w = new ArrayList();
+   public byte[] D = new byte[0];
+   public int c = 1;
+   public int E = 1;
+   public boolean t = false;
+   public boolean p = false;
+   public boolean j = false;
+   public boolean s = false;
+   public boolean o = false;
+   public boolean h = false;
+   public boolean L = false;
+   public String H;
+   public String e;
+   public static int K;
+   public Random F;
+   public long U;
+   public static int Z;
+   public boolean B;
+   public long i;
+   public static ExecutorService k;
+   public Socket O;
+   public Socket J;
+   public int W;
+   public String M;
    public static String a;
 
    static {
@@ -78,7 +78,7 @@ public class Du4 implements Fs2 {
       return this.i;
    }
 
-   void I() {
+   public void I() {
       this.i = System.currentTimeMillis();
    }
 
@@ -145,7 +145,7 @@ public class Du4 implements Fs2 {
       }
    }
 
-   void e() {
+   public void e() {
       this.y();
    }
 

@@ -11,7 +11,7 @@ public class Q8 {
    public OutputStream b;
    public InputStream k;
    public OutputStream m;
-   Ke4_2 D;
+   public Ke4_2 D;
    public static String[] a;
    public static String[] c;
    public static long[] d;

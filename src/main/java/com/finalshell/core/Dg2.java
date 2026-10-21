@@ -2,21 +2,21 @@ package com.finalshell.core;
 
 public class Dg2 extends DQ {
    public boolean F;
-   byte[] J;
-   byte[] p;
-   final Bb2 k;
+   public byte[] J;
+   public byte[] p;
+   public final Bb2 k;
    public static String[] c;
    public static String[] d;
 
-   Dg2(Bb2 var1, String var2, byte[] var3) throws Pc2 {
+   public Dg2(Bb2 var1, String var2, byte[] var3) throws Pc2 {
       this(var1, var2, 0, var3);
    }
 
-   Dg2(Bb2 var1, String var2, int var3, byte[] var4) throws Pc2 {
+   public Dg2(Bb2 var1, String var2, int var3, byte[] var4) throws Pc2 {
       this(var1, "", var2, var3, var4, null);
    }
 
-   Dg2(Bb2 param1, String param2, String param3, int param4, byte[] param5, String param6) throws Pc2 {
+   public Dg2(Bb2 param1, String param2, String param3, int param4, byte[] param5, String param6) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -162,7 +162,7 @@ public class Dg2 extends DQ {
    }
 
    @Override
-   boolean p(String param1) {
+   public boolean p(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -256,11 +256,11 @@ public class Dg2 extends DQ {
       // b1: ireturn
    }
 
-   boolean d() {
+   public boolean d() {
       return this.F;
    }
 
-   void u() {
+   public void u() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

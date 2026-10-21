@@ -6,7 +6,7 @@ public class R6_2 extends Fr2_2 implements X_3_2 {
    @C_9
    public Rx2_2 I;
    public boolean D;
-   static boolean n;
+   public static boolean n;
    public static String[] b;
    public static String[] d;
 

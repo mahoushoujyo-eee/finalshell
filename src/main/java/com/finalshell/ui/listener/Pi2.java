@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class Pi2 implements ActionListener {
-   final KF3 q;
+   public final KF3 q;
    public static String[] a;
    public static String[] b;
 
-   Pi2(KF3 var1) {
+   public Pi2(KF3 var1) {
       this.q = var1;
    }
 

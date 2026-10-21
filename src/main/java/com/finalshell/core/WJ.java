@@ -4,7 +4,7 @@ import java.net.DatagramPacket;
 
 public class WJ extends WC {
    public short o = D6.X;
-   byte[] e;
+   public byte[] e;
    public static long[] a;
    public static Integer[] b;
 

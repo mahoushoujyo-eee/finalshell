@@ -9,7 +9,7 @@ import java.util.Map;
 public class QP_2 {
    public static String y;
    public static String j;
-   protected static String s;
+   public static String s;
    public static boolean l;
    public static boolean o;
    public static boolean u;

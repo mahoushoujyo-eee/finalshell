@@ -632,7 +632,7 @@ public final class U7 extends U9 {
    }
 
    @Override
-   protected final void l(int var1, int var2, char[] var3) {
+   public final void l(int var1, int var2, char[] var3) {
       System.arraycopy(this.m, var1, var3, 0, var2);
    }
 
@@ -731,7 +731,7 @@ public final class U7 extends U9 {
    }
 
    @Override
-   protected final void w(int var1, char[] var2, int var3, int var4) {
+   public final void w(int var1, char[] var2, int var3, int var4) {
       System.arraycopy(this.m, var1, var2, var3, var4);
    }
 

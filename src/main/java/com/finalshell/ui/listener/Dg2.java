@@ -64,7 +64,7 @@ public class Dg2 extends JTextField implements FocusListener {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       String var10000 = AA.z();
       int var3 = 2;
@@ -115,7 +115,7 @@ public class Dg2 extends JTextField implements FocusListener {
       var1.setColor(var8);
    }
 
-   protected ImageIcon o(String var1) {
+   public ImageIcon o(String var1) {
       return new ImageIcon(var1);
    }
 

@@ -8,10 +8,10 @@ import java.io.File;
 import javax.swing.AbstractButton;
 
 public class H8 extends MouseAdapter {
-   final CI C;
-   final com.finalshell.ui.panel.Kd4 c;
+   public final CI C;
+   public final com.finalshell.ui.panel.Kd4 c;
 
-   H8(com.finalshell.ui.panel.Kd4 var1, CI var2) {
+   public H8(com.finalshell.ui.panel.Kd4 var1, CI var2) {
       this.c = var1;
       this.C = var2;
    }

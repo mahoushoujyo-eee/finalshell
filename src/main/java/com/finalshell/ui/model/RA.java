@@ -5,8 +5,8 @@ import java.util.List;
 import javax.swing.filechooser.FileSystemView;
 
 public final class RA extends RK {
-   RA(String var1, int var2) {
-      super(null);
+   public RA(String var1, int var2) {
+      super(var1, var2, null);
    }
 
    @Override

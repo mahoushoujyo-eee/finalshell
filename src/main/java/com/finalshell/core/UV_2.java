@@ -11,10 +11,7 @@ public abstract class UV_2 implements Ku2_2 {
    public static long[] b;
    public static Integer[] c;
 
-   UV_2() {
-   }
-
-   abstract String y();
+   public abstract String y();
 
    @Override
    public void l(byte[] var1, int var2) throws Exception {

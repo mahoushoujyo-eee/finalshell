@@ -22,21 +22,21 @@ import javax.swing.border.CompoundBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class AcceleratePanel extends JPanel {
-   SelectDownloadFolderPanel T;
-   Ky4 t;
-   JComponent m;
-   Qe2_2 V;
-   Qe2_2 n;
-   KD y;
-   KD p;
-   KD D;
-   AccelerateRdpHelpPanel C;
-   int l;
-   Color u;
+   public SelectDownloadFolderPanel T;
+   public Ky4 t;
+   public JComponent m;
+   public Qe2_2 V;
+   public Qe2_2 n;
+   public KD y;
+   public KD p;
+   public KD D;
+   public AccelerateRdpHelpPanel C;
+   public int l;
+   public Color u;
    public static int I;
    public static int i;
-   int k;
-   Ky4 G;
+   public int k;
+   public Ky4 G;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -247,7 +247,7 @@ public class AcceleratePanel extends JPanel {
    public void E(int var1) {
    }
 
-   KD H(String var1) {
+   public KD H(String var1) {
       KD var2 = new KD(var1);
       var2.setFont((Font)Registry.lookupField(593752358540399204L).get(null));
       var2.setForeground(new Color(a(2659, 8300784763847177921L), a(17644, 3366682729625696330L), a(17644, 3366682729625696330L)));
@@ -269,7 +269,7 @@ public class AcceleratePanel extends JPanel {
       return var2;
    }
 
-   Qe2_2 A(String var1) {
+   public Qe2_2 A(String var1) {
       Qe2_2 var2 = new Qe2_2(var1);
       var2.r((Color)Registry.lookupField(503018106388102479L).get(null));
       var2.setForeground(new Color(a(17644, 3366682729625696330L), a(17644, 3366682729625696330L), a(17644, 3366682729625696330L)));
@@ -284,7 +284,7 @@ public class AcceleratePanel extends JPanel {
       return var2;
    }
 
-   void L(JComponent var1) {
+   public void L(JComponent var1) {
       Object var2 = 562372469151204576L;
       ((JComponent)Ref.g(562372469151204576L, var2)).removeAll();
       Object var4 = 562372469151204576L;

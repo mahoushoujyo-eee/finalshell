@@ -12,11 +12,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Cs4 implements ActionListener {
-   final Bq2 Z;
-   final T32 y;
-   final CopyMenu k;
+   public final Bq2 Z;
+   public final T32 y;
+   public final CopyMenu k;
 
-   Cs4(CopyMenu var1, Bq2 var2, T32 var3) {
+   public Cs4(CopyMenu var1, Bq2 var2, T32 var3) {
       this.k = var1;
       this.Z = var2;
       this.y = var3;

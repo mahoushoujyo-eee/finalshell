@@ -8,12 +8,12 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mn2 implements Cq2 {
-   final Connection12 S;
-   final String C;
-   final String w;
-   final DownloadDialog P;
+   public final Connection12 S;
+   public final String C;
+   public final String w;
+   public final DownloadDialog P;
 
-   Mn2(DownloadDialog var1, Connection12 var2, String var3, String var4) {
+   public Mn2(DownloadDialog var1, Connection12 var2, String var3, String var4) {
       this.P = var1;
       this.S = var2;
       this.C = var3;

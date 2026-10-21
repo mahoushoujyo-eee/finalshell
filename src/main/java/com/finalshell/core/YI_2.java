@@ -3,9 +3,6 @@ package com.finalshell.core;
 import java.awt.ComponentOrientation;
 
 public class YI_2 extends YO {
-   YI_2() {
-   }
-
    @Override
    public void Z(String var1, String var2) {
       ComponentOrientation var3 = ComponentOrientation.getOrientation(I22.Z(var1));

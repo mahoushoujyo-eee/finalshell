@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class XA implements ActionListener {
-   final Window T;
-   final K42 g;
+   public final Window T;
+   public final K42 g;
 
-   XA(K42 var1, Window var2) {
+   public XA(K42 var1, Window var2) {
       this.g = var1;
       this.T = var2;
    }

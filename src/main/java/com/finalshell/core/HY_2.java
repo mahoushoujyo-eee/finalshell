@@ -3,14 +3,14 @@ package com.finalshell.core;
 import java.util.Objects;
 
 public class HY_2 extends Hv2_2 {
-   final Hd2[] i;
-   final H3_2 h;
+   public final Hd2[] i;
+   public final H3_2 h;
 
-   HY_2(H3_2 var1, Hd2 var2, Hd2[] var3) {
+   public HY_2(H3_2 var1, Hd2 var2, Hd2[] var3) {
+   super(var2);
       this.h = var1;
       this.i = var3;
       Objects.requireNonNull(var2);
-      super(var2);
    }
 
    @Override

@@ -13,10 +13,10 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
 
 public class Y62_2 extends JTable {
-   com.finalshell.ui.model.GR X;
-   int u;
-   int e;
-   HashMap f;
+   public com.finalshell.ui.model.GR X;
+   public int u;
+   public int e;
+   public HashMap f;
    public static String[] i;
    public static long[] a;
    public static Integer[] b;
@@ -128,7 +128,7 @@ public class Y62_2 extends JTable {
       }
    }
 
-   protected TableRowSorter g() {
+   public TableRowSorter g() {
       com.finalshell.ui.model.GR var2 = (com.finalshell.ui.model.GR)this.getModel();
       String[] var10000 = Z();
       D72 var3 = new D72(this, var2);

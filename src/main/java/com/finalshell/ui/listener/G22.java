@@ -14,10 +14,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class G22 implements ActionListener {
-   final NetworkMonitorPanel F;
+   public final NetworkMonitorPanel F;
    public static String a;
 
-   G22(NetworkMonitorPanel var1) {
+   public G22(NetworkMonitorPanel var1) {
       this.F = var1;
    }
 

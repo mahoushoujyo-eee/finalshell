@@ -44,7 +44,7 @@ public class Go4 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10001 = W5.q();
       int var6 = 0;
       short[][] var7 = new short[3][var1];

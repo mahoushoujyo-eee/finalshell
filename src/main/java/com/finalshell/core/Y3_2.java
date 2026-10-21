@@ -4,11 +4,11 @@ import com.finalshell.ui.frame.XD3;
 import javax.swing.table.DefaultTableModel;
 
 public class Y3_2 extends YO {
-   final PQ V;
-   final DefaultTableModel y;
-   final XD3 x;
+   public final PQ V;
+   public final DefaultTableModel y;
+   public final XD3 x;
 
-   Y3_2(XD3 var1, PQ var2, DefaultTableModel var3) {
+   public Y3_2(XD3 var1, PQ var2, DefaultTableModel var3) {
       this.x = var1;
       this.V = var2;
       this.y = var3;

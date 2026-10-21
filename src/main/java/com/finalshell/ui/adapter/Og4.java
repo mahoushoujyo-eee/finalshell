@@ -7,9 +7,9 @@ import javax.swing.AbstractAction;
 import javax.swing.table.TableCellEditor;
 
 public class Og4 extends AbstractAction {
-   final Km2 B;
+   public final Km2 B;
 
-   Og4(Km2 var1) {
+   public Og4(Km2 var1) {
       this.B = var1;
    }
 

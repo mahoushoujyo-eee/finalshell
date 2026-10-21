@@ -8,11 +8,8 @@ public class Bi2 extends JPanel {
    public static long[] a;
    public static Integer[] b;
 
-   Bi2() {
-   }
-
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       var1.setColor(new Color(a(5322, 8166423488860772340L), a(2798, 7607016043794647505L), a(2798, 7607016043794647505L)));
       int var2 = a(18612, 1673463886484835208L);

@@ -12,10 +12,10 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class FU3 implements ActionListener {
-   final int G;
-   final EditDialog2 r;
+   public final int G;
+   public final EditDialog2 r;
 
-   FU3(EditDialog2 var1, int var2) {
+   public FU3(EditDialog2 var1, int var2) {
       this.r = var1;
       this.G = var2;
    }
@@ -44,7 +44,7 @@ public class FU3 implements ActionListener {
          label379: {
             var10003 = Registry.lookupField(310907260019797101L).getInt(this);
             int var10004 = Registry.lookupField(243490669497898236L).getInt(null);
-            if (var2 != false) {
+            if (var2 == null) {
                if (var10003 == var10004) {
                   Object var18 = 121430004283033522L;
                   Ref.g(121430004283033522L, var18);
@@ -84,8 +84,8 @@ public class FU3 implements ActionListener {
                            String var8 = var10008;
                            File var9 = new File(var8);
                            FU3 var167 = var9.exists();
-                           if (var2 != false) {
-                              if (var167 == 0) {
+                           if (var2 == null) {
+                              if (var167 == null) {
                                  break label365;
                               }
 
@@ -100,7 +100,7 @@ public class FU3 implements ActionListener {
                            var3 = var167;
                         }
 
-                        if (var2 != false) {
+                        if (var2 == null) {
                            break label381;
                         }
                      }
@@ -130,24 +130,24 @@ public class FU3 implements ActionListener {
                      String var141 = var168;
                      File var144 = new File(var141);
                      FU3 var171 = var144.exists();
-                     if (var2 != false) {
-                        if (var171 == false) {
+                     if (var2 == null) {
+                        if (var171 == null) {
                            break label381;
                         }
 
                         var171 = var144.isDirectory();
                      }
 
-                     if (var2 != false) {
-                        if (var171 == false) {
+                     if (var2 == null) {
+                        if (var171 == null) {
                            break label381;
                         }
 
                         var171 = var144.isFile();
                      }
 
-                     if (var2 != false) {
-                        if (var171 != false) {
+                     if (var2 == null) {
+                        if (var171 == null) {
                            break label381;
                         }
 
@@ -162,7 +162,7 @@ public class FU3 implements ActionListener {
                      var3 = var171;
                   }
 
-                  if (var2 != false) {
+                  if (var2 == null) {
                      break label379;
                   }
                }
@@ -171,7 +171,7 @@ public class FU3 implements ActionListener {
                var10004 = Registry.lookupField(530934992944035866L).getInt(null);
             }
 
-            if (var2 != false) {
+            if (var2 == null) {
                if (var10003 == var10004) {
                   Object var40 = 121430004283033522L;
                   Ref.g(121430004283033522L, var40);
@@ -222,7 +222,7 @@ public class FU3 implements ActionListener {
                      label385: {
                         Object var142 = var174;
                         boolean var177 = var142.getClass().equals(Tf4.class);
-                        if (var2 != false) {
+                        if (var2 == null) {
                            if (var177) {
                               var184 = Registry.packArgs(var139);
                               long var55 = 303488344973038628L;
@@ -254,14 +254,14 @@ public class FU3 implements ActionListener {
                                  }
                               }
 
-                              if (var2 != false) {
+                              if (var2 == null) {
                                  break label332;
                               }
                            }
 
                            Class var178 = var142.getClass();
                            var184 = var2;
-                           if (var2 == false) {
+                           if (var2 == null) {
                               break label385;
                            }
 
@@ -299,8 +299,8 @@ public class FU3 implements ActionListener {
                      String var149 = var193;
                      File var152 = new File(var149);
                      FU3 var196 = var152.exists();
-                     if (var2 != false) {
-                        if (var196 == false) {
+                     if (var2 == null) {
+                        if (var196 == null) {
                            break label332;
                         }
 
@@ -315,7 +315,7 @@ public class FU3 implements ActionListener {
                      var3 = var196;
                   }
 
-                  if (var2 != false) {
+                  if (var2 == null) {
                      break label379;
                   }
                }
@@ -324,7 +324,7 @@ public class FU3 implements ActionListener {
                var10004 = Registry.lookupField(117752090945034800L).getInt(null);
             }
 
-            if (var2 != false) {
+            if (var2 == null) {
                if (var10003 == var10004) {
                   Object var68 = 121430004283033522L;
                   Ref.g(121430004283033522L, var68);
@@ -375,7 +375,7 @@ public class FU3 implements ActionListener {
                      label391: {
                         Object var143 = var179;
                         boolean var182 = var143.getClass().equals(Tf4.class);
-                        if (var2 != false) {
+                        if (var2 == null) {
                            if (var182) {
                               var188 = Registry.packArgs(var140);
                               long var83 = 303488344973038628L;
@@ -396,8 +396,8 @@ public class FU3 implements ActionListener {
                                  String var150 = var197;
                                  File var153 = new File(var150);
                                  var197 = var153.exists();
-                                 if (var2 != false) {
-                                    if (var197 == false) {
+                                 if (var2 == null) {
+                                    if (var197 == null) {
                                        break label394;
                                     }
 
@@ -412,8 +412,8 @@ public class FU3 implements ActionListener {
                                  }
 
                                  label396: {
-                                    if (var2 != false) {
-                                       if (var197 == false) {
+                                    if (var2 == null) {
+                                       if (var197 == null) {
                                           break label396;
                                        }
 
@@ -428,8 +428,8 @@ public class FU3 implements ActionListener {
                                     }
 
                                     label281: {
-                                       if (var2 != false) {
-                                          if (var197 == false) {
+                                       if (var2 == null) {
+                                          if (var197 == null) {
                                              break label281;
                                           }
 
@@ -442,7 +442,7 @@ public class FU3 implements ActionListener {
                                        }
 
                                        var3 = var197;
-                                       if (var2 != false) {
+                                       if (var2 == null) {
                                           break label394;
                                        }
                                     }
@@ -458,7 +458,7 @@ public class FU3 implements ActionListener {
                                        throw var118.getTargetException();
                                     }
 
-                                    if (var2 != false) {
+                                    if (var2 == null) {
                                        break label394;
                                     }
                                  }
@@ -475,14 +475,14 @@ public class FU3 implements ActionListener {
                                  }
                               }
 
-                              if (var2 != false) {
+                              if (var2 == null) {
                                  break label301;
                               }
                            }
 
                            Class var183 = var143.getClass();
                            var188 = var2;
-                           if (var2 == false) {
+                           if (var2 == null) {
                               break label391;
                            }
 
@@ -520,8 +520,8 @@ public class FU3 implements ActionListener {
                      String var151 = var201;
                      File var154 = new File(var151);
                      FU3 var204 = var154.exists();
-                     if (var2 != false) {
-                        if (var204 == false) {
+                     if (var2 == null) {
+                        if (var204 == null) {
                            break label301;
                         }
 
@@ -536,13 +536,13 @@ public class FU3 implements ActionListener {
                      var3 = var204;
                   }
 
-                  if (var2 != false) {
+                  if (var2 == null) {
                      break label379;
                   }
                }
 
                var10003 = Registry.lookupField(310907260019797101L).getInt(this);
-               if (var2 == false) {
+               if (var2 == null) {
                   break label375;
                }
 
@@ -568,7 +568,7 @@ public class FU3 implements ActionListener {
          var10003 = (Object[])var3;
       }
 
-      if (var10003 != 0) {
+      if (var10003 != null) {
          Object var110 = 121430004283033522L;
          Registry.lookupField(633665384138343849L).setInt(Ref.g(121430004283033522L, var110), Registry.lookupField(564170828581134815L).getInt(null));
          Object var112 = 121430004283033522L;

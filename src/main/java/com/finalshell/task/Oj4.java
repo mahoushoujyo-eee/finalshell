@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Oj4 implements Runnable {
-   final FA Q;
+   public final FA Q;
 
-   Oj4(FA var1) {
+   public Oj4(FA var1) {
       this.Q = var1;
    }
 

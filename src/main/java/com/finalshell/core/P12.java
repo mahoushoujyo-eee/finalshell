@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.awt.event.ActionEvent;
 
 public class P12 implements O22_2 {
-   final Nx4 t;
+   public final Nx4 t;
 
-   P12(Nx4 var1) {
+   public P12(Nx4 var1) {
       this.t = var1;
    }
 

@@ -8,10 +8,10 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
 public class Hb2 extends MouseMotionAdapter {
-   final SetBackgroundImagePanel a;
+   public final SetBackgroundImagePanel a;
    public static long b;
 
-   Hb2(SetBackgroundImagePanel var1) {
+   public Hb2(SetBackgroundImagePanel var1) {
       this.a = var1;
    }
 
@@ -30,7 +30,7 @@ public class Hb2 extends MouseMotionAdapter {
             return;
          }
 
-         var10000 = this.a.A;
+         var10000 = (this.a.A) ? 1 : 0;
       }
 
       MouseEvent var10001;

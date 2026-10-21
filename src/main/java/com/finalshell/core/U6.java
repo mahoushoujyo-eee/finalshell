@@ -5,7 +5,7 @@ import com.finalshell.ui.panel.K32;
 import com.finalshell.ui.panel.Ks4;
 
 public class U6 {
-   protected static boolean F;
+   public static boolean F;
 
    public static synchronized void J() {
       String var0 = Cl4_2.I();

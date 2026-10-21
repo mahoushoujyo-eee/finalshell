@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class FJ3 implements ActionListener {
-   final SetExternalEditorPanel Z;
+   public final SetExternalEditorPanel Z;
    public static String a;
 
-   FJ3(SetExternalEditorPanel var1) {
+   public FJ3(SetExternalEditorPanel var1) {
       this.Z = var1;
    }
 

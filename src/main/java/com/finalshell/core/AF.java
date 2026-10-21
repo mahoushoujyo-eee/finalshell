@@ -8,14 +8,14 @@ import javax.swing.JComponent;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 
 public class AF extends BasicScrollBarUI {
-   final ConnectionProperty t;
+   public final ConnectionProperty t;
 
    public AF(ConnectionProperty var1) {
       this.t = var1;
    }
 
    @Override
-   protected void paintTrack(Graphics var1, JComponent var2, Rectangle var3) {
+   public void paintTrack(Graphics var1, JComponent var2, Rectangle var3) {
       int var10000 = ConnectionProperty.y();
       super.paintTrack(var1, var2, var3);
       int var4 = var10000;

@@ -6,10 +6,10 @@ import java.awt.Container;
 import javax.swing.event.AncestorEvent;
 
 public class S2 extends FY {
-   final com.finalshell.ui.panel.Ov2 j;
-   final com.finalshell.core.J_2 d;
+   public final com.finalshell.ui.panel.Ov2 j;
+   public final com.finalshell.core.J_2 d;
 
-   S2(com.finalshell.core.J_2 var1, com.finalshell.ui.panel.Ov2 var2) {
+   public S2(com.finalshell.core.J_2 var1, com.finalshell.ui.panel.Ov2 var2) {
       this.d = var1;
       this.j = var2;
    }

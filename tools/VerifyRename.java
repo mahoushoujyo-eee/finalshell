@@ -177,30 +177,51 @@ public class VerifyRename {
             Set<String> outFqns = new HashSet<>();
             for (String cn : outDb.keySet()) outFqns.add(cn.replace('/', '.'));
             // 能被 Class.forName 直接解析的（JDK / 三方类）也算已覆盖
-            ClassLoader outCl = new URLClassLoader(new URL[]{Paths.get(outJar).toUri().toURL()}, null);
-            int direct = 0, viaAlias = 0, loadable = 0, uncovered = 0;
+            ClassLoader outCl = new URLClassLoader(new URL[]{Paths.get(outJar).toUri().toURL()},
+                    ClassLoader.getSystemClassLoader());
+            // 输入 jar 的加载器：判断某个明文「改名前是不是就能解析」
+            ClassLoader inCl = new URLClassLoader(new URL[]{Paths.get(inJar).toUri().toURL()},
+                    ClassLoader.getSystemClassLoader());
+            int direct = 0, viaAlias = 0, loadable = 0, uncovered = 0, preexisting = 0;
             List<String> unc = new ArrayList<>();
+            int classSlot = 0;   // 槽里存的是 Class 常量（void.class 之类），根本不走 forName
             for (String[] r : rows) {
                 if (r.length < 4 || !r[0].equals("CLASS")) continue;
                 String name = r[3];
+                String slot = (r.length > 5) ? r[5] : "STRING";
+                if ("CLASS".equals(slot)) { classSlot++; continue; }
                 if (outFqns.contains(name)) { direct++; continue; }
                 if (aliasKeys.contains(name)) { viaAlias++; continue; }
                 if (isLoadable(name, outCl)) { loadable++; continue; }
                 uncovered++;
-                if (unc.size() < 15) unc.add(name);
+                // 改名前就解析不了的属于「本来就坏掉的条目」，不算改名造成的回归
+                if (isLoadable(name, inCl)) {
+                    if (unc.size() < 15) unc.add(name);
+                } else {
+                    preexisting++;
+                }
             }
-            report(uncovered == 0, "registry CLASS names: direct=" + direct + " viaAlias=" + viaAlias
-                    + " loadableByForName=" + loadable + " uncovered=" + uncovered
-                    + (unc.isEmpty() ? "" : "  e.g. " + unc));
+            report(unc.isEmpty(), "registry CLASS names: direct=" + direct + " viaAlias=" + viaAlias
+                    + " loadableByForName=" + loadable + " classSlotNotResolved=" + classSlot
+                    + " uncovered=" + uncovered + " (改名前就解析不了的=" + preexisting + ")"
+                    + (unc.isEmpty() ? "" : "  REGRESSION e.g. " + unc));
         } else {
             System.out.println("    (no --registry tsv given, static comparison skipped)");
         }
         if (runtime) {
             RuntimeCheck rc = runtimeCheck(outJar, regTsv);
-            report(rc.cnfe == 0, "runtime lookupClass: total=" + rc.total + " ok=" + rc.ok
+            RuntimeCheck rb = runtimeCheck(inJar, regTsv);
+            // 回归 = 改名前能解析、改名后不能
+            List<String> regress = new ArrayList<>();
+            for (String s : rb.okNames) {
+                if (!rc.okNames.contains(s)) regress.add(s);
+            }
+            report(regress.isEmpty(), "runtime lookupClass: total=" + rc.total
+                    + " ok=" + rc.okNames.size()
                     + " ClassNotFoundException=" + rc.cnfe + " otherError=" + rc.other
-                    + (rc.cnfe == 0 ? "" : "  e.g. " + rc.samples)
-                    + (rc.other == 0 ? "" : "  other e.g. " + rc.otherSamples));
+                    + " | 改名前 ok=" + rb.okNames.size() + " cnfe=" + rb.cnfe
+                    + " | 回归=" + regress.size()
+                    + (regress.isEmpty() ? "" : "  REGRESSION e.g. " + regress));
         }
 
         System.out.println();
@@ -210,6 +231,13 @@ public class VerifyRename {
 
     /** 用给定的 ClassLoader 试加载一个二进制名（不做初始化）。 */
     static boolean isLoadable(String binaryName, ClassLoader cl) {
+        // 先用系统类加载器（能看见 java.sql 等平台模块），再用 jar 自己的加载器
+        try {
+            Class.forName(binaryName, false, ClassLoader.getSystemClassLoader());
+            return true;
+        } catch (Throwable t) {
+            // 继续试 jar 加载器
+        }
         try {
             Class.forName(binaryName, false, cl);
             return true;
@@ -220,7 +248,8 @@ public class VerifyRename {
 
     // ---------------- 运行时校验 ----------------
     static class RuntimeCheck {
-        int total, ok, cnfe, other;
+        int total, cnfe, other;
+        Set<String> okNames = new HashSet<>();
         List<String> samples = new ArrayList<>();
         List<String> otherSamples = new ArrayList<>();
     }
@@ -232,7 +261,7 @@ public class VerifyRename {
             return rc;
         }
         List<String[]> rows = readTsv(regTsv);
-        URLClassLoader cl = new URLClassLoader(new URL[]{Paths.get(jarPath).toUri().toURL()}, null);
+        URLClassLoader cl = new URLClassLoader(new URL[]{Paths.get(jarPath).toUri().toURL()}, ClassLoader.getSystemClassLoader());
         Class<?> reg;
         try {
             reg = Class.forName("com.finalshell.reflect.Registry", true, cl);
@@ -248,7 +277,7 @@ public class VerifyRename {
             rc.total++;
             try {
                 lookupClass.invoke(null, key);
-                rc.ok++;
+                rc.okNames.add(r[3]);
             } catch (Throwable t) {
                 Throwable cause = t.getCause() != null ? t.getCause() : t;
                 String msg = String.valueOf(cause);

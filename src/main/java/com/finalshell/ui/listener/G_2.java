@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class G_2 implements ActionListener {
-   final com.finalshell.ui.panel.T V;
+   public final com.finalshell.ui.panel.T V;
    public static String[] a;
    public static String[] b;
 
-   G_2(com.finalshell.ui.panel.T var1) {
+   public G_2(com.finalshell.ui.panel.T var1) {
       this.V = var1;
    }
 

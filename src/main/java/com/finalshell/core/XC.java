@@ -7,17 +7,17 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 public class XC implements D2 {
-   final Color A;
-   final Font X;
-   final int s;
-   final int D;
-   final com.finalshell.ui.model.J2 l;
-   final com.finalshell.ui.model.J2 M;
-   final int b;
-   final int E;
-   final SetBackgroundImagePanel p;
+   public final Color A;
+   public final Font X;
+   public final int s;
+   public final int D;
+   public final com.finalshell.ui.model.J2 l;
+   public final com.finalshell.ui.model.J2 M;
+   public final int b;
+   public final int E;
+   public final SetBackgroundImagePanel p;
 
-   XC(
+   public XC(
       SetBackgroundImagePanel var1,
       Color var2,
       Font var3,

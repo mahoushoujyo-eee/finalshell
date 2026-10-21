@@ -21,8 +21,8 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class AccelerateRdpHelpPanel extends JPanel {
-   ExtranetAddressModel i;
-   Nd2_2 l;
+   public ExtranetAddressModel i;
+   public Nd2_2 l;
    public static String[] m;
    public static String[] b;
    public static String[] c;
@@ -126,7 +126,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       }
    }
 
-   void h() {
+   public void h() {
       Object var1 = 201212363654675019L;
       Ref.g(201212363654675019L, var1);
       Registry.emptyArgs();
@@ -151,7 +151,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       }
    }
 
-   void C(String var1) {
+   public void C(String var1) {
       Object var3 = 365946612787058696L;
       Ref.g(365946612787058696L, var3);
       Object[] var10002 = Registry.packArgs(var1);
@@ -172,7 +172,7 @@ public class AccelerateRdpHelpPanel extends JPanel {
       }
    }
 
-   JButton K(String var1) {
+   public JButton K(String var1) {
       JButton var2 = new JButton(var1);
       var2.setMargin(new Insets(0, 0, 0, 0));
       var2.setFocusPainted(false);

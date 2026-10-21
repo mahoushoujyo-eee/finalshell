@@ -26,33 +26,33 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 public class FN extends Dialog implements WindowListener, ItemListener, ActionListener, Runnable {
-   TextField J;
-   TextField k;
-   TextField h;
-   TextField B;
-   TextField F;
-   Button D;
-   Button b;
-   Button j;
-   Button w;
-   Button R;
-   List Y;
-   Checkbox I;
-   Checkbox u;
-   Checkbox M;
-   Checkbox z;
-   Checkbox N;
-   Dialog X;
-   Label r;
-   String o;
-   String s;
-   String q;
-   int v;
-   Thread K;
-   CheckboxGroup c;
-   Y2_5 p;
-   TR W;
-   int H;
+   public TextField J;
+   public TextField k;
+   public TextField h;
+   public TextField B;
+   public TextField F;
+   public Button D;
+   public Button b;
+   public Button j;
+   public Button w;
+   public Button R;
+   public List Y;
+   public Checkbox I;
+   public Checkbox u;
+   public Checkbox M;
+   public Checkbox z;
+   public Checkbox N;
+   public Dialog X;
+   public Label r;
+   public String o;
+   public String s;
+   public String q;
+   public int v;
+   public Thread K;
+   public CheckboxGroup c;
+   public Y2_5 p;
+   public TR W;
+   public int H;
    public static boolean g;
    public static String[] a;
    public static String[] d;
@@ -1371,7 +1371,7 @@ public class FN extends Dialog implements WindowListener, ItemListener, ActionLi
       this.X.show();
    }
 
-   void r() {
+   public void r() {
       GridBagConstraints var5 = new GridBagConstraints();
       Font var4 = new Font(a(-31303, 25133), 0, a(6807, 775895429429400695L));
       this.setLayout(new GridBagLayout());

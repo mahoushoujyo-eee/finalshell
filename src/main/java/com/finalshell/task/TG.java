@@ -8,13 +8,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public class TG implements Runnable {
-   final String W;
-   final Nq2 Y;
-   final List r;
-   final String I;
-   final File8 J;
+   public final String W;
+   public final Nq2 Y;
+   public final List r;
+   public final String I;
+   public final File8 J;
 
-   TG(File8 var1, String var2, Nq2 var3, List var4, String var5) {
+   public TG(File8 var1, String var2, Nq2 var3, List var4, String var5) {
       this.J = var1;
       this.W = var2;
       this.Y = var3;

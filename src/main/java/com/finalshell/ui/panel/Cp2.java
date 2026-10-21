@@ -8,8 +8,8 @@ import java.lang.reflect.InvocationTargetException;
 import net.miginfocom.swing.MigLayout;
 
 public class Cp2 extends F8 {
-   T32 P;
-   AppendCarriageReturnCRPanel i;
+   public T32 P;
+   public AppendCarriageReturnCRPanel i;
    public static String[] a;
    public static String[] b;
 

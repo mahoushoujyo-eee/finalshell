@@ -68,7 +68,7 @@ public class R_3 extends X2_3 {
          var10001 = this.L;
       }
 
-      return (boolean)(var10000 == var10001 ? 1 : 0);
+      return (boolean)((var10000 == var10001 ? 1 : 0) != 0);
    }
 
    @Override

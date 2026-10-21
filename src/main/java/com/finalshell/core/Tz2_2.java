@@ -12,11 +12,11 @@ import javax.swing.SwingConstants;
 public class Tz2_2 extends T4 implements SwingConstants {
    public static List T;
    public static List H;
-   protected final Map Q = new HashMap();
-   protected int w = 0;
-   protected int K = 0;
-   protected boolean Y = false;
-   protected boolean Z = false;
+   public final Map Q = new HashMap();
+   public int w = 0;
+   public int K = 0;
+   public boolean Y = false;
+   public boolean Z = false;
    public static String[] a;
    public static String[] b;
 
@@ -142,11 +142,11 @@ public class Tz2_2 extends T4 implements SwingConstants {
       // b6: return
    }
 
-   protected void R() {
+   public void R() {
       throw new IllegalArgumentException(a(19250, -11561));
    }
 
-   protected int u(String param1) {
+   public int u(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -178,7 +178,7 @@ public class Tz2_2 extends T4 implements SwingConstants {
       // 29: ireturn
    }
 
-   protected int c(String param1) {
+   public int c(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -552,7 +552,7 @@ public class Tz2_2 extends T4 implements SwingConstants {
       // 2f9: areturn
    }
 
-   protected Dimension S(Container param1, int param2, int param3) {
+   public Dimension S(Container param1, int param2, int param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

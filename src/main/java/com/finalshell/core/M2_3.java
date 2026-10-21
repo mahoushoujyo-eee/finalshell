@@ -1,8 +1,8 @@
 package com.finalshell.core;
 
 public class M2_3 {
-   String T;
-   String f;
+   public String T;
+   public String f;
 
    public String R() {
       return this.T;

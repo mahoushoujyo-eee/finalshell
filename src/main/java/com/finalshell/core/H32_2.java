@@ -4,15 +4,15 @@ import java.util.Objects;
 
 public class H32_2 extends HP_2 {
    @C_9
-   H4_2[] T;
-   final NS n;
-   final H3_2 i;
+   public H4_2[] T;
+   public final NS n;
+   public final H3_2 i;
 
-   H32_2(H3_2 var1, Hd2 var2, NS var3) {
+   public H32_2(H3_2 var1, Hd2 var2, NS var3) {
+   super(var2);
       this.i = var1;
       this.n = var3;
       Objects.requireNonNull(var2);
-      super(var2);
    }
 
    public com.finalshell.ui.model.S_3 p$_S() {

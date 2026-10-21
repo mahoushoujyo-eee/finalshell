@@ -39,8 +39,8 @@ public class Kl4 extends Ky4 {
    }
 
    public Kl4(OV var1, int var2, boolean var3, Component[] var4) {
+   super(new Tw2(var3 ? 0 : 1, var2));
       int[] var5 = K32.L$arrint();
-      super(new Tw2(var3 ? 0 : 1, var2));
       this.setOpaque(false);
       int var6 = 0;
 

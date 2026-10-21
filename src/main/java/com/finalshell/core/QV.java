@@ -14,21 +14,18 @@ public class QV extends Qi2 {
    public static long[] e;
    public static Integer[] f;
 
-   QV() {
+   public void h(String var1) {
    }
 
-   void h(String var1) {
-   }
-
-   void A(String var1) {
+   public void A(String var1) {
       this.K = var1;
    }
 
-   void b(byte[] var1) {
+   public void b(byte[] var1) {
       this.p = var1;
    }
 
-   void K(int var1, int var2, int var3, int var4) {
+   public void K(int var1, int var2, int var3, int var4) {
       this.A = var1;
       this.h = var2;
       this.I = var3;

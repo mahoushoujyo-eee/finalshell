@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class RL3 extends MouseAdapter {
-   final K42 d;
+   public final K42 d;
 
-   RL3(K42 var1) {
+   public RL3(K42 var1) {
       this.d = var1;
    }
 

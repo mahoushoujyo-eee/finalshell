@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.LF3_2;
 
 public class Ur4 implements Runnable {
-   final LF3_2 m;
+   public final LF3_2 m;
    public static long a;
 
-   Ur4(LF3_2 var1) {
+   public Ur4(LF3_2 var1) {
       this.m = var1;
    }
 

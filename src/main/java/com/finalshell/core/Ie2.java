@@ -16,19 +16,19 @@ public class Ie2 extends IB {
       super(var1);
    }
 
-   protected void K(JRootPane var1) {
+   public void K(JRootPane var1) {
       Window var2 = FV_2.L(var1);
       this.M = new Ys4(this);
       var2.addComponentListener(this.M);
    }
 
-   protected void M(JRootPane var1) {
+   public void M(JRootPane var1) {
       Window var2 = FV_2.L(var1);
       var2.removeComponentListener(this.M);
       this.M = null;
    }
 
-   protected void A(JRootPane var1) {
+   public void A(JRootPane var1) {
       Window var3 = FV_2.L(var1);
       String[] var10000 = IH.M();
       Rectangle var4 = (Rectangle)this.o();
@@ -95,28 +95,28 @@ public class Ie2 extends IB {
       var3.setLocationRelativeTo(null);
    }
 
-   protected void W(JRootPane var1) {
+   public void W(JRootPane var1) {
       Window var2 = FV_2.L(var1);
       this.J(var2.getBounds());
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.W((JRootPane)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.A((JRootPane)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.M((JRootPane)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.K((JRootPane)var1);
    }
 }

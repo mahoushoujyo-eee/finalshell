@@ -7,16 +7,16 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class LI extends L3 {
-   protected int E;
-   protected int Z;
-   protected float X;
-   protected boolean A;
-   protected boolean w;
-   protected boolean W;
-   protected boolean r;
-   protected int x;
-   protected int y;
-   protected float m;
+   public int E;
+   public int Z;
+   public float X;
+   public boolean A;
+   public boolean w;
+   public boolean W;
+   public boolean r;
+   public int x;
+   public int y;
+   public float m;
    public static long[] a;
    public static Integer[] b;
 
@@ -70,7 +70,7 @@ public class LI extends L3 {
       }
    }
 
-   protected void F() {
+   public void F() {
       this.x = this.E;
       this.y = this.Z;
       this.m = this.X;

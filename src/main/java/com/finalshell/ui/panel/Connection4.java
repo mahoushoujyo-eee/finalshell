@@ -52,41 +52,41 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class Connection4 extends AA {
-   LE i;
-   Fy2 y;
-   Connection4 K;
-   HashMap r;
-   Tf4 D;
-   DefaultMutableTreeNode w;
-   FileSystemView d;
-   long m;
-   boolean U;
-   TreePath s;
-   Object F;
-   DefaultMutableTreeNode B;
-   int a;
-   boolean S;
-   int Y;
-   com.finalshell.config.File I;
-   HashSet Z;
-   HashSet P;
-   boolean c;
-   Connection12 X;
-   com.finalshell.ui.model.Kl4 z;
-   Km2 h;
-   Address o;
-   Tf4 V;
-   HashSet T;
-   String E;
-   ArrayList g;
-   Object p;
-   boolean j;
-   long W;
-   boolean J;
-   String f;
-   java.io.File e;
-   long k;
-   String t;
+   public LE i;
+   public Fy2 y;
+   public Connection4 K;
+   public HashMap r;
+   public Tf4 D;
+   public DefaultMutableTreeNode w;
+   public FileSystemView d;
+   public long m;
+   public boolean U;
+   public TreePath s;
+   public Object F;
+   public DefaultMutableTreeNode B;
+   public int a;
+   public boolean S;
+   public int Y;
+   public com.finalshell.config.File I;
+   public HashSet Z;
+   public HashSet P;
+   public boolean c;
+   public Connection12 X;
+   public com.finalshell.ui.model.Kl4 z;
+   public Km2 h;
+   public Address o;
+   public Tf4 V;
+   public HashSet T;
+   public String E;
+   public ArrayList g;
+   public Object p;
+   public boolean j;
+   public long W;
+   public boolean J;
+   public String f;
+   public java.io.File e;
+   public long k;
+   public String t;
    public static int[] M;
    public static String[] l;
    public static String[] n;
@@ -96,9 +96,9 @@ public class Connection4 extends AA {
    public static Long[] H;
 
    public Connection4(boolean var1, com.finalshell.ui.model.Kl4 var2) {
+   super(new DefaultMutableTreeNode(a(4992, -23343), true));
       Connection4 var3;
       label86: {
-         super(new DefaultMutableTreeNode(a(4992, -23343), true));
          HashMap var10001 = new HashMap();
          long var13 = 159245943539531162L;
          HashMap var12 = var10001;
@@ -249,7 +249,7 @@ public class Connection4 extends AA {
          java.io.File var6 = new java.io.File((String)Registry.lookupField(478301022169899080L).get(null));
          Connection4 var106 = var6.exists();
          if (this != null) {
-            if (var106 == false) {
+            if (var106 == null) {
                var6.mkdirs();
             }
 
@@ -289,7 +289,7 @@ public class Connection4 extends AA {
             }
          }
 
-         if (var106 != false) {
+         if (var106 == null) {
             Object[] var10032 = Registry.packArgs(true);
             long var99 = 587464397243746167L;
             Object[] var98 = var10032;
@@ -476,7 +476,7 @@ public class Connection4 extends AA {
       var10003 = var2.contains(var10004);
       label141:
       if (this != null) {
-         if (var10003 == false) {
+         if (var10003 == null) {
             var10003 = this;
             Object var15 = 467542466021000295L;
             HashSet var67 = (HashSet)Ref.g(467542466021000295L, var15);
@@ -599,7 +599,7 @@ public class Connection4 extends AA {
 
       label151: {
          if (this != null) {
-            if (var10003 != false) {
+            if (var10003 == null) {
                return;
             }
 
@@ -624,7 +624,7 @@ public class Connection4 extends AA {
             var2.contains(var76);
          }
 
-         if (var10003 != false) {
+         if (var10003 == null) {
             Object var45 = 592764144014982287L;
             Ref.g(592764144014982287L, var45);
             Object[] var71 = Registry.packArgs(true);
@@ -1097,7 +1097,7 @@ public class Connection4 extends AA {
 
       Connection4 var87 = (Connection4)var14;
       if (var7 != null) {
-         if (var14 != false) {
+         if (var14 == null) {
             this.expandPath(new TreePath(var9.getPath()));
          }
 
@@ -1105,7 +1105,7 @@ public class Connection4 extends AA {
       }
 
       if (var7 != null) {
-         if (var87 != false) {
+         if (var87 == null) {
             this.expandPath(new TreePath(var12.getPath()));
          }
 
@@ -1113,7 +1113,7 @@ public class Connection4 extends AA {
       }
 
       if (var7 != null) {
-         if (var87 != false) {
+         if (var87 == null) {
             Object[] var10014 = Registry.packArgs(var12);
             long var47 = 325887470340955715L;
             Object[] var46 = var10014;
@@ -1132,7 +1132,7 @@ public class Connection4 extends AA {
       }
 
       if (var7 != null) {
-         if (var87 != false) {
+         if (var87 == null) {
             Object[] var88 = Registry.packArgs(var2);
             long var51 = 177354243147298003L;
             Object[] var50 = var88;
@@ -1247,7 +1247,7 @@ public class Connection4 extends AA {
       return var7;
    }
 
-   void i(DefaultMutableTreeNode var1, String var2, String var3) {
+   public void i(DefaultMutableTreeNode var1, String var2, String var3) {
       int[] var10000 = I();
       int var5 = 0;
       int[] var4 = var10000;
@@ -1294,7 +1294,7 @@ public class Connection4 extends AA {
       }
    }
 
-   void f(String var1, String var2) {
+   public void f(String var1, String var2) {
       int[] var3 = I();
       Object var5 = 490343386624486773L;
       Object var10001 = (HashSet)Ref.g(490343386624486773L, var5);
@@ -1334,7 +1334,7 @@ public class Connection4 extends AA {
       }
    }
 
-   void O(Tf4 var1, String var2, String var3) {
+   public void O(Tf4 var1, String var2, String var3) {
       List var10001 = (List)(Registry.emptyArgs());
       long var11 = 248698316749304686L;
       Object[] var10 = var10001;
@@ -1394,7 +1394,7 @@ public class Connection4 extends AA {
       }
    }
 
-   void G(DefaultMutableTreeNode var1, String var2, String var3) {
+   public void G(DefaultMutableTreeNode var1, String var2, String var3) {
       int[] var10000 = I();
       Object var5 = var1.getUserObject();
       int[] var4 = var10000;
@@ -1496,7 +1496,7 @@ public class Connection4 extends AA {
       }
    }
 
-   String n(String var1, String var2, String var3) {
+   public String n(String var1, String var2, String var3) {
       return var2 + var1.substring(var3.length());
    }
 
@@ -2406,7 +2406,7 @@ public class Connection4 extends AA {
       // 49a: return
    }
 
-   void g(TreeExpansionEvent var1) {
+   public void g(TreeExpansionEvent var1) {
       Registry.lookupField(392487943619353892L).setLong(this, System.currentTimeMillis());
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Va2(this, var1));
@@ -2574,7 +2574,7 @@ public class Connection4 extends AA {
       return var5;
    }
 
-   int V(Object var1) {
+   public int V(Object var1) {
       int[] var10000 = I();
       int var3 = 0;
       int[] var2 = var10000;
@@ -2695,7 +2695,7 @@ public class Connection4 extends AA {
       }
    }
 
-   void u(String var1, DefaultMutableTreeNode var2) {
+   public void u(String var1, DefaultMutableTreeNode var2) {
       Object var3 = 159245943539531162L;
       ((HashMap)Ref.g(159245943539531162L, var3)).put(var1, var2);
    }
@@ -2850,7 +2850,7 @@ public class Connection4 extends AA {
       }
    }
 
-   synchronized DefaultMutableTreeNode r(DefaultMutableTreeNode var1, Tf4 var2) {
+   public synchronized DefaultMutableTreeNode r(DefaultMutableTreeNode var1, Tf4 var2) {
       DefaultMutableTreeNode var3 = new DefaultMutableTreeNode(var2);
       Object[] var10002 = Registry.emptyArgs();
       long var5 = 498856411508641826L;
@@ -3330,7 +3330,7 @@ public class Connection4 extends AA {
          break;
       }
 
-      while (var10005 != false) {
+      while (var10005 == null) {
          String var115 = (String)var8.next();
          var10005 = var6;
          Object[] var10006 = Registry.packArgs(var115);
@@ -3502,7 +3502,7 @@ public class Connection4 extends AA {
             break;
          }
 
-         while (var141 != false) {
+         while (var141 == null) {
             String var121 = (String)var117.next();
             var141 = var6;
             Object[] var145 = Registry.packArgs(var121);
@@ -3653,7 +3653,7 @@ public class Connection4 extends AA {
       SwingUtilities.invokeLater(new KI(this, var1));
    }
 
-   void N(DefaultMutableTreeNode var1) {
+   public void N(DefaultMutableTreeNode var1) {
       int[] var2 = I();
       Object var10000 = var1;
       if (var2 != null) {
@@ -3773,7 +3773,7 @@ public class Connection4 extends AA {
          label190: {
             Connection4 var10007 = var7.contains(var10008);
             if (var5 != null) {
-               if (var10007 == false) {
+               if (var10007 == null) {
                   break label190;
                }
 
@@ -3794,7 +3794,7 @@ public class Connection4 extends AA {
                var7.contains(var10010);
             }
 
-            if (var10007 == false) {
+            if (var10007 == null) {
                Tf4 var87;
                label198: {
                   var87 = null;
@@ -3952,7 +3952,7 @@ public class Connection4 extends AA {
       String var89 = var102;
       Connection4 var105 = var2.equals(var89);
       if (var5 != null) {
-         if (var105 == 0) {
+         if (var105 == null) {
             return;
          }
 
@@ -4197,7 +4197,7 @@ public class Connection4 extends AA {
       }
    }
 
-   DefaultMutableTreeNode g(DefaultMutableTreeNode var1, Tf4 var2) {
+   public DefaultMutableTreeNode g(DefaultMutableTreeNode var1, Tf4 var2) {
       DefaultMutableTreeNode var3 = new DefaultMutableTreeNode(var2);
       Object[] var10002 = Registry.emptyArgs();
       long var6 = 498856411508641826L;
@@ -4237,7 +4237,7 @@ public class Connection4 extends AA {
       }
    }
 
-   int X(DefaultMutableTreeNode var1, Tf4 var2) {
+   public int X(DefaultMutableTreeNode var1, Tf4 var2) {
       int[] var10000 = I();
       int var4 = var1.getChildCount();
       int[] var3 = var10000;
@@ -4267,7 +4267,7 @@ public class Connection4 extends AA {
       return var11;
    }
 
-   boolean J(Tf4 var1) {
+   public boolean J(Tf4 var1) {
       int[] var10000 = I();
       boolean var3 = false;
       int[] var2 = var10000;
@@ -4310,17 +4310,17 @@ public class Connection4 extends AA {
       return var3;
    }
 
-   void H(String var1) {
+   public void H(String var1) {
       Object var2 = 490343386624486773L;
       ((HashSet)Ref.g(490343386624486773L, var2)).add(var1);
    }
 
-   void v(String var1) {
+   public void v(String var1) {
       Object var2 = 467542466021000295L;
       ((HashSet)Ref.g(467542466021000295L, var2)).add(var1);
    }
 
-   void w(Tf4 param1) throws Exception {
+   public void w(Tf4 param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5031,7 +5031,7 @@ public class Connection4 extends AA {
       return this.getRowForPath(this.getClosestPathForLocation(var1, var2));
    }
 
-   int M() {
+   public int M() {
       Connection4 var1 = this;
       int var2 = 0;
 
@@ -5046,7 +5046,7 @@ public class Connection4 extends AA {
       return var2;
    }
 
-   int x(int var1) {
+   public int x(int var1) {
       Connection4 var2 = this;
       byte var3 = 0;
 
@@ -5061,7 +5061,7 @@ public class Connection4 extends AA {
       return var3;
    }
 
-   DropLocation h(Point var1, TreePath var2, int var3) {
+   public DropLocation h(Point var1, TreePath var2, int var3) {
       Class<DropLocation> var4 = DropLocation.class;
       DropLocation var6 = null;
 

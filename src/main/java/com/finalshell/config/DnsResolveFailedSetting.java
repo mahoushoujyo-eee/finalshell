@@ -22,28 +22,28 @@ import org.pcap4j.util.MacAddress;
 public class DnsResolveFailedSetting {
    public MacAddress c;
    public MacAddress F;
-   Inet4Address W;
+   public Inet4Address W;
    public PcapHandle h;
-   Tunnel f;
-   String l = "";
-   String Y = a(-17268, 13934);
-   String U = null;
-   String g = "";
-   PcapNetworkInterface E;
+   public Tunnel f;
+   public String l = "";
+   public String Y = a(-17268, 13934);
+   public String U = null;
+   public String g = "";
+   public PcapNetworkInterface E;
    public final int Q = -1;
    public final int G = 1;
    public final int A = a(114, 4234654109733814218L);
-   HashMap C = new HashMap();
-   LinkedBlockingQueue o = new LinkedBlockingQueue();
-   Random y = new Random();
-   boolean j = false;
-   short d;
-   ConnectTimeout Z = null;
-   DnsResolveFailedSetting b;
-   Thread q;
-   boolean I = true;
+   public HashMap C = new HashMap();
+   public LinkedBlockingQueue o = new LinkedBlockingQueue();
+   public Random y = new Random();
+   public boolean j = false;
+   public short d;
+   public ConnectTimeout Z = null;
+   public DnsResolveFailedSetting b;
+   public Thread q;
+   public boolean I = true;
    public boolean T = false;
-   boolean k = false;
+   public boolean k = false;
    public boolean s = true;
    public static String[] J;
    public static String[] e;
@@ -109,7 +109,7 @@ public class DnsResolveFailedSetting {
       // 4b: return
    }
 
-   boolean E() {
+   public boolean E() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -180,7 +180,7 @@ public class DnsResolveFailedSetting {
       // 8d: ireturn
    }
 
-   PcapNetworkInterface.PromiscuousMode Z(PcapNetworkInterface var1) {
+   public PcapNetworkInterface.PromiscuousMode Z(PcapNetworkInterface var1) {
       PcapNetworkInterface.PromiscuousMode var2 = null;
       String var3 = (var1.getDescription() + ":" + var1.getName()).toLowerCase();
       if (var3.contains(a(-17280, -27172))) {
@@ -192,7 +192,7 @@ public class DnsResolveFailedSetting {
       return var2;
    }
 
-   boolean R() throws Exception {
+   public boolean R() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -455,7 +455,7 @@ public class DnsResolveFailedSetting {
       // 249: ireturn
    }
 
-   void B(Packet param1) {
+   public void B(Packet param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -692,7 +692,7 @@ public class DnsResolveFailedSetting {
       // 20c: return
    }
 
-   void e() {
+   public void e() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -809,7 +809,7 @@ public class DnsResolveFailedSetting {
       // f3: return
    }
 
-   IpV4Packet v(EthernetPacket param1) throws IllegalRawDataException {
+   public IpV4Packet v(EthernetPacket param1) throws IllegalRawDataException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

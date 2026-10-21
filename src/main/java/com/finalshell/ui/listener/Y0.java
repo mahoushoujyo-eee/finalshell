@@ -5,10 +5,10 @@ import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
 
 public class Y0 extends ContainerAdapter {
-   final boolean w;
-   final com.finalshell.ui.panel.K22 O;
+   public final boolean w;
+   public final com.finalshell.ui.panel.K22 O;
 
-   Y0(com.finalshell.ui.panel.K22 var1, boolean var2) {
+   public Y0(com.finalshell.ui.panel.K22 var1, boolean var2) {
       this.O = var1;
       this.w = var2;
    }

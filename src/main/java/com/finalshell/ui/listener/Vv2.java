@@ -8,9 +8,9 @@ import java.awt.event.ComponentListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Vv2 implements ComponentListener {
-   final AM q;
+   public final AM q;
 
-   Vv2(AM var1) {
+   public Vv2(AM var1) {
       this.q = var1;
    }
 

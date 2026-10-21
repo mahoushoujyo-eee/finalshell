@@ -96,7 +96,7 @@ public class YB3 extends GT3 {
       return this.a;
    }
 
-   protected void r(O_3 var1, int var2) {
+   public void r(O_3 var1, int var2) {
       var1.X(
          (float)(var2 >> a(30588, 337725760998618555L) & a(8846, 3283555849333203016L)) * 0.003921569F,
          (float)(var2 >> a(17989, 1541906153097856135L) & a(32654, 6934188322788785487L)) * 0.003921569F,
@@ -106,7 +106,7 @@ public class YB3 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10000 = W5.q();
       int var6 = 0;
       int[] var7 = new int[var1 * var2];

@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.YQ;
 import java.lang.reflect.InvocationTargetException;
 
 public class Oq2 implements Runnable {
-   final YQ p;
+   public final YQ p;
 
-   Oq2(YQ var1) {
+   public Oq2(YQ var1) {
       this.p = var1;
    }
 

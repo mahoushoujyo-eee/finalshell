@@ -5,12 +5,12 @@ import com.finalshell.core.B22;
 import com.finalshell.core.Cm4;
 
 public class Ts4 implements Runnable {
-   final Cm4 V;
+   public final Cm4 V;
    public final com.finalshell.core.PacketLoss b;
    public final A6 I;
    public final A6 Z;
 
-   Ts4(Cm4 var1, com.finalshell.core.PacketLoss var2, A6 var3, A6 var4) {
+   public Ts4(Cm4 var1, com.finalshell.core.PacketLoss var2, A6 var3, A6 var4) {
       this.V = var1;
       this.b = var2;
       this.I = var3;

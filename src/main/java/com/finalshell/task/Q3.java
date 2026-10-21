@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.KF3;
 import java.io.File;
 
 public class Q3 implements Runnable {
-   final File x;
-   final KF3 D;
+   public final File x;
+   public final KF3 D;
 
-   Q3(KF3 var1, File var2) {
+   public Q3(KF3 var1, File var2) {
       this.D = var1;
       this.x = var2;
    }

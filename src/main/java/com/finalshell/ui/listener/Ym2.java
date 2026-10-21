@@ -8,10 +8,10 @@ import java.awt.event.KeyListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ym2 implements KeyListener {
-   final AppendCarriageReturnCRPanel O;
+   public final AppendCarriageReturnCRPanel O;
    public static long a;
 
-   Ym2(AppendCarriageReturnCRPanel var1) {
+   public Ym2(AppendCarriageReturnCRPanel var1) {
       this.O = var1;
    }
 

@@ -6,11 +6,11 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class BB implements Runnable {
-   final U y;
+   public final U y;
    public static String[] a;
    public static String[] b;
 
-   BB(U var1) {
+   public BB(U var1) {
       this.y = var1;
    }
 

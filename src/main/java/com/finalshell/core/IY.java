@@ -28,7 +28,7 @@ public class IY extends IB {
       return var3;
    }
 
-   protected void w(AbstractButton var1) {
+   public void w(AbstractButton var1) {
       this.X = new com.finalshell.ui.listener.I3(this);
       var1.addItemListener(this.X);
    }
@@ -74,7 +74,7 @@ public class IY extends IB {
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.w((AbstractButton)var1);
    }
 

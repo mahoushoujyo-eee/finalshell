@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.TerminalHelpFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kh4 implements Runnable {
-   final Vo2 e;
+   public final Vo2 e;
 
-   Kh4(Vo2 var1) {
+   public Kh4(Vo2 var1) {
       this.e = var1;
    }
 

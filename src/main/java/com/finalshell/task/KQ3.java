@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.ui.dialog.D2;
 
 public class KQ3 implements Runnable {
-   final String X;
-   final D2 J;
+   public final String X;
+   public final D2 J;
 
-   KQ3(D2 var1, String var2) {
+   public KQ3(D2 var1, String var2) {
       this.J = var1;
       this.X = var2;
    }

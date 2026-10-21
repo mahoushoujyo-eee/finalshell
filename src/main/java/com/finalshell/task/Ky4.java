@@ -5,11 +5,11 @@ import com.finalshell.core.KX3_2;
 import java.io.IOException;
 
 public class Ky4 implements Runnable {
-   final DB3 n;
-   final KX3_2 f;
+   public final DB3 n;
+   public final KX3_2 f;
    public static long a;
 
-   Ky4(KX3_2 var1, DB3 var2) {
+   public Ky4(KX3_2 var1, DB3 var2) {
       this.f = var1;
       this.n = var2;
    }

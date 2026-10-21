@@ -5,10 +5,10 @@ import com.finalshell.core.We2;
 import java.net.UnknownHostException;
 
 public class BC implements Runnable {
-   final Qu2 H;
+   public final Qu2 H;
    public final We2 A;
 
-   BC(Qu2 var1, We2 var2) {
+   public BC(Qu2 var1, We2 var2) {
       this.H = var1;
       this.A = var2;
    }

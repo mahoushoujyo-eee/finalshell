@@ -19,7 +19,7 @@ public class P_6 extends ClassLoader {
    }
 
    @Override
-   protected java.lang.Class findClass(@C_9 String param1) throws ClassNotFoundException {
+   public java.lang.Class findClass(@C_9 String param1) throws ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

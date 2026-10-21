@@ -16,27 +16,27 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
 public class Ls2 extends LA implements SwingConstants {
-   protected int J = a(986, 4646918253451563445L);
-   protected int e = a(18862, 3078307197075266499L);
-   protected OK R = OK.onLine;
-   protected Color D = null;
-   protected Color Q = null;
-   protected boolean z = true;
-   protected int C;
-   protected int S;
-   protected String F;
-   protected int G;
-   protected int K;
-   protected boolean r;
-   protected FontMetrics f;
-   protected int p;
-   protected int s;
-   protected int t;
-   protected int m;
-   protected double y;
-   protected double Y;
-   protected Shape a;
-   protected boolean b;
+   public int J = a(986, 4646918253451563445L);
+   public int e = a(18862, 3078307197075266499L);
+   public OK R = OK.onLine;
+   public Color D = null;
+   public Color Q = null;
+   public boolean z = true;
+   public int C;
+   public int S;
+   public String F;
+   public int G;
+   public int K;
+   public boolean r;
+   public FontMetrics f;
+   public int p;
+   public int s;
+   public int t;
+   public int m;
+   public double y;
+   public double Y;
+   public Shape a;
+   public boolean b;
    public static long[] g;
    public static Integer[] j;
 
@@ -374,7 +374,7 @@ public class Ls2 extends LA implements SwingConstants {
       }
    }
 
-   protected int f(JComponent var1) {
+   public int f(JComponent var1) {
       int[] var2;
       byte var3;
       int var5;
@@ -480,7 +480,7 @@ public class Ls2 extends LA implements SwingConstants {
       return var5 - var10;
    }
 
-   protected int Y() {
+   public int Y() {
       int[] var1;
       int var3;
       label45: {
@@ -535,7 +535,7 @@ public class Ls2 extends LA implements SwingConstants {
       return var3;
    }
 
-   protected double h$double() {
+   public double h$double() {
       int[] var1 = Lz2_2.M();
       boolean var10000 = this.r;
       if (var1 == null) {
@@ -561,7 +561,7 @@ public class Ls2 extends LA implements SwingConstants {
       return var10000 ? (double)this.p - this.y : this.y;
    }
 
-   protected int Z(JComponent var1) {
+   public int Z(JComponent var1) {
       int[] var2 = Lz2_2.M();
       int var10000 = (this.k()) ? 1 : 0;
       if (var2 == null) {
@@ -585,11 +585,11 @@ public class Ls2 extends LA implements SwingConstants {
       return var10000 + this.i;
    }
 
-   protected boolean k() {
+   public boolean k() {
       return this.F == null;
    }
 
-   protected Shape F() {
+   public Shape F() {
       Double var1 = null;
       switch (this.S) {
          case 1:
@@ -610,7 +610,7 @@ public class Ls2 extends LA implements SwingConstants {
          : var1);
    }
 
-   protected Shape A() {
+   public Shape A() {
       int[] var1 = Lz2_2.M();
       int var10000 = (this.r) ? 1 : 0;
       if (var1 == null) {

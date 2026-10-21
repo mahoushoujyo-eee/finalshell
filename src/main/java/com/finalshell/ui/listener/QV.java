@@ -16,16 +16,16 @@ import javax.swing.JLabel;
 import javax.swing.JPopupMenu;
 
 public class QV implements MouseListener {
-   final String V;
-   final FX3 j;
-   final JLabel F;
-   final Color O;
-   final com.finalshell.ui.panel.W8 l;
-   final JPopupMenu X;
-   final SelectDownloadFolderPanel y;
+   public final String V;
+   public final FX3 j;
+   public final JLabel F;
+   public final Color O;
+   public final com.finalshell.ui.panel.W8 l;
+   public final JPopupMenu X;
+   public final SelectDownloadFolderPanel y;
    public static String a;
 
-   QV(SelectDownloadFolderPanel var1, String var2, FX3 var3, JLabel var4, Color var5, com.finalshell.ui.panel.W8 var6, JPopupMenu var7) {
+   public QV(SelectDownloadFolderPanel var1, String var2, FX3 var3, JLabel var4, Color var5, com.finalshell.ui.panel.W8 var6, JPopupMenu var7) {
       this.y = var1;
       this.V = var2;
       this.j = var3;

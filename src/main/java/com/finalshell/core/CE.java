@@ -1,25 +1,22 @@
 package com.finalshell.core;
 
 public class CE extends Cq2_2 {
-   static byte[] x;
-   static byte[] X;
+   public static byte[] x;
+   public static byte[] X;
    public static String j;
 
-   CE() {
-   }
-
    @Override
-   byte[] l() {
+   public byte[] l() {
       return x;
    }
 
    @Override
-   byte[] u() {
+   public byte[] u() {
       return X;
    }
 
    @Override
-   String i() {
+   public String i() {
       return j;
    }
 

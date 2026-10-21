@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class FR3 implements ActionListener {
-   final ZU U;
+   public final ZU U;
    public static String a;
 
-   FR3(ZU var1) {
+   public FR3(ZU var1) {
       this.U = var1;
    }
 

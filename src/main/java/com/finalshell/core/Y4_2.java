@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class Y4_2 implements Fq2_2 {
-   final H3_2 w;
+   public final H3_2 w;
    public static String[] a;
    public static String[] b;
 
-   Y4_2(H3_2 var1) {
+   public Y4_2(H3_2 var1) {
       this.w = var1;
    }
 

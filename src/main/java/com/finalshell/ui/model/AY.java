@@ -11,9 +11,9 @@ import java.util.Comparator;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class AY implements Comparator {
-   final Collator H;
+   public final Collator H;
 
-   AY(Collator var1) {
+   public AY(Collator var1) {
       this.H = var1;
    }
 

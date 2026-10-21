@@ -14,7 +14,7 @@ import javax.swing.JComponent;
 import javax.swing.JToolBar;
 
 public class LC_2 extends Lz2_2 {
-   protected Map N;
+   public Map N;
 
    public LC_2() {
       this.N = new HashMap();
@@ -58,7 +58,7 @@ public class LC_2 extends Lz2_2 {
       if (var1 != null) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 > 0 ? 1 : 0);
+         return (boolean)((var2 > 0 ? 1 : 0) != 0);
       }
    }
 
@@ -137,15 +137,15 @@ public class LC_2 extends Lz2_2 {
       }
    }
 
-   protected boolean p$boolean(JComponent var1) {
+   public boolean p$boolean(JComponent var1) {
       return var1.isFocusOwner();
    }
 
-   protected PF3 p$pF_3(JComponent var1) {
+   public PF3 p$pF_3(JComponent var1) {
       return this.u(var1.isEnabled() ? Ey2.t : Ey2.q);
    }
 
-   protected PF3 P(AbstractButton var1) {
+   public PF3 P(AbstractButton var1) {
       int[] var10000 = Lz2_2.M();
       ButtonModel var3 = var1.getModel();
       int[] var2 = var10000;
@@ -173,7 +173,7 @@ public class LC_2 extends Lz2_2 {
       return var4 ? this.u(var3.isRollover() ? Ey2.O : Ey2.t) : this.u(Ey2.q);
    }
 
-   protected PF3 U(JToolBar var1) {
+   public PF3 U(JToolBar var1) {
       int[] var2 = Lz2_2.M();
       boolean var10000 = var1 instanceof XT3;
       if (var2 == null) {

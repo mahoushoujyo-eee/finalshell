@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.KF3;
 import java.io.File;
 
 public class DS_2 implements Kn2_2 {
-   final KF3 I;
+   public final KF3 I;
 
-   DS_2(KF3 var1) {
+   public DS_2(KF3 var1) {
       this.I = var1;
    }
 

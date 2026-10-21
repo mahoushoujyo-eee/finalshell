@@ -4,9 +4,9 @@ import com.finalshell.core.Rk2;
 import javax.swing.event.DocumentEvent;
 
 public class EA3 extends EK3 {
-   final Rk2 M;
+   public final Rk2 M;
 
-   EA3(Rk2 var1) {
+   public EA3(Rk2 var1) {
       this.M = var1;
    }
 

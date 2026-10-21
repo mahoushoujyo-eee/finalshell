@@ -9,9 +9,9 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
 public class Xt2 implements Runnable {
-   final U C;
+   public final U C;
 
-   Xt2(U var1) {
+   public Xt2(U var1) {
       this.C = var1;
    }
 

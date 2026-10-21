@@ -18,11 +18,11 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 
 public class LE extends DefaultTreeCellRenderer {
-   static Border A;
-   JT D;
-   ImageIcon u;
-   ImageIcon O;
-   ImageIcon h;
+   public static Border A;
+   public JT D;
+   public ImageIcon u;
+   public ImageIcon O;
+   public ImageIcon h;
    public static String[] a;
    public static String[] b;
 

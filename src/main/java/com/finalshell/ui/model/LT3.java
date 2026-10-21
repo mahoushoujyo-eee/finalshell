@@ -9,7 +9,7 @@ public class LT3 implements Serializable {
    public String C;
    public boolean d;
    public boolean V;
-   boolean T;
+   public boolean T;
 
    public LT3() {
       int var10000 = WV.U();

@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Co4 implements ActionListener {
-   final Edit I;
+   public final Edit I;
 
-   Co4(Edit var1) {
+   public Co4(Edit var1) {
       this.I = var1;
    }
 

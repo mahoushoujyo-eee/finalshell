@@ -9,10 +9,10 @@ public class AG {
    public Et2 m;
    public Et2 L;
    public EnumSet j;
-   boolean Q = false;
-   boolean J = false;
-   boolean t;
-   YP v;
+   public boolean Q = false;
+   public boolean J = false;
+   public boolean t;
+   public YP v;
 
    public boolean C() {
       return this.Q;

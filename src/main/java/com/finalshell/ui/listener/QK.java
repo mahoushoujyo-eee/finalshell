@@ -10,10 +10,10 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class QK implements ItemListener {
-   final EditTunnelDialog R;
+   public final EditTunnelDialog R;
    public static String a;
 
-   QK(EditTunnelDialog var1) {
+   public QK(EditTunnelDialog var1) {
       this.R = var1;
    }
 

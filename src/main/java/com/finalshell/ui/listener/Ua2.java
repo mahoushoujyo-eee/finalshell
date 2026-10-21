@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ua2 implements ActionListener {
-   final AW V;
+   public final AW V;
 
-   Ua2(AW var1) {
+   public Ua2(AW var1) {
       this.V = var1;
    }
 

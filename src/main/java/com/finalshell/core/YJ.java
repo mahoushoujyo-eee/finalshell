@@ -11,13 +11,13 @@ import javax.crypto.spec.DHParameterSpec;
 import javax.crypto.spec.DHPublicKeySpec;
 
 public class YJ implements Nn4 {
-   BigInteger B;
-   BigInteger N;
-   BigInteger b;
-   byte[] M;
-   BigInteger l;
-   BigInteger s;
-   byte[] F;
+   public BigInteger B;
+   public BigInteger N;
+   public BigInteger b;
+   public byte[] M;
+   public BigInteger l;
+   public BigInteger s;
+   public byte[] F;
    public KeyPairGenerator Q;
    public KeyAgreement U;
    public static String[] a;
@@ -96,15 +96,15 @@ public class YJ implements Nn4 {
       this.s(new BigInteger(1, var1));
    }
 
-   void g(BigInteger var1) {
+   public void g(BigInteger var1) {
       this.B = var1;
    }
 
-   void P(BigInteger var1) {
+   public void P(BigInteger var1) {
       this.N = var1;
    }
 
-   void s(BigInteger var1) {
+   public void s(BigInteger var1) {
       this.l = var1;
    }
 

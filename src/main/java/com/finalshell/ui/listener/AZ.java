@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class AZ implements ActionListener {
-   final SetExternalEditorPanel H;
+   public final SetExternalEditorPanel H;
 
-   AZ(SetExternalEditorPanel var1) {
+   public AZ(SetExternalEditorPanel var1) {
       this.H = var1;
    }
 
@@ -33,7 +33,7 @@ public class AZ implements ActionListener {
          throw var34.getTargetException();
       }
 
-new AZ(var10005);
+var10004 = new AZ(var10005);
       Registry.packArgs(var10003.getName());
       long var10 = 353935338506646766L;
       var10004 = Ref.h2(353935338506646766L, var10);

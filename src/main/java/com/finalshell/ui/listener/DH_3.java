@@ -8,9 +8,9 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class DH_3 implements DocumentListener {
-   final ClearListDialog X;
+   public final ClearListDialog X;
 
-   DH_3(ClearListDialog var1) {
+   public DH_3(ClearListDialog var1) {
       this.X = var1;
    }
 

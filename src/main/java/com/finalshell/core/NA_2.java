@@ -9,14 +9,14 @@ import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 
 public class NA_2 extends JTable {
-   ImportPanel Z;
-   VX g;
+   public ImportPanel Z;
+   public VX g;
    public static long[] a;
    public static Integer[] b;
 
-   NA_2(ImportPanel var1, VX var2) {
+   public NA_2(ImportPanel var1, VX var2) {
+   super();
       short var10000 = 4474;
-      super();
       long var10001 = 7314591075151813528L;
       long var8 = 405008577441249220L;
       Ref.s(405008577441249220L, var1, var8);

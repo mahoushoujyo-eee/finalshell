@@ -7,9 +7,9 @@ import java.awt.Insets;
 import javax.swing.JComboBox;
 
 public class T3_2 extends T4 {
-   final M3 h;
+   public final M3 h;
 
-   protected T3_2(M3 var1) {
+   public T3_2(M3 var1) {
       this.h = var1;
    }
 

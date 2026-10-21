@@ -15,15 +15,15 @@ import javax.swing.plaf.basic.BasicSplitPaneDivider;
 import javax.swing.plaf.basic.BasicSplitPaneUI;
 
 public class F2 extends BasicSplitPaneDivider {
-   protected final Border m;
-   protected final Color e;
-   protected final Color[] k;
-   final Y3 K;
+   public final Border m;
+   public final Color e;
+   public final Color[] k;
+   public final Y3 K;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   F2(Y3 var1, BasicSplitPaneUI var2) {
+   public F2(Y3 var1, BasicSplitPaneUI var2) {
       super(var2);
       this.K = var1;
       this.m = BorderFactory.createEmptyBorder(0, 0, 0, 0);
@@ -37,7 +37,7 @@ public class F2 extends BasicSplitPaneDivider {
    }
 
    @Override
-   protected JButton createLeftOneTouchButton() {
+   public JButton createLeftOneTouchButton() {
       boolean var1 = com.finalshell.ui.panel.O2.r$boolean();
       int var10000 = this.orientation;
       if (var1) {
@@ -55,7 +55,7 @@ public class F2 extends BasicSplitPaneDivider {
    }
 
    @Override
-   protected JButton createRightOneTouchButton() {
+   public JButton createRightOneTouchButton() {
       boolean var1 = com.finalshell.ui.panel.O2.r$boolean();
       int var10000 = this.orientation;
       if (var1) {

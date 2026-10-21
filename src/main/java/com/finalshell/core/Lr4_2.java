@@ -15,14 +15,14 @@ import javax.crypto.spec.DESKeySpec;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Lr4_2 {
-   static int S;
-   static int n;
+   public static int S;
+   public static int n;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   static byte[] C(byte[] var0) {
+   public static byte[] C(byte[] var0) {
       Random var1 = new Random((long)var0[5]);
       long var2 = (long)var1.nextInt(a(16462, 1508183522521931138L));
       if (var2 == 0L) {
@@ -190,7 +190,7 @@ public class Lr4_2 {
       return var10004;
    }
 
-   static byte[] x(int var0) {
+   public static byte[] x(int var0) {
       byte[] var1 = new byte[var0];
 
       for (int var2 = 0; var2 < var0; var2++) {
@@ -200,12 +200,12 @@ public class Lr4_2 {
       return var1;
    }
 
-   void B(byte[] var1, long var2) {
+   public void B(byte[] var1, long var2) {
       Random var4 = new Random();
       var4.nextLong();
    }
 
-   void x() {
+   public void x() {
    }
 
    public static byte[] u(byte[] var0, byte[] var1) throws Exception {

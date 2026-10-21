@@ -15,15 +15,15 @@ public class RZ3 extends Rt4 {
       ((Ne4)this.G).addActionListener(this.m);
    }
 
-   static JComponent c(RZ3 var0) {
+   public static JComponent c(RZ3 var0) {
       return var0.G;
    }
 
-   static JComponent n(RZ3 var0) {
+   public static JComponent n(RZ3 var0) {
       return var0.G;
    }
 
-   static JComponent k(RZ3 var0) {
+   public static JComponent k(RZ3 var0) {
       return var0.G;
    }
 

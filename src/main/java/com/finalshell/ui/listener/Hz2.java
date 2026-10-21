@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Hz2 implements ActionListener {
-   final KD g;
+   public final KD g;
 
-   Hz2(KD var1) {
+   public Hz2(KD var1) {
       this.g = var1;
    }
 

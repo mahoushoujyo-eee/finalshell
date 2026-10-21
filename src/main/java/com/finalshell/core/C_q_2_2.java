@@ -9,7 +9,7 @@ import java.util.TreeMap;
 public abstract class C_q_2_2 extends C_i_2 implements HU_2 {
    public final List k = new ArrayList();
    public final List I = new ArrayList();
-   final SortedMap E = new TreeMap();
+   public final SortedMap E = new TreeMap();
    public static boolean c;
    public static String d;
 
@@ -135,7 +135,7 @@ public abstract class C_q_2_2 extends C_i_2 implements HU_2 {
       return this.I;
    }
 
-   NU_3[] z() {
+   public NU_3[] z() {
       String[] var1 = RG_2.C();
 
       label27: {

@@ -13,10 +13,10 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
 public final class BX implements El2, SwingConstants {
-   protected com.finalshell.ui.panel.QL d;
-   protected final com.finalshell.ui.panel.Hd2 B;
-   protected final C42 W;
-   protected List Z;
+   public com.finalshell.ui.panel.QL d;
+   public final com.finalshell.ui.panel.Hd2 B;
+   public final C42 W;
+   public List Z;
    public static String[] T;
    public static String a;
 
@@ -54,7 +54,7 @@ public final class BX implements El2, SwingConstants {
       var3.u();
    }
 
-   protected void v(com.finalshell.ui.panel.QL var1) {
+   public void v(com.finalshell.ui.panel.QL var1) {
       String[] var10000 = B$arrString();
       OR var3 = var1.G$OR();
       String[] var2 = var10000;
@@ -187,7 +187,7 @@ public final class BX implements El2, SwingConstants {
       var1.f(new P32(this));
    }
 
-   protected JComponent q$JComponent(At2 var1) {
+   public JComponent q$JComponent(At2 var1) {
       return this.z$QL().D().b(this, var1);
    }
 
@@ -405,7 +405,7 @@ public final class BX implements El2, SwingConstants {
       return (boolean)0;
    }
 
-   protected K__2 d(At2 var1) {
+   public K__2 d(At2 var1) {
       String[] var10000 = B$arrString();
       List var3 = var1.U();
       String[] var2 = var10000;

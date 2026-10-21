@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class U2 implements ActionListener {
-   final SetExternalEditorPanel t;
+   public final SetExternalEditorPanel t;
    public static String a;
 
-   U2(SetExternalEditorPanel var1) {
+   public U2(SetExternalEditorPanel var1) {
       this.t = var1;
    }
 

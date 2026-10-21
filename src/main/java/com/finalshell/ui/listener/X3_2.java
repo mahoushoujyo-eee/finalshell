@@ -5,10 +5,10 @@ import com.finalshell.core.WC_2;
 import javax.swing.JTextField;
 
 public class X3_2 extends XA3 {
-   final JTextField B;
-   final Rt4 O;
+   public final JTextField B;
+   public final Rt4 O;
 
-   X3_2(Rt4 var1, JTextField var2) {
+   public X3_2(Rt4 var1, JTextField var2) {
       super(var1);
       this.O = var1;
       this.B = var2;

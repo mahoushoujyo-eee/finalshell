@@ -313,11 +313,11 @@ public class V2_2 extends IM {
       // 298: ireturn
    }
 
-   protected String N() {
+   public String N() {
       return this.z;
    }
 
-   protected void A(String var1) {
+   public void A(String var1) {
       this.z = var1;
    }
 

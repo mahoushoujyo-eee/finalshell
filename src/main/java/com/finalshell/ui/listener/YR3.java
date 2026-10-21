@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class YR3 implements ActionListener {
-   final EditDialog2 q;
+   public final EditDialog2 q;
 
-   YR3(EditDialog2 var1) {
+   public YR3(EditDialog2 var1) {
       this.q = var1;
    }
 

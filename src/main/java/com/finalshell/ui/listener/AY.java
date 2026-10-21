@@ -5,9 +5,9 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class AY extends WindowAdapter {
-   final DK q;
+   public final DK q;
 
-   AY(DK var1) {
+   public AY(DK var1) {
       this.q = var1;
    }
 

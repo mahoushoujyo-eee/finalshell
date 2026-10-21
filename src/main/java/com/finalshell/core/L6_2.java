@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 
 public final class L6_2 extends AbstractSet {
-   final Xy4 E;
+   public final Xy4 E;
 
    public L6_2(Xy4 var1) {
       this.E = var1;
@@ -59,7 +59,7 @@ public final class L6_2 extends AbstractSet {
       this.E.clear();
    }
 
-   L6_2(Xy4 var1, Oi4 var2) {
+   public L6_2(Xy4 var1, Oi4 var2) {
       this(var1);
    }
 }

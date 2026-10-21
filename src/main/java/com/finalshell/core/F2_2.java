@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class F2_2 extends D2_3 {
-   final D32 O;
+   public final D32 O;
 
-   F2_2(D32 var1) {
+   public F2_2(D32 var1) {
       this.O = var1;
    }
 

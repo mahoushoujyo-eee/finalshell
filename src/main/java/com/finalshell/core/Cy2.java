@@ -4,9 +4,6 @@ public class Cy2 extends Exception {
    public static long serialVersionUID;
    public static int[] i;
 
-   Cy2() {
-   }
-
    @Override
    public void printStackTrace() {
    }

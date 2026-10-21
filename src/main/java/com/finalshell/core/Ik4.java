@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Ik4 extends Exception {
-   int Y;
+   public int Y;
 
-   Ik4(int var1) {
+   public Ik4(int var1) {
       this.Y = var1;
    }
 }

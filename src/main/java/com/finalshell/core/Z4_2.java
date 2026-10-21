@@ -1,15 +1,15 @@
 package com.finalshell.core;
 
 public class Z4_2 extends U3_3 {
-   final Object E;
-   final String h;
-   final Hd2 c;
-   final C_2_2 l;
-   final com.finalshell.ui.model.S_3 v;
-   final H4_2[] z;
-   final Ht2_2 r;
+   public final Object E;
+   public final String h;
+   public final Hd2 c;
+   public final C_2_2 l;
+   public final com.finalshell.ui.model.S_3 v;
+   public final H4_2[] z;
+   public final Ht2_2 r;
 
-   Z4_2(Ht2_2 var1, Object var2, String var3, Hd2 var4, C_2_2 var5, com.finalshell.ui.model.S_3 var6, H4_2[] var7) {
+   public Z4_2(Ht2_2 var1, Object var2, String var3, Hd2 var4, C_2_2 var5, com.finalshell.ui.model.S_3 var6, H4_2[] var7) {
       super(var1);
       this.r = var1;
       this.E = var2;

@@ -8,7 +8,7 @@ public class V_6 {
    public final int d;
    public final String Z;
 
-   V_6(int var1, int var2, int var3, String var4) {
+   public V_6(int var1, int var2, int var3, String var4) {
       this.F = var1;
       this.J = var2;
       String var10000 = O2_6.f();

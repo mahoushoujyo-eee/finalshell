@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class K32 implements Comparator {
-   final Ln2 T;
+   public final Ln2 T;
 
-   K32(Ln2 var1) {
+   public K32(Ln2 var1) {
       this.T = var1;
    }
 

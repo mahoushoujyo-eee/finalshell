@@ -12,11 +12,11 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class Zc2 extends DatagramSocket {
-   InetAddress n;
-   int j;
-   C3 X;
+   public InetAddress n;
+   public int j;
+   public C3 X;
    public boolean x = false;
-   Uu4 G;
+   public Uu4 G;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -151,7 +151,7 @@ public class Zc2 extends DatagramSocket {
       // f0: return
    }
 
-   Zc2(boolean var1, Uu4 var2, InetAddress var3, int var4) throws IOException {
+   public Zc2(boolean var1, Uu4 var2, InetAddress var3, int var4) throws IOException {
       this.x = var1;
       this.n = var3;
       this.j = var4;

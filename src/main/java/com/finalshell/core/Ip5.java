@@ -750,20 +750,20 @@ public class Ip5 {
       // bd: lreturn
    }
 
-   static File B(Ip5 var0) {
+   public static File B(Ip5 var0) {
       return var0.v;
    }
 
-   static Long A() {
+   public static Long A() {
       return o;
    }
 
-   static Long N(Long var0) {
+   public static Long N(Long var0) {
       o = var0;
       return var0;
    }
 
-   static void J(Ip5 var0) throws Exception {
+   public static void J(Ip5 var0) throws Exception {
       var0.r();
    }
 

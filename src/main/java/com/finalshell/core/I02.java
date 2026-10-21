@@ -9,8 +9,8 @@ import java.security.spec.ECPublicKeySpec;
 import javax.crypto.KeyAgreement;
 
 public class I02 implements C_3_2 {
-   byte[] O;
-   ECPublicKey w;
+   public byte[] O;
+   public ECPublicKey w;
    public KeyAgreement j;
    public static BigInteger R;
    public static BigInteger I;

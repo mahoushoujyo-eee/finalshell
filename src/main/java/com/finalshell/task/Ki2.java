@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.BU;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ki2 implements Runnable {
-   final BU t;
+   public final BU t;
 
-   Ki2(BU var1) {
+   public Ki2(BU var1) {
       this.t = var1;
    }
 

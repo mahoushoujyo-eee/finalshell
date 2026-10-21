@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.WC_2;
 
 public class SQ implements Runnable {
-   final int m;
-   final WC_2 n;
+   public final int m;
+   public final WC_2 n;
 
-   SQ(WC_2 var1, int var2) {
+   public SQ(WC_2 var1, int var2) {
       this.n = var1;
       this.m = var2;
    }

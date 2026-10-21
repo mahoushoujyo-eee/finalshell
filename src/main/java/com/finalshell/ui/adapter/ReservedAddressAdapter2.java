@@ -20,9 +20,9 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class ReservedAddressAdapter2 extends DefaultTableCellRenderer {
-   Border T;
-   SimpleDateFormat W;
-   BQ q;
+   public Border T;
+   public SimpleDateFormat W;
+   public BQ q;
    public static String[] a;
    public static String[] b;
    public static long[] c;

@@ -4,12 +4,12 @@ import com.finalshell.crypto.ConnectHost;
 
 public abstract class Cq2_2 extends Cv2 {
    public int U;
-   Nn4 S;
-   byte[] O;
-   byte[] p;
-   byte[] K;
-   byte[] d;
-   byte[] f;
+   public Nn4 S;
+   public byte[] O;
+   public byte[] p;
+   public byte[] K;
+   public byte[] d;
+   public byte[] f;
    public UJ T;
    public YU Z;
    public static String[] e;
@@ -17,14 +17,11 @@ public abstract class Cq2_2 extends Cv2 {
    public static long[] l;
    public static Integer[] m;
 
-   Cq2_2() {
-   }
+   public abstract byte[] l();
 
-   abstract byte[] l();
+   public abstract byte[] u();
 
-   abstract byte[] u();
-
-   abstract String i();
+   public abstract String i();
 
    @Override
    public void x(ConnectHost param1, byte[] param2, byte[] param3, byte[] param4, byte[] param5) throws Exception {

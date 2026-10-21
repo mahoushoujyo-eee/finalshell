@@ -18,7 +18,7 @@ public class W3_6 extends M_5 {
    public D_6 I = new D_6(false);
    public final List C = new ArrayList();
    public static X_5[] E;
-   static boolean f;
+   public static boolean f;
    public static String[] i;
    public static String[] j;
    public static long k;
@@ -912,23 +912,23 @@ public class W3_6 extends M_5 {
       // 14e: areturn
    }
 
-   static Logger t() {
+   public static Logger t() {
       return M;
    }
 
-   static List o(W3_6 var0) {
+   public static List o(W3_6 var0) {
       return var0.C;
    }
 
-   static RB Y(W3_6 var0, String var1, InputStream var2, Charset var3) throws B2_5, IOException {
+   public static RB Y(W3_6 var0, String var1, InputStream var2, Charset var3) throws B2_5, IOException {
       return var0.w(var1, var2, var3);
    }
 
-   static EnumSet N(W3_6 var0) {
+   public static EnumSet N(W3_6 var0) {
       return var0.p;
    }
 
-   static D_6 w(W3_6 var0) {
+   public static D_6 w(W3_6 var0) {
       return var0.I;
    }
 

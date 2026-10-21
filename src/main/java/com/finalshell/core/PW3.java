@@ -11,7 +11,7 @@ public class PW3 implements AB_2 {
       return new PW3(var2, var0, var3);
    }
 
-   static PW3 Z(String var0, byte[] var1, byte[] var2, Xe2 var3) throws Pc2 {
+   public static PW3 Z(String var0, byte[] var1, byte[] var2, Xe2 var3) throws Pc2 {
       Ls4 var4 = Ls4.h(var3, var1, var2);
       return new PW3(var3, var0, var4);
    }

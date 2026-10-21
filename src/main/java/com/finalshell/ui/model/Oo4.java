@@ -10,9 +10,9 @@ import java.io.Serializable;
 
 public class Oo4 implements LayoutManager, Serializable {
    public static int G;
-   protected int D;
-   protected int p;
-   protected int S;
+   public int D;
+   public int p;
+   public int S;
 
    public Oo4() {
       this(0, 0, G);
@@ -23,11 +23,11 @@ public class Oo4 implements LayoutManager, Serializable {
    }
 
    public Oo4(int var1, int var2, int var3) {
+   super();
       int var4;
       int var5;
       label45: {
          var5 = T4.b();
-         super();
          var4 = var5;
          var5 = var1;
          byte var10001 = 1;

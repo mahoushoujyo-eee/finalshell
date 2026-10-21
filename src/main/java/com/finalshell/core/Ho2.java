@@ -4,12 +4,12 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 
 public class Ho2 extends Hv2_2 {
-   final Constructor e;
-   final HA K;
+   public final Constructor e;
+   public final HA K;
    public static String[] c;
    public static String[] d;
 
-   Ho2(HA var1, Constructor var2) {
+   public Ho2(HA var1, Constructor var2) {
       super(var1);
       this.K = var1;
       this.e = var2;

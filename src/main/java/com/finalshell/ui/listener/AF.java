@@ -9,9 +9,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class AF implements ChangeListener {
-   final QuickConnectPanel d;
+   public final QuickConnectPanel d;
 
-   AF(QuickConnectPanel var1) {
+   public AF(QuickConnectPanel var1) {
       this.d = var1;
    }
 

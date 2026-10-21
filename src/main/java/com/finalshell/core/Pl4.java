@@ -4,13 +4,13 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 public class Pl4 extends PT3 {
-   int h;
-   final StringBuilder N;
-   final Map x;
-   final Im4 G;
+   public int h;
+   public final StringBuilder N;
+   public final Map x;
+   public final Im4 G;
    public static String a;
 
-   Pl4(Im4 var1, StringBuilder var2, Map var3) {
+   public Pl4(Im4 var1, StringBuilder var2, Map var3) {
       this.G = var1;
       this.N = var2;
       this.x = var3;

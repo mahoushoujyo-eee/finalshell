@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.dialog.Ds2;
 
 public class Ri2 extends R7 {
-   final C0_2 A;
+   public final C0_2 A;
 
-   Ri2(C0_2 var1) {
+   public Ri2(C0_2 var1) {
       this.A = var1;
    }
 

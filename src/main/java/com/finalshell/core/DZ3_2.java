@@ -7,10 +7,10 @@ import java.awt.Image;
 import javax.swing.Icon;
 
 public class DZ3_2 implements Icon {
-   final Image H;
-   final Icon d;
+   public final Image H;
+   public final Icon d;
 
-   DZ3_2(Image var1, Icon var2) {
+   public DZ3_2(Image var1, Icon var2) {
       this.H = var1;
       this.d = var2;
    }

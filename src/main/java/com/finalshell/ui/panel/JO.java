@@ -9,12 +9,12 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class JO extends JLabel implements D2 {
-   Lt4 D;
+   public Lt4 D;
    public static int[] p;
 
    public JO() {
+   super();
       z();
-      super();
       Lt4 var10002 = new Lt4(this, this);
       long var3 = 143260386411168928L;
       Lt4 var2 = var10002;
@@ -26,8 +26,8 @@ public class JO extends JLabel implements D2 {
    }
 
    public JO(String var1) {
+   super(var1);
       int[] var10000 = z();
-      super(var1);
       int[] var2 = var10000;
       Lt4 var10001 = new Lt4(this, this);
       long var4 = 143260386411168928L;

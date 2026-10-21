@@ -17,22 +17,22 @@ import java.util.Vector;
 public class Qg2 {
    public static Vector H;
    public static InetAddress O;
-   ConnectHost F;
-   int r;
-   int q;
-   String E;
-   InetAddress D;
-   Runnable t;
-   ServerSocket b;
-   int m = 0;
+   public ConnectHost F;
+   public int r;
+   public int q;
+   public String E;
+   public InetAddress D;
+   public Runnable t;
+   public ServerSocket b;
+   public int m = 0;
    public String n;
-   boolean Q = false;
+   public boolean Q = false;
    public static String[] a;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   Qg2(ConnectHost param1, String param2, int param3, String param4, int param5, F_2_3 param6, boolean param7) throws Pc2 {
+   public Qg2(ConnectHost param1, String param2, int param3, String param4, int param5, F_2_3 param6, boolean param7) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -157,7 +157,7 @@ public class Qg2 {
       // f6: return
    }
 
-   static Qg2 W(ConnectHost param0, String param1, int param2, String param3, int param4, F_2_3 param5, boolean param6) throws Pc2 {
+   public static Qg2 W(ConnectHost param0, String param1, int param2, String param3, int param4, F_2_3 param5, boolean param6) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -277,7 +277,7 @@ public class Qg2 {
       return var3.toString();
    }
 
-   Qg2(ConnectHost var1, String var2, int var3, String var4, F_2_3 var5) throws Pc2 {
+   public Qg2(ConnectHost var1, String var2, int var3, String var4, F_2_3 var5) throws Pc2 {
       this.F = var1;
       this.r = var3;
       this.n = var4;
@@ -377,7 +377,7 @@ public class Qg2 {
       // b6: return
    }
 
-   static String[] a(ConnectHost var0) {
+   public static String[] a(ConnectHost var0) {
       boolean var10000 = Dm4.F$boolean();
       Vector var2 = new Vector();
       boolean var1 = var10000;
@@ -429,7 +429,7 @@ public class Qg2 {
       return var10;
    }
 
-   static Qg2 k(ConnectHost param0, String param1, int param2) throws Pc2 {
+   public static Qg2 k(ConnectHost param0, String param1, int param2) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -600,7 +600,7 @@ public class Qg2 {
       return var10000;
    }
 
-   static Qg2 k(ConnectHost param0, String param1, int param2, String param3, int param4, F_2_3 param5) throws Pc2 {
+   public static Qg2 k(ConnectHost param0, String param1, int param2, String param3, int param4, F_2_3 param5) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -665,7 +665,7 @@ public class Qg2 {
       // 75: areturn
    }
 
-   static void t(ConnectHost param0, String param1, int param2) throws Pc2 {
+   public static void t(ConnectHost param0, String param1, int param2) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -727,7 +727,7 @@ public class Qg2 {
    // $VF: Irreducible bytecode was duplicated to produce valid code
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   static void G(ConnectHost var0) {
+   public static void G(ConnectHost var0) {
       boolean var10000 = Dm4.F$boolean();
       Vector var2 = H;
       synchronized (H){} // $VF: monitorenter 
@@ -801,7 +801,7 @@ public class Qg2 {
       }
    }
 
-   Qg2(ConnectHost var1, String var2, int var3, String var4, int var5, F_2_3 var6) throws Pc2 {
+   public Qg2(ConnectHost var1, String var2, int var3, String var4, int var5, F_2_3 var6) throws Pc2 {
       this.F = var1;
       this.r = var3;
       this.E = var4;
@@ -873,7 +873,7 @@ public class Qg2 {
       // 77: areturn
    }
 
-   void E() {
+   public void E() {
       boolean var10000 = Dm4.F$boolean();
       this.t = this::E;
       boolean var1 = var10000;
@@ -906,7 +906,7 @@ public class Qg2 {
       }
    }
 
-   void I(Socket param1) throws Exception {
+   public void I(Socket param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1353,7 +1353,7 @@ public class Qg2 {
       return var2;
    }
 
-   void S() {
+   public void S() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1389,7 +1389,7 @@ public class Qg2 {
       // 32: return
    }
 
-   void V(int var1) {
+   public void V(int var1) {
       this.m = var1;
    }
 

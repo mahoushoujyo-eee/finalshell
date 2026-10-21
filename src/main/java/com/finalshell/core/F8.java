@@ -3,14 +3,14 @@ package com.finalshell.core;
 import java.util.Map;
 
 public class F8 implements C_e_2_2 {
-   static boolean o;
-   final Hd2 l;
-   final Map p;
-   final L_2_2 U;
+   public static boolean o;
+   public final Hd2 l;
+   public final Map p;
+   public final L_2_2 U;
    public static String[] a;
    public static String[] b;
 
-   F8(L_2_2 var1, Hd2 var2, Map var3) {
+   public F8(L_2_2 var1, Hd2 var2, Map var3) {
       this.U = var1;
       this.l = var2;
       this.p = var3;

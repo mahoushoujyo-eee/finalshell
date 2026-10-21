@@ -8,10 +8,10 @@ import java.util.Vector;
 public class Ku4 {
    public long w;
    public long t;
-   Thread a;
-   int x;
-   Vector l;
-   Cx4_2 P;
+   public Thread a;
+   public int x;
+   public Vector l;
+   public Cx4_2 P;
    public int T = 0;
    public int j;
 
@@ -79,7 +79,7 @@ public class Ku4 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void u() {
+   public void u() {
       boolean var10000 = CN3.B();
       int var2 = 0;
       boolean var1 = var10000;

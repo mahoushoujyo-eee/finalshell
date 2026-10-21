@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 
 public class JN extends AbstractAction {
-   final Yz2 l;
+   public final Yz2 l;
 
-   JN(Yz2 var1) {
+   public JN(Yz2 var1) {
       this.l = var1;
    }
 

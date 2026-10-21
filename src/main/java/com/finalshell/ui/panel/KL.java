@@ -19,9 +19,6 @@ public class KL extends JLabel implements TableCellRenderer {
    public static long[] a;
    public static Integer[] b;
 
-   KL() {
-   }
-
    @Override
    public Component getTableCellRendererComponent(JTable var1, Object var2, boolean var3, boolean var4, int var5, int var6) {
       String var12;

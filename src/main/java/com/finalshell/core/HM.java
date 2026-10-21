@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public abstract class HM implements SC {
-   protected SC T;
+   public SC T;
 
    public HM(SC var1) {
       this.T = var1;

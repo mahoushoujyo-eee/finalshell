@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.K32;
 import com.finalshell.ui.panel.Ks4;
 
 public class DO3 extends DA3 {
-   final Ks4 F;
+   public final Ks4 F;
 
-   DO3(Ks4 var1) {
+   public DO3(Ks4 var1) {
       this.F = var1;
    }
 

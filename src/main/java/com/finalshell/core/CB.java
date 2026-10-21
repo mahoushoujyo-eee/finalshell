@@ -15,20 +15,20 @@ import java.util.Iterator;
 import java.util.regex.Pattern;
 
 public class CB {
-   ConnectionProperty C;
-   Connect_2 V;
-   E0 c;
-   ConnectHost w;
-   ArrayList y;
-   String n;
-   KV g;
-   boolean j;
-   boolean U;
-   Thread p;
-   Ty2 F;
-   GH_2 b;
-   Pattern N;
-   static int R;
+   public ConnectionProperty C;
+   public Connect_2 V;
+   public E0 c;
+   public ConnectHost w;
+   public ArrayList y;
+   public String n;
+   public KV g;
+   public boolean j;
+   public boolean U;
+   public Thread p;
+   public Ty2 F;
+   public GH_2 b;
+   public Pattern N;
+   public static int R;
    public static String[] a;
    public static String[] d;
    public static long[] e;
@@ -75,7 +75,7 @@ public class CB {
       Ref.s(569355164589280895L, var14, var15);
    }
 
-   synchronized void V() {
+   public synchronized void V() {
       KV.b$arrString();
       Object var10 = 494234311615034477L;
       Ty2 var2 = ((ConnectionProperty)Ref.g(494234311615034477L, var10)).M$Ty_2();
@@ -235,7 +235,7 @@ public class CB {
       }
    }
 
-   void s() {
+   public void s() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -611,14 +611,14 @@ public class CB {
             var10002 = var20.contains(a(-16569, -17510));
             label712:
             if (var1 == null) {
-               if (var10002 != 0) {
+               if (var10002 != null) {
                   var13 = true;
                   var10002 = var20.contains("+");
                   if (var1 != null) {
                      break label712;
                   }
 
-                  if (var10002 != 0) {
+                  if (var10002 != null) {
                      var20 = var20.replaceAll(a(-16564, -19130), " ");
                   }
                }
@@ -632,7 +632,7 @@ public class CB {
                   label728: {
                      label702:
                      if (var1 == null) {
-                        if (var10002 == 0) {
+                        if (var10002 == null) {
                            Object var23 = var20.indexOf(var14);
                            var10002 = var23;
                            if (var1 == null) {
@@ -815,13 +815,13 @@ public class CB {
                      label638: {
                         label733: {
                            if (var1 == null) {
-                              if (var10002 == 0) {
+                              if (var10002 == null) {
                                  var10002 = var20.contains(a(-16570, -15086));
                                  if (var1 != null) {
                                     break label638;
                                  }
 
-                                 if (var10002 == 0) {
+                                 if (var10002 == null) {
                                     break label733;
                                  }
                               }
@@ -833,7 +833,7 @@ public class CB {
                               break label638;
                            }
 
-                           if (var10002 != 0) {
+                           if (var10002 != null) {
                               Object var22 = 0;
 
                               while (var22 < var21.length) {
@@ -846,7 +846,7 @@ public class CB {
                                  label623: {
                                     label736: {
                                        if (var1 == null) {
-                                          if (var10002 != false) {
+                                          if (var10002 == null) {
                                              var5 = var22;
                                              if (var1 == null) {
                                                 break label736;
@@ -857,7 +857,7 @@ public class CB {
                                        }
 
                                        if (var1 == null) {
-                                          if (var10002 != false) {
+                                          if (var10002 == null) {
                                              var6 = var22;
                                              if (var1 == null) {
                                                 break label736;
@@ -870,13 +870,13 @@ public class CB {
                                        label609: {
                                           label608: {
                                              if (var1 == null) {
-                                                if (var10002 == false) {
+                                                if (var10002 == null) {
                                                    var10002 = var143.equals(a(-16560, 29603));
                                                    if (var1 != null) {
                                                       break label609;
                                                    }
 
-                                                   if (var10002 == 0) {
+                                                   if (var10002 == null) {
                                                       break label608;
                                                    }
                                                 }
@@ -894,7 +894,7 @@ public class CB {
                                        }
 
                                        if (var1 == null) {
-                                          if (var10002 != 0) {
+                                          if (var10002 != null) {
                                              var8 = var22;
                                              if (var1 == null) {
                                                 break label736;
@@ -905,7 +905,7 @@ public class CB {
                                        }
 
                                        if (var1 == null) {
-                                          if (var10002 != 0) {
+                                          if (var10002 != null) {
                                              var9 = var22;
                                              if (var1 == null) {
                                                 break label736;
@@ -916,13 +916,13 @@ public class CB {
                                        }
 
                                        if (var1 == null) {
-                                          if (var10002 == 0) {
+                                          if (var10002 == null) {
                                              var10002 = var143.equals(a(-16545, 17675));
                                              if (var1 != null) {
                                                 break label623;
                                              }
 
-                                             if (var10002 == false) {
+                                             if (var10002 == null) {
                                                 break label736;
                                              }
                                           }
@@ -937,7 +937,7 @@ public class CB {
                                  }
 
                                  if (var1 == null) {
-                                    if (var10002 != 0) {
+                                    if (var10002 != null) {
                                        var6 = var22;
                                        var13 = true;
                                     }
@@ -947,7 +947,7 @@ public class CB {
 
                                  label574: {
                                     if (var1 == null) {
-                                       if (var10002 == 0) {
+                                       if (var10002 == null) {
                                           break label574;
                                        }
 
@@ -1247,7 +1247,7 @@ public class CB {
                         String var151 = var21[var7];
                         LI3_2 var191 = var151.endsWith("%");
                         if (var1 == null) {
-                           if (var191 != false) {
+                           if (var191 == null) {
                               var151 = var151.substring(0, var151.length() - 1);
                            }
 
@@ -1498,7 +1498,7 @@ public class CB {
       }
    }
 
-   void i() {
+   public void i() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1765,7 +1765,7 @@ public class CB {
       // 258: return
    }
 
-   void u() {
+   public void u() {
       StringBuffer var2 = new StringBuffer();
       String[] var10000 = KV.b$arrString();
       int var3 = 0;
@@ -1856,7 +1856,7 @@ public class CB {
       }
    }
 
-   void O(String var1) {
+   public void O(String var1) {
       Object var2 = 494234311615034477L;
       E0 var10002 = ((ConnectionProperty)Ref.g(494234311615034477L, var2)).C$E0();
       long var5 = 605457745951191257L;

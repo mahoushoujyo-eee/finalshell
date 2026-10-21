@@ -9,13 +9,13 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 
 public class PacketLoss implements Runnable {
-   final PingMessageR h;
+   public final PingMessageR h;
    public final WR e;
    public final DatagramPacket D;
    public static String[] a;
    public static String[] b;
 
-   PacketLoss(PingMessageR var1, WR var2, DatagramPacket var3) {
+   public PacketLoss(PingMessageR var1, WR var2, DatagramPacket var3) {
       this.h = var1;
       this.e = var2;
       this.D = var3;

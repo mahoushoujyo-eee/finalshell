@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ov2 implements ActionListener {
-   final ImportPrivateKeyDialog b;
+   public final ImportPrivateKeyDialog b;
 
-   Ov2(ImportPrivateKeyDialog var1) {
+   public Ov2(ImportPrivateKeyDialog var1) {
       this.b = var1;
    }
 

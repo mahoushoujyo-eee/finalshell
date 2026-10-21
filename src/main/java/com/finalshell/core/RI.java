@@ -5,11 +5,11 @@ import java.util.Vector;
 public class RI implements IF {
    public String L;
    public Vector r;
-   final H1 w;
+   public final H1 w;
    public static String[] a;
    public static String[] b;
 
-   RI(H1 param1, String param2) {
+   public RI(H1 param1, String param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

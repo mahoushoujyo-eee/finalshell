@@ -9,12 +9,12 @@ import com.finalshell.ui.panel.FilePanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class OZ3 implements Runnable {
-   final FilePanel h;
-   final Yl4 M;
-   final Lv4_2 U;
-   final U E;
+   public final FilePanel h;
+   public final Yl4 M;
+   public final Lv4_2 U;
+   public final U E;
 
-   OZ3(U var1, FilePanel var2, Yl4 var3, Lv4_2 var4) {
+   public OZ3(U var1, FilePanel var2, Yl4 var3, Lv4_2 var4) {
       this.E = var1;
       this.h = var2;
       this.M = var3;

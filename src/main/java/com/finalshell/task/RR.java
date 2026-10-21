@@ -1,10 +1,10 @@
 package com.finalshell.task;
 
 public class RR implements Runnable {
-   final int J;
-   final QD H;
+   public final int J;
+   public final QD H;
 
-   RR(QD var1, int var2) {
+   public RR(QD var1, int var2) {
       this.H = var1;
       this.J = var2;
    }

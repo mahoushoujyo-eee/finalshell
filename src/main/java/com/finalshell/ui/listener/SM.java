@@ -8,10 +8,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SM implements ActionListener {
-   final XW r;
-   final XL g;
+   public final XW r;
+   public final XL g;
 
-   SM(XL var1, XW var2) {
+   public SM(XL var1, XW var2) {
       this.g = var1;
       this.r = var2;
    }

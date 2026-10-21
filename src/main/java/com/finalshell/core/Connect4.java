@@ -4,12 +4,12 @@ import org.pcap4j.core.PacketListener;
 import org.pcap4j.packet.Packet;
 
 public class Connect4 implements PacketListener {
-   final LC X;
+   public final LC X;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   Connect4(LC var1) {
+   public Connect4(LC var1) {
       this.X = var1;
    }
 

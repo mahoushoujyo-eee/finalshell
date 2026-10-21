@@ -1,19 +1,19 @@
 package com.finalshell.core;
 
 public class Ek2 implements SC {
-   protected float[] D;
-   protected float M;
-   protected float q;
-   protected float y;
-   protected SC N;
+   public float[] D;
+   public float M;
+   public float q;
+   public float y;
+   public SC N;
 
    public Ek2(float var1, float var2, float var3) {
       this(var1, var2, var3, new UZ());
    }
 
    public Ek2(float var1, float var2, float var3, SC var4) {
+   super();
       String var10000 = UZ.h();
-      super();
       this.M = var1;
       this.q = var2;
       this.y = var3;

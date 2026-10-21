@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
 
 public class FH implements ActionListener {
-   final JCheckBox q;
-   final LogPanel B;
+   public final JCheckBox q;
+   public final LogPanel B;
 
-   FH(LogPanel var1, JCheckBox var2) {
+   public FH(LogPanel var1, JCheckBox var2) {
       this.B = var1;
       this.q = var2;
    }

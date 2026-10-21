@@ -6,7 +6,7 @@ public class GZ3 extends Gj4 {
    public static String a;
 
    @Override
-   protected float q(float var1) {
+   public float q(float var1) {
       var1 = NM.w(var1, this.j);
       return NM.E(var1, this.A);
    }

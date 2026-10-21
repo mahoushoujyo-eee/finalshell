@@ -7,17 +7,17 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class Timeout {
-   HashMap E = new HashMap();
-   Thread H;
-   PingMessageR z;
-   int V;
-   Object y;
+   public HashMap E = new HashMap();
+   public Thread H;
+   public PingMessageR z;
+   public int V;
+   public Object y;
    public static String[] a;
    public static String[] b;
    public static long c;
    public static long d;
 
-   Timeout(PingMessageR var1) {
+   public Timeout(PingMessageR var1) {
       this.V = (int)c;
       this.y = new Object();
       this.z = var1;
@@ -26,7 +26,7 @@ public class Timeout {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void T() {
+   public void T() {
       Iterator var2 = this.b();
       String[] var10000 = PingMessageR.N();
       long var3 = System.currentTimeMillis();
@@ -103,18 +103,18 @@ public class Timeout {
       }
    }
 
-   void e(int var1) {
+   public void e(int var1) {
       this.E.remove(var1);
    }
 
-   Iterator b() {
+   public Iterator b() {
       Object var1 = null;
       synchronized (this.y) {
          return new com.finalshell.ui.model.GN(this.E.keySet().iterator());
       }
    }
 
-   B2 W(int var1, InetAddress var2, int var3) {
+   public B2 W(int var1, InetAddress var2, int var3) {
       String[] var10000 = PingMessageR.N();
       B2 var5 = (B2)this.E.get(var1);
       String[] var4 = var10000;

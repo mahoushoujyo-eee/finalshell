@@ -62,11 +62,11 @@ public final class E_2_4 {
       return new W2_5(var0, var1);
    }
 
-   static T_4 v(URL var0, String var1) {
+   public static T_4 v(URL var0, String var1) {
       return G(var0, var1);
    }
 
-   static String O(Iterable var0) {
+   public static String O(Iterable var0) {
       return T(var0);
    }
 

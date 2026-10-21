@@ -4,9 +4,9 @@ import javax.swing.JPopupMenu;
 import org.jetbrains.annotations.NotNull;
 
 public class H_ implements Ob2_2 {
-   final JPopupMenu n;
+   public final JPopupMenu n;
 
-   H_(JPopupMenu var1) {
+   public H_(JPopupMenu var1) {
       this.n = var1;
    }
 

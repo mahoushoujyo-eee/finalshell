@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class OF3_2 implements Runnable {
-   final YT3_2 E;
+   public final YT3_2 E;
 
-   OF3_2(YT3_2 var1) {
+   public OF3_2(YT3_2 var1) {
       this.E = var1;
    }
 

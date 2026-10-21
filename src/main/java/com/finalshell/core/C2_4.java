@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C2_4 implements M_2_2 {
-   final CG_2 H;
+   public final CG_2 H;
 
-   C2_4(CG_2 var1) {
+   public C2_4(CG_2 var1) {
       this.H = var1;
    }
 

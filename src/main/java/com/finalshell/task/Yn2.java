@@ -7,10 +7,10 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Yn2 implements Runnable {
-   final Ln2 N;
+   public final Ln2 N;
    public static long a;
 
-   Yn2(Ln2 var1) {
+   public Yn2(Ln2 var1) {
       this.N = var1;
    }
 

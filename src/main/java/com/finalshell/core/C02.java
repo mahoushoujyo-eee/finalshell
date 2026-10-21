@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class C02 {
    public String u;
-   Pattern K;
+   public Pattern K;
    public AB r;
    public static String[] a;
    public static String[] b;
@@ -159,7 +159,7 @@ public class C02 {
 
                            label126:
                            if (var1 != null) {
-                              if (var17 == 0) {
+                              if (var17 == null) {
                                  long var19 = Long.parseLong(var18);
                                  var10013 = var12;
                                  Object[] var10014 = Registry.e(var19);

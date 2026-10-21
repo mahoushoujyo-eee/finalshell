@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import javax.swing.SwingUtilities;
 
 public class Xh2_2 extends Thread {
-   final KC O;
+   public final KC O;
 
-   Xh2_2(KC var1) {
+   public Xh2_2(KC var1) {
       this.O = var1;
    }
 

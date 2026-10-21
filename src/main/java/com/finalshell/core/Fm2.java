@@ -34,33 +34,33 @@ import javax.swing.plaf.basic.BasicCheckBoxUI;
 import javax.swing.tree.TreeCellRenderer;
 
 public class Fm2 extends BasicCheckBoxUI implements W2_3 {
-   protected static float[] V;
-   protected Color H = C_Q.r;
-   protected Color q = C_Q.X;
-   protected Color p;
-   protected Color f;
-   protected Color R;
-   protected Color C;
-   protected Color d;
-   protected int W;
-   protected int Z;
-   protected Insets S;
-   protected boolean K;
-   protected boolean b;
-   protected Stroke x;
-   protected int r;
-   protected int v;
-   protected int G;
-   protected boolean m;
-   protected WC_2 g;
-   protected AO_2 I;
-   protected WC_2 P;
-   protected Rectangle i;
-   protected JCheckBox U;
-   protected PropertyChangeListener c;
-   protected PropertyChangeListener y;
-   protected MouseAdapter Q;
-   protected ItemListener T;
+   public static float[] V;
+   public Color H = C_Q.r;
+   public Color q = C_Q.X;
+   public Color p;
+   public Color f;
+   public Color R;
+   public Color C;
+   public Color d;
+   public int W;
+   public int Z;
+   public Insets S;
+   public boolean K;
+   public boolean b;
+   public Stroke x;
+   public int r;
+   public int v;
+   public int G;
+   public boolean m;
+   public WC_2 g;
+   public AO_2 I;
+   public WC_2 P;
+   public Rectangle i;
+   public JCheckBox U;
+   public PropertyChangeListener c;
+   public PropertyChangeListener y;
+   public MouseAdapter Q;
+   public ItemListener T;
    public static String[] a;
    public static String[] e;
    public static long[] h;
@@ -121,30 +121,30 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       super.uninstallUI(var1);
    }
 
-   protected AO_2 s() {
+   public AO_2 s() {
       return new As2();
    }
 
-   protected void I() {
+   public void I() {
       this.c = new N02(this);
       this.U.addPropertyChangeListener(a(20479, 8553), this.c);
    }
 
-   protected void g() {
+   public void g() {
       this.U.removePropertyChangeListener(a(20475, -10212), this.c);
    }
 
-   protected void p$void() {
+   public void p$void() {
       this.g = new WC_2(a(20473, 31790), a(26169, 5170948246833668470L), new com.finalshell.ui.listener.NT(this));
       this.Q = new NI3(this);
       this.U.addMouseListener(this.Q);
    }
 
-   protected void v() {
+   public void v() {
       this.U.removeMouseListener(this.Q);
    }
 
-   protected void L() {
+   public void L() {
       this.P = new WC_2(a(20478, 9392), a(15578, 4753814604053707668L), new Rc4(this));
       this.T = new Dk4(this);
       this.U.addItemListener(this.T);
@@ -152,7 +152,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       this.U.addPropertyChangeListener(a(20476, 18121), this.y);
    }
 
-   protected void A() {
+   public void A() {
       Fm2 var10000;
       boolean var1 = UE.Z();
       var10000 = this;
@@ -188,7 +188,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       this.U.repaint();
    }
 
-   protected void E() {
+   public void E() {
       this.U.removeItemListener(this.T);
       this.U.removePropertyChangeListener(this.y);
    }
@@ -198,7 +198,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       return GA.X(this.U, this.V(), this.n$int());
    }
 
-   protected boolean j() {
+   public boolean j() {
       boolean var1 = UE.Z();
       boolean var10000 = C_Q.v;
       if (!var1) {
@@ -212,7 +212,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       return var1 ? var10000 : !var10000;
    }
 
-   protected boolean u$boolean() {
+   public boolean u$boolean() {
       boolean var10000 = UE.Z();
       Container var2 = this.U.getParent();
       boolean var1 = var10000;
@@ -238,7 +238,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       return var1 ? var10000 : !var10000;
    }
 
-   protected void D() {
+   public void D() {
       boolean var1 = UE.o();
       boolean var10000 = FN.l((JComponent)this.U);
       if (var1) {
@@ -403,11 +403,11 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       this.v = var1;
    }
 
-   protected Icon H$Icon() {
+   public Icon H$Icon() {
       return new Ez4(this);
    }
 
-   protected Color[] r() {
+   public Color[] r() {
       boolean var1 = UE.o();
       int var10000 = (this.U.isEnabled()) ? 1 : 0;
       if (var1) {
@@ -438,7 +438,7 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       return var3;
    }
 
-   protected float T() {
+   public float T() {
       return (float)this.G / 5.0F;
    }
 
@@ -459,12 +459,12 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       FN.O(var1, var3);
    }
 
-   protected void r(Graphics2D var1, int var2, int var3) {
+   public void r(Graphics2D var1, int var2, int var3) {
       this.T(var1, var2, var3);
       this.c(var1, var2, var3);
    }
 
-   protected void T(Graphics2D var1, int var2, int var3) {
+   public void T(Graphics2D var1, int var2, int var3) {
       byte var5 = (this.U.isEnabled()) ? 1 : 0;
       int var10000 = (UE.Z()) ? 1 : 0;
       Rectangle var6 = new Rectangle(var2 + this.Z, var3 + this.Z, this.r - this.Z * 2 - 1, this.v - this.Z * 2 - 1);
@@ -524,12 +524,12 @@ public class Fm2 extends BasicCheckBoxUI implements W2_3 {
       }
    }
 
-   protected void c(Graphics2D var1, int var2, int var3) {
+   public void c(Graphics2D var1, int var2, int var3) {
       this.I.O(this.U, var1, var2, var3, this.r, this.v);
    }
 
    @Override
-   protected void paintText(Graphics var1, AbstractButton var2, Rectangle var3, String var4) {
+   public void paintText(Graphics var1, AbstractButton var2, Rectangle var3, String var4) {
       ButtonModel var6 = var2.getModel();
       FontMetrics var7 = FN.L(var2, var1);
       boolean var10000 = UE.Z();

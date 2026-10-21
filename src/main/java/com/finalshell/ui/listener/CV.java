@@ -7,9 +7,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class CV extends FocusAdapter {
-   final SetBackgroundImagePanel o;
+   public final SetBackgroundImagePanel o;
 
-   CV(SetBackgroundImagePanel var1) {
+   public CV(SetBackgroundImagePanel var1) {
       this.o = var1;
    }
 

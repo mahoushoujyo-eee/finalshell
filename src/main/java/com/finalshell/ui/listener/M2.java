@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class M2 implements ActionListener {
-   final com.finalshell.ui.dialog.E x;
+   public final com.finalshell.ui.dialog.E x;
 
-   M2(com.finalshell.ui.dialog.E var1) {
+   public M2(com.finalshell.ui.dialog.E var1) {
       this.x = var1;
    }
 

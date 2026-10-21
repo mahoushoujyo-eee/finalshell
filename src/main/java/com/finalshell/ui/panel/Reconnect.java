@@ -11,8 +11,8 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class Reconnect extends Z7 {
-   String n;
-   JTextField S;
+   public String n;
+   public JTextField S;
    public static String[] a;
    public static String[] b;
 
@@ -58,7 +58,7 @@ public class Reconnect extends Z7 {
 
       Object var6 = 321552442364298707L;
       String var3 = ((JTextField)Ref.g(321552442364298707L, var6)).getText().trim();
-      if (var2 == false) {
+      if (var2 == null) {
          Object[] var15 = Registry.packArgs(a(-2600, -26260));
          long var11 = 424356908681699937L;
          Object[] var10 = var15;

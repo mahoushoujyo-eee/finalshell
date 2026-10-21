@@ -7,11 +7,11 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class TW3 extends Thread {
-   final L0 v;
+   public final L0 v;
    public static long[] a;
    public static Long[] b;
 
-   TW3(L0 var1) {
+   public TW3(L0 var1) {
       this.v = var1;
    }
 

@@ -16,11 +16,11 @@ import javax.swing.TransferHandler;
 import javax.swing.TransferHandler.TransferSupport;
 
 public abstract class Yz2_2 extends TransferHandler {
-   protected boolean l = false;
-   protected DataFlavor q;
-   protected DataFlavor[] e = new DataFlavor[1];
-   protected List c;
-   protected Map k;
+   public boolean l = false;
+   public DataFlavor q;
+   public DataFlavor[] e = new DataFlavor[1];
+   public List c;
+   public Map k;
    public static String a;
 
    public Yz2_2() {
@@ -197,7 +197,7 @@ public abstract class Yz2_2 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       String[] var10000 = CB3.C$arrString();
       com.finalshell.ui.panel.Us2 var3 = (com.finalshell.ui.panel.Us2)var1;
       String[] var2 = var10000;
@@ -268,7 +268,7 @@ public abstract class Yz2_2 extends TransferHandler {
    }
 
    @Override
-   protected void exportDone(JComponent var1, Transferable var2, int var3) {
+   public void exportDone(JComponent var1, Transferable var2, int var3) {
       if ((var3 & 2) == 2) {
          com.finalshell.ui.panel.Us2 var4 = (com.finalshell.ui.panel.Us2)var1;
          var4.s(this.c);
@@ -436,7 +436,7 @@ public abstract class Yz2_2 extends TransferHandler {
       // 12b: ireturn
    }
 
-   protected int x(int var1, CB3 var2) {
+   public int x(int var1, CB3 var2) {
       String[] var3 = CB3.C$arrString();
       int var10000 = var1;
       if (var3 != null) {
@@ -469,15 +469,15 @@ public abstract class Yz2_2 extends TransferHandler {
       return var10000;
    }
 
-   protected void b(List var1, CB3 var2, com.finalshell.ui.panel.Us2 var3, Zn2 var4, int var5) {
+   public void b(List var1, CB3 var2, com.finalshell.ui.panel.Us2 var3, Zn2 var4, int var5) {
       SwingUtilities.invokeLater(new com.finalshell.task.Cw2(this, var4, var1, var2, var5, var3));
    }
 
-   protected abstract boolean i(List var1);
+   public abstract boolean i(List var1);
 
-   protected abstract boolean y(List var1, CB3 var2, int var3);
+   public abstract boolean y(List var1, CB3 var2, int var3);
 
-   protected abstract CB3 D(CB3 var1);
+   public abstract CB3 D(CB3 var1);
 
    public abstract void p(List var1, CB3 var2, com.finalshell.ui.panel.Us2 var3, Zn2 var4, int var5);
 

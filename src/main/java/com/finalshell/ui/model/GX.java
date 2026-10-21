@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("TooltipType")
-public final class GX extends Enum {
+public final class GX {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -16,11 +16,10 @@ public final class GX extends Enum {
    }
 
    public static GX valueOf(String var0) {
-      return Enum.valueOf(GX.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public GX(String var1, int var2) {
-      super(var1, var2);
    }
 
    static {

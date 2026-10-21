@@ -8,15 +8,15 @@ import java.io.InputStream;
 import java.util.LinkedList;
 
 public class To2 extends InputStream {
-   InputStream p;
-   LinkedList K = new LinkedList();
-   int y = a(16070, 121829457104035969L);
-   byte[] d;
-   boolean H = false;
-   boolean o = false;
-   byte[] n = null;
-   int r = 0;
-   int Z = 0;
+   public InputStream p;
+   public LinkedList K = new LinkedList();
+   public int y = a(16070, 121829457104035969L);
+   public byte[] d;
+   public boolean H = false;
+   public boolean o = false;
+   public byte[] n = null;
+   public int r = 0;
+   public int Z = 0;
    public static int e;
    public static String a;
    public static long[] b;

@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.awt.event.KeyEvent;
 
 public class Nu4 extends Wc2{
-   final com.finalshell.ui.listener.YM a;
+   public final com.finalshell.ui.listener.YM a;
 
-   Nu4(com.finalshell.ui.listener.YM var1) {
+   public Nu4(com.finalshell.ui.listener.YM var1) {
       this.a = var1;
    }
 

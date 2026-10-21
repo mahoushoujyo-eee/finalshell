@@ -4,9 +4,6 @@ public class TF3 implements Runnable {
    public static long[] a;
    public static Integer[] b;
 
-   TF3() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

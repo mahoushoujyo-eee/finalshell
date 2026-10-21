@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Te2 implements ActionListener {
-   final SelectDownloadFolderPanel f;
+   public final SelectDownloadFolderPanel f;
 
-   Te2(SelectDownloadFolderPanel var1) {
+   public Te2(SelectDownloadFolderPanel var1) {
       this.f = var1;
    }
 

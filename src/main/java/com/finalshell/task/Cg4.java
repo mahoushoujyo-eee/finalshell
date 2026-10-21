@@ -8,9 +8,9 @@ import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 
 public class Cg4 implements Runnable {
-   final LogPanel b;
+   public final LogPanel b;
 
-   Cg4(LogPanel var1) {
+   public Cg4(LogPanel var1) {
       this.b = var1;
    }
 

@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.SZ;
 import java.awt.Dimension;
 
 public class Kw2_2 extends KD {
-   final Xm2 K;
+   public final Xm2 K;
 
-   Kw2_2(Xm2 var1, Og4 var2) {
+   public Kw2_2(Xm2 var1, Og4 var2) {
       super(var2);
       this.K = var1;
    }

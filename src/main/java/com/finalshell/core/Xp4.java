@@ -11,9 +11,6 @@ public class Xp4 implements Ka2 {
    public static String[] a;
    public static String[] b;
 
-   Xp4() {
-   }
-
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
    @Override

@@ -39,17 +39,17 @@ import javax.swing.text.DefaultCaret;
 import net.miginfocom.swing.MigLayout;
 
 public class Copy2 extends F8 {
-   String l;
-   String O;
-   String C;
-   U82 b;
-   JTable Y;
+   public String l;
+   public String O;
+   public String C;
+   public U82 b;
+   public JTable Y;
    public static String[] a;
    public static String[] d;
    public static long[] e;
    public static Integer[] g;
 
-   Copy2(U82 var1) {
+   public Copy2(U82 var1) {
       long var32 = 342152644107297137L;
       String var31 = "";
       Ref.s(342152644107297137L, var31, var32);
@@ -187,7 +187,7 @@ public class Copy2 extends F8 {
       Object[] var53 = var10012;
       Ref.h(618034129838847953L, var53, var54);
       String var100 = var18;
-      if (var2 == false) {
+      if (var2 == null) {
          if (var18 == null) {
             var18 = (String)var17.get(a(7209, 9751));
          }
@@ -235,7 +235,7 @@ public class Copy2 extends F8 {
          String var24 = (String)var22.next();
          String var25 = (String)var17.get(var24);
          var23.add(var24);
-         if (var2 != false) {
+         if (var2 == null) {
             Ky4.K(new String[1]);
             break;
          }
@@ -249,7 +249,7 @@ public class Copy2 extends F8 {
       while (var26 < var86.length) {
          String var27 = (String)var23.get(var26);
          String var28 = (String)var17.get(var27);
-         if (var2 == false) {
+         if (var2 == null) {
             if (var28 == null) {
                var28 = "";
             }
@@ -259,7 +259,7 @@ public class Copy2 extends F8 {
             var26++;
          }
 
-         if (var2 != false) {
+         if (var2 == null) {
             break;
          }
       }
@@ -302,7 +302,7 @@ public class Copy2 extends F8 {
       SwingUtilities.invokeLater(new On2(this, var7));
    }
 
-   JTextArea p() {
+   public JTextArea p() {
       JTextArea var1 = new JTextArea();
       var1.setLineWrap(true);
       var1.setOpaque(false);

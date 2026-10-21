@@ -69,19 +69,19 @@ public class Bf2 implements Iterable {
       this.e = 0;
    }
 
-   Bf2(com.finalshell.core.B2_2 var1) {
+   public Bf2(com.finalshell.core.B2_2 var1) {
       this();
    }
 
-   static int h(Bf2 var0) {
+   public static int h(Bf2 var0) {
       return var0.e;
    }
 
-   static List T(Bf2 var0) {
+   public static List T(Bf2 var0) {
       return var0.m();
    }
 
-   static List I(Bf2 var0) {
+   public static List I(Bf2 var0) {
       return var0.D;
    }
 }

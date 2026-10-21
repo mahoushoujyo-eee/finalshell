@@ -37,21 +37,21 @@ import javax.swing.SwingConstants;
 public class QL extends Ky4 implements D02, Eh2, SwingConstants {
    public static ImageIcon G;
    public static ImageIcon t;
-   protected List P = new ArrayList(1);
-   protected List V = new ArrayList(1);
-   protected final String Z;
-   protected El2 T;
-   protected BX g;
-   protected OR e;
-   protected Ln4 x;
-   protected OR n;
-   protected boolean v = true;
-   protected boolean p = true;
-   protected boolean O = false;
-   protected boolean u = true;
-   protected boolean Q;
-   protected WeakReference f;
-   protected com.finalshell.core.G3 h;
+   public List P = new ArrayList(1);
+   public List V = new ArrayList(1);
+   public final String Z;
+   public El2 T;
+   public BX g;
+   public OR e;
+   public Ln4 x;
+   public OR n;
+   public boolean v = true;
+   public boolean p = true;
+   public boolean O = false;
+   public boolean u = true;
+   public boolean Q;
+   public WeakReference f;
+   public com.finalshell.core.G3 h;
    public static String[] a;
    public static String[] b;
 
@@ -99,7 +99,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       }
    }
 
-   protected Ln4 g() {
+   public Ln4 g() {
       return new Bw2_2();
    }
 
@@ -233,7 +233,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       this.U();
    }
 
-   protected void U() {
+   public void U() {
       BX var1 = new BX(this);
       this.add(var1.D(), b(24386, 27097));
       this.T = var1;
@@ -249,7 +249,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       }
    }
 
-   protected BX e(BX var1, At2 var2, int var3) {
+   public BX e(BX var1, At2 var2, int var3) {
       String[] var4 = BX.B$arrString();
       if (var1 != null) {
          int var10000;
@@ -512,7 +512,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       this.u();
    }
 
-   protected void S(DP_2 var1) {
+   public void S(DP_2 var1) {
       String[] var2;
       El2 var3;
       El2 var4;
@@ -689,7 +689,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       return this.g;
    }
 
-   protected void h(BX var1) {
+   public void h(BX var1) {
       String[] var2 = BX.B$arrString();
       BX var10000 = var1;
       if (var2 == null) {
@@ -706,7 +706,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       }
    }
 
-   protected void p(At2 var1) {
+   public void p(At2 var1) {
       this.h(this.L(var1));
       this.D(var1);
    }
@@ -829,7 +829,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       return var1;
    }
 
-   protected void z(El2 var1, List var2) {
+   public void z(El2 var1, List var2) {
       String[] var3 = BX.B$arrString();
       El2 var10000 = var1;
       if (var3 == null) {
@@ -854,7 +854,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       return var1;
    }
 
-   protected void K(El2 var1, List var2) {
+   public void K(El2 var1, List var2) {
       String[] var3 = BX.B$arrString();
       El2 var10000 = var1;
       if (var3 == null) {
@@ -1111,7 +1111,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       }
    }
 
-   protected void u() {
+   public void u() {
       At2 var2;
       QL var5;
       label24: {
@@ -1156,7 +1156,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       return this.H(this.T);
    }
 
-   protected Sj2 H(El2 var1) {
+   public Sj2 H(El2 var1) {
       String[] var2 = BX.B$arrString();
       El2 var10000 = var1;
       if (var2 == null) {
@@ -1210,7 +1210,7 @@ public class QL extends Ky4 implements D02, Eh2, SwingConstants {
       }
    }
 
-   protected El2 f(Sj2 var1, Map var2) {
+   public El2 f(Sj2 var1, Map var2) {
       String[] var3;
       label72: {
          var3 = BX.B$arrString();

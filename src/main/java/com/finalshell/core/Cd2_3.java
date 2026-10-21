@@ -8,7 +8,7 @@ public final class Cd2_3 extends CB_3 {
    }
 
    @Override
-   protected Object b(G2_3 var1) throws Throwable {
+   public Object b(G2_3 var1) throws Throwable {
       return var1.E(this);
    }
 

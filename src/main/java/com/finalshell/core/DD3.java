@@ -65,7 +65,7 @@ public class DD3 {
 
       label115: {
          if (var0 != null) {
-            if (var10001 != false) {
+            if (var10001 == null) {
                Registry.lookupField(417253634927399276L).set(null, a(23161, 3210));
                if (var0 != null) {
                   break label115;
@@ -82,7 +82,7 @@ public class DD3 {
             }
          }
 
-         if (var10001 != false) {
+         if (var10001 == null) {
             Registry.lookupField(417253634927399276L).set(null, a(23146, -6748));
             if (var0 != null) {
                break label115;
@@ -105,7 +105,7 @@ public class DD3 {
 
       label117: {
          if (var0 != null) {
-            if (var25 != false) {
+            if (var25 == null) {
                Registry.lookupField(322398614556294006L).set(null, var4 + File.separator + a(23166, 26251) + File.separator);
                if (var0 != null) {
                   break label117;
@@ -122,7 +122,7 @@ public class DD3 {
             }
          }
 
-         if (var25 != false) {
+         if (var25 == null) {
             Registry.lookupField(322398614556294006L).set(null, var4 + File.separator + a(23162, -22373) + File.separator + a(23156, 14462) + File.separator);
             if (var0 != null) {
                break label117;

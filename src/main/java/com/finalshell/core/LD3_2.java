@@ -7,12 +7,12 @@ public class LD3_2 extends Ln4_2 {
    public static int v;
    public static int i;
    public static int X;
-   int t;
-   String E;
-   int B;
-   String z;
-   String K;
-   boolean F;
+   public int t;
+   public String E;
+   public int B;
+   public String z;
+   public String K;
+   public boolean F;
    public static int n;
 
    public LD3_2() {

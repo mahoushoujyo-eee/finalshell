@@ -12,11 +12,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPopupMenu;
 
 public class OS implements MouseListener {
-   final Y12_2 N;
-   final SelectDownloadFolderPanel A;
+   public final Y12_2 N;
+   public final SelectDownloadFolderPanel A;
    public static long a;
 
-   OS(SelectDownloadFolderPanel var1, Y12_2 var2) {
+   public OS(SelectDownloadFolderPanel var1, Y12_2 var2) {
       this.A = var1;
       this.N = var2;
    }

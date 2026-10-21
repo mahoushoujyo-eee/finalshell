@@ -10,11 +10,11 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class Oa4 extends AbstractTableModel {
-   ArrayList L;
+   public ArrayList L;
    public static String d;
    public static String W;
-   String[] y;
-   int U;
+   public String[] y;
+   public int U;
 
    public Oa4() {
       ArrayList var10001 = new ArrayList();

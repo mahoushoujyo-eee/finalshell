@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import javax.swing.JPasswordField;
 
 public class Yw2 implements Runnable {
-   final Tn4 h;
+   public final Tn4 h;
 
-   Yw2(Tn4 var1) {
+   public Yw2(Tn4 var1) {
       this.h = var1;
    }
 

@@ -29,41 +29,41 @@ public class Ix2 extends IB {
       return var3;
    }
 
-   protected void h(JScrollBar var1) {
+   public void h(JScrollBar var1) {
       this.U = new EL(this);
       var1.addAdjustmentListener(this.U);
    }
 
-   protected void g(JScrollBar var1) {
+   public void g(JScrollBar var1) {
       var1.removeAdjustmentListener(this.U);
       this.U = null;
    }
 
-   protected void m(JScrollBar var1) {
+   public void m(JScrollBar var1) {
       var1.setValue((Integer)this.o());
    }
 
-   protected void F(JScrollBar var1) {
+   public void F(JScrollBar var1) {
       Cl4_2.A(this.M(), this.S(), var1.getValue());
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.F((JScrollBar)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.m((JScrollBar)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.g((JScrollBar)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.h((JScrollBar)var1);
    }
 

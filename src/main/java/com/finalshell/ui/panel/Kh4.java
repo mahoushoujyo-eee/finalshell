@@ -175,11 +175,11 @@ public class Kh4 extends Ky4 {
       }
    }
 
-   static void e(Kh4 var0) {
+   public static void e(Kh4 var0) {
       var0.x();
    }
 
-   static void Q(Kh4 var0) {
+   public static void Q(Kh4 var0) {
       var0.U();
    }
 

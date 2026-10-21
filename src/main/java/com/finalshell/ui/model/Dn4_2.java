@@ -13,18 +13,18 @@ import java.util.HashSet;
 import java.util.Locale;
 
 public class Dn4_2 implements Comparator {
-   final Comparator R;
-   final O8 d;
-   final Om2 r;
-   String B;
-   final String L;
-   final UT Z;
+   public final Comparator R;
+   public final O8 d;
+   public final Om2 r;
+   public String B;
+   public final String L;
+   public final UT Z;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Long[] e;
 
-   Dn4_2(UT var1, String var2) {
+   public Dn4_2(UT var1, String var2) {
       this.Z = var1;
       this.L = var2;
       this.R = Collator.getInstance(Locale.CHINA);
@@ -42,7 +42,7 @@ public class Dn4_2 implements Comparator {
       Object var8 = 594107705074217083L;
       Dn4_2 var10001 = ((String)Ref.g(594107705074217083L, var8)).equals((String)Registry.lookupField(389386238796712282L).get(null));
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var10 = 395182373245310285L;
             Comparator var112 = (Comparator)Ref.g(395182373245310285L, var10);
             String var135 = (String)(Registry.emptyArgs());
@@ -76,7 +76,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var18 = 344173546614258802L;
             Ref.g(344173546614258802L, var18);
             Object[] var132 = Registry.emptyArgs();
@@ -120,7 +120,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             String var109 = (String)(Registry.emptyArgs());
             long var29 = 516374718951189974L;
             Object[] var28 = var109;
@@ -205,7 +205,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object[] var10002 = Registry.emptyArgs();
             long var37 = 528143184018704864L;
             Object[] var36 = var10002;
@@ -233,7 +233,7 @@ public class Dn4_2 implements Comparator {
             long var166;
             Dn4_2 var115 = (var166 = var4 - 0L) == 0L ? 0 : (var166 < 0L ? -1 : 1);
             if (var3 != null) {
-               if (var115 == 0) {
+               if (var115 == null) {
                   var4 = a(12644, 724395259373966810L);
                }
 
@@ -242,7 +242,7 @@ public class Dn4_2 implements Comparator {
             }
 
             if (var3 != null) {
-               if (var115 == 0) {
+               if (var115 == null) {
                   var6 = a(2969, 7696521759219937062L);
                }
 
@@ -269,7 +269,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var46 = 344173546614258802L;
             Ref.g(344173546614258802L, var46);
             HashSet var129 = (HashSet)(Registry.emptyArgs());
@@ -313,7 +313,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var56 = 344173546614258802L;
             Ref.g(344173546614258802L, var56);
             ArrayList var126 = (ArrayList)(Registry.emptyArgs());
@@ -357,7 +357,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var66 = 196722139846004877L;
             Ref.g(196722139846004877L, var66);
             Object[] var123 = Registry.emptyArgs();
@@ -401,7 +401,7 @@ public class Dn4_2 implements Comparator {
       }
 
       if (var3 != null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var76 = 196722139846004877L;
             Ref.g(196722139846004877L, var76);
             Object[] var10004 = Registry.emptyArgs();

@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import javax.swing.JComponent;
 
 public class YS implements Runnable {
-   final GE C;
+   public final GE C;
    public static long a;
 
-   YS(GE var1) {
+   public YS(GE var1) {
       this.C = var1;
    }
 

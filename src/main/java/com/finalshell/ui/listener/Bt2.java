@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bt2 implements ActionListener {
-   final Km4 r;
+   public final Km4 r;
 
-   Bt2(Km4 var1) {
+   public Bt2(Km4 var1) {
       this.r = var1;
    }
 

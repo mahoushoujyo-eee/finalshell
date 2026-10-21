@@ -32,28 +32,28 @@ public class SelectUploadFile extends P__2 {
    public static int z;
    public BlockingQueue m = new LinkedBlockingQueue();
    public PD3 o;
-   SetBackgroundImagePanel F;
-   boolean M = false;
-   boolean x = false;
-   char d;
-   boolean N = true;
-   long D;
-   long u;
-   CK I;
-   Cj4 K;
-   YI c;
-   GH_2 g;
-   PipedOutputStream L = null;
-   PipedInputStream T = null;
-   IS3 A = null;
-   long e = System.currentTimeMillis();
-   boolean s = true;
-   boolean Y = false;
-   byte[] Z = null;
-   int G = 0;
-   boolean P = false;
-   boolean b = false;
-   boolean C;
+   public SetBackgroundImagePanel F;
+   public boolean M = false;
+   public boolean x = false;
+   public char d;
+   public boolean N = true;
+   public long D;
+   public long u;
+   public CK I;
+   public Cj4 K;
+   public YI c;
+   public GH_2 g;
+   public PipedOutputStream L = null;
+   public PipedInputStream T = null;
+   public IS3 A = null;
+   public long e = System.currentTimeMillis();
+   public boolean s = true;
+   public boolean Y = false;
+   public byte[] Z = null;
+   public int G = 0;
+   public boolean P = false;
+   public boolean b = false;
+   public boolean C;
    public static String V;
    public static String[] f;
    public static String[] h;
@@ -688,7 +688,7 @@ public class SelectUploadFile extends P__2 {
    }
 
    @Override
-   protected void C(char var1, QT var2) throws IOException {
+   public void C(char var1, QT var2) throws IOException {
    }
 
    public void N() {
@@ -711,7 +711,7 @@ public class SelectUploadFile extends P__2 {
       this.X();
    }
 
-   void X() {
+   public void X() {
       this.C = false;
       this.a.o(0);
    }
@@ -1633,7 +1633,7 @@ public class SelectUploadFile extends P__2 {
       // 2c0: return
    }
 
-   protected void Y(char[] var1) {
+   public void Y(char[] var1) {
       k(T(var1));
    }
 

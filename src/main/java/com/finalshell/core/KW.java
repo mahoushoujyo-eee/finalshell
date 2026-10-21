@@ -22,7 +22,7 @@ public class KW extends ClassLoader {
       super(var1);
    }
 
-   static ClassLoader q() {
+   public static ClassLoader q() {
       ClassLoader var0 = Thread.currentThread().getContextClassLoader();
 
       try {
@@ -41,7 +41,7 @@ public class KW extends ClassLoader {
    }
 
    @Override
-   protected java.lang.Class loadClass(String param1, boolean param2) throws ClassNotFoundException {
+   public java.lang.Class loadClass(String param1, boolean param2) throws ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

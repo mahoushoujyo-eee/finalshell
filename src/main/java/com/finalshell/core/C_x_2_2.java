@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.util.Set;
 
 public class C_x_2_2 extends K2_3 {
-   final Set e;
+   public final Set e;
 
-   C_x_2_2(Set var1) {
+   public C_x_2_2(Set var1) {
       this.e = var1;
    }
 

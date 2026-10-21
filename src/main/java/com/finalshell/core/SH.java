@@ -29,7 +29,7 @@ public class SH implements GN {
       }
    }
 
-   static Level Y(int var0) {
+   public static Level Y(int var0) {
       switch (var0) {
          case 0:
             return Level.FINE;

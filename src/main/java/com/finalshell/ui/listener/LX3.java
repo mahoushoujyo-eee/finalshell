@@ -5,9 +5,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class LX3 extends MouseAdapter {
-   final Kc4 l;
+   public final Kc4 l;
 
-   LX3(Kc4 var1) {
+   public LX3(Kc4 var1) {
       this.l = var1;
    }
 

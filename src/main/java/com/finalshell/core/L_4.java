@@ -10,7 +10,7 @@ public class L_4 extends N2_3 {
    public static long[] c;
    public static Integer[] d;
 
-   L_4(double var1) {
+   public L_4(double var1) {
       this.u = var1;
    }
 
@@ -51,7 +51,7 @@ public class L_4 extends N2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(!var10000 ? 1 : 0);
+         return (boolean)((!var10000 ? 1 : 0) != 0);
       }
    }
 

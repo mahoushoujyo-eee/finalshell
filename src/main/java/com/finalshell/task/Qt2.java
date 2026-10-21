@@ -3,12 +3,12 @@ package com.finalshell.task;
 import java.net.InetAddress;
 
 public class Qt2 implements Runnable {
-   final FH3 Q;
+   public final FH3 Q;
    public final InetAddress e;
    public static long[] a;
    public static Integer[] b;
 
-   Qt2(FH3 var1, InetAddress var2) {
+   public Qt2(FH3 var1, InetAddress var2) {
       this.Q = var1;
       this.e = var2;
    }
@@ -126,7 +126,7 @@ public class Qt2 implements Runnable {
       // e0: return
    }
 
-   static FH3 A(Qt2 var0) {
+   public static FH3 A(Qt2 var0) {
       return var0.Q;
    }
 

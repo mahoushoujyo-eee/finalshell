@@ -3,11 +3,11 @@ package com.finalshell.task;
 import com.finalshell.core.Tb4;
 
 public class Lg2 implements Runnable {
-   final Tb4 r;
+   public final Tb4 r;
    public static long[] a;
    public static Integer[] b;
 
-   Lg2(Tb4 var1) {
+   public Lg2(Tb4 var1) {
       this.r = var1;
    }
 

@@ -557,20 +557,20 @@ public class Ip6 {
       }
    }
 
-   static File h(Ip6 var0) {
+   public static File h(Ip6 var0) {
       return var0.V;
    }
 
-   static Long T() {
+   public static Long T() {
       return d;
    }
 
-   static Long D(Long var0) {
+   public static Long D(Long var0) {
       d = var0;
       return var0;
    }
 
-   static void p(Ip6 var0) throws Exception {
+   public static void p(Ip6 var0) throws Exception {
       var0.F();
    }
 

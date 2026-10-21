@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class ND_3 extends NR_2 {
-   final N_ Z;
-   final H3_2 l;
+   public final N_ Z;
+   public final H3_2 l;
 
-   ND_3(H3_2 var1, com.finalshell.ui.model.I var2, N_ var3) {
+   public ND_3(H3_2 var1, com.finalshell.ui.model.I var2, N_ var3) {
       super(var2);
       this.l = var1;
       this.Z = var3;

@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class C_M implements C_5_2 {
-   final FF_2 x;
+   public final FF_2 x;
    public static String a;
 
-   C_M(FF_2 var1) {
+   public C_M(FF_2 var1) {
       this.x = var1;
    }
 

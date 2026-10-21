@@ -8,11 +8,11 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Ry4 extends ComponentAdapter {
-   final DP_2 Y;
-   final Sj2 n;
-   final QL K;
+   public final DP_2 Y;
+   public final Sj2 n;
+   public final QL K;
 
-   Ry4(QL var1, DP_2 var2, Sj2 var3) {
+   public Ry4(QL var1, DP_2 var2, Sj2 var3) {
       this.K = var1;
       this.Y = var2;
       this.n = var3;

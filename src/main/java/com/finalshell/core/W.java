@@ -9,9 +9,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class W extends W2 {
-   long j;
-   long n;
-   ArrayList K;
+   public long j;
+   public long n;
+   public ArrayList K;
    public static String[] a;
    public static String[] b;
 

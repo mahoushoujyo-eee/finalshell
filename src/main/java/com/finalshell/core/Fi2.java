@@ -640,11 +640,11 @@ public final class Fi2 implements TcpPacket.TcpOption {
       return a(30806, 2460151967734568878L) * var1 + this.j.hashCode();
    }
 
-   static byte j(Fi2 var0) {
+   public static byte j(Fi2 var0) {
       return var0.r;
    }
 
-   Fi2(BB3 var1, Fi2 var2) {
+   public Fi2(BB3 var1, Fi2 var2) {
       this(var1);
    }
 

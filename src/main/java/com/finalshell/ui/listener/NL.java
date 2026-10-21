@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class NL implements PropertyChangeListener {
-   final Hl2 y;
+   public final Hl2 y;
 
-   NL(Hl2 var1) {
+   public NL(Hl2 var1) {
       this.y = var1;
    }
 

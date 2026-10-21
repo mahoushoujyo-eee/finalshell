@@ -105,7 +105,7 @@ public final class XF3 {
       if (var2 == null) {
          return var3 != 0;
       } else {
-         return (boolean)(var3 == this.J ? 1 : 0);
+         return (boolean)((var3 == this.J ? 1 : 0) != 0);
       }
    }
 

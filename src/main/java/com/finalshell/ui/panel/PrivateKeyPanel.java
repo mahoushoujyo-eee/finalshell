@@ -16,19 +16,19 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class PrivateKeyPanel extends JPanel {
-   Ne4 R;
-   JPasswordField w;
-   JTextField Z;
-   LN3 A;
-   JLabel I;
-   boolean x;
-   String V;
+   public Ne4 R;
+   public JPasswordField w;
+   public JTextField Z;
+   public LN3 A;
+   public JLabel I;
+   public boolean x;
+   public String V;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   PrivateKeyPanel() {
+   public PrivateKeyPanel() {
       ImportPanel.j();
       Registry.lookupField(635749397800415838L).setBoolean(this, false);
       long var8 = 228598477229309627L;
@@ -150,7 +150,7 @@ public class PrivateKeyPanel extends JPanel {
       }
    }
 
-   void N(boolean var1) {
+   public void N(boolean var1) {
       label16: {
          String[] var2 = ImportPanel.j();
          if (var2 != null) {
@@ -189,7 +189,7 @@ public class PrivateKeyPanel extends JPanel {
                   break label49;
                }
 
-               if (var10001 != false) {
+               if (var10001 == null) {
                   return;
                }
             } catch (Exception var18) {
@@ -209,7 +209,7 @@ public class PrivateKeyPanel extends JPanel {
             }
          }
 
-         if (var10001 != false) {
+         if (var10001 == null) {
             return;
          }
 

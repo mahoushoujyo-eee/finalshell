@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.QT;
 
 public final class NX extends NZ {
-   NX(String var1, int var2) {
+   public NX(String var1, int var2) {
       super(var1, var2, null);
    }
 

@@ -38,8 +38,8 @@ public class C0 implements Serializable {
    }
 
    public C0(String var1, String var2, String var3, boolean var4, String var5, String var6, String var7, LO3 var8, List var9, List var10) {
+   super();
       Ky4[] var10000 = KZ3.W();
-      super();
       this.i = var1;
       this.d = var2;
       this.n = var3;
@@ -151,7 +151,7 @@ public class C0 implements Serializable {
       if (var1 != null) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 > 0 ? 1 : 0);
+         return (boolean)((var2 > 0 ? 1 : 0) != 0);
       }
    }
 
@@ -197,7 +197,7 @@ public class C0 implements Serializable {
       if (var1 != null) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 > 0 ? 1 : 0);
+         return (boolean)((var2 > 0 ? 1 : 0) != 0);
       }
    }
 

@@ -7,11 +7,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class C_g_2 implements ActionListener {
-   final K42 q;
-   final File T;
-   final Kk4 E;
+   public final K42 q;
+   public final File T;
+   public final Kk4 E;
 
-   C_g_2(Kk4 var1, K42 var2, File var3) {
+   public C_g_2(Kk4 var1, K42 var2, File var3) {
       this.E = var1;
       this.q = var2;
       this.T = var3;

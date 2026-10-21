@@ -4,8 +4,8 @@ import java.net.DatagramPacket;
 
 public class W3 extends WC {
    public short L = D6.nD;
-   byte[] w;
-   int J;
+   public byte[] w;
+   public int J;
    public static long[] a;
    public static Integer[] b;
 

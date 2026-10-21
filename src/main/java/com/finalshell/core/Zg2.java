@@ -148,11 +148,11 @@ public class Zg2 extends ZS implements X4 {
       // 11a: athrow
    }
 
-   protected Object c(Yn4 var1, Type var2, Object var3, Map var4) {
+   public Object c(Yn4 var1, Type var2, Object var3, Map var4) {
       return this.N(var1, var2, var3, var4, 0);
    }
 
-   protected Object N(Yn4 param1, Type param2, Object param3, Map param4, int param5) {
+   public Object N(Yn4 param1, Type param2, Object param3, Map param4, int param5) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

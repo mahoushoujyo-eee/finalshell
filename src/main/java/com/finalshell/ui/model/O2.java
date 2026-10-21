@@ -5,10 +5,10 @@ import com.finalshell.core.F3_3;
 import java.util.Iterator;
 
 public class O2 implements Iterable {
-   final Iterable Z;
-   final A_4 r;
+   public final Iterable Z;
+   public final A_4 r;
 
-   O2(Iterable var1, A_4 var2) {
+   public O2(Iterable var1, A_4 var2) {
       this.Z = var1;
       this.r = var2;
    }

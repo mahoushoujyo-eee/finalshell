@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.util.ArrayList;
 
 public class Vg2 {
-   boolean W;
-   ArrayList m;
-   com.finalshell.ui.panel.Z7 k;
+   public boolean W;
+   public ArrayList m;
+   public com.finalshell.ui.panel.Z7 k;
 
    public Vg2() {
       Registry.lookupField(395354275000751234L).setBoolean(this, true);

@@ -23,7 +23,7 @@ public class B3_2 {
    public short a;
    public final List W = new ArrayList();
    public static Map C;
-   static boolean g;
+   public static boolean g;
    public static String[] b;
    public static String[] c;
    public static long[] d;
@@ -1075,7 +1075,7 @@ public class B3_2 {
    }
 
    @C_9
-   protected Cn2 i() {
+   public Cn2 i() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4091,23 +4091,23 @@ public class B3_2 {
       // 4f: areturn
    }
 
-   static int t(int var0) {
+   public static int t(int var0) {
       return p(var0);
    }
 
-   static F9 s$f9(B3_2 var0) {
+   public static F9 s$f9(B3_2 var0) {
       return var0.Z;
    }
 
-   static byte[] s$arrbyte(B3_2 var0) {
+   public static byte[] s$arrbyte(B3_2 var0) {
       return var0.u;
    }
 
-   static FC T(FC var0, FC var1) {
+   public static FC T(FC var0, FC var1) {
       return r(var0, var1);
    }
 
-   static Cr2_2 x(B3_2 var0) {
+   public static Cr2_2 x(B3_2 var0) {
       return var0.P;
    }
 

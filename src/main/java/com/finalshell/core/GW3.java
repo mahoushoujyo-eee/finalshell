@@ -3,6 +3,7 @@ package com.finalshell.core;
 import java.awt.Rectangle;
 
 public class GW3 extends GT3 {
+   private static int[] var39;
    public static int[] T;
    public int[] v;
    public int D = a(27645, 8361874596275343796L);
@@ -62,7 +63,7 @@ public class GW3 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10000 = W5.q();
       int[] var6 = new int[var1 * var2];
       int var7 = 0;
@@ -72,7 +73,6 @@ public class GW3 extends GT3 {
 
       while (true) {
          if (var9 < this.j) {
-      int[] var39;
             int var10 = a(28818, 4728002682793183960L) * var9 / (this.j - 1);
             var39 = var8;
             if (var5 == null) {
@@ -168,7 +168,7 @@ public class GW3 extends GT3 {
                int var14 = var3[var7];
                int var15 = var14 >> a(21515, 3555660113599852109L) & a(10269, 8294312473434002006L);
                int var16 = var14 >> a(26693, 6465829375574069766L) & a(10269, 8294312473434002006L);
-               int var17 = (var14 & a(10269, 8294312473434002006L)) ? 1 : 0;
+               int var17 = var14 & a(10269, 8294312473434002006L);
                var40 = (this.f) ? 1 : 0;
                if (var5 == null) {
                   continue label170;
@@ -305,6 +305,7 @@ public class GW3 extends GT3 {
                         }
 
                         if (var5 != null) {
+      int var44;
       int var44;
                            continue label146;
                         }

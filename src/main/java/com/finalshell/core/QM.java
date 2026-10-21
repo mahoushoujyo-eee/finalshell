@@ -1,54 +1,54 @@
 package com.finalshell.core;
 
 public class QM {
-   void K(KJ var1) {
+   public void K(KJ var1) {
    }
 
-   int r() {
+   public int r() {
       return 0;
    }
 
-   int W() {
+   public int W() {
       return 0;
    }
 
-   boolean l() {
+   public boolean l() {
       return false;
    }
 
-   boolean H() {
+   public boolean H() {
       return false;
    }
 
-   boolean t() {
+   public boolean t() {
       return false;
    }
 
-   boolean L() {
+   public boolean L() {
       return false;
    }
 
-   boolean m$boolean() {
+   public boolean m$boolean() {
       return false;
    }
 
-   void N(boolean var1) {
+   public void N(boolean var1) {
    }
 
-   void p(boolean var1) {
+   public void p(boolean var1) {
    }
 
-   void R() {
+   public void R() {
    }
 
-   void F() {
+   public void F() {
    }
 
-   int b(int var1) throws Mw2 {
+   public int b(int var1) throws Mw2 {
       return this.r();
    }
 
-   void m$void() {
+   public void m$void() {
    }
 }
 

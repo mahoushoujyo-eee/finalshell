@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class K82 implements ActionListener {
-   final Copy p;
+   public final Copy p;
 
-   K82(Copy var1) {
+   public K82(Copy var1) {
       this.p = var1;
    }
 

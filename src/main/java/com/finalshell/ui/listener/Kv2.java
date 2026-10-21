@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kv2 implements ActionListener {
-   final RouteTracePanel2 C;
+   public final RouteTracePanel2 C;
 
-   Kv2(RouteTracePanel2 var1) {
+   public Kv2(RouteTracePanel2 var1) {
       this.C = var1;
    }
 

@@ -6,10 +6,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class G4 extends MouseAdapter {
-   final HT v;
-   final com.finalshell.core.O5 V;
+   public final HT v;
+   public final com.finalshell.core.O5 V;
 
-   G4(HT var1, com.finalshell.core.O5 var2) {
+   public G4(HT var1, com.finalshell.core.O5 var2) {
       this.v = var1;
       this.V = var2;
    }

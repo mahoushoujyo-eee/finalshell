@@ -15,11 +15,11 @@ import java.awt.image.BufferedImage;
 import javax.swing.JComponent;
 
 public class Dj2 extends JComponent {
-   protected int I;
-   protected int r;
-   protected int Z;
-   protected BufferedImage f;
-   protected BufferedImage M;
+   public int I;
+   public int r;
+   public int Z;
+   public BufferedImage f;
+   public BufferedImage M;
    public static long[] a;
    public static Integer[] b;
 
@@ -84,7 +84,7 @@ public class Dj2 extends JComponent {
       this.repaint();
    }
 
-   protected void P$void() {
+   public void P$void() {
       String var1 = Wb2.m$String();
       BufferedImage var10000 = this.M;
       if (var1 != null) {
@@ -109,7 +109,7 @@ public class Dj2 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String var10000 = Wb2.m$String();
       super.paintComponent(var1);
       Graphics2D var3 = (Graphics2D)var1;

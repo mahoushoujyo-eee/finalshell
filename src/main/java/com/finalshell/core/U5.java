@@ -5,18 +5,18 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class U5 {
-   String S;
-   String r;
-   String G;
-   int U;
-   String T;
-   int N;
-   boolean E;
-   long m;
-   long z;
-   long i;
-   boolean K;
-   String b;
+   public String S;
+   public String r;
+   public String G;
+   public int U;
+   public String T;
+   public int N;
+   public boolean E;
+   public long m;
+   public long z;
+   public long i;
+   public boolean K;
+   public String b;
 
    public U5() {
       Registry.lookupField(232769090608234294L).setBoolean(this, true);

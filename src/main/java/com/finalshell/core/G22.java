@@ -84,7 +84,7 @@ public class G22 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       Random var6 = new Random(0L);
       String[] var10000 = W5.q();
       this.A = (float)Math.sin(0.1);

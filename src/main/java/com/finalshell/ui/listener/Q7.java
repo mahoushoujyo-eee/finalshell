@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class Q7 implements ActionListener {
-   final JCheckBox U;
-   final TerminalHelpFrame h;
+   public final JCheckBox U;
+   public final TerminalHelpFrame h;
 
-   Q7(TerminalHelpFrame var1, JCheckBox var2) {
+   public Q7(TerminalHelpFrame var1, JCheckBox var2) {
       this.h = var1;
       this.U = var2;
    }

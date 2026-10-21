@@ -49,7 +49,7 @@ public class Px2 {
             var10001 = var3.E;
          }
 
-         return (boolean)(var5 == var10001 ? 1 : 0);
+         return (boolean)((var5 == var10001 ? 1 : 0) != 0);
       } else {
          return false;
       }

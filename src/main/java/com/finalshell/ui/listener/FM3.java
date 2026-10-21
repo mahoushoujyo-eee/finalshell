@@ -9,9 +9,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class FM3 implements MouseListener {
-   final SelectDownloadFolderPanel i;
+   public final SelectDownloadFolderPanel i;
 
-   FM3(SelectDownloadFolderPanel var1) {
+   public FM3(SelectDownloadFolderPanel var1) {
       this.i = var1;
    }
 
@@ -27,7 +27,7 @@ public class FM3 implements MouseListener {
          Object var9 = 399794680803283247L;
          Object var10008 = Ref.g(399794680803283247L, var9);
          Object var11 = 344912960350819457L;
-new FM3(this, (DT)var10008, (Fr4)Ref.g(344912960350819457L, var11));
+var10006 = new FM3(this, (DT)var10008, (Fr4)Ref.g(344912960350819457L, var11));
          Object var13 = 399794680803283247L;
          Object var10007 = Ref.g(399794680803283247L, var13);
          Object var15 = 622126560416402693L;

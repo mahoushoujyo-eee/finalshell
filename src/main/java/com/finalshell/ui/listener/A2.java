@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JFrame;
 
 public class A2 implements ActionListener {
-   final JFrame V;
-   final CustomAcceleratePanel i;
+   public final JFrame V;
+   public final CustomAcceleratePanel i;
 
-   A2(CustomAcceleratePanel var1, JFrame var2) {
+   public A2(CustomAcceleratePanel var1, JFrame var2) {
       this.i = var1;
       this.V = var2;
    }

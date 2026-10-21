@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.DownloadDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class L62 implements Runnable {
-   final DownloadDialog O;
+   public final DownloadDialog O;
 
-   L62(DownloadDialog var1) {
+   public L62(DownloadDialog var1) {
       this.O = var1;
    }
 

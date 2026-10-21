@@ -17,11 +17,11 @@ public class EE {
    public static String C;
    public static String F;
    public static String A;
-   protected static boolean Y;
-   protected static Authenticator O;
-   protected static boolean G;
-   protected static Qz2 r;
-   protected static boolean j;
+   public static boolean Y;
+   public static Authenticator O;
+   public static boolean G;
+   public static Qz2 r;
+   public static boolean j;
    public static String[] a;
    public static String[] b;
 
@@ -302,7 +302,7 @@ public class EE {
       return var1;
    }
 
-   protected static Proxy q() {
+   public static Proxy q() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

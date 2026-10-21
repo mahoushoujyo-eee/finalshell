@@ -891,7 +891,7 @@ public class ZQ extends ZS implements Ak2, FW, X4 {
       // 7c5: areturn
    }
 
-   protected LocalDateTime O(String param1, DateTimeFormatter param2) {
+   public LocalDateTime O(String param1, DateTimeFormatter param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1586,7 +1586,7 @@ public class ZQ extends ZS implements Ak2, FW, X4 {
       // 64a: areturn
    }
 
-   protected LocalDate A(String param1, String param2, DateTimeFormatter param3) {
+   public LocalDate A(String param1, String param2, DateTimeFormatter param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2025,7 +2025,7 @@ public class ZQ extends ZS implements Ak2, FW, X4 {
       // 404: areturn
    }
 
-   protected ZonedDateTime q(String param1, DateTimeFormatter param2) {
+   public ZonedDateTime q(String param1, DateTimeFormatter param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

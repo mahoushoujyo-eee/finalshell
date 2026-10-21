@@ -3,7 +3,7 @@ package com.finalshell.core;
 import java.awt.Composite;
 
 public abstract class RA3 implements Composite {
-   protected float l;
+   public float l;
    public static String B;
    public static String b;
 

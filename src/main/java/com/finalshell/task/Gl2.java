@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.core.Connect_2;
 
 public class Gl2 extends Thread {
-   final Connect_2 f;
+   public final Connect_2 f;
    public static String[] a;
    public static String[] b;
    public static long c;
    public static long[] d;
    public static Long[] e;
 
-   Gl2(Connect_2 var1) {
+   public Gl2(Connect_2 var1) {
       this.f = var1;
    }
 

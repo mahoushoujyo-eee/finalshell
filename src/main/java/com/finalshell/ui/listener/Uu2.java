@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Uu2 extends MouseAdapter {
-   final JR Z;
+   public final JR Z;
 
-   Uu2(JR var1) {
+   public Uu2(JR var1) {
       this.Z = var1;
    }
 

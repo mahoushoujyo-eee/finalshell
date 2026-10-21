@@ -6,11 +6,11 @@ import org.pcap4j.core.PcapHandle;
 import org.pcap4j.core.PcapStat;
 
 public class OP extends Thread {
-   final DnsResolveFailedSetting d;
+   public final DnsResolveFailedSetting d;
    public final PcapHandle v;
    public final PacketListener M;
 
-   OP(DnsResolveFailedSetting var1, PcapHandle var2, PacketListener var3) {
+   public OP(DnsResolveFailedSetting var1, PcapHandle var2, PacketListener var3) {
       this.d = var1;
       this.v = var2;
       this.M = var3;

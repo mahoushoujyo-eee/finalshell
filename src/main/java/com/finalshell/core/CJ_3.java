@@ -6,14 +6,14 @@ import java.io.IOException;
 
 public class CJ_3 extends CM_2 {
    public final int Z;
-   static boolean u;
+   public static boolean u;
    public static String[] a;
    public static String[] b;
    public static long c;
 
    public CJ_3(int var1, int var2) {
+   super(var1);
       Ky4[] var10000 = Cr2_2.q$arrky_4();
-      super(var1);
       Ky4[] var3 = var10000;
       if (var3 == null) {
          if (!u) {

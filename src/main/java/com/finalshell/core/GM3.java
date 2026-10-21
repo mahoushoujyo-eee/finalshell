@@ -12,8 +12,8 @@ public class GM3 extends GT3 {
    public static float[] R;
    public static float[] p;
    public static float[] M;
-   protected float[] d;
-   protected float[] T;
+   public float[] d;
+   public float[] T;
    public static String a;
    public static long[] b;
    public static Integer[] c;
@@ -40,7 +40,7 @@ public class GM3 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int var6 = 0;
       String[] var10000 = W5.q();
       int[] var7 = new int[var1 * var2];

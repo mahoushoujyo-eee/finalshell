@@ -8,13 +8,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public class Am2 implements Runnable {
-   final String W;
-   final Nq2 C;
-   final List D;
-   final String x;
-   final Yd2 M;
+   public final String W;
+   public final Nq2 C;
+   public final List D;
+   public final String x;
+   public final Yd2 M;
 
-   Am2(Yd2 var1, String var2, Nq2 var3, List var4, String var5) {
+   public Am2(Yd2 var1, String var2, Nq2 var3, List var4, String var5) {
       this.M = var1;
       this.W = var2;
       this.C = var3;

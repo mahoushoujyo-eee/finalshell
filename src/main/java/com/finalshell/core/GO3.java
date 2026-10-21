@@ -11,7 +11,7 @@ public class GO3 extends Gl4 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10000 = W5.q();
       int var6 = 0;
       String[] var5 = var10000;

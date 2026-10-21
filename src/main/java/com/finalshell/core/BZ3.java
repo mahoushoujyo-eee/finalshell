@@ -6,7 +6,7 @@ public class BZ3 extends BN3 {
    public static long[] c;
    public static Integer[] f;
 
-   static void Q() throws Exception {
+   public static void Q() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Tf2 implements Runnable {
-   final YT3_2 y;
+   public final YT3_2 y;
 
-   Tf2(YT3_2 var1) {
+   public Tf2(YT3_2 var1) {
       this.y = var1;
    }
 

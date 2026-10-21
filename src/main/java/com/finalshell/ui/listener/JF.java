@@ -11,11 +11,11 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class JF implements MouseListener {
-   final Oa4 x;
-   final SwitchTabCommand K;
-   final LQ S;
+   public final Oa4 x;
+   public final SwitchTabCommand K;
+   public final LQ S;
 
-   JF(LQ var1, Oa4 var2, SwitchTabCommand var3) {
+   public JF(LQ var1, Oa4 var2, SwitchTabCommand var3) {
       this.S = var1;
       this.x = var2;
       this.K = var3;
@@ -30,7 +30,7 @@ public class JF implements MouseListener {
       byte var10002 = 3;
       if (this != null) {
          label44: {
-            if (var10001 == 3) {
+            if (var10001 == null) {
                var10001 = this;
                Object var7 = 176164739172737231L;
                boolean var21 = ((LQ)Ref.g(176164739172737231L, var7)).isRowSelected(var3);

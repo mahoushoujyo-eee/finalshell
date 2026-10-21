@@ -2,7 +2,7 @@ package com.finalshell.ui.model;
 
 import java.util.List;
 
-public class RK extends Enum {
+public abstract class RK {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -12,7 +12,15 @@ public class RK extends Enum {
    public static RK userHome;
    public static RK[] K;
 
-   public RK() {
+   public static RK[] values() {
+      return (RK[])K.clone();
+   }
+
+   public static RK valueOf(String var0) {
+      throw new UnsupportedOperationException("valueOf not implemented");
+   }
+
+   public RK(String var1, int var2) {
    }
 
    public abstract List I();
@@ -21,14 +29,12 @@ public class RK extends Enum {
       return new RK[]{system, drives, userHome};
    }
 
-   RK(RA var3) {
-      this();
+   public RK(String var1, int var2, RA var3) {
+      this(var1, var2);
    }
 
-   private static final Object __vfClinitTrigger = __vfClinitTrigger();
-   private static Object __vfClinitTrigger() {
+   static {
       __vfClinit__();
-      return null;
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
@@ -127,7 +133,6 @@ public class RK extends Enum {
       }
    }
 }
-
 
 
 

@@ -15,8 +15,8 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class KeyManagerFrame extends JFrame {
-   ImportPanel e;
-   JPanel Z;
+   public ImportPanel e;
+   public JPanel Z;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -100,7 +100,7 @@ public class KeyManagerFrame extends JFrame {
       }
    }
 
-   void S() {
+   public void S() {
       Object var1 = 512348400607580044L;
       Ref.g(512348400607580044L, var1);
       Object[] var10002 = Registry.emptyArgs();

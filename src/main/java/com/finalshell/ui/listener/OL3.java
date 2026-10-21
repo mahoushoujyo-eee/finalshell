@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class OL3 implements ActionListener {
-   final QQ H;
+   public final QQ H;
 
-   OL3(QQ var1) {
+   public OL3(QQ var1) {
       this.H = var1;
    }
 

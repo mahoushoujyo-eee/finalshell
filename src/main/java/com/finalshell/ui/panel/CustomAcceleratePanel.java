@@ -27,27 +27,27 @@ import javax.swing.border.CompoundBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class CustomAcceleratePanel extends JPanel {
-   static RouteTracePanel3 n;
-   SystemInfoPanel z;
-   KV G;
-   String i;
-   static C5 C;
-   JButton g;
-   JButton J;
-   JButton x;
-   JButton q;
-   SelectDownloadFolderPanel B;
-   JPanel b;
-   JButton k;
-   AccelerateRdpHelpPanel w;
-   JButton p;
+   public static RouteTracePanel3 n;
+   public SystemInfoPanel z;
+   public KV G;
+   public String i;
+   public static C5 C;
+   public JButton g;
+   public JButton J;
+   public JButton x;
+   public JButton q;
+   public SelectDownloadFolderPanel B;
+   public JPanel b;
+   public JButton k;
+   public AccelerateRdpHelpPanel w;
+   public JButton p;
    public static Ky4[] u;
    public static String[] a;
    public static String[] c;
    public static long[] d;
    public static Integer[] e;
 
-   CustomAcceleratePanel(C5 var1) {
+   public CustomAcceleratePanel(C5 var1) {
       Registry.lookupField(299249922317273977L).set(null, var1);
       Registry.emptyArgs();
       long var13 = 270389152141252877L;

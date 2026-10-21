@@ -168,7 +168,7 @@ public class Oe2 extends O implements TableCellRenderer {
       return !var1 ? var6 : var6;
    }
 
-   protected void J(Object var1) {
+   public void J(Object var1) {
       String var3;
       label14: {
          boolean var2 = a();

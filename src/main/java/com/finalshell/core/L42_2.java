@@ -7,9 +7,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class L42_2 implements Fb2 {
-   final SendSyncMailPanel m;
+   public final SendSyncMailPanel m;
 
-   L42_2(SendSyncMailPanel var1) {
+   public L42_2(SendSyncMailPanel var1) {
       this.m = var1;
    }
 

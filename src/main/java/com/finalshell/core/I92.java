@@ -8,7 +8,7 @@ import javax.swing.JComponent;
 import javax.swing.plaf.ComponentUI;
 
 public class I92 extends I12 {
-   protected boolean P = false;
+   public boolean P = false;
 
    public static ComponentUI createUI(JComponent var0) {
       return new I92();

@@ -3,11 +3,11 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.SetBackgroundImagePanel;
 
 public class Bl2 implements Runnable {
-   long n;
-   final SetBackgroundImagePanel u;
+   public long n;
+   public final SetBackgroundImagePanel u;
    public static String a;
 
-   Bl2(SetBackgroundImagePanel var1) {
+   public Bl2(SetBackgroundImagePanel var1) {
       this.u = var1;
    }
 

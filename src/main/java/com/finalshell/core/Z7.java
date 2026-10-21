@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 import java.awt.image.Kernel;
 
 public class Z7 extends Z9 {
-   protected float I;
-   protected Kernel n;
+   public float I;
+   public Kernel n;
    public static long[] c;
    public static Integer[] d;
 

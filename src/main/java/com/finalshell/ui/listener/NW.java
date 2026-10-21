@@ -7,12 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class NW implements ActionListener {
-   final Qe2_2 e;
-   final KD3 y;
+   public final Qe2_2 e;
+   public final KD3 y;
    public static String[] a;
    public static String[] b;
 
-   NW(KD3 var1, Qe2_2 var2) {
+   public NW(KD3 var1, Qe2_2 var2) {
       this.y = var1;
       this.e = var2;
    }

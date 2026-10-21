@@ -4,15 +4,15 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class Gs2_2 {
-   String s;
-   int w;
-   int k;
-   String C;
-   long o;
-   boolean i;
+   public String s;
+   public int w;
+   public int k;
+   public String C;
+   public long o;
+   public boolean i;
    public static long a;
 
-   Gs2_2(String var1, int var2, String var3) {
+   public Gs2_2(String var1, int var2, String var3) {
       long var10000 = a;
       Registry.lookupField(469201803606960035L).setLong(this, var10000);
       long var5 = 198028181287977443L;

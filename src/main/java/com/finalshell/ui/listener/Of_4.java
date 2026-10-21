@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Of_4 implements ActionListener {
-   final EditPanel I;
+   public final EditPanel I;
 
-   Of_4(EditPanel var1) {
+   public Of_4(EditPanel var1) {
       this.I = var1;
    }
 

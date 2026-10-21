@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class H6 implements ActionListener {
-   final EF V;
+   public final EF V;
 
-   H6(EF var1) {
+   public H6(EF var1) {
       this.V = var1;
    }
 

@@ -8,9 +8,9 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Y32 extends MouseAdapter {
-   final NetworkMonitorPanel R;
+   public final NetworkMonitorPanel R;
 
-   Y32(NetworkMonitorPanel var1) {
+   public Y32(NetworkMonitorPanel var1) {
       this.R = var1;
    }
 

@@ -11,10 +11,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class TW implements ActionListener {
-   final AM o;
+   public final AM o;
    public static String a;
 
-   TW(AM var1) {
+   public TW(AM var1) {
       this.o = var1;
    }
 

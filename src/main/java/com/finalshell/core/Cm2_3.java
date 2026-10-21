@@ -341,7 +341,7 @@ public class Cm2_3 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       Ky4[] var10000 = Cr2_2.q$arrky_4();
       var1.writeShort(this.S.length);
       CM_2[] var3 = this.S;
@@ -359,11 +359,11 @@ public class Cm2_3 extends Y_3 {
       }
    }
 
-   static Y_3 J(short var0, DataInputStream var1, Cr2_2 var2) throws IOException {
+   public static Y_3 J(short var0, DataInputStream var1, Cr2_2 var2) throws IOException {
       return V(var0, var1, var2);
    }
 
-   static void o(Y2_3[] var0, DataOutputStream var1) throws IOException {
+   public static void o(Y2_3[] var0, DataOutputStream var1) throws IOException {
       K(var0, var1);
    }
 

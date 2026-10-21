@@ -24,17 +24,17 @@ import javax.swing.ImageIcon;
 public class Oj2 extends O {
    public static ImageIcon a;
    public static ImageIcon Y;
-   protected ExecutorService d = Executors.newSingleThreadExecutor();
-   protected List B = new ArrayList(1);
-   protected boolean y = Xu4.L;
-   protected boolean i = Xu4.m;
-   protected boolean Z = Xu4.e;
-   protected Color U = Xu4.H;
-   protected Color h = Xu4.T;
-   protected Runnable u = null;
-   protected String j = "";
-   protected boolean o = false;
-   protected boolean l = false;
+   public ExecutorService d = Executors.newSingleThreadExecutor();
+   public List B = new ArrayList(1);
+   public boolean y = Xu4.L;
+   public boolean i = Xu4.m;
+   public boolean Z = Xu4.e;
+   public Color U = Xu4.H;
+   public Color h = Xu4.T;
+   public Runnable u = null;
+   public String j = "";
+   public boolean o = false;
+   public boolean l = false;
    public static boolean N;
    public static String[] b;
    public static String[] c;
@@ -78,7 +78,7 @@ public class Oj2 extends O {
       this.Y();
    }
 
-   protected void Y() {
+   public void Y() {
       this.setCursor(Cursor.getPredefinedCursor((int)e));
       this.H$void();
       H7 var1 = new H7(this);
@@ -88,7 +88,7 @@ public class Oj2 extends O {
       this.addKeyListener(new HZ(this));
    }
 
-   protected void f(boolean var1) {
+   public void f(boolean var1) {
       Oj2 var5;
       label51: {
          boolean var2 = V();
@@ -174,7 +174,7 @@ public class Oj2 extends O {
       this.H$void();
    }
 
-   protected void H$void() {
+   public void H$void() {
       Color var2;
       label20: {
          boolean var1 = g();
@@ -212,7 +212,7 @@ public class Oj2 extends O {
       this.j();
    }
 
-   protected void j() {
+   public void j() {
    }
 
    public boolean H$boolean() {
@@ -359,7 +359,7 @@ public class Oj2 extends O {
       var2.P();
    }
 
-   protected void P() {
+   public void P() {
       ActionEvent var2 = new ActionEvent(this, 0, a(-4328, -17161));
       boolean var10000 = V();
       Iterator var3 = AL_2.J((Collection)this.B).iterator();
@@ -374,19 +374,19 @@ public class Oj2 extends O {
       }
    }
 
-   protected Runnable C(String var1) {
+   public Runnable C(String var1) {
       return var1 != null ? new Ke2(this, var1) : null;
    }
 
-   protected Runnable M(String var1) {
+   public Runnable M(String var1) {
       return var1 != null ? new com.finalshell.task.QU(this, var1) : null;
    }
 
-   protected Runnable z(java.io.File var1) {
+   public Runnable z(java.io.File var1) {
       return var1 != null ? new Ra4(this, var1) : null;
    }
 
-   static void a(Oj2 var0, Color var1) {
+   public static void a(Oj2 var0, Color var1) {
       var0.setForeground(var1);
    }
 

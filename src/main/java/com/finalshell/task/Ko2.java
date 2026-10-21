@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.LA3;
 
 public class Ko2 extends Thread {
-   final LA3 c;
+   public final LA3 c;
    public static long a;
 
-   Ko2(LA3 var1) {
+   public Ko2(LA3 var1) {
       this.c = var1;
    }
 

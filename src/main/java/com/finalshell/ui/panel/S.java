@@ -30,8 +30,8 @@ import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
 public class S extends JTree implements Yb4 {
-   protected List I = new ArrayList(1);
-   protected TreeSelectionListener z = null;
+   public List I = new ArrayList(1);
+   public TreeSelectionListener z = null;
    public static String J;
    public static String[] a;
    public static String[] b;
@@ -74,7 +74,7 @@ public class S extends JTree implements Yb4 {
       this.B$void();
    }
 
-   protected void B$void() {
+   public void B$void() {
    }
 
    @Override
@@ -975,7 +975,7 @@ public class S extends JTree implements Yb4 {
       return FN.b$String(this);
    }
 
-   protected static TreeModel V(Object var0) {
+   public static TreeModel V(Object var0) {
       label28: {
          String var1;
          label31: {

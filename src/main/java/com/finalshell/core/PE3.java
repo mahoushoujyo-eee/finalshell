@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import org.jetbrains.annotations.NotNull;
 
 public class PE3 {
-   final ArrayList Q;
-   final int h;
-   final int L;
-   final int Y;
+   public final ArrayList Q;
+   public final int h;
+   public final int L;
+   public final int Y;
 
    public PE3(ArrayList var1, int var2, int var3, int var4) {
       this.Q = new ArrayList(var1);
@@ -90,7 +90,7 @@ public class PE3 {
       return new XE(((Ko2)this.Q.get(this.Q.size() - 1)).v + this.L, ((Ko2)this.Q.get(this.Q.size() - 1)).E);
    }
 
-   PE3(ArrayList var1, int var2, int var3, int var4, L7 var5) {
+   public PE3(ArrayList var1, int var2, int var3, int var4, L7 var5) {
       this(var1, var2, var3, var4);
    }
 }

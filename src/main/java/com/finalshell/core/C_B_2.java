@@ -43,7 +43,7 @@ public final class C_B_2 extends C_q_2_2 implements RO {
       if (var1 == null) {
          return var2 != 0;
       } else {
-         return (boolean)(var2 != -1 ? 1 : 0);
+         return (boolean)((var2 != -1 ? 1 : 0) != 0);
       }
    }
 

@@ -10,9 +10,9 @@ import javax.swing.JMenuItem;
 import javax.swing.plaf.ComponentUI;
 
 public class YV extends Yh2_2 {
-   protected static ImageIcon W;
-   protected static ImageIcon Y;
-   protected Color d = OP.G;
+   public static ImageIcon W;
+   public static ImageIcon Y;
+   public Color d = OP.G;
    public static String[] b;
    public static String[] g;
 
@@ -21,7 +21,7 @@ public class YV extends Yh2_2 {
    }
 
    @Override
-   protected String getPropertyPrefix() {
+   public String getPropertyPrefix() {
       return b(7445, 605);
    }
 
@@ -126,7 +126,7 @@ public class YV extends Yh2_2 {
    }
 
    @Override
-   protected void W(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
+   public void W(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
       int[] var10000 = Pb4.g();
       super.W(var1, var2, var3, var4, var5, var6, var7, var8);
       int[] var9 = var10000;
@@ -148,7 +148,7 @@ public class YV extends Yh2_2 {
    }
 
    @Override
-   protected void j(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
+   public void j(Graphics2D var1, JMenuItem var2, int var3, int var4, int var5, int var6, boolean var7, boolean var8) {
       super.j(var1, var2, var3, var4, var5, var6, var7, var8);
       if (var2.getIcon() == null) {
          int var9 = var3 + var5 / 2 - W.getIconWidth() / 2;

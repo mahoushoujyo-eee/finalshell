@@ -3475,7 +3475,7 @@ public class HG {
       return new RU(var4, J(var2, new String[]{a(-24297, -11765)}), (NA_3[])var3.toArray(new NA_3[var3.size()]), var5);
    }
 
-   int y$int() throws B2_5, IOException {
+   public int y$int() throws B2_5, IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -9152,11 +9152,11 @@ public class HG {
       // 2b: return
    }
 
-   protected final B2_5 c(String var1) {
+   public final B2_5 c(String var1) {
       return X(var1, this.C$I());
    }
 
-   protected static B2_5 X(String var0, com.finalshell.ui.model.I var1) {
+   public static B2_5 X(String var0, com.finalshell.ui.model.I var1) {
       return new B2_5(var0, var1);
    }
 

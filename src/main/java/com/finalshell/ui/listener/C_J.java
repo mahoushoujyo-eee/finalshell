@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class C_J implements ActionListener {
-   final K32 Q;
+   public final K32 Q;
 
-   C_J(K32 var1) {
+   public C_J(K32 var1) {
       this.Q = var1;
    }
 

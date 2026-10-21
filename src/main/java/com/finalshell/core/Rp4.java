@@ -4,8 +4,8 @@ import com.finalshell.ui.model.CB3;
 import java.util.Comparator;
 
 public abstract class Rp4 implements R72 {
-   protected Comparator F = null;
-   protected On2 m = null;
+   public Comparator F = null;
+   public On2 m = null;
 
    @Override
    public Comparator H(CB3 var1) {

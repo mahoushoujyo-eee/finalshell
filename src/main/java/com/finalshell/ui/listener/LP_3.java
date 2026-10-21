@@ -10,11 +10,11 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class LP_3 implements ActionListener {
-   final com.finalshell.ui.dialog.C5 v;
-   final SelectDownloadFolderPanel d;
+   public final com.finalshell.ui.dialog.C5 v;
+   public final SelectDownloadFolderPanel d;
    public static String a;
 
-   LP_3(SelectDownloadFolderPanel var1, com.finalshell.ui.dialog.C5 var2) {
+   public LP_3(SelectDownloadFolderPanel var1, com.finalshell.ui.dialog.C5 var2) {
       this.d = var1;
       this.v = var2;
    }

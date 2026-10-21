@@ -5,9 +5,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Uv2 extends MouseAdapter {
-   final RouteTracePanel3 q;
+   public final RouteTracePanel3 q;
 
-   Uv2(RouteTracePanel3 var1) {
+   public Uv2(RouteTracePanel3 var1) {
       this.q = var1;
    }
 

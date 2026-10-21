@@ -256,39 +256,39 @@ public class KC3 extends Ky4 {
       }
    }
 
-   static boolean O$boolean(KC3 var0) {
+   public static boolean O$boolean(KC3 var0) {
       return var0.y;
    }
 
-   static boolean E(KC3 var0) {
+   public static boolean E(KC3 var0) {
       return var0.t;
    }
 
-   static Ky4 H(KC3 var0) {
+   public static Ky4 H(KC3 var0) {
       return var0.S;
    }
 
-   static void s(KC3 var0) {
+   public static void s(KC3 var0) {
       var0.s();
    }
 
-   static void U(KC3 var0, Component var1, int var2, int var3) {
+   public static void U(KC3 var0, Component var1, int var2, int var3) {
       var0.C(var1, var2, var3);
    }
 
-   static Insets k(KC3 var0) {
+   public static Insets k(KC3 var0) {
       return var0.n;
    }
 
-   static boolean Z(KC3 var0) {
+   public static boolean Z(KC3 var0) {
       return var0.X;
    }
 
-   static boolean u(KC3 var0) {
+   public static boolean u(KC3 var0) {
       return var0.o;
    }
 
-   static Map O$Map(KC3 var0) {
+   public static Map O$Map(KC3 var0) {
       return var0.R;
    }
 

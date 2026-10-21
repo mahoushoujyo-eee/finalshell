@@ -8,9 +8,9 @@ import java.awt.event.WindowFocusListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class TP3 implements WindowFocusListener {
-   final ClearListDialog u;
+   public final ClearListDialog u;
 
-   TP3(ClearListDialog var1) {
+   public TP3(ClearListDialog var1) {
       this.u = var1;
    }
 

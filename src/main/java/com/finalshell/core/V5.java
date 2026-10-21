@@ -6,9 +6,6 @@ import java.net.UnknownHostException;
 import org.apache.hc.client5.http.SystemDefaultDnsResolver;
 
 public class V5 extends SystemDefaultDnsResolver {
-   V5() {
-   }
-
    @Override
    public InetAddress[] resolve(String var1) throws UnknownHostException {
       try {

@@ -9,13 +9,13 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JLabel;
 
 public class J0 extends JLabel {
-   boolean E;
-   boolean P;
-   boolean y;
-   boolean d;
-   com.finalshell.core.Kw4 e;
-   Color z;
-   Color f;
+   public boolean E;
+   public boolean P;
+   public boolean y;
+   public boolean d;
+   public com.finalshell.core.Kw4 e;
+   public Color z;
+   public Color f;
    public static long[] a;
    public static Integer[] b;
 

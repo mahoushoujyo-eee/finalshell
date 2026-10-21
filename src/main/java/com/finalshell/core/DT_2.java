@@ -11,7 +11,7 @@ public class DT_2 extends DU {
    }
 
    @Override
-   protected String getPropertyPrefix() {
+   public String getPropertyPrefix() {
       return b;
    }
 

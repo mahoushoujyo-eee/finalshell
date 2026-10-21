@@ -8,9 +8,9 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class Gv_2 implements DocumentListener {
-   final Vc2 d;
+   public final Vc2 d;
 
-   Gv_2(Vc2 var1) {
+   public Gv_2(Vc2 var1) {
       this.d = var1;
    }
 

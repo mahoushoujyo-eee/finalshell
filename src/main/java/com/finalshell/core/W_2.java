@@ -14,17 +14,17 @@ import javax.swing.JComponent;
 import javax.swing.SwingConstants;
 
 public class W_2 extends Lz2_2 implements RJ, SwingConstants {
-   protected com.finalshell.ui.model.M R = Q2.k;
-   protected Color a = Q2.V;
-   protected int J = Q2.o;
-   protected int T = Q2.n;
-   protected float I = Q2.w;
-   protected int q = Q2.W;
-   protected float M = Q2.L;
-   protected boolean Y = true;
-   protected int u = 1;
-   protected int v = 0;
-   protected int F = -1;
+   public com.finalshell.ui.model.M R = Q2.k;
+   public Color a = Q2.V;
+   public int J = Q2.o;
+   public int T = Q2.n;
+   public float I = Q2.w;
+   public int q = Q2.W;
+   public float M = Q2.L;
+   public boolean Y = true;
+   public int u = 1;
+   public int v = 0;
+   public int F = -1;
    public static int[] w;
    public static String[] b;
    public static String[] f;
@@ -447,21 +447,21 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       var1.fillRect(0, 0, (int)var2.getWidth(), (int)var2.getHeight());
    }
 
-   protected void C(Graphics2D var1, JComponent var2) {
+   public void C(Graphics2D var1, JComponent var2) {
       Dimension var3 = var2.getSize();
       this.E(var1, var2, var3);
       this.s(var1, var2, var3);
       this.S(var1, var2, var3);
    }
 
-   protected void m(Graphics2D var1, JComponent var2) {
+   public void m(Graphics2D var1, JComponent var2) {
       var1.setColor(this.U(var2));
       var1.fillRoundRect(1, 1, var2.getWidth() - 2, var2.getHeight() - 2, this.J * 2, this.J * 2);
       var1.setColor(this.a);
       var1.drawRoundRect(0, 0, var2.getWidth() - 1, var2.getHeight() - 1, this.J * 2, this.J * 2);
    }
 
-   protected void E(Graphics2D var1, JComponent var2, Dimension var3) {
+   public void E(Graphics2D var1, JComponent var2, Dimension var3) {
       int[] var4 = B$arrint();
       int var10000 = this.T;
       if (var4 == null) {
@@ -477,11 +477,11 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       var5.n(var1, this.w(var3));
    }
 
-   protected float j$float() {
+   public float j$float() {
       return this.I;
    }
 
-   protected void s(Graphics2D var1, JComponent var2, Dimension var3) {
+   public void s(Graphics2D var1, JComponent var2, Dimension var3) {
       int[] var10000 = B$arrint();
       Color var5 = this.U(var2);
       int[] var4 = var10000;
@@ -496,7 +496,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       var1.fill(this.z(var2, var3, true));
    }
 
-   protected void S(Graphics2D var1, JComponent var2, Dimension var3) {
+   public void S(Graphics2D var1, JComponent var2, Dimension var3) {
       int[] var4 = B$arrint();
       if (var4 == null) {
          if (this.a == null) {
@@ -509,7 +509,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       var1.draw(this.z(var2, var3, false));
    }
 
-   protected Color U(JComponent var1) {
+   public Color U(JComponent var1) {
       int[] var10000 = B$arrint();
       Color var3 = this.t(var1);
       int[] var2 = var10000;
@@ -526,11 +526,11 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       return var4 < 0 ? P9.M(var3, Math.max(0, Math.min((int)(this.M * 255.0F), a(615, 5561332905992221973L)))) : var3;
    }
 
-   protected Color t(JComponent var1) {
+   public Color t(JComponent var1) {
       return var1.getBackground();
    }
 
-   protected Rectangle w(Dimension var1) {
+   public Rectangle w(Dimension var1) {
       switch (C_2.q[this.R.ordinal()]) {
          case 1:
             return new Rectangle(0, 0, var1.width, var1.height);
@@ -542,7 +542,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       }
    }
 
-   protected Shape z(JComponent var1, Dimension var2, boolean var3) {
+   public Shape z(JComponent var1, Dimension var2, boolean var3) {
       switch (C_2.q[this.R.ordinal()]) {
          case 1:
             return O42.k(var1, var3 ? a(30367, 32490) : a(30363, 8664), new K(this, var1, var2, var3), this.j(var1, var2));
@@ -553,7 +553,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       }
    }
 
-   protected Object[] j(JComponent var1, Dimension var2) {
+   public Object[] j(JComponent var1, Dimension var2) {
       Object[] var10000 = new Object[a(2100, 1832195399082049346L)];
       var10000[0] = this.J;
       var10000[1] = this.T;
@@ -566,7 +566,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       return var10000;
    }
 
-   protected GeneralPath E(JComponent var1, Dimension var2, boolean var3) {
+   public GeneralPath E(JComponent var1, Dimension var2, boolean var3) {
       int[] var4 = B$arrint();
       int var10000 = (var3) ? 1 : 0;
       if (var4 == null) {
@@ -595,7 +595,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       return var6;
    }
 
-   protected GeneralPath a(JComponent var1, Dimension var2, boolean var3) {
+   public GeneralPath a(JComponent var1, Dimension var2, boolean var3) {
       int[] var4 = B$arrint();
       int var10000 = this.u;
       if (var4 == null) {
@@ -875,11 +875,11 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       return var19;
    }
 
-   protected Shape d(JComponent var1, Dimension var2, boolean var3) {
+   public Shape d(JComponent var1, Dimension var2, boolean var3) {
       return O42.k(var1, var3 ? a(30364, 21365) : a(30362, 18941), new L2_2(this, var1, var2, var3), this.j(var1, var2));
    }
 
-   protected GeneralPath G(JComponent var1, Dimension var2, boolean var3) {
+   public GeneralPath G(JComponent var1, Dimension var2, boolean var3) {
       int[] var4 = B$arrint();
       int var10000 = this.u;
       if (var4 == null) {
@@ -1189,7 +1189,7 @@ public class W_2 extends Lz2_2 implements RJ, SwingConstants {
       return var19;
    }
 
-   protected int c() {
+   public int c() {
       int[] var1 = B$arrint();
       W_2 var10000 = this;
       if (var1 == null) {

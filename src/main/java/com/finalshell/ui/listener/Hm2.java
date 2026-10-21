@@ -4,16 +4,16 @@ import java.awt.Rectangle;
 import java.awt.event.MouseEvent;
 
 public class Hm2 extends HG {
-   final com.finalshell.ui.dialog.Ds2 l;
+   public final com.finalshell.ui.dialog.Ds2 l;
 
-   Hm2(com.finalshell.ui.dialog.Ds2 var1) {
+   public Hm2(com.finalshell.ui.dialog.Ds2 var1) {
       this.l = var1;
    }
 
    @Override
-   protected Rectangle V(MouseEvent var1) {
+   public Rectangle V(MouseEvent var1) {
       int[] var2 = com.finalshell.ui.dialog.Ds2.U$arrint();
-      int var10000 = this.l.v;
+      int var10000 = (this.l.v) ? 1 : 0;
       if (var2 == null) {
          if (!this.l.v) {
             return null;

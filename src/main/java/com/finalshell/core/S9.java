@@ -20,15 +20,15 @@ public class S9 {
       this.W();
    }
 
-   void W() {
+   public void W() {
       this.D = this.U.charAt(this.f++);
    }
 
-   char i() {
+   public char i() {
       return this.U.charAt(this.f);
    }
 
-   boolean b() {
+   public boolean b() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -59,7 +59,7 @@ public class S9 {
       // 29: ireturn
    }
 
-   A0_2 U() {
+   public A0_2 U() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -835,7 +835,7 @@ public class S9 {
       // e8: return
    }
 
-   A0_2 w(boolean param1) {
+   public A0_2 w(boolean param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -872,7 +872,7 @@ public class S9 {
       // 33: areturn
    }
 
-   Object X(boolean param1) {
+   public Object X(boolean param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3849,7 +3849,7 @@ public class S9 {
       // 1a81: areturn
    }
 
-   N5 h(N5 param1) {
+   public N5 h(N5 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4012,7 +4012,7 @@ public class S9 {
       // 158: areturn
    }
 
-   protected long K() {
+   public long K() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4105,7 +4105,7 @@ public class S9 {
       // b3: lreturn
    }
 
-   protected double I(long param1) {
+   public double I(long param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4175,7 +4175,7 @@ public class S9 {
       // 7a: dreturn
    }
 
-   protected Object u() {
+   public Object u() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4267,7 +4267,7 @@ public class S9 {
       // b4: athrow
    }
 
-   static boolean K(char param0) {
+   public static boolean K(char param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4333,7 +4333,7 @@ public class S9 {
       // 7e: ireturn
    }
 
-   protected S6 p() {
+   public S6 p() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4678,7 +4678,7 @@ public class S9 {
       // 302: areturn
    }
 
-   String Z() {
+   public String Z() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4832,7 +4832,7 @@ public class S9 {
       // 13a: areturn
    }
 
-   String N() {
+   public String N() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -4906,7 +4906,7 @@ public class S9 {
       // 7c: areturn
    }
 
-   void h(char param1) {
+   public void h(char param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5145,7 +5145,7 @@ public class S9 {
       // 137: areturn
    }
 
-   A0_2 A(String param1) {
+   public A0_2 A(String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5561,7 +5561,7 @@ public class S9 {
       // 358: athrow
    }
 
-   static boolean Y(S9 var0) {
+   public static boolean Y(S9 var0) {
       return var0.e;
    }
 

@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class RU implements ActionListener {
-   final KF3 L;
+   public final KF3 L;
 
-   RU(KF3 var1) {
+   public RU(KF3 var1) {
       this.L = var1;
    }
 

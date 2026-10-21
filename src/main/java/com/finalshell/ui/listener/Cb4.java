@@ -8,9 +8,9 @@ import java.awt.event.MouseWheelEvent;
 import javax.swing.SwingUtilities;
 
 public class Cb4 extends MouseAdapter {
-   final II a;
+   public final II a;
 
-   Cb4(II var1) {
+   public Cb4(II var1) {
       this.a = var1;
    }
 

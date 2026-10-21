@@ -7,12 +7,12 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class L5 extends Lz2_2 {
-   protected boolean p = true;
-   protected int E = GO.Fx;
-   protected boolean A = false;
-   protected int Q = GO.FG;
-   protected boolean f = true;
-   protected boolean v = true;
+   public boolean p = true;
+   public int E = GO.Fx;
+   public boolean A = false;
+   public int Q = GO.FG;
+   public boolean f = true;
+   public boolean v = true;
 
    public boolean h() {
       return this.p;

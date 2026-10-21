@@ -23,10 +23,10 @@ import javax.swing.JTable;
 import net.miginfocom.swing.MigLayout;
 
 public class EffectPreview extends Z7 {
-   UN Z;
-   JLabel u;
-   JTable s;
-   String V;
+   public UN Z;
+   public JLabel u;
+   public JTable s;
+   public String V;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -45,7 +45,7 @@ public class EffectPreview extends Z7 {
       }
    }
 
-   void V() {
+   public void V() {
       Registry.emptyArgs();
       long var9 = 270389152141252877L;
       Ref.h2(270389152141252877L, var9);
@@ -134,7 +134,7 @@ public class EffectPreview extends Z7 {
       }
    }
 
-   void U() {
+   public void U() {
       UN var10001 = new UN();
       long var3 = 636070429409312733L;
       UN var2 = var10001;
@@ -175,7 +175,7 @@ public class EffectPreview extends Z7 {
       ((JTable)Ref.g(581380630510889882L, var18)).getSelectionModel().setSelectionInterval(var1, var1);
    }
 
-   void k(String var1) {
+   public void k(String var1) {
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
       Ref.h2(270389152141252877L, var2);
@@ -230,7 +230,7 @@ public class EffectPreview extends Z7 {
       }
    }
 
-   void H() {
+   public void H() {
       Object var1 = 174835000208644399L;
       JLabel var10001 = (JLabel)Ref.g(174835000208644399L, var1);
       new StringBuilder().append(a(-9486, -27094));

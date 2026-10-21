@@ -5,9 +5,6 @@ import java.security.PrivilegedAction;
 public class Wn4 implements PrivilegedAction {
    public static String a;
 
-   Wn4() {
-   }
-
    public String u() {
       return System.getProperty(a);
    }

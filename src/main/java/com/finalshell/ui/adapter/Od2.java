@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.AbstractAction;
 
 public class Od2 extends AbstractAction {
-   final U W;
+   public final U W;
 
-   Od2(U var1, String var2) {
+   public Od2(U var1, String var2) {
       super(var2);
       this.W = var1;
    }

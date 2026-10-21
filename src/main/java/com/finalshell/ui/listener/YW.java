@@ -41,7 +41,7 @@ public class YW extends MouseAdapter {
    public Insets j;
    public EZ g;
    public EZ p;
-   final BM o;
+   public final BM o;
    public static long[] a;
    public static Integer[] b;
 
@@ -137,13 +137,13 @@ public class YW extends MouseAdapter {
          int var9 = var4.getWidth() * BM.B(this.o);
          int var10 = var4.getHeight() * BM.B(this.o);
          Insets var11 = BM.v(this.o).U$Insets();
-         int var10001 = BM.C(this.o);
+         int var10001 = (BM.C(this.o)) ? 1 : 0;
          if (var3 == null) {
             var10001 = var10001 != 0 ? a(30561, 4735278992581391554L) : 0;
          }
 
          int var12 = (var7 + var10001) / 2 - var9 / 2;
-         var10001 = BM.C(this.o);
+         var10001 = (BM.C(this.o)) ? 1 : 0;
          if (var3 == null) {
             var10001 = var10001 != 0 ? a(23745, 4742954739731292009L) : 0;
          }
@@ -160,7 +160,7 @@ public class YW extends MouseAdapter {
                this.o.requestFocusInWindow();
             }
 
-            var66 = BM.D(this.o);
+            var66 = (BM.D(this.o)) ? 1 : 0;
          }
 
          label1877: {
@@ -171,7 +171,7 @@ public class YW extends MouseAdapter {
                         label1887: {
                            if (var3 == null) {
                               if (var66 == 0) {
-                                 var66 = BM.x(this.o);
+                                 var66 = (BM.x(this.o)) ? 1 : 0;
                                  if (var3 != null) {
                                     break label1873;
                                  }
@@ -2644,7 +2644,7 @@ public class YW extends MouseAdapter {
       }
    }
 
-   YW(BM var1, com.finalshell.core.XD var2) {
+   public YW(BM var1, com.finalshell.core.XD var2) {
       this(var1);
    }
 

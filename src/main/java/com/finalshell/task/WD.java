@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Cc2;
 import java.lang.reflect.InvocationTargetException;
 
 public class WD implements Runnable {
-   final Cc2 O;
+   public final Cc2 O;
 
-   WD(Cc2 var1) {
+   public WD(Cc2 var1) {
       this.O = var1;
    }
 

@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.Qm2;
 import java.awt.Rectangle;
 
 public class Yk4 implements Runnable {
-   final Rectangle N;
-   final Qm2 W;
+   public final Rectangle N;
+   public final Qm2 W;
 
-   Yk4(Qm2 var1, Rectangle var2) {
+   public Yk4(Qm2 var1, Rectangle var2) {
       this.W = var1;
       this.N = var2;
    }

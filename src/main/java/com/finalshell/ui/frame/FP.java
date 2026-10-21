@@ -9,8 +9,8 @@ import javax.swing.JFrame;
 import net.miginfocom.swing.MigLayout;
 
 public class FP extends JFrame {
-   LogPanel g;
-   User i;
+   public LogPanel g;
+   public User i;
    public static String[] a;
    public static String[] b;
    public static long[] c;

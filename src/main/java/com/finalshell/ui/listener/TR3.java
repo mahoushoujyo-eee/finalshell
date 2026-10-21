@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JSplitPane;
 
 public class TR3 implements PropertyChangeListener {
-   final AppendCarriageReturnCRPanel Y;
+   public final AppendCarriageReturnCRPanel Y;
 
-   TR3(AppendCarriageReturnCRPanel var1) {
+   public TR3(AppendCarriageReturnCRPanel var1) {
       this.Y = var1;
    }
 

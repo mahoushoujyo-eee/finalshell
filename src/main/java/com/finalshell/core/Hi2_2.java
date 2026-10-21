@@ -1,12 +1,12 @@
 package com.finalshell.core;
 
 public class Hi2_2 implements FY_2 {
-   static boolean x;
-   final Rx2_2 u;
-   final H3_2 D;
+   public static boolean x;
+   public final Rx2_2 u;
+   public final H3_2 D;
    public static String a;
 
-   Hi2_2(H3_2 var1, Rx2_2 var2) {
+   public Hi2_2(H3_2 var1, Rx2_2 var2) {
       this.D = var1;
       this.u = var2;
    }

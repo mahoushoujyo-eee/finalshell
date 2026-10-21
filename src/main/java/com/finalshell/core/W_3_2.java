@@ -3,13 +3,13 @@ package com.finalshell.core;
 import javax.swing.BorderFactory;
 
 public class W_3_2 extends KD {
-   final D_2_2 Z;
+   public final D_2_2 Z;
    public static long[] a;
    public static Integer[] b;
 
-   W_3_2(D_2_2 var1) {
+   public W_3_2(D_2_2 var1) {
+   super();
       this.Z = var1;
-      super();
       this.setEnabled(D_2_2.s(this.Z).isClosable());
       this.g(false);
       this.f(0);

@@ -7,19 +7,19 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Nc2 implements Comparable {
    public final Ph2 j;
-   protected final boolean O;
-   protected int V;
+   public final boolean O;
+   public int V;
    public final String C;
    public String c;
    public String l;
-   protected DL3 D;
+   public DL3 D;
    public String t;
-   protected boolean s;
-   protected boolean q;
-   protected boolean y;
-   protected boolean Q;
-   protected boolean W;
-   protected boolean B;
+   public boolean s;
+   public boolean q;
+   public boolean y;
+   public boolean Q;
+   public boolean W;
+   public boolean B;
    public HR b;
    public static String[] a;
    public static String[] d;
@@ -29,8 +29,8 @@ public class Nc2 implements Comparable {
    public static Long[] h;
 
    public Nc2(java.lang.Class var1, Ph2 var2) {
+   super();
       String var3;
-      super();
       this.s = false;
       this.q = false;
       String var10000 = Nv4.o();

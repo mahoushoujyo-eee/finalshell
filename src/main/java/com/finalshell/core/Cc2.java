@@ -21,11 +21,11 @@ public class Cc2 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) throws IOException {
+   public void T(DataOutputStream var1) throws IOException {
       var1.writeShort(this.h);
    }
 
-   static Y_3 J(short var0, DataInputStream var1) throws IOException {
+   public static Y_3 J(short var0, DataInputStream var1) throws IOException {
       return Z(var0, var1);
    }
 }

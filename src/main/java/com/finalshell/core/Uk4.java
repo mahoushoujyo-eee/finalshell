@@ -6,10 +6,10 @@ import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 
 public class Uk4 implements Transferable {
-   Object[] j;
-   DataFlavor G;
-   DataFlavor[] A;
-   final Yd2 R;
+   public Object[] j;
+   public DataFlavor G;
+   public DataFlavor[] A;
+   public final Yd2 R;
    public static String a;
 
    public Uk4(Yd2 var1, Object[] var2) {

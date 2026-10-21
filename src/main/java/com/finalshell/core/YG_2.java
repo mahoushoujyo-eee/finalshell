@@ -8,22 +8,22 @@ import javax.swing.JComponent;
 import javax.swing.JScrollBar;
 
 public class YG_2 extends Y2 {
-   protected PF3 y = null;
-   protected PF3 T = null;
-   protected PF3 E = null;
-   protected PF3 f;
-   protected PF3 w;
-   protected PF3 s;
-   protected PF3 S;
-   protected PF3 A;
-   protected PF3 X;
-   protected PF3 r;
-   protected PF3 g;
-   protected PF3 I;
-   protected PF3 M;
-   protected PF3 u;
-   protected P62 N;
-   protected boolean P;
+   public PF3 y = null;
+   public PF3 T = null;
+   public PF3 E = null;
+   public PF3 f;
+   public PF3 w;
+   public PF3 s;
+   public PF3 S;
+   public PF3 A;
+   public PF3 X;
+   public PF3 r;
+   public PF3 g;
+   public PF3 I;
+   public PF3 M;
+   public PF3 u;
+   public P62 N;
+   public boolean P;
 
    public YG_2() {
       int var10000 = Yp2.f();
@@ -173,7 +173,7 @@ public class YG_2 extends Y2 {
    }
 
    @Override
-   protected void O(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+   public void O(Graphics2D var1, JScrollBar var2, Rectangle var3) {
       int var4 = Yp2.T();
       YG_2 var10000 = this;
       if (var4 != 0) {
@@ -197,7 +197,7 @@ public class YG_2 extends Y2 {
       var6.n(var1, var3);
    }
 
-   protected PF3 H(JScrollBar var1) {
+   public PF3 H(JScrollBar var1) {
       int var2 = Yp2.f();
       int var10000 = var1.getOrientation();
       if (var2 == 0) {
@@ -241,7 +241,7 @@ public class YG_2 extends Y2 {
    }
 
    @Override
-   protected void Z(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+   public void Z(Graphics2D var1, JScrollBar var2, Rectangle var3) {
       int var4 = Yp2.T();
       YG_2 var10000 = this;
       if (var4 != 0) {
@@ -265,7 +265,7 @@ public class YG_2 extends Y2 {
       var6.n(var1, var3);
    }
 
-   protected PF3 x(JScrollBar var1) {
+   public PF3 x(JScrollBar var1) {
       int var2 = Yp2.T();
       int var10000 = var1.getOrientation();
       if (var2 != 0) {
@@ -309,7 +309,7 @@ public class YG_2 extends Y2 {
    }
 
    @Override
-   protected void E(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+   public void E(Graphics2D var1, JScrollBar var2, Rectangle var3) {
       PF3 var4 = this.Q(var2);
       if (var4 != null) {
          Insets var5 = this.v(var2);
@@ -317,7 +317,7 @@ public class YG_2 extends Y2 {
       }
    }
 
-   protected PF3 Q(JScrollBar var1) {
+   public PF3 Q(JScrollBar var1) {
       int var2;
       int var4;
       label106: {

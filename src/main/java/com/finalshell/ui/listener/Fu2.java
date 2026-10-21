@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Fu2 implements PropertyChangeListener {
-   final Yh2_2 u;
+   public final Yh2_2 u;
 
-   Fu2(Yh2_2 var1) {
+   public Fu2(Yh2_2 var1) {
       this.u = var1;
    }
 

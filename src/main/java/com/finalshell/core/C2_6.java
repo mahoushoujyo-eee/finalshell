@@ -6,17 +6,18 @@ import java.net.URI;
 import java.util.Map;
 
 public class C2_6 extends L_6{
-   static boolean X;
-   final String d;
-   final boolean y;
-   final URI N;
-   final Map A;
-   final P3_3 g;
+   public static boolean X;
+   public final String d;
+   public final boolean y;
+   public final URI N;
+   public final Map A;
+   public final P3_3 g;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   C2_6(P3_3 var1, String var2, boolean var3, URI var4, Map var5) {
+   public C2_6(P3_3 var1, String var2, boolean var3, URI var4, Map var5) {
+   super();
       this.g = var1;
       boolean var10000 = GO.B();
       this.d = var2;
@@ -24,7 +25,6 @@ public class C2_6 extends L_6{
       this.N = var4;
       boolean var6 = var10000;
       this.A = var5;
-      super();
       if (Ky4.F$arrString() != null) {
          GO.F(!var6);
       }

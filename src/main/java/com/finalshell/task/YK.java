@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Ip5;
 
 public class YK implements Runnable {
-   final Ip5 o;
+   public final Ip5 o;
    public static String a;
 
-   YK(Ip5 var1) {
+   public YK(Ip5 var1) {
       this.o = var1;
    }
 

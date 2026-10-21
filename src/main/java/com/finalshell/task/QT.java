@@ -12,10 +12,10 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class QT implements Runnable {
-   final TJ3 R;
+   public final TJ3 R;
    public static String a;
 
-   QT(TJ3 var1) {
+   public QT(TJ3 var1) {
       this.R = var1;
    }
 
@@ -45,7 +45,7 @@ public class QT implements Runnable {
             Object var14 = 411470404885834306L;
             Object var10008 = Ref.g(411470404885834306L, var14);
             Object var16 = 228183978052282907L;
-new String(((JPasswordField)Ref.g(228183978052282907L, var16)).getPassword());
+var10008 = new String(((JPasswordField)Ref.g(228183978052282907L, var16)).getPassword());
             if (var1 != null) {
                var10007 = Registry.packArgs(var10007);
                long var18 = 330094358428833085L;
@@ -78,7 +78,7 @@ new String(((JPasswordField)Ref.g(228183978052282907L, var16)).getPassword());
                Object var40 = 411470404885834306L;
                Object var10018 = Ref.g(411470404885834306L, var40);
                Object var42 = 228183978052282907L;
-new String(((JPasswordField)Ref.g(228183978052282907L, var42)).getPassword());
+var10018 = new String(((JPasswordField)Ref.g(228183978052282907L, var42)).getPassword());
             }
 
             Object var2 = var10007;
@@ -102,7 +102,7 @@ new String(((JPasswordField)Ref.g(228183978052282907L, var42)).getPassword());
             label130: {
                QT var140 = var139.equals(var10012);
                if (var1 != null) {
-                  if (var140 == false) {
+                  if (var140 == null) {
                      Registry.packArgs(var2);
                      long var52 = 310648841563123270L;
                      var10012 = Ref.h2(310648841563123270L, var52);
@@ -156,7 +156,7 @@ new String(((JPasswordField)Ref.g(228183978052282907L, var42)).getPassword());
                   Object var82 = 411470404885834306L;
                   Object var10026 = Ref.g(411470404885834306L, var82);
                   Object var84 = 228183978052282907L;
-new String(((JPasswordField)Ref.g(228183978052282907L, var84)).getPassword());
+var10026 = new String(((JPasswordField)Ref.g(228183978052282907L, var84)).getPassword());
                   var10025 = Registry.packArgs(var10025);
                   long var87 = 583865646792521502L;
                   Object[] var86 = (Object[])var10025;
@@ -196,7 +196,7 @@ new String(((JPasswordField)Ref.g(228183978052282907L, var84)).getPassword());
                   var10030.isVisible();
                }
 
-               if (var140 == false) {
+               if (var140 == null) {
                   Object var98 = 475144306283845054L;
                   Ref.g(475144306283845054L, var98);
                   Object var100 = 411470404885834306L;

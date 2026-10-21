@@ -8,12 +8,12 @@ public class Iy2 extends IB implements H_2, DJ3 {
       super(var1);
    }
 
-   protected void N(com.finalshell.ui.panel.QL var1) {
+   public void N(com.finalshell.ui.panel.QL var1) {
       var1.o(this);
       var1.x(this);
    }
 
-   protected void A(com.finalshell.ui.panel.QL var1) {
+   public void A(com.finalshell.ui.panel.QL var1) {
       var1.Y(this);
       var1.Z(this);
    }
@@ -63,34 +63,34 @@ public class Iy2 extends IB implements H_2, DJ3 {
       this.M();
    }
 
-   protected void f(com.finalshell.ui.panel.QL var1) {
+   public void f(com.finalshell.ui.panel.QL var1) {
       Sj2 var2 = (Sj2)this.o();
       if (var2 != null) {
          var1.N(var2);
       }
    }
 
-   protected void w(com.finalshell.ui.panel.QL var1) {
+   public void w(com.finalshell.ui.panel.QL var1) {
       this.J(var1.i());
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.w((com.finalshell.ui.panel.QL)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.f((com.finalshell.ui.panel.QL)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.A((com.finalshell.ui.panel.QL)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.N((com.finalshell.ui.panel.QL)var1);
    }
 }

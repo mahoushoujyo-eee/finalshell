@@ -5,13 +5,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PrivateKey implements ActionListener {
-   final boolean f;
-   final ImportPrivateKeyDialog F;
+   public final boolean f;
+   public final ImportPrivateKeyDialog F;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   PrivateKey(ImportPrivateKeyDialog var1, boolean var2) {
+   public PrivateKey(ImportPrivateKeyDialog var1, boolean var2) {
       this.F = var1;
       this.f = var2;
    }

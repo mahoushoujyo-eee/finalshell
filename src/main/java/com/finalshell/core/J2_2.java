@@ -4,9 +4,9 @@ import java.awt.Graphics;
 import javax.swing.JTextArea;
 
 public class J2_2 extends JTextArea {
-   final com.finalshell.ui.panel.Cc2 g;
+   public final com.finalshell.ui.panel.Cc2 g;
 
-   J2_2(com.finalshell.ui.panel.Cc2 var1) {
+   public J2_2(com.finalshell.ui.panel.Cc2 var1) {
       this.g = var1;
    }
 

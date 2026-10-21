@@ -11,25 +11,25 @@ import java.util.HashSet;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class FO {
-   DatagramSocket K;
+   public DatagramSocket K;
    public InetAddress c;
    public int b;
-   LinkedBlockingQueue i = new LinkedBlockingQueue();
-   boolean H = true;
-   F0 O;
-   InetAddress h;
-   String n;
-   int F;
-   HashSet W = new HashSet();
-   String L;
-   int S;
-   int X;
-   PingMessageR C;
-   String a;
-   InetAddress f;
-   int R;
-   int t;
-   byte[] o;
+   public LinkedBlockingQueue i = new LinkedBlockingQueue();
+   public boolean H = true;
+   public F0 O;
+   public InetAddress h;
+   public String n;
+   public int F;
+   public HashSet W = new HashSet();
+   public String L;
+   public int S;
+   public int X;
+   public PingMessageR C;
+   public String a;
+   public InetAddress f;
+   public int R;
+   public int t;
+   public byte[] o;
    public static String d;
    public static long e;
 
@@ -62,7 +62,7 @@ public class FO {
       PingMessageR.U.execute(new com.finalshell.task.L32(this));
    }
 
-   void B(DatagramPacket var1) {
+   public void B(DatagramPacket var1) {
       byte[] var2 = this.o;
       byte[] var3 = new byte[var2.length + var1.getLength()];
       byte[] var4 = var1.getData();

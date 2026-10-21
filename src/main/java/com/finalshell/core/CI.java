@@ -4,9 +4,9 @@ import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GenericFutureListener;
 
 public class CI implements GenericFutureListener {
-   final XE_2 q;
+   public final XE_2 q;
 
-   CI(XE_2 var1) {
+   public CI(XE_2 var1) {
       this.q = var1;
    }
 

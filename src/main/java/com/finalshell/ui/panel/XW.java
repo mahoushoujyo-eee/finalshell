@@ -19,14 +19,14 @@ import java.util.List;
 import javax.swing.JComponent;
 
 public class XW extends JComponent implements ActionListener {
-   protected List N;
-   protected BufferedImage Z;
-   protected BufferedImage X;
-   protected List I;
-   protected WC_2 R;
-   protected boolean u;
-   protected boolean O;
-   protected N62 e;
+   public List N;
+   public BufferedImage Z;
+   public BufferedImage X;
+   public List I;
+   public WC_2 R;
+   public boolean u;
+   public boolean O;
+   public N62 e;
    public static String[] S;
    public static String a;
 
@@ -39,8 +39,8 @@ public class XW extends JComponent implements ActionListener {
    }
 
    public XW(BufferedImage var1, BufferedImage var2) {
+   super();
       String[] var10000 = w();
-      super();
       this.N = new ArrayList(1);
       this.Z = null;
       this.X = null;
@@ -405,7 +405,7 @@ public class XW extends JComponent implements ActionListener {
       }
    }
 
-   protected void u() {
+   public void u() {
       BufferedImage var1 = this.Z;
       this.Z = this.X;
       this.X = var1;
@@ -415,7 +415,7 @@ public class XW extends JComponent implements ActionListener {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Graphics2D var3;
       BufferedImage var5;
       label35: {

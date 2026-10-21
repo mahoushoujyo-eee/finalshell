@@ -5,9 +5,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class X4 extends ComponentAdapter {
-   final Hl2 g;
+   public final Hl2 g;
 
-   X4(Hl2 var1) {
+   public X4(Hl2 var1) {
       this.g = var1;
    }
 

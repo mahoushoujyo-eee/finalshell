@@ -30,7 +30,7 @@ public class Im4 {
    public final List p = new CopyOnWriteArrayList();
    @Nullable
    public final In4 J;
-   boolean X = false;
+   public boolean X = false;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -242,7 +242,7 @@ public class Im4 {
       this.X = var1;
    }
 
-   void P() {
+   public void P() {
       this.X = true;
       boolean var10000 = com.finalshell.ui.model.J2.P();
       Iterator var2 = this.o.iterator();
@@ -257,7 +257,7 @@ public class Im4 {
       }
    }
 
-   void z() {
+   public void z() {
       boolean var10000 = com.finalshell.ui.model.J2.g();
       Iterator var2 = this.p.iterator();
       boolean var1 = var10000;
@@ -740,7 +740,7 @@ public class Im4 {
 
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void B$void() {
+   public void B$void() {
       boolean var10000 = com.finalshell.ui.model.J2.g();
       this.v.lock();
       boolean var1 = var10000;
@@ -776,7 +776,7 @@ public class Im4 {
    }
 
    @NotNull
-   Ua2 T$ua_2() {
+   public Ua2 T$ua_2() {
       boolean var1 = com.finalshell.ui.model.J2.P();
       Im4 var10000 = this;
       if (!var1) {
@@ -791,7 +791,7 @@ public class Im4 {
    }
 
    @NotNull
-   Ua2 N() {
+   public Ua2 N() {
       boolean var1 = com.finalshell.ui.model.J2.g();
       Im4 var10000 = this;
       if (var1) {
@@ -816,7 +816,7 @@ public class Im4 {
    }
 
    @Nullable
-   In4 p() {
+   public In4 p() {
       return this.J;
    }
 

@@ -10,36 +10,36 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Rdp2 {
-   Vw2 f;
+   public Vw2 f;
    public int M;
-   int Q;
-   Qm2 p;
-   Connection K;
-   boolean U;
-   Object x;
-   boolean k;
+   public int Q;
+   public Qm2 p;
+   public Connection K;
+   public boolean U;
+   public Object x;
+   public boolean k;
    public HashMap L;
-   boolean T;
-   Object z;
-   Object H;
+   public boolean T;
+   public Object z;
+   public Object H;
    public InetAddress G;
    public int V;
    public int s;
-   int B;
-   boolean r;
-   int I;
-   int A;
-   int g;
-   int F;
-   CU e;
-   int D;
-   static Random R;
-   long J;
-   boolean W;
-   boolean Z;
-   static int Y;
-   Object a;
-   HashMap j;
+   public int B;
+   public boolean r;
+   public int I;
+   public int A;
+   public int g;
+   public int F;
+   public CU e;
+   public int D;
+   public static Random R;
+   public long J;
+   public boolean W;
+   public boolean Z;
+   public static int Y;
+   public Object a;
+   public HashMap j;
    public static String[] b;
    public static String[] c;
    public static long d;
@@ -49,7 +49,7 @@ public class Rdp2 {
       __vfClinit__();
    }
 
-   Rdp2(Qm2 var1) {
+   public Rdp2(Qm2 var1) {
       Ky4[] var10000 = Qm2.J();
       this.f = null;
       this.M = 0;
@@ -86,7 +86,7 @@ public class Rdp2 {
       }
    }
 
-   void V(byte[] param1, int param2, int param3) throws FG3, InterruptedException {
+   public void V(byte[] param1, int param2, int param3) throws FG3, InterruptedException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -205,7 +205,7 @@ public class Rdp2 {
       // ce: return
    }
 
-   void m(byte[] param1, int param2, int param3) throws FG3, InterruptedException {
+   public void m(byte[] param1, int param2, int param3) throws FG3, InterruptedException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -434,7 +434,7 @@ public class Rdp2 {
       var10000.Z = true;
    }
 
-   void E(Vw2 param1, boolean param2, boolean param3, boolean param4) {
+   public void E(Vw2 param1, boolean param2, boolean param3, boolean param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -598,15 +598,15 @@ public class Rdp2 {
       // 146: return
    }
 
-   void w(int var1) {
+   public void w(int var1) {
       this.p.u.x.S(this.p, var1);
    }
 
-   void S() {
+   public void S() {
       this.p.u.x.e(this.p);
    }
 
-   Vw2 Y(int var1) {
+   public Vw2 Y(int var1) {
       return (Vw2)this.L.get(var1);
    }
 
@@ -635,26 +635,26 @@ public class Rdp2 {
       }
    }
 
-   void a(int var1) {
+   public void a(int var1) {
       synchronized (this.a) {
          Vw2 var3 = (Vw2)this.L.remove(var1);
       }
    }
 
-   void H() {
+   public void H() {
       synchronized (this.H) {
          this.H.notifyAll();
       }
    }
 
-   void y() {
+   public void y() {
       synchronized (this.H) {
          this.W = true;
          this.H.notifyAll();
       }
    }
 
-   void h() {
+   public void h() {
       Vm2 var1 = new Vm2(this.p.W, this.p.u.K, this.s);
       var1.D(this.G);
       var1.A(this.V);
@@ -672,7 +672,7 @@ public class Rdp2 {
       }
    }
 
-   void l() {
+   public void l() {
       VK var1 = new VK(this.p.W, this.p.u.K);
       var1.D(this.G);
       var1.A(this.V);
@@ -690,7 +690,7 @@ public class Rdp2 {
       }
    }
 
-   void Y(ArrayList var1) {
+   public void Y(ArrayList var1) {
       int var2 = this.p.j.C();
       Vt2 var3 = new Vt2(this.p.n, var1, this.p.j.w, this.p.d.X, var2, this.p.W, this.p.u.K);
       var3.D(this.G);
@@ -703,7 +703,7 @@ public class Rdp2 {
       }
    }
 
-   void W(DatagramPacket var1) throws IOException {
+   public void W(DatagramPacket var1) throws IOException {
       this.M(var1, this.p.W);
    }
 

@@ -7,9 +7,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class DK_3 extends MouseAdapter {
-   final TunnelList b;
+   public final TunnelList b;
 
-   DK_3(TunnelList var1) {
+   public DK_3(TunnelList var1) {
       this.b = var1;
    }
 

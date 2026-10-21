@@ -6,10 +6,10 @@ import javax.swing.event.CaretListener;
 import javax.swing.event.ChangeListener;
 
 public class H5 implements CaretListener {
-   final ChangeListener N;
-   final com.finalshell.ui.panel.N_2 m;
+   public final ChangeListener N;
+   public final com.finalshell.ui.panel.N_2 m;
 
-   H5(com.finalshell.ui.panel.N_2 var1, ChangeListener var2) {
+   public H5(com.finalshell.ui.panel.N_2 var1, ChangeListener var2) {
       this.m = var1;
       this.N = var2;
    }

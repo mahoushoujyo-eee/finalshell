@@ -8,9 +8,9 @@ import java.awt.event.ComponentListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LX implements ComponentListener {
-   final AppendCarriageReturnCRPanel V;
+   public final AppendCarriageReturnCRPanel V;
 
-   LX(AppendCarriageReturnCRPanel var1) {
+   public LX(AppendCarriageReturnCRPanel var1) {
       this.V = var1;
    }
 

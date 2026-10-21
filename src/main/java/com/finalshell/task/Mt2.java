@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Mt2 implements Runnable {
-   final XW V;
+   public final XW V;
 
-   Mt2(XW var1) {
+   public Mt2(XW var1) {
       this.V = var1;
    }
 

@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YY implements ActionListener {
-   final ImportPanel R;
+   public final ImportPanel R;
 
-   YY(ImportPanel var1) {
+   public YY(ImportPanel var1) {
       this.R = var1;
    }
 

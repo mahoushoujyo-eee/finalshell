@@ -6,35 +6,32 @@ import javax.swing.JComponent;
 
 public final class GestureHandler {
    public static final String CLIENT_PROPERTY = "com.apple.eawt.event.internalGestureHandler";
-   static final int PHASE = 1;
-   static final int ROTATE = 2;
-   static final int MAGNIFY = 3;
-   static final int SWIPE = 4;
-   static final int PRESSURE = 5;
+   public static final int PHASE = 1;
+   public static final int ROTATE = 2;
+   public static final int MAGNIFY = 3;
+   public static final int SWIPE = 4;
+   public static final int PRESSURE = 5;
 
-   static void addGestureListenerTo(JComponent component, GestureListener listener) {
+   public static void addGestureListenerTo(JComponent component, GestureListener listener) {
    }
 
-   static void removeGestureListenerFrom(JComponent component, GestureListener listener) {
+   public static void removeGestureListenerFrom(JComponent component, GestureListener listener) {
    }
 
-   static void handleGestureFromNative(Window window, int type, double x, double y, double a, double b) {
+   public static void handleGestureFromNative(Window window, int type, double x, double y, double a, double b) {
    }
 
-   GestureHandler() {
+   public void addListener(GestureListener listener) {
    }
 
-   void addListener(GestureListener listener) {
+   public void removeListener(GestureListener listener) {
    }
 
-   void removeListener(GestureListener listener) {
-   }
-
-   static GestureHandler getHandlerForComponent(Component c) {
+   public static GestureHandler getHandlerForComponent(Component c) {
       return null;
    }
 
-   static PerComponentNotifier getNextNotifierForComponent(Component c) {
+   public static PerComponentNotifier getNextNotifierForComponent(Component c) {
       return null;
    }
 }

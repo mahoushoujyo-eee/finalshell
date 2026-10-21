@@ -120,41 +120,41 @@ public class Lk2 {
    public static Hashtable X;
    public static Icon F;
    public static Icon z;
-   static String x;
-   static char[] J;
-   static int S;
-   static Random w;
-   static int[] y;
+   public static String x;
+   public static char[] J;
+   public static int S;
+   public static Random w;
+   public static int[] y;
    public static byte[][] O;
-   static char[] U;
+   public static char[] U;
    public static Icon T;
    public static Icon N;
    public static Icon h;
    public static Icon H;
-   static HashMap L;
-   static HashMap P;
-   static HashMap Z;
+   public static HashMap L;
+   public static HashMap P;
+   public static HashMap Z;
    public static String G;
-   static DecimalFormat u;
-   static DecimalFormat q;
-   static String b;
-   static BufferedImage I;
-   static Graphics2D g;
-   static Hashtable W;
-   static HashSet V;
-   static HashMap A;
-   static HashSet r;
+   public static DecimalFormat u;
+   public static DecimalFormat q;
+   public static String b;
+   public static BufferedImage I;
+   public static Graphics2D g;
+   public static Hashtable W;
+   public static HashSet V;
+   public static HashMap A;
+   public static HashSet r;
    public static String k;
    public static String K;
    public static String p;
    public static String s;
    public static String n;
-   static JFileChooser c;
-   static BufferedImage d;
-   static float E;
-   static String[] t;
-   static String[] e;
-   static Object Y;
+   public static JFileChooser c;
+   public static BufferedImage d;
+   public static float E;
+   public static String[] t;
+   public static String[] e;
+   public static Object Y;
    public static String[] m;
    public static String[] f;
    public static String[] i;
@@ -163,7 +163,7 @@ public class Lk2 {
    public static long[] l;
    public static Long[] o;
 
-   void N() {
+   public void N() {
    }
 
    public static JTextArea M$JTextArea() {
@@ -2121,7 +2121,7 @@ public class Lk2 {
             }
          }
 
-         if (var10000 != false) {
+         if (var10000 == null) {
             File var22 = null;
             byte var7 = 0;
 
@@ -2706,7 +2706,7 @@ public class Lk2 {
       return var10001.substring(a(22081, 7904724917460113939L), a(32650, 4379114587436528592L));
    }
 
-   static void R() {
+   public static void R() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3910,7 +3910,7 @@ public class Lk2 {
       return var3;
    }
 
-   static void i$void() {
+   public static void i$void() {
       String var0 = (String)Registry.lookupField(205985593854165162L).get(null);
       var0 = (String)Registry.lookupField(544011674795306049L).get(null);
       String var1 = b(-17802, -2526);
@@ -5828,7 +5828,7 @@ public class Lk2 {
          throw var10.getTargetException();
       }
 
-new Color(var14, (int)var10006, var15);
+var10004 = new Color(var14, (int)var10006, var15);
       return (Color)var10003;
    }
 
@@ -5868,7 +5868,7 @@ new Color(var14, (int)var10006, var15);
          throw var8.getTargetException();
       }
 
-new Color(var12, (int)var10006, var13);
+var10004 = new Color(var12, (int)var10006, var13);
       return (Color)var10003;
    }
 
@@ -6058,7 +6058,7 @@ new Color(var12, (int)var10006, var13);
       // 165: areturn
    }
 
-   static ZB_2 F(String var0, int var1, int var2, String var3) {
+   public static ZB_2 F(String var0, int var1, int var2, String var3) {
       Ky4[] var10000 = YT3_2.c();
       boolean var5 = false;
       Ky4[] var4 = var10000;
@@ -6146,7 +6146,7 @@ new Color(var12, (int)var10006, var13);
       return var6;
    }
 
-   static ZB_2 D(String param0, int param1, int param2) {
+   public static ZB_2 D(String param0, int param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -6663,7 +6663,7 @@ new Color(var12, (int)var10006, var13);
                      break label108;
                   }
 
-                  if (var17 != false) {
+                  if (var17 == null) {
                      break label107;
                   }
                } catch (Exception var15) {
@@ -6687,7 +6687,7 @@ new Color(var12, (int)var10006, var13);
                         break label111;
                      }
 
-                     if (var17 != false) {
+                     if (var17 == null) {
                         break label110;
                      }
                   } catch (Exception var14) {
@@ -6711,7 +6711,7 @@ new Color(var12, (int)var10006, var13);
                            break label81;
                         }
 
-                        if (var17 != false) {
+                        if (var17 == null) {
                            break label112;
                         }
                      } catch (Exception var13) {
@@ -6727,7 +6727,7 @@ new Color(var12, (int)var10006, var13);
                            return (boolean)var17;
                         }
 
-                        if (var17 != false) {
+                        if (var17 == null) {
                            break label114;
                         }
                      } catch (Exception var12) {
@@ -7410,7 +7410,7 @@ new Color(var12, (int)var10006, var13);
       // 1e1: areturn
    }
 
-   void U() {
+   public void U() {
    }
 
    public static String L(String param0) {
@@ -7701,7 +7701,7 @@ new Color(var12, (int)var10006, var13);
       }
    }
 
-   static void O(DefaultMutableTreeNode var0, ArrayList var1) {
+   public static void O(DefaultMutableTreeNode var0, ArrayList var1) {
       Ky4[] var10000 = YT3_2.c();
       int var3 = 0;
       Ky4[] var2 = var10000;
@@ -8595,7 +8595,7 @@ new Color(var12, (int)var10006, var13);
       return var2.filter(var0, var0);
    }
 
-   static Icon I(Icon var0) {
+   public static Icon I(Icon var0) {
       BufferedImage var1 = new BufferedImage(var0.getIconWidth(), var0.getIconHeight(), 2);
       var0.paintIcon(null, var1.getGraphics(), 0, 0);
       var1.getGraphics().dispose();
@@ -9112,7 +9112,7 @@ new Color(var12, (int)var10006, var13);
                   break label67;
                }
 
-               if (var19 != false) {
+               if (var19 == null) {
                   break label62;
                }
             } catch (RuntimeException var16) {
@@ -9157,7 +9157,7 @@ new Color(var12, (int)var10006, var13);
          return var10003;
       }
 
-      if (var19 == false) {
+      if (var19 == null) {
          var2 = (Icon)Registry.lookupField(420095333054729915L).get(null);
       } else {
          var2 = (Icon)Registry.lookupField(471099731952994576L).get(null);
@@ -9191,7 +9191,7 @@ new Color(var12, (int)var10006, var13);
                      break label174;
                   }
 
-                  if (var52 != false) {
+                  if (var52 == null) {
                      break label183;
                   }
                } catch (RuntimeException var49) {
@@ -9218,7 +9218,7 @@ new Color(var12, (int)var10006, var13);
                }
             }
 
-            if (var52 == false) {
+            if (var52 == null) {
                Object[] var58 = Registry.emptyArgs();
                long var27 = 396085629172753019L;
                Object[] var26 = var58;
@@ -9269,7 +9269,7 @@ new Color(var12, (int)var10006, var13);
                      break label188;
                   }
 
-                  if (var59 != false) {
+                  if (var59 == null) {
                      break label205;
                   }
                } catch (RuntimeException var47) {
@@ -9293,7 +9293,7 @@ new Color(var12, (int)var10006, var13);
                         break label206;
                      }
 
-                     if (var59 != false) {
+                     if (var59 == null) {
                         break label191;
                      }
                   } catch (RuntimeException var46) {
@@ -9324,7 +9324,7 @@ new Color(var12, (int)var10006, var13);
                return var67;
             }
 
-            if (var59 != false) {
+            if (var59 == null) {
                Object[] var69 = Registry.emptyArgs();
                long var19 = 396085629172753019L;
                Object[] var18 = var69;
@@ -9385,7 +9385,7 @@ new Color(var12, (int)var10006, var13);
       return var60;
    }
 
-   static void M$void() {
+   public static void M$void() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -4,12 +4,12 @@ import com.finalshell.core.SelectUploadFile;
 import com.finalshell.ui.panel.SetBackgroundImagePanel;
 
 public class St2 implements Runnable {
-   final SetBackgroundImagePanel h;
-   final SelectUploadFile p;
+   public final SetBackgroundImagePanel h;
+   public final SelectUploadFile p;
    public static long[] a;
    public static Long[] b;
 
-   St2(SelectUploadFile var1, SetBackgroundImagePanel var2) {
+   public St2(SelectUploadFile var1, SetBackgroundImagePanel var2) {
       this.p = var1;
       this.h = var2;
    }

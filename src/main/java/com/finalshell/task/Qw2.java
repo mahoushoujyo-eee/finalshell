@@ -13,13 +13,13 @@ import com.finalshell.ui.panel.KA_3;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qw2 implements Runnable {
-   final int L;
-   final boolean M;
-   final KA_3 s;
+   public final int L;
+   public final boolean M;
+   public final KA_3 s;
    public static long[] a;
    public static Integer[] b;
 
-   Qw2(KA_3 var1, int var2, boolean var3) {
+   public Qw2(KA_3 var1, int var2, boolean var3) {
       this.s = var1;
       this.L = var2;
       this.M = var3;

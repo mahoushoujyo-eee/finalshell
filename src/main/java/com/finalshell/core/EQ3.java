@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class EQ3 extends ES3 {
-   final com.finalshell.ui.panel.QQ H;
+   public final com.finalshell.ui.panel.QQ H;
 
-   EQ3(com.finalshell.ui.panel.QQ var1) {
+   public EQ3(com.finalshell.ui.panel.QQ var1) {
       this.H = var1;
    }
 

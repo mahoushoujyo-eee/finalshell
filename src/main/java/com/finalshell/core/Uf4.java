@@ -7,9 +7,9 @@ import com.finalshell.ui.model.Tf4;
 public class Uf4 {
    public static int e;
    public static int P;
-   int J;
-   Tf4 t;
-   com.finalshell.ui.model.Ck4 u;
+   public int J;
+   public Tf4 t;
+   public com.finalshell.ui.model.Ck4 u;
 
    public Uf4(int var1) {
       Registry.lookupField(159784702252834868L).setInt(this, 0);

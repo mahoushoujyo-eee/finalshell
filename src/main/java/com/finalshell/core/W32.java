@@ -5,7 +5,7 @@ import javax.swing.JList;
 
 public class W32 extends WO3 {
    @Override
-   protected Component j(JList var1, int var2, Object var3) {
+   public Component j(JList var1, int var2, Object var3) {
       Ne4 var5;
       String var6;
       label14: {

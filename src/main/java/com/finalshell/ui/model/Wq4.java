@@ -8,8 +8,8 @@ import java.io.Serializable;
 import java.util.List;
 
 public class Wq4 implements Transferable, Serializable {
-   protected final List j;
-   final Yz2_2 n;
+   public final List j;
+   public final Yz2_2 n;
 
    public Wq4(Yz2_2 var1, List var2) {
       this.n = var1;

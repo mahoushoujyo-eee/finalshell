@@ -4,9 +4,9 @@ import com.finalshell.core.QR;
 import java.util.Comparator;
 
 public class OI implements Comparator {
-   final QR a;
+   public final QR a;
 
-   OI(QR var1) {
+   public OI(QR var1) {
       this.a = var1;
    }
 

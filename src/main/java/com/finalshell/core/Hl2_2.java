@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Hl2_2 implements C_w_2 {
-   final HJ_2 P;
+   public final HJ_2 P;
 
-   Hl2_2(HJ_2 var1) {
+   public Hl2_2(HJ_2 var1) {
       this.P = var1;
    }
 

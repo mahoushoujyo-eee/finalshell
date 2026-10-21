@@ -4,9 +4,9 @@ import com.finalshell.core.RS3;
 import java.util.Date;
 
 public class X2_2 extends XA3 {
-   final RS3 w;
+   public final RS3 w;
 
-   X2_2(RS3 var1) {
+   public X2_2(RS3 var1) {
       super(var1);
       this.w = var1;
    }

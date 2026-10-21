@@ -5,9 +5,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Io2 extends MouseAdapter {
-   final QZ w;
+   public final QZ w;
 
-   Io2(QZ var1) {
+   public Io2(QZ var1) {
       this.w = var1;
    }
 

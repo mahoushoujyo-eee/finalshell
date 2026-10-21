@@ -10,9 +10,6 @@ public class In2 extends IM {
    public static long[] d;
    public static Integer[] f;
 
-   In2() {
-   }
-
    @Override
    public boolean D(ConnectHost param1) throws Exception {
       // $VF: Couldn't be decompiled

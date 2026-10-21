@@ -91,7 +91,7 @@ public class Na4 extends Ne4 {
       if (!var1) {
          return (boolean)var2;
       } else {
-         return (boolean)(var2 == 0 ? 1 : 0);
+         return (boolean)((var2 == 0 ? 1 : 0) != 0);
       }
    }
 
@@ -157,23 +157,23 @@ public class Na4 extends Ne4 {
       this.x = false;
    }
 
-   static List k(Na4 var0) {
+   public static List k(Na4 var0) {
       return var0.o;
    }
 
-   static boolean q(Na4 var0, boolean var1) {
+   public static boolean q(Na4 var0, boolean var1) {
       return var0.a = var1;
    }
 
-   static boolean f(Na4 var0, boolean var1) {
+   public static boolean f(Na4 var0, boolean var1) {
       return var0.t = var1;
    }
 
-   static boolean z(Na4 var0, boolean var1) {
+   public static boolean z(Na4 var0, boolean var1) {
       return var0.x = var1;
    }
 
-   static Integer S(Na4 var0, Integer var1) {
+   public static Integer S(Na4 var0, Integer var1) {
       return var0.b = var1;
    }
 

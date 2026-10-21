@@ -5,9 +5,9 @@ import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 
 public class EL implements AdjustmentListener {
-   final Ix2 Y;
+   public final Ix2 Y;
 
-   EL(Ix2 var1) {
+   public EL(Ix2 var1) {
       this.Y = var1;
    }
 

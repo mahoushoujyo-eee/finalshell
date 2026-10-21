@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public abstract class W3_4 extends ClassLoader {
    @C_9
-   protected B_4 X;
+   public B_4 X;
    public static String[] a;
    public static String[] b;
 

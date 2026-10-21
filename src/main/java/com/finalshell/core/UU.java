@@ -8,9 +8,9 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class UU implements Po4 {
    public final KW f;
-   protected final AtomicLong V = new AtomicLong();
-   static String r;
-   static String B;
+   public final AtomicLong V = new AtomicLong();
+   public static String r;
+   public static String B;
    public static String[] a;
    public static String[] b;
    public static long[] c;

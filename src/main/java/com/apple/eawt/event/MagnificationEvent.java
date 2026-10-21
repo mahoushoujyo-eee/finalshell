@@ -1,7 +1,7 @@
 package com.apple.eawt.event;
 
 public class MagnificationEvent extends GestureEvent {
-   MagnificationEvent(double v) {
+   public MagnificationEvent(double v) {
    }
 
    public double getMagnification() {

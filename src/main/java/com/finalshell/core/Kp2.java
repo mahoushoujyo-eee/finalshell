@@ -1299,7 +1299,7 @@ public final class Kp2 {
       return var5;
    }
 
-   protected static Method e(java.lang.Class var0, String var1, Object[] var2) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+   public static Method e(java.lang.Class var0, String var1, Object[] var2) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
       java.lang.Class[] var3 = W(var2);
       Method var4 = j(var0, var0, var1, var3);
       var4.setAccessible(true);

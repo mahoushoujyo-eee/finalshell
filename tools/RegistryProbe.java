@@ -170,7 +170,7 @@ public class RegistryProbe {
 
         try (PrintWriter w = new PrintWriter(new OutputStreamWriter(
                 new FileOutputStream(out), StandardCharsets.UTF_8))) {
-            w.println("kind\tindex\tkey\tplaintext\tsites");
+            w.println("kind\tindex\tkey\tplaintext\tsites\tslotType");
             for (int idx : known) {
                 Object av = a[idx];
                 String plain = b[idx];
@@ -199,8 +199,9 @@ public class RegistryProbe {
                     kind = "CLASS";
                     classRefs.add(plain);
                 }
+                String slotType = (av instanceof String) ? "STRING" : (av == null ? "NULL" : "CLASS");
                 w.println(kind + "\t" + idx + "\t" + indexKey.getOrDefault(idx, -1L) + "\t"
-                        + (plain == null ? "" : plain.replace("\t", "\\t")) + "\t" + sites);
+                        + (plain == null ? "" : plain.replace("\t", "\\t")) + "\t" + sites + "\t" + slotType);
             }
         }
         System.out.println();

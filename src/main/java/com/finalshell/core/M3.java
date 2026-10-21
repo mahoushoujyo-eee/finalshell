@@ -32,26 +32,26 @@ import javax.swing.plaf.basic.BasicComboBoxUI;
 import javax.swing.plaf.basic.ComboPopup;
 
 public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
-   protected static ListCellRenderer U;
-   protected ImageIcon r = Z.W;
-   protected ImageIcon G = Z.X;
-   protected int u = Z.Q;
-   protected boolean X = Z.e;
-   protected boolean R = Z.i;
-   protected Color L = Z.c;
-   protected int D = Z.P;
-   protected int E = Z.N;
-   protected boolean M = Z.F;
-   protected Color g;
-   protected Color a;
-   protected boolean b;
-   protected boolean f;
-   protected boolean m;
-   protected KD S;
-   protected MouseWheelListener W;
-   protected X9 J;
-   protected PropertyChangeListener z;
-   protected PropertyChangeListener O;
+   public static ListCellRenderer U;
+   public ImageIcon r = Z.W;
+   public ImageIcon G = Z.X;
+   public int u = Z.Q;
+   public boolean X = Z.e;
+   public boolean R = Z.i;
+   public Color L = Z.c;
+   public int D = Z.P;
+   public int E = Z.N;
+   public boolean M = Z.F;
+   public Color g;
+   public Color a;
+   public boolean b;
+   public boolean f;
+   public boolean m;
+   public KD S;
+   public MouseWheelListener W;
+   public X9 J;
+   public PropertyChangeListener z;
+   public PropertyChangeListener O;
    public static Ky4[] y;
    public static String[] c;
    public static String[] d;
@@ -138,7 +138,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
       }
    }
 
-   protected void w(Object var1) {
+   public void w(Object var1) {
       Ky4[] var2 = X();
       Object var10000 = var1;
       if (var2 == null) {
@@ -160,7 +160,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
       ((Q3)var10000).O(this.J);
    }
 
-   protected void m(Object var1) {
+   public void m(Object var1) {
       Ky4[] var2 = X();
       Object var10000 = var1;
       if (var2 == null) {
@@ -183,7 +183,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected void installComponents() {
+   public void installComponents() {
       Ky4[] var10000 = X();
       this.comboBox.setLayout(this.createLayoutManager());
       Ky4[] var1 = var10000;
@@ -211,7 +211,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected ComboBoxEditor createEditor() {
+   public ComboBoxEditor createEditor() {
       ComboBoxEditor var2;
       Component var7;
       label25: {
@@ -250,7 +250,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected JButton createArrowButton() {
+   public JButton createArrowButton() {
       this.S = new KD();
       this.S.G(true);
       this.S.r(false);
@@ -279,7 +279,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected ComboPopup createPopup() {
+   public ComboPopup createPopup() {
       return new C_4(this, this.comboBox);
    }
 
@@ -615,7 +615,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
       var5.drawLine(var13, var12.top + 1, var13, this.comboBox.getHeight() - var12.bottom - 2);
    }
 
-   protected boolean Y() {
+   public boolean Y() {
       return FN.l((Component)this.comboBox);
    }
 
@@ -689,7 +689,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected LayoutManager createLayoutManager() {
+   public LayoutManager createLayoutManager() {
       return new T3_2(this);
    }
 
@@ -716,7 +716,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected Dimension getDisplaySize() {
+   public Dimension getDisplaySize() {
       Ky4[] var10000 = X();
       Dimension var2 = new Dimension();
       Ky4[] var1 = var10000;
@@ -829,12 +829,12 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected Dimension getDefaultSize() {
+   public Dimension getDefaultSize() {
       return this.getSizeForComponent(L$ListCellRenderer().getListCellRendererComponent(this.listBox, " ", -1, false, false));
    }
 
    @Override
-   protected Rectangle rectangleForCurrentValue() {
+   public Rectangle rectangleForCurrentValue() {
       Ky4[] var10000 = X();
       int var2 = this.comboBox.getWidth();
       Ky4[] var1 = var10000;
@@ -855,7 +855,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
          : new Rectangle(var4.left + var5 + 1, var4.top, var2 - (var4.left + var4.right + var5), var3 - (var4.top + var4.bottom));
    }
 
-   protected static ListCellRenderer L$ListCellRenderer() {
+   public static ListCellRenderer L$ListCellRenderer() {
       Ky4[] var0 = X();
       ListCellRenderer var10000 = U;
       if (var0 == null) {
@@ -870,7 +870,7 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected Dimension getSizeForComponent(Component var1) {
+   public Dimension getSizeForComponent(Component var1) {
       this.currentValuePane.add(var1);
       var1.setFont(this.comboBox.getFont());
       Dimension var2 = var1.getPreferredSize();
@@ -878,83 +878,83 @@ public class M3 extends BasicComboBoxUI implements W2_3, L0_2 {
       return var2;
    }
 
-   static JComboBox F(M3 var0) {
+   public static JComboBox F(M3 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox B(M3 var0) {
+   public static JComboBox B(M3 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox M(M3 var0) {
+   public static JComboBox M(M3 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox C(M3 var0) {
+   public static JComboBox C(M3 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox a(M3 var0) {
+   public static JComboBox a(M3 var0) {
       return var0.comboBox;
    }
 
-   static JList I$JList(M3 var0) {
+   public static JList I$JList(M3 var0) {
       return var0.listBox;
    }
 
-   static boolean x(M3 var0, boolean var1) {
+   public static boolean x(M3 var0, boolean var1) {
       return var0.isMinimumSizeDirty = var1;
    }
 
-   static JComboBox o(M3 var0) {
+   public static JComboBox o(M3 var0) {
       return var0.comboBox;
    }
 
-   static JList O$JList(M3 var0) {
+   public static JList O$JList(M3 var0) {
       return var0.listBox;
    }
 
-   static JComboBox h(M3 var0) {
+   public static JComboBox h(M3 var0) {
       return var0.comboBox;
    }
 
-   static JList Z(M3 var0) {
+   public static JList Z(M3 var0) {
       return var0.listBox;
    }
 
-   static JComboBox v$JComboBox(M3 var0) {
+   public static JComboBox v$JComboBox(M3 var0) {
       return var0.comboBox;
    }
 
-   static JComboBox R(M3 var0) {
+   public static JComboBox R(M3 var0) {
       return var0.comboBox;
    }
 
-   static JButton v$JButton(M3 var0) {
+   public static JButton v$JButton(M3 var0) {
       return var0.arrowButton;
    }
 
-   static Insets O$Insets(M3 var0) {
+   public static Insets O$Insets(M3 var0) {
       return var0.getInsets();
    }
 
-   static JButton N(M3 var0) {
+   public static JButton N(M3 var0) {
       return var0.arrowButton;
    }
 
-   static JButton I$JButton(M3 var0) {
+   public static JButton I$JButton(M3 var0) {
       return var0.arrowButton;
    }
 
-   static JButton D(M3 var0) {
+   public static JButton D(M3 var0) {
       return var0.arrowButton;
    }
 
-   static Component i(M3 var0) {
+   public static Component i(M3 var0) {
       return var0.editor;
    }
 
-   static Component W(M3 var0) {
+   public static Component W(M3 var0) {
       return var0.editor;
    }
 

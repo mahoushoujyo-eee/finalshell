@@ -14,13 +14,13 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
 public class ShowInFolderPanel extends JPopupMenu {
-   DT e;
-   Fr4 n;
-   SelectDownloadFolderPanel c;
+   public DT e;
+   public Fr4 n;
+   public SelectDownloadFolderPanel c;
    public static String[] a;
    public static String[] b;
 
-   ShowInFolderPanel(SelectDownloadFolderPanel var1, DT var2, Fr4 var3) {
+   public ShowInFolderPanel(SelectDownloadFolderPanel var1, DT var2, Fr4 var3) {
       long var5 = 352347871280815957L;
       Ref.s(352347871280815957L, var1, var5);
       long var7 = 562168686074978722L;

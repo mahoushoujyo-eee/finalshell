@@ -18,7 +18,7 @@ public class Qp2 extends JTable {
    public static long[] b;
    public static Integer[] c;
 
-   Qp2() {
+   public Qp2() {
       this.setSelectionBackground((Color)Registry.lookupField(623875439513009390L).get(null));
       this.setSelectionForeground((Color)Registry.lookupField(513155505692963448L).get(null));
       this.setBorder(null);

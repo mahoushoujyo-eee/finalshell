@@ -7,31 +7,31 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Connect2 {
-   UR r;
-   Rdp g;
+   public UR r;
+   public Rdp g;
    public InetAddress O;
    public int U;
-   HashMap x = new HashMap();
-   int k = -1;
-   int i = -1;
-   Object G = new Object();
-   boolean D = false;
-   Object u = new Object();
-   byte[] S = new byte[4];
-   int Y = 0;
-   int h;
-   int A;
-   Br4 n;
-   float M;
-   int Z;
-   int J;
-   boolean d;
-   boolean c;
-   static int q;
-   static int W;
-   boolean C;
+   public HashMap x = new HashMap();
+   public int k = -1;
+   public int i = -1;
+   public Object G = new Object();
+   public boolean D = false;
+   public Object u = new Object();
+   public byte[] S = new byte[4];
+   public int Y = 0;
+   public int h;
+   public int A;
+   public Br4 n;
+   public float M;
+   public int Z;
+   public int J;
+   public boolean d;
+   public boolean c;
+   public static int q;
+   public static int W;
+   public boolean C;
    public int T;
-   long V;
+   public long V;
    public static String[] a;
    public static String[] b;
    public static long e;
@@ -40,7 +40,7 @@ public class Connect2 {
       __vfClinit__();
    }
 
-   Connect2(UR var1) {
+   public Connect2(UR var1) {
       this.h = (int)e;
       this.A = -1;
       this.M = (float)Yh2.D;
@@ -349,7 +349,7 @@ public class Connect2 {
       }
    }
 
-   boolean E() {
+   public boolean E() {
       String[] var10000 = PingMessageR.N();
       this.T = this.r.z.K - this.A;
       String[] var1 = var10000;
@@ -367,7 +367,7 @@ public class Connect2 {
       return var3 != 0;
    }
 
-   void V(int var1) {
+   public void V(int var1) {
       String[] var10000 = PingMessageR.N();
       this.J = var1;
       String[] var2 = var10000;
@@ -383,7 +383,7 @@ public class Connect2 {
       var3.Z();
    }
 
-   void Z() {
+   public void Z() {
       String[] var1 = PingMessageR.N();
       int var10000 = (this.d) ? 1 : 0;
       if (var1 != null) {
@@ -423,7 +423,7 @@ public class Connect2 {
       this.r.z.d();
    }
 
-   void F() {
+   public void F() {
       String[] var1 = PingMessageR.N();
       int var10000 = (this.d) ? 1 : 0;
       if (var1 != null) {

@@ -8,7 +8,7 @@ public class DX3 extends DZ3 {
    public static long[] s;
    public static Integer[] u;
 
-   DX3() {
+   public DX3() {
       this.Y = l;
       this.M(c(16285, 6329657658481293366L));
       this.Q(c(31695, 625874204841999457L));
@@ -16,7 +16,7 @@ public class DX3 extends DZ3 {
    }
 
    @Override
-   protected YU V() {
+   public YU V() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

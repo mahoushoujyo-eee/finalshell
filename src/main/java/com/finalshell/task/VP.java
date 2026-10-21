@@ -9,7 +9,7 @@ public class VP implements Runnable {
    public final CountDownLatch s;
    public final AtomicReference B;
 
-   VP(PcapHandle var1, CountDownLatch var2, AtomicReference var3) {
+   public VP(PcapHandle var1, CountDownLatch var2, AtomicReference var3) {
       this.t = var1;
       this.s = var2;
       this.B = var3;

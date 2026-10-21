@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Oy4_2;
 
 public class Ny2 extends Thread {
-   final Oy4_2 W;
+   public final Oy4_2 W;
    public static long a;
 
-   Ny2(Oy4_2 var1) {
+   public Ny2(Oy4_2 var1) {
       this.W = var1;
    }
 

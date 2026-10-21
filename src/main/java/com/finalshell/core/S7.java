@@ -23,10 +23,10 @@ public class S7 {
    public static boolean[] M;
    public static char[] Q;
    public static char[] n;
-   static char[] R;
-   static char[] T;
-   static char[] D;
-   static int[] f;
+   public static char[] R;
+   public static char[] T;
+   public static char[] D;
+   public static int[] f;
    public static char[] z;
    public static int[] b;
    public static String[] a;

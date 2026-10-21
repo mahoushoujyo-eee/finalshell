@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTable;
 
 public class Yn4 implements ActionListener {
-   final Copy2 e;
+   public final Copy2 e;
 
-   Yn4(Copy2 var1) {
+   public Yn4(Copy2 var1) {
       this.e = var1;
    }
 

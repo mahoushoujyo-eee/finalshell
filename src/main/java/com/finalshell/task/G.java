@@ -4,10 +4,10 @@ import com.finalshell.ui.listener.KA;
 import javax.swing.SwingUtilities;
 
 public class G implements Runnable {
-   final KA V;
+   public final KA V;
    public static long a;
 
-   G(KA var1) {
+   public G(KA var1) {
       this.V = var1;
    }
 

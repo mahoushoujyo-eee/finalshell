@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.BO3;
 import java.lang.reflect.InvocationTargetException;
 
 public class JH implements Runnable {
-   final BO3 h;
+   public final BO3 h;
 
-   JH(BO3 var1) {
+   public JH(BO3 var1) {
       this.h = var1;
    }
 

@@ -5,11 +5,11 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 
 public class Wu4 implements E_2 {
-   final int E;
-   final int w;
-   final QX F;
+   public final int E;
+   public final int w;
+   public final QX F;
 
-   Wu4(QX var1, int var2, int var3) {
+   public Wu4(QX var1, int var2, int var3) {
       this.F = var1;
       this.E = var2;
       this.w = var3;

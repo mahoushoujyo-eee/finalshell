@@ -8,11 +8,11 @@ import java.util.List;
 public class EF implements EV {
    public int J;
    public WC_2 i;
-   final Kc4 I;
+   public final Kc4 I;
    public static String[] a;
    public static String[] b;
 
-   EF(Kc4 var1) {
+   public EF(Kc4 var1) {
       this.I = var1;
       this.J = 0;
       this.i = null;
@@ -78,7 +78,7 @@ public class EF implements EV {
       }
    }
 
-   static WC_2 l(EF var0) {
+   public static WC_2 l(EF var0) {
       return var0.i;
    }
 

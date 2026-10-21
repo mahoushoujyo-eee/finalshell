@@ -4,9 +4,9 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 
 public class B_2 implements WindowFocusListener {
-   final D Y;
+   public final D Y;
 
-   B_2(D var1) {
+   public B_2(D var1) {
       this.Y = var1;
    }
 

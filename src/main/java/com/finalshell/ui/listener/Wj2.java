@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Wj2 implements ActionListener {
-   final LocalMachinePanel d;
+   public final LocalMachinePanel d;
 
-   Wj2(LocalMachinePanel var1) {
+   public Wj2(LocalMachinePanel var1) {
       this.d = var1;
    }
 

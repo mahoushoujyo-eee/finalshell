@@ -8,9 +8,9 @@ import java.io.Reader;
 
 public class P_2 extends FilterReader {
    public boolean M;
-   final Runnable K;
+   public final Runnable K;
 
-   P_2(Reader var1, Runnable var2) {
+   public P_2(Reader var1, Runnable var2) {
       super(var1);
       this.K = var2;
    }

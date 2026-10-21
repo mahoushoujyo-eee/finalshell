@@ -14,38 +14,38 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class YI implements PO3 {
-   static Random d;
-   boolean G;
-   Lv4_2 A;
-   String c;
-   String j;
-   String X;
+   public static Random d;
+   public boolean G;
+   public Lv4_2 A;
+   public String c;
+   public String j;
+   public String X;
    public static int e;
    public static int U;
    public static int z;
    public static int D;
    public static int Q;
    public static int g;
-   int u;
-   ArrayList R;
-   Connection12 o;
-   long J;
-   long W;
-   float r;
-   DecimalFormat Y;
-   static int I;
-   String v;
-   L0 O;
-   boolean f;
-   long F;
-   DY3 B;
-   com.finalshell.ui.model.Ck4 L;
-   Address q;
-   int y;
+   public int u;
+   public ArrayList R;
+   public Connection12 o;
+   public long J;
+   public long W;
+   public float r;
+   public DecimalFormat Y;
+   public static int I;
+   public String v;
+   public L0 O;
+   public boolean f;
+   public long F;
+   public DY3 B;
+   public com.finalshell.ui.model.Ck4 L;
+   public Address q;
+   public int y;
    public static int N;
    public static int l;
-   int m;
-   CK k;
+   public int m;
+   public CK k;
    public static String[] a;
    public static String[] b;
 
@@ -81,8 +81,9 @@ public class YI implements PO3 {
    }
 
    public YI(int var1, int var2, String var3, String var4, long var5, boolean var7) {
+   super((String)Ref.g(309006563994833262L, var2));
+   super();
       Connection12.X();
-      super();
       Registry.lookupField(599949014459759654L).setBoolean(this, true);
       Registry.lookupField(235419407516667394L).setInt(this, ((Random)Registry.lookupField(287416731440393970L).get(null)).nextInt());
       Registry.lookupField(156944160001485315L).setInt(this, Registry.lookupField(476761782289979268L).getInt(null));
@@ -109,7 +110,7 @@ public class YI implements PO3 {
       Registry.lookupField(421926817811915901L).setLong(this, var5);
       Registry.lookupField(599949014459759654L).setBoolean(this, var7);
       if (Ky4.F$arrString() != null) {
-         Connection12.c(this == false);
+         Connection12.c(this == null);
       }
    }
 
@@ -120,7 +121,6 @@ public class YI implements PO3 {
          if (!Registry.lookupField(599949014459759654L).getBoolean(this)) {
             File var10001;
             Object var2 = 309006563994833262L;
-            super((String)Ref.g(309006563994833262L, var2));
             Registry.lookupField(421926817811915901L).setLong(var10001, var10001.length());
          }
 
@@ -1072,7 +1072,7 @@ public class YI implements PO3 {
       long var8 = 375795494916901132L;
       String var7 = var10003;
       Ref.s(375795494916901132L, var7, var8);
-      if (this == false) {
+      if (this == null) {
          Object var9 = 375795494916901132L;
          if (((String)Ref.g(375795494916901132L, var9)).endsWith(a(23308, 11076))) {
             String var10004 = "" + (int)Registry.lookupField(453239467128715174L).getFloat(this);
@@ -1196,7 +1196,7 @@ public class YI implements PO3 {
       ((ArrayList)Ref.g(596061703104958760L, var2)).add(var1);
    }
 
-   synchronized void V(VO var1) {
+   public synchronized void V(VO var1) {
       Connection12.d$boolean();
       Object var5 = 596061703104958760L;
       Iterator var3 = ((ArrayList)Ref.g(596061703104958760L, var5)).iterator();
@@ -1215,7 +1215,7 @@ public class YI implements PO3 {
             throw var9.getTargetException();
          }
 
-         if (var2 != false) {
+         if (var2 == null) {
             break;
          }
       }

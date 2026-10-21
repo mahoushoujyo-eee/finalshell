@@ -39,14 +39,14 @@ import org.fife.ui.rtextarea.SearchEngine;
 import org.fife.ui.rtextarea.SearchResult;
 
 public class TextEditorFrame extends JFrame implements AL, SearchListener {
-   AM f;
-   Ge2 W;
-   JPanel C;
+   public AM f;
+   public Ge2 W;
+   public JPanel C;
    public FindDialog L;
    public ReplaceDialog D;
    public RSyntaxTextArea n;
-   StatusBar z;
-   File K;
+   public StatusBar z;
+   public File K;
    public static int[] x;
    public static String[] a;
    public static String[] b;
@@ -57,8 +57,8 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
    }
 
    public TextEditorFrame() {
+   super();
       m();
-      super();
       JMenuBar var10003 = (JMenuBar)(Registry.emptyArgs());
       long var5 = 330644631369405137L;
       Object[] var4 = var10003;
@@ -541,7 +541,7 @@ public class TextEditorFrame extends JFrame implements AL, SearchListener {
                throw var40.getTargetException();
             }
 
-new AM(var10016);
+var10015 = new AM(var10016);
             this.setTitle(this.getAbsolutePath());
          }
 
@@ -657,12 +657,12 @@ new AM(var10016);
       return ((RSyntaxTextArea)Ref.g(547657448113180624L, var1)).getSelectedText();
    }
 
-   static RSyntaxTextArea G(TextEditorFrame var0) {
+   public static RSyntaxTextArea G(TextEditorFrame var0) {
       Object var1 = 547657448113180624L;
       return (RSyntaxTextArea)Ref.g(547657448113180624L, var1);
    }
 
-   static ReplaceDialog W(TextEditorFrame var0) {
+   public static ReplaceDialog W(TextEditorFrame var0) {
       Object var1 = 531305216617898025L;
       return (ReplaceDialog)Ref.g(531305216617898025L, var1);
    }

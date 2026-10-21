@@ -1,12 +1,12 @@
 package com.finalshell.core;
 
 public class GI_2 {
-   String Z;
-   int t;
-   final Or4 o;
+   public String Z;
+   public int t;
+   public final Or4 o;
    public static long a;
 
-   GI_2(Or4 var1) {
+   public GI_2(Or4 var1) {
       this.o = var1;
       this.t = (int)a;
    }

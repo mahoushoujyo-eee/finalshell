@@ -19,15 +19,15 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class Ca4 {
-   WatchService u;
-   String S;
-   HashMap Y;
-   HashMap C;
-   Object y;
+   public WatchService u;
+   public String S;
+   public HashMap Y;
+   public HashMap C;
+   public Object y;
    public static long[] a;
    public static Long[] b;
 
-   static void y() {
+   public static void y() {
       long var9;
       label38: {
          long var0 = (((((long)Address.i()) ? 1 : 0) ? 1 : 0) ? 1 : 0) ? 1 : 0;
@@ -126,7 +126,7 @@ public class Ca4 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void U() {
+   public void U() {
       Address.i();
       Object var7 = 437411261289262047L;
       Object var2;
@@ -143,12 +143,12 @@ public class Ca4 {
                String var4 = (String)var3.next();
                Object var11 = 596681963206121946L;
                YI var5 = (YI)((HashMap)Ref.g(596681963206121946L, var11)).get(var4);
-               if (var1 == false) {
+               if (var1 == null) {
                   break;
                }
 
                label101: {
-                  if (var1 != false) {
+                  if (var1 == null) {
                      System.currentTimeMillis();
                      Object[] var10005 = Registry.emptyArgs();
                      long var14 = 463739992279195407L;
@@ -208,12 +208,12 @@ public class Ca4 {
                      }
                   }
 
-                  if (var1 != false) {
+                  if (var1 == null) {
                      break label104;
                   }
                }
 
-               if (var1 != false) {
+               if (var1 == null) {
                   continue;
                }
             }

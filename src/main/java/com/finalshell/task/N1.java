@@ -3,9 +3,6 @@ package com.finalshell.task;
 public class N1 implements Runnable {
    public static long a;
 
-   N1() {
-   }
-
    @Override
    public void run() {
       // $VF: Couldn't be decompiled

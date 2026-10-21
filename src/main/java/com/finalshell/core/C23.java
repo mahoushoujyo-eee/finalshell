@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C23 implements H_4_2 {
-   final H3_2 n;
+   public final H3_2 n;
 
-   C23(H3_2 var1) {
+   public C23(H3_2 var1) {
       this.n = var1;
    }
 

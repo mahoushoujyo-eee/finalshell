@@ -4,11 +4,11 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.listener.K23;
 
 public class WG implements Runnable {
-   String A;
-   final K23 e;
+   public String A;
+   public final K23 e;
    public static String a;
 
-   WG(K23 var1) {
+   public WG(K23 var1) {
       this.e = var1;
       long var3 = 486747588508308577L;
       Object var2 = null;

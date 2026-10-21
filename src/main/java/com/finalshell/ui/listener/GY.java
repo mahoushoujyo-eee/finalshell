@@ -7,12 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GY implements ActionListener {
-   final Qe2_2 N;
-   final KD3 c;
+   public final Qe2_2 N;
+   public final KD3 c;
    public static String[] a;
    public static String[] b;
 
-   GY(KD3 var1, Qe2_2 var2) {
+   public GY(KD3 var1, Qe2_2 var2) {
       this.c = var1;
       this.N = var2;
    }

@@ -10,10 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComboBox;
 
 public class T5 implements ActionListener {
-   final JComboBox Z;
-   final Zm2 J;
+   public final JComboBox Z;
+   public final Zm2 J;
 
-   T5(Zm2 var1, JComboBox var2) {
+   public T5(Zm2 var1, JComboBox var2) {
       this.J = var1;
       this.Z = var2;
    }

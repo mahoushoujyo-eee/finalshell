@@ -9,11 +9,11 @@ import java.util.Map;
 import javax.swing.SwingConstants;
 
 public class TA extends T4 implements SwingConstants {
-   protected Map L = new HashMap();
-   protected int T = GO.FJ;
-   protected int i = GO.F_;
-   protected int R = 0;
-   protected Insets I = null;
+   public Map L = new HashMap();
+   public int T = GO.FJ;
+   public int i = GO.F_;
+   public int R = 0;
+   public Insets I = null;
    public static String[] a;
    public static String[] b;
 
@@ -1459,11 +1459,11 @@ public class TA extends T4 implements SwingConstants {
       // 8a9: return
    }
 
-   protected boolean A(String var1) {
+   public boolean A(String var1) {
       return this.L.containsValue(var1);
    }
 
-   protected Insets Y(Container var1) {
+   public Insets Y(Container var1) {
       int var2 = T4.b();
 
       label27: {

@@ -6,14 +6,14 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class F22 implements Runnable {
-   int I;
-   final Or4 T;
+   public int I;
+   public final Or4 T;
    public final byte[] S;
    public final DataOutputStream L;
    public final int G;
    public final DataInputStream j;
 
-   F22(Or4 var1, byte[] var2, DataOutputStream var3, int var4, DataInputStream var5) {
+   public F22(Or4 var1, byte[] var2, DataOutputStream var3, int var4, DataInputStream var5) {
       this.T = var1;
       this.S = var2;
       this.L = var3;

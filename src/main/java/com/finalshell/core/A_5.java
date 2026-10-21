@@ -99,7 +99,7 @@ public class A_5 extends Z_6 {
       // 8c: areturn
    }
 
-   static J_5 c(File var0) {
+   public static J_5 c(File var0) {
       return X(var0);
    }
 

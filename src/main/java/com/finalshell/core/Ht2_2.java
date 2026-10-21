@@ -109,7 +109,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    @Override
-   protected C_J[] V$arr_J() throws B2_5 {
+   public C_J[] V$arr_J() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -196,7 +196,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    @Override
-   protected Hv2_2[] C() {
+   public Hv2_2[] C() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -263,7 +263,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    @Override
-   protected HP_2[] H() {
+   public HP_2[] H() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -331,7 +331,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    @Override
-   protected U3_3[] A$arru_3() {
+   public U3_3[] A$arru_3() {
       String[] var10000 = RG_2.C();
       U3_3[] var2 = new U3_3[this.P.r.size()];
       String[] var1 = var10000;
@@ -370,7 +370,7 @@ public class Ht2_2 extends Hd2 {
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
    @Override
-   protected Hd2[] j$arrhd_2() throws B2_5 {
+   public Hd2[] j$arrhd_2() throws B2_5 {
       String[] var10000 = RG_2.C();
       Cq2_3 var2 = this.P.F();
       String[] var1 = var10000;
@@ -432,7 +432,7 @@ public class Ht2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 V$hd_2() throws B2_5 {
+   public Hd2 V$hd_2() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -511,7 +511,7 @@ public class Ht2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 l$hd_2() throws B2_5 {
+   public Hd2 l$hd_2() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -603,7 +603,7 @@ public class Ht2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 g() throws B2_5 {
+   public Hd2 g() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -670,7 +670,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    @Override
-   protected Hd2[] l$arrhd_2() throws B2_5 {
+   public Hd2[] l$arrhd_2() throws B2_5 {
       return this.x(this.P.v);
    }
 
@@ -680,7 +680,7 @@ public class Ht2_2 extends Hd2 {
    }
 
    @Override
-   protected String J() {
+   public String J() {
       return F0_2.n(this.P.t());
    }
 
@@ -711,12 +711,12 @@ public class Ht2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 G() {
+   public Hd2 G() {
       return null;
    }
 
    @Override
-   protected H4_2[] a() throws B2_5 {
+   public H4_2[] a() throws B2_5 {
       return this.e(this.P.R(true));
    }
 
@@ -1415,15 +1415,15 @@ public class Ht2_2 extends Hd2 {
       // 50: areturn
    }
 
-   static C_L U(Ht2_2 var0) {
+   public static C_L U(Ht2_2 var0) {
       return var0.U;
    }
 
-   static Cr2_2 j(Ht2_2 var0) {
+   public static Cr2_2 j(Ht2_2 var0) {
       return var0.P;
    }
 
-   static Hd2 p(Ht2_2 var0, String var1) throws ClassNotFoundException {
+   public static Hd2 p(Ht2_2 var0, String var1) throws ClassNotFoundException {
       return var0.X(var1);
    }
 

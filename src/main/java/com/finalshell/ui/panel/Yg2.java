@@ -20,7 +20,7 @@ public class Yg2 extends JLabel {
    public static Border K;
    public static Border A;
    public Action m;
-   boolean f;
+   public boolean f;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -117,7 +117,7 @@ public class Yg2 extends JLabel {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       Registry.lookupField(138988426505081210L).setInt(null, 1);
       Graphics2D var3 = (Graphics2D)var1;
       Color var4 = Color.blue;

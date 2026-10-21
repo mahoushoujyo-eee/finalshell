@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LA3 implements ActionListener {
-   final KD3 T;
+   public final KD3 T;
 
-   LA3(KD3 var1) {
+   public LA3(KD3 var1) {
       this.T = var1;
    }
 

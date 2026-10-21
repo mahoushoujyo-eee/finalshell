@@ -18,16 +18,16 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class Ug4 extends DefaultTableCellRenderer {
-   Border s;
-   SimpleDateFormat K;
-   J0 V;
-   boolean y;
+   public Border s;
+   public SimpleDateFormat K;
+   public J0 V;
+   public boolean y;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Ug4(boolean var1) {
+   public Ug4(boolean var1) {
       Border var10001 = BorderFactory.createEmptyBorder(0, a(14769, 6433053245927607564L), 2, 4);
       long var3 = 591754589842064872L;
       Border var2 = var10001;

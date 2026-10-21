@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qk2 implements Runnable {
-   final Address l;
+   public final Address l;
 
-   Qk2(Address var1) {
+   public Qk2(Address var1) {
       this.l = var1;
    }
 

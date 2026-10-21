@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.RouteTracePanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class UM implements Runnable {
-   final RouteTracePanel w;
+   public final RouteTracePanel w;
 
-   UM(RouteTracePanel var1) {
+   public UM(RouteTracePanel var1) {
       this.w = var1;
    }
 

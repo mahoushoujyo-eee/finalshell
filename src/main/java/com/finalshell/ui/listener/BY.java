@@ -17,9 +17,9 @@ import javax.swing.JFrame;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class BY implements ActionListener {
-   final RouteTracePanel2 y;
+   public final RouteTracePanel2 y;
 
-   BY(RouteTracePanel2 var1) {
+   public BY(RouteTracePanel2 var1) {
       this.y = var1;
    }
 
@@ -162,7 +162,7 @@ public class BY implements ActionListener {
                throw var82.getTargetException();
             }
 
-new BY((String)var10023, var10024, (Window)var10025, var3, null);
+var10022 = new BY((String)var10023, var10024, (Window)var10025, var3, null);
             if (var3 == null) {
                return;
             }
@@ -255,7 +255,7 @@ new BY((String)var10023, var10024, (Window)var10025, var3, null);
          Object var74 = 584267852523456400L;
          Object var10033 = Ref.g(584267852523456400L, var74);
          Object var76 = 520858298081292913L;
-new BY((String)var10030, var3, this, (Lv4_2)var10033, (DefaultMutableTreeNode)Ref.g(520858298081292913L, var76));
+var10029 = new BY((String)var10030, var3, this, (Lv4_2)var10033, (DefaultMutableTreeNode)Ref.g(520858298081292913L, var76));
 
 
       }

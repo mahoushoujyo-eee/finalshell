@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class S_5 extends J_5 {
-   final J_5 F;
+   public final J_5 F;
    public static String[] b;
    public static String[] c;
 
-   S_5(J_5 var1) {
+   public S_5(J_5 var1) {
       this.F = var1;
    }
 

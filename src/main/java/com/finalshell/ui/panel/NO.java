@@ -138,16 +138,16 @@ public class NO extends JPanel {
       Object var5 = 195693382821276289L;
       String var10007 = ((JTextField)Ref.g(195693382821276289L, var5)).getText();
       Object var7 = 445356554747401550L;
-new NO((int)this, (int)var10007, this, ((JTextField)Ref.g(445356554747401550L, var7)).getText());
+var10005 = new NO((int)this, (int)var10007, this, ((JTextField)Ref.g(445356554747401550L, var7)).getText());
       return this;
    }
 
-   static JComboBox W(NO var0) {
+   public static JComboBox W(NO var0) {
       Object var1 = 163710930144963942L;
       return (JComboBox)Ref.g(163710930144963942L, var1);
    }
 
-   static void Z(NO var0, boolean var1) {
+   public static void Z(NO var0, boolean var1) {
       Object[] var10001 = Registry.packArgs(var1);
       long var3 = 543398350886648870L;
       Object[] var2 = var10001;

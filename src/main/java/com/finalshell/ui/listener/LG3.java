@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LG3 implements ActionListener {
-   final File7 g;
+   public final File7 g;
 
-   LG3(File7 var1) {
+   public LG3(File7 var1) {
       this.g = var1;
    }
 

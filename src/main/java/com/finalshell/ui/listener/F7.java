@@ -6,9 +6,9 @@ import javax.swing.JComponent;
 import javax.swing.event.AncestorEvent;
 
 public class F7 extends FY {
-   final WeakReference m;
+   public final WeakReference m;
 
-   F7(WeakReference var1) {
+   public F7(WeakReference var1) {
       this.m = var1;
    }
 

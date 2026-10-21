@@ -8,8 +8,8 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class Li4 extends Ln4_2 {
-   static Random H;
-   ArrayList z;
+   public static Random H;
+   public ArrayList z;
 
    public Li4() {
       ArrayList var10001 = new ArrayList();

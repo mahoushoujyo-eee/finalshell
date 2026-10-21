@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.Oj2;
 import javax.swing.event.AncestorEvent;
 
 public class Fe2 extends FY {
-   final Oj2 d;
+   public final Oj2 d;
 
-   Fe2(Oj2 var1) {
+   public Fe2(Oj2 var1) {
       this.d = var1;
    }
 

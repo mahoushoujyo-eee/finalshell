@@ -115,12 +115,12 @@ public class KD3 extends Ky4 {
    public static Integer[] p;
 
    public KD3() {
+   super();
       int[] var1;
       O2 var3;
       O2 var4;
       int var7;
       label26: {
-         super();
          this.s = new ArrayList(1);
          this.P = null;
          this.U = true;
@@ -722,63 +722,63 @@ public class KD3 extends Ky4 {
       }
    }
 
-   static boolean j(KD3 var0) {
+   public static boolean j(KD3 var0) {
       return var0.U;
    }
 
-   static U22 E(KD3 var0) {
+   public static U22 E(KD3 var0) {
       return var0.e;
    }
 
-   static String b(KD3 var0) {
+   public static String b(KD3 var0) {
       return var0.P;
    }
 
-   static void U(KD3 var0, java.io.File var1) throws IOException {
+   public static void U(KD3 var0, java.io.File var1) throws IOException {
       var0.D(var1);
    }
 
-   static KD J(KD3 var0) {
+   public static KD J(KD3 var0) {
       return var0.l;
    }
 
-   static BM c(KD3 var0) {
+   public static BM c(KD3 var0) {
       return var0.n;
    }
 
-   static Hc2 d(KD3 var0) {
+   public static Hc2 d(KD3 var0) {
       return var0.y;
    }
 
-   static ChangeListener i(KD3 var0) {
+   public static ChangeListener i(KD3 var0) {
       return var0.J;
    }
 
-   static boolean n(KD3 var0, boolean var1) {
+   public static boolean n(KD3 var0, boolean var1) {
       return var0.U = var1;
    }
 
-   static void M(KD3 var0) {
+   public static void M(KD3 var0) {
       var0.l();
    }
 
-   static O h(KD3 var0) {
+   public static O h(KD3 var0) {
       return var0.v;
    }
 
-   static String G(KD3 var0, String var1) {
+   public static String G(KD3 var0, String var1) {
       return var0.V(var1);
    }
 
-   static Ky4 o(KD3 var0) {
+   public static Ky4 o(KD3 var0) {
       return var0.I;
    }
 
-   static LK_2 m(KD3 var0) {
+   public static LK_2 m(KD3 var0) {
       return var0.q;
    }
 
-   static L2_3 I(KD3 var0) {
+   public static L2_3 I(KD3 var0) {
       return var0.D;
    }
 

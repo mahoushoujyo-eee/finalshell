@@ -17,7 +17,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 
 public class CopyMenu extends JPopupMenu {
-   ConnectionProperty o;
+   public ConnectionProperty o;
    public static String[] a;
    public static String[] b;
 

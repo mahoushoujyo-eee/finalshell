@@ -5,12 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Nl2_2 {
-   K3 Q;
+   public K3 Q;
    public static String[] a;
    public static String[] b;
-
-   Nl2_2() {
-   }
 
    public void v(String var1, String var2, int var3) {
       boolean var4 = var1.toLowerCase().endsWith(a(25598, 8806));

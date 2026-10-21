@@ -4,11 +4,11 @@ import com.finalshell.ui.panel.Ky4;
 import java.io.IOException;
 
 public class V_5 extends U2_3 {
-   final U2_3 O;
+   public final U2_3 O;
    public static String[] b;
    public static String[] c;
 
-   V_5(U2_3 var1) {
+   public V_5(U2_3 var1) {
       this.O = var1;
    }
 

@@ -54,9 +54,9 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
    public PropertyChangeListener L;
    public PropertyChangeListener Y;
    public ComponentAdapter k;
-   boolean O = true;
+   public boolean O = true;
    public boolean F = false;
-   Color z = new Color(a(3872, 1008117158691340778L), a(19021, 6848781374362076294L), a(19021, 6848781374362076294L), a(28851, 5840628270621621885L));
+   public Color z = new Color(a(3872, 1008117158691340778L), a(19021, 6848781374362076294L), a(19021, 6848781374362076294L), a(28851, 5840628270621621885L));
    public static String[] c;
    public static String[] d;
    public static long[] i;
@@ -123,7 +123,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
    }
 
    @Override
-   protected void propertyChange(PropertyChangeEvent var1) {
+   public void propertyChange(PropertyChangeEvent var1) {
       boolean var10000 = Ne4.A$boolean();
       super.propertyChange(var1);
       boolean var2 = var10000;
@@ -707,7 +707,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
    }
 
    @Override
-   protected void paintSafely(Graphics var1) {
+   public void paintSafely(Graphics var1) {
       Ne4.m$boolean();
       Object[] var10001 = Registry.packArgs(this.getComponent(), var1);
       long var12 = 135169693674870498L;
@@ -728,12 +728,12 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
       var2 = var10001;
       var20 = var3.isOpaque();
       label200:
-      if (var2 == false) {
+      if (var2 == null) {
          label198:
          if (var20 != 0) {
             label204: {
                Og4 var21 = this.e;
-               if (var2 == false) {
+               if (var2 == null) {
                   if (this.e == null) {
                      break label204;
                   }
@@ -742,7 +742,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                }
 
                var20 = var21.d$Boolean(this.u);
-               if (var2 != false) {
+               if (var2 == null) {
                   break label200;
                }
 
@@ -759,14 +759,14 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
       }
 
       label205: {
-         if (var2 == false) {
+         if (var2 == null) {
             if (var20 == 0) {
                var10001 = this.e;
                label180:
-               if (var2 == false) {
+               if (var2 == null) {
                   if (this.e == null) {
                      var10001 = this;
-                     if (var2 != false) {
+                     if (var2 == null) {
                         break label180;
                      }
 
@@ -782,10 +782,10 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                label207: {
                   var5 = var10001;
                   QH var23 = this;
-                  if (var2 == false) {
+                  if (var2 == null) {
                      if (this.e != null) {
                         this.e.u(var4, FN.N(var3), var3);
-                        if (var2 == false) {
+                        if (var2 == null) {
                            break label207;
                         }
                      }
@@ -794,7 +794,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                   }
 
                   boolean var24 = var23.M;
-                  if (var2 == false) {
+                  if (var2 == null) {
                      if (!var23.M) {
                         break label207;
                      }
@@ -805,7 +805,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                   Color var6;
                   label161: {
                      label208: {
-                        if (var2 == false) {
+                        if (var2 == null) {
                            if (!var24) {
                               break label208;
                            }
@@ -815,7 +815,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
 
                         label154: {
                            label153: {
-                              if (var2 == false) {
+                              if (var2 == null) {
                                  if (!var24) {
                                     break label153;
                                  }
@@ -833,7 +833,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                         }
 
                         var6 = var10001;
-                        if (var2 == false) {
+                        if (var2 == null) {
                            break label161;
                         }
                      }
@@ -845,7 +845,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                }
 
                RV.X(var4, var5);
-               if (var2 == false) {
+               if (var2 == null) {
                   break label205;
                }
             }
@@ -853,7 +853,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
             var20 = this.O;
          }
 
-         if (var2 == false) {
+         if (var2 == null) {
             if (var20 == 0) {
                break label205;
             }
@@ -869,19 +869,19 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
 
       Map var17 = FN.Y(var4);
       super.paintSafely(var1);
-      if (var2 == false) {
+      if (var2 == null) {
          if (this.L(var3)) {
             byte var19 = var3.getComponentOrientation().isLeftToRight();
             Rectangle var7 = this.getVisibleEditorRect();
             Shape var8 = RV.n(var4, var7);
             var10002 = this.S;
-            if (var2 == false) {
+            if (var2 == null) {
                var10002 = this.S != null ? this.S : var3.getFont();
             }
 
             var4.setFont((Font)var10002);
             var10002 = this.f;
-            if (var2 == false) {
+            if (var2 == null) {
                var10002 = this.f != null ? this.f : var3.getForeground();
             }
 
@@ -892,10 +892,10 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                var9 = Cf4_2.X(this.Q);
                FontMetrics var10 = var4.getFontMetrics();
                int var26 = this.a;
-               if (var2 == false) {
+               if (var2 == null) {
                   if (this.a == 0) {
                      var11 = var7.x + var7.width / 2 - var10.stringWidth(var9) / 2;
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label210;
                      }
                   }
@@ -907,10 +907,10 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                   label118: {
                      label117: {
                         label211: {
-                           if (var2 == false) {
+                           if (var2 == null) {
                               if (var26 != 0) {
                                  var27 = this.a;
-                                 if (var2 != false) {
+                                 if (var2 == null) {
                                     break label117;
                                  }
 
@@ -922,10 +922,10 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                               var26 = var19;
                            }
 
-                           if (var2 == false) {
+                           if (var2 == null) {
                               if (var26 == 0) {
                                  var27 = this.a;
-                                 if (var2 != false) {
+                                 if (var2 == null) {
                                     break label117;
                                  }
 
@@ -938,7 +938,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                            }
 
                            var31 = 2;
-                           if (var2 != false) {
+                           if (var2 == null) {
                               break label119;
                            }
 
@@ -951,7 +951,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
                      }
 
                      var11 = var27;
-                     if (var2 == false) {
+                     if (var2 == null) {
                         break label210;
                      }
                   }
@@ -972,7 +972,7 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
    }
 
    @Override
-   protected void paintBackground(Graphics var1) {
+   public void paintBackground(Graphics var1) {
    }
 
    @Override
@@ -1023,11 +1023,11 @@ public class QH extends BasicTextFieldUI implements W2_3, SwingConstants, L0_2 {
       this.O = var1;
    }
 
-   static JTextField P(QH var0) {
+   public static JTextField P(QH var0) {
       return var0.u;
    }
 
-   static void j(QH var0) {
+   public static void j(QH var0) {
       var0.J();
    }
 

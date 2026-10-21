@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
 public abstract class HN3 extends W5 {
-   protected boolean O = false;
+   public boolean O = false;
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {

@@ -10,8 +10,8 @@ public class Xg2_2 implements BG3 {
    public static String G;
 
    public Xg2_2() {
+   super();
       r();
-      super();
       this.M = 0.6;
       this.V = 0.4;
       if (Ky4.F$arrString() != null) {

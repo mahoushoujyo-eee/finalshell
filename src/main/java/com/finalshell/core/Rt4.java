@@ -16,9 +16,9 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.tree.TreeCellEditor;
 
 public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCellEditor {
-   protected JComponent G;
-   protected XA3 m;
-   protected int B = Sm2.G;
+   public JComponent G;
+   public XA3 m;
+   public int B = Sm2.G;
    public static String a;
 
    public Rt4() {
@@ -36,7 +36,7 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
       this.i(var1);
    }
 
-   protected void i(JComponent var1) {
+   public void i(JComponent var1) {
       int[] var10000 = WC_2.V();
       this.G = var1;
       int[] var2 = var10000;
@@ -148,11 +148,11 @@ public class Rt4 extends AbstractCellEditor implements TableCellEditor, TreeCell
       return this.G;
    }
 
-   static void H(Rt4 var0) {
+   public static void H(Rt4 var0) {
       var0.fireEditingStopped();
    }
 
-   static void u(Rt4 var0) {
+   public static void u(Rt4 var0) {
       var0.fireEditingCanceled();
    }
 

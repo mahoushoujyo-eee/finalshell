@@ -11,10 +11,10 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 
 public class LW extends Lz2_2 {
-   protected float[] G;
-   protected Color[] Z;
-   protected Color[] z;
-   final KC3 N;
+   public float[] G;
+   public Color[] Z;
+   public Color[] z;
+   public final KC3 N;
    public static long a;
 
    public LW(KC3 var1) {
@@ -125,7 +125,7 @@ public class LW extends Lz2_2 {
             var1.drawLine(var2.x, var2.y + var2.height - 1, var2.x + var2.width - 1, var2.y + var2.height - 1);
          }
 
-         var10000 = KC3.Z(this.N);
+         var10000 = (KC3.Z(this.N)) ? 1 : 0;
       }
 
       if (var4 != null) {
@@ -133,7 +133,7 @@ public class LW extends Lz2_2 {
             return;
          }
 
-         var10000 = KC3.u(this.N);
+         var10000 = (KC3.u(this.N)) ? 1 : 0;
       }
 
       if (var4 != null) {

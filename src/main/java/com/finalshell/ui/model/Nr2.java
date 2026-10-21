@@ -4,7 +4,7 @@ import com.finalshell.core.Dx4;
 import com.finalshell.core.QT;
 
 public final class Nr2 extends NZ {
-   Nr2(String var1, int var2) {
+   public Nr2(String var1, int var2) {
       super(var1, var2, null);
    }
 

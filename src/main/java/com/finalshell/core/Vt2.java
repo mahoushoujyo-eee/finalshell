@@ -6,15 +6,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Vt2 extends Vb2 {
-   ArrayList L;
-   byte[] Q;
-   int Y;
-   int m;
-   int N;
-   int o;
-   int q;
-   int S;
-   int l;
+   public ArrayList L;
+   public byte[] Q;
+   public int Y;
+   public int m;
+   public int N;
+   public int o;
+   public int q;
+   public int S;
+   public int l;
    public static long[] a;
    public static Integer[] b;
 
@@ -104,8 +104,8 @@ public class Vt2 extends Vb2 {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public Vt2(DatagramPacket var1) {
+   super();
       Ky4[] var10000 = Vb2.U();
-      super();
       this.Q = null;
       this.O = var1;
       this.Q = var1.getData();

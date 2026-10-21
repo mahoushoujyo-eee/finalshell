@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class N_2 extends W_2 implements Ia4 {
-   protected boolean X = false;
+   public boolean X = false;
 
    public boolean G() {
       return this.X;
@@ -23,7 +23,7 @@ public class N_2 extends W_2 implements Ia4 {
    }
 
    @Override
-   protected float j$float() {
+   public float j$float() {
       int[] var1 = W_2.B$arrint();
       N_2 var10000 = this;
       if (var1 == null) {

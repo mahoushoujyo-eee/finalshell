@@ -4,7 +4,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 
 public class CA extends Y_3 {
-   CA(short var1) {
+   public CA(short var1) {
       super(var1);
    }
 
@@ -13,10 +13,10 @@ public class CA extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) {
+   public void T(DataOutputStream var1) {
    }
 
-   static Y_3 K(short var0, DataInputStream var1) {
+   public static Y_3 K(short var0, DataInputStream var1) {
       return v(var0, var1);
    }
 }

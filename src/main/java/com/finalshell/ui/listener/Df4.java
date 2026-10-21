@@ -11,9 +11,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Df4 implements ActionListener {
-   final AcceleratePanel d;
+   public final AcceleratePanel d;
 
-   Df4(AcceleratePanel var1) {
+   public Df4(AcceleratePanel var1) {
       this.d = var1;
    }
 
@@ -25,7 +25,7 @@ public class Df4 implements ActionListener {
       Object var5 = 442601371933228411L;
       Df4 var10002 = ((Qe2_2)Ref.g(442601371933228411L, var5)).isSelected();
       if (var2 == null) {
-         if (var10002 != false) {
+         if (var10002 == null) {
             Object var7 = 220996271143196752L;
             Registry.lookupField(144708592452319805L).setInt(Ref.g(220996271143196752L, var7), Registry.lookupField(168555354480801721L).getInt(null));
             Object var9 = 220996271143196752L;
@@ -47,7 +47,7 @@ public class Df4 implements ActionListener {
       KD var10004;
       label46: {
          if (var2 == null) {
-            if (var10002 != false) {
+            if (var10002 == null) {
                Object var17 = 220996271143196752L;
                Ref.g(220996271143196752L, var17);
                Object var19 = 266390688568107078L;
@@ -85,7 +85,7 @@ public class Df4 implements ActionListener {
             var10004.isSelected();
          }
 
-         if (var10002 == false) {
+         if (var10002 == null) {
             return;
          }
 

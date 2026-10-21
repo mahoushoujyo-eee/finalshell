@@ -10,18 +10,18 @@ import java.awt.BorderLayout;
 import java.awt.Rectangle;
 
 public class Kk4 extends Ky4 {
-   final K42 E;
+   public final K42 E;
    public static String[] a;
    public static String[] b;
 
    public Kk4(K42 var1, java.io.File var2) {
+   super(true);
       String var10;
       label32: {
          String var4;
          label31: {
             var10 = Kz4.M();
             this.E = var1;
-            super(true);
             this.setLayout(new BorderLayout());
             this.I(false, false, false, true);
             this.D(0);
@@ -82,7 +82,7 @@ public class Kk4 extends Ky4 {
       K42.g(this.E).scrollRectToVisible(var2);
    }
 
-   static void L(Kk4 var0) {
+   public static void L(Kk4 var0) {
       var0.S();
    }
 

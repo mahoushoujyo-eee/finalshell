@@ -6,9 +6,6 @@ public class QI implements WE3 {
    public static long[] c;
    public static Integer[] d;
 
-   QI() {
-   }
-
    @Override
    public Object N(Object param1) {
       // $VF: Couldn't be decompiled

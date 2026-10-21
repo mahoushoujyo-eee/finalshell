@@ -8,8 +8,8 @@ import java.awt.image.ColorModel;
 
 public final class Cx4 implements Composite {
    public static String[] c;
-   protected float k;
-   protected int M;
+   public float k;
+   public int M;
    public static String[] a;
    public static String[] b;
    public static long[] d;

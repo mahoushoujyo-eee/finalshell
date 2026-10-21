@@ -10,8 +10,8 @@ public class S_2 implements Iterator {
    public static String a;
 
    public S_2(Iterator var1, int var2) {
+   super();
       boolean var10000 = F3_3.s();
-      super();
       this.g = new Iterator[var2];
       this.g[0] = var1;
       int var4 = 1;

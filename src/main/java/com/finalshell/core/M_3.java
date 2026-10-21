@@ -5,11 +5,11 @@ import java.awt.Graphics;
 import javax.swing.Icon;
 
 public class M_3 implements Icon {
-   final D_2_2 x;
+   public final D_2_2 x;
    public static long[] a;
    public static Integer[] b;
 
-   M_3(D_2_2 var1) {
+   public M_3(D_2_2 var1) {
       this.x = var1;
    }
 

@@ -22,20 +22,21 @@ import org.pcap4j.core.NotOpenException;
 import org.pcap4j.core.PcapNativeException;
 
 public class F5 extends F8 {
-   RouteTracePanel g;
-   T32 t;
-   KV L;
-   String S;
-   boolean V;
-   FY3 u;
-   Lv4_2 Z;
-   DX3_2 F;
+   public RouteTracePanel g;
+   public T32 t;
+   public KV L;
+   public String S;
+   public boolean V;
+   public FY3 u;
+   public Lv4_2 Z;
+   public DX3_2 F;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
    public F5(String var1, Lv4_2 var2) {
+   super((String)Ref.g(370410546418678766L, var2));
       KV var10001 = new KV();
       long var4 = 474524358810565567L;
       KV var3 = var10001;
@@ -238,10 +239,9 @@ public class F5 extends F8 {
       }
    }
 
-   void D() {
+   public void D() {
       DX3_2 var10002;
       Object var2 = 370410546418678766L;
-      super((String)Ref.g(370410546418678766L, var2));
       long var5 = 572928643335060995L;
       DX3_2 var4 = var10002;
       Ref.s(572928643335060995L, var4, var5);
@@ -256,7 +256,7 @@ public class F5 extends F8 {
       }
    }
 
-   void n() {
+   public void n() {
       Object var1 = 474524358810565567L;
       Registry.lookupField(461634183601281643L).setBoolean(Ref.g(474524358810565567L, var1), false);
       Object var3 = 474524358810565567L;

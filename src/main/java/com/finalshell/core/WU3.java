@@ -2,10 +2,10 @@ package com.finalshell.core;
 
 public class WU3 implements SC {
    public SC k;
-   final SC v;
-   final Yj4 c;
+   public final SC v;
+   public final Yj4 c;
 
-   WU3(Yj4 var1, SC var2) {
+   public WU3(Yj4 var1, SC var2) {
       this.c = var1;
       this.v = var2;
       this.k = this.v;

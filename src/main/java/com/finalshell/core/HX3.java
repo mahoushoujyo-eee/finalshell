@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 import java.awt.image.Kernel;
 
 public class HX3 extends HG3 {
-   protected float e;
-   protected Kernel V;
+   public float e;
+   public Kernel V;
    public static String b;
    public static long[] j;
    public static Integer[] k;

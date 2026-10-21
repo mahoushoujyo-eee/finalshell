@@ -28,8 +28,8 @@ public class B5 {
    }
 
    public B5(Point var1, Point var2) {
+   super();
       PI3.v();
-      super();
       this.L = var1.x;
       this.I = var1.y;
       this.z = var2.x;

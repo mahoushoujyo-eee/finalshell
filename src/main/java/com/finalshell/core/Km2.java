@@ -21,22 +21,22 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableRowSorter;
 
 public class Km2 extends KK {
-   Yd2 t;
-   Km2 q;
-   Kl4 v;
-   Connection4 K;
-   Point G;
-   Point n;
-   int m;
-   boolean b;
-   int N;
-   long S;
-   Address V;
-   boolean E;
-   boolean p;
-   Dk2 U;
-   MT Y;
-   FolderAdapter Z;
+   public Yd2 t;
+   public Km2 q;
+   public Kl4 v;
+   public Connection4 K;
+   public Point G;
+   public Point n;
+   public int m;
+   public boolean b;
+   public int N;
+   public long S;
+   public Address V;
+   public boolean E;
+   public boolean p;
+   public Dk2 U;
+   public MT Y;
+   public FolderAdapter Z;
    public static String O;
    public static String[] a;
    public static String[] c;
@@ -44,8 +44,8 @@ public class Km2 extends KK {
    public static Integer[] e;
 
    public Km2(Address var1, Connection4 var2, boolean var3) {
+   super();
       String var10000 = U$String();
-      super();
       String var4 = var10000;
       Registry.lookupField(304927446900442607L).setInt(this, a(11400, 3823113420712635353L));
       Registry.lookupField(511537538001441169L).setBoolean(this, true);
@@ -287,7 +287,7 @@ public class Km2 extends KK {
       }
    }
 
-   void L() {
+   public void L() {
       U$String();
       long var5 = 493953348619799745L;
       Object var7 = 140993979563084749L;
@@ -300,13 +300,13 @@ public class Km2 extends KK {
       long var13 = 140993979563084749L;
       Object var15 = 493953348619799745L;
       Km2 var10006 = this - ((Point)Ref.g(493953348619799745L, var15)).y;
-      if (var1 == null) {
+      if (var1 == 0) {
          if (var10006 > 0) {
             label42: {
                float var4 = (float)Math.abs(var3 / var2);
                float var24;
                int var22 = (var24 = var4 - 1.0F) == 0.0F ? 0 : (var24 < 0.0F ? -1 : 1);
-               if (var1 == null) {
+               if (var1 == 0) {
                   if (var22 < 0) {
                      break label42;
                   }
@@ -318,7 +318,7 @@ public class Km2 extends KK {
                }
             }
 
-            if (var1 == null) {
+            if (var1 == 0) {
                return;
             }
          }
@@ -329,7 +329,7 @@ public class Km2 extends KK {
          int var10008 = this - ((Point)Ref.g(140993979563084749L, var19)).y;
       }
 
-      if (var1 == null) {
+      if (var1 == 0) {
          if (!(var10006 > 0)) {
             return;
          }
@@ -340,7 +340,7 @@ public class Km2 extends KK {
       float var21 = (float)var10006;
       float var25;
       int var23 = (var25 = var21 - 1.0F) == 0.0F ? 0 : (var25 < 0.0F ? -1 : 1);
-      if (var1 == null) {
+      if (var1 == 0) {
          if (var23 < 0) {
             return;
          }
@@ -436,7 +436,7 @@ public class Km2 extends KK {
       }
    }
 
-   protected TableRowSorter w() {
+   public TableRowSorter w() {
       Object var7 = 612091313834066062L;
       Kl4 var2 = (Kl4)Ref.g(612091313834066062L, var7);
       String var10001 = U$String();

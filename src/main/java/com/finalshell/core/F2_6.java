@@ -7,11 +7,11 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class F2_6 implements InvocationHandler {
-   final Object J;
+   public final Object J;
    public static String[] a;
    public static String[] b;
 
-   F2_6(Object var1) {
+   public F2_6(Object var1) {
       this.J = var1;
    }
 

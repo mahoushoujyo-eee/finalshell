@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Dx4_2 {
-   ArrayList T;
-   BH n;
+   public ArrayList T;
+   public BH n;
 
    public Dx4_2() {
       ArrayList var10001 = new ArrayList();

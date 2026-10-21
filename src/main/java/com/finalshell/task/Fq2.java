@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.Timeout;
 
 public class Fq2 extends Thread {
-   final Timeout e;
+   public final Timeout e;
    public static long a;
 
-   Fq2(Timeout var1) {
+   public Fq2(Timeout var1) {
       this.e = var1;
    }
 

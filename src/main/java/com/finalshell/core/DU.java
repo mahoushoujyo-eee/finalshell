@@ -37,7 +37,7 @@ public class DU extends BasicEditorPaneUI {
    }
 
    @Override
-   protected void paintSafely(Graphics var1) {
+   public void paintSafely(Graphics var1) {
       Registry.packArgs(this.getComponent(), var1);
       long var4 = 135169693674870498L;
       Object var10001 = Ref.h2(135169693674870498L, var4);

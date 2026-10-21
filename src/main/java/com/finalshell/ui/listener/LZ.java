@@ -9,9 +9,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LZ implements MouseListener {
-   final SelectPrivateKeyDialog E;
+   public final SelectPrivateKeyDialog E;
 
-   LZ(SelectPrivateKeyDialog var1) {
+   public LZ(SelectPrivateKeyDialog var1) {
       this.E = var1;
    }
 

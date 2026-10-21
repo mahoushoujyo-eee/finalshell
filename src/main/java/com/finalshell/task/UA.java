@@ -5,9 +5,6 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class UA implements Runnable {
-   UA() {
-   }
-
    @Override
    public void run() {
       Registry.emptyArgs();

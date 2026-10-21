@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class FC3 implements ActionListener {
-   final EffectPreview n;
+   public final EffectPreview n;
    public static String[] a;
    public static String[] b;
 
-   FC3(EffectPreview var1) {
+   public FC3(EffectPreview var1) {
       this.n = var1;
    }
 

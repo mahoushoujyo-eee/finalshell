@@ -4,9 +4,9 @@ import java.awt.Component;
 import java.awt.Dimension;
 
 public class SX extends SZ {
-   final K42 L;
+   public final K42 L;
 
-   SX(K42 var1, Component var2, boolean var3) {
+   public SX(K42 var1, Component var2, boolean var3) {
       super(var2, var3);
       this.L = var1;
    }

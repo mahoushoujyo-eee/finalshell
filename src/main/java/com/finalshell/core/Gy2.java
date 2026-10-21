@@ -1,14 +1,14 @@
 package com.finalshell.core;
 
 public class Gy2 {
-   int M;
-   int R;
-   float e;
-   float c;
-   float p;
-   float G;
-   float g;
-   float u = 1.0F;
+   public int M;
+   public int R;
+   public float e;
+   public float c;
+   public float p;
+   public float G;
+   public float g;
+   public float u = 1.0F;
    public static long a;
 
    public Gy2() {

@@ -4,9 +4,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class OA extends MouseAdapter {
-   final com.finalshell.ui.panel.E2 s;
+   public final com.finalshell.ui.panel.E2 s;
 
-   OA(com.finalshell.ui.panel.E2 var1) {
+   public OA(com.finalshell.ui.panel.E2 var1) {
       this.s = var1;
    }
 

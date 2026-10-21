@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class B42 implements ActionListener {
-   final SelectPrivateKeyDialog k;
+   public final SelectPrivateKeyDialog k;
 
-   B42(SelectPrivateKeyDialog var1) {
+   public B42(SelectPrivateKeyDialog var1) {
       this.k = var1;
    }
 

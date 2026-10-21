@@ -8,9 +8,9 @@ import com.finalshell.ui.frame.FP;
 import java.lang.reflect.InvocationTargetException;
 
 public class G3 implements Runnable {
-   final CQ3 L;
+   public final CQ3 L;
 
-   G3(CQ3 var1) {
+   public G3(CQ3 var1) {
       this.L = var1;
    }
 
@@ -33,7 +33,7 @@ public class G3 implements Runnable {
       Object var13 = 369047721302880721L;
       Object var10010 = Ref.g(369047721302880721L, var13);
       Object var15 = 257967421985105261L;
-new FP((FP)Ref.g(257967421985105261L, var15));
+var10010 = new FP((FP)Ref.g(257967421985105261L, var15));
       long var18 = 583702008139450328L;
       Object var17 = var10009;
       Ref.s(583702008139450328L, var17, var18);
@@ -46,7 +46,7 @@ new FP((FP)Ref.g(257967421985105261L, var15));
       Object var25 = 369047721302880721L;
       Object var10016 = Ref.g(369047721302880721L, var25);
       Object var27 = 257967421985105261L;
-new FP((FP)Ref.g(257967421985105261L, var27));
+var10016 = new FP((FP)Ref.g(257967421985105261L, var27));
       long var30 = 588846076310445591L;
       Object var29 = var10015;
       Ref.s(588846076310445591L, var29, var30);

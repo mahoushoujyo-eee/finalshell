@@ -4,16 +4,16 @@ import com.finalshell.connection.Connection12;
 import java.io.File;
 
 public class KX3_2 implements Cq2 {
-   final String z;
-   final String G;
-   final File p;
-   final Connection12 s;
-   final YI B;
-   final com.finalshell.ui.dialog.Nq2 q;
+   public final String z;
+   public final String G;
+   public final File p;
+   public final Connection12 s;
+   public final YI B;
+   public final com.finalshell.ui.dialog.Nq2 q;
    public static String[] a;
    public static String[] b;
 
-   KX3_2(com.finalshell.ui.dialog.Nq2 var1, String var2, String var3, File var4, Connection12 var5, YI var6) {
+   public KX3_2(com.finalshell.ui.dialog.Nq2 var1, String var2, String var3, File var4, Connection12 var5, YI var6) {
       this.q = var1;
       this.z = var2;
       this.G = var3;

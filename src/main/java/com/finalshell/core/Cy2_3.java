@@ -13,10 +13,10 @@ public class Cy2_3 extends Y_3 {
    }
 
    @Override
-   protected void T(DataOutputStream var1) {
+   public void T(DataOutputStream var1) {
    }
 
-   static Y_3 w(short var0, DataInputStream var1) {
+   public static Y_3 w(short var0, DataInputStream var1) {
       return T(var0, var1);
    }
 }

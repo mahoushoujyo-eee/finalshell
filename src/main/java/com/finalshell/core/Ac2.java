@@ -21,15 +21,15 @@ import javax.swing.Icon;
 import javax.swing.JComponent;
 
 public class Ac2 {
-   protected static int Q;
-   protected static boolean a;
-   protected static boolean C;
-   protected static boolean h;
-   protected static Map k;
-   protected static Map J;
-   protected static Map Z;
-   protected static List g;
-   protected static boolean w;
+   public static int Q;
+   public static boolean a;
+   public static boolean C;
+   public static boolean h;
+   public static Map k;
+   public static Map J;
+   public static Map Z;
+   public static List g;
+   public static boolean w;
    public static Ky4[] X;
    public static String b;
    public static long c;
@@ -244,7 +244,7 @@ public class Ac2 {
       return W(var0, var1, var2, var3, (boolean)var6);
    }
 
-   protected static com.finalshell.ui.panel.Wd2 W(Component var0, JComponent var1, WF var2, int var3, boolean var4) {
+   public static com.finalshell.ui.panel.Wd2 W(Component var0, JComponent var1, WF var2, int var3, boolean var4) {
       Ky4[] var5 = n();
       if (var4) {
          o(var0);
@@ -283,7 +283,7 @@ public class Ac2 {
       return var6;
    }
 
-   protected static void y(Component var0) {
+   public static void y(Component var0) {
       Ky4[] var1 = n();
       if (k.get(var0) != null) {
          ArrayList var2 = new ArrayList();
@@ -348,7 +348,7 @@ public class Ac2 {
       M(FN.L(var0));
    }
 
-   protected static void M(Window var0) {
+   public static void M(Window var0) {
       Ky4[] var1 = n();
       if (var0.isShowing()) {
          label41:
@@ -555,7 +555,7 @@ public class Ac2 {
       return E(var0, true);
    }
 
-   protected static com.finalshell.ui.panel.Wd2 E(com.finalshell.ui.panel.Wd2 var0, boolean var1) {
+   public static com.finalshell.ui.panel.Wd2 E(com.finalshell.ui.panel.Wd2 var0, boolean var1) {
       Ky4[] var2 = n();
       Component var10000 = var0.N$Component();
       if (var2 == null) {

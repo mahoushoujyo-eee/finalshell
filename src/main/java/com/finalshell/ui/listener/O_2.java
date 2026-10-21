@@ -4,9 +4,9 @@ import java.awt.event.HierarchyEvent;
 import java.awt.event.HierarchyListener;
 
 public class O_2 implements HierarchyListener {
-   final com.finalshell.ui.panel.Qq2 J;
+   public final com.finalshell.ui.panel.Qq2 J;
 
-   O_2(com.finalshell.ui.panel.Qq2 var1) {
+   public O_2(com.finalshell.ui.panel.Qq2 var1) {
       this.J = var1;
    }
 

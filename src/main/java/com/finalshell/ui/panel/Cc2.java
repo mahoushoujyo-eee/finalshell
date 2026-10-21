@@ -21,17 +21,17 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class Cc2 extends F8 {
-   String A;
-   String z;
-   int a;
-   JTextArea h;
-   String D;
+   public String A;
+   public String z;
+   public int a;
+   public JTextArea h;
+   public String D;
    public static String[] b;
    public static String[] d;
    public static long[] e;
    public static Integer[] g;
 
-   Cc2(String var1, String var2, int var3) {
+   public Cc2(String var1, String var2, int var3) {
       long var6 = 210912483329447649L;
       String var5 = "";
       Ref.s(210912483329447649L, var5, var6);
@@ -139,7 +139,7 @@ public class Cc2 extends F8 {
       }
    }
 
-   void u(String var1) {
+   public void u(String var1) {
       L9.X();
       Object var6 = 331777772926621384L;
       Object[] var10002 = Registry.packArgs(this, Ref.g(331777772926621384L, var6));
@@ -166,7 +166,7 @@ public class Cc2 extends F8 {
       String var4 = var21;
       String var22 = var4.contains(a(-29624, 21488));
       if (var2 == null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -174,7 +174,7 @@ public class Cc2 extends F8 {
       }
 
       if (var2 == null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -182,7 +182,7 @@ public class Cc2 extends F8 {
       }
 
       if (var2 == null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -190,7 +190,7 @@ public class Cc2 extends F8 {
       }
 
       if (var2 == null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -199,7 +199,7 @@ public class Cc2 extends F8 {
 
       String var10005;
       if (var2 == null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -211,7 +211,7 @@ public class Cc2 extends F8 {
 
       label83: {
          if (var2 == null) {
-            if (var22 != false) {
+            if (var22 == null) {
                return;
             }
 

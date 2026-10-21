@@ -9,7 +9,7 @@ public abstract class XY3 {
    public double[] r;
    public static String[] u;
 
-   protected XY3(String var1) {
+   public XY3(String var1) {
       this.S = var1;
    }
 

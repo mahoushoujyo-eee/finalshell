@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.YQ;
 import java.lang.reflect.InvocationTargetException;
 
 public class CD implements Runnable {
-   final YQ M;
+   public final YQ M;
 
-   CD(YQ var1) {
+   public CD(YQ var1) {
       this.M = var1;
    }
 

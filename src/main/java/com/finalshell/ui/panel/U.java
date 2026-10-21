@@ -5,9 +5,9 @@ import com.finalshell.ui.model.E;
 
 public class U extends O {
    public final E h;
-   protected int g;
-   protected int d;
-   protected boolean v;
+   public int g;
+   public int d;
+   public boolean v;
    public static String[] a;
    public static String[] b;
 

@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.lang.ref.WeakReference;
 
 public class Qo_2 implements ActionListener {
-   final WeakReference S;
+   public final WeakReference S;
 
-   Qo_2(WeakReference var1) {
+   public Qo_2(WeakReference var1) {
       this.S = var1;
    }
 

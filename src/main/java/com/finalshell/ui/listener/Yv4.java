@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Yv4 implements ActionListener {
-   final AcceleratePanel C;
+   public final AcceleratePanel C;
 
-   Yv4(AcceleratePanel var1) {
+   public Yv4(AcceleratePanel var1) {
       this.C = var1;
    }
 

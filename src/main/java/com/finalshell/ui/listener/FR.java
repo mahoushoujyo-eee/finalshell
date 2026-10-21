@@ -12,9 +12,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JDialog;
 
 public class FR implements ActionListener {
-   final ConnectionProperty w;
+   public final ConnectionProperty w;
 
-   FR(ConnectionProperty var1) {
+   public FR(ConnectionProperty var1) {
       this.w = var1;
    }
 
@@ -131,7 +131,7 @@ public class FR implements ActionListener {
             throw var30.getTargetException();
          }
 
-new FR(null, var44, (Window)var10010, var3, null);
+null = new FR(null, var44, (Window)var10010, var3, null);
       }
    }
 }

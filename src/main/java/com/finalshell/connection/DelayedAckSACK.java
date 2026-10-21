@@ -26,39 +26,39 @@ import org.pcap4j.packet.namednumber.TcpPort;
 import org.pcap4j.util.MacAddress;
 
 public class DelayedAckSACK {
-   InetAddress b;
-   int o;
-   HashMap t = new HashMap();
-   HashMap X = new HashMap();
-   int G = a(30717, 7622254120363138489L);
-   Random A = new Random();
-   PcapHandle y;
-   HashSet Y = new HashSet();
-   HashMap v = new HashMap();
-   MacAddress O;
-   int D = -1;
-   boolean w = false;
-   int L;
-   int F;
-   int Q;
-   Packet g;
-   short j = (short)a(10692, 9107184885653521295L);
-   Fl2 x;
-   Fl2 m;
-   int q;
-   ArrayList U = new ArrayList();
-   HashMap C = new HashMap();
-   HashMap p = new HashMap();
-   HashMap d = new HashMap();
-   HashMap k = new HashMap();
-   ArrayList S = new ArrayList();
-   Object I = new Object();
-   int e = a(32125, 1756407798871136060L);
-   int V = 0;
-   long n = 0L;
-   long T = b(10845, 7076075993947414457L);
-   Object a = new Object();
-   Thread M;
+   public InetAddress b;
+   public int o;
+   public HashMap t = new HashMap();
+   public HashMap X = new HashMap();
+   public int G = a(30717, 7622254120363138489L);
+   public Random A = new Random();
+   public PcapHandle y;
+   public HashSet Y = new HashSet();
+   public HashMap v = new HashMap();
+   public MacAddress O;
+   public int D = -1;
+   public boolean w = false;
+   public int L;
+   public int F;
+   public int Q;
+   public Packet g;
+   public short j = (short)a(10692, 9107184885653521295L);
+   public Fl2 x;
+   public Fl2 m;
+   public int q;
+   public ArrayList U = new ArrayList();
+   public HashMap C = new HashMap();
+   public HashMap p = new HashMap();
+   public HashMap d = new HashMap();
+   public HashMap k = new HashMap();
+   public ArrayList S = new ArrayList();
+   public Object I = new Object();
+   public int e = a(32125, 1756407798871136060L);
+   public int V = 0;
+   public long n = 0L;
+   public long T = b(10845, 7076075993947414457L);
+   public Object a = new Object();
+   public Thread M;
    public static String[] c;
    public static String[] f;
    public static long[] h;
@@ -66,7 +66,7 @@ public class DelayedAckSACK {
    public static long[] l;
    public static Long[] r;
 
-   DelayedAckSACK(PcapHandle var1) {
+   public DelayedAckSACK(PcapHandle var1) {
       this.y = var1;
    }
 
@@ -709,7 +709,7 @@ public class DelayedAckSACK {
       // 5f8: return
    }
 
-   void R() {
+   public void R() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -854,11 +854,11 @@ public class DelayedAckSACK {
       // 137: return
    }
 
-   void q(long var1) {
+   public void q(long var1) {
       this.T = var1;
    }
 
-   void A(int param1) {
+   public void A(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1060,7 +1060,7 @@ public class DelayedAckSACK {
       // 1b2: return
    }
 
-   void t() {
+   public void t() {
       DelayedAckSACK var2;
       label26: {
          String[] var1 = DnsResolveFailedSetting.I$arrString();
@@ -1091,7 +1091,7 @@ public class DelayedAckSACK {
       var2.q = this.m.H + this.m.M - (this.x.H + this.x.M);
    }
 
-   void i(Packet param1, int param2) {
+   public void i(Packet param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1430,7 +1430,7 @@ public class DelayedAckSACK {
       // 2cf: goto 01b
    }
 
-   Packet K(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
+   public Packet K(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
       TcpPacket.Builder var9 = new TcpPacket.Builder();
       var9.correctChecksumAtBuild$TcpPacket_Builder(true);
       var9.correctLengthAtBuild$TcpPacket_Builder(true);
@@ -1489,7 +1489,7 @@ public class DelayedAckSACK {
       return var17;
    }
 
-   Packet D(Packet var1, int var2, byte[] var3) {
+   public Packet D(Packet var1, int var2, byte[] var3) {
       Packet var5 = null;
       EthernetPacket var6 = (EthernetPacket)var1;
       EthernetPacket.EthernetHeader var7 = var6.getHeader$EthernetPacket_EthernetHeader();
@@ -1553,7 +1553,7 @@ public class DelayedAckSACK {
       return var5;
    }
 
-   Packet y(Packet var1, int var2, int var3) {
+   public Packet y(Packet var1, int var2, int var3) {
       Object var4 = null;
       EthernetPacket var5 = (EthernetPacket)var1;
       EthernetPacket.EthernetHeader var6 = var5.getHeader$EthernetPacket_EthernetHeader();
@@ -1608,7 +1608,7 @@ public class DelayedAckSACK {
       return var14.build$EthernetPacket();
    }
 
-   Packet W(Packet var1, int var2, byte[] var3, short var4, int var5) {
+   public Packet W(Packet var1, int var2, byte[] var3, short var4, int var5) {
       Packet var7 = null;
       EthernetPacket var8 = (EthernetPacket)var1;
       DnsResolveFailedSetting.I$arrString();
@@ -1670,7 +1670,7 @@ public class DelayedAckSACK {
       return var7;
    }
 
-   static Packet j(Packet var0) {
+   public static Packet j(Packet var0) {
       Object var2 = null;
       EthernetPacket var3 = (EthernetPacket)var0;
       EthernetPacket.EthernetHeader var4 = var3.getHeader$EthernetPacket_EthernetHeader();
@@ -1735,7 +1735,7 @@ public class DelayedAckSACK {
       return var11.build$EthernetPacket();
    }
 
-   Packet X(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
+   public Packet X(MacAddress var1, MacAddress var2, Inet4Address var3, short var4, Inet4Address var5, short var6, int var7, int var8) {
       TcpPacket.Builder var9 = new TcpPacket.Builder();
       var9.correctChecksumAtBuild$TcpPacket_Builder(true);
       var9.correctLengthAtBuild$TcpPacket_Builder(true);

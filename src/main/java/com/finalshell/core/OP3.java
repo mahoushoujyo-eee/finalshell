@@ -4,11 +4,11 @@ import com.finalshell.ui.model.CB3;
 import java.util.List;
 
 public class OP3 extends OR3 {
-   final CB3 m;
-   final boolean R;
-   final Zn2 B;
+   public final CB3 m;
+   public final boolean R;
+   public final Zn2 B;
 
-   OP3(Zn2 var1, CB3 var2, boolean var3) {
+   public OP3(Zn2 var1, CB3 var2, boolean var3) {
       this.B = var1;
       this.m = var2;
       this.R = var3;

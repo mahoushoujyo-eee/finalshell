@@ -9,14 +9,14 @@ import java.io.StreamCorruptedException;
 import java.lang.reflect.Field;
 
 public class EX3 extends ObjectInputStream {
-   static Field[] j;
-   static volatile boolean R;
+   public static Field[] j;
+   public static volatile boolean R;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   static void w() {
+   public static void w() {
       String var0 = Hi2.C();
 
       try {
@@ -59,8 +59,8 @@ public class EX3 extends ObjectInputStream {
    }
 
    public EX3(ObjectInputStream var1) throws IOException {
+   super(var1);
       String var10000 = Hi2.C();
-      super(var1);
       String var2 = var10000;
 
       try {
@@ -86,7 +86,7 @@ public class EX3 extends ObjectInputStream {
    }
 
    @Override
-   protected Class resolveClass(ObjectStreamClass param1) throws IOException, ClassNotFoundException {
+   public Class resolveClass(ObjectStreamClass param1) throws IOException, ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -207,7 +207,7 @@ public class EX3 extends ObjectInputStream {
    }
 
    @Override
-   protected Class resolveProxyClass(String[] param1) throws IOException, ClassNotFoundException {
+   public Class resolveProxyClass(String[] param1) throws IOException, ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -263,7 +263,7 @@ public class EX3 extends ObjectInputStream {
    }
 
    @Override
-   protected void readStreamHeader() throws IOException, StreamCorruptedException {
+   public void readStreamHeader() throws IOException, StreamCorruptedException {
    }
 
    public static Throwable a(Throwable var0) {

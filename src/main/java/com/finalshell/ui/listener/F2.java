@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class F2 implements ActionListener {
-   final SetBackgroundImagePanel z;
-   final com.finalshell.ui.panel.Y3 c;
+   public final SetBackgroundImagePanel z;
+   public final com.finalshell.ui.panel.Y3 c;
 
-   F2(com.finalshell.ui.panel.Y3 var1, SetBackgroundImagePanel var2) {
+   public F2(com.finalshell.ui.panel.Y3 var1, SetBackgroundImagePanel var2) {
       this.c = var1;
       this.z = var2;
    }

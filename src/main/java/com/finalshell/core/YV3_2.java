@@ -7,10 +7,10 @@ import java.net.InetAddress;
 import org.apache.hc.client5.http.SystemDefaultDnsResolver;
 
 public class YV3_2 extends SystemDefaultDnsResolver {
-   final TL3 S;
+   public final TL3 S;
    public static String a;
 
-   YV3_2(TL3 var1) {
+   public YV3_2(TL3 var1) {
       this.S = var1;
    }
 

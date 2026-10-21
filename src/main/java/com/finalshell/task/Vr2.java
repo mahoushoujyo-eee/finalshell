@@ -4,10 +4,10 @@ import com.finalshell.core.UD;
 import com.finalshell.crypto.PingMessageR;
 
 public class Vr2 implements Runnable {
-   final PingMessageR t;
+   public final PingMessageR t;
    public final UD o;
 
-   Vr2(PingMessageR var1, UD var2) {
+   public Vr2(PingMessageR var1, UD var2) {
       this.t = var1;
       this.o = var2;
    }

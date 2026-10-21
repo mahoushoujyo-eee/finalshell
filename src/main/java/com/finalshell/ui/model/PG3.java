@@ -2,7 +2,7 @@ package com.finalshell.ui.model;
 
 import com.finalshell.core.XP;
 
-public class PG3 extends Enum {
+public abstract class PG3 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -26,7 +26,15 @@ public class PG3 extends Enum {
    public static long[] a;
    public static Integer[] b;
 
-   public PG3(int[] var3) {
+   public static PG3[] values() {
+      return (PG3[])v.clone();
+   }
+
+   public static PG3 valueOf(String var0) {
+      throw new UnsupportedOperationException("valueOf not implemented");
+   }
+
+   public PG3(String var1, int var2, int[] var3) {
       this.B = var3;
    }
 
@@ -123,14 +131,12 @@ public class PG3 extends Enum {
       return var10000;
    }
 
-   PG3(int[] var3, Pm4 var4) {
-      this(var3);
+   public PG3(String var1, int var2, int[] var3, Pm4 var4) {
+      this(var1, var2, var3);
    }
 
-   private static final Object __vfClinitTrigger = __vfClinitTrigger();
-   private static Object __vfClinitTrigger() {
+   static {
       __vfClinit__();
-      return null;
    }
 
    public static int a(int var0, long var1) {
@@ -341,7 +347,6 @@ public class PG3 extends Enum {
       }
    }
 }
-
 
 
 

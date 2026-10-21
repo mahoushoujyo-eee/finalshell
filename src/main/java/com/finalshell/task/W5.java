@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.FM;
 import java.lang.reflect.InvocationTargetException;
 
 public class W5 implements Runnable {
-   final FM z;
+   public final FM z;
 
-   W5(FM var1) {
+   public W5(FM var1) {
       this.z = var1;
    }
 

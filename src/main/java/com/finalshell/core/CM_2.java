@@ -5,13 +5,13 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public abstract class CM_2 {
-   final int X;
-   static boolean t;
+   public final int X;
+   public static boolean t;
    public static long d;
 
    public CM_2(int var1) {
+   super();
       Ky4[] var10000 = Cr2_2.q$arrky_4();
-      super();
       Ky4[] var2 = var10000;
       if (var2 == null) {
          if (!t) {

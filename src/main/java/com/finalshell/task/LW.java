@@ -6,15 +6,15 @@ import com.finalshell.crypto.PingMessageR;
 import java.util.HashMap;
 
 public class LW implements Runnable {
-   Thread o;
-   HashMap s = new HashMap();
+   public Thread o;
+   public HashMap s = new HashMap();
 
    public LW() {
       this.o = new Thread(this);
       this.o.start();
    }
 
-   synchronized void d(Qu2 var1, int var2) {
+   public synchronized void d(Qu2 var1, int var2) {
       String[] var3 = PingMessageR.N();
       HashMap var10000 = this.s;
       Integer var10001 = var1.a;
@@ -32,7 +32,7 @@ public class LW implements Runnable {
       var5.k(var2);
    }
 
-   synchronized void i(Qu2 var1) {
+   public synchronized void i(Qu2 var1) {
       if (!this.s.containsKey(var1.a)) {
          Z1_2 var2 = new Z1_2(var1);
          this.s.put(var1.a, var2);

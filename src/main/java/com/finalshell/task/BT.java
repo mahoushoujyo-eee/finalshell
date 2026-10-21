@@ -6,10 +6,10 @@ import com.finalshell.ui.listener.Lw2;
 import java.lang.reflect.InvocationTargetException;
 
 public class BT implements Runnable {
-   final String F;
-   final Lw2 W;
+   public final String F;
+   public final Lw2 W;
 
-   BT(Lw2 var1, String var2) {
+   public BT(Lw2 var1, String var2) {
       this.W = var1;
       this.F = var2;
    }

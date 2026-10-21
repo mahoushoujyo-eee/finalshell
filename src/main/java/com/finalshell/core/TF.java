@@ -7,11 +7,11 @@ import java.awt.Rectangle;
 
 public class TF implements E_2 {
    public Rectangle b;
-   final Component U;
-   final E_2 e;
-   final Ds2 d;
+   public final Component U;
+   public final E_2 e;
+   public final Ds2 d;
 
-   TF(Ds2 var1, Component var2, E_2 var3) {
+   public TF(Ds2 var1, Component var2, E_2 var3) {
       this.d = var1;
       this.U = var2;
       this.e = var3;

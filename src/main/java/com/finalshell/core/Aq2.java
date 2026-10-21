@@ -16,8 +16,8 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 public class Aq2 implements DropTargetListener {
-   DropTarget F;
-   JTree Z;
+   public DropTarget F;
+   public JTree Z;
 
    public Aq2(JTree var1) {
       long var3 = 595964023562665259L;

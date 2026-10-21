@@ -8,15 +8,15 @@ import java.util.Map;
 import java.util.WeakHashMap;
 
 public class TP extends T4 {
-   protected boolean v;
-   protected boolean e;
-   protected boolean u;
-   protected boolean z;
-   protected int R;
-   protected int b;
-   protected int K;
-   protected int o;
-   protected Map s = new WeakHashMap();
+   public boolean v;
+   public boolean e;
+   public boolean u;
+   public boolean z;
+   public int R;
+   public int b;
+   public int K;
+   public int o;
+   public Map s = new WeakHashMap();
    public static String[] a;
    public static String[] d;
 
@@ -510,7 +510,7 @@ public class TP extends T4 {
       }
    }
 
-   protected int m(boolean var1, int var2, int var3, int var4) {
+   public int m(boolean var1, int var2, int var3, int var4) {
       int var5;
       int var10000;
       label82: {

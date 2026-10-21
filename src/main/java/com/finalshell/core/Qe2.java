@@ -4,8 +4,8 @@ import com.finalshell.crypto.PingMessageR;
 import java.util.HashMap;
 
 public class Qe2 {
-   HashMap f;
-   long q;
+   public HashMap f;
+   public long q;
 
    public Qe2(long var1) {
       this.q = var1;

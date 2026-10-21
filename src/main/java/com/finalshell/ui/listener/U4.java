@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class U4 implements ActionListener {
-   final SystemInfoPanel w;
+   public final SystemInfoPanel w;
 
-   U4(SystemInfoPanel var1) {
+   public U4(SystemInfoPanel var1) {
       this.w = var1;
    }
 

@@ -6,9 +6,9 @@ import java.util.function.Predicate;
 import org.jetbrains.annotations.Nullable;
 
 public class AR extends AD_2 {
-   final SetBackgroundImagePanel b;
+   public final SetBackgroundImagePanel b;
 
-   AR(SetBackgroundImagePanel var1, ZT var2, Predicate var3) {
+   public AR(SetBackgroundImagePanel var1, ZT var2, Predicate var3) {
       super(var2, var3);
       this.b = var1;
    }

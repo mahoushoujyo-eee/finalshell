@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ww2 implements ActionListener {
-   final Xt2 u;
+   public final Xt2 u;
    public static long a;
 
-   Ww2(Xt2 var1) {
+   public Ww2(Xt2 var1) {
       this.u = var1;
    }
 

@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class UB2 extends MouseAdapter {
-   final OG Y;
+   public final OG Y;
 
-   UB2(OG var1) {
+   public UB2(OG var1) {
       this.Y = var1;
    }
 

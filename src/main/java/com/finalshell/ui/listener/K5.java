@@ -8,10 +8,10 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class K5 implements PropertyChangeListener {
-   final Ky4 v;
-   final DK z;
+   public final Ky4 v;
+   public final DK z;
 
-   K5(DK var1, Ky4 var2) {
+   public K5(DK var1, Ky4 var2) {
       this.z = var1;
       this.v = var2;
    }

@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class ZK implements NJ {
-   final com.finalshell.ui.panel.Cn2 S;
+   public final com.finalshell.ui.panel.Cn2 S;
 
-   ZK(com.finalshell.ui.panel.Cn2 var1) {
+   public ZK(com.finalshell.ui.panel.Cn2 var1) {
       this.S = var1;
    }
 

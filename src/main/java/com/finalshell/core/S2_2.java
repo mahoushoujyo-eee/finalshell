@@ -6,7 +6,7 @@ import java.io.UTFDataFormatException;
 
 public class S2_2 extends N2_3 {
    public final String p;
-   static boolean v;
+   public static boolean v;
    public static String[] b;
    public static String[] c;
 
@@ -123,7 +123,7 @@ public class S2_2 extends N2_3 {
       return this.p.hashCode();
    }
 
-   static String e(S2_2 var0) {
+   public static String e(S2_2 var0) {
       return var0.p;
    }
 

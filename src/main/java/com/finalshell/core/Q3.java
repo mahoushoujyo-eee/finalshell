@@ -11,9 +11,9 @@ import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
 public class Q3 implements ListCellRenderer {
-   protected List r = new ArrayList(1);
-   protected com.finalshell.ui.panel.U P = new com.finalshell.ui.panel.U(com.finalshell.ui.model.E.box);
-   protected com.finalshell.ui.panel.U w = new com.finalshell.ui.panel.U(com.finalshell.ui.model.E.list);
+   public List r = new ArrayList(1);
+   public com.finalshell.ui.panel.U P = new com.finalshell.ui.panel.U(com.finalshell.ui.model.E.box);
+   public com.finalshell.ui.panel.U w = new com.finalshell.ui.panel.U(com.finalshell.ui.model.E.list);
    public static String[] a;
    public static String[] b;
 

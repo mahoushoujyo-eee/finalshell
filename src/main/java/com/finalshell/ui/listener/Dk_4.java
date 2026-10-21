@@ -5,9 +5,9 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 public class Dk_4 implements FocusListener {
-   final MT a;
+   public final MT a;
 
-   Dk_4(MT var1) {
+   public Dk_4(MT var1) {
       this.a = var1;
    }
 

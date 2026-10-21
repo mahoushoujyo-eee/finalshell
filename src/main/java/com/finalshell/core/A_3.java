@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class A_3 implements Rz2_2 {
-   final Cs2_2 Q;
+   public final Cs2_2 Q;
 
-   A_3(Cs2_2 var1) {
+   public A_3(Cs2_2 var1) {
       this.Q = var1;
    }
 

@@ -500,7 +500,7 @@ public class DI3 extends ReflectionConverter {
       // 48c: areturn
    }
 
-   protected com.finalshell.ui.model.Cc2 N(com.finalshell.ui.model.F2 var1) {
+   public com.finalshell.ui.model.Cc2 N(com.finalshell.ui.model.F2 var1) {
       Ky4[] var2 = com.finalshell.ui.model.BN.A();
 
       try {

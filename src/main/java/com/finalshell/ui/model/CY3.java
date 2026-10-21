@@ -5,8 +5,8 @@ import java.io.File;
 import javax.swing.tree.TreeNode;
 
 public class CY3 extends CB3 {
-   protected File q;
-   protected String J = null;
+   public File q;
+   public String J = null;
    public static String[] d;
    public static String[] f;
 

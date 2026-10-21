@@ -9,9 +9,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 public class CY implements MouseMotionListener {
-   final Tq4 L;
+   public final Tq4 L;
 
-   CY(Tq4 var1) {
+   public CY(Tq4 var1) {
       this.L = var1;
    }
 

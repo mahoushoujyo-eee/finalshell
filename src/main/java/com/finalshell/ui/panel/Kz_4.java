@@ -19,23 +19,23 @@ import java.util.ArrayList;
 import javax.swing.JComponent;
 
 public class Kz_4 extends JComponent {
-   Color F;
-   Stroke D;
-   Stroke Z;
-   int Y;
+   public Color F;
+   public Stroke D;
+   public Stroke Z;
+   public int Y;
    public static int J;
-   int W;
-   KV L;
-   GradientPaint k;
-   boolean h;
-   Font o;
+   public int W;
+   public KV L;
+   public GradientPaint k;
+   public boolean h;
+   public Font o;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
    public static long e;
 
-   Kz_4(boolean var1) {
+   public Kz_4(boolean var1) {
       Color var10001 = new Color(a(2436, 5943810783130428494L), a(24698, 8272176761077747127L), a(24698, 8272176761077747127L));
       long var3 = 264277659433671324L;
       Color var2 = var10001;

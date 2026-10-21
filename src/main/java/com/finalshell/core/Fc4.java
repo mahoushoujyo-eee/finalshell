@@ -5,7 +5,7 @@ import org.fife.rsta.ui.search.SearchEvent;
 
 // $VF: synthetic class
 public class Fc4 {
-   static int[] f;
+   public static int[] f;
 
    static {
       __vfClinit__();

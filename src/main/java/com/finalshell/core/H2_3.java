@@ -8,7 +8,7 @@ public class H2_3 extends N2_3 {
    public final float o;
    public static String b;
 
-   H2_3(float var1) {
+   public H2_3(float var1) {
       this.o = var1;
    }
 
@@ -49,7 +49,7 @@ public class H2_3 extends N2_3 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(!var10000 ? 1 : 0);
+         return (boolean)((!var10000 ? 1 : 0) != 0);
       }
    }
 

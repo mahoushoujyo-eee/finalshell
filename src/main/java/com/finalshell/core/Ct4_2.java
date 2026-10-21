@@ -26,7 +26,7 @@ public class Ct4_2 {
          var10001 = var10001 > var3.get(1) ? 1 : 0;
       }
 
-      return (boolean)(var7 | var10001);
+      return (boolean)((var7 | var10001) != 0);
    }
 
    public static boolean D(long var0) {
@@ -52,7 +52,7 @@ public class Ct4_2 {
          var10001 = var10001 > var3.get(1) ? 1 : 0;
       }
 
-      return (boolean)(var7 | var10001);
+      return (boolean)((var7 | var10001) != 0);
    }
 
    public static boolean f(long var0) {
@@ -72,7 +72,7 @@ public class Ct4_2 {
          var10001 = var10001 > var3.get(2) ? 1 : 0;
       }
 
-      return (boolean)(var6 & var10001);
+      return (boolean)((var6 & var10001) != 0);
    }
 }
 

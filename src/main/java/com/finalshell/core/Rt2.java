@@ -6,13 +6,13 @@ import java.net.URI;
 import java.net.URLConnection;
 
 public class Rt2 implements N_6 {
-   final URLConnection d;
-   final URI z;
-   final String i;
-   final E_3_2 e;
+   public final URLConnection d;
+   public final URI z;
+   public final String i;
+   public final E_3_2 e;
    public static String a;
 
-   Rt2(E_3_2 var1, URLConnection var2, URI var3, String var4) {
+   public Rt2(E_3_2 var1, URLConnection var2, URI var3, String var4) {
       this.e = var1;
       this.d = var2;
       this.z = var3;

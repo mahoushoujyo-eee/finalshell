@@ -5,10 +5,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class VU implements Runnable {
-   final BufferedReader D;
-   final CH w;
+   public final BufferedReader D;
+   public final CH w;
 
-   VU(BufferedReader var1, CH var2) {
+   public VU(BufferedReader var1, CH var2) {
       this.D = var1;
       this.w = var2;
    }

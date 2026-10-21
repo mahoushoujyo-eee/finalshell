@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.K32;
 
 public class Ds4 extends DA3 {
-   final I9 d;
+   public final I9 d;
 
-   Ds4(I9 var1) {
+   public Ds4(I9 var1) {
       this.d = var1;
    }
 

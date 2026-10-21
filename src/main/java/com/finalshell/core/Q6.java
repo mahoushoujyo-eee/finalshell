@@ -160,19 +160,19 @@ public class Q6 implements Paint {
       this.D = var1;
    }
 
-   static ColorModel m(Q6 var0) {
+   public static ColorModel m(Q6 var0) {
       return var0.C;
    }
 
-   static int N(Q6 var0, int var1, int var2) {
+   public static int N(Q6 var0, int var1, int var2) {
       return var0.v(var1, var2);
    }
 
-   static int n(Q6 var0, int var1, int var2) {
+   public static int n(Q6 var0, int var1, int var2) {
       return var0.G(var1, var2);
    }
 
-   static int F(Q6 var0, int var1, int var2) {
+   public static int F(Q6 var0, int var1, int var2) {
       return var0.f(var1, var2);
    }
 

@@ -5,9 +5,9 @@ import com.finalshell.ui.panel.Kz4;
 import java.util.List;
 
 public class EQ extends EY {
-   final K42 t;
+   public final K42 t;
 
-   EQ(K42 var1) {
+   public EQ(K42 var1) {
       this.t = var1;
    }
 

@@ -32,12 +32,12 @@ public class B0_2 implements CompositeContext {
    public void dispose() {
    }
 
-   static int w(int var0, int var1) {
+   public static int w(int var0, int var1) {
       int var2 = var0 * var1 + a(4594, 9184578496501369578L);
       return (var2 >> a(3469, 6500804454187882132L)) + var2 >> a(3469, 6500804454187882132L);
    }
 
-   static int w(int var0) {
+   public static int w(int var0) {
       String var1 = RA3.c();
       int var10000 = var0;
       if (var1 == null) {

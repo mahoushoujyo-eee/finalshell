@@ -7,7 +7,7 @@ public abstract class IK implements Wr4 {
    public static long[] a;
    public static Integer[] b;
 
-   final char v(NL3 var1, Object var2, char var3) {
+   public final char v(NL3 var1, Object var2, char var3) {
       NL3 var4 = (NL3)r.get();
       r.set(var1);
       W.set(var3);
@@ -16,7 +16,7 @@ public abstract class IK implements Wr4 {
       return (Character)W.get();
    }
 
-   protected final void T(String var1, Object var2) {
+   public final void T(String var1, Object var2) {
       NL3 var4 = (NL3)r.get();
       char var5 = (Character)W.get();
       String var10000 = Nv4.o();

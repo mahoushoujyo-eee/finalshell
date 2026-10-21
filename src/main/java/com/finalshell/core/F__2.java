@@ -2,7 +2,7 @@ package com.finalshell.core;
 
 public class F__2 extends FU {
    public final short Q;
-   final B3_2 o;
+   public final B3_2 o;
 
    public F__2(B3_2 var1, int var2, FC var3, short var4) {
       super(var1);
@@ -12,7 +12,7 @@ public class F__2 extends FU {
       this.Z(var3);
    }
 
-   static short k(F__2 var0) {
+   public static short k(F__2 var0) {
       return var0.Q;
    }
 }

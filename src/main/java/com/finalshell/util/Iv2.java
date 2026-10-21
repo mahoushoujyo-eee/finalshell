@@ -5,7 +5,7 @@ import java.util.AbstractCollection;
 import java.util.Iterator;
 
 public final class Iv2 extends AbstractCollection {
-   final Xy4 w;
+   public final Xy4 w;
 
    public Iv2(Xy4 var1) {
       this.w = var1;
@@ -31,7 +31,7 @@ public final class Iv2 extends AbstractCollection {
       this.w.clear();
    }
 
-   Iv2(Xy4 var1, Oi4 var2) {
+   public Iv2(Xy4 var1, Oi4 var2) {
       this(var1);
    }
 }

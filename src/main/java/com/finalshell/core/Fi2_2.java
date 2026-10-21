@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class Fi2_2 implements Fz2_2 {
-   final H3_2 s;
+   public final H3_2 s;
 
-   Fi2_2(H3_2 var1) {
+   public Fi2_2(H3_2 var1) {
       this.s = var1;
    }
 

@@ -10,14 +10,14 @@ import java.awt.event.ActionListener;
 
 public class XV implements ActionListener {
    public int L;
-   final Rectangle h;
-   final int m;
-   final int E;
-   final Window n;
+   public final Rectangle h;
+   public final int m;
+   public final int E;
+   public final Window n;
    public static long[] a;
    public static Integer[] b;
 
-   XV(Rectangle var1, int var2, int var3, Window var4) {
+   public XV(Rectangle var1, int var2, int var3, Window var4) {
       this.h = var1;
       this.m = var2;
       this.E = var3;

@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class TT extends T4 {
-   protected List L = new ArrayList(2);
+   public List L = new ArrayList(2);
    public static long[] a;
    public static Integer[] b;
 

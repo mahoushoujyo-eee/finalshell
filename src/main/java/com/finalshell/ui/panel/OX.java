@@ -4,9 +4,9 @@ import com.finalshell.ui.dialog.D2;
 import java.awt.Dimension;
 
 public class OX extends O {
-   final D2 Y;
+   public final D2 Y;
 
-   OX(D2 var1, String var2, int var3, Object[] var4) {
+   public OX(D2 var1, String var2, int var3, Object[] var4) {
       super(var2, var3, var4);
       this.Y = var1;
    }

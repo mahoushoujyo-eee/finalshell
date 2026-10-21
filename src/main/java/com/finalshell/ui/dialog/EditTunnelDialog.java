@@ -21,30 +21,30 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class EditTunnelDialog extends JDialog {
-   TunnelList Y;
-   YE J;
-   YE E;
-   boolean K;
-   JPanel x;
-   JPanel A;
-   JTextField L;
-   JTextField O;
-   JTextField s;
-   JTextField T;
-   JTextField n;
-   Random F;
-   JComboBox p;
-   ArrayList P;
-   JLabel v;
-   JLabel I;
+   public TunnelList Y;
+   public YE J;
+   public YE E;
+   public boolean K;
+   public JPanel x;
+   public JPanel A;
+   public JTextField L;
+   public JTextField O;
+   public JTextField s;
+   public JTextField T;
+   public JTextField n;
+   public Random F;
+   public JComboBox p;
+   public ArrayList P;
+   public JLabel v;
+   public JLabel I;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   EditTunnelDialog(TunnelList var1, YE var2, ArrayList var3, boolean var4) {
+   public EditTunnelDialog(TunnelList var1, YE var2, ArrayList var3, boolean var4) {
+   super(SwingUtilities.getWindowAncestor(var1));
       label127: {
-         super(SwingUtilities.getWindowAncestor(var1));
          TunnelList.V();
          Random var10002 = new Random();
          long var17 = 208060216150987566L;
@@ -346,7 +346,7 @@ public class EditTunnelDialog extends JDialog {
       this.setVisible(true);
    }
 
-   void v() {
+   public void v() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

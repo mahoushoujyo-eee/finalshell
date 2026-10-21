@@ -5,9 +5,6 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class OU implements Runnable {
-   OU() {
-   }
-
    @Override
    public void run() {
       Registry.lookupField(525809009753943217L).get(null);

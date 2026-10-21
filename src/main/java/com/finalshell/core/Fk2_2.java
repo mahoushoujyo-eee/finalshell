@@ -3,9 +3,6 @@ package com.finalshell.core;
 public class Fk2_2 {
    public static String a;
 
-   Fk2_2() {
-   }
-
    @Override
    public String toString() {
       return a;

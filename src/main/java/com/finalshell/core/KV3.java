@@ -5,9 +5,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class KV3 implements YA {
-   final Lr2 O;
+   public final Lr2 O;
 
-   KV3(Lr2 var1) {
+   public KV3(Lr2 var1) {
       this.O = var1;
    }
 

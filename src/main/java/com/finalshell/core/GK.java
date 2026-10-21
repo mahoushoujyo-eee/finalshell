@@ -1,16 +1,16 @@
 package com.finalshell.core;
 
 public final class GK {
-   static short[] G;
-   static short[] d;
-   static GK D;
-   static GK p;
-   static GK L;
-   short[] q;
-   int[] f;
-   int O;
-   int r;
-   int B;
+   public static short[] G;
+   public static short[] d;
+   public static GK D;
+   public static GK p;
+   public static GK L;
+   public short[] q;
+   public int[] f;
+   public int O;
+   public int r;
+   public int B;
 
    public GK(short[] var1, int[] var2, int var3, int var4, int var5) {
       this.q = var1;

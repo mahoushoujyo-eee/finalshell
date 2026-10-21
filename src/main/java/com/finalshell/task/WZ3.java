@@ -3,14 +3,14 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.SetBackgroundImagePanel;
 
 public class WZ3 implements Runnable {
-   final String X;
-   final boolean u;
-   final boolean d;
-   final SetBackgroundImagePanel e;
+   public final String X;
+   public final boolean u;
+   public final boolean d;
+   public final SetBackgroundImagePanel e;
    public static String a;
    public static long b;
 
-   WZ3(SetBackgroundImagePanel var1, String var2, boolean var3, boolean var4) {
+   public WZ3(SetBackgroundImagePanel var1, String var2, boolean var3, boolean var4) {
       this.e = var1;
       this.X = var2;
       this.u = var3;

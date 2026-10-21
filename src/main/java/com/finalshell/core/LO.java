@@ -40,7 +40,7 @@ public class LO extends LA {
    }
 
    @Override
-   protected void p() {
+   public void p() {
       this.h = new BasicStroke((float)this.a(), 1, 1, 0.0F, this.n(), this.S());
    }
 }

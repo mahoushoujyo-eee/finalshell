@@ -1,16 +1,16 @@
 package com.finalshell.core;
 
 public abstract class Z8 implements N5 {
-   static long J;
-   protected final String H;
-   protected final long U;
-   protected final boolean h;
-   protected A0_2 M;
+   public static long J;
+   public final String H;
+   public final long U;
+   public final boolean h;
+   public A0_2 M;
    public static String[] a;
    public static String[] b;
    public static long f;
 
-   protected Z8(String param1, boolean param2) {
+   public Z8(String param1, boolean param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -98,7 +98,7 @@ public abstract class Z8 implements N5 {
       // a6: return
    }
 
-   protected Object H(Ph4 param1, Object param2, Object param3) {
+   public Object H(Ph4 param1, Object param2, Object param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

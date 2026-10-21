@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.EX;
 import com.finalshell.ui.panel.KD3;
 
 public class X2_2 implements Hc2 {
-   final EX y;
-   final KD3 m;
+   public final EX y;
+   public final KD3 m;
 
-   X2_2(KD3 var1, EX var2) {
+   public X2_2(KD3 var1, EX var2) {
       this.m = var1;
       this.y = var2;
    }

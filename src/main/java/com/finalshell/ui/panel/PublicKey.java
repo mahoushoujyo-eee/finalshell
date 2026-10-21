@@ -23,29 +23,29 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class PublicKey extends Z7 {
-   JTextField O;
-   JTextField R;
-   JTextField N;
-   JTextField X;
-   JPasswordField Z;
-   JComboBox d;
-   String J;
-   int T;
-   String f;
-   JTextArea U;
-   String M;
-   JTextField W;
-   JButton p;
-   JPanel a;
-   JPanel Q;
-   JPanel b;
-   String A;
-   Lv4_2 i;
-   JCheckBox I;
-   JCheckBox u;
-   boolean z;
-   String m;
-   LN3 w;
+   public JTextField O;
+   public JTextField R;
+   public JTextField N;
+   public JTextField X;
+   public JPasswordField Z;
+   public JComboBox d;
+   public String J;
+   public int T;
+   public String f;
+   public JTextArea U;
+   public String M;
+   public JTextField W;
+   public JButton p;
+   public JPanel a;
+   public JPanel Q;
+   public JPanel b;
+   public String A;
+   public Lv4_2 i;
+   public JCheckBox I;
+   public JCheckBox u;
+   public boolean z;
+   public String m;
+   public LN3 w;
    public static String[] g;
    public static String[] j;
    public static long k;
@@ -107,7 +107,7 @@ public class PublicKey extends Z7 {
       var3.add(var4, a(-9093, 6966));
    }
 
-   JPanel Y() {
+   public JPanel Y() {
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-9096, 26280)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-9119, -29015)));
@@ -174,7 +174,7 @@ public class PublicKey extends Z7 {
       return var1;
    }
 
-   JPanel q() {
+   public JPanel q() {
       JPanel var1 = new JPanel();
       var1.setLayout(new MigLayout(a(-9096, 26280)));
       var1.setBorder(BorderFactory.createTitledBorder(a(-9133, 18225)));
@@ -299,7 +299,7 @@ public class PublicKey extends Z7 {
       }
    }
 
-   void w() {
+   public void w() {
       int var10001;
       byte var10002;
       label55: {
@@ -308,11 +308,11 @@ public class PublicKey extends Z7 {
             Z7.m();
             Object var3 = 585848040491365148L;
             var2 = ((JComboBox)Ref.g(585848040491365148L, var3)).getSelectedIndex();
-            if (this != false) {
+            if (this == null) {
                if (var2 != 0) {
                   var10001 = var2;
                   var10002 = 2;
-                  if (this == false) {
+                  if (this == null) {
                      break label55;
                   }
 
@@ -346,7 +346,7 @@ public class PublicKey extends Z7 {
                }
             }
 
-            if (this != false) {
+            if (this == null) {
                return;
             }
          }
@@ -382,7 +382,7 @@ public class PublicKey extends Z7 {
       }
    }
 
-   void d(JComponent var1, boolean var2) {
+   public void d(JComponent var1, boolean var2) {
       int var10000 = Z7.M();
       var1.setEnabled(var2);
       int var3 = var10000;
@@ -540,11 +540,11 @@ public class PublicKey extends Z7 {
 
       label153: {
          int var10021 = Registry.lookupField(613057195457720571L).getInt(null);
-         if (this == false) {
+         if (this == null) {
             if (var10020 == var10021) {
                Object var43 = 585848040491365148L;
                ((JComboBox)Ref.g(585848040491365148L, var43)).setSelectedIndex(0);
-               if (this == false) {
+               if (this == null) {
                   break label153;
                }
             }
@@ -564,11 +564,11 @@ public class PublicKey extends Z7 {
             Registry.lookupField(187047088046998003L).getInt(null);
          }
 
-         if (this == false) {
+         if (this == null) {
             if (var10020 == var10021) {
                Object var47 = 585848040491365148L;
                ((JComboBox)Ref.g(585848040491365148L, var47)).setSelectedIndex(1);
-               if (this == false) {
+               if (this == null) {
                   break label153;
                }
             }
@@ -603,7 +603,7 @@ public class PublicKey extends Z7 {
       long var58 = 581836656594480986L;
       Object var57 = var10023;
       Ref.s(581836656594480986L, var57, var58);
-      if (this == false) {
+      if (this == null) {
          Object var59 = 581836656594480986L;
          if ((LN3)Ref.g(581836656594480986L, var59) != null) {
             Object var61 = 132310058849395865L;
@@ -622,7 +622,7 @@ public class PublicKey extends Z7 {
             }
 
             var10027.setText(var10028);
-            if (this == false) {
+            if (this == null) {
                return;
             }
          }
@@ -1331,7 +1331,7 @@ public class PublicKey extends Z7 {
          throw var65.getTargetException();
       }
 
-      if (var1 != false) {
+      if (var1 == null) {
          Object var30 = 581836656594480986L;
          if ((LN3)Ref.g(581836656594480986L, var30) != null) {
             Object var32 = 581836656594480986L;
@@ -1380,7 +1380,7 @@ public class PublicKey extends Z7 {
          Object var46 = 585848040491365148L;
          int var8 = ((JComboBox)Ref.g(585848040491365148L, var46)).getSelectedIndex();
          int var70 = var8;
-         if (var1 != false) {
+         if (var1 == null) {
             if (var8 == 0) {
                Object[] var10012 = Registry.packArgs(Registry.lookupField(613057195457720571L).getInt(null));
                long var49 = 465782969021020321L;
@@ -1393,7 +1393,7 @@ public class PublicKey extends Z7 {
                   throw var61.getTargetException();
                }
 
-               if (var1 != false) {
+               if (var1 == null) {
                   break label134;
                }
             }
@@ -1402,7 +1402,7 @@ public class PublicKey extends Z7 {
          }
 
          byte var71 = 1;
-         if (var1 != false) {
+         if (var1 == null) {
             if (var70 == 1) {
                Object[] var72 = Registry.packArgs(Registry.lookupField(187047088046998003L).getInt(null));
                long var51 = 465782969021020321L;
@@ -1415,7 +1415,7 @@ public class PublicKey extends Z7 {
                   throw var60.getTargetException();
                }
 
-               if (var1 != false) {
+               if (var1 == null) {
                   break label134;
                }
             }

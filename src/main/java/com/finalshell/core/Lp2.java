@@ -9,12 +9,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class Lp2 {
-   HashMap E;
-   String R;
-   String h;
-   String U;
-   HashMap z;
-   String g;
+   public HashMap E;
+   public String R;
+   public String h;
+   public String U;
+   public HashMap z;
+   public String g;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -650,11 +650,11 @@ public class Lp2 {
                }
 
                var54.C(var6, var58);
-               if (var1 != false) {
+               if (var1 == null) {
                   break;
                }
 
-               if (var1 == false) {
+               if (var1 == null) {
                   continue;
                }
             } catch (Exception var42) {
@@ -764,13 +764,13 @@ public class Lp2 {
          if (var3.hasNext()) {
             String var4 = (String)var3.next();
             var10001 = var2;
-            if (var1 == false) {
+            if (var1 == null) {
                break;
             }
 
             Object var7 = 401974538554105581L;
             var4.C(this, ((HashMap)Ref.g(401974538554105581L, var7)).get(var4));
-            if (var1 != false) {
+            if (var1 == null) {
                continue;
             }
          }

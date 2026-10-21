@@ -25,36 +25,36 @@ import javax.swing.event.AncestorListener;
 
 public class I22 implements Ss2 {
    public static ImageIcon t;
-   protected static Object Y;
-   protected static List w;
-   protected static String j;
-   protected static String E;
-   protected static GX K;
-   protected static Object T;
-   protected static List Z;
-   protected static Map a;
-   protected static Object H;
-   protected static Map c;
-   protected static Oj4 P;
-   protected static Map h;
-   protected static List n;
-   protected static Map i;
-   protected static Object S;
-   protected static Map v;
-   protected static Map L;
-   protected static Map p;
-   protected static Map G;
-   protected static Object M;
-   protected static Map R;
-   protected static Object C;
-   protected static Yb2 Q;
-   protected static List q;
-   protected static Map X;
-   protected static Map y;
-   protected static Map x;
-   protected static En4 U;
-   protected static boolean l;
-   protected static boolean m;
+   public static Object Y;
+   public static List w;
+   public static String j;
+   public static String E;
+   public static GX K;
+   public static Object T;
+   public static List Z;
+   public static Map a;
+   public static Object H;
+   public static Map c;
+   public static Oj4 P;
+   public static Map h;
+   public static List n;
+   public static Map i;
+   public static Object S;
+   public static Map v;
+   public static Map L;
+   public static Map p;
+   public static Map G;
+   public static Object M;
+   public static Map R;
+   public static Object C;
+   public static Yb2 Q;
+   public static List q;
+   public static Map X;
+   public static Map y;
+   public static Map x;
+   public static En4 U;
+   public static boolean l;
+   public static boolean m;
    public static boolean f;
    public static String[] b;
    public static String[] d;
@@ -375,7 +375,7 @@ public class I22 implements Ss2 {
       // 61: return
    }
 
-   protected static void s(JComponent param0) {
+   public static void s(JComponent param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1259,7 +1259,7 @@ public class I22 implements Ss2 {
       // 72: return
    }
 
-   protected static void a() {
+   public static void a() {
       try {
          if (Registry.lookupField(281391508399646097L).getBoolean(null)) {
             Locale.setDefault(Z(E));
@@ -1964,7 +1964,7 @@ public class I22 implements Ss2 {
       return Z(var0, var1);
    }
 
-   protected static String Z(JComponent param0, String param1) {
+   public static String Z(JComponent param0, String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2060,20 +2060,20 @@ public class I22 implements Ss2 {
       }
    }
 
-   protected static void C() {
+   public static void C() {
       g();
       F(P);
    }
 
-   protected static void g() {
+   public static void g() {
       h.clear();
    }
 
-   protected static void F(Oj4 var0) {
+   public static void F(Oj4 var0) {
       x(var0.N(), var0);
    }
 
-   protected static void x(String param0, Oj4 param1) {
+   public static void x(String param0, Oj4 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2408,7 +2408,7 @@ public class I22 implements Ss2 {
       }
    }
 
-   protected static void m(String param0, String param1) {
+   public static void m(String param0, String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2518,7 +2518,7 @@ public class I22 implements Ss2 {
       // ef: return
    }
 
-   protected static void K(Oj4 param0) {
+   public static void K(Oj4 param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2626,7 +2626,7 @@ public class I22 implements Ss2 {
       // e7: return
    }
 
-   protected static void D(Oj4 param0) {
+   public static void D(Oj4 param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2734,7 +2734,7 @@ public class I22 implements Ss2 {
       // e7: return
    }
 
-   protected static void y() {
+   public static void y() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2929,7 +2929,7 @@ public class I22 implements Ss2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static void A(String var0) {
+   public static void A(String var0) {
       boolean var10000 = X$boolean();
       Object var2 = H;
       synchronized (H){} // $VF: monitorenter 
@@ -2982,7 +2982,7 @@ public class I22 implements Ss2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static void R$void() {
+   public static void R$void() {
       boolean var10000 = X$boolean();
       Object var1 = H;
       synchronized (H){} // $VF: monitorenter 

@@ -8,10 +8,10 @@ import com.finalshell.ui.panel.QuickConnectPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class WE implements Runnable {
-   final QuickConnectPanel W;
+   public final QuickConnectPanel W;
    public static long a;
 
-   WE(QuickConnectPanel var1) {
+   public WE(QuickConnectPanel var1) {
       this.W = var1;
    }
 

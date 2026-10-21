@@ -10,11 +10,11 @@ import javax.swing.JColorChooser;
 import javax.swing.SwingUtilities;
 
 public class W0 extends MouseAdapter {
-   final Br2 X;
+   public final Br2 X;
    public static String[] a;
    public static String[] b;
 
-   W0(Br2 var1) {
+   public W0(Br2 var1) {
       this.X = var1;
    }
 

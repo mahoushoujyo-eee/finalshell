@@ -3,9 +3,9 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class CT_2 implements Fo2_2 {
-   final K2_3 r;
+   public final K2_3 r;
 
-   CT_2(K2_3 var1) {
+   public CT_2(K2_3 var1) {
       this.r = var1;
    }
 

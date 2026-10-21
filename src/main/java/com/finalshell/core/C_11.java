@@ -4,12 +4,12 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 public class C_11 implements InvocationHandler {
-   final Method[] b;
-   final Object y;
+   public final Method[] b;
+   public final Object y;
    public static String[] a;
    public static String[] c;
 
-   C_11(Method[] var1, Object var2) {
+   public C_11(Method[] var1, Object var2) {
       this.b = var1;
       this.y = var2;
    }

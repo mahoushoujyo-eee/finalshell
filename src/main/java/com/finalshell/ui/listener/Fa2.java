@@ -5,12 +5,12 @@ import java.awt.Component;
 import javax.swing.event.AncestorEvent;
 
 public class Fa2 extends FY {
-   final Component o;
-   final E_2 T;
-   final Rt2 l;
-   final com.finalshell.ui.dialog.Ds2 x;
+   public final Component o;
+   public final E_2 T;
+   public final Rt2 l;
+   public final com.finalshell.ui.dialog.Ds2 x;
 
-   Fa2(com.finalshell.ui.dialog.Ds2 var1, Component var2, E_2 var3, Rt2 var4) {
+   public Fa2(com.finalshell.ui.dialog.Ds2 var1, Component var2, E_2 var3, Rt2 var4) {
       this.x = var1;
       this.o = var2;
       this.T = var3;

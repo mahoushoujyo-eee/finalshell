@@ -11,26 +11,26 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class BV {
-   protected int d;
-   protected int I;
-   protected Color a = null;
-   protected int E;
-   protected int f = -1;
+   public int d;
+   public int I;
+   public Color a = null;
+   public int E;
+   public int f = -1;
    public int Y = 0;
-   protected boolean Z = false;
-   protected OutputStream F;
-   protected BufferedImage u;
-   protected byte[] P;
-   protected byte[] X;
-   protected int j;
-   protected byte[] U;
-   protected boolean[] z = new boolean[a(12222, 2512083220319857117L)];
-   protected int W = a(6869, 5064530814061698232L);
-   protected int K = -1;
-   protected boolean p = false;
-   protected boolean l = true;
-   protected boolean A = false;
-   protected int w = a(17269, 4243177942814000404L);
+   public boolean Z = false;
+   public OutputStream F;
+   public BufferedImage u;
+   public byte[] P;
+   public byte[] X;
+   public int j;
+   public byte[] U;
+   public boolean[] z = new boolean[a(12222, 2512083220319857117L)];
+   public int W = a(6869, 5064530814061698232L);
+   public int K = -1;
+   public boolean p = false;
+   public boolean l = true;
+   public boolean A = false;
+   public int w = a(17269, 4243177942814000404L);
    public static String[] b;
    public static String[] c;
    public static long[] e;
@@ -349,7 +349,7 @@ public class BV {
       return this.Z = var2;
    }
 
-   protected void F() {
+   public void F() {
       int var2 = this.P.length;
       int var3 = var2 / 3;
       Ky4[] var10000 = Kj4.d();
@@ -418,7 +418,7 @@ public class BV {
       var11.E = this.N(this.a);
    }
 
-   protected int N(Color var1) {
+   public int N(Color var1) {
       Ky4[] var2 = Kj4.d();
       if (this.U == null) {
          return -1;
@@ -476,7 +476,7 @@ public class BV {
       }
    }
 
-   protected void f() {
+   public void f() {
       label25: {
          label27: {
             Ky4[] var10000 = Kj4.d();
@@ -519,7 +519,7 @@ public class BV {
       this.P = ((DataBufferByte)this.u.getRaster().getDataBuffer()).getData();
    }
 
-   protected void t() throws IOException {
+   public void t() throws IOException {
       Ky4[] var1;
       byte var2;
       int var3;
@@ -570,7 +570,7 @@ public class BV {
       this.F.write(0);
    }
 
-   protected void X() throws IOException {
+   public void X() throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -633,7 +633,7 @@ public class BV {
       // 6f: return
    }
 
-   protected void v() throws IOException {
+   public void v() throws IOException {
       this.L(this.d);
       this.L(this.I);
       this.F.write(a(1134, 5459830961340269063L) | this.W);
@@ -641,7 +641,7 @@ public class BV {
       this.F.write(0);
    }
 
-   protected void A() throws IOException {
+   public void A() throws IOException {
       this.F.write(a(32730, 8417048310966925742L));
       this.F.write(a(18193, 5401151161789874555L));
       this.F.write(a(938, 7622916308936476104L));
@@ -652,7 +652,7 @@ public class BV {
       this.F.write(0);
    }
 
-   protected void S() throws IOException {
+   public void S() throws IOException {
       Ky4[] var10000 = Kj4.d();
       this.F.write(this.U, 0, this.U.length);
       int var2 = a(19839, 2206132999955090200L) - this.U.length;
@@ -668,17 +668,17 @@ public class BV {
       }
    }
 
-   protected void w() throws IOException {
+   public void w() throws IOException {
       P42 var1 = new P42(this.d, this.I, this.X, this.j);
       var1.e(this.F);
    }
 
-   protected void L(int var1) throws IOException {
+   public void L(int var1) throws IOException {
       this.F.write(var1 & a(19609, 4617887921443867391L));
       this.F.write(var1 >> a(25059, 4380381630871545735L) & a(18193, 5401151161789874555L));
    }
 
-   protected void V(String var1) throws IOException {
+   public void V(String var1) throws IOException {
       Ky4[] var10000 = Kj4.d();
       int var3 = 0;
       Ky4[] var2 = var10000;

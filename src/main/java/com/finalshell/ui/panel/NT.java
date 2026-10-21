@@ -7,7 +7,7 @@ import java.awt.LayoutManager;
 import javax.swing.JPanel;
 
 public class NT extends JPanel {
-   Color P;
+   public Color P;
    public static long[] c;
    public static Integer[] d;
 

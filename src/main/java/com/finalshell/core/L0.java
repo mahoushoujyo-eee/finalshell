@@ -11,16 +11,16 @@ import java.util.Vector;
 public class L0 {
    public long E;
    public long u;
-   Thread A;
-   int J;
-   Vector B;
-   QB Q;
+   public Thread A;
+   public int J;
+   public Vector B;
+   public QB Q;
    public int Y;
    public int L;
 
    public L0(int var1) {
+   super();
       boolean var10000 = Connection12.d$boolean();
-      super();
       Registry.lookupField(313681502140473979L).setInt(this, 0);
       boolean var2 = var10000;
       Registry.lookupField(587987719470651652L).setInt(this, 0);
@@ -85,7 +85,7 @@ public class L0 {
       Registry.lookupField(587987719470651652L).setInt(this, var1);
    }
 
-   void S$void() {
+   public void S$void() {
       boolean var10000 = Connection12.X();
       int var2 = 0;
       boolean var1 = var10000;

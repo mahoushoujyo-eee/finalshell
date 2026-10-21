@@ -5,9 +5,6 @@ public class Fn2_2 implements A0_2 {
    public static String[] a;
    public static String[] b;
 
-   Fn2_2() {
-   }
-
    public String D(Ph4 param1, Object param2, Object param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");

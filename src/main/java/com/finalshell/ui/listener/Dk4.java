@@ -5,9 +5,9 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
 public class Dk4 implements ItemListener {
-   final Fm2 y;
+   public final Fm2 y;
 
-   Dk4(Fm2 var1) {
+   public Dk4(Fm2 var1) {
       this.y = var1;
    }
 

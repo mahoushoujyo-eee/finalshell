@@ -13,7 +13,7 @@ public class Z9 extends ZH {
    public static int U;
    public static int i;
    public static int G;
-   protected Kernel V = null;
+   public Kernel V = null;
    public boolean T = true;
    public int y;
    public static long[] a;

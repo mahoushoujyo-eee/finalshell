@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class C2_2 implements ActionListener {
-   final KF3 O;
+   public final KF3 O;
 
-   C2_2(KF3 var1) {
+   public C2_2(KF3 var1) {
       this.O = var1;
    }
 

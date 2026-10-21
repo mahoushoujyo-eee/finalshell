@@ -7,10 +7,10 @@ import com.finalshell.ui.panel.Kz4;
 import javax.swing.event.AncestorEvent;
 
 public class Fg2 extends FY {
-   final K02 f;
+   public final K02 f;
    public static String a;
 
-   Fg2(K02 var1) {
+   public Fg2(K02 var1) {
       this.f = var1;
    }
 

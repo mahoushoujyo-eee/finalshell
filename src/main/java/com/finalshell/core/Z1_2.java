@@ -5,18 +5,18 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Z1_2 {
-   Qu2 R;
-   int F = 0;
-   ArrayList k;
-   HashSet n;
+   public Qu2 R;
+   public int F = 0;
+   public ArrayList k;
+   public HashSet n;
 
-   Z1_2(Qu2 var1) {
+   public Z1_2(Qu2 var1) {
       this.R = var1;
       this.k = new ArrayList();
       this.n = new HashSet();
    }
 
-   synchronized void k(int var1) {
+   public synchronized void k(int var1) {
       String[] var2 = PingMessageR.N();
       if (var2 != null && !this.n.contains(var1)) {
          this.k.add(var1);
@@ -25,7 +25,7 @@ public class Z1_2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   synchronized void h() {
+   public synchronized void h() {
       int var2 = 0;
       int var3 = Yh2.a;
       String[] var10000 = PingMessageR.N();
@@ -87,7 +87,7 @@ public class Z1_2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   ArrayList m(int var1, int var2, ArrayList var3) {
+   public ArrayList m(int var1, int var2, ArrayList var3) {
       ArrayList var5 = new ArrayList();
       String[] var10000 = PingMessageR.N();
       int var6 = 0;

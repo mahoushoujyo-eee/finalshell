@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.panel.Connection5;
 
 public class Tw2 implements Runnable {
-   final Ax2 D;
+   public final Ax2 D;
 
-   Tw2(Ax2 var1) {
+   public Tw2(Ax2 var1) {
       this.D = var1;
    }
 

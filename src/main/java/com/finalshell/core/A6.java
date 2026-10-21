@@ -10,9 +10,9 @@ public class A6 {
    public int a;
    public String m;
    public String j;
-   B22 g;
-   HashMap G;
-   boolean U;
+   public B22 g;
+   public HashMap G;
+   public boolean U;
    public String Z;
    public ArrayList k;
    public ArrayList E;
@@ -29,11 +29,11 @@ public class A6 {
       this.w = new ArrayList();
    }
 
-   void g(String var1, B22 var2) {
+   public void g(String var1, B22 var2) {
       this.G.put(var1, var2);
    }
 
-   void h(ND_2 var1) {
+   public void h(ND_2 var1) {
       this.w.add(var1);
       var1.F = this;
    }

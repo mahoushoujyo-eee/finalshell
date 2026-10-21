@@ -9,11 +9,11 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 
 public class File7 extends MouseAdapter {
-   final AppendCarriageReturnCRPanel o;
+   public final AppendCarriageReturnCRPanel o;
    public static String[] a;
    public static String[] b;
 
-   File7(AppendCarriageReturnCRPanel var1) {
+   public File7(AppendCarriageReturnCRPanel var1) {
       this.o = var1;
    }
 

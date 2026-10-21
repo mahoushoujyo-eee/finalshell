@@ -9,9 +9,9 @@ import java.awt.event.FocusListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class TC3 implements FocusListener {
-   final TM O;
+   public final TM O;
 
-   TC3(TM var1) {
+   public TC3(TM var1) {
       this.O = var1;
    }
 

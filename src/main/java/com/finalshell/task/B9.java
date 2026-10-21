@@ -4,9 +4,9 @@ import com.finalshell.core.A0;
 import java.io.IOException;
 
 public class B9 implements Runnable {
-   final A0 l;
+   public final A0 l;
 
-   B9(A0 var1) {
+   public B9(A0 var1) {
       this.l = var1;
    }
 

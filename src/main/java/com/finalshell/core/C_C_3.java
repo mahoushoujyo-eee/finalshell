@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class C_C_3 implements H22_2 {
-   final FF_2 e;
+   public final FF_2 e;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   C_C_3(FF_2 var1) {
+   public C_C_3(FF_2 var1) {
       this.e = var1;
    }
 

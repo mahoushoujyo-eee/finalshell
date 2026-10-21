@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class S22 implements ActionListener {
-   final File A;
-   final KF3 a;
+   public final File A;
+   public final KF3 a;
 
-   S22(KF3 var1, File var2) {
+   public S22(KF3 var1, File var2) {
       this.a = var1;
       this.A = var2;
    }

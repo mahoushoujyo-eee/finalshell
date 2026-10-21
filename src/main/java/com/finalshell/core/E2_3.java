@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 public class E2_3 {
    public String u;
-   long r;
-   long M;
-   ArrayList s;
+   public long r;
+   public long M;
+   public ArrayList s;
    public static String[] a;
    public static String[] b;
    public static long[] c;

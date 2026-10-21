@@ -11,10 +11,10 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class FH3 implements Runnable {
-   final DX3_2 h;
+   public final DX3_2 h;
    public static long a;
 
-   FH3(DX3_2 var1) {
+   public FH3(DX3_2 var1) {
       this.h = var1;
    }
 
@@ -40,7 +40,7 @@ public class FH3 implements Runnable {
       }
    }
 
-   static DX3_2 P(FH3 var0) {
+   public static DX3_2 P(FH3 var0) {
       return var0.h;
    }
 

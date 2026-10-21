@@ -8,9 +8,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class L8 implements PropertyChangeListener {
-   final com.finalshell.core.FJ L;
+   public final com.finalshell.core.FJ L;
 
-   L8(com.finalshell.core.FJ var1) {
+   public L8(com.finalshell.core.FJ var1) {
       this.L = var1;
    }
 

@@ -7,9 +7,9 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 
 public class OY extends Oq2 {
-   final Ic2 a;
+   public final Ic2 a;
 
-   OY(Ic2 var1) {
+   public OY(Ic2 var1) {
       this.a = var1;
    }
 

@@ -8,8 +8,8 @@ public final class E5 extends Eo2 {
    public final MouseWheelEvent o;
 
    public E5(@NotNull MouseWheelEvent var1) {
+   super(EW.c(var1), EW.c(var1));
       EW.V();
-      super(EW.c(var1), EW.c(var1));
       this.o = var1;
       if (Ky4.F$arrString() != null) {
          EW.F("cUaUsc");

@@ -4,9 +4,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class KS3 extends MouseAdapter {
-   final com.finalshell.core.OC3 E;
+   public final com.finalshell.core.OC3 E;
 
-   KS3(com.finalshell.core.OC3 var1) {
+   public KS3(com.finalshell.core.OC3 var1) {
       this.E = var1;
    }
 

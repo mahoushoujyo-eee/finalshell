@@ -8,9 +8,9 @@ import java.util.Map;
 import java.util.Set;
 
 public class P3_3 implements S_6 {
-   final Set N;
+   public final Set N;
 
-   P3_3(Set var1) {
+   public P3_3(Set var1) {
       this.N = var1;
    }
 

@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bm4 implements ActionListener {
-   final AppendCarriageReturnCRPanel R;
+   public final AppendCarriageReturnCRPanel R;
 
-   Bm4(AppendCarriageReturnCRPanel var1) {
+   public Bm4(AppendCarriageReturnCRPanel var1) {
       this.R = var1;
    }
 

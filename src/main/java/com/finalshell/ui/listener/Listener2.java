@@ -15,13 +15,13 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class Listener2 implements ActionListener {
-   final Ty2 Z;
-   final TerminateProcessPanel y;
+   public final Ty2 Z;
+   public final TerminateProcessPanel y;
    public static String[] a;
    public static String[] b;
    public static long c;
 
-   Listener2(TerminateProcessPanel var1, Ty2 var2) {
+   public Listener2(TerminateProcessPanel var1, Ty2 var2) {
       this.y = var1;
       this.Z = var2;
    }
@@ -78,7 +78,7 @@ public class Listener2 implements ActionListener {
 
       Object var7 = var10009;
       var10009 = (Object[])var7;
-      if (var5 == false) {
+      if (var5 == null) {
          if (var7 == null) {
             String var10010 = (String)(Registry.emptyArgs());
             long var29 = 283750906794276079L;
@@ -97,7 +97,7 @@ public class Listener2 implements ActionListener {
          var10009 = (Object[])var7;
       }
 
-      if (var5 == false) {
+      if (var5 == null) {
          if (var10009 == null) {
             String var58 = (String)(Registry.emptyArgs());
             long var31 = 577747074549625554L;
@@ -117,7 +117,7 @@ public class Listener2 implements ActionListener {
       }
 
       label93: {
-         if (var5 == false) {
+         if (var5 == null) {
             if (var10009 != null) {
                break label93;
             }
@@ -144,7 +144,7 @@ public class Listener2 implements ActionListener {
 
       int var8 = (int)c;
       Listener2 var55 = var7.length();
-      if (var5 == false) {
+      if (var5 == null) {
          if (var55 > var8) {
             var7 = var7.substring(0, var8) + a(-31781, -6139);
          }
@@ -157,7 +157,7 @@ public class Listener2 implements ActionListener {
       }
 
       Listener2 var9 = var55;
-      if (var9 == 0) {
+      if (var9 == null) {
          Registry.lookupField(388376917454860932L).get(null);
          Object[] var62 = Registry.packArgs(new com.finalshell.task.OA(this, var6));
          long var39 = 434592463220957006L;

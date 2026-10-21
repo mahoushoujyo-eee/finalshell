@@ -27,18 +27,19 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class RouteTracePanel extends JPanel {
-   UA3 q;
-   DR K;
-   Dw4 Q;
-   String E;
-   F5 t;
+   public UA3 q;
+   public DR K;
+   public Dw4 Q;
+   public String E;
+   public F5 t;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
    public static long e;
 
-   RouteTracePanel(String var1, F5 var2) {
+   public RouteTracePanel(String var1, F5 var2) {
+   super(this, (String)Ref.g(515268954690772930L, var1));
       long var12 = 515268954690772930L;
       Ref.s(515268954690772930L, var1, var12);
       long var14 = 185868897793230818L;
@@ -151,7 +152,7 @@ public class RouteTracePanel extends JPanel {
       }
    }
 
-   void H() {
+   public void H() {
       int[] var10000 = L9.X();
       int var2 = 0;
       int[] var1 = var10000;
@@ -196,10 +197,9 @@ public class RouteTracePanel extends JPanel {
       }
    }
 
-   void N() {
+   public void N() {
       Dw4 var10002;
       Object var1 = 515268954690772930L;
-      super(this, (String)Ref.g(515268954690772930L, var1));
       long var4 = 498715864659540734L;
       Dw4 var3 = var10002;
       Ref.s(498715864659540734L, var3, var4);
@@ -228,7 +228,7 @@ public class RouteTracePanel extends JPanel {
       }
    }
 
-   void z() {
+   public void z() {
       Object var1 = 498715864659540734L;
       Ref.g(498715864659540734L, var1);
       Object[] var10002 = Registry.emptyArgs();
@@ -258,7 +258,7 @@ public class RouteTracePanel extends JPanel {
       }
    }
 
-   void m() {
+   public void m() {
       Object var2 = 498715864659540734L;
       Ref.g(498715864659540734L, var2);
       ArrayList var10002 = (ArrayList)(Registry.emptyArgs());

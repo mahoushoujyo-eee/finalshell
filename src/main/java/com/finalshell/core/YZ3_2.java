@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class YZ3_2 implements BH {
-   final YT3_2 U;
+   public final YT3_2 U;
 
-   YZ3_2(YT3_2 var1) {
+   public YZ3_2(YT3_2 var1) {
       this.U = var1;
    }
 

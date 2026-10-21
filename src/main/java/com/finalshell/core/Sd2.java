@@ -410,7 +410,7 @@ public class Sd2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   static int b(char var0, char[][] var1, int var2) {
+   public static int b(char var0, char[][] var1, int var2) {
       Ky4[] var10000 = t();
       int var4 = 0;
       Ky4[] var3 = var10000;

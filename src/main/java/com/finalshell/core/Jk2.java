@@ -20,13 +20,13 @@ public abstract class Jk2 {
    public static long[] f;
    public static Integer[] g;
 
-   Jk2(int var1, InetAddress var2, int var3) {
+   public Jk2(int var1, InetAddress var2, int var3) {
       this.r = var1;
       this.e = var2;
       this.R = var3;
    }
 
-   Jk2() {
+   public Jk2() {
    }
 
    public abstract void K(InputStream var1) throws B52, IOException;
@@ -59,7 +59,7 @@ public abstract class Jk2 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   static final String n(byte[] var0, int var1) {
+   public static final String n(byte[] var0, int var1) {
       String[] var10000 = Y();
       String var3 = "" + (var0[var1] & a(13357, 3961495707727768849L));
       String[] var2 = var10000;
@@ -84,7 +84,7 @@ public abstract class Jk2 {
       }
    }
 
-   static final String p(byte[] var0, int var1) {
+   public static final String p(byte[] var0, int var1) {
       return null;
    }
 

@@ -11,12 +11,12 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.text.BadLocationException;
 
 public class XS implements KeyListener {
-   final boolean K;
-   final ClearListDialog I;
+   public final boolean K;
+   public final ClearListDialog I;
    public static long[] a;
    public static Integer[] b;
 
-   XS(ClearListDialog var1, boolean var2) {
+   public XS(ClearListDialog var1, boolean var2) {
       this.I = var1;
       this.K = var2;
    }

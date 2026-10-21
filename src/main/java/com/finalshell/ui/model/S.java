@@ -5,9 +5,9 @@ import java.io.File;
 import java.util.Comparator;
 
 public class S implements Comparator {
-   final com.finalshell.ui.panel.T H;
+   public final com.finalshell.ui.panel.T H;
 
-   S(com.finalshell.ui.panel.T var1) {
+   public S(com.finalshell.ui.panel.T var1) {
       this.H = var1;
    }
 

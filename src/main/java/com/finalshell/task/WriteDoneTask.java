@@ -8,7 +8,7 @@ public class WriteDoneTask extends Thread {
    public static String[] b;
    public static long c;
 
-   WriteDoneTask(OutputStream var1) {
+   public WriteDoneTask(OutputStream var1) {
       this.f = var1;
    }
 

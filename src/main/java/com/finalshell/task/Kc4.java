@@ -3,9 +3,9 @@ package com.finalshell.task;
 import java.io.IOException;
 
 public class Kc4 extends Thread {
-   final Process Y;
+   public final Process Y;
 
-   Kc4(Process var1) {
+   public Kc4(Process var1) {
       this.Y = var1;
    }
 

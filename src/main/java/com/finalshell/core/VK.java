@@ -4,7 +4,7 @@ import java.net.DatagramPacket;
 
 public class VK extends Vb2 {
    public short m = BN.f;
-   byte[] j;
+   public byte[] j;
    public static long[] a;
    public static Integer[] b;
 

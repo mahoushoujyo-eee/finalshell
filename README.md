@@ -1,6 +1,6 @@
 # FinalShell 可读重建工程
 
-从混淆过的 `finalshell.jar` 逆向重建的 **可编译、可阅读** 的 Java 17 / Maven 源码工程：第三方依赖按原包字节切出打进 `lib/`，自研代码先在**字节码层**修掉混淆器制造的结构性破坏，再用 Vineflower 反编译 + 文本级修复器落成 5386 个 `.java` 文件。
+从混淆过的 `finalshell.jar` 逆向重建的 **可编译、可阅读** 的 Java 17 / Maven 源码工程：第三方依赖按原包字节切出打进 `lib/`，自研代码先在**字节码层**修掉混淆器制造的结构性破坏，再用 Vineflower 反编译 + 文本级修复器落成 5387 个 `.java` 文件。
 
 > 重建目标是**读得懂、改得动**，不是 1:1 还原原始工程 —— 成员名仍是混淆的，详见 [已知限制](#已知限制)。
 
@@ -13,7 +13,7 @@
 
 | 占位符 | 含义 | 取值命令（在 `<repo>` 下执行） |
 |---|---|---|
-| `5386` | `src/main/java` 下的 `.java` 文件数 | `Get-ChildItem src\main\java -Recurse -File -Filter *.java \| Measure-Object \| Select-Object -ExpandProperty Count` |
+| `5387` | `src/main/java` 下的 `.java` 文件数 | `Get-ChildItem src\main\java -Recurse -File -Filter *.java \| Measure-Object \| Select-Object -ExpandProperty Count` |
 | `5368` | 自研类数量 | `Get-Content tables\class-rename-kind.tsv -Encoding UTF8 \| Measure-Object -Line` （再减 1 行表头） |
 | `20` | 源码叶包目录数（直接含 `.java` 的目录） | `Get-ChildItem src\main\java -Recurse -Directory \| Where-Object { (Get-ChildItem $_.FullName -File -Filter *.java).Count -gt 0 } \| Measure-Object \| Select-Object -ExpandProperty Count` |
 | `16` | `com.finalshell.*` 语义包数（含 `com.finalshell` 本身） | `(Get-ChildItem src\main\java\com\finalshell -Recurse -Directory).Count + 1`（`com.finalshell` 目录不存在则为 0） |
@@ -21,7 +21,7 @@
 | `12764` | `lib/bundled-libs.jar` 里的 `.class` 条目数 | `jar tf lib\bundled-libs.jar \| Select-String '\.class$' \| Measure-Object \| Select-Object -ExpandProperty Count` |
 | `19.3` | `lib/bundled-libs.jar` 体积（MiB） | `'{0:N1}' -f ((Get-Item lib\bundled-libs.jar).Length / 1MB)` |
 | `4` | `lib/` 下 jar 个数 | `Get-ChildItem lib -File -Filter *.jar \| Measure-Object \| Select-Object -ExpandProperty Count` |
-| `45` | `tools/` 下 `.java` 工具数 | `Get-ChildItem tools -File -Filter *.java \| Measure-Object \| Select-Object -ExpandProperty Count` |
+| `46` | `tools/` 下 `.java` 工具数 | `Get-ChildItem tools -File -Filter *.java \| Measure-Object \| Select-Object -ExpandProperty Count` |
 | `{{TABLE_COUNT}}` / `{{TABLE_LIT_COUNT}}` | `tables/` / `tables-lit/` 文件数 | `Get-ChildItem tables -File \| Measure-Object` / `Get-ChildItem tables-lit -File \| Measure-Object` |
 | `3101` | 仅大小写不同的类/包改名条数 | `Get-Content tables\case-rename.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
 | `1426` | 同名不同返回类型的方法改名条数 | `Get-Content tables\dup-renames.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
@@ -30,7 +30,7 @@
 | `5368` | 语义改名表条目数 | `Get-Content tables\class-rename-kind.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
 | `28441` | 已解出的字符串明文条数 | `Get-Content tables-lit\strings.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
 | `39761` | 已解出的数值常量条数 | `Get-Content tables-lit\numbers.tsv -Encoding UTF8 \| Measure-Object -Line` （减 1 行表头） |
-| `21651` / `19961` | 解除 javac 100 条错误上限后的**真实**错误数 / 涉及文件数 | `mvn -s maven-settings.xml compile 2>&1 \| Tee-Object javac.log`，再 `Select-String javac.log -Pattern 'error:' \| Measure-Object` 与 `… -Pattern '^\S+\.java:\d+: error'` |
+| `16944` / `15598` | 解除 javac 100 条错误上限后的**真实**错误数 / 涉及文件数 | `mvn -s maven-settings.xml compile 2>&1 \| Tee-Object javac.log`，再 `Select-String javac.log -Pattern 'error:' \| Measure-Object` 与 `… -Pattern '^\S+\.java:\d+: error'` |
 | `3206` / `757` | 反编译不出方法体的占位数 / 涉及文件数 | `Select-String -Path src\main\java\*.java -Pattern 'decompilation failed \(Vineflower\)' -Recurse \| Measure-Object`；文件数去重后统计 |
 | `8274` | 已折叠成辅助调用的反射调用点数 | `Select-String -Path src\main\java\*.java -Pattern 'Ref\.h2?\(' -Recurse \| Measure-Object` |
 | `171` | 仓库体积（不含 `.git`，MiB） | `'{0:N0}' -f ((Get-ChildItem . -Recurse -File -Force \| Where-Object { $_.FullName -notlike '*\.git\*' } \| Measure-Object -Property Length -Sum).Sum / 1MB)` |
@@ -49,13 +49,13 @@
 
 | 项 | 值 |
 |---|---|
-| 自研 Java 源文件 | **5386** 个 `.java` |
+| 自研 Java 源文件 | **5387** 个 `.java` |
 | 源码叶包目录 | **20** 个 |
 | 语义包（`com.finalshell.*`） | **16** 个 |
 | 自研类 | **5368** 个 |
 | 资源文件 | **3032** 个（从原 jar 逐字节提取） |
 | 第三方类（`lib/bundled-libs.jar`） | **12764** 个 `.class`（19.3 MiB） |
-| 工具链 | **45** 个 `.java`（`tools/`，纯 Java 17，除 ASM 外无外部依赖） |
+| 工具链 | **46** 个 `.java`（`tools/`，纯 Java 17，除 ASM 外无外部依赖） |
 | 中间表 | `tables/` **{{TABLE_COUNT}}** 个，`tables-lit/` **{{TABLE_LIT_COUNT}}** 个 |
 | 文档 | `docs/HANDOFF.md`、`docs/RESOURCES.md` |
 | 仓库体积 | 约 **171** MiB（不含 `.git`） |
@@ -92,7 +92,7 @@
 │   └── javax.activation-api-1.2.0.jar
 │
 ├── src/main/
-│   ├── java/                5386 个 .java，20 个叶包目录
+│   ├── java/                5387 个 .java，20 个叶包目录
 │   │   └── com/finalshell/… 语义化分包，16 个包
 │   │       ├── core/ …      业务主体
 │   │       ├── ui/ …        界面
@@ -115,7 +115,7 @@
 │   ├── numbers.tsv          39761 条数值常量
 │   └── *.harvest.tsv        采集到的调用点
 │
-└── tools/                   45 个逆向/构建工具（见「工具链」）
+└── tools/                   46 个逆向/构建工具（见「工具链」）
 ```
 
 **关于包名**：本工程经过一轮**语义化重整** —— 类名与包名已按实际用途归入 `com.finalshell.*` 语义包
@@ -174,7 +174,7 @@ mvn -s maven-settings.xml compile
 * 用 `tools/FixVineflower.java` 修 Vineflower 的 6 类输出缺陷（假枚举降级、构造器生成、不可反编译方法体占位、孤立转型等）。
 * 用 `tools/FixTree.java` 做**错误驱动修复**：读 `javac -Xmaxerrs 100000` 的完整日志，按错误类别定点修补，迭代到不动点。
 
-> `javac` 默认只报前 100 条错误，会让人误以为「只差一点」。解除上限后的真实错误数是 **21651 个错误 / 19961 个文件**，
+> `javac` 默认只报前 100 条错误，会让人误以为「只差一点」。解除上限后的真实错误数是 **16944 个错误 / 15598 个文件**，
 > 修复后归零（以 `docs/HANDOFF.md` §2 为准）。
 
 ### 复现流水线
@@ -197,7 +197,7 @@ java -cp bin FixVineflower <tree> ../tables/classinfo-v4.tsv
 
 ### 工具清单（`tools/`，全部 Java 17，除 ASM 外无外部依赖）
 
-> 权威清单以 `tools/` 目录为准（当前 **45** 个 `.java`）。下面按职责分类摘录：
+> 权威清单以 `tools/` 目录为准（当前 **46** 个 `.java`）。下面按职责分类摘录：
 
 | 分类 | 工具 | 用途 |
 |---|---|---|

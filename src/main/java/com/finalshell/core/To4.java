@@ -11,10 +11,10 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 
 public class To4 {
-   static String i;
-   static String q;
-   static HashMap K;
-   static HashMap H;
+   public static String i;
+   public static String q;
+   public static HashMap K;
+   public static HashMap H;
    public static String[] a;
    public static String[] b;
 
@@ -22,7 +22,7 @@ public class To4 {
       __vfClinit__();
    }
 
-   static String c() {
+   public static String c() {
       return a(-20526, -30547);
    }
 
@@ -49,7 +49,7 @@ public class To4 {
       return var2.doFinal(var0);
    }
 
-   static synchronized Cipher t(byte[] var0) throws Exception {
+   public static synchronized Cipher t(byte[] var0) throws Exception {
       String[] var10000 = PingMessageR.N();
       Cipher var2 = (Cipher)K.get(var0);
       String[] var1 = var10000;
@@ -76,7 +76,7 @@ public class To4 {
       return var2;
    }
 
-   static synchronized Cipher x(byte[] var0) throws Exception {
+   public static synchronized Cipher x(byte[] var0) throws Exception {
       String[] var10000 = PingMessageR.N();
       Cipher var2 = (Cipher)H.get(var0);
       String[] var1 = var10000;

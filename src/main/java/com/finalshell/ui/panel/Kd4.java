@@ -445,15 +445,15 @@ public class Kd4 extends KE3 {
       var2.addAncestorListener(new FQ(this, var2));
    }
 
-   static void I(Kd4 var0, java.io.File[] var1, KR var2) {
+   public static void I(Kd4 var0, java.io.File[] var1, KR var2) {
       var0.I(var1, var2);
    }
 
-   static int L(Kd4 var0) {
+   public static int L(Kd4 var0) {
       return var0.z;
    }
 
-   static boolean M(Kd4 var0) {
+   public static boolean M(Kd4 var0) {
       return var0.B;
    }
 

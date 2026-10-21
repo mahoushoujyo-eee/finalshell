@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class YT implements ActionListener {
-   final RouteTracePanel2 J;
+   public final RouteTracePanel2 J;
 
-   YT(RouteTracePanel2 var1) {
+   public YT(RouteTracePanel2 var1) {
       this.J = var1;
    }
 

@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class KH3_2 {
    public String I;
    public String f;
-   final Wi2 T;
+   public final Wi2 T;
 
    public KH3_2(Wi2 var1) {
       this.T = var1;

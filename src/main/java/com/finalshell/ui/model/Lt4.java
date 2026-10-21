@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.Xg2;
 import java.awt.image.BufferedImage;
 
-public final class Lt4 extends Enum {
+public final class Lt4 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -29,11 +29,10 @@ public final class Lt4 extends Enum {
    }
 
    public static Lt4 valueOf(String var0) {
-      return Enum.valueOf(Lt4.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public Lt4(String var1, int var2) {
-      super(var1, var2);
    }
 
    public BufferedImage O() {

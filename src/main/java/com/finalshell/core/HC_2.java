@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class HC_2 extends HP_2 {
-   final HA Z;
+   public final HA Z;
    public static String b;
 
-   HC_2(HA var1) {
+   public HC_2(HA var1) {
       super(var1);
       this.Z = var1;
    }

@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class CP3 extends C42 {
-   final Yp2 g;
+   public final Yp2 g;
 
-   CP3(Yp2 var1) {
+   public CP3(Yp2 var1) {
       this.g = var1;
    }
 

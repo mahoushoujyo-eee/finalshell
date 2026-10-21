@@ -21,7 +21,7 @@ public class HI3 extends HN3 {
       return this.x;
    }
 
-   protected void e() {
+   public void e() {
       String[] var10000 = W5.q();
       this.Q = new int[a(6579, 4774606376127745062L)];
       String[] var1 = var10000;

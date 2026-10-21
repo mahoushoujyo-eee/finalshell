@@ -3,11 +3,8 @@ package com.finalshell.core;
 public class Ce2 extends CY {
    public static String j;
 
-   Ce2() {
-   }
-
    @Override
-   String i() {
+   public String i() {
       return j;
    }
 

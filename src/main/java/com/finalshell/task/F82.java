@@ -12,12 +12,12 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class F82 implements Runnable {
-   HashMap X;
-   final YT3_2 l;
+   public HashMap X;
+   public final YT3_2 l;
    public static long[] a;
    public static Long[] b;
 
-   F82(YT3_2 var1) {
+   public F82(YT3_2 var1) {
       this.l = var1;
       HashMap var10001 = new HashMap();
       long var3 = 590582259753910902L;

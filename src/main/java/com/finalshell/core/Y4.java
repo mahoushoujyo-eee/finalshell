@@ -3,18 +3,18 @@ package com.finalshell.core;
 import java.io.IOException;
 
 public class Y4 {
-   O3[] G;
-   int r;
-   int R;
-   final DY3 Y;
+   public O3[] G;
+   public int r;
+   public int R;
+   public final DY3 Y;
    public static String a;
    public static long b;
 
-   Y4(DY3 var1, int var2) {
+   public Y4(DY3 var1, int var2) {
+   super();
       boolean var10000 = Dm4.J$boolean();
       this.Y = var1;
       boolean var3 = var10000;
-      super();
       this.G = null;
       this.G = new O3[var2];
       int var4 = 0;
@@ -37,11 +37,11 @@ public class Y4 {
       }
    }
 
-   void w() {
+   public void w() {
       this.r = this.R = 0;
    }
 
-   void Y(int var1, long var2, int var4) {
+   public void Y(int var1, long var2, int var4) {
       boolean var5 = Dm4.J$boolean();
       int var10000 = this.R;
       if (!var5) {
@@ -65,7 +65,7 @@ public class Y4 {
       }
    }
 
-   O3 y(int param1) throws OU3, Dn2_2 {
+   public O3 y(int param1) throws OU3, Dn2_2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -204,17 +204,17 @@ public class Y4 {
       // fa: areturn
    }
 
-   int J() {
+   public int J() {
       return this.R;
    }
 
-   int D() {
+   public int D() {
       return this.G.length;
    }
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   void W(S_2_2 var1, UJ var2) throws IOException {
+   public void W(S_2_2 var1, UJ var2) throws IOException {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var4 = this.R;
       boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -299,7 +299,7 @@ public class Y4 {
       }
    }
 
-   long M() {
+   public long M() {
       long var2 = b;
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var4 = 0;

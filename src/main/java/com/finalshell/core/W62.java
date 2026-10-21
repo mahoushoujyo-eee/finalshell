@@ -20,15 +20,15 @@ import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 
 public class W62 {
-   protected static C82 Z;
-   protected static On2 l;
-   protected static Object Y;
-   protected static boolean y;
-   protected static boolean G;
-   protected static Map z;
-   protected static List R;
-   protected static Map q;
-   protected static boolean L;
+   public static C82 Z;
+   public static On2 l;
+   public static Object Y;
+   public static boolean y;
+   public static boolean G;
+   public static Map z;
+   public static List R;
+   public static Map q;
+   public static boolean L;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -51,7 +51,7 @@ public class W62 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static Map b() {
+   public static Map b() {
       String[] var10000 = GR.I();
       Object var1 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -109,7 +109,7 @@ public class W62 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static Map Q() {
+   public static Map Q() {
       String[] var10000 = GR.I();
       Object var1 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -166,7 +166,7 @@ public class W62 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   protected static boolean g(KeyEvent var0) {
+   public static boolean g(KeyEvent var0) {
       int var2 = FN.k(var0).hashCode();
       String[] var10000 = GR.I();
       Iterator var3 = R.iterator();
@@ -231,7 +231,7 @@ public class W62 {
       return false;
    }
 
-   protected static void m(KeyEvent var0) {
+   public static void m(KeyEvent var0) {
       Map var2 = b();
       String[] var10000 = GR.I();
       Iterator var3 = R.iterator();
@@ -270,7 +270,7 @@ public class W62 {
       }
    }
 
-   protected static void a(KeyEvent var0, DN_2 var1) {
+   public static void a(KeyEvent var0, DN_2 var1) {
       String[] var10000 = GR.I();
       JComponent var3 = var1.j();
       String[] var2 = var10000;
@@ -353,7 +353,7 @@ public class W62 {
       }
    }
 
-   protected static boolean L(Component var0) {
+   public static boolean L(Component var0) {
       String[] var10000 = GR.I();
       Iterator var2 = Q().entrySet().iterator();
       String[] var1 = var10000;
@@ -485,7 +485,7 @@ public class W62 {
       return k(var0, var1, var2, F(var1), var3, null);
    }
 
-   protected static Wc2 F(AbstractButton var0) {
+   public static Wc2 F(AbstractButton var0) {
       return new Wb4(var0);
    }
 
@@ -610,7 +610,7 @@ public class W62 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static List I(JComponent var0) {
+   public static List I(JComponent var0) {
       String[] var10000 = GR.I();
       Object var2 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -680,7 +680,7 @@ public class W62 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static void c(DN_2 var0) {
+   public static void c(DN_2 var0) {
       String[] var10000 = GR.I();
       Object var2 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -737,7 +737,7 @@ public class W62 {
       }
    }
 
-   protected static void A(DN_2 var0) {
+   public static void A(DN_2 var0) {
       String[] var1 = GR.I();
       List var10000 = var0;
       if (var1 != null) {
@@ -783,7 +783,7 @@ public class W62 {
       }
    }
 
-   protected static void j(List var0) {
+   public static void j(List var0) {
       String[] var1 = GR.I();
       Object var10000 = var0;
       if (var1 != null) {
@@ -812,7 +812,7 @@ public class W62 {
       }
    }
 
-   protected static void Z(JComponent var0) {
+   public static void Z(JComponent var0) {
       synchronized (Y) {
          var0.putClientProperty(a(-6810, 15847), null);
          z.remove(var0);
@@ -821,7 +821,7 @@ public class W62 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected static List O(JComponent var0) {
+   public static List O(JComponent var0) {
       String[] var10000 = GR.I();
       Object var2 = Y;
       synchronized (Y){} // $VF: monitorenter 
@@ -900,7 +900,7 @@ public class W62 {
       u(FN.L(var0));
    }
 
-   protected static void u(Window var0) {
+   public static void u(Window var0) {
       String[] var10000 = GR.I();
       LinkedHashSet var2 = new LinkedHashSet();
       String[] var1 = var10000;

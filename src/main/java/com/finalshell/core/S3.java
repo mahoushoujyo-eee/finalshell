@@ -47,7 +47,7 @@ public abstract class S3 {
    }
 
    @NotNull
-   protected abstract XF3 L(int var1);
+   public abstract XF3 L(int var1);
 
    public void Z(int var1) {
       String var2 = SelectUploadFile.r$String();

@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PH3 implements ActionListener {
-   final KV3 k;
+   public final KV3 k;
 
-   PH3(KV3 var1) {
+   public PH3(KV3 var1) {
       this.k = var1;
    }
 

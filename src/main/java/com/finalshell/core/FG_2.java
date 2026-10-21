@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class FG_2 implements C_w_2 {
-   final FU b;
-   final boolean q;
-   final H3_2 h;
+   public final FU b;
+   public final boolean q;
+   public final H3_2 h;
 
-   FG_2(H3_2 var1, FU var2, boolean var3) {
+   public FG_2(H3_2 var1, FU var2, boolean var3) {
       this.h = var1;
       this.b = var2;
       this.q = var3;

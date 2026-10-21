@@ -6,12 +6,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JComponent;
 
 public class Wz4 implements ActionListener {
-   final JComponent o;
-   final int E;
-   final int G;
-   final Yi2 D;
+   public final JComponent o;
+   public final int E;
+   public final int G;
+   public final Yi2 D;
 
-   Wz4(Yi2 var1, JComponent var2, int var3, int var4) {
+   public Wz4(Yi2 var1, JComponent var2, int var3, int var4) {
       this.D = var1;
       this.o = var2;
       this.E = var3;

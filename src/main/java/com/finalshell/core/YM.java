@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class YM {
-   String T = null;
-   String b = null;
-   boolean n = false;
-   GI_2 e = null;
+   public String T = null;
+   public String b = null;
+   public boolean n = false;
+   public GI_2 e = null;
 
    public String e() {
       return this.T;

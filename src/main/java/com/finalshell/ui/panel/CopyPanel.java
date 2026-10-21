@@ -24,21 +24,21 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class CopyPanel extends JPanel {
-   UT x;
-   Cd4 o;
-   String T;
-   CE j;
-   int z;
-   int G;
-   boolean I;
-   Ty2 P;
-   ArrayList g;
+   public UT x;
+   public Cd4 o;
+   public String T;
+   public CE j;
+   public int z;
+   public int G;
+   public boolean I;
+   public Ty2 P;
+   public ArrayList g;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   CopyPanel(String var1, boolean var2, Ty2 var3) {
+   public CopyPanel(String var1, boolean var2, Ty2 var3) {
       Registry.lookupField(310361548260550163L).setInt(this, -1);
       Registry.lookupField(367920313249113539L).setInt(this, -1);
       Registry.lookupField(119053536899760813L).setBoolean(this, false);
@@ -150,7 +150,7 @@ public class CopyPanel extends JPanel {
       }
    }
 
-   void j() {
+   public void j() {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Xr2(this));
       long var2 = 434592463220957006L;
@@ -164,10 +164,10 @@ public class CopyPanel extends JPanel {
       }
    }
 
-   void D() {
+   public void D() {
    }
 
-   void g(ArrayList var1, KV var2) {
+   public void g(ArrayList var1, KV var2) {
       com.finalshell.core.Kw4 var5;
       label76: {
          CE.S$arrint();
@@ -278,7 +278,7 @@ public class CopyPanel extends JPanel {
       }
    }
 
-   synchronized void v() {
+   public synchronized void v() {
       int[] var1 = CE.S$arrint();
       if (var1 != null) {
          Object var7 = 307535642693794204L;

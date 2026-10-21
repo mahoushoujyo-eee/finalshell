@@ -5,16 +5,16 @@ import com.finalshell.ui.panel.Address;
 import java.util.ArrayList;
 
 public class CreateFolder2 implements Runnable {
-   final ArrayList H;
-   final Address I;
-   final String J;
-   final String R;
-   final ArrayList n;
-   final Yd2 A;
+   public final ArrayList H;
+   public final Address I;
+   public final String J;
+   public final String R;
+   public final ArrayList n;
+   public final Yd2 A;
    public static String[] a;
    public static String[] b;
 
-   CreateFolder2(Yd2 var1, ArrayList var2, Address var3, String var4, String var5, ArrayList var6) {
+   public CreateFolder2(Yd2 var1, ArrayList var2, Address var3, String var4, String var5, ArrayList var6) {
       this.A = var1;
       this.H = var2;
       this.I = var3;

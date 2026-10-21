@@ -6,10 +6,10 @@ import java.awt.event.MouseListener;
 import javax.swing.table.JTableHeader;
 
 public class CF3 implements MouseListener {
-   final JTableHeader q;
-   final com.finalshell.core.Km2 g;
+   public final JTableHeader q;
+   public final com.finalshell.core.Km2 g;
 
-   CF3(com.finalshell.core.Km2 var1, JTableHeader var2) {
+   public CF3(com.finalshell.core.Km2 var1, JTableHeader var2) {
       this.g = var1;
       this.q = var2;
    }

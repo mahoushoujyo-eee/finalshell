@@ -1,10 +1,10 @@
 package com.finalshell.task;
 
 public class QU implements Runnable {
-   final String p;
-   final com.finalshell.ui.panel.Oj2 Q;
+   public final String p;
+   public final com.finalshell.ui.panel.Oj2 Q;
 
-   QU(com.finalshell.ui.panel.Oj2 var1, String var2) {
+   public QU(com.finalshell.ui.panel.Oj2 var1, String var2) {
       this.Q = var1;
       this.p = var2;
    }

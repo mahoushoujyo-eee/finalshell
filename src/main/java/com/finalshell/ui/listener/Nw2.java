@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBoxMenuItem;
 
 public class Nw2 implements ActionListener {
-   final JCheckBoxMenuItem N;
-   final AppendCarriageReturnCRPanel b;
+   public final JCheckBoxMenuItem N;
+   public final AppendCarriageReturnCRPanel b;
 
-   Nw2(AppendCarriageReturnCRPanel var1, JCheckBoxMenuItem var2) {
+   public Nw2(AppendCarriageReturnCRPanel var1, JCheckBoxMenuItem var2) {
       this.b = var1;
       this.N = var2;
    }

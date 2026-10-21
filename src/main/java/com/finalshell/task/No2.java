@@ -8,11 +8,11 @@ import java.util.List;
 import javax.swing.JWindow;
 
 public class No2 implements Runnable {
-   final List M;
-   final Ic2 h;
+   public final List M;
+   public final Ic2 h;
    public static long a;
 
-   No2(Ic2 var1, List var2) {
+   public No2(Ic2 var1, List var2) {
       this.h = var1;
       this.M = var2;
    }

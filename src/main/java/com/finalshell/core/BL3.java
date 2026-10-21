@@ -3,8 +3,8 @@ package com.finalshell.core;
 import com.finalshell.reflect.Registry;
 
 public class BL3 {
-   int v;
-   long d;
+   public int v;
+   public long d;
 
    public int n() {
       return Registry.lookupField(168509883017378586L).getInt(this);

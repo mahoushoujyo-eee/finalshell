@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class CG_2 implements HL {
-   final K2_3 e;
+   public final K2_3 e;
 
-   CG_2(K2_3 var1) {
+   public CG_2(K2_3 var1) {
       this.e = var1;
    }
 

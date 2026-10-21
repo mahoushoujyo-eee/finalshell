@@ -9,9 +9,9 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class Xa2 implements DocumentListener {
-   final ClearListDialog u;
+   public final ClearListDialog u;
 
-   Xa2(ClearListDialog var1) {
+   public Xa2(ClearListDialog var1) {
       this.u = var1;
    }
 
@@ -22,7 +22,7 @@ public class Xa2 implements DocumentListener {
          Object var3 = 402898185977671634L;
          Xa2 var10001 = Registry.lookupField(187877731600446636L).getBoolean(Ref.g(402898185977671634L, var3));
          if (var2 == null) {
-            if (var10001 == false) {
+            if (var10001 == null) {
                return;
             }
 
@@ -77,7 +77,7 @@ public class Xa2 implements DocumentListener {
             Registry.lookupField(546619646805113494L).getBoolean(var10009);
          }
 
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var21 = 402898185977671634L;
             ClearListDialog var10002 = (ClearListDialog)Ref.g(402898185977671634L, var21);
             if (var2 != null) {
@@ -112,7 +112,7 @@ public class Xa2 implements DocumentListener {
       Object var3 = 402898185977671634L;
       Xa2 var10001 = Registry.lookupField(210701759688696485L).getBoolean(Ref.g(402898185977671634L, var3));
       if (var2 == null) {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var5 = 402898185977671634L;
             Registry.lookupField(210701759688696485L).setBoolean(Ref.g(402898185977671634L, var5), false);
             return;
@@ -124,7 +124,7 @@ public class Xa2 implements DocumentListener {
       }
 
       if (var2 == null) {
-         if (var10001 == false) {
+         if (var10001 == null) {
             return;
          }
 
@@ -150,7 +150,7 @@ public class Xa2 implements DocumentListener {
 
       label79: {
          if (var2 == null) {
-            if (var10001 == false) {
+            if (var10001 == null) {
                Object var17 = 402898185977671634L;
                Ref.g(402898185977671634L, var17);
                Object[] var10003 = Registry.emptyArgs();
@@ -190,7 +190,7 @@ public class Xa2 implements DocumentListener {
             Registry.lookupField(546619646805113494L).getBoolean(var10005);
          }
 
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var29 = 402898185977671634L;
             ClearListDialog var10002 = (ClearListDialog)Ref.g(402898185977671634L, var29);
             if (var2 != null) {
@@ -226,7 +226,7 @@ public class Xa2 implements DocumentListener {
          Object var3 = 402898185977671634L;
          Xa2 var10001 = Registry.lookupField(187877731600446636L).getBoolean(Ref.g(402898185977671634L, var3));
          if (var2 == null) {
-            if (var10001 == false) {
+            if (var10001 == null) {
                return;
             }
 
@@ -281,7 +281,7 @@ public class Xa2 implements DocumentListener {
             Registry.lookupField(546619646805113494L).getBoolean(var10009);
          }
 
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object var21 = 402898185977671634L;
             ClearListDialog var10002 = (ClearListDialog)Ref.g(402898185977671634L, var21);
             if (var2 != null) {

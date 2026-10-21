@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class FB implements X_2_3 {
-   final FF_2 H;
+   public final FF_2 H;
    public static long a;
 
-   FB(FF_2 var1) {
+   public FB(FF_2 var1) {
       this.H = var1;
    }
 

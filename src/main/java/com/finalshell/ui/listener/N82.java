@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class N82 implements ActionListener {
-   final KV3 E;
+   public final KV3 E;
 
-   N82(KV3 var1) {
+   public N82(KV3 var1) {
       this.E = var1;
    }
 

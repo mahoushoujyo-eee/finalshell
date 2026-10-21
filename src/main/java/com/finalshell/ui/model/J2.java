@@ -10,7 +10,7 @@ public class J2 implements Iterable, CharSequence {
    public final char[] i;
    public final int J;
    public final int o;
-   static boolean T;
+   public static boolean T;
    public static boolean E;
    public static String[] b;
    public static String[] c;
@@ -190,15 +190,15 @@ public class J2 implements Iterable, CharSequence {
       return this.q();
    }
 
-   static int C(J2 var0) {
+   public static int C(J2 var0) {
       return var0.J;
    }
 
-   static char[] j(J2 var0) {
+   public static char[] j(J2 var0) {
       return var0.i;
    }
 
-   static int a(J2 var0) {
+   public static int a(J2 var0) {
       return var0.o;
    }
 

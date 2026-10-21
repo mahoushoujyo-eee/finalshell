@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Ya4;
 import java.lang.reflect.InvocationTargetException;
 
 public class T4 implements Runnable {
-   final Ya4 G;
+   public final Ya4 G;
 
-   T4(Ya4 var1) {
+   public T4(Ya4 var1) {
       this.G = var1;
    }
 

@@ -8,9 +8,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class I42 extends MouseAdapter {
-   final OY3 W;
+   public final OY3 W;
 
-   protected I42(OY3 var1) {
+   public I42(OY3 var1) {
       this.W = var1;
    }
 
@@ -57,7 +57,7 @@ public class I42 extends MouseAdapter {
       }
    }
 
-   protected void f(Point var1) {
+   public void f(Point var1) {
       float var3;
       label17: {
          boolean var10000 = OY3.Z();

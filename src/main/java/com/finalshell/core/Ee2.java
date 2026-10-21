@@ -9,11 +9,11 @@ import java.io.File;
 import javax.swing.TransferHandler.TransferSupport;
 
 public class Ee2 extends EY {
-   final File u;
-   final K02 X;
+   public final File u;
+   public final K02 X;
    public static String a;
 
-   Ee2(K02 var1, boolean var2, boolean var3, File var4) {
+   public Ee2(K02 var1, boolean var2, boolean var3, File var4) {
       super(var2, var3);
       this.X = var1;
       this.u = var4;

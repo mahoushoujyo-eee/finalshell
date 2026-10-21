@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class CG3 implements KeyListener {
-   final Connection4 r;
+   public final Connection4 r;
 
-   CG3(Connection4 var1) {
+   public CG3(Connection4 var1) {
       this.r = var1;
    }
 
@@ -32,7 +32,7 @@ public class CG3 implements KeyListener {
          String var3 = (var1.getKeyChar() + "").toLowerCase();
          CG3 var10000 = var3.length();
          if (var2 != null) {
-            if (var10000 != 1) {
+            if (var10000 != null) {
                return;
             }
 
@@ -74,7 +74,7 @@ public class CG3 implements KeyListener {
                label167: {
                   label168: {
                      if (var2 != null) {
-                        if (var59 != 0) {
+                        if (var59 != null) {
                            Ck4 var11 = (Ck4)var9;
                            String var10004 = (String)(Registry.emptyArgs());
                            long var21 = 396085629172753019L;
@@ -100,7 +100,7 @@ public class CG3 implements KeyListener {
                         break label167;
                      }
 
-                     if (var59 != 0) {
+                     if (var59 != null) {
                         Tf4 var54 = (Tf4)var9;
                         String var62 = (String)(Registry.emptyArgs());
                         long var23 = 179612178163941306L;
@@ -125,7 +125,7 @@ public class CG3 implements KeyListener {
                   var59 = var10.startsWith(var3);
                }
 
-               if (var59 != 0) {
+               if (var59 != null) {
                   var59 = this;
                   Object var24 = 403838484831587097L;
                   ((Connection4)Ref.g(403838484831587097L, var24)).setSelectionRow(var7);
@@ -147,7 +147,7 @@ public class CG3 implements KeyListener {
          }
 
          if (var2 != null) {
-            if (var59 != 0) {
+            if (var59 != null) {
                return;
             }
 

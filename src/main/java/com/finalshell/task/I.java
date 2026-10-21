@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import javax.swing.JMenuItem;
 
 public class I implements Runnable {
-   final JMenuItem J;
-   final JMenuItem H;
-   final JMenuItem w;
-   final RouteTracePanel2 t;
+   public final JMenuItem J;
+   public final JMenuItem H;
+   public final JMenuItem w;
+   public final RouteTracePanel2 t;
 
-   I(RouteTracePanel2 var1, JMenuItem var2, JMenuItem var3, JMenuItem var4) {
+   public I(RouteTracePanel2 var1, JMenuItem var2, JMenuItem var3, JMenuItem var4) {
       this.t = var1;
       this.J = var2;
       this.H = var3;

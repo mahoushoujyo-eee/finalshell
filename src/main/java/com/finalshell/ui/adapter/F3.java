@@ -8,7 +8,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class F3 extends DefaultTableCellRenderer {
-   JLabel p;
+   public JLabel p;
    public static long a;
 
    public F3() {

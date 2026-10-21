@@ -26,19 +26,19 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class TerminateProcessPanel extends JPanel {
-   Uo2 M;
-   Gk2 t;
-   CT U;
-   int u;
-   int S;
-   boolean A;
-   Ty2 d;
+   public Uo2 M;
+   public Gk2 t;
+   public CT U;
+   public int u;
+   public int S;
+   public boolean A;
+   public Ty2 d;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] e;
 
-   TerminateProcessPanel(boolean var1, Ty2 var2) {
+   public TerminateProcessPanel(boolean var1, Ty2 var2) {
       Registry.lookupField(356967793820925117L).setInt(this, -1);
       Registry.lookupField(480311688723572747L).setInt(this, -1);
       Registry.lookupField(261689646727117349L).setBoolean(this, false);
@@ -158,11 +158,11 @@ public class TerminateProcessPanel extends JPanel {
       }
 
       if (Ky4.F$arrString() != null) {
-         Uo2.J(this == false);
+         Uo2.J(this == null);
       }
    }
 
-   void j() {
+   public void j() {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Fa2(this));
       long var2 = 434592463220957006L;
@@ -176,10 +176,10 @@ public class TerminateProcessPanel extends JPanel {
       }
    }
 
-   void c() {
+   public void c() {
    }
 
-   void G(ArrayList var1, KV var2) {
+   public void G(ArrayList var1, KV var2) {
       Uo2.i();
       Object var6 = 435109479173232140L;
       Object var10002 = Ref.g(435109479173232140L, var6);
@@ -196,10 +196,10 @@ public class TerminateProcessPanel extends JPanel {
 
       Object var3 = var10002;
       var10002 = Registry.lookupField(480311688723572747L).getInt(this);
-      if (var3 != false) {
+      if (var3 == null) {
          TerminateProcessPanel var4 = (TerminateProcessPanel)var10002;
          var10002 = var4;
-         if (var3 == false) {
+         if (var3 == null) {
             if (!(var4 > -1)) {
                return;
             }

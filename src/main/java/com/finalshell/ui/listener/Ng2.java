@@ -4,9 +4,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Ng2 implements MouseListener {
-   final com.finalshell.ui.panel.NT K;
+   public final com.finalshell.ui.panel.NT K;
 
-   Ng2(com.finalshell.ui.panel.NT var1) {
+   public Ng2(com.finalshell.ui.panel.NT var1) {
       this.K = var1;
    }
 

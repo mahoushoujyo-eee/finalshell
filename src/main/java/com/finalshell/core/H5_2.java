@@ -4,9 +4,9 @@ import javax.swing.event.TreeExpansionEvent;
 import javax.swing.event.TreeExpansionListener;
 
 public class H5_2 implements TreeExpansionListener {
-   final K5_2 l;
+   public final K5_2 l;
 
-   H5_2(K5_2 var1) {
+   public H5_2(K5_2 var1) {
       this.l = var1;
    }
 

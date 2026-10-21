@@ -443,12 +443,12 @@ public class FV {
       // 1ec: areturn
    }
 
-   static XF3 G(String var0) {
+   public static XF3 G(String var0) {
       String var1 = var0.substring(1);
       return new XF3(Integer.parseInt(var1, a(20263, 2502127045397606375L)));
    }
 
-   static String K(XF3 var0) {
+   public static String K(XF3 var0) {
       String var1 = "";
       new StringBuilder().append("#");
       Object[] var10001 = Registry.packArgs(var0.U());
@@ -486,7 +486,7 @@ public class FV {
       return var10003.append((String)var10004).toString();
    }
 
-   static String D(int var0) {
+   public static String D(int var0) {
       Ky4[] var10000 = YT3_2.c();
       String var2 = Integer.toHexString(var0);
       Ky4[] var1 = var10000;

@@ -23,28 +23,28 @@ import java.util.ArrayList;
 import javax.swing.JLabel;
 
 public class Xj2 extends JLabel implements D2 {
-   Stroke x;
-   Stroke k;
-   int r;
-   KV w;
-   GradientPaint H;
-   UI3 A;
-   UI3 a;
-   String z;
-   Lt4 Z;
-   BufferedImage e;
-   Dimension o;
-   Stroke R;
-   Color Q;
-   Color W;
-   Color X;
-   Color p;
-   Color J;
+   public Stroke x;
+   public Stroke k;
+   public int r;
+   public KV w;
+   public GradientPaint H;
+   public UI3 A;
+   public UI3 a;
+   public String z;
+   public Lt4 Z;
+   public BufferedImage e;
+   public Dimension o;
+   public Stroke R;
+   public Color Q;
+   public Color W;
+   public Color X;
+   public Color p;
+   public Color J;
    public static long[] b;
    public static Integer[] c;
    public static long d;
 
-   Xj2() {
+   public Xj2() {
       BasicStroke var10001 = new BasicStroke(1.0F, 0, 2, 0.0F, new float[]{1.0F, 3.0F}, 0.0F);
       long var3 = 203693946467375876L;
       BasicStroke var2 = var10001;

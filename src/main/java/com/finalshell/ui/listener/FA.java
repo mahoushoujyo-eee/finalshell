@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FA implements ActionListener {
-   final EX w;
-   final KD3 F;
+   public final EX w;
+   public final KD3 F;
 
-   FA(KD3 var1, EX var2) {
+   public FA(KD3 var1, EX var2) {
       this.F = var1;
       this.w = var2;
    }

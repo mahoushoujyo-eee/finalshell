@@ -3,33 +3,30 @@ package com.finalshell.core;
 import java.nio.charset.StandardCharsets;
 
 public final class DF_2 implements Cloneable {
-   boolean Y = false;
+   public boolean Y = false;
    public boolean j = false;
-   int c;
-   int i = a(30904, 6057093035128584819L);
-   byte[] L;
-   byte[] Z;
-   byte[] q;
-   int F;
-   long C;
-   boolean D = false;
-   long B = 0L;
+   public int c;
+   public int i = a(30904, 6057093035128584819L);
+   public byte[] L;
+   public byte[] Z;
+   public byte[] q;
+   public int F;
+   public long C;
+   public boolean D = false;
+   public long B = 0L;
    public static String a;
    public static long[] b;
    public static Integer[] d;
 
-   DF_2() {
-   }
-
-   void E(long var1) {
+   public void E(long var1) {
       this.B = var1;
    }
 
-   long a() {
+   public long a() {
       return this.B;
    }
 
-   void O(int param1) {
+   public void O(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -94,15 +91,15 @@ public final class DF_2 implements Cloneable {
       // 77: return
    }
 
-   int R() {
+   public int R() {
       return this.i;
    }
 
-   void R(String var1) {
+   public void R(String var1) {
       this.Z = var1.getBytes(StandardCharsets.ISO_8859_1);
    }
 
-   String q() {
+   public String q() {
       try {
          if (this.Z == null) {
             return "";
@@ -114,11 +111,11 @@ public final class DF_2 implements Cloneable {
       return new String(this.Z, StandardCharsets.ISO_8859_1);
    }
 
-   void y(String var1) {
+   public void y(String var1) {
       this.q = var1.getBytes(StandardCharsets.ISO_8859_1);
    }
 
-   String h() {
+   public String h() {
       try {
          if (this.q == null) {
             return "";
@@ -130,15 +127,15 @@ public final class DF_2 implements Cloneable {
       return new String(this.q, StandardCharsets.ISO_8859_1);
    }
 
-   void U(long var1) {
+   public void U(long var1) {
       this.C = var1;
    }
 
-   long P() {
+   public long P() {
       return this.C;
    }
 
-   void t(Wa2_2 param1) {
+   public void t(Wa2_2 param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

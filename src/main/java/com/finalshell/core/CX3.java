@@ -1,17 +1,17 @@
 package com.finalshell.core;
 
 public class CX3 {
-   int o;
+   public int o;
 
-   int Z() {
+   public int Z() {
       return this.o;
    }
 
-   boolean I() {
+   public boolean I() {
       return false;
    }
 
-   boolean a() {
+   public boolean a() {
       return false;
    }
 }

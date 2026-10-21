@@ -15,13 +15,13 @@ public class GE {
    public final FontRenderContext l;
    public final Map a;
    public static char[] H;
-   static boolean S;
+   public static boolean S;
    public static long[] b;
    public static Integer[] c;
 
    public GE(FontMetrics var1) {
+   super();
       String var10000 = FV_2.D();
-      super();
       this.T = var1;
       this.g = var1.getFont();
       this.l = var1.getFontRenderContext();

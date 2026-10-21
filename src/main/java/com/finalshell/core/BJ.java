@@ -4,10 +4,10 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class BJ {
-   String M;
+   public String M;
    public static int f;
    public static int w;
-   int W;
+   public int W;
 
    public String B() {
       Object var1 = 244924605468350985L;

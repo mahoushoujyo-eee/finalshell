@@ -15,19 +15,19 @@ import org.pcap4j.core.NotOpenException;
 import org.pcap4j.core.PcapNativeException;
 
 public class Ty2 {
-   ConnectionProperty F;
-   Connect_2 D;
-   String B;
-   KV U;
-   boolean u;
-   Lv4_2 a;
-   boolean x;
-   int h;
-   boolean j;
-   XE_2 i;
-   boolean l;
-   boolean v;
-   DX3_2 k;
+   public ConnectionProperty F;
+   public Connect_2 D;
+   public String B;
+   public KV U;
+   public boolean u;
+   public Lv4_2 a;
+   public boolean x;
+   public int h;
+   public boolean j;
+   public XE_2 i;
+   public boolean l;
+   public boolean v;
+   public DX3_2 k;
    public static String[] b;
    public static String[] c;
    public static long[] d;
@@ -489,7 +489,7 @@ public class Ty2 {
       ((XE_2)var10001).n();
    }
 
-   void k() {
+   public void k() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -970,7 +970,7 @@ public class Ty2 {
       // 48b: return
    }
 
-   void Y(String param1, String param2, String param3) {
+   public void Y(String param1, String param2, String param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1253,7 +1253,7 @@ public class Ty2 {
       // 194: return
    }
 
-   void G() {
+   public void G() {
       Object[] var10001 = Registry.emptyArgs();
       long var3 = 341445284449640369L;
       Object[] var2 = var10001;
@@ -1278,7 +1278,7 @@ public class Ty2 {
          throw var15.getTargetException();
       }
 
-new KV(var10006);
+var10005 = new KV(var10006);
       long var9 = 634066162642129781L;
       Ref.s(634066162642129781L, this, var9);
       Object var10 = 634066162642129781L;
@@ -1335,7 +1335,7 @@ new KV(var10006);
          throw var19.getTargetException();
       }
 
-new Ty2(var1, (int)this, (String)var10007, var10008);
+var10004 = new Ty2(var1, (int)this, (String)var10007, var10008);
       long var7 = 217294035996242126L;
       String var6 = var10003;
       Ref.s(217294035996242126L, var6, var7);
@@ -1360,7 +1360,7 @@ new Ty2(var1, (int)this, (String)var10007, var10008);
       ((XE_2)Ref.g(217294035996242126L, var16)).U(new LK(this));
    }
 
-   void o(ArrayList var1) {
+   public void o(ArrayList var1) {
       String[] var2 = KV.b$arrString();
       if (var1.size() > 0) {
          String var3 = "\"";
@@ -1432,7 +1432,7 @@ new Ty2(var1, (int)this, (String)var10007, var10008);
       }
    }
 
-   void I() {
+   public void I() {
       Object[] var10001 = Registry.packArgs(a(25712, 8723));
       long var3 = 291279362665597393L;
       Object[] var2 = var10001;
@@ -1500,7 +1500,7 @@ new Ty2(var1, (int)this, (String)var10007, var10008);
       }
 
       String var6 = var10003;
-new Ty2(this, (KV)Ref.g(260853473545280110L, var14), var1, var3);
+
 
       Object[] var10005 = Registry.emptyArgs();
       long var17 = 564618567687097906L;
@@ -1555,7 +1555,7 @@ new Ty2(this, (KV)Ref.g(260853473545280110L, var14), var1, var3);
       }
 
       String var19 = var10002;
-new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
+
 
       Object[] var10004 = Registry.emptyArgs();
       long var15 = 212196395026477919L;
@@ -1587,7 +1587,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
       }
    }
 
-   void j(ArrayList var1) {
+   public void j(ArrayList var1) {
       String[] var2 = KV.b$arrString();
       if (var1.size() > 0) {
          label71: {
@@ -1675,7 +1675,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
       }
    }
 
-   void T() {
+   public void T() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1829,7 +1829,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
       // 14f: return
    }
 
-   void G(ArrayList var1) {
+   public void G(ArrayList var1) {
       String[] var10000 = KV.b$arrString();
       StringBuffer var3 = new StringBuffer();
       int var4 = 0;
@@ -1972,7 +1972,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
       }
    }
 
-   Tl2 R(String var1) {
+   public Tl2 R(String var1) {
       String[] var10000 = KV.b$arrString();
       Object var3 = null;
       String[] var2 = var10000;
@@ -2187,7 +2187,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
             label189: {
                Ty2 var81 = var78.containsKey(var67);
                if (var3 == null) {
-                  if (var81 != false) {
+                  if (var81 == null) {
                      Object var35 = 260853473545280110L;
                      Ref.g(260853473545280110L, var35);
                      Object[] var10008 = Registry.emptyArgs();
@@ -2236,7 +2236,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
                   var86.containsKey(var89);
                }
 
-               if (var81 == false) {
+               if (var81 == null) {
                   break label143;
                }
 
@@ -2275,7 +2275,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
       }
    }
 
-   void F() {
+   public void F() {
       Object var1 = 260853473545280110L;
       Registry.lookupField(461634183601281643L).setBoolean(Ref.g(260853473545280110L, var1), false);
       Object var3 = 260853473545280110L;
@@ -2355,7 +2355,7 @@ new Ty2(var2, var19, this, (KV)Ref.g(260853473545280110L, var12));
       Ref.h(266288712085965362L, var1, var2);
    }
 
-   static void e(Ty2 var0) {
+   public static void e(Ty2 var0) {
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 497349625032436731L;
       Object[] var1 = var10001;

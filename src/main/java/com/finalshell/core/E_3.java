@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class E_3 implements H_4 {
-   static boolean T;
-   final H_4 I;
-   final M_5 k;
+   public static boolean T;
+   public final H_4 I;
+   public final M_5 k;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   E_3(M_5 var1, H_4 var2) {
+   public E_3(M_5 var1, H_4 var2) {
       this.k = var1;
       this.I = var2;
    }

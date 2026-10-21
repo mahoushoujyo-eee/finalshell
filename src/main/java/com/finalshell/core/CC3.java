@@ -6,9 +6,6 @@ public class CC3 implements WE3 {
    public static long[] c;
    public static Integer[] d;
 
-   CC3() {
-   }
-
    @Override
    public Object N(Object param1) {
       // $VF: Couldn't be decompiled

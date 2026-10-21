@@ -4,10 +4,10 @@ import com.finalshell.ui.panel.Bq2;
 import javax.swing.SwingUtilities;
 
 public class Di2 implements Runnable {
-   final Bq2 q;
+   public final Bq2 q;
    public static long a;
 
-   Di2(Bq2 var1) {
+   public Di2(Bq2 var1) {
       this.q = var1;
    }
 

@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.EnableBackgroundImage;
 import java.lang.reflect.InvocationTargetException;
 
 public class YC implements Runnable {
-   final EnableBackgroundImage w;
+   public final EnableBackgroundImage w;
 
-   YC(EnableBackgroundImage var1) {
+   public YC(EnableBackgroundImage var1) {
       this.w = var1;
    }
 

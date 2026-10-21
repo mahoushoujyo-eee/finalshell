@@ -9,11 +9,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JComboBox;
 
 public class Port implements ActionListener {
-   final ShowDeletedPanel n;
+   public final ShowDeletedPanel n;
    public static String[] a;
    public static String[] b;
 
-   Port(ShowDeletedPanel var1) {
+   public Port(ShowDeletedPanel var1) {
       this.n = var1;
    }
 

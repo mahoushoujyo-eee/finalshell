@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class OA3_2 implements FY {
-   File p;
+   public File p;
    public static String[] z;
    public static String a;
 

@@ -6,10 +6,10 @@ import com.finalshell.ui.listener.WL;
 import com.finalshell.ui.panel.AE;
 
 public class Ux2 implements Runnable {
-   final U h;
+   public final U h;
    public static String a;
 
-   Ux2(U var1) {
+   public Ux2(U var1) {
       this.h = var1;
    }
 

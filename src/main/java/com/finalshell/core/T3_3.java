@@ -53,7 +53,7 @@ public class T3_3 extends T4 {
       this.e(var3, var4, var5);
    }
 
-   protected void e(QY var1, float var2, QE var3) {
+   public void e(QY var1, float var2, QE var3) {
       int[] var10000 = com.finalshell.ui.panel.E2.P();
       Dimension var5 = FN.P(var1.getComponents());
       int var6 = var1.getComponentCount();
@@ -82,13 +82,13 @@ public class T3_3 extends T4 {
       }
    }
 
-   protected void l(QY var1, int var2, int var3, int var4) {
+   public void l(QY var1, int var2, int var3, int var4) {
       Component var5 = var1.getComponent(var2);
       Dimension var6 = var5.getPreferredSize();
       var5.setBounds(var3, var4, var6.width, var6.height);
    }
 
-   protected void R(QY var1, float var2, QE var3) {
+   public void R(QY var1, float var2, QE var3) {
       int[] var10000 = com.finalshell.ui.panel.E2.P();
       Dimension var5 = FN.P(var1.getComponents());
       Point var6 = new Point(var1.v(), var1.v());
@@ -285,7 +285,7 @@ public class T3_3 extends T4 {
       }
    }
 
-   protected void y(QY var1, int var2, int var3, int var4) {
+   public void y(QY var1, int var2, int var3, int var4) {
       Component var5 = var1.getComponent(var2);
       Dimension var6 = var5.getPreferredSize();
       var5.setBounds(var3 - var6.width / 2, var4 - var6.height / 2, var6.width, var6.height);

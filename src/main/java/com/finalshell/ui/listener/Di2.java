@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Di2 implements ActionListener {
-   final KV3 s;
+   public final KV3 s;
 
-   Di2(KV3 var1) {
+   public Di2(KV3 var1) {
       this.s = var1;
    }
 

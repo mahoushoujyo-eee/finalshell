@@ -5,7 +5,7 @@ import java.util.HashMap;
 import javax.swing.JFrame;
 
 public class OI {
-   HashMap b;
+   public HashMap b;
 
    public OI() {
       HashMap var10001 = new HashMap();

@@ -5,10 +5,10 @@ import java.awt.Dimension;
 import javax.swing.JScrollBar;
 
 public class B2 extends SZ {
-   final T Q;
+   public final T Q;
    public static long a;
 
-   B2(T var1, Component var2) {
+   public B2(T var1, Component var2) {
       super(var2);
       this.Q = var1;
    }

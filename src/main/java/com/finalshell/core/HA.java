@@ -13,7 +13,7 @@ public class HA extends Hd2 {
    public static String[] a;
    public static String[] c;
 
-   HA(java.lang.Class var1, C_L var2) {
+   public HA(java.lang.Class var1, C_L var2) {
       this.J = var1;
       var1.getTypeParameters();
       this.P = var2;
@@ -236,7 +236,7 @@ public class HA extends Hd2 {
    }
 
    @Override
-   protected Hv2_2[] C() {
+   public Hv2_2[] C() {
       String[] var10000 = RG_2.C();
       Constructor[] var2 = this.J.getDeclaredConstructors();
       Hv2_2[] var3 = new Hv2_2[var2.length];
@@ -269,7 +269,7 @@ public class HA extends Hd2 {
    }
 
    @Override
-   protected HP_2[] H() {
+   public HP_2[] H() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -323,18 +323,18 @@ public class HA extends Hd2 {
    }
 
    @Override
-   protected U3_3[] A$arru_3() {
+   public U3_3[] A$arru_3() {
       return this.V(this.J.getDeclaredFields());
    }
 
    @Override
-   protected Hd2[] j$arrhd_2() {
+   public Hd2[] j$arrhd_2() {
       return this.h(this.J.getDeclaredClasses());
    }
 
    @C_9
    @Override
-   protected Hd2 V$hd_2() {
+   public Hd2 V$hd_2() {
       java.lang.Class var1 = this.J.getDeclaringClass();
 
       try {
@@ -350,7 +350,7 @@ public class HA extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 l$hd_2() throws B2_5 {
+   public Hd2 l$hd_2() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -382,7 +382,7 @@ public class HA extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 g() {
+   public Hd2 g() {
       java.lang.Class var1 = this.J.getSuperclass();
 
       try {
@@ -398,7 +398,7 @@ public class HA extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 G() {
+   public Hd2 G() {
       java.lang.Class var1 = this.J.getComponentType();
 
       try {
@@ -413,12 +413,12 @@ public class HA extends Hd2 {
    }
 
    @Override
-   protected Hd2[] l$arrhd_2() {
+   public Hd2[] l$arrhd_2() {
       return this.h(this.J.getInterfaces());
    }
 
    @Override
-   protected String J() {
+   public String J() {
       return F0_2.n(this.J.getName());
    }
 
@@ -918,23 +918,23 @@ public class HA extends Hd2 {
       // 50: areturn
    }
 
-   static Q4_3[] f(HA var0, Type[] var1) throws B2_5 {
+   public static Q4_3[] f(HA var0, Type[] var1) throws B2_5 {
       return var0.R(var1);
    }
 
-   static C_L v(HA var0) {
+   public static C_L v(HA var0) {
       return var0.P;
    }
 
-   static Hd2 r(HA var0, java.lang.Class var1) {
+   public static Hd2 r(HA var0, java.lang.Class var1) {
       return var0.X(var1);
    }
 
-   static com.finalshell.ui.model.S_3 J(int var0) {
+   public static com.finalshell.ui.model.S_3 J(int var0) {
       return C(var0);
    }
 
-   static Hd2[] f(HA var0, java.lang.Class[] var1) {
+   public static Hd2[] f(HA var0, java.lang.Class[] var1) {
       return var0.h(var1);
    }
 

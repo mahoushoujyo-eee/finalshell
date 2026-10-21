@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class MM implements Q0 {
-   final com.finalshell.ui.panel.F5 V;
+   public final com.finalshell.ui.panel.F5 V;
 
-   MM(com.finalshell.ui.panel.F5 var1) {
+   public MM(com.finalshell.ui.panel.F5 var1) {
       this.V = var1;
    }
 

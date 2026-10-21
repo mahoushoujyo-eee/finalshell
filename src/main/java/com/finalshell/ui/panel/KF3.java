@@ -29,22 +29,22 @@ import javax.swing.ImageIcon;
 import javax.swing.event.TreeSelectionListener;
 
 public class KF3 extends Ky4 {
-   protected static ImageIcon v;
-   protected static ImageIcon c;
-   protected static ImageIcon r;
-   protected static ImageIcon y;
-   protected static ImageIcon i;
-   protected List t = new ArrayList(1);
-   protected java.io.File D = Cz2.z()[0];
-   protected V3 V = DE.W;
-   protected KD B;
-   protected KD H;
-   protected KD K;
-   protected KD T;
-   protected KD W;
-   protected Kz4 d;
-   protected U22 a;
-   protected TreeSelectionListener u;
+   public static ImageIcon v;
+   public static ImageIcon c;
+   public static ImageIcon r;
+   public static ImageIcon y;
+   public static ImageIcon i;
+   public List t = new ArrayList(1);
+   public java.io.File D = Cz2.z()[0];
+   public V3 V = DE.W;
+   public KD B;
+   public KD H;
+   public KD K;
+   public KD T;
+   public KD W;
+   public Kz4 d;
+   public U22 a;
+   public TreeSelectionListener u;
    public static String[] b;
    public static String[] e;
    public static long[] f;
@@ -137,7 +137,7 @@ public class KF3 extends Ky4 {
       this.e();
    }
 
-   protected void e() {
+   public void e() {
       String var1;
       java.io.File var2;
       boolean var3;
@@ -227,7 +227,7 @@ public class KF3 extends Ky4 {
       this.W.setEnabled(var3);
    }
 
-   protected void V(java.io.File var1, boolean var2, boolean var3) {
+   public void V(java.io.File var1, boolean var2, boolean var3) {
       String var10000 = Kz4.M();
       this.D = var1;
       String var4 = var10000;
@@ -295,7 +295,7 @@ public class KF3 extends Ky4 {
       this.t.remove(var1);
    }
 
-   protected void N(java.io.File var1) {
+   public void N(java.io.File var1) {
       String var10000 = Kz4.M();
       Iterator var3 = AL_2.J((Collection)this.t).iterator();
       String var2 = var10000;

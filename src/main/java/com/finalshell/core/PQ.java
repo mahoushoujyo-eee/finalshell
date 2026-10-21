@@ -15,7 +15,7 @@ import javax.swing.table.TableModel;
 public class PQ extends JTable implements Yb4 {
    public boolean j = true;
    public int P = -1;
-   protected Rq2 p = null;
+   public Rq2 p = null;
    public static boolean H;
    public static String[] a;
    public static String[] b;
@@ -361,7 +361,7 @@ public class PQ extends JTable implements Yb4 {
    }
 
    @Override
-   protected void initializeLocalVars() {
+   public void initializeLocalVars() {
       super.initializeLocalVars();
       this.setPreferredScrollableViewportSize(null);
    }

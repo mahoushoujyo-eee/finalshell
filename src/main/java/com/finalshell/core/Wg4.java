@@ -11,7 +11,7 @@ public class Wg4 implements UncaughtExceptionHandler {
       this.x(var1.getName(), var2);
    }
 
-   protected void x(String var1, Throwable var2) {
+   public void x(String var1, Throwable var2) {
       NE3.i(Wg4.class, a(12962, 22872) + var1 + a(12963, 15098), var2);
    }
 

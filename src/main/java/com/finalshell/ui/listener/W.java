@@ -9,12 +9,12 @@ import java.io.File;
 import java.util.Arrays;
 
 public class W implements ActionListener {
-   final File a;
-   final com.finalshell.core.KR r;
-   final com.finalshell.ui.panel.Kd4 T;
+   public final File a;
+   public final com.finalshell.core.KR r;
+   public final com.finalshell.ui.panel.Kd4 T;
    public static String b;
 
-   W(com.finalshell.ui.panel.Kd4 var1, File var2, com.finalshell.core.KR var3) {
+   public W(com.finalshell.ui.panel.Kd4 var1, File var2, com.finalshell.core.KR var3) {
       this.T = var1;
       this.a = var2;
       this.r = var3;

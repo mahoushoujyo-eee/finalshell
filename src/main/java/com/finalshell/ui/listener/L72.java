@@ -8,10 +8,10 @@ import java.io.IOException;
 
 public class L72 implements ActionListener {
    public Q4_2 I;
-   final KD3 R;
+   public final KD3 R;
    public static String a;
 
-   L72(KD3 var1) {
+   public L72(KD3 var1) {
       this.R = var1;
       this.I = null;
    }

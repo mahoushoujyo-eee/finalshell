@@ -9,10 +9,10 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class Fg2 extends JPanel {
-   String F;
-   XN f;
-   JO A;
-   float K;
+   public String F;
+   public XN f;
+   public JO A;
+   public float K;
    public static String[] a;
    public static String[] b;
 

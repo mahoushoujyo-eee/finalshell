@@ -6,9 +6,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class L__2 extends ComponentAdapter {
-   final com.finalshell.ui.dialog.Ds2 p;
+   public final com.finalshell.ui.dialog.Ds2 p;
 
-   L__2(com.finalshell.ui.dialog.Ds2 var1) {
+   public L__2(com.finalshell.ui.dialog.Ds2 var1) {
       this.p = var1;
    }
 

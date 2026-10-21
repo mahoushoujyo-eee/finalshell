@@ -16,17 +16,17 @@ import javax.swing.Icon;
 import javax.swing.SwingConstants;
 
 public final class Lq4 implements SwingConstants {
-   protected static int o;
-   protected static CG3 k;
-   protected static Insets h;
-   protected static int V;
-   protected static boolean d;
-   protected static int B;
-   protected static boolean q;
-   protected static Map E;
-   protected static Map a;
-   protected static Map L;
-   protected static Map U;
+   public static int o;
+   public static CG3 k;
+   public static Insets h;
+   public static int V;
+   public static boolean d;
+   public static int B;
+   public static boolean q;
+   public static Map E;
+   public static Map a;
+   public static Map L;
+   public static Map U;
    public static String b;
 
    public static int r() {

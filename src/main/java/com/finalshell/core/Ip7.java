@@ -648,20 +648,20 @@ public class Ip7 {
       return var5;
    }
 
-   static File Y(Ip7 var0) {
+   public static File Y(Ip7 var0) {
       return var0.f;
    }
 
-   static Long C() {
+   public static Long C() {
       return P;
    }
 
-   static Long e(Long var0) {
+   public static Long e(Long var0) {
       P = var0;
       return var0;
    }
 
-   static void R(Ip7 var0) throws Exception {
+   public static void R(Ip7 var0) throws Exception {
       var0.S();
    }
 

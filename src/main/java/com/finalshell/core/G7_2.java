@@ -53,11 +53,11 @@ public class G7_2 {
       EventQueue.invokeLater(new com.finalshell.task.V3());
    }
 
-   static boolean m(G7_2 var0) {
+   public static boolean m(G7_2 var0) {
       return Registry.lookupField(305354736637250366L).getBoolean(var0);
    }
 
-   static boolean n(G7_2 var0, boolean var1) {
+   public static boolean n(G7_2 var0, boolean var1) {
       Registry.lookupField(305354736637250366L).setBoolean(var0, var1);
       return var1;
    }

@@ -6,10 +6,10 @@ import java.awt.event.ComponentEvent;
 import javax.swing.JLayeredPane;
 
 public class ET extends ComponentAdapter {
-   final Qt2 A;
-   final JLayeredPane m;
+   public final Qt2 A;
+   public final JLayeredPane m;
 
-   ET(Qt2 var1, JLayeredPane var2) {
+   public ET(Qt2 var1, JLayeredPane var2) {
       this.A = var1;
       this.m = var2;
    }

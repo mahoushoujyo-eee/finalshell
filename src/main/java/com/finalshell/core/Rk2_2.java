@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Rk2_2 extends N_ {
-   final String[] C;
-   final H3_2 f;
+   public final String[] C;
+   public final H3_2 f;
 
-   Rk2_2(H3_2 var1, com.finalshell.ui.model.I var2, String[] var3) {
+   public Rk2_2(H3_2 var1, com.finalshell.ui.model.I var2, String[] var3) {
       super(var2);
       this.f = var1;
       this.C = var3;

@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Dd2 implements ActionListener {
-   final TerminateProcessPanel P;
+   public final TerminateProcessPanel P;
 
-   Dd2(TerminateProcessPanel var1) {
+   public Dd2(TerminateProcessPanel var1) {
       this.P = var1;
    }
 
@@ -73,7 +73,7 @@ public class Dd2 implements ActionListener {
 
       String var7 = var10010;
       String var38 = var7;
-      if (var2 == false) {
+      if (var2 == null) {
          if (var7 == null) {
             var7 = "";
          }

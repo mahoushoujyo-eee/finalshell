@@ -9,11 +9,11 @@ import com.finalshell.ui.panel.F8;
 import java.lang.reflect.InvocationTargetException;
 
 public class O7 implements Runnable {
-   final Qh2 A;
-   final U E;
+   public final Qh2 A;
+   public final U E;
    public static long a;
 
-   O7(U var1, Qh2 var2) {
+   public O7(U var1, Qh2 var2) {
       this.E = var1;
       this.A = var2;
    }

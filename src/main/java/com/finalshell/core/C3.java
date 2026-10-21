@@ -10,8 +10,8 @@ import java.util.Hashtable;
 public class C3 extends Y2_5 implements Cloneable {
    public Hashtable H = new Hashtable();
    public int K;
-   boolean j = true;
-   Uu4 W = null;
+   public boolean j = true;
+   public Uu4 W = null;
    public static String[] d;
    public static String[] e;
    public static long[] h;
@@ -106,7 +106,7 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected Y2_5 B() {
+   public Y2_5 B() {
       C3 var1 = new C3(this.v, this.k);
       var1.H = this.H;
       var1.s = this.s;
@@ -116,7 +116,7 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected void m$void() throws B52 {
+   public void m$void() throws B52 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -368,12 +368,12 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected Jk2 k(int var1, InetAddress var2, int var3) {
+   public Jk2 k(int var1, InetAddress var2, int var3) {
       return new JX(var1, var2, var3);
    }
 
    @Override
-   protected Jk2 Q(int param1, String param2, int param3) throws UnknownHostException {
+   public Jk2 Q(int param1, String param2, int param3) throws UnknownHostException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -412,7 +412,7 @@ public class C3 extends Y2_5 implements Cloneable {
    }
 
    @Override
-   protected Jk2 o(InputStream var1) throws B52, IOException {
+   public Jk2 o(InputStream var1) throws B52, IOException {
       return new JX(var1);
    }
 

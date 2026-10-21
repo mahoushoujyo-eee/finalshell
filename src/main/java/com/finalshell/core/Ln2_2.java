@@ -147,7 +147,7 @@ public class Ln2_2 extends Lz2_2 {
       this.B(var1, var2, (QG2)var3);
    }
 
-   Ln2_2(Rl4 var1) {
+   public Ln2_2(Rl4 var1) {
       this();
    }
 

@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class Mk2 implements Fb2 {
-   final LogPanel i;
+   public final LogPanel i;
 
-   Mk2(LogPanel var1) {
+   public Mk2(LogPanel var1) {
       this.i = var1;
    }
 
@@ -31,13 +31,13 @@ public class Mk2 implements Fb2 {
       int var3 = var16;
       int var10001 = var3;
       int var17 = Registry.lookupField(372606448848052772L).getInt(null);
-      if (var1 != false) {
+      if (var1 == null) {
          if (var3 == var17) {
             Object var6 = 330303588933417996L;
             Ref.g(330303588933417996L, var6);
             Object var8 = 402079050501623703L;
             ((JButton)Ref.g(402079050501623703L, var8)).setEnabled(false);
-            if (var1 != false) {
+            if (var1 == null) {
                return;
             }
          }

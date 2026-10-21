@@ -20,12 +20,12 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class Tq4 extends JTable implements Xv2_2 {
-   com.finalshell.ui.model.FT e;
-   int H;
-   JPanel b;
-   int U;
-   Kn2 h;
-   boolean v;
+   public com.finalshell.ui.model.FT e;
+   public int H;
+   public JPanel b;
+   public int U;
+   public Kn2 h;
+   public boolean v;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -36,8 +36,8 @@ public class Tq4 extends JTable implements Xv2_2 {
    }
 
    public Tq4(com.finalshell.ui.model.FT var1, boolean var2) {
+   super();
       short var10000 = 25504;
-      super();
       Registry.lookupField(410066848429556838L).setInt(this, -1);
       Registry.lookupField(458852233453534750L).setInt(this, -1);
       String[] var10002 = ClearListDialog.i$arrString();
@@ -191,7 +191,7 @@ var10006 = new int[]{(int)this, ((JPanel)Ref.g(298076432091071542L, var13)).getP
       Ref.s(381104070567601967L, var1, var3);
    }
 
-   static int y(Tq4 var0) {
+   public static int y(Tq4 var0) {
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 387507981730670112L;
       Object[] var1 = var10001;

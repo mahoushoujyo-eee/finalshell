@@ -19,18 +19,18 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class YQ extends JPanel {
-   String w;
-   String u;
-   int z;
-   JTextArea g;
-   String E;
+   public String w;
+   public String u;
+   public int z;
+   public JTextArea g;
+   public String E;
    public static int[] c;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   YQ(String var1, String var2, int var3) {
+   public YQ(String var1, String var2, int var3) {
       long var7 = 430112502366759747L;
       String var6 = "";
       Ref.s(430112502366759747L, var6, var7);
@@ -144,7 +144,7 @@ public class YQ extends JPanel {
       }
    }
 
-   void Q(String var1) {
+   public void Q(String var1) {
       m();
       Object var6 = 190026196806652918L;
       Object[] var10002 = Registry.packArgs(this, Ref.g(190026196806652918L, var6));
@@ -171,7 +171,7 @@ public class YQ extends JPanel {
       String var4 = var21;
       String var22 = var4.contains(a(-3369, -20832));
       if (var2 != null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -179,7 +179,7 @@ public class YQ extends JPanel {
       }
 
       if (var2 != null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -187,7 +187,7 @@ public class YQ extends JPanel {
       }
 
       if (var2 != null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -195,7 +195,7 @@ public class YQ extends JPanel {
       }
 
       if (var2 != null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -204,7 +204,7 @@ public class YQ extends JPanel {
 
       String var10005;
       if (var2 != null) {
-         if (var22 != false) {
+         if (var22 == null) {
             return;
          }
 
@@ -216,7 +216,7 @@ public class YQ extends JPanel {
 
       label83: {
          if (var2 != null) {
-            if (var22 != false) {
+            if (var22 == null) {
                return;
             }
 

@@ -7,10 +7,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LK3 implements ActionListener {
-   final NC3 T;
-   final QQ M;
+   public final NC3 T;
+   public final QQ M;
 
-   LK3(QQ var1, NC3 var2) {
+   public LK3(QQ var1, NC3 var2) {
       this.M = var1;
       this.T = var2;
    }

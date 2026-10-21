@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Ux4;
 import java.lang.reflect.InvocationTargetException;
 
 public class F1 implements Runnable {
-   final Ux4 H;
+   public final Ux4 H;
 
-   F1(Ux4 var1) {
+   public F1(Ux4 var1) {
       this.H = var1;
    }
 

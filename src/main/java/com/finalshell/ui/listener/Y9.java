@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Y9 implements ActionListener {
-   final com.finalshell.ui.panel.N_2 L;
+   public final com.finalshell.ui.panel.N_2 L;
 
-   Y9(com.finalshell.ui.panel.N_2 var1) {
+   public Y9(com.finalshell.ui.panel.N_2 var1) {
       this.L = var1;
    }
 

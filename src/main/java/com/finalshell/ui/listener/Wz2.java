@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Wz2 implements MouseListener {
-   final AccelerateRdpHelpPanel k;
+   public final AccelerateRdpHelpPanel k;
 
-   Wz2(AccelerateRdpHelpPanel var1) {
+   public Wz2(AccelerateRdpHelpPanel var1) {
       this.k = var1;
    }
 

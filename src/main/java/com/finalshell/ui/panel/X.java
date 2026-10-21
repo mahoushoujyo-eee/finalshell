@@ -12,14 +12,14 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 
 public class X extends JPanel {
-   Color o;
-   Color u;
-   final U62 q;
-   final com.finalshell.ui.frame.U S;
+   public Color o;
+   public Color u;
+   public final U62 q;
+   public final com.finalshell.ui.frame.U S;
    public static long[] a;
    public static Integer[] b;
 
-   X(com.finalshell.ui.frame.U var1, LayoutManager var2, U62 var3) {
+   public X(com.finalshell.ui.frame.U var1, LayoutManager var2, U62 var3) {
       super(var2);
       this.S = var1;
       this.q = var3;
@@ -34,7 +34,7 @@ public class X extends JPanel {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       X var10001;
       label28: {
          String[] var10000 = F8.y();

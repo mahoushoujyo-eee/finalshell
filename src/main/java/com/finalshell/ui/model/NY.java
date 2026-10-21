@@ -3,7 +3,7 @@ package com.finalshell.ui.model;
 import com.finalshell.core.QT;
 
 public final class NY extends NZ {
-   NY(String var1, int var2) {
+   public NY(String var1, int var2) {
       super(var1, var2, null);
    }
 

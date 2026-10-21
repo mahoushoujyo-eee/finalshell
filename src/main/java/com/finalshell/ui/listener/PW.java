@@ -6,9 +6,9 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JButton;
 
 public class PW implements PropertyChangeListener {
-   final com.finalshell.ui.panel.K22 c;
+   public final com.finalshell.ui.panel.K22 c;
 
-   PW(com.finalshell.ui.panel.K22 var1) {
+   public PW(com.finalshell.ui.panel.K22 var1) {
       this.c = var1;
    }
 

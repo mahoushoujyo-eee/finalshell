@@ -11,9 +11,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Gb2 implements ActionListener {
-   final RouteTracePanel I;
+   public final RouteTracePanel I;
 
-   Gb2(RouteTracePanel var1) {
+   public Gb2(RouteTracePanel var1) {
       this.I = var1;
    }
 

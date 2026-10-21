@@ -15,15 +15,15 @@ import java.awt.image.BufferedImage;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lt4 {
-   D2 n;
-   BufferedImage M;
-   Component z;
-   Dimension m;
-   static boolean F;
-   float N;
-   boolean X;
-   boolean O;
-   String L;
+   public D2 n;
+   public BufferedImage M;
+   public Component z;
+   public Dimension m;
+   public static boolean F;
+   public float N;
+   public boolean X;
+   public boolean O;
+   public String L;
    public static long[] a;
    public static Integer[] b;
 
@@ -91,7 +91,7 @@ public class Lt4 {
       }
 
       if (var5 == null) {
-         if (var10001 == false && var2 == 1.0F) {
+         if (var10001 == null && var2 == 1.0F) {
          }
 
          var10001 = Registry.emptyArgs();
@@ -104,7 +104,7 @@ public class Lt4 {
          }
       }
 
-      if (var10001 == false) {
+      if (var10001 == null) {
       }
 
       label108: {
@@ -247,7 +247,7 @@ public class Lt4 {
       var6.setTransform(var7);
    }
 
-   BufferedImage Y(int var1, int var2) {
+   public BufferedImage Y(int var1, int var2) {
       String[] var3 = com.finalshell.ui.panel.F8.y();
       int var10000 = (Registry.lookupField(443961478089940624L).getBoolean(this)) ? 1 : 0;
       if (var3 == null) {

@@ -773,7 +773,7 @@ public class Ua2 {
       // 80: ireturn
    }
 
-   synchronized int h(@NotNull DC3 var1) {
+   public synchronized int h(@NotNull DC3 var1) {
       return this.t.indexOf(var1);
    }
 

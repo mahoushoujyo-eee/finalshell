@@ -6,7 +6,7 @@ public final class NQ extends NR_2 {
    @C_9
    public Nt2_2 E;
    @C_9
-   N_ k;
+   public N_ k;
 
    public NQ(com.finalshell.ui.model.I var1, String[] var2) {
       this(var1, var2, var2.length);

@@ -6,8 +6,8 @@ import java.awt.Rectangle;
 import java.awt.image.ImageObserver;
 
 public class Wm2_2 implements ImageObserver {
-   protected com.finalshell.ui.panel.Us2 R;
-   protected CB3 y;
+   public com.finalshell.ui.panel.Us2 R;
+   public CB3 y;
    public static long[] a;
    public static Integer[] b;
 

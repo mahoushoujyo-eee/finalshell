@@ -4,7 +4,7 @@ import com.finalshell.ui.model.OV;
 
 // $VF: synthetic class
 public class NG3 {
-   static int[] c;
+   public static int[] c;
 
    static {
       __vfClinit__();

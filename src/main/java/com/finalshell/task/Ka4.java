@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.U;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ka4 implements Runnable {
-   final U E;
+   public final U E;
 
-   Ka4(U var1) {
+   public Ka4(U var1) {
       this.E = var1;
    }
 

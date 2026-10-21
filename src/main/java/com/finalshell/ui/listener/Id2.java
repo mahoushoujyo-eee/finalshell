@@ -15,12 +15,12 @@ public class Id2 extends IB implements TreeSelectionListener, TreeExpansionListe
       super(var1);
    }
 
-   protected void p(com.finalshell.ui.panel.S var1) {
+   public void p(com.finalshell.ui.panel.S var1) {
       var1.addTreeSelectionListener(this);
       var1.addTreeExpansionListener(this);
    }
 
-   protected void j(com.finalshell.ui.panel.S var1) {
+   public void j(com.finalshell.ui.panel.S var1) {
       var1.removeTreeExpansionListener(this);
       var1.removeTreeSelectionListener(this);
    }
@@ -40,7 +40,7 @@ public class Id2 extends IB implements TreeSelectionListener, TreeExpansionListe
       this.M();
    }
 
-   protected void I(com.finalshell.ui.panel.S var1) {
+   public void I(com.finalshell.ui.panel.S var1) {
       String[] var2 = IH.M();
       Object var10000 = var1.M$DefaultMutableTreeNode();
       if (var2 != null) {
@@ -57,29 +57,29 @@ public class Id2 extends IB implements TreeSelectionListener, TreeExpansionListe
       }
    }
 
-   protected void W(com.finalshell.ui.panel.S var1) {
+   public void W(com.finalshell.ui.panel.S var1) {
       if (var1.M$DefaultMutableTreeNode() instanceof Q_2) {
          this.J(var1.B$p_2());
       }
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.W((com.finalshell.ui.panel.S)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.I((com.finalshell.ui.panel.S)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.j((com.finalshell.ui.panel.S)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.p((com.finalshell.ui.panel.S)var1);
    }
 }

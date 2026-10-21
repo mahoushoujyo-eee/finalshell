@@ -5,15 +5,15 @@ import java.util.List;
 
 public class SA extends ST {
    public com.finalshell.ui.model.CY3 p;
-   final com.finalshell.ui.model.CY3 l;
-   final List M;
-   final boolean O;
-   final int T;
-   final boolean Q;
-   final Runnable b;
-   final com.finalshell.ui.panel.U22 w;
+   public final com.finalshell.ui.model.CY3 l;
+   public final List M;
+   public final boolean O;
+   public final int T;
+   public final boolean Q;
+   public final Runnable b;
+   public final com.finalshell.ui.panel.U22 w;
 
-   SA(com.finalshell.ui.panel.U22 var1, com.finalshell.ui.model.CY3 var2, List var3, boolean var4, int var5, boolean var6, Runnable var7) {
+   public SA(com.finalshell.ui.panel.U22 var1, com.finalshell.ui.model.CY3 var2, List var3, boolean var4, int var5, boolean var6, Runnable var7) {
       this.w = var1;
       this.l = var2;
       this.M = var3;

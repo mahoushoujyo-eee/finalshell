@@ -4,10 +4,10 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class GZ_2 {
-   String a;
-   boolean m;
-   long O;
-   int X;
+   public String a;
+   public boolean m;
+   public long O;
+   public int X;
 
    public GZ_2(String var1, long var2, int var4, boolean var5) {
       long var7 = 209132680130127334L;

@@ -19,11 +19,11 @@ public class Ou2 {
    public boolean F = false;
    public boolean p = false;
    public long P = 0L;
-   long N;
-   boolean A = false;
+   public long N;
+   public boolean A = false;
    public int U = 0;
-   boolean D = false;
-   boolean u = false;
+   public boolean D = false;
+   public boolean u = false;
 
    public Ou2() {
       this.H = this.j.nextInt();
@@ -73,7 +73,7 @@ public class Ou2 {
          var10001 = var10001 > 0 ? 1 : 0;
       }
 
-      return (boolean)(var10000 & var10001);
+      return (boolean)((var10000 & var10001) != 0);
    }
 
    public void m() {
@@ -117,7 +117,7 @@ public class Ou2 {
       this.B = var1;
    }
 
-   void x() {
+   public void x() {
       this.G = false;
       this.v.interrupt();
    }

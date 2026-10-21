@@ -5,18 +5,18 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class G9 {
-   UR f;
-   int h = 0;
-   ArrayList A;
-   HashSet a;
+   public UR f;
+   public int h = 0;
+   public ArrayList A;
+   public HashSet a;
 
-   G9(UR var1) {
+   public G9(UR var1) {
       this.f = var1;
       this.A = new ArrayList();
       this.a = new HashSet();
    }
 
-   synchronized void S(int var1) {
+   public synchronized void S(int var1) {
       String[] var2 = PingMessageR.N();
       if (var2 != null && !this.a.contains(var1)) {
          this.A.add(var1);
@@ -25,7 +25,7 @@ public class G9 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   synchronized void x() {
+   public synchronized void x() {
       String[] var10000 = PingMessageR.N();
       int var2 = 0;
       int var3 = Yh2.a;
@@ -87,7 +87,7 @@ public class G9 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   ArrayList m(int var1, int var2, ArrayList var3) {
+   public ArrayList m(int var1, int var2, ArrayList var3) {
       String[] var10000 = PingMessageR.N();
       ArrayList var5 = new ArrayList();
       String[] var4 = var10000;

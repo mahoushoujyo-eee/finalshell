@@ -7,9 +7,9 @@ import javax.swing.JComponent;
 import javax.swing.TransferHandler;
 
 public class Ef2 extends TransferHandler {
-   final KD3 O;
+   public final KD3 O;
 
-   Ef2(KD3 var1) {
+   public Ef2(KD3 var1) {
       this.O = var1;
    }
 
@@ -19,7 +19,7 @@ public class Ef2 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       return KD3.E(this.O).getSelectionCount() > 0 ? new StringSelection(KD3.E(this.O).N().getAbsolutePath()) : null;
    }
 }

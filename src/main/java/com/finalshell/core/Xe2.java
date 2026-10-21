@@ -8,14 +8,14 @@ import java.util.Vector;
 
 public class Xe2 {
    public static String s;
-   static Hashtable J;
+   public static Hashtable J;
    public Vector l = new Vector();
    public Cd4 d = new Rl2(this);
    public Cd4 y = this.d;
    public Fq2 K = null;
    public RW O = null;
-   static GN M;
-   static GN r;
+   public static GN M;
+   public static GN r;
    public GN t;
    public static String[] a;
    public static String[] b;
@@ -85,13 +85,13 @@ public class Xe2 {
       return new ConnectHost(this, var1, var2, var3);
    }
 
-   protected void f(ConnectHost var1) {
+   public void f(ConnectHost var1) {
       synchronized (this.l) {
          this.l.addElement(var1);
       }
    }
 
-   protected boolean F(ConnectHost var1) {
+   public boolean F(ConnectHost var1) {
       synchronized (this.l) {
          return this.l.remove(var1);
       }

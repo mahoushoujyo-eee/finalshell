@@ -10,11 +10,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 public class HG extends MouseAdapter {
-   protected Component A;
-   protected boolean B = false;
-   protected Component V = null;
-   protected Point k = null;
-   protected Rectangle C = null;
+   public Component A;
+   public boolean B = false;
+   public Component V = null;
+   public Point k = null;
+   public Rectangle C = null;
 
    public static void Y(Component var0) {
       X(var0, null);
@@ -87,7 +87,7 @@ public class HG extends MouseAdapter {
       this.C = null;
    }
 
-   protected Component T(MouseEvent var1) {
+   public Component T(MouseEvent var1) {
       int[] var2 = com.finalshell.ui.dialog.Ds2.U$arrint();
       HG var10000 = this;
       if (var2 == null) {
@@ -101,7 +101,7 @@ public class HG extends MouseAdapter {
       return var10000.A;
    }
 
-   protected Rectangle V(MouseEvent var1) {
+   public Rectangle V(MouseEvent var1) {
       return FN.N(var1.getComponent());
    }
 }

@@ -39,7 +39,7 @@ public class WA3 extends JMenu implements Au2, Yb4 {
    }
 
    @Override
-   protected Point getPopupMenuOrigin() {
+   public Point getPopupMenuOrigin() {
       int[] var10000 = Pb4.g();
       Point var2 = super.getPopupMenuOrigin();
       int[] var1 = var10000;

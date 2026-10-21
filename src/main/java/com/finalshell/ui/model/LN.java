@@ -2,7 +2,7 @@ package com.finalshell.ui.model;
 
 import com.finalshell.core.W82;
 
-public class LN extends Enum {
+public abstract class LN {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -12,7 +12,15 @@ public class LN extends Enum {
    public static LN Scroll;
    public static LN[] l;
 
-   public LN() {
+   public static LN[] values() {
+      return (LN[])l.clone();
+   }
+
+   public static LN valueOf(String var0) {
+      throw new UnsupportedOperationException("valueOf not implemented");
+   }
+
+   public LN(String var1, int var2) {
    }
 
    public abstract String W(W82 var1, int var2);
@@ -21,14 +29,12 @@ public class LN extends Enum {
       return new LN[]{Back, BackStyle, Scroll};
    }
 
-   LN(Lu2 var3) {
-      this();
+   public LN(String var1, int var2, Lu2 var3) {
+      this(var1, var2);
    }
 
-   private static final Object __vfClinitTrigger = __vfClinitTrigger();
-   private static Object __vfClinitTrigger() {
+   static {
       __vfClinit__();
-      return null;
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
@@ -127,7 +133,6 @@ public class LN extends Enum {
       }
    }
 }
-
 
 
 

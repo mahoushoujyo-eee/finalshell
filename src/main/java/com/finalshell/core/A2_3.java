@@ -13,12 +13,12 @@ import java.lang.ref.WeakReference;
 import javax.swing.ImageIcon;
 
 public class A2_3 extends As2 {
-   protected static float[] X;
-   protected static Color[] g;
-   protected static Color[] o;
-   protected WeakReference P;
-   protected int S;
-   protected int E;
+   public static float[] X;
+   public static Color[] g;
+   public static Color[] o;
+   public WeakReference P;
+   public int S;
+   public int E;
    public static long[] c;
    public static Integer[] d;
 

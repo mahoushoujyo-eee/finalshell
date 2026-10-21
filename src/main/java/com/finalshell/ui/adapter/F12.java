@@ -16,15 +16,15 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class F12 extends DefaultTableCellRenderer {
-   Border e;
-   SimpleDateFormat r;
-   CU3 W;
-   boolean M;
+   public Border e;
+   public SimpleDateFormat r;
+   public CU3 W;
+   public boolean M;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   F12(boolean var1) {
+   public F12(boolean var1) {
       Border var10001 = BorderFactory.createEmptyBorder(0, a(27908, 845788551031903414L), 2, 4);
       long var3 = 607718560474337302L;
       Border var2 = var10001;
@@ -383,7 +383,7 @@ public class F12 extends DefaultTableCellRenderer {
                                     var199 = var15.equals(var230);
                                  }
 
-                                 if (var199 != false) {
+                                 if (var199 == null) {
                                     break label640;
                                  }
 
@@ -590,7 +590,7 @@ public class F12 extends DefaultTableCellRenderer {
                               var207 = var15.equals(var238);
                            }
 
-                           if (var207 != false) {
+                           if (var207 == null) {
                               break label640;
                            }
 
@@ -812,7 +812,7 @@ public class F12 extends DefaultTableCellRenderer {
                            var216 = var15.equals(var249);
                         }
 
-                        if (var216 != false) {
+                        if (var216 == null) {
                            break label467;
                         }
 

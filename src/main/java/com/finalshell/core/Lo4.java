@@ -9,11 +9,11 @@ public class Lo4 extends LI3 {
    public static long[] f;
    public static Integer[] g;
 
-   Lo4(Xe2 var1) {
+   public Lo4(Xe2 var1) {
       this(var1, null, null);
    }
 
-   Lo4(Xe2 var1, byte[] var2, byte[] var3) {
+   public Lo4(Xe2 var1, byte[] var2, byte[] var3) {
       super(var1, var2, var3);
    }
 
@@ -26,16 +26,16 @@ public class Lo4 extends LI3 {
       return i;
    }
 
-   String y$String() {
+   public String y$String() {
       return c(13025, 3355);
    }
 
    @Override
-   String Y$String() {
+   public String Y$String() {
       return c(13027, 27440);
    }
 
-   static Ls4 v(Xe2 var0, UJ var1) throws Pc2 {
+   public static Ls4 v(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(4, c(13024, -21255));
       byte[] var3 = var2[1];
       byte[] var4 = Arrays.copyOf(var2[2], i);

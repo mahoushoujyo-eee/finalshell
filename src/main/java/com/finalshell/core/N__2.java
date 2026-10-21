@@ -10,7 +10,7 @@ import java.text.AttributedCharacterIterator.Attribute;
 import org.jetbrains.annotations.Nullable;
 
 public class N__2 implements InputMethodRequests {
-   final SetBackgroundImagePanel C;
+   public final SetBackgroundImagePanel C;
 
    public N__2(SetBackgroundImagePanel var1) {
       this.C = var1;
@@ -59,7 +59,7 @@ public class N__2 implements InputMethodRequests {
       return null;
    }
 
-   N__2(SetBackgroundImagePanel var1, com.finalshell.ui.listener.Hb2 var2) {
+   public N__2(SetBackgroundImagePanel var1, com.finalshell.ui.listener.Hb2 var2) {
       this(var1);
    }
 }

@@ -132,7 +132,7 @@ public class C4 extends BasicRadioButtonUI implements PropertyChangeListener, W2
       this.K();
    }
 
-   protected void K() {
+   public void K() {
       boolean var10000 = K4_2.V();
       this.r.Y();
       boolean var1 = var10000;
@@ -367,7 +367,7 @@ public class C4 extends BasicRadioButtonUI implements PropertyChangeListener, W2
    }
 
    @Override
-   protected void paintText(Graphics var1, JComponent var2, Rectangle var3, String var4) {
+   public void paintText(Graphics var1, JComponent var2, Rectangle var3, String var4) {
       boolean var10000 = K4_2.V();
       AbstractButton var6 = (AbstractButton)var2;
       boolean var5 = var10000;
@@ -391,103 +391,103 @@ public class C4 extends BasicRadioButtonUI implements PropertyChangeListener, W2
       FN.W(var1, var4, var9, var3.x - 1, var3.y + var8.getAscent() - 1);
    }
 
-   static boolean i(C4 var0) {
+   public static boolean i(C4 var0) {
       return var0.d;
    }
 
-   static int D(C4 var0) {
+   public static int D(C4 var0) {
       return var0.t;
    }
 
-   static int w(C4 var0) {
+   public static int w(C4 var0) {
       return var0.t++;
    }
 
-   static int E(C4 var0) {
+   public static int E(C4 var0) {
       return var0.t--;
    }
 
-   static WC_2 T$WC(C4 var0) {
+   public static WC_2 T$WC(C4 var0) {
       return var0.y;
    }
 
-   static boolean m(C4 var0, boolean var1) {
+   public static boolean m(C4 var0, boolean var1) {
       return var0.d = var1;
    }
 
-   static int z(C4 var0, int var1) {
+   public static int z(C4 var0, int var1) {
       return var0.t = var1;
    }
 
-   static boolean P(C4 var0) {
+   public static boolean P(C4 var0) {
       return var0.v;
    }
 
-   static int C$int(C4 var0) {
+   public static int C$int(C4 var0) {
       return var0.i;
    }
 
-   static int N(C4 var0) {
+   public static int N(C4 var0) {
       return var0.i++;
    }
 
-   static JRadioButton T$JRadioButton(C4 var0) {
+   public static JRadioButton T$JRadioButton(C4 var0) {
       return var0.u;
    }
 
-   static int B(C4 var0) {
+   public static int B(C4 var0) {
       return var0.i--;
    }
 
-   static WC_2 t(C4 var0) {
+   public static WC_2 t(C4 var0) {
       return var0.r;
    }
 
-   static boolean l(C4 var0) {
+   public static boolean l(C4 var0) {
       return var0.z;
    }
 
-   static boolean K(C4 var0, boolean var1) {
+   public static boolean K(C4 var0, boolean var1) {
       return var0.v = var1;
    }
 
-   static Rectangle f(C4 var0, Rectangle var1) {
+   public static Rectangle f(C4 var0, Rectangle var1) {
       return var0.D = var1;
    }
 
-   static int L$int(C4 var0) {
+   public static int L$int(C4 var0) {
       return var0.P;
    }
 
-   static int c(C4 var0) {
+   public static int c(C4 var0) {
       return var0.R;
    }
 
-   static int e(C4 var0) {
+   public static int e(C4 var0) {
       return var0.B;
    }
 
-   static Color[] W(C4 var0, JRadioButton var1) {
+   public static Color[] W(C4 var0, JRadioButton var1) {
       return var0.N(var1);
    }
 
-   static boolean f(C4 var0) {
+   public static boolean f(C4 var0) {
       return var0.Q;
    }
 
-   static Color O(C4 var0) {
+   public static Color O(C4 var0) {
       return var0.H;
    }
 
-   static Color L$Color(C4 var0) {
+   public static Color L$Color(C4 var0) {
       return var0.Z;
    }
 
-   static float T$float(C4 var0) {
+   public static float T$float(C4 var0) {
       return var0.T$float();
    }
 
-   static Color C$Color(C4 var0) {
+   public static Color C$Color(C4 var0) {
       return var0.e;
    }
 

@@ -5,10 +5,10 @@ import java.util.Map;
 import java.util.jar.JarFile;
 
 public class I4_2 implements S_6 {
-   final URL q;
-   final JarFile E;
+   public final URL q;
+   public final JarFile E;
 
-   I4_2(URL var1, JarFile var2) {
+   public I4_2(URL var1, JarFile var2) {
       this.q = var1;
       this.E = var2;
    }

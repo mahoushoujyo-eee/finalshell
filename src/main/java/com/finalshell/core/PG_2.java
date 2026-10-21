@@ -13,8 +13,8 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
 public class PG_2 {
-   KeyboardFocusManager H;
-   ArrayList S;
+   public KeyboardFocusManager H;
+   public ArrayList S;
 
    public PG_2() {
       ArrayList var10001 = new ArrayList();
@@ -34,7 +34,7 @@ public class PG_2 {
       ((ArrayList)Ref.g(297544026394429738L, var2)).add(var1);
    }
 
-   void W(KeyEvent var1) {
+   public void W(KeyEvent var1) {
       int[] var10000 = ZG_2.Z();
       Window var3 = SwingUtilities.getWindowAncestor(var1.getComponent());
       int[] var2 = var10000;

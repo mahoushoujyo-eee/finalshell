@@ -38,7 +38,7 @@ public class Q_3 extends X {
       return var1;
    }
 
-   static ArrayList V(Object var0) {
+   public static ArrayList V(Object var0) {
       return t(var0);
    }
 }

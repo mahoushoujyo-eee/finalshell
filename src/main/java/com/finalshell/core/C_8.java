@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class C_8 extends D2_3 {
-   final NM3 N;
+   public final NM3 N;
 
-   C_8(NM3 var1) {
+   public C_8(NM3 var1) {
       this.N = var1;
    }
 

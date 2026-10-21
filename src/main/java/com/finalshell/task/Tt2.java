@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.FilePanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Tt2 implements Runnable {
-   final FilePanel F;
+   public final FilePanel F;
 
-   Tt2(FilePanel var1) {
+   public Tt2(FilePanel var1) {
       this.F = var1;
    }
 

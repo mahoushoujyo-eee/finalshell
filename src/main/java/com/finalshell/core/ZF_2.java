@@ -6,7 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
 public class ZF_2 extends MessageToByteEncoder {
-   protected void J(ChannelHandlerContext var1, XU var2, ByteBuf var3) throws Exception {
+   public void J(ChannelHandlerContext var1, XU var2, ByteBuf var3) throws Exception {
       int[] var10000 = XU.t();
       var3.writeInt(var2.S());
       int[] var4 = var10000;
@@ -23,7 +23,7 @@ public class ZF_2 extends MessageToByteEncoder {
    }
 
    @Override
-   protected void encode(ChannelHandlerContext var1, Object var2, ByteBuf var3) throws Exception {
+   public void encode(ChannelHandlerContext var1, Object var2, ByteBuf var3) throws Exception {
       this.J(var1, (XU)var2, var3);
    }
 

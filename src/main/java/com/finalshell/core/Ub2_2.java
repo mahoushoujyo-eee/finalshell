@@ -5,16 +5,16 @@ import java.lang.reflect.Type;
 import java.util.Map;
 
 public class Ub2_2 extends UT_2 {
-   protected X4 I;
-   protected boolean z;
+   public X4 I;
+   public boolean z;
    public static String[] c;
    public static String[] d;
    public static long e;
 
    public Ub2_2(IG var1, java.lang.Class var2, Ph2 var3) {
+   super(var2, var3);
       E6 var10;
       Ky4[] var10000 = ZS.p();
-      super(var2, var3);
       Ky4[] var4 = var10000;
       this.z = false;
       E6 var5 = var3.Z();

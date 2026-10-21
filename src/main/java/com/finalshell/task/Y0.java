@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Oa2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Y0 implements Runnable {
-   final Oa2 j;
+   public final Oa2 j;
 
-   Y0(Oa2 var1) {
+   public Y0(Oa2 var1) {
       this.j = var1;
    }
 

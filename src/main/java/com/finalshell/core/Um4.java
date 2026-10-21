@@ -21,19 +21,19 @@ public class Um4 {
    public Font F;
    public Font Y;
    public Font w;
-   int b;
-   String o;
-   static Locale E;
-   static Graphics2D a;
-   static int R;
-   static int M;
-   int u;
-   static Font x;
-   static Font d;
-   static int s;
-   int Z;
-   boolean n;
-   float Q;
+   public int b;
+   public String o;
+   public static Locale E;
+   public static Graphics2D a;
+   public static int R;
+   public static int M;
+   public int u;
+   public static Font x;
+   public static Font d;
+   public static int s;
+   public int Z;
+   public boolean n;
+   public float Q;
    public static String[] c;
    public static String[] e;
 
@@ -116,7 +116,7 @@ public class Um4 {
       Registry.lookupField(298575041160901307L).setFloat(this, var1);
    }
 
-   static int b(FontMetrics var0) {
+   public static int b(FontMetrics var0) {
       int var1 = 0;
 
       for (int var5 : var0.getWidths()) {
@@ -128,13 +128,13 @@ public class Um4 {
       return var1;
    }
 
-   static Font D(String var0) throws FontFormatException, IOException {
+   public static Font D(String var0) throws FontFormatException, IOException {
       File var2 = new File(var0);
       FileInputStream var3 = new FileInputStream(var2);
       return Font.createFont(0, var3);
    }
 
-   static Font A(String param0) {
+   public static Font A(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

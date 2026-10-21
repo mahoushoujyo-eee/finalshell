@@ -7,9 +7,9 @@ import java.awt.event.ComponentEvent;
 import javax.swing.SwingUtilities;
 
 public class YM3 extends ComponentAdapter {
-   final com.finalshell.ui.dialog.KQ q;
+   public final com.finalshell.ui.dialog.KQ q;
 
-   YM3(com.finalshell.ui.dialog.KQ var1) {
+   public YM3(com.finalshell.ui.dialog.KQ var1) {
       this.q = var1;
    }
 

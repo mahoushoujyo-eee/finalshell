@@ -9,14 +9,14 @@ import java.util.Map.Entry;
 public class X_6 extends U2_3 {
    public final Map M = new HashMap();
    public long N;
-   static boolean R;
+   public static boolean R;
 
    public X_6() {
    }
 
    public X_6(Map var1) {
+   super();
       int[] var10000 = F_6.h();
-      super();
       int[] var2 = var10000;
       this.M = new HashMap();
 
@@ -66,7 +66,7 @@ public class X_6 extends U2_3 {
       return F3_3.W(this.M.values(), new Z2_3(this, var1, var2));
    }
 
-   static long f(X_6 var0) {
+   public static long f(X_6 var0) {
       return var0.N;
    }
 

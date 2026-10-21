@@ -25,17 +25,17 @@ import javax.swing.JComponent;
 
 public class K02 extends Ky4 {
    public static ImageIcon e;
-   protected final List p;
-   protected boolean t;
-   protected boolean S;
-   protected final boolean j;
+   public final List p;
+   public boolean t;
+   public boolean S;
+   public final boolean j;
    public boolean l;
    public int B;
-   protected final java.io.File x;
-   protected WC_2 v;
-   protected float X;
-   protected final O F;
-   protected KD z;
+   public final java.io.File x;
+   public WC_2 v;
+   public float X;
+   public final O F;
+   public KD z;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -104,12 +104,12 @@ public class K02 extends Ky4 {
       this.B = var1;
    }
 
-   protected void b() {
+   public void b() {
       this.F.setIcon(this.k(this.x));
       this.F.setText(this.s(this.x));
    }
 
-   protected KD R() {
+   public KD R() {
       String var1 = Kz4.M();
       KD var10000 = this.z;
       if (var1 != null) {
@@ -125,7 +125,7 @@ public class K02 extends Ky4 {
       return var10000;
    }
 
-   protected void K(ActionEvent var1, boolean var2) {
+   public void K(ActionEvent var1, boolean var2) {
       String var3;
       boolean var4;
       label29: {
@@ -168,7 +168,7 @@ public class K02 extends Ky4 {
       this.q(var1);
    }
 
-   protected void g() {
+   public void g() {
       String var10000 = Kz4.M();
       this.X = 0.0F;
       Container var2 = this.getParent();
@@ -196,11 +196,11 @@ public class K02 extends Ky4 {
       var3.repaint();
    }
 
-   protected ImageIcon k(java.io.File var1) {
+   public ImageIcon k(java.io.File var1) {
       return Cz2.U(var1, false);
    }
 
-   protected String s(java.io.File var1) {
+   public String s(java.io.File var1) {
       String var10000 = Kz4.M();
       String var3 = Cz2.X(var1);
       String var2 = var10000;
@@ -274,7 +274,7 @@ public class K02 extends Ky4 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       String var2 = Kz4.M();
       Graphics2D var10000 = (Graphics2D)var1;
       Float var10001 = this.X;
@@ -296,7 +296,7 @@ public class K02 extends Ky4 {
       this.p.remove(var1);
    }
 
-   protected void q(ActionEvent var1) {
+   public void q(ActionEvent var1) {
       String var10000 = Kz4.M();
       Iterator var3 = AL_2.J((Collection)this.p).iterator();
       String var2 = var10000;

@@ -12,13 +12,13 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class Q4 implements DocumentListener {
-   final G7_2 r;
+   public final G7_2 r;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Q4(G7_2 var1) {
+   public Q4(G7_2 var1) {
       this.r = var1;
    }
 

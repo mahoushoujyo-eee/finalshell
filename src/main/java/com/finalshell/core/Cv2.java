@@ -3,24 +3,24 @@ package com.finalshell.core;
 import com.finalshell.crypto.ConnectHost;
 
 public abstract class Cv2 {
-   static String[] t;
-   static String F;
-   static String A;
-   static String R;
-   static String g;
-   static String r;
-   static String P;
-   static String V;
-   static String n;
-   protected ConnectHost a = null;
-   protected Y_2 L = null;
-   protected byte[] E = null;
-   protected byte[] b = null;
-   protected byte[] k = null;
-   protected final int c = 0;
-   protected final int h = 1;
-   protected final int I = a(10222, 649090909354918842L);
-   protected final int v = a(7230, 3126479450272807015L);
+   public static String[] t;
+   public static String F;
+   public static String A;
+   public static String R;
+   public static String g;
+   public static String r;
+   public static String P;
+   public static String V;
+   public static String n;
+   public ConnectHost a = null;
+   public Y_2 L = null;
+   public byte[] E = null;
+   public byte[] b = null;
+   public byte[] k = null;
+   public final int c = 0;
+   public final int h = 1;
+   public final int I = a(10222, 649090909354918842L);
+   public final int v = a(7230, 3126479450272807015L);
    public int q = 0;
    public String G = "";
    public static String[] J;
@@ -30,7 +30,7 @@ public abstract class Cv2 {
 
    public abstract void x(ConnectHost var1, byte[] var2, byte[] var3, byte[] var4, byte[] var5) throws Exception;
 
-   void m(ConnectHost var1, byte[] var2, byte[] var3, byte[] var4, byte[] var5) throws Exception {
+   public void m(ConnectHost var1, byte[] var2, byte[] var3, byte[] var4, byte[] var5) throws Exception {
       this.a = var1;
       this.x(var1, var2, var3, var4, var5);
    }
@@ -65,7 +65,7 @@ public abstract class Cv2 {
       return this.G;
    }
 
-   protected static String[] V(ConnectHost param0, byte[] param1, byte[] param2) throws Exception {
+   public static String[] V(ConnectHost param0, byte[] param1, byte[] param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -701,23 +701,23 @@ public abstract class Cv2 {
       // 9b: areturn
    }
 
-   byte[] k() {
+   public byte[] k() {
       return this.E;
    }
 
-   byte[] V() {
+   public byte[] V() {
       return this.b;
    }
 
-   Y_2 i() {
+   public Y_2 i() {
       return this.L;
    }
 
-   byte[] m() {
+   public byte[] m() {
       return this.k;
    }
 
-   protected byte[] D(byte[] var1) {
+   public byte[] D(byte[] var1) {
       boolean var2 = Dm4.F$boolean();
       byte[] var10000 = var1;
       if (var2) {
@@ -745,7 +745,7 @@ public abstract class Cv2 {
       return var10000;
    }
 
-   protected boolean x(String param1, byte[] param2, int param3, byte[] param4) throws Exception {
+   public boolean x(String param1, byte[] param2, int param3, byte[] param4) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

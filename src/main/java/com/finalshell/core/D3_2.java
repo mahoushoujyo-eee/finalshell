@@ -5,11 +5,11 @@ import java.io.File;
 import javax.swing.JList;
 
 public class D3_2 extends Q3 {
-   final com.finalshell.ui.listener.I_2 k;
+   public final com.finalshell.ui.listener.I_2 k;
    public static String c;
    public static long d;
 
-   D3_2(com.finalshell.ui.listener.I_2 var1) {
+   public D3_2(com.finalshell.ui.listener.I_2 var1) {
       this.k = var1;
    }
 

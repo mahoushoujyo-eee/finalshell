@@ -20,26 +20,26 @@ import javax.swing.SwingUtilities;
 import net.miginfocom.swing.MigLayout;
 
 public class EditProxyServerDialog extends JDialog {
-   Edit b;
-   LD3_2 g;
-   boolean r;
-   JPanel W;
-   JPanel P;
-   JTextField d;
-   JTextField t;
-   JTextField v;
-   JTextField N;
-   JPasswordField A;
-   Random E;
-   JComboBox Q;
+   public Edit b;
+   public LD3_2 g;
+   public boolean r;
+   public JPanel W;
+   public JPanel P;
+   public JTextField d;
+   public JTextField t;
+   public JTextField v;
+   public JTextField N;
+   public JPasswordField A;
+   public Random E;
+   public JComboBox Q;
    public static String[] a;
    public static String[] c;
    public static long[] e;
    public static Integer[] f;
 
-   EditProxyServerDialog(Edit var1, LD3_2 var2, boolean var3) {
+   public EditProxyServerDialog(Edit var1, LD3_2 var2, boolean var3) {
+   super(SwingUtilities.getWindowAncestor(var1));
       label112: {
-         super(SwingUtilities.getWindowAncestor(var1));
          Random var10001 = new Random();
          long var16 = 174948735561805446L;
          Random var15 = var10001;
@@ -298,7 +298,7 @@ public class EditProxyServerDialog extends JDialog {
       this.setVisible(true);
    }
 
-   void b() {
+   public void b() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -1,9 +1,9 @@
 package com.finalshell.task;
 
 public class FU_2 implements Runnable {
-   final Xb4 m;
+   public final Xb4 m;
 
-   FU_2(Xb4 var1) {
+   public FU_2(Xb4 var1) {
       this.m = var1;
    }
 

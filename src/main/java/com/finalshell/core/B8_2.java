@@ -2099,7 +2099,7 @@ public class B8_2 {
       return XJ.w(j, var0);
    }
 
-   static int j(char param0, char param1) {
+   public static int j(char param0, char param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2181,7 +2181,7 @@ public class B8_2 {
       // a0: ireturn
    }
 
-   static int R(char param0, char param1, char param2, char param3) {
+   public static int R(char param0, char param1, char param2, char param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2335,7 +2335,7 @@ public class B8_2 {
       // 151: ireturn
    }
 
-   static int M(char param0, char param1, char param2, char param3, char param4, char param5, char param6, char param7, char param8) {
+   public static int M(char param0, char param1, char param2, char param3, char param4, char param5, char param6, char param7, char param8) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -9511,7 +9511,7 @@ public class B8_2 {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   static void P(AccessibleObject var0) {
+   public static void P(AccessibleObject var0) {
       int var1 = Ph2.u();
 
       label47: {

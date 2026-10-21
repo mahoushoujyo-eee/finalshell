@@ -18,33 +18,33 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class KA_3 extends JPanel {
-   JLabel u;
-   JLabel Z;
-   JLabel B;
-   JLabel p;
-   Bb2 H;
-   JLabel z;
-   boolean m;
-   int S;
-   Color i;
-   Color t;
-   boolean M;
-   LI3_2 b;
+   public JLabel u;
+   public JLabel Z;
+   public JLabel B;
+   public JLabel p;
+   public Bb2 H;
+   public JLabel z;
+   public boolean m;
+   public int S;
+   public Color i;
+   public Color t;
+   public boolean M;
+   public LI3_2 b;
    public static int a;
    public static int O;
-   int L;
-   Color d;
-   Color Q;
-   String G;
-   KV o;
-   Object k;
+   public int L;
+   public Color d;
+   public Color Q;
+   public String G;
+   public KV o;
+   public Object k;
    public static Ky4[] Y;
    public static String[] c;
    public static String[] e;
    public static long[] f;
    public static Integer[] g;
 
-   KA_3(boolean var1, int var2) {
+   public KA_3(boolean var1, int var2) {
       Ky4[] var10000 = y$arrky_4();
       Registry.lookupField(123845205254103433L).setBoolean(this, false);
       Ky4[] var3 = var10000;
@@ -236,7 +236,7 @@ public class KA_3 extends JPanel {
          label78: {
             Object var7 = var10021;
             if (var3 == null) {
-               if (var7 != false) {
+               if (var7 == null) {
                   break label78;
                }
 
@@ -287,7 +287,7 @@ public class KA_3 extends JPanel {
       }
    }
 
-   void G(int var1, boolean var2) {
+   public void G(int var1, boolean var2) {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Qw2(this, var1, var2));
       long var4 = 434592463220957006L;
@@ -301,7 +301,7 @@ public class KA_3 extends JPanel {
       }
    }
 
-   JLabel d() {
+   public JLabel d() {
       JLabel var2;
       label15: {
          Ky4[] var10000 = y$arrky_4();
@@ -331,7 +331,7 @@ public class KA_3 extends JPanel {
       return var2;
    }
 
-   void k() {
+   public void k() {
       Object var1 = 325740909439115488L;
       Ref.g(325740909439115488L, var1);
       Object var3 = 417818515784195886L;
@@ -359,7 +359,7 @@ public class KA_3 extends JPanel {
       Ref.s(636752062782772004L, var3, var10);
       KA_3 var10003 = Registry.lookupField(419105034783525448L).getBoolean(this);
       if (this == null) {
-         if (var10003 == false) {
+         if (var10003 == null) {
             label137: {
                if (var2 != null) {
                   Object var31 = 231298203037056753L;

@@ -70,15 +70,15 @@ public class UO implements N3 {
       }
    }
 
-   static long G(UO var0) {
+   public static long G(UO var0) {
       return var0.g;
    }
 
-   static ScheduledExecutorService J() {
+   public static ScheduledExecutorService J() {
       return i;
    }
 
-   static Runnable u(UO var0) {
+   public static Runnable u(UO var0) {
       return var0.f;
    }
 

@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class FJ implements ActionListener {
-   final com.finalshell.ui.frame.U n;
+   public final com.finalshell.ui.frame.U n;
 
-   FJ(com.finalshell.ui.frame.U var1) {
+   public FJ(com.finalshell.ui.frame.U var1) {
       this.n = var1;
    }
 

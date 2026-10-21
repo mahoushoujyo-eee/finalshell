@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class UK3 implements ActionListener {
-   final FilePermissionPanel B;
+   public final FilePermissionPanel B;
 
-   UK3(FilePermissionPanel var1) {
+   public UK3(FilePermissionPanel var1) {
       this.B = var1;
    }
 

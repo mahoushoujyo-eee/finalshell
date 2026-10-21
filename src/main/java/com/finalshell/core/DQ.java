@@ -2,11 +2,11 @@ package com.finalshell.core;
 
 public class DQ {
    public static byte[][] g;
-   protected String f;
-   protected String Y;
-   protected int h;
-   protected byte[] v;
-   protected String U;
+   public String f;
+   public String Y;
+   public int h;
+   public byte[] v;
+   public String U;
    public static String[] a;
    public static String[] b;
    public static long[] e;
@@ -403,7 +403,7 @@ public class DQ {
       return var10000 != var10001 ? a(-26698, 26046) : E8.B(g[this.h - 1]);
    }
 
-   protected static int v(String var0) {
+   public static int v(String var0) {
       byte var10000 = (Dm4.F$boolean()) ? 1 : 0;
       int var2 = 0;
       boolean var1 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -522,7 +522,7 @@ public class DQ {
       return this.f;
    }
 
-   boolean p(String var1) {
+   public boolean p(String var1) {
       return this.l(var1);
    }
 

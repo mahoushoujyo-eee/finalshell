@@ -10,10 +10,10 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Lm4 implements MouseListener {
-   final boolean T;
-   final KA_3 t;
+   public final boolean T;
+   public final KA_3 t;
 
-   Lm4(KA_3 var1, boolean var2) {
+   public Lm4(KA_3 var1, boolean var2) {
       this.t = var1;
       this.T = var2;
    }

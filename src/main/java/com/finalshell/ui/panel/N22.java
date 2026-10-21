@@ -19,24 +19,24 @@ import javax.swing.border.CompoundBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class N22 extends JPanel {
-   JLabel L;
-   KV e;
+   public JLabel L;
+   public KV e;
    public static int h;
-   Color v;
-   JR A;
-   com.finalshell.ui.model.K42 K;
+   public Color v;
+   public JR A;
+   public com.finalshell.ui.model.K42 K;
    public static int I;
    public static int d;
-   int j;
-   Object S;
+   public int j;
+   public Object S;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] f;
 
    public N22() {
+   super();
       KA_3.y$arrky_4();
-      super();
       Color var10002 = new Color(a(23758, 2419296908916095838L), a(10485, 7046113659769589606L), a(28814, 6632969842463627030L));
       long var7 = 546661312516783449L;
       Color var6 = var10002;
@@ -175,7 +175,7 @@ public class N22 extends JPanel {
       }
    }
 
-   void D(int var1, boolean var2) {
+   public void D(int var1, boolean var2) {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new Yg4(this, var1, var2));
       long var4 = 434592463220957006L;
@@ -189,7 +189,7 @@ public class N22 extends JPanel {
       }
    }
 
-   void V() {
+   public void V() {
    }
 
    @Override

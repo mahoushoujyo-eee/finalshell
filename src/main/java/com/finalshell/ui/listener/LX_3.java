@@ -9,10 +9,10 @@ import javax.swing.JPopupMenu;
 import javax.swing.JTable;
 
 public class LX_3 extends MouseAdapter {
-   final JPopupMenu e;
-   final Copy2 A;
+   public final JPopupMenu e;
+   public final Copy2 A;
 
-   LX_3(Copy2 var1, JPopupMenu var2) {
+   public LX_3(Copy2 var1, JPopupMenu var2) {
       this.A = var1;
       this.e = var2;
    }
@@ -24,7 +24,7 @@ public class LX_3 extends MouseAdapter {
       boolean var2 = var10000;
       LX_3 var23 = var1.getButton();
       if (var2) {
-         if (var23 != 3) {
+         if (var23 != null) {
             return;
          }
 

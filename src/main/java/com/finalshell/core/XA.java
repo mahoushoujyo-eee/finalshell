@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public abstract class XA {
-   protected String m;
+   public String m;
    public static Ky4[] M;
 
    public void W() {

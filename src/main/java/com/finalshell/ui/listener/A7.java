@@ -6,9 +6,9 @@ import javax.swing.event.TreeWillExpandListener;
 import javax.swing.tree.ExpandVetoException;
 
 public class A7 implements TreeWillExpandListener {
-   final Connection5 R;
+   public final Connection5 R;
 
-   A7(Connection5 var1) {
+   public A7(Connection5 var1) {
       this.R = var1;
    }
 

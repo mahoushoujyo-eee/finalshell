@@ -8,7 +8,7 @@ public class W extends Thread {
    public static Integer[] b;
    public static long c;
 
-   W(Mm2 var1) {
+   public W(Mm2 var1) {
       this.v = var1;
    }
 

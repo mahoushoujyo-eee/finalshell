@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class DD3 implements ActionListener {
-   final KF3 k;
+   public final KF3 k;
 
-   DD3(KF3 var1) {
+   public DD3(KF3 var1) {
       this.k = var1;
    }
 

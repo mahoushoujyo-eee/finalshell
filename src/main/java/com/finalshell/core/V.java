@@ -4,10 +4,10 @@ import java.net.DatagramPacket;
 
 public class V extends Vb2 {
    public short R = BN.y;
-   byte[] B;
-   int r;
-   int z;
-   int G;
+   public byte[] B;
+   public int r;
+   public int z;
+   public int G;
    public static long[] a;
    public static Integer[] b;
 

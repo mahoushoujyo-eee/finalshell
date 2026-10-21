@@ -4,22 +4,22 @@ import java.util.Hashtable;
 
 public class Dq4 extends Dm4 {
    public static byte[] P;
-   protected boolean h = false;
-   protected boolean L = false;
-   protected Hashtable F = null;
-   protected boolean A = false;
-   protected String l = b(-27814, 31169);
-   protected int J = b(2166, 5128603885367188867L);
-   protected int u = b(16308, 7364915286531238477L);
-   protected int R = b(26919, 54329701606341853L);
-   protected int M = b(29423, 7628090627876595472L);
-   protected byte[] D = null;
+   public boolean h = false;
+   public boolean L = false;
+   public Hashtable F = null;
+   public boolean A = false;
+   public String l = b(-27814, 31169);
+   public int J = b(2166, 5128603885367188867L);
+   public int u = b(16308, 7364915286531238477L);
+   public int R = b(26919, 54329701606341853L);
+   public int M = b(29423, 7628090627876595472L);
+   public byte[] D = null;
    public static String[] cb;
    public static String[] db;
    public static long[] jb;
    public static Integer[] kb;
 
-   Dq4() {
+   public Dq4() {
       this.Y = P;
       this.o = new Cs4();
    }
@@ -138,7 +138,7 @@ public class Dq4 extends Dm4 {
       this.M = var5;
    }
 
-   protected void T() throws Exception {
+   public void T() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -297,7 +297,7 @@ public class Dq4 extends Dm4 {
    }
 
    @Override
-   void S() {
+   public void S() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

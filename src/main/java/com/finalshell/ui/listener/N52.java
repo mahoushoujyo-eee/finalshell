@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class N52 implements ActionListener {
-   final K02 n;
+   public final K02 n;
 
-   N52(K02 var1) {
+   public N52(K02 var1) {
       this.n = var1;
    }
 

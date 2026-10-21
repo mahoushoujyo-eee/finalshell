@@ -4,17 +4,17 @@ import com.finalshell.io.YM3;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Fz2 implements Po4 {
-   protected final KW K = new KW();
+   public final KW K = new KW();
    public final AtomicLong Y = new AtomicLong();
-   static String g;
-   static String T;
-   static String x;
-   static String i;
-   static String o;
-   static String s;
-   static String z;
-   static String E;
-   static String e;
+   public static String g;
+   public static String T;
+   public static String x;
+   public static String i;
+   public static String o;
+   public static String s;
+   public static String z;
+   public static String E;
+   public static String e;
    public static String[] a;
    public static String[] b;
    public static long[] c;

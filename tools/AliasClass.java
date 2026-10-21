@@ -56,10 +56,11 @@ public class AliasClass {
         List<String> keys = new ArrayList<>(aliasMap.keySet());
         Collections.sort(keys);   // 稳定输出，便于比对
         for (String k : keys) {
+            clinit.visitFieldInsn(Opcodes.GETSTATIC, INTERNAL, "MAP", "Ljava/util/Map;");
             clinit.visitLdcInsn(k);
             clinit.visitLdcInsn(aliasMap.get(k));
-            clinit.visitMethodInsn(Opcodes.INVOKESTATIC, "java/util/Map", "put",
-                    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", false);
+            clinit.visitMethodInsn(Opcodes.INVOKEINTERFACE, "java/util/Map", "put",
+                    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", true);
             clinit.visitInsn(Opcodes.POP);
         }
         clinit.visitInsn(Opcodes.RETURN);
@@ -105,22 +106,27 @@ public class AliasClass {
         // new ClassNotFoundException("registry alias: old -> new not found")
         forName.visitTypeInsn(Opcodes.NEW, "java/lang/ClassNotFoundException");
         forName.visitInsn(Opcodes.DUP);
+        // 注意：StringBuilder 必须自己 new 出来，append 是**实例方法**（invokevirtual），
+        // 写成 invokestatic 会让接收者不出栈，栈图直接对不上，校验器报 VerifyError。
+        forName.visitTypeInsn(Opcodes.NEW, "java/lang/StringBuilder");
+        forName.visitInsn(Opcodes.DUP);
+        forName.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/StringBuilder", "<init>", "()V", false);
         forName.visitLdcInsn("registry alias: ");
+        forName.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/StringBuilder", "append",
+                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
         forName.visitVarInsn(Opcodes.ALOAD, 0);
+        forName.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/StringBuilder", "append",
+                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
         forName.visitLdcInsn(" -> ");
+        forName.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/StringBuilder", "append",
+                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
         forName.visitVarInsn(Opcodes.ALOAD, 1);
+        forName.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/StringBuilder", "append",
+                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
         forName.visitLdcInsn(" not found");
-        forName.visitMethodInsn(Opcodes.INVOKESTATIC, "java/lang/StringBuilder", "append",
+        forName.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/StringBuilder", "append",
                 "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-        forName.visitMethodInsn(Opcodes.INVOKESTATIC, "java/lang/StringBuilder", "append",
-                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-        forName.visitMethodInsn(Opcodes.INVOKESTATIC, "java/lang/StringBuilder", "append",
-                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-        forName.visitMethodInsn(Opcodes.INVOKESTATIC, "java/lang/StringBuilder", "append",
-                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-        forName.visitMethodInsn(Opcodes.INVOKESTATIC, "java/lang/StringBuilder", "append",
-                "(Ljava/lang/String;)Ljava/lang/StringBuilder;", false);
-        forName.visitMethodInsn(Opcodes.INVOKESTATIC, "java/lang/StringBuilder", "toString",
+        forName.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/StringBuilder", "toString",
                 "()Ljava/lang/String;", false);
         forName.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/ClassNotFoundException", "<init>",
                 "(Ljava/lang/String;)V", false);

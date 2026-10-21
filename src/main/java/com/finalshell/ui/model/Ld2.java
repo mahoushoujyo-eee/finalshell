@@ -9,9 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class Ld2 implements Comparator {
-   final Vc2 O;
+   public final Vc2 O;
 
-   Ld2(Vc2 var1) {
+   public Ld2(Vc2 var1) {
       this.O = var1;
    }
 

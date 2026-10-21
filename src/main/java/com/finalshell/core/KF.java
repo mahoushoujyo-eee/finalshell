@@ -4,17 +4,14 @@ import org.bouncycastle.crypto.Digest;
 import org.bouncycastle.crypto.macs.HMac;
 
 public abstract class KF implements FP {
-   protected String Z;
-   protected int N;
-   protected Digest M;
-   protected boolean i;
+   public String Z;
+   public int N;
+   public Digest M;
+   public boolean i;
    public HMac C;
    public final byte[] l = new byte[4];
    public static long[] c;
    public static Integer[] d;
-
-   KF() {
-   }
 
    @Override
    public int h() {

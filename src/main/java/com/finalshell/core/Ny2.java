@@ -1,25 +1,22 @@
 package com.finalshell.core;
 
 public final class Ny2 {
-   static int[] L;
-   static int[] h;
-   static int[] y;
-   static int[] l;
-   static int[] R;
-   static int[] I;
-   int[] U = null;
-   int[] T = null;
-   int[] f = null;
-   int[] p = null;
-   int[] t = null;
-   int[] V = null;
+   public static int[] L;
+   public static int[] h;
+   public static int[] y;
+   public static int[] l;
+   public static int[] R;
+   public static int[] I;
+   public int[] U = null;
+   public int[] T = null;
+   public int[] f = null;
+   public int[] p = null;
+   public int[] t = null;
+   public int[] V = null;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
-
-   Ny2() {
-   }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    public int k(int[] var1, int var2, int var3, int var4, int[] var5, int[] var6, int[] var7, int[] var8, int[] var9, int[] var10, int[] var11) {
@@ -456,7 +453,7 @@ public final class Ny2 {
       }
    }
 
-   int P(int[] var1, int[] var2, int[] var3, int[] var4, Df2 var5) {
+   public int P(int[] var1, int[] var2, int[] var3, int[] var4, Df2 var5) {
       this.p(a(16398, 2845879863953338497L));
       int[] var10000 = Nm4.g();
       this.U[0] = 0;
@@ -495,7 +492,7 @@ public final class Ny2 {
       return a(12780, 8224791399129071658L);
    }
 
-   int u(int var1, int var2, int[] var3, int[] var4, int[] var5, int[] var6, int[] var7, int[] var8, Df2 var9) {
+   public int u(int var1, int var2, int[] var3, int[] var4, int[] var5, int[] var6, int[] var7, int[] var8, Df2 var9) {
       int[] var10;
       int var11;
       int var13;
@@ -611,7 +608,7 @@ public final class Ny2 {
       return var11;
    }
 
-   static int r(int[] var0, int[] var1, int[][] var2, int[][] var3, Df2 var4) {
+   public static int r(int[] var0, int[] var1, int[][] var2, int[][] var3, Df2 var4) {
       var0[0] = a(4785, 2829790149343863822L);
       var1[0] = 5;
       var2[0] = L;

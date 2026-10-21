@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.Iterator;
 
 public class Om4 {
-   static Xe2 Z;
+   public static Xe2 Z;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -154,7 +154,7 @@ public class Om4 {
       label37: {
          try {
             var10001 = var3;
-            if (var2 == false) {
+            if (var2 == null) {
                break label37;
             }
 
@@ -207,12 +207,12 @@ public class Om4 {
          if (var3.hasNext()) {
             LN3 var4 = (LN3)var3.next();
             var10003 = var4;
-            if (var1 == false) {
+            if (var1 == null) {
                break;
             }
 
             label44: {
-               if (var1 != false) {
+               if (var1 == null) {
                   Object[] var19 = Registry.emptyArgs();
                   long var12 = 194080076253066315L;
                   Object[] var11 = var19;
@@ -232,7 +232,7 @@ public class Om4 {
                var2 = var4;
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                continue;
             }
          }
@@ -272,7 +272,7 @@ public class Om4 {
          label93:
          if (var3.hasNext()) {
             LN3 var4 = (LN3)var3.next();
-            if (var1 != false) {
+            if (var1 == null) {
                break;
             }
 
@@ -289,7 +289,7 @@ public class Om4 {
 
             label101: {
                boolean var44 = var10004.equals(var0);
-               if (var1 == false) {
+               if (var1 == null) {
                   if (!var44) {
                      break label101;
                   }
@@ -322,12 +322,12 @@ public class Om4 {
                   throw var33.getTargetException();
                }
 
-               if (var1 == false) {
+               if (var1 == null) {
                   break label93;
                }
             }
 
-            if (var1 == false) {
+            if (var1 == null) {
                continue;
             }
          }
@@ -417,7 +417,7 @@ public class Om4 {
       while (true) {
          if (var6.hasNext()) {
             LN3 var7 = (LN3)var6.next();
-            if (var1 == false) {
+            if (var1 == null) {
                break;
             }
 
@@ -431,11 +431,11 @@ public class Om4 {
                throw var30.getTargetException();
             }
 
-            if (var1 != false && !var40) {
+            if (var1 == null && !var40) {
                var5.add(var7);
             }
 
-            if (var1 != false) {
+            if (var1 == null) {
                continue;
             }
 

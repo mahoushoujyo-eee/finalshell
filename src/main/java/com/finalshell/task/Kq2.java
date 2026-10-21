@@ -6,17 +6,17 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class Kq2 implements Runnable {
-   final DefaultMutableTreeNode u;
-   final Tf4 q;
-   final DefaultMutableTreeNode J;
-   final boolean R;
-   final TreePath v;
-   final String E;
-   final boolean y;
-   final Connection4 r;
+   public final DefaultMutableTreeNode u;
+   public final Tf4 q;
+   public final DefaultMutableTreeNode J;
+   public final boolean R;
+   public final TreePath v;
+   public final String E;
+   public final boolean y;
+   public final Connection4 r;
    public static long a;
 
-   Kq2(Connection4 var1, DefaultMutableTreeNode var2, Tf4 var3, DefaultMutableTreeNode var4, boolean var5, TreePath var6, String var7, boolean var8) {
+   public Kq2(Connection4 var1, DefaultMutableTreeNode var2, Tf4 var3, DefaultMutableTreeNode var4, boolean var5, TreePath var6, String var7, boolean var8) {
       this.r = var1;
       this.u = var2;
       this.q = var3;

@@ -6,12 +6,12 @@ import com.finalshell.ui.model.O0;
 import java.lang.reflect.InvocationTargetException;
 
 public class Cy4 {
-   Kj2 e;
-   Kj2 r;
-   Kj2 o;
-   Kj2 g;
-   Kj2 D;
-   Kj2 W;
+   public Kj2 e;
+   public Kj2 r;
+   public Kj2 o;
+   public Kj2 g;
+   public Kj2 D;
+   public Kj2 W;
    public static String[] a;
    public static String[] b;
    public static long[] c;

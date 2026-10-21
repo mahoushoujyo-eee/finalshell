@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class FQ implements Hj2 {
-   final FF_2 p;
+   public final FF_2 p;
    public static long a;
 
-   FQ(FF_2 var1) {
+   public FQ(FF_2 var1) {
       this.p = var1;
    }
 

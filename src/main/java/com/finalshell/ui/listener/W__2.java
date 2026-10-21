@@ -7,9 +7,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class W__2 extends MouseAdapter {
-   final com.finalshell.ui.panel.QS q;
+   public final com.finalshell.ui.panel.QS q;
 
-   W__2(com.finalshell.ui.panel.QS var1) {
+   public W__2(com.finalshell.ui.panel.QS var1) {
       this.q = var1;
    }
 

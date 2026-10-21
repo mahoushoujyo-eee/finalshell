@@ -6,9 +6,9 @@ import java.awt.Window;
 import javax.swing.JFrame;
 
 public class Kv4 implements Runnable {
-   final Window v;
+   public final Window v;
 
-   Kv4(Window var1) {
+   public Kv4(Window var1) {
       this.v = var1;
    }
 

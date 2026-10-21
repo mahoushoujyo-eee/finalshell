@@ -7,9 +7,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class GL implements Runnable {
-   final YT3_2 S;
+   public final YT3_2 S;
 
-   GL(YT3_2 var1) {
+   public GL(YT3_2 var1) {
       this.S = var1;
    }
 

@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Ui2;
 import java.lang.reflect.InvocationTargetException;
 
 public class N7 implements Runnable {
-   final Ui2 s;
+   public final Ui2 s;
 
-   N7(Ui2 var1) {
+   public N7(Ui2 var1) {
       this.s = var1;
    }
 

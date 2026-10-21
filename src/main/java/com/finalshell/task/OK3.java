@@ -9,10 +9,10 @@ import com.finalshell.ui.panel.QuickConnectPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class OK3 implements Runnable {
-   final Ty4 q;
-   final QuickConnectPanel S;
+   public final Ty4 q;
+   public final QuickConnectPanel S;
 
-   OK3(QuickConnectPanel var1, Ty4 var2) {
+   public OK3(QuickConnectPanel var1, Ty4 var2) {
       this.S = var1;
       this.q = var2;
    }
@@ -24,7 +24,7 @@ public class OK3 implements Runnable {
          Object var3 = 288985563586479085L;
          OK3 var10001 = Ref.g(288985563586479085L, var3) instanceof TQ3;
          if (var1 == null) {
-            if (var10001 != false) {
+            if (var10001 == null) {
                Object var5 = 481242388329627461L;
                Ref.g(481242388329627461L, var5);
                Object[] var10003 = Registry.emptyArgs();
@@ -53,7 +53,7 @@ public class OK3 implements Runnable {
             boolean var22 = var10002 instanceof Ty4;
          }
 
-         if (var10001 == false) {
+         if (var10001 == null) {
             return;
          }
 

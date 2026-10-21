@@ -19,10 +19,10 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class SelectPrivateKeyDialog extends JDialog {
-   ImportPanel i;
-   JPanel Y;
-   LN3 k;
-   boolean P;
+   public ImportPanel i;
+   public JPanel Y;
+   public LN3 k;
+   public boolean P;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -105,7 +105,7 @@ public class SelectPrivateKeyDialog extends JDialog {
       }
    }
 
-   void I() {
+   public void I() {
       Registry.lookupField(302973513284937780L).setBoolean(this, true);
       ImportPanel.j();
       Object var3 = 272928281081136065L;
@@ -135,7 +135,7 @@ public class SelectPrivateKeyDialog extends JDialog {
       this.setVisible(false);
    }
 
-   void a() {
+   public void a() {
       Object var1 = 272928281081136065L;
       Ref.g(272928281081136065L, var1);
       Object[] var10002 = Registry.emptyArgs();

@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class IS3 extends OutputStream {
-   E0 A;
-   byte[] m = new byte[1];
+   public E0 A;
+   public byte[] m = new byte[1];
 
-   IS3(E0 var1) {
+   public IS3(E0 var1) {
       this.A = var1;
    }
 

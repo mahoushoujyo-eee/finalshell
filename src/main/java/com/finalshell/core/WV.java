@@ -6,7 +6,7 @@ import org.apache.hc.core5.http.protocol.HttpContext;
 import org.apache.hc.core5.util.TimeValue;
 
 public class WV implements ConnectionKeepAliveStrategy {
-   static TimeValue c;
+   public static TimeValue c;
    public static int X;
 
    @Override

@@ -34,10 +34,10 @@ import javax.swing.text.Utilities;
 import javax.swing.text.View;
 
 public class Wv4 extends BasicLabelUI implements ComponentListener {
-   protected static Rectangle o;
-   protected static Rectangle E;
-   protected static Rectangle J;
-   protected static Insets X;
+   public static Rectangle o;
+   public static Rectangle E;
+   public static Rectangle J;
+   public static Insets X;
    public static int i;
    public FontMetrics d;
    public boolean V = O__2.U;
@@ -58,19 +58,19 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
    }
 
    @Override
-   protected void uninstallDefaults(JLabel var1) {
+   public void uninstallDefaults(JLabel var1) {
       super.uninstallDefaults(var1);
       this.f(var1);
    }
 
    @Override
-   protected void installListeners(JLabel var1) {
+   public void installListeners(JLabel var1) {
       super.installListeners(var1);
       var1.addComponentListener(this);
    }
 
    @Override
-   protected void uninstallListeners(JLabel var1) {
+   public void uninstallListeners(JLabel var1) {
       super.uninstallListeners(var1);
       var1.removeComponentListener(this);
    }
@@ -91,7 +91,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       this.k = var1;
    }
 
-   protected void f(JLabel var1) {
+   public void f(JLabel var1) {
       var1.putClientProperty(a(-6671, 27918), null);
    }
 
@@ -119,7 +119,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       this.f((JLabel)var1.getSource());
    }
 
-   protected void e(JLabel var1, FontMetrics var2, int var3, int var4) {
+   public void e(JLabel var1, FontMetrics var2, int var3, int var4) {
       boolean var5 = Oj2.V();
       if (!var5) {
          if (var2 == null) {
@@ -222,7 +222,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       }
    }
 
-   protected void b(Graphics var1, JLabel var2, FontMetrics var3) {
+   public void b(Graphics var1, JLabel var2, FontMetrics var3) {
       int var10000 = (Oj2.g()) ? 1 : 0;
       List var5 = this.a(var2);
       boolean var4 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -307,7 +307,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
    }
 
    @Override
-   protected void paintEnabledText(JLabel var1, Graphics var2, String var3, int var4, int var5) {
+   public void paintEnabledText(JLabel var1, Graphics var2, String var3, int var4, int var5) {
       boolean var6 = Oj2.V();
       int var10000 = (this.V) ? 1 : 0;
       if (!var6) {
@@ -328,7 +328,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
    }
 
    @Override
-   protected void paintDisabledText(JLabel var1, Graphics var2, String var3, int var4, int var5) {
+   public void paintDisabledText(JLabel var1, Graphics var2, String var3, int var4, int var5) {
       boolean var6 = Oj2.g();
       int var10000 = (this.V) ? 1 : 0;
       if (var6) {
@@ -354,12 +354,12 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       var1.translate(-var3, -var4);
    }
 
-   protected int D(JLabel var1) {
+   public int D(JLabel var1) {
       var1.getInsets(X);
       return var1.getHeight() - X.top - X.bottom;
    }
 
-   protected String F(String var1) {
+   public String F(String var1) {
       boolean var2 = Oj2.V();
       String var10000 = var1;
       if (!var2) {
@@ -373,7 +373,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       return var10000;
    }
 
-   protected int G(JLabel var1, FontMetrics var2, Rectangle var3) {
+   public int G(JLabel var1, FontMetrics var2, Rectangle var3) {
       int var10000 = (Oj2.g()) ? 1 : 0;
       int var5 = this.D(var1);
       int var6 = var3.height;
@@ -399,7 +399,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       return var0.getAscent() + var0.getLeading();
    }
 
-   protected int e(JLabel var1, FontMetrics var2, String var3) {
+   public int e(JLabel var1, FontMetrics var2, String var3) {
       boolean var4;
       int var8;
       label67: {
@@ -544,13 +544,13 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       return var3;
    }
 
-   protected int E(JLabel var1) {
+   public int E(JLabel var1) {
       int var2 = this.a(var1).size();
       Insets var3 = var1.getInsets(X);
       return var2 * this.d.getHeight() + var3.top + var3.bottom;
    }
 
-   protected List a(JLabel var1) {
+   public List a(JLabel var1) {
       boolean var10000 = Oj2.g();
       List var3 = (List)var1.getClientProperty(a(-6659, 6127));
       boolean var2 = var10000;
@@ -584,7 +584,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
    public void componentShown(ComponentEvent var1) {
    }
 
-   protected List v(JLabel var1) {
+   public List v(JLabel var1) {
       boolean var10000 = Oj2.V();
       ArrayList var3 = new ArrayList(i);
       boolean var2 = var10000;
@@ -621,7 +621,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       return var3;
    }
 
-   protected void S(List param1, Element param2) {
+   public void S(List param1, Element param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -701,7 +701,7 @@ public class Wv4 extends BasicLabelUI implements ComponentListener {
       // a3: return
    }
 
-   protected int z(Document var1, int var2, int var3) {
+   public int z(Document var1, int var2, int var3) {
       Segment var4 = WP_2.x();
 
       try {

@@ -8,15 +8,15 @@ import java.lang.reflect.InvocationTargetException;
 import org.apache.hc.client5.http.classic.HttpClient;
 
 public class UR3 {
-   UpdateDialog b;
-   Fl4 l;
-   long x;
-   U52 G;
+   public UpdateDialog b;
+   public Fl4 l;
+   public long x;
+   public U52 G;
    public static long a;
 
    public UR3() {
+   super();
       String[] var10000 = UpdateDialog.y();
-      super();
       String[] var1 = var10000;
       if (var1 == null) {
          if ((String)Registry.lookupField(168719389020873220L).get(null) == null) {
@@ -84,7 +84,7 @@ public class UR3 {
 
       UpdateDialog var10010;
       Object var23 = 609415999077358020L;
-new UR3(this, (Fl4)Ref.g(609415999077358020L, var23));
+null = new UR3(this, (Fl4)Ref.g(609415999077358020L, var23));
       long var26 = 434677565278618930L;
       UpdateDialog var25 = var10010;
       Ref.s(434677565278618930L, var25, var26);

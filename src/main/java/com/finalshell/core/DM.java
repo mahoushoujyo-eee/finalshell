@@ -472,7 +472,7 @@ public class DM implements Ak2, X4 {
       }
    }
 
-   protected void W(NL3 param1, YM3 param2, Iterator param3) {
+   public void W(NL3 param1, YM3 param2, Iterator param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

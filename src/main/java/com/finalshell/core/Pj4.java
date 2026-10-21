@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class Pj4 {
    public final String B;
    public final int J;
-   final Ip a;
+   public final Ip a;
 
    public Pj4(Ip var1, String var2, int var3) {
       this.a = var1;

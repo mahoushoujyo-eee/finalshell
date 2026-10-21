@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Dt2;
 import java.lang.reflect.InvocationTargetException;
 
 public class Qf2 implements Runnable {
-   final Dt2 O;
+   public final Dt2 O;
 
-   Qf2(Dt2 var1) {
+   public Qf2(Dt2 var1) {
       this.O = var1;
    }
 

@@ -7,11 +7,11 @@ import java.io.File;
 import javax.swing.filechooser.FileFilter;
 
 public class File3 extends FileFilter {
-   final Oi2 L;
+   public final Oi2 L;
    public static String[] a;
    public static String[] b;
 
-   File3(Oi2 var1) {
+   public File3(Oi2 var1) {
       this.L = var1;
    }
 

@@ -7,11 +7,11 @@ public class LC3 extends LI3 {
    public static String[] d;
    public static String[] e;
 
-   LC3(Xe2 var1) {
+   public LC3(Xe2 var1) {
       this(var1, null, null);
    }
 
-   LC3(Xe2 var1, byte[] var2, byte[] var3) {
+   public LC3(Xe2 var1, byte[] var2, byte[] var3) {
       super(var1, var2, var3);
    }
 
@@ -24,16 +24,16 @@ public class LC3 extends LI3 {
       return X;
    }
 
-   String y$String() {
+   public String y$String() {
       return c(31870, 12793);
    }
 
    @Override
-   String Y$String() {
+   public String Y$String() {
       return c(31871, 21943);
    }
 
-   static Ls4 p(Xe2 var0, UJ var1) throws Pc2 {
+   public static Ls4 p(Xe2 var0, UJ var1) throws Pc2 {
       byte[][] var2 = var1.U(4, c(31869, -2577));
       byte[] var3 = var2[1];
       byte[] var4 = Arrays.copyOf(var2[2], X);

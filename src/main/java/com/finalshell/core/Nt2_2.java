@@ -3,12 +3,12 @@ package com.finalshell.core;
 public abstract class Nt2_2 extends N_ {
    @C_9
    public X_3_2 T;
-   static boolean v;
+   public static boolean v;
    public static int[] r;
    public static String[] a;
    public static String[] b;
 
-   protected Nt2_2(com.finalshell.ui.model.I var1) {
+   public Nt2_2(com.finalshell.ui.model.I var1) {
       super(var1);
    }
 
@@ -150,7 +150,7 @@ public abstract class Nt2_2 extends N_ {
    @C_9
    public abstract Object h(Fz2_2 var1) throws Throwable;
 
-   static X_3_2 H(Nt2_2 var0) {
+   public static X_3_2 H(Nt2_2 var0) {
       return var0.T;
    }
 

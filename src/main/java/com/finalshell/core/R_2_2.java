@@ -13,10 +13,10 @@ import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 
 public class R_2_2 extends BasicInternalFrameUI {
-   protected Color t = H4.e;
-   protected int X = 1;
-   protected P62 m;
-   protected boolean Q = false;
+   public Color t = H4.e;
+   public int X = 1;
+   public P62 m;
+   public boolean Q = false;
    public static String a;
 
    public static ComponentUI createUI(JComponent var0) {
@@ -45,23 +45,23 @@ public class R_2_2 extends BasicInternalFrameUI {
    }
 
    @Override
-   protected JComponent createNorthPane(JInternalFrame var1) {
+   public JComponent createNorthPane(JInternalFrame var1) {
       this.titlePane = new D_2_2(var1);
       return this.titlePane;
    }
 
    @Override
-   protected JComponent createWestPane(JInternalFrame var1) {
+   public JComponent createWestPane(JInternalFrame var1) {
       return new com.finalshell.ui.panel.J2(this);
    }
 
    @Override
-   protected JComponent createEastPane(JInternalFrame var1) {
+   public JComponent createEastPane(JInternalFrame var1) {
       return new com.finalshell.ui.panel.N2(this);
    }
 
    @Override
-   protected JComponent createSouthPane(JInternalFrame var1) {
+   public JComponent createSouthPane(JInternalFrame var1) {
       return new com.finalshell.ui.panel.U2(this);
    }
 
@@ -110,7 +110,7 @@ public class R_2_2 extends BasicInternalFrameUI {
       }
    }
 
-   static JInternalFrame D(R_2_2 var0) {
+   public static JInternalFrame D(R_2_2 var0) {
       return var0.frame;
    }
 

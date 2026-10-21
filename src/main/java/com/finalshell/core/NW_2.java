@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class NW_2 extends NV_2 {
-   final H3_2 d;
+   public final H3_2 d;
    public static String a;
 
-   NW_2(H3_2 var1, com.finalshell.ui.model.I var2) {
+   public NW_2(H3_2 var1, com.finalshell.ui.model.I var2) {
       super(var2);
       this.d = var1;
    }

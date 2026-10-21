@@ -8,8 +8,8 @@ import java.lang.ref.WeakReference;
 import javax.swing.JComponent;
 
 public abstract class Ix4 implements Up2 {
-   protected Point r;
-   protected WeakReference W;
+   public Point r;
+   public WeakReference W;
 
    public BufferedImage H(JComponent var1, DragSourceDragEvent var2) {
       label16: {

@@ -4,10 +4,10 @@ import com.finalshell.core.B2;
 import com.finalshell.core.UR;
 
 public class VE implements Runnable {
-   final B2 U;
+   public final B2 U;
    public final UR z;
 
-   VE(B2 var1, UR var2) {
+   public VE(B2 var1, UR var2) {
       this.U = var1;
       this.z = var2;
    }

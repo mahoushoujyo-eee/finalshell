@@ -12,11 +12,11 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class ConfirmClearHistoryListener implements ActionListener {
-   final ClearListDialog I;
+   public final ClearListDialog I;
    public static String[] a;
    public static String[] b;
 
-   ConfirmClearHistoryListener(ClearListDialog var1) {
+   public ConfirmClearHistoryListener(ClearListDialog var1) {
       this.I = var1;
    }
 

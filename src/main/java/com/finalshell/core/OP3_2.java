@@ -10,8 +10,8 @@ import javax.swing.tree.TreePath;
 
 public class OP3_2 implements Transferable {
    public static DataFlavor w;
-   DataFlavor[] H;
-   TreePath v;
+   public DataFlavor[] H;
+   public TreePath v;
 
    public OP3_2(TreePath var1) {
       DataFlavor[] var10001 = new DataFlavor[]{(DataFlavor)Registry.lookupField(387210057534719865L).get(null)};

@@ -10,9 +10,9 @@ import javax.swing.JWindow;
 import net.miginfocom.swing.MigLayout;
 
 public class Ah2 extends JWindow {
-   JScrollPane j;
-   HashMap b;
-   JPanel I;
+   public JScrollPane j;
+   public HashMap b;
+   public JPanel I;
    public static String[] a;
    public static String[] c;
    public static long[] d;

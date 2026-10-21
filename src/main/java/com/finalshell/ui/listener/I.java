@@ -7,9 +7,9 @@ import java.awt.event.KeyListener;
 import javax.swing.KeyStroke;
 
 public class I implements KeyListener {
-   boolean t;
-   int Z;
-   final SetBackgroundImagePanel W;
+   public boolean t;
+   public int Z;
+   public final SetBackgroundImagePanel W;
    public static long[] a;
    public static Integer[] b;
 
@@ -44,7 +44,7 @@ public class I implements KeyListener {
          this.W.ce = System.currentTimeMillis();
          this.W.cQ = true;
          this.W.cw = var1.getKeyCode();
-         var6 = this.W.Z(var1);
+         var6 = (this.W.Z(var1)) ? 1 : 0;
       }
 
       int var5 = var6;

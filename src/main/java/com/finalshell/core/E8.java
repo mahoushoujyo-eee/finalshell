@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 public class E8 {
    public static byte[] D;
    public static String[] l;
-   static byte[] z;
+   public static byte[] z;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -75,7 +75,7 @@ public class E8 {
       // 5d: ireturn
    }
 
-   static byte[] M(byte[] param0, int param1, int param2) throws Pc2 {
+   public static byte[] M(byte[] param0, int param1, int param2) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -258,7 +258,7 @@ public class E8 {
       // 141: athrow
    }
 
-   static byte[] V(byte[] param0, int param1, int param2, boolean param3) {
+   public static byte[] V(byte[] param0, int param1, int param2, boolean param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -573,7 +573,7 @@ public class E8 {
       // 23b: areturn
    }
 
-   static String[] b(String param0, String param1) {
+   public static String[] b(String param0, String param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -669,7 +669,7 @@ public class E8 {
       // a8: areturn
    }
 
-   static boolean j(byte[] var0, byte[] var1) {
+   public static boolean j(byte[] var0, byte[] var1) {
       return f(var0, 0, var1, 0);
    }
 
@@ -1290,7 +1290,7 @@ public class E8 {
       // 40f: ireturn
    }
 
-   static String W(String param0) {
+   public static String W(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1441,7 +1441,7 @@ public class E8 {
       // 12e: areturn
    }
 
-   static String v(String param0) {
+   public static String v(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1477,7 +1477,7 @@ public class E8 {
       // 2a: areturn
    }
 
-   static byte[] V(byte[] param0) {
+   public static byte[] V(byte[] param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1575,7 +1575,7 @@ public class E8 {
       // 9a: areturn
    }
 
-   static String s(Y_2 param0, byte[] param1, boolean param2, boolean param3) {
+   public static String s(Y_2 param0, byte[] param1, boolean param2, boolean param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1731,7 +1731,7 @@ public class E8 {
       // 13d: areturn
    }
 
-   static boolean I(byte[] param0, byte[] param1) {
+   public static boolean I(byte[] param0, byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1792,7 +1792,7 @@ public class E8 {
       // 59: ireturn
    }
 
-   static Socket k(String param0, int param1, int param2) throws Pc2 {
+   public static Socket k(String param0, int param1, int param2) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1941,7 +1941,7 @@ public class E8 {
       // 123: areturn
    }
 
-   static byte[] t(String var0, Charset var1) {
+   public static byte[] t(String var0, Charset var1) {
       try {
          if (var0 == null) {
             return null;
@@ -1957,23 +1957,23 @@ public class E8 {
       return t(var0, StandardCharsets.UTF_8);
    }
 
-   static String y(byte[] var0, Charset var1) {
+   public static String y(byte[] var0, Charset var1) {
       return d(var0, 0, var0.length, var1);
    }
 
-   static String d(byte[] var0, int var1, int var2, Charset var3) {
+   public static String d(byte[] var0, int var1, int var2, Charset var3) {
       return new String(var0, var1, var2, var3);
    }
 
-   static String B(byte[] var0) {
+   public static String B(byte[] var0) {
       return d(var0, 0, var0.length, StandardCharsets.UTF_8);
    }
 
-   static String O(byte[] var0, int var1, int var2) {
+   public static String O(byte[] var0, int var1, int var2) {
       return d(var0, var1, var2, StandardCharsets.UTF_8);
    }
 
-   static String j(byte[] param0) {
+   public static String j(byte[] param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2060,7 +2060,7 @@ public class E8 {
       // 9c: areturn
    }
 
-   static void Q(byte[] var0) {
+   public static void Q(byte[] var0) {
       boolean var1 = Dm4.J$boolean();
 
       try {
@@ -2082,7 +2082,7 @@ public class E8 {
       }
    }
 
-   static String z(String param0, String[] param1) {
+   public static String z(String param0, String[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2168,7 +2168,7 @@ public class E8 {
       // 96: areturn
    }
 
-   static String V(String param0) {
+   public static String V(String param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2274,7 +2274,7 @@ public class E8 {
       // 77: ireturn
    }
 
-   static byte[] w(String var0) throws IOException {
+   public static byte[] w(String var0) throws IOException {
       var0 = V(var0);
       boolean var10000 = Dm4.F$boolean();
       File var2 = new File(var0);
@@ -2320,7 +2320,7 @@ public class E8 {
       return var11;
    }
 
-   static boolean Y(byte[] param0, byte[] param1) {
+   public static boolean Y(byte[] param0, byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2384,7 +2384,7 @@ public class E8 {
       // 5a: ireturn
    }
 
-   static String F(String var0) {
+   public static String F(String var0) {
       try {
          return System.getenv(var0);
       } catch (SecurityException var2) {
@@ -2392,7 +2392,7 @@ public class E8 {
       }
    }
 
-   static String T(String var0) {
+   public static String T(String var0) {
       try {
          return System.getProperty(var0);
       } catch (SecurityException var2) {
@@ -2400,7 +2400,7 @@ public class E8 {
       }
    }
 
-   static String V(String var0, String var1) {
+   public static String V(String var0, String var1) {
       try {
          return System.getProperty(var0, var1);
       } catch (SecurityException var3) {

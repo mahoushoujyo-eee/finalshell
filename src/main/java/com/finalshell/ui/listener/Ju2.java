@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ju2 implements ActionListener {
-   final SyncPasswordDialog e;
+   public final SyncPasswordDialog e;
 
-   Ju2(SyncPasswordDialog var1) {
+   public Ju2(SyncPasswordDialog var1) {
       this.e = var1;
    }
 

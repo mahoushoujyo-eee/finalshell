@@ -13,17 +13,14 @@ import java.security.spec.ECPrivateKeySpec;
 import java.security.spec.ECPublicKeySpec;
 
 public abstract class Lr2_2 implements Q0_2 {
-   Signature m;
-   KeyFactory j;
+   public Signature m;
+   public KeyFactory j;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   Lr2_2() {
-   }
-
-   abstract String X();
+   public abstract String X();
 
    @Override
    public void k$void() throws Exception {

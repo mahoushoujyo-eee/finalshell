@@ -29,7 +29,7 @@ public class I_6 implements H_4 {
       return this.T.remove(var1) != null;
    }
 
-   static Map T(I_6 var0) {
+   public static Map T(I_6 var0) {
       return var0.T;
    }
 }

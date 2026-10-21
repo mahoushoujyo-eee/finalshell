@@ -24,14 +24,14 @@ import java.io.File;
 import javax.swing.ImageIcon;
 
 public class DK extends Y2 implements OM {
-   protected static ImageIcon G;
-   protected static ImageIcon d;
-   protected static ImageIcon y;
-   protected static ImageIcon O;
-   protected KF3 r;
-   protected KD j;
-   protected KD L;
-   protected int z;
+   public static ImageIcon G;
+   public static ImageIcon d;
+   public static ImageIcon y;
+   public static ImageIcon O;
+   public KF3 r;
+   public KD j;
+   public KD L;
+   public int z;
    public static String[] b;
    public static String[] c;
    public static long[] e;
@@ -42,8 +42,8 @@ public class DK extends Y2 implements OM {
    }
 
    public DK(Window var1, String var2) {
+   super(var1, var2 != null ? var2 : a(-18596, 14137));
       String var3 = Kz4.M();
-      super(var1, var2 != null ? var2 : a(-18596, 14137));
       this.z = a(3101, 4821580893607360855L);
       this.setIconImage(G.getImage());
       W62.x(this.getRootPane(), GR.rC);
@@ -84,7 +84,7 @@ public class DK extends Y2 implements OM {
       }
    }
 
-   protected void z(File var1) {
+   public void z(File var1) {
       this.j.setEnabled(var1 != null);
    }
 

@@ -9,24 +9,24 @@ import java.util.Random;
 import org.apache.hc.client5.http.classic.HttpClient;
 
 public class XI_2 {
-   boolean U;
-   String S;
-   int H;
-   Object M;
-   long A;
-   Di4_2 I;
-   String T;
-   String m;
-   Qa2 P;
-   Random b;
-   String z;
-   boolean E;
+   public boolean U;
+   public String S;
+   public int H;
+   public Object M;
+   public long A;
+   public Di4_2 I;
+   public String T;
+   public String m;
+   public Qa2 P;
+   public Random b;
+   public String z;
+   public boolean E;
    public static ThreadLocal w;
    public static DS3_2 u;
-   int t;
-   boolean G;
-   boolean x;
-   int v;
+   public int t;
+   public boolean G;
+   public boolean x;
+   public int v;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -98,15 +98,15 @@ public class XI_2 {
       return (String)Ref.g(146403695651422135L, var1);
    }
 
-   int P() {
+   public int P() {
       return a(31061, 4234996349394054626L);
    }
 
-   String t() {
+   public String t() {
       return "d";
    }
 
-   int C(int var1) {
+   public int C(int var1) {
       return var1 * a(1134, 6567794848407818461L);
    }
 
@@ -168,7 +168,7 @@ public class XI_2 {
       return var8;
    }
 
-   static byte[] r(int var0) {
+   public static byte[] r(int var0) {
       int var2 = a(4624, 7771378535212254882L) + new Random().nextInt(var0 - a(31910, 2002742202344564758L));
       byte[] var3 = new byte[var2];
       Ky4[] var10000 = YT3_2.c();

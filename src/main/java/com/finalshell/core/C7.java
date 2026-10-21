@@ -8,9 +8,9 @@ import java.util.HashSet;
 
 public class C7 {
    public String i;
-   KV G;
-   ArrayList F;
-   ArrayList v;
+   public KV G;
+   public ArrayList F;
+   public ArrayList v;
    public static String[] a;
    public static String[] b;
 

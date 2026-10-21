@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class Lk2 implements ActionListener {
-   final File y;
-   final Kc4 E;
+   public final File y;
+   public final Kc4 E;
 
-   Lk2(Kc4 var1, File var2) {
+   public Lk2(Kc4 var1, File var2) {
       this.E = var1;
       this.y = var2;
    }

@@ -7,11 +7,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class LT implements ActionListener {
-   final com.finalshell.ui.frame.U a;
+   public final com.finalshell.ui.frame.U a;
    public static long[] b;
    public static Long[] c;
 
-   LT(com.finalshell.ui.frame.U var1) {
+   public LT(com.finalshell.ui.frame.U var1) {
       this.a = var1;
    }
 
@@ -35,7 +35,7 @@ public class LT implements ActionListener {
          long var3 = var10002 - var41;
          long var2 = var10001;
          int var35 = (((com.finalshell.ui.dialog.KQ)Registry.lookupField(199832172921665052L).get(null)).isVisible()) ? 1 : 0;
-         if (var2 == null) {
+         if (var2 == 0) {
             if (var35 != 0) {
                Registry.lookupField(199832172921665052L).get(null);
                var10002 = Registry.emptyArgs();
@@ -52,7 +52,7 @@ public class LT implements ActionListener {
                Object var5 = var10002;
                long var46;
                var10002 = (var46 = var3 - a(27195, 8548535950817463058L)) == 0L ? 0 : (var46 < 0L ? -1 : 1);
-               if (var2 == null) {
+               if (var2 == 0) {
                   if (var10002 > 0) {
                      var5 = true;
                   }
@@ -73,8 +73,8 @@ public class LT implements ActionListener {
                   this.equals((com.finalshell.ui.frame.U)Ref.g(181600139630751244L, var12));
                }
 
-               if (var2 == null) {
-                  if (var10002 == false) {
+               if (var2 == 0) {
+                  if (var10002 == null) {
                      var5 = true;
                   }
 
@@ -82,7 +82,7 @@ public class LT implements ActionListener {
                }
 
                label100: {
-                  if (var10002 != false) {
+                  if (var10002 == null) {
                      Object var14 = 181600139630751244L;
                      Ref.g(181600139630751244L, var14);
                      Object[] var10004 = Registry.emptyArgs();
@@ -96,7 +96,7 @@ public class LT implements ActionListener {
                         throw var31.getTargetException();
                      }
 
-                     if (var2 == null) {
+                     if (var2 == 0) {
                         break label100;
                      }
                   }
@@ -114,7 +114,7 @@ public class LT implements ActionListener {
                   }
                }
 
-               if (var2 == null) {
+               if (var2 == 0) {
                   break label94;
                }
             }

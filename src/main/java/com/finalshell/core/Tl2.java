@@ -3,8 +3,8 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 
 public class Tl2 {
-   String G;
-   String t;
+   public String G;
+   public String t;
 
    public Tl2(String var1, String var2) {
       long var4 = 597247386419234771L;

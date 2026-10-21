@@ -7,9 +7,9 @@ import com.finalshell.ui.panel.Connection4;
 import java.lang.reflect.InvocationTargetException;
 
 public class M implements Runnable {
-   final ConfirmDeleteFolderListener2 n;
+   public final ConfirmDeleteFolderListener2 n;
 
-   M(ConfirmDeleteFolderListener2 var1) {
+   public M(ConfirmDeleteFolderListener2 var1) {
       this.n = var1;
    }
 

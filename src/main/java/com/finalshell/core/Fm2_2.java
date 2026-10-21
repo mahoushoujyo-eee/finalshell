@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class Fm2_2 implements C_J {
-   final O_6 M;
-   final C_f_2[] O;
-   final Ht2_2 Z;
+   public final O_6 M;
+   public final C_f_2[] O;
+   public final Ht2_2 Z;
    public static String[] a;
    public static String[] b;
 
-   Fm2_2(Ht2_2 var1, O_6 var2, C_f_2[] var3) {
+   public Fm2_2(Ht2_2 var1, O_6 var2, C_f_2[] var3) {
       this.Z = var1;
       this.M = var2;
       this.O = var3;

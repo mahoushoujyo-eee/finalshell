@@ -8,11 +8,11 @@ import java.awt.event.KeyEvent;
 import javax.swing.JList;
 
 public class X5 extends KeyAdapter {
-   final FocusAdapter H;
-   final JList I;
-   final WO3 Z;
+   public final FocusAdapter H;
+   public final JList I;
+   public final WO3 Z;
 
-   X5(WO3 var1, FocusAdapter var2, JList var3) {
+   public X5(WO3 var1, FocusAdapter var2, JList var3) {
       this.Z = var1;
       this.H = var2;
       this.I = var3;

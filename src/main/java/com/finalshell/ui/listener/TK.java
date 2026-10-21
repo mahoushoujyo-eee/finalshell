@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class TK implements ActionListener {
-   final RouteTracePanel2 B;
+   public final RouteTracePanel2 B;
 
-   TK(RouteTracePanel2 var1) {
+   public TK(RouteTracePanel2 var1) {
       this.B = var1;
    }
 

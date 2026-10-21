@@ -5,7 +5,7 @@ import javax.swing.Icon;
 import javax.swing.filechooser.FileView;
 
 public class MZ extends FileView {
-   final A4_2 b;
+   public final A4_2 b;
 
    public MZ(A4_2 var1) {
       this.b = var1;

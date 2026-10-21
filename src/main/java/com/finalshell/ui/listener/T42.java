@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class T42 implements ActionListener {
-   final SwitchTabCommand f;
+   public final SwitchTabCommand f;
 
-   T42(SwitchTabCommand var1) {
+   public T42(SwitchTabCommand var1) {
       this.f = var1;
    }
 

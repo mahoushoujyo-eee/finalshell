@@ -20,25 +20,25 @@ import java.util.concurrent.TimeUnit;
 public class LA3 {
    public DatagramSocket X;
    public HashMap O;
-   Thread s;
-   Thread A;
+   public Thread s;
+   public Thread A;
    public static ThreadPoolExecutor b;
    public Uf2 x;
-   Object f;
-   Object B;
-   Random G;
+   public Object f;
+   public Object B;
+   public Random G;
    public int K;
-   LinkedBlockingQueue Q;
+   public LinkedBlockingQueue Q;
    public static int d;
    public static int w;
    public int i;
-   String V;
-   HashSet k;
-   HashSet W;
+   public String V;
+   public HashSet k;
+   public HashSet W;
    public static int R;
    public static int E;
-   Dl2 e;
-   HashSet h;
+   public Dl2 e;
+   public HashSet h;
    public F92 n;
    public boolean P;
    public HashMap T;
@@ -217,7 +217,7 @@ public class LA3 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   static void F(Cr4 var0) {
+   public static void F(Cr4 var0) {
       Ky4[] var1 = Qm2.J();
       Iterator var3 = r.iterator();
       int var10000;
@@ -327,7 +327,7 @@ public class LA3 {
       return var1;
    }
 
-   void g(Qm2 var1) {
+   public void g(Qm2 var1) {
       synchronized (this.f) {
          this.W.add(var1.W);
          this.O.remove(var1.W);

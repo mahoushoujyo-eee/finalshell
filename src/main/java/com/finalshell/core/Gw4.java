@@ -117,7 +117,7 @@ public class Gw4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       float var5 = (float)var1 - this.s;
       String[] var10000 = W5.q();
       float var6 = (float)var2 - this.I;

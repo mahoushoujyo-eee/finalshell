@@ -4,12 +4,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class N {
-   String Q;
+   public String Q;
    public long d;
    public long V;
-
-   N() {
-   }
 
    public String o() {
       Object var1 = 159650061954345832L;

@@ -20,7 +20,7 @@ public class ZB extends Zq2 implements X4 {
    }
 
    @Override
-   protected Object m(Yn4 param1, Type param2, Object param3, Object param4) {
+   public Object m(Yn4 param1, Type param2, Object param3, Object param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -213,7 +213,7 @@ public class ZB extends Zq2 implements X4 {
       // 1a1: areturn
    }
 
-   protected Object A(Yn4 param1, Type param2, Object param3, Object param4) {
+   public Object A(Yn4 param1, Type param2, Object param3, Object param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

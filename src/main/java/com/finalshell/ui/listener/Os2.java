@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Os2 implements ActionListener {
-   final ImportPanel x;
+   public final ImportPanel x;
 
-   Os2(ImportPanel var1) {
+   public Os2(ImportPanel var1) {
       this.x = var1;
    }
 

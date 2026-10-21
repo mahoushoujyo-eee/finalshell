@@ -17,7 +17,7 @@ public final class DC3 {
    public com.finalshell.ui.model.Bf2 Q = new com.finalshell.ui.model.Bf2(null);
    public boolean p = false;
    public final List R = new ArrayList();
-   DC3 N;
+   public DC3 N;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -810,7 +810,7 @@ public final class DC3 {
       return var10000;
    }
 
-   void R(@NotNull Consumer var1) {
+   public void R(@NotNull Consumer var1) {
       this.Q.forEach(var1);
    }
 
@@ -818,7 +818,7 @@ public final class DC3 {
       return Collections.unmodifiableList(com.finalshell.ui.model.Bf2.T(this.Q));
    }
 
-   void s(@NotNull Lu4 var1) {
+   public void s(@NotNull Lu4 var1) {
       this.Q.n(var1);
    }
 
@@ -850,7 +850,7 @@ public final class DC3 {
       return var0.v().toString();
    }
 
-   static List G(DC3 var0) {
+   public static List G(DC3 var0) {
       return var0.R;
    }
 

@@ -4,11 +4,11 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.panel.Address;
 
 public class YY3 implements Runnable {
-   String I;
-   final Address L;
+   public String I;
+   public final Address L;
    public static String a;
 
-   YY3(Address var1) {
+   public YY3(Address var1) {
       this.L = var1;
       long var3 = 418566300718631713L;
       Object var2 = null;

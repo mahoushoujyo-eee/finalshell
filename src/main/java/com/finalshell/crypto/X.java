@@ -14,9 +14,6 @@ public class X extends Policy {
    public static String[] a;
    public static String[] b;
 
-   X() {
-   }
-
    @F_4(false)
    @Override
    public PermissionCollection getPermissions(CodeSource var1) {

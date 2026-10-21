@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LY3 implements ActionListener {
-   final KeyManagerFrame c;
+   public final KeyManagerFrame c;
 
-   LY3(KeyManagerFrame var1) {
+   public LY3(KeyManagerFrame var1) {
       this.c = var1;
    }
 

@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.core.NF;
 
 public class BT_2 implements Runnable {
-   final Throwable S;
-   final NF J;
+   public final Throwable S;
+   public final NF J;
 
-   BT_2(NF var1, Throwable var2) {
+   public BT_2(NF var1, Throwable var2) {
       this.J = var1;
       this.S = var2;
    }

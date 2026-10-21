@@ -9,9 +9,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class OB implements MouseListener {
-   final Xw2 W;
+   public final Xw2 W;
 
-   OB(Xw2 var1) {
+   public OB(Xw2 var1) {
       this.W = var1;
    }
 

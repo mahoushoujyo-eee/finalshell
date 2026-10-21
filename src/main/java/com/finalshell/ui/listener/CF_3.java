@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CF_3 implements ActionListener {
-   final II y;
+   public final II y;
 
-   CF_3(II var1) {
+   public CF_3(II var1) {
       this.y = var1;
    }
 

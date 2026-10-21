@@ -4,7 +4,7 @@ import com.finalshell.ui.model.Ks2;
 
 // $VF: synthetic class
 public class FK3 {
-   static int[] s;
+   public static int[] s;
 
    static {
       __vfClinit__();

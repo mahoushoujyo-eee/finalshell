@@ -4,8 +4,8 @@ import java.net.DatagramPacket;
 
 public class WX extends WC {
    public short h = D6.O;
-   byte[] j;
-   int M;
+   public byte[] j;
+   public int M;
    public static long[] a;
    public static Integer[] b;
 

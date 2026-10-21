@@ -4,7 +4,7 @@ import javax.swing.SortOrder;
 
 // $VF: synthetic class
 public class A8 {
-   static int[] e;
+   public static int[] e;
 
    static {
       __vfClinit__();

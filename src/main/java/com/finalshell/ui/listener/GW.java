@@ -10,9 +10,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class GW implements ListSelectionListener {
-   final ClearListDialog n;
+   public final ClearListDialog n;
 
-   GW(ClearListDialog var1) {
+   public GW(ClearListDialog var1) {
       this.n = var1;
    }
 

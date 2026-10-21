@@ -8,9 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class K12 implements ActionListener {
-   final KD3 A;
+   public final KD3 A;
 
-   K12(KD3 var1) {
+   public K12(KD3 var1) {
       this.A = var1;
    }
 

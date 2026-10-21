@@ -12,10 +12,10 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class Jt2 implements MouseListener {
-   final int Q;
-   final EditDialog2 s;
+   public final int Q;
+   public final EditDialog2 s;
 
-   Jt2(EditDialog2 var1, int var2) {
+   public Jt2(EditDialog2 var1, int var2) {
       this.s = var1;
       this.Q = var2;
    }
@@ -175,7 +175,7 @@ public class Jt2 implements MouseListener {
                }
 
                if (var2) {
-                  if (var10010 == false) {
+                  if (var10010 == null) {
                      break label118;
                   }
 
@@ -189,7 +189,7 @@ public class Jt2 implements MouseListener {
                   }
                }
 
-               if (var10010 != false) {
+               if (var10010 == null) {
                   Object var46 = 377989578805733666L;
                   Ref.g(377989578805733666L, var46);
                   long var49 = 518641299092321834L;

@@ -7,8 +7,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class TZ extends TN {
-   boolean x;
-   long C;
+   public boolean x;
+   public long C;
 
    public TZ(boolean var1, long var2) {
       this.n = Dq2.d;

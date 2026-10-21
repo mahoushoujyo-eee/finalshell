@@ -4,14 +4,14 @@ public class C_s_2 extends C_L {
    public final J_5 OU;
    @C_9
    public final J_5 OQ;
-   static boolean OT;
-   final W3_6 O6;
+   public static boolean OT;
+   public final W3_6 O6;
    public static String[] cb;
    public static String[] db;
    public static long[] eb;
    public static Integer[] fb;
 
-   C_s_2(W3_6 var1, @C_9 J_5 var2, J_5 var3, C_L var4) {
+   public C_s_2(W3_6 var1, @C_9 J_5 var2, J_5 var3, C_L var4) {
       super(var4);
       this.O6 = var1;
       this.OU = var2;
@@ -21,7 +21,7 @@ public class C_s_2 extends C_L {
 
    @C_9
    @Override
-   protected Hd2 x(String param1) throws ClassNotFoundException {
+   public Hd2 x(String param1) throws ClassNotFoundException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

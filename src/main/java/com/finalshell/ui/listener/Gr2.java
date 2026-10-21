@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Gr2 implements ActionListener {
-   final ConnectionProperty V;
+   public final ConnectionProperty V;
 
-   Gr2(ConnectionProperty var1) {
+   public Gr2(ConnectionProperty var1) {
       this.V = var1;
    }
 

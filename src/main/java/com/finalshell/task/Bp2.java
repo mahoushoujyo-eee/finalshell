@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JOptionPane;
 
 public class Bp2 implements Runnable {
-   String D;
-   final TA E;
+   public String D;
+   public final TA E;
 
-   Bp2(TA var1) {
+   public Bp2(TA var1) {
       this.E = var1;
       long var3 = 547712353249085906L;
       Object var2 = null;
@@ -44,7 +44,7 @@ public class Bp2 implements Runnable {
       }
 
       Object var1 = var10006;
-      if (var1 != false) {
+      if (var1 == null) {
          Object var15 = 547712353249085906L;
          if ((String)Ref.g(547712353249085906L, var15) != null) {
             var10007 = null;

@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class F__2 implements ActionListener {
-   final EditDialog3 p;
+   public final EditDialog3 p;
 
-   F__2(EditDialog3 var1) {
+   public F__2(EditDialog3 var1) {
       this.p = var1;
    }
 

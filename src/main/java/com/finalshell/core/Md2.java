@@ -11,41 +11,41 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Md2 implements Yx2 {
-   Socket a;
-   Socket S;
+   public Socket a;
+   public Socket S;
    public DataInputStream I;
    public DataOutputStream M;
    public DataInputStream g;
    public DataOutputStream m;
-   Object Q = new Object();
-   Object K = new Object();
-   Object X = new Object();
-   Object F = new Object();
-   ArrayList U = new ArrayList();
-   ArrayList j = new ArrayList();
-   byte[] s = new byte[0];
-   int T = 1;
-   int t = 1;
-   boolean n = false;
-   boolean x = false;
-   boolean O = false;
-   boolean v = false;
-   boolean w = false;
-   boolean V = false;
-   boolean q = false;
-   String Z;
-   String p;
-   static int N;
-   Random k;
-   long h;
-   static int c;
-   boolean C;
-   long i;
-   static ExecutorService b;
-   Socket B;
-   Socket P;
-   int r;
-   String R;
+   public Object Q = new Object();
+   public Object K = new Object();
+   public Object X = new Object();
+   public Object F = new Object();
+   public ArrayList U = new ArrayList();
+   public ArrayList j = new ArrayList();
+   public byte[] s = new byte[0];
+   public int T = 1;
+   public int t = 1;
+   public boolean n = false;
+   public boolean x = false;
+   public boolean O = false;
+   public boolean v = false;
+   public boolean w = false;
+   public boolean V = false;
+   public boolean q = false;
+   public String Z;
+   public String p;
+   public static int N;
+   public Random k;
+   public long h;
+   public static int c;
+   public boolean C;
+   public long i;
+   public static ExecutorService b;
+   public Socket B;
+   public Socket P;
+   public int r;
+   public String R;
    public static String d;
 
    static {
@@ -78,7 +78,7 @@ public class Md2 implements Yx2 {
       return this.i;
    }
 
-   void s$void() {
+   public void s$void() {
       this.i = System.currentTimeMillis();
    }
 
@@ -145,7 +145,7 @@ public class Md2 implements Yx2 {
       }
    }
 
-   void z() {
+   public void z() {
       this.n();
    }
 

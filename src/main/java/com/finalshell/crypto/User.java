@@ -38,25 +38,25 @@ import javax.swing.JTextArea;
 import net.miginfocom.swing.MigLayout;
 
 public class User extends Z7 {
-   JLabel X;
-   JLabel B;
-   JPasswordField F;
-   FP k;
-   JLabel d;
-   JButton W;
+   public JLabel X;
+   public JLabel B;
+   public JPasswordField F;
+   public FP k;
+   public JLabel d;
+   public JButton W;
    public static String A;
    public int Y;
    public int L;
    public int J;
    public int x;
-   boolean T;
+   public boolean T;
    public static int y;
    public static String[] a;
    public static String[] b;
    public static long[] f;
    public static Integer[] g;
 
-   User(FP var1) {
+   public User(FP var1) {
       Registry.lookupField(390210343425911914L).setInt(this, 1);
       Registry.lookupField(122080408670342351L).setInt(this, a(28958, 7538368611283997663L));
       Registry.lookupField(488912842222213458L).setInt(this, a(5614, 4591630841062389536L));
@@ -175,7 +175,7 @@ public class User extends Z7 {
          throw var83.getTargetException();
       }
 
-new Un2(var10023, var88);
+var10022 = new Un2(var10023, var88);
       Object[] var15 = var10021;
       this.add(var15, a(-8128, 20675));
       var15.addActionListener(new Un2(this, var15));
@@ -251,7 +251,7 @@ new Un2(var10023, var88);
       }
 
       var21.setText(var10030);
-      if (var7 == false) {
+      if (var7 == null) {
          Ky4.K(new String[5]);
       }
    }
@@ -433,7 +433,7 @@ new Un2(var10023, var88);
       // 192: return
    }
 
-   void b() {
+   public void b() {
       w();
       Registry.emptyArgs();
       long var9 = 270389152141252877L;
@@ -469,7 +469,7 @@ new Un2(var10023, var88);
          Object var10006;
          label249: {
             label240: {
-               if (var1 != false) {
+               if (var1 == null) {
                   var10003 = Registry.packArgs(var10003);
                   long var15 = 330094358428833085L;
                   Object var10004 = Ref.h2(330094358428833085L, var15);
@@ -493,7 +493,7 @@ new Un2(var10023, var88);
                      }
 
                      var10006 = var1;
-                     if (var1 == false) {
+                     if (var1 == null) {
                         break label249;
                      }
 
@@ -517,7 +517,7 @@ new Un2(var10023, var88);
                }
 
                var3 = var10003;
-               if (var1 != false) {
+               if (var1 == null) {
                   break label248;
                }
             }
@@ -561,7 +561,7 @@ new Un2(var10023, var88);
          }
 
          Fc2 var7 = var10009;
-         if (var1 == false) {
+         if (var1 == null) {
             return;
          }
 
@@ -581,11 +581,11 @@ new Un2(var10023, var88);
             var4 = var91;
             int var92 = var4;
             int var10011 = Qc2.Q;
-            if (var1 != false) {
+            if (var1 == null) {
                if (var4 == Qc2.Q) {
                   Registry.lookupField(133925469553480382L).setBoolean(this, true);
                   var3 = a(-8116, -29129);
-                  if (var1 != false) {
+                  if (var1 == null) {
                      break label225;
                   }
                }
@@ -595,7 +595,7 @@ new Un2(var10023, var88);
             }
 
             label253: {
-               if (var1 != false) {
+               if (var1 == null) {
                   if (var92 == var10011) {
                      Object[] var93 = Registry.emptyArgs();
                      long var36 = 326351988475965557L;
@@ -610,7 +610,7 @@ new Un2(var10023, var88);
 
                      label211: {
                         label255: {
-                           if (var1 != false) {
+                           if (var1 == null) {
                               if (var95 == false) {
                                  break label255;
                               }
@@ -625,11 +625,11 @@ new Un2(var10023, var88);
                               }
                            }
 
-                           if (var1 != false) {
+                           if (var1 == null) {
                               if (var95 != false) {
                                  Registry.lookupField(133925469553480382L).setBoolean(this, true);
                                  var3 = a(-8118, -1733);
-                                 if (var1 != false) {
+                                 if (var1 == null) {
                                     break label211;
                                  }
                               }
@@ -655,14 +655,14 @@ new Un2(var10023, var88);
                            if (var95 != false) {
                               Registry.lookupField(133925469553480382L).setBoolean(this, true);
                               var3 = a(-8100, -8539);
-                              if (var1 != false) {
+                              if (var1 == null) {
                                  break label211;
                               }
                            }
 
                            Registry.lookupField(133925469553480382L).setBoolean(this, false);
                            var3 = a(-8115, -20209);
-                           if (var1 != false) {
+                           if (var1 == null) {
                               break label211;
                            }
                         }
@@ -675,7 +675,7 @@ new Un2(var10023, var88);
                         SimpleDateFormat var8;
                         label193: {
                            var8 = new SimpleDateFormat((String)Registry.lookupField(231329429374491840L).get(null));
-                           if (var1 != false) {
+                           if (var1 == null) {
                               if (var7 != null) {
                                  Object[] var96 = Registry.emptyArgs();
                                  long var46 = 412439471829603520L;
@@ -696,7 +696,7 @@ new Un2(var10023, var88);
                               Registry.lookupField(133925469553480382L).setBoolean(this, true);
                            }
 
-                           if (var1 != false) {
+                           if (var1 == null) {
                               break label258;
                            }
                         }
@@ -716,7 +716,7 @@ new Un2(var10023, var88);
                         var5 = var8.append(var7.format(Long.valueOf(var102))).toString();
                      }
 
-                     if (var1 != false) {
+                     if (var1 == null) {
                         break label253;
                      }
                   }
@@ -725,11 +725,11 @@ new Un2(var10023, var88);
                   var10011 = Qc2.i;
                }
 
-               if (var1 != false) {
+               if (var1 == null) {
                   if (var92 == var10011) {
                      Registry.lookupField(133925469553480382L).setBoolean(this, true);
                      var3 = a(-8120, 2455);
-                     if (var1 != false) {
+                     if (var1 == null) {
                         break label253;
                      }
                   }
@@ -741,7 +741,7 @@ new Un2(var10023, var88);
                if (var92 == var10011) {
                   Registry.lookupField(133925469553480382L).setBoolean(this, true);
                   var3 = a(-8093, 7650);
-                  if (var1 != false) {
+                  if (var1 == null) {
                      break label253;
                   }
                }
@@ -784,7 +784,7 @@ new Un2(var10023, var88);
       ((JButton)Ref.g(201427103655713904L, var1)).setEnabled(true);
    }
 
-   void P() {
+   public void P() {
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
       Ref.h2(270389152141252877L, var2);
@@ -800,7 +800,7 @@ new Un2(var10023, var88);
       }
    }
 
-   void H() {
+   public void H() {
       Registry.emptyArgs();
       long var3 = 270389152141252877L;
       Ref.h2(270389152141252877L, var3);

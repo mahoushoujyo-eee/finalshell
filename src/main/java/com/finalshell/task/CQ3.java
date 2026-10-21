@@ -11,11 +11,11 @@ import java.util.Date;
 import javax.swing.SwingUtilities;
 
 public class CQ3 implements Runnable {
-   final YT3_2 T;
+   public final YT3_2 T;
    public static String[] a;
    public static String[] b;
 
-   CQ3(YT3_2 var1) {
+   public CQ3(YT3_2 var1) {
       this.T = var1;
    }
 

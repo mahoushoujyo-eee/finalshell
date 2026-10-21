@@ -82,7 +82,7 @@ public class E52 extends PlainDocument {
       // 88: return
    }
 
-   protected boolean e(int var1) {
+   public boolean e(int var1) {
       return true;
    }
 

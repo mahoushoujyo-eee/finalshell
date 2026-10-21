@@ -12,7 +12,7 @@ public class ReadDoneTask5 extends Thread {
    public static long[] d;
    public static Integer[] e;
 
-   ReadDoneTask5(InputStream var1) {
+   public ReadDoneTask5(InputStream var1) {
       this.c = var1;
    }
 

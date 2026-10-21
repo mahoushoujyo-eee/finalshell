@@ -4,9 +4,9 @@ import com.finalshell.core.Xq2;
 import com.finalshell.core.YT3_2;
 
 public class Xo2 implements Runnable {
-   final YT3_2 E;
+   public final YT3_2 E;
 
-   Xo2(YT3_2 var1) {
+   public Xo2(YT3_2 var1) {
       this.E = var1;
    }
 

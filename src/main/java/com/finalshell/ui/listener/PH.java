@@ -6,9 +6,9 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class PH extends WindowAdapter {
-   final YM G;
+   public final YM G;
 
-   PH(YM var1) {
+   public PH(YM var1) {
       this.G = var1;
    }
 

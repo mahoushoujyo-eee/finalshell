@@ -5,9 +5,9 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 public abstract class Nk2_2 {
-   protected short L = 0;
-   protected short R;
-   protected DatagramPacket o;
+   public short L = 0;
+   public short R;
+   public DatagramPacket o;
    public static String[] D;
 
    public Nk2_2() {

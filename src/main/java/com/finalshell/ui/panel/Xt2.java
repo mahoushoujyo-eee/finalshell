@@ -23,7 +23,7 @@ public class Xt2 extends JComponent {
    public WC_2 R;
    public int H;
    public int w;
-   final KW3 z;
+   public final KW3 z;
    public static String[] b;
    public static String[] c;
 
@@ -132,7 +132,7 @@ public class Xt2 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       int var10000 = (OY3.y$boolean()) ? 1 : 0;
       super.paintComponent(var1);
       boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -373,39 +373,39 @@ public class Xt2 extends JComponent {
       return var10000.v();
    }
 
-   static int M(Xt2 var0) {
+   public static int M(Xt2 var0) {
       return var0.H;
    }
 
-   static int F(Xt2 var0, int var1) {
+   public static int F(Xt2 var0, int var1) {
       return var0.H += var1;
    }
 
-   static int i(Xt2 var0, int var1) {
+   public static int i(Xt2 var0, int var1) {
       return var0.H = var1;
    }
 
-   static WC_2 K(Xt2 var0) {
+   public static WC_2 K(Xt2 var0) {
       return var0.G;
    }
 
-   static int u(Xt2 var0) {
+   public static int u(Xt2 var0) {
       return var0.w;
    }
 
-   static int t(Xt2 var0, int var1) {
+   public static int t(Xt2 var0, int var1) {
       return var0.w += var1;
    }
 
-   static int X(Xt2 var0, int var1) {
+   public static int X(Xt2 var0, int var1) {
       return var0.w = var1;
    }
 
-   static int n(Xt2 var0, int var1) {
+   public static int n(Xt2 var0, int var1) {
       return var0.H -= var1;
    }
 
-   static void a(Xt2 var0) {
+   public static void a(Xt2 var0) {
       var0.f();
    }
 

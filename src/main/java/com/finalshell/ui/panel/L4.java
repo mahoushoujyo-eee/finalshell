@@ -6,9 +6,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
 public class L4 extends JScrollPane {
-   final PathPanel S;
+   public final PathPanel S;
 
-   L4(PathPanel var1, Component var2) {
+   public L4(PathPanel var1, Component var2) {
       super(var2);
       this.S = var1;
    }

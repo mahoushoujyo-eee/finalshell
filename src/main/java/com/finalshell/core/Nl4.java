@@ -1,22 +1,22 @@
 package com.finalshell.core;
 
 public final class Nl4 {
-   int J;
-   int p;
-   int Y;
-   long E;
-   String P;
-   String k;
-   String U;
-   int r;
-   Nl4 B;
+   public int J;
+   public int p;
+   public int Y;
+   public long E;
+   public String P;
+   public String k;
+   public String U;
+   public int r;
+   public Nl4 B;
    public static long[] a;
    public static Integer[] b;
 
-   Nl4() {
+   public Nl4() {
    }
 
-   Nl4(int var1, Nl4 var2) {
+   public Nl4(int var1, Nl4 var2) {
       this.J = var1;
       this.p = var2.p;
       this.Y = var2.Y;
@@ -27,7 +27,7 @@ public final class Nl4 {
       this.r = var2.r;
    }
 
-   void y(int var1, String var2, String var3, String var4) {
+   public void y(int var1, String var2, String var3, String var4) {
       this.p = var1;
       int[] var10000 = XB.X();
       this.P = var2;
@@ -60,13 +60,13 @@ public final class Nl4 {
       }
    }
 
-   void r(int var1) {
+   public void r(int var1) {
       this.p = a(8896, 7642846246444813048L);
       this.Y = var1;
       this.r = a(29302, 6716061752367356493L) & this.p + var1;
    }
 
-   boolean F(Nl4 var1) {
+   public boolean F(Nl4 var1) {
       int[] var2 = XB.X();
       int var10000 = this.p;
       if (var2 == null) {
@@ -143,7 +143,7 @@ public final class Nl4 {
       if (var2 != null) {
          return var10000 != 0;
       } else {
-         return (boolean)(var10000 != 0 ? 1 : 0);
+         return (boolean)((var10000 != 0 ? 1 : 0) != 0);
       }
    }
 

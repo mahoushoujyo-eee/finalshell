@@ -9,8 +9,8 @@ import java.awt.Window;
 import javax.swing.JDialog;
 
 public class C5 extends JDialog {
-   long F;
-   CustomAcceleratePanel p;
+   public long F;
+   public CustomAcceleratePanel p;
    public static long[] a;
    public static Integer[] b;
 

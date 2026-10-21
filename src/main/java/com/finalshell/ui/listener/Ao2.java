@@ -7,11 +7,11 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Ao2 extends MouseAdapter {
-   protected boolean h;
-   final BX A;
-   final Hd2 q;
+   public boolean h;
+   public final BX A;
+   public final Hd2 q;
 
-   Ao2(BX var1, Hd2 var2) {
+   public Ao2(BX var1, Hd2 var2) {
       this.A = var1;
       this.q = var2;
       this.h = false;

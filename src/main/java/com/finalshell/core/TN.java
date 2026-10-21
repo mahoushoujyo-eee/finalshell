@@ -3,8 +3,8 @@ package com.finalshell.core;
 import com.finalshell.ui.panel.Ky4;
 
 public class TN {
-   byte[] u;
-   short n;
+   public byte[] u;
+   public short n;
    public static Ky4[] Z;
 
    public byte[] c() {

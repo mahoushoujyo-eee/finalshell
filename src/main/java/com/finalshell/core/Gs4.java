@@ -13,7 +13,7 @@ public class Gs4 extends Gl4 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int[] var6 = new int[var1 * var2];
       int var7 = 0;
       String[] var10000 = W5.q();

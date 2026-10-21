@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class DX implements ActionListener {
-   final ZU d;
+   public final ZU d;
 
-   DX(ZU var1) {
+   public DX(ZU var1) {
       this.d = var1;
    }
 

@@ -3,12 +3,12 @@ package com.finalshell.core;
 import java.util.HashMap;
 
 public class L_2_2 implements F_3_2 {
-   final Cr2_2 G;
-   final H3_2 z;
+   public final Cr2_2 G;
+   public final H3_2 z;
    public static String[] a;
    public static String[] b;
 
-   L_2_2(H3_2 var1, Cr2_2 var2) {
+   public L_2_2(H3_2 var1, Cr2_2 var2) {
       this.z = var1;
       this.G = var2;
    }

@@ -5,9 +5,9 @@ import javax.swing.ImageIcon;
 import javax.swing.filechooser.FileFilter;
 
 public class DZ extends B4_2 {
-   final FileFilter r;
+   public final FileFilter r;
 
-   DZ(ImageIcon var1, String var2, FileFilter var3) {
+   public DZ(ImageIcon var1, String var2, FileFilter var3) {
       super(var1, var2);
       this.r = var3;
    }

@@ -11,12 +11,12 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 
 public class B2 extends ServerSocket {
-   protected Y2_5 N;
-   protected String k;
-   protected InetAddress s;
-   protected int V;
-   boolean U;
-   InetAddress Y;
+   public Y2_5 N;
+   public String k;
+   public InetAddress s;
+   public int V;
+   public boolean U;
+   public InetAddress Y;
    public static String a;
    public static long[] b;
    public static Integer[] c;

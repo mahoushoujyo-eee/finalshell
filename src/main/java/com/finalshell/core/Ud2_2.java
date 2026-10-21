@@ -63,7 +63,7 @@ public class Ud2_2 extends UE {
    }
 
    @Override
-   protected void init(String var1, Icon var2) {
+   public void init(String var1, Icon var2) {
       this.model = new S();
       this.setModel(this.model);
       super.init(var1, var2);

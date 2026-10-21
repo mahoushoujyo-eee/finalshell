@@ -8,13 +8,13 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class Connect {
-   int q = -1;
-   boolean f = false;
-   byte[] g;
-   int W;
-   int U;
-   int M = -1;
-   Fs2 l;
+   public int q = -1;
+   public boolean f = false;
+   public byte[] g;
+   public int W;
+   public int U;
+   public int M = -1;
+   public Fs2 l;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -72,7 +72,7 @@ public class Connect {
 
    // $VF: Handled exception range with multiple entry points by splitting it
    // $VF: Inserted dummy exception handlers to handle obfuscated exceptions
-   void x(long var1, int var3, int var4) {
+   public void x(long var1, int var3, int var4) {
       long var14;
       Ky4[] var10000 = Qm2.J();
       long var6 = (long)(1000.0F * (float)var4 / (float)var3);

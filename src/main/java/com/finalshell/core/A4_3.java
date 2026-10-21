@@ -3,19 +3,19 @@ package com.finalshell.core;
 import java.io.ByteArrayOutputStream;
 
 public final class A4_3 {
-   int O;
-   int N;
-   long i = c(4102, 4271266680613976758L);
-   long a;
-   int V;
-   int y;
-   int t;
-   DC G;
+   public int O;
+   public int N;
+   public long i = c(4102, 4271266680613976758L);
+   public long a;
+   public int V;
+   public int y;
+   public int t;
+   public DC G;
    public final Df2 s;
    public int W;
    public int U = -1;
    public byte[] R = new byte[4];
-   DF_2 F = null;
+   public DF_2 F = null;
    public static byte[] H;
    public ByteArrayOutputStream B = null;
    public static String[] b;
@@ -25,7 +25,7 @@ public final class A4_3 {
    public static long[] f;
    public static Long[] g;
 
-   int v() {
+   public int v() {
       int[] var1 = Nm4.g();
       Df2 var10000 = this.s;
       if (var1 == null) {
@@ -44,7 +44,7 @@ public final class A4_3 {
       return 0;
    }
 
-   int m() {
+   public int m() {
       int[] var1 = Nm4.g();
       DC var10000 = this.G;
       if (var1 == null) {
@@ -59,11 +59,11 @@ public final class A4_3 {
       return 0;
    }
 
-   A4_3(Df2 var1) {
+   public A4_3(Df2 var1) {
       this.s = var1;
    }
 
-   int e(int var1) {
+   public int e(int var1) {
       int[] var2;
       int var3;
       int var10001;
@@ -173,7 +173,7 @@ public final class A4_3 {
       return a(20936, 7115522834845632053L);
    }
 
-   int N(int param1) {
+   public int N(int param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2166,7 +2166,7 @@ public final class A4_3 {
       // 1189: ireturn
    }
 
-   int I(byte[] var1, int var2) {
+   public int I(byte[] var1, int var2) {
       int[] var3 = Nm4.g();
       A4_3 var10000 = this;
       if (var3 == null) {
@@ -2236,7 +2236,7 @@ public final class A4_3 {
       return 0;
    }
 
-   int D() {
+   public int D() {
       int[] var1 = Nm4.g();
       A4_3 var10000 = this;
       if (var1 == null) {
@@ -2348,7 +2348,7 @@ public final class A4_3 {
       return 0;
    }
 
-   int i() {
+   public int i() {
       int[] var1 = Nm4.g();
       A4_3 var10000 = this;
       if (var1 == null) {
@@ -2781,11 +2781,11 @@ public final class A4_3 {
       }
    }
 
-   DF_2 y() {
+   public DF_2 y() {
       return this.F;
    }
 
-   boolean z() {
+   public boolean z() {
       int[] var1 = Nm4.g();
       int var10000 = this.O;
       if (var1 == null) {

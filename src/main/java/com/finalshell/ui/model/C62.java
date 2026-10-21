@@ -11,15 +11,15 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class C62 extends AbstractTableModel {
-   ArrayList y;
+   public ArrayList y;
    public static String c;
    public static String v;
    public static String E;
    public static String D;
    public static String a;
    public static String S;
-   String[] K;
-   String w;
+   public String[] K;
+   public String w;
 
    public C62() {
       ArrayList var10001 = new ArrayList();

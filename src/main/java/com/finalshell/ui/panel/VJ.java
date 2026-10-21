@@ -6,9 +6,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 
 public class VJ extends JScrollPane {
-   final Address G;
+   public final Address G;
 
-   VJ(Address var1, Component var2) {
+   public VJ(Address var1, Component var2) {
       super(var2);
       this.G = var1;
    }

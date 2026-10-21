@@ -4,7 +4,7 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
-public final class Ci4 extends Enum {
+public final class Ci4 {
    @Override public int compareTo(Enum o) {
       throw new UnsupportedOperationException("compareTo not implemented");
    }
@@ -18,11 +18,10 @@ public final class Ci4 extends Enum {
    }
 
    public static Ci4 valueOf(String var0) {
-      return Enum.valueOf(Ci4.class, var0);
+      throw new UnsupportedOperationException("valueOf not implemented");
    }
 
    public Ci4(String var1, int var2) {
-      super(var1, var2);
    }
 
    static {

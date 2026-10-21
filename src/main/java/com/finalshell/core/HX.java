@@ -3,7 +3,7 @@ package com.finalshell.core;
 public class HX {
    public final String H;
    public final int M;
-   final Ip3_2 P;
+   public final Ip3_2 P;
 
    public HX(Ip3_2 var1, String var2, int var3) {
       this.P = var1;

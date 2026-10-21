@@ -11,26 +11,26 @@ import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
 public class A0 {
-   List p;
-   boolean t = false;
-   int w = a(2920, 6871379940283314408L);
-   int Q = a(1120, 6638462424036573154L);
-   int Y = 0;
-   int R;
-   String M = "";
-   byte[] m;
-   Socket x;
-   Socket L;
-   boolean P = false;
-   int q;
-   ArrayList g = new ArrayList();
-   Semaphore E = new Semaphore(0);
-   int V = 0;
-   int K = -1;
-   static int d;
-   static int T;
-   int B = 0;
-   Zq2_2 F;
+   public List p;
+   public boolean t = false;
+   public int w = a(2920, 6871379940283314408L);
+   public int Q = a(1120, 6638462424036573154L);
+   public int Y = 0;
+   public int R;
+   public String M = "";
+   public byte[] m;
+   public Socket x;
+   public Socket L;
+   public boolean P = false;
+   public int q;
+   public ArrayList g = new ArrayList();
+   public Semaphore E = new Semaphore(0);
+   public int V = 0;
+   public int K = -1;
+   public static int d;
+   public static int T;
+   public int B = 0;
+   public Zq2_2 F;
    public static String a;
    public static long[] b;
    public static Integer[] c;
@@ -54,7 +54,7 @@ public class A0 {
       PingMessageR.U.execute(var8);
    }
 
-   void W() {
+   public void W() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -122,7 +122,7 @@ public class A0 {
       // 7e: return
    }
 
-   DW f(String var1) {
+   public DW f(String var1) {
       DW var3 = new DW(this);
       String var4 = null;
       String[] var10000 = PingMessageR.N();
@@ -164,7 +164,7 @@ public class A0 {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void Y() {
+   public void Y() {
       String[] var1 = PingMessageR.N();
       Iterator var3 = this.p.iterator();
       if (var1 == null || var3.hasNext()) {

@@ -11,12 +11,12 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JPanel;
 
 public class F8 extends JPanel {
-   Kj2 R;
-   Kj2 p;
-   AM H;
-   T32 K;
-   ConnectionProperty q;
-   protected String c;
+   public Kj2 R;
+   public Kj2 p;
+   public AM H;
+   public T32 K;
+   public ConnectionProperty q;
+   public String c;
    public static String[] f;
    public static long[] cb;
    public static Integer[] db;

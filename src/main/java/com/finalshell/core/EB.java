@@ -6,9 +6,9 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 
 public class EB implements Transferable {
-   final WQ3 O;
+   public final WQ3 O;
 
-   EB(WQ3 var1) {
+   public EB(WQ3 var1) {
       this.O = var1;
    }
 

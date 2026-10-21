@@ -6,12 +6,12 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Tf2 implements PropertyChangeListener {
-   final com.finalshell.ui.panel.O2 g;
-   final KD3 y;
+   public final com.finalshell.ui.panel.O2 g;
+   public final KD3 y;
    public static String[] a;
    public static String[] b;
 
-   Tf2(KD3 var1, com.finalshell.ui.panel.O2 var2) {
+   public Tf2(KD3 var1, com.finalshell.ui.panel.O2 var2) {
       this.y = var1;
       this.g = var2;
    }

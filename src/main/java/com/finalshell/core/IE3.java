@@ -3,9 +3,9 @@ package com.finalshell.core;
 import java.awt.Component;
 
 public class IE3 implements Ka2 {
-   final com.finalshell.ui.panel.QB b;
+   public final com.finalshell.ui.panel.QB b;
 
-   IE3(com.finalshell.ui.panel.QB var1) {
+   public IE3(com.finalshell.ui.panel.QB var1) {
       this.b = var1;
    }
 

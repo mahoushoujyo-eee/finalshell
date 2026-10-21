@@ -7,10 +7,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class WH implements ActionListener {
-   final NC3 K;
-   final com.finalshell.ui.panel.QS J;
+   public final NC3 K;
+   public final com.finalshell.ui.panel.QS J;
 
-   WH(com.finalshell.ui.panel.QS var1, NC3 var2) {
+   public WH(com.finalshell.ui.panel.QS var1, NC3 var2) {
       this.J = var1;
       this.K = var2;
    }

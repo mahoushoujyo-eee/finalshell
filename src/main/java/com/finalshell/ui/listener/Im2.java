@@ -5,9 +5,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Im2 extends MouseAdapter {
-   final Na4 b;
+   public final Na4 b;
 
-   Im2(Na4 var1) {
+   public Im2(Na4 var1) {
       this.b = var1;
    }
 

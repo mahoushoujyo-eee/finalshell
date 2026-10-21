@@ -3,9 +3,6 @@ package com.apple.eawt;
 import java.awt.Window;
 
 public class FullScreenUtilities {
-   FullScreenUtilities() {
-   }
-
    public static void setWindowCanFullScreen(Window window, boolean b) {
    }
 

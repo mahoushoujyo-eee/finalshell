@@ -4,10 +4,10 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.ui.dialog.Nq2;
 
 public class QF implements Runnable {
-   final OE3 I;
+   public final OE3 I;
    public static long a;
 
-   QF(OE3 var1) {
+   public QF(OE3 var1) {
       this.I = var1;
    }
 

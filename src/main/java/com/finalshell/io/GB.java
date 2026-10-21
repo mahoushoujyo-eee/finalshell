@@ -7,7 +7,7 @@ import java.io.PipedOutputStream;
 public class GB extends PipedOutputStream {
    public Gu2 i;
 
-   GB(PipedInputStream param1, boolean param2) throws IOException {
+   public GB(PipedInputStream param1, boolean param2) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

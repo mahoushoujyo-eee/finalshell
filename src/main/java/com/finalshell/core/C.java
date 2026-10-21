@@ -9,15 +9,15 @@ import java.awt.RenderingHints;
 import javax.swing.JButton;
 
 public class C extends JButton {
-   RenderingHints m;
+   public RenderingHints m;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
    public C(String var1) {
+   super(var1);
       short var10000 = 12812;
-      super(var1);
       this.setFont((Font)Registry.lookupField(164046876459002055L).get(null));
       RenderingHints var10003 = new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB);
       long var5 = 542951898918099017L;

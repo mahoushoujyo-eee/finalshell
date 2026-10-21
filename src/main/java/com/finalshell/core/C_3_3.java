@@ -3,11 +3,11 @@ package com.finalshell.core;
 import javax.swing.BorderFactory;
 
 public class C_3_3 extends KD {
-   final D_2_2 C;
+   public final D_2_2 C;
    public static long[] a;
    public static Integer[] b;
 
-   C_3_3(D_2_2 var1) {
+   public C_3_3(D_2_2 var1) {
       this.C = var1;
       this.setEnabled(D_2_2.q(this.C).isMaximizable());
       this.g(false);

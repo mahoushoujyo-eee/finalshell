@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class DE3 implements ActionListener {
-   final DK V;
+   public final DK V;
 
-   DE3(DK var1) {
+   public DE3(DK var1) {
       this.V = var1;
    }
 

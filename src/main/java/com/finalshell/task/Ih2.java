@@ -4,22 +4,23 @@ import com.finalshell.core.Sx2;
 import java.io.File;
 
 public class Ih2 implements Runnable {
-   final File j;
-   final String m;
-   final String N;
-   final String Q;
-   final String p;
-   final String P;
-   final int w;
-   final int r;
-   final int K;
-   final int L;
-   final File[] D;
-   final boolean U;
+   public final File j;
+   public final String m;
+   public final String N;
+   public final String Q;
+   public final String p;
+   public final String P;
+   public final int w;
+   public final int r;
+   public final int K;
+   public final int L;
+   public final File[] D;
+   public final boolean U;
    public static String[] a;
    public static String[] b;
 
-   Ih2(File var1, String var2, String var3, String var4, String var5, String var6, int var7, int var8, int var9, int var10, File[] var11, boolean var12) {
+   public Ih2(File var1, String var2, String var3, String var4, String var5, String var6, int var7, int var8, int var9, int var10, File[] var11, boolean var12) {
+   super();
       this.j = var1;
       this.m = var2;
       this.N = var3;
@@ -34,7 +35,6 @@ public class Ih2 implements Runnable {
       this.L = var10;
       this.D = var11;
       this.U = var12;
-      super();
       if (var13 != 0) {
          com.finalshell.ui.panel.Ky4.K(new String[1]);
       }

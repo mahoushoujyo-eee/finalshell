@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class I_3 implements C_e_2_2 {
-   final Cs2_2 q;
+   public final Cs2_2 q;
 
-   I_3(Cs2_2 var1) {
+   public I_3(Cs2_2 var1) {
       this.q = var1;
    }
 

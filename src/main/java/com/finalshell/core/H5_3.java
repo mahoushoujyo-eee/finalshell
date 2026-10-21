@@ -1,16 +1,16 @@
 package com.finalshell.core;
 
 public class H5_3 extends Hv2_2 {
-   final P_4 F;
-   final Hd2[] z;
-   final Hd2[] f;
-   final com.finalshell.ui.model.S_3 A;
-   final H4_2[] Y;
-   final Ht2_2 B;
+   public final P_4 F;
+   public final Hd2[] z;
+   public final Hd2[] f;
+   public final com.finalshell.ui.model.S_3 A;
+   public final H4_2[] Y;
+   public final Ht2_2 B;
    public static String[] c;
    public static String[] d;
 
-   H5_3(Ht2_2 var1, P_4 var2, Hd2[] var3, Hd2[] var4, com.finalshell.ui.model.S_3 var5, H4_2[] var6) {
+   public H5_3(Ht2_2 var1, P_4 var2, Hd2[] var3, Hd2[] var4, com.finalshell.ui.model.S_3 var5, H4_2[] var6) {
       super(var1);
       this.B = var1;
       this.F = var2;

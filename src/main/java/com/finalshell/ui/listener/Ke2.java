@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ke2 implements ActionListener {
-   final ProgressDialog c;
+   public final ProgressDialog c;
 
-   Ke2(ProgressDialog var1) {
+   public Ke2(ProgressDialog var1) {
       this.c = var1;
    }
 

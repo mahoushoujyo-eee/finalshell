@@ -5,12 +5,12 @@ import com.finalshell.ui.model.CB3;
 import java.util.List;
 
 public class DY_2 implements Runnable {
-   final List T;
-   final List w;
-   final CB3 x;
-   final Zn2 t;
+   public final List T;
+   public final List w;
+   public final CB3 x;
+   public final Zn2 t;
 
-   DY_2(Zn2 var1, List var2, List var3, CB3 var4) {
+   public DY_2(Zn2 var1, List var2, List var3, CB3 var4) {
       this.t = var1;
       this.T = var2;
       this.w = var3;

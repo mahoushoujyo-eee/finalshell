@@ -8,11 +8,11 @@ import com.finalshell.ui.frame.U;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ye4 implements Runnable {
-   final Lv4_2 H;
-   final Yl4 Y;
-   final U g;
+   public final Lv4_2 H;
+   public final Yl4 Y;
+   public final U g;
 
-   Ye4(U var1, Lv4_2 var2, Yl4 var3) {
+   public Ye4(U var1, Lv4_2 var2, Yl4 var3) {
       this.g = var1;
       this.H = var2;
       this.Y = var3;

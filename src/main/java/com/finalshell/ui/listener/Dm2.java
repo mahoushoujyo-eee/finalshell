@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBox;
 
 public class Dm2 implements ActionListener {
-   final JCheckBox w;
-   final ShowDeletedPanel F;
+   public final JCheckBox w;
+   public final ShowDeletedPanel F;
 
-   Dm2(ShowDeletedPanel var1, JCheckBox var2) {
+   public Dm2(ShowDeletedPanel var1, JCheckBox var2) {
       this.F = var1;
       this.w = var2;
    }

@@ -6,13 +6,13 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class E_2 implements Iterator {
-   M_2 K;
+   public M_2 K;
    @C_9
-   Object h;
-   final Iterator n;
-   final A_4 C;
+   public Object h;
+   public final Iterator n;
+   public final A_4 C;
 
-   E_2(Iterator var1, A_4 var2) {
+   public E_2(Iterator var1, A_4 var2) {
       this.n = var1;
       this.C = var2;
       this.K = M_2.DEFAULT;

@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 
 public class JP extends Thread {
-   final LA3 U;
+   public final LA3 U;
    public static long a;
 
-   JP(LA3 var1) {
+   public JP(LA3 var1) {
       this.U = var1;
    }
 

@@ -13,9 +13,6 @@ public class W7 implements AWTEventListener {
    public static long[] a;
    public static Integer[] b;
 
-   W7() {
-   }
-
    @Override
    public void eventDispatched(AWTEvent var1) {
       int var10000 = (Dm4.F$boolean()) ? 1 : 0;

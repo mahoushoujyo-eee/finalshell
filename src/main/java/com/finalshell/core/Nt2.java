@@ -5,11 +5,11 @@ import com.finalshell.ui.panel.SetBackgroundImagePanel;
 import javax.swing.SwingUtilities;
 
 public class Nt2 implements IL3 {
-   final int l;
-   final int Z;
-   final SetBackgroundImagePanel e;
+   public final int l;
+   public final int Z;
+   public final SetBackgroundImagePanel e;
 
-   Nt2(SetBackgroundImagePanel var1, int var2, int var3) {
+   public Nt2(SetBackgroundImagePanel var1, int var2, int var3) {
       this.e = var1;
       this.l = var2;
       this.Z = var3;

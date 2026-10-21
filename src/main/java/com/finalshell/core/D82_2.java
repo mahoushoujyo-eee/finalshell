@@ -12,11 +12,11 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class D82_2 {
-   Thread K;
-   ArrayList l;
-   ArrayList b;
-   ThreadPoolExecutor f;
-   ArrayList g;
+   public Thread K;
+   public ArrayList l;
+   public ArrayList b;
+   public ThreadPoolExecutor f;
+   public ArrayList g;
    public static String c;
    public static long[] a;
    public static Integer[] d;

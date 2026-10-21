@@ -6,9 +6,6 @@ import java.sql.Timestamp;
 import java.util.Map;
 
 public class Rb2 implements WE3 {
-   Rb2() {
-   }
-
    public Void K(Map var1) {
       int var10000 = Ph2.w();
       java.lang.Class[] var3 = new java.lang.Class[]{Time.class, Date.class, Timestamp.class};

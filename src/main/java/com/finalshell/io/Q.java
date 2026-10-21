@@ -7,10 +7,10 @@ import java.io.Reader;
 import java.io.Writer;
 
 public class Q extends FilterReader {
-   final Writer n;
-   final boolean w;
+   public final Writer n;
+   public final boolean w;
 
-   Q(Reader var1, Writer var2, boolean var3) {
+   public Q(Reader var1, Writer var2, boolean var3) {
       super(var1);
       this.n = var2;
       this.w = var3;

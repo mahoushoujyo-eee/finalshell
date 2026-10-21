@@ -12,12 +12,12 @@ import java.awt.event.ActionListener;
 
 public class Or4 implements ActionListener {
    public S3 c;
-   final Qe2_2 l;
-   final KD3 N;
+   public final Qe2_2 l;
+   public final KD3 N;
    public static String[] a;
    public static String[] b;
 
-   Or4(KD3 var1, Qe2_2 var2) {
+   public Or4(KD3 var1, Qe2_2 var2) {
       this.N = var1;
       this.l = var2;
       this.c = null;

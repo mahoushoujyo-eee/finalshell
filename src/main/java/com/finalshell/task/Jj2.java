@@ -7,12 +7,12 @@ import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.core.PcapStat;
 
 public class Jj2 extends Thread {
-   final XQ_2 H;
+   public final XQ_2 H;
    public final PcapHandle C;
    public final PacketListener a;
    public final PcapNetworkInterface Y;
 
-   Jj2(XQ_2 var1, PcapHandle var2, PacketListener var3, PcapNetworkInterface var4) {
+   public Jj2(XQ_2 var1, PcapHandle var2, PacketListener var3, PcapNetworkInterface var4) {
       this.H = var1;
       this.C = var2;
       this.a = var3;

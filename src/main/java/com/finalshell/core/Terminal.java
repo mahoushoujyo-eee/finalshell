@@ -23,8 +23,8 @@ public class Terminal {
    public static int W;
    public static int k;
    public static int F;
-   int B;
-   String t;
+   public int B;
+   public String t;
    public static HashMap n;
    public static String[] a;
    public static String[] c;
@@ -80,7 +80,7 @@ public class Terminal {
       ((HashMap)Registry.lookupField(318824241898465306L).get(null)).put(var0, var2);
    }
 
-   Terminal(int var1, String var2) {
+   public Terminal(int var1, String var2) {
       Registry.lookupField(616162500355446525L).setInt(this, 0);
       Registry.lookupField(616162500355446525L).setInt(this, var1);
       long var4 = 320976151320352053L;

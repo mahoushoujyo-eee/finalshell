@@ -8,11 +8,11 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class FW extends MouseAdapter {
-   final Color s;
-   final Color H;
-   final com.finalshell.ui.frame.U p;
+   public final Color s;
+   public final Color H;
+   public final com.finalshell.ui.frame.U p;
 
-   FW(com.finalshell.ui.frame.U var1, Color var2, Color var3) {
+   public FW(com.finalshell.ui.frame.U var1, Color var2, Color var3) {
       this.p = var1;
       this.s = var2;
       this.H = var3;

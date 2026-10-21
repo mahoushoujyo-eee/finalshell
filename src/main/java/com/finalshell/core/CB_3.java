@@ -29,7 +29,7 @@ public abstract class CB_3 implements R2_3 {
    }
 
    @C_9
-   protected abstract Object b(G2_3 var1) throws Throwable;
+   public abstract Object b(G2_3 var1) throws Throwable;
 }
 
 

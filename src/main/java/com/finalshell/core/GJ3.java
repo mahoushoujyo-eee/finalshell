@@ -11,9 +11,9 @@ public class GJ3 extends W5 {
    public BufferedImage x;
    public String H;
    public Method c;
-   protected BufferedImageOp Q;
-   protected float n;
-   protected float o;
+   public BufferedImageOp Q;
+   public float n;
+   public float o;
    public static String[] a;
    public static String[] b;
 

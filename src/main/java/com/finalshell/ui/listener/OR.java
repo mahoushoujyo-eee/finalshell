@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class OR implements ActionListener {
-   final RouteTracePanel2 Y;
+   public final RouteTracePanel2 Y;
 
-   OR(RouteTracePanel2 var1) {
+   public OR(RouteTracePanel2 var1) {
       this.Y = var1;
    }
 

@@ -1,13 +1,13 @@
 package com.finalshell.core;
 
 public class Rb2_2 implements Hs2_2 {
-   final FF_2 u;
+   public final FF_2 u;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   Rb2_2(FF_2 var1) {
+   public Rb2_2(FF_2 var1) {
       this.u = var1;
    }
 

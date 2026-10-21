@@ -5,16 +5,16 @@ import com.finalshell.core.SelectUploadFile;
 import com.finalshell.io.To2;
 
 public class T_2 implements Runnable {
-   final To2 d;
-   final int p;
-   final CK j;
-   final SelectUploadFile c;
+   public final To2 d;
+   public final int p;
+   public final CK j;
+   public final SelectUploadFile c;
    public static String[] a;
    public static String[] b;
    public static long[] e;
    public static Integer[] f;
 
-   T_2(SelectUploadFile var1, To2 var2, int var3, CK var4) {
+   public T_2(SelectUploadFile var1, To2 var2, int var3, CK var4) {
       this.c = var1;
       this.d = var2;
       this.p = var3;

@@ -18,9 +18,9 @@ public class Ul2 extends UT_2 {
    public static Integer[] d;
 
    public Ul2(IG var1, java.lang.Class var2, Ph2 var3) {
+   super(var2, var3);
       label37: {
          Ky4[] var10000 = ZS.p();
-         super(var2, var3);
          Type var5 = var3.a;
          Ky4[] var4 = var10000;
          Type var9 = var5;
@@ -103,7 +103,7 @@ public class Ul2 extends UT_2 {
                   var10 = var11.length();
                }
 
-               if (var10 != 0) {
+               if (var10 != null) {
                   break label57;
                }
             }

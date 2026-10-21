@@ -11,7 +11,7 @@ import javax.swing.JWindow;
 import net.miginfocom.swing.MigLayout;
 
 public class DP extends JWindow {
-   JLabel i;
+   public JLabel i;
    public static String[] a;
    public static String[] b;
    public static long[] c;

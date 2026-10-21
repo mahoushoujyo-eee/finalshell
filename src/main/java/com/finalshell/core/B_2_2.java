@@ -8,12 +8,12 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 public class B_2_2 extends V2 {
-   protected Rectangle J = new Rectangle();
-   protected Rectangle S = new Rectangle();
-   protected Rectangle k = new Rectangle();
+   public Rectangle J = new Rectangle();
+   public Rectangle S = new Rectangle();
+   public Rectangle k = new Rectangle();
 
    @Override
-   protected String d(JLabel var1, FontMetrics var2, String var3, Icon var4, Rectangle var5, Rectangle var6, Rectangle var7) {
+   public String d(JLabel var1, FontMetrics var2, String var3, Icon var4, Rectangle var5, Rectangle var6, Rectangle var7) {
       this.J = this.e(var5, this.J);
       this.S = this.e(var6, this.S);
       this.k = this.e(var7, this.k);
@@ -24,7 +24,7 @@ public class B_2_2 extends V2 {
       return var3;
    }
 
-   protected Rectangle e(Rectangle var1, Rectangle var2) {
+   public Rectangle e(Rectangle var1, Rectangle var2) {
       int[] var3 = W_2.B$arrint();
       Rectangle var10000 = var2;
       if (var3 == null) {
@@ -42,7 +42,7 @@ public class B_2_2 extends V2 {
       return var10000;
    }
 
-   protected Rectangle A(Rectangle var1, Rectangle var2) {
+   public Rectangle A(Rectangle var1, Rectangle var2) {
       int[] var3 = W_2.B$arrint();
       Rectangle var10000 = var2;
       if (var3 == null) {
@@ -65,7 +65,7 @@ public class B_2_2 extends V2 {
       return this.s(super.K(var1));
    }
 
-   protected Dimension s(Dimension var1) {
+   public Dimension s(Dimension var1) {
       return new Dimension(var1.height, var1.width);
    }
 

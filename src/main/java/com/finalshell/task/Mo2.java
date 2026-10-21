@@ -7,11 +7,11 @@ import com.finalshell.crypto.PingMessageR;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Mo2 implements Runnable {
-   boolean Y = false;
-   Object n = new Object();
-   long J = 0L;
-   LinkedBlockingQueue r = new LinkedBlockingQueue();
-   LinkedBlockingQueue A = new LinkedBlockingQueue();
+   public boolean Y = false;
+   public Object n = new Object();
+   public long J = 0L;
+   public LinkedBlockingQueue r = new LinkedBlockingQueue();
+   public LinkedBlockingQueue A = new LinkedBlockingQueue();
    public static long a;
 
    public Mo2() {
@@ -25,7 +25,7 @@ public class Mo2 implements Runnable {
       this.r.add(var3);
    }
 
-   long t(UR var1) {
+   public long t(UR var1) {
       String[] var10000 = PingMessageR.N();
       int var3 = var1.B.E + (int)((float)var1.B.E * Yh2.o);
       String[] var2 = var10000;
@@ -42,7 +42,7 @@ public class Mo2 implements Runnable {
       return System.currentTimeMillis() + (long)var3;
    }
 
-   long g(UR var1) {
+   public long g(UR var1) {
       return System.currentTimeMillis() + a;
    }
 

@@ -4,12 +4,12 @@ public class HD extends Hq2 {
    public final FU N;
    public final FU y;
    public final FU p;
-   final B3_2 z;
+   public final B3_2 z;
    public static String a;
    public static long[] b;
    public static Integer[] c;
 
-   HD(B3_2 var1, FU var2, FU var3, FU var4) {
+   public HD(B3_2 var1, FU var2, FU var3, FU var4) {
       super(var1, null);
       this.z = var1;
       this.N = var2;
@@ -119,11 +119,11 @@ public class HD extends Hq2 {
       // a0: return
    }
 
-   static FU E(HD var0) {
+   public static FU E(HD var0) {
       return var0.y;
    }
 
-   static FU T(HD var0) {
+   public static FU T(HD var0) {
       return var0.p;
    }
 

@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.core.PK;
 
 public class FC implements Runnable {
-   final QU t;
+   public final QU t;
 
-   FC(QU var1) {
+   public FC(QU var1) {
       this.t = var1;
    }
 

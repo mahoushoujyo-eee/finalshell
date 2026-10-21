@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class G extends ByteArrayOutputStream {
-   final OutputStream i;
-   final E_3 z;
+   public final OutputStream i;
+   public final E_3 z;
 
-   G(E_3 var1, OutputStream var2) {
+   public G(E_3 var1, OutputStream var2) {
       this.z = var1;
       this.i = var2;
    }

@@ -3,12 +3,12 @@ package com.finalshell.task;
 import com.finalshell.core.CB;
 
 public class XW implements Runnable {
-   final CB H;
+   public final CB H;
    public static String a;
    public static long[] b;
    public static Long[] c;
 
-   XW(CB var1) {
+   public XW(CB var1) {
       this.H = var1;
    }
 

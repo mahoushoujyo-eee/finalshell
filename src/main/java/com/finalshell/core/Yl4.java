@@ -6,13 +6,13 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.Ky4;
 
 public class Yl4 {
-   ConnectHost v;
-   int q;
+   public ConnectHost v;
+   public int q;
    public static int O;
    public static int I;
    public static int l;
    public static int N;
-   int i;
+   public int i;
    public static long[] a;
    public static Integer[] b;
 

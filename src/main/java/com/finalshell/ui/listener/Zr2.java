@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Zr2 implements ActionListener {
-   final ConnectionProperty d;
+   public final ConnectionProperty d;
 
-   Zr2(ConnectionProperty var1) {
+   public Zr2(ConnectionProperty var1) {
       this.d = var1;
    }
 

@@ -7,7 +7,7 @@ import java.awt.Frame;
 import javax.swing.JRootPane;
 
 public class D3 extends Y2 {
-   final Pk4 B;
+   public final Pk4 B;
 
    public D3(Pk4 var1, Frame var2, String var3, boolean var4) {
       super(var2, var3, var4);
@@ -20,7 +20,7 @@ public class D3 extends Y2 {
    }
 
    @Override
-   protected JRootPane createRootPane() {
+   public JRootPane createRootPane() {
       Gm2 var1 = new Gm2(this);
       var1.setOpaque(true);
       return var1;

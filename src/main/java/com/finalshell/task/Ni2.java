@@ -8,11 +8,11 @@ import com.finalshell.ui.panel.Connection4;
 import java.lang.reflect.InvocationTargetException;
 
 public class Ni2 implements Runnable {
-   final Tf4 G;
-   final String p;
-   final Connection4 O;
+   public final Tf4 G;
+   public final String p;
+   public final Connection4 O;
 
-   Ni2(Connection4 var1, Tf4 var2, String var3) {
+   public Ni2(Connection4 var1, Tf4 var2, String var3) {
       this.O = var1;
       this.G = var2;
       this.p = var3;

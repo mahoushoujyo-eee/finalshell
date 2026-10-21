@@ -44,7 +44,7 @@ public class Gz4 extends Gy4 {
    }
 
    @Override
-   protected void T(Rectangle var1) {
+   public void T(Rectangle var1) {
       String[] var10000 = W5.q();
       float var3 = (float)Math.tan((double)this.R);
       this.V = (float)(-var1.height) * var3;
@@ -75,7 +75,7 @@ public class Gz4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       var3[0] = (float)var1 + this.V + (float)var2 * this.Z;
       var3[1] = (float)var2 + this.E + (float)var1 * this.u;
    }

@@ -6,9 +6,9 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 public class Ow4_2 {
-   Socket U;
-   InputStream j;
-   OutputStream s;
+   public Socket U;
+   public InputStream j;
+   public OutputStream s;
 
    public Socket a() {
       Object var1 = 580324432917492073L;

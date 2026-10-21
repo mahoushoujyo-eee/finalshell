@@ -6,9 +6,9 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
 public class B9 implements MouseWheelListener {
-   final SetBackgroundImagePanel R;
+   public final SetBackgroundImagePanel R;
 
-   B9(SetBackgroundImagePanel var1) {
+   public B9(SetBackgroundImagePanel var1) {
       this.R = var1;
    }
 

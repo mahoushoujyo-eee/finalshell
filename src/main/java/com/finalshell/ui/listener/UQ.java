@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class UQ implements ActionListener {
-   final ShowInFolderPanel d;
+   public final ShowInFolderPanel d;
 
-   UQ(ShowInFolderPanel var1) {
+   public UQ(ShowInFolderPanel var1) {
       this.d = var1;
    }
 

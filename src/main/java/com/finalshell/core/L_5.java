@@ -6,9 +6,6 @@ public class L_5 implements H_4 {
    public static String[] a;
    public static String[] b;
 
-   L_5() {
-   }
-
    @Override
    public boolean A(String var1) {
       throw new UnsupportedOperationException(a(-5008, -2894));

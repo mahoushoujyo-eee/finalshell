@@ -11,7 +11,7 @@ import javax.swing.KeyStroke;
 import org.fife.rsta.ui.search.ReplaceDialog;
 
 public class FindReplaceAdapter extends AbstractAction {
-   final TextEditorFrame w;
+   public final TextEditorFrame w;
    public static String[] a;
    public static String[] b;
    public static long c;

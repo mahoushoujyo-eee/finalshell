@@ -454,7 +454,7 @@ public class HE extends C2_5{
       // 12b: return
    }
 
-   protected Nt2_2[] G(com.finalshell.ui.model.I param1, @C_9 java.lang.Class[] param2) {
+   public Nt2_2[] G(com.finalshell.ui.model.I param1, @C_9 java.lang.Class[] param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -509,11 +509,11 @@ public class HE extends C2_5{
    }
 
    @C_9
-   protected Nt2_2 l(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
+   public Nt2_2 l(com.finalshell.ui.model.I var1, @C_9 java.lang.Class var2) {
       return this.U.N(var1, var2);
    }
 
-   protected Nt2_2 L(com.finalshell.ui.model.I var1, java.lang.Class var2) {
+   public Nt2_2 L(com.finalshell.ui.model.I var1, java.lang.Class var2) {
       return this.U.k(var1, var2);
    }
 

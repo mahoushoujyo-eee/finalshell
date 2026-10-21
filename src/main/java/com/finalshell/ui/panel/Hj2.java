@@ -9,7 +9,7 @@ public class Hj2 extends JComponent {
    public static String[] a;
    public static String[] b;
 
-   Hj2(SetBackgroundImagePanel var1) {
+   public Hj2(SetBackgroundImagePanel var1) {
       this.setLayout(new MigLayout(a(-12055, -1672) + f.top + " " + f.left + " " + f.bottom + " " + f.right));
       this.add(var1, a(-12056, -23612));
    }

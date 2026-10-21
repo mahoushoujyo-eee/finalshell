@@ -10,18 +10,18 @@ import java.util.Random;
 import org.icmp4j.j;
 
 public class Dw4 {
-   ArrayList N;
-   String U;
-   String j;
-   InetAddress f;
-   RouteTracePanel k;
-   boolean i;
-   Object n;
+   public ArrayList N;
+   public String U;
+   public String j;
+   public InetAddress f;
+   public RouteTracePanel k;
+   public boolean i;
+   public Object n;
    public static long[] a;
    public static Integer[] b;
    public static long c;
 
-   Dw4(RouteTracePanel var1, String var2) {
+   public Dw4(RouteTracePanel var1, String var2) {
       ArrayList var10001 = new ArrayList();
       long var4 = 145412445008776377L;
       ArrayList var3 = var10001;
@@ -37,7 +37,7 @@ public class Dw4 {
       Ref.s(188881920873049499L, var2, var10);
    }
 
-   void Q() {
+   public void Q() {
       Registry.lookupField(388376917454860932L).get(null);
       Object[] var10001 = Registry.packArgs(new com.finalshell.task.Kd2(this));
       long var2 = 434592463220957006L;
@@ -51,7 +51,7 @@ public class Dw4 {
       }
    }
 
-   synchronized void Z(int var1, String var2) {
+   public synchronized void Z(int var1, String var2) {
       int[] var3 = L9.X();
       Object var11 = 488976998546483488L;
       if (var3 != null || this.equals((String)Ref.g(488976998546483488L, var11))) {
@@ -130,7 +130,7 @@ public class Dw4 {
       }
    }
 
-   synchronized void S() {
+   public synchronized void S() {
       int[] var1 = L9.X();
       Object var9 = 145412445008776377L;
       int var10001 = ((ArrayList)Ref.g(145412445008776377L, var9)).size();
@@ -253,7 +253,7 @@ public class Dw4 {
       }
    }
 
-   void f(L9 var1) {
+   public void f(L9 var1) {
       Object[] var10001 = Registry.emptyArgs();
       long var8 = 127422501806576014L;
       Object[] var7 = var10001;
@@ -307,11 +307,11 @@ public class Dw4 {
       }
    }
 
-   void M() {
+   public void M() {
       Registry.lookupField(175400870153177569L).setBoolean(this, false);
    }
 
-   void o() {
+   public void o() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

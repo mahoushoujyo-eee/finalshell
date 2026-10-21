@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class Eq4 extends ES3 {
-   final com.finalshell.ui.panel.QQ h;
-   final F_ l;
+   public final com.finalshell.ui.panel.QQ h;
+   public final F_ l;
 
-   Eq4(com.finalshell.ui.panel.QQ var1, F_ var2) {
+   public Eq4(com.finalshell.ui.panel.QQ var1, F_ var2) {
       this.h = var1;
       this.l = var2;
    }

@@ -8,10 +8,10 @@ import java.util.Comparator;
 import java.util.HashMap;
 
 public class TA3 implements Comparator {
-   final HashMap j;
-   final F82 y;
+   public final HashMap j;
+   public final F82 y;
 
-   TA3(F82 var1, HashMap var2) {
+   public TA3(F82 var1, HashMap var2) {
       this.y = var1;
       this.j = var2;
    }

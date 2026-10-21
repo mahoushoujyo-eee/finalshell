@@ -14,7 +14,7 @@ import javax.swing.JPasswordField;
 import net.miginfocom.swing.MigLayout;
 
 public class SyncPasswordDialog extends JDialog {
-   JPasswordField U;
+   public JPasswordField U;
    public static String[] a;
    public static String[] b;
 
@@ -51,12 +51,12 @@ public class SyncPasswordDialog extends JDialog {
       this.setLocationRelativeTo(null);
    }
 
-   void g() {
+   public void g() {
       Object var1 = 611168774366066103L;
       ((JPasswordField)Ref.g(611168774366066103L, var1)).setText("");
    }
 
-   void h() {
+   public void h() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

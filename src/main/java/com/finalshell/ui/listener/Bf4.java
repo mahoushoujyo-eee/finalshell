@@ -9,10 +9,10 @@ import java.awt.event.MouseEvent;
 import java.lang.reflect.InvocationTargetException;
 
 public class Bf4 extends MouseAdapter {
-   final com.finalshell.ui.panel.N22 G;
-   final JR C;
+   public final com.finalshell.ui.panel.N22 G;
+   public final JR C;
 
-   Bf4(JR var1, com.finalshell.ui.panel.N22 var2) {
+   public Bf4(JR var1, com.finalshell.ui.panel.N22 var2) {
       this.C = var1;
       this.G = var2;
    }

@@ -8,8 +8,8 @@ import java.util.HashMap;
 public class NJ_2 {
    public String R;
    public String c;
-   HashMap U;
-   int K;
+   public HashMap U;
+   public int K;
    public static String[] a;
    public static String[] b;
 

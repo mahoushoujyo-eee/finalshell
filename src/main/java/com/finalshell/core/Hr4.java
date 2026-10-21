@@ -3,6 +3,7 @@ package com.finalshell.core;
 import java.awt.image.BufferedImage;
 
 public class Hr4 extends W5 {
+   private static int[] var37;
    public float j = 1.0F;
    public int s = a(28185, 5819506735466313009L);
    public float g = 0.0F;

@@ -40,30 +40,30 @@ public class L52 extends Ls4 {
    public static String[] bb;
    public static String[] cb;
 
-   L52(Xe2 var1) {
+   public L52(Xe2 var1) {
       super(var1);
    }
 
    @Override
-   void K(int var1) throws Pc2 {
+   public void K(int var1) throws Pc2 {
    }
 
-   byte[] Y$arrbyte() {
+   public byte[] Y$arrbyte() {
       return s;
    }
 
    @Override
-   byte[] d() {
+   public byte[] d() {
       return k;
    }
 
    @Override
-   byte[] r$arrbyte() {
+   public byte[] r$arrbyte() {
       return null;
    }
 
    @Override
-   boolean I(byte[] param1) {
+   public boolean I(byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1480,7 +1480,7 @@ public class L52 extends Ls4 {
    }
 
    @Override
-   byte[] A() {
+   public byte[] A() {
       boolean var1 = Dm4.J$boolean();
       Ls4 var10000 = this.L;
       if (!var1) {
@@ -2639,7 +2639,7 @@ public class L52 extends Ls4 {
       // 917: athrow
    }
 
-   static String U(byte[] param0) throws Pc2 {
+   public static String U(byte[] param0) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2788,7 +2788,7 @@ public class L52 extends Ls4 {
       // 141: areturn
    }
 
-   static Ku2_2 F(String var0) throws Pc2 {
+   public static Ku2_2 F(String var0) throws Pc2 {
       try {
          java.lang.Class var1 = java.lang.Class.forName(Xe2.r(var0)).asSubclass(Ku2_2.class);
          return (Ku2_2)var1.getDeclaredConstructor().newInstance();
@@ -2797,7 +2797,7 @@ public class L52 extends Ls4 {
       }
    }
 
-   static Qb2 Y$Qb_2() throws Pc2 {
+   public static Qb2 Y$Qb_2() throws Pc2 {
       try {
          java.lang.Class var0 = java.lang.Class.forName(Xe2.r(b(29714, 11996))).asSubclass(Qb2.class);
          return (Qb2)var0.getDeclaredConstructor().newInstance();
@@ -2806,7 +2806,7 @@ public class L52 extends Ls4 {
       }
    }
 
-   static EU o(byte[] param0, DV param1, byte[][] param2) throws Exception {
+   public static EU o(byte[] param0, DV param1, byte[][] param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2994,7 +2994,7 @@ public class L52 extends Ls4 {
       // 19f: athrow
    }
 
-   static int K(byte[] var0) {
+   public static int K(byte[] var0) {
       return new BigInteger(var0).intValueExact();
    }
 

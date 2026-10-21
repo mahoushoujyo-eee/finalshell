@@ -98,7 +98,7 @@ public class YS3 extends GT3 {
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       int[] var6 = new int[var1 * var2];
       boolean var7 = false;
       String[] var10000 = W5.q();

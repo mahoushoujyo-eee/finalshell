@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
 public final class N_8 {
-   static boolean y;
+   public static boolean y;
 
    public static Object A(Object var0, Method[] var1) {
       int[] var2;

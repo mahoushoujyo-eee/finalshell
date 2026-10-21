@@ -11,13 +11,13 @@ import javax.swing.JSplitPane;
 import net.miginfocom.swing.MigLayout;
 
 public class L02 implements Runnable {
-   final U O;
+   public final U O;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   L02(U var1) {
+   public L02(U var1) {
       this.O = var1;
    }
 

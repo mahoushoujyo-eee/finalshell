@@ -7,11 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JTextArea;
 
 public class Au2 implements Runnable {
-   final String I;
-   final UpdateDialog j;
+   public final String I;
+   public final UpdateDialog j;
    public static String a;
 
-   Au2(UpdateDialog var1, String var2) {
+   public Au2(UpdateDialog var1, String var2) {
       this.j = var1;
       this.I = var2;
    }
@@ -76,7 +76,7 @@ public class Au2 implements Runnable {
             var10001 = ((String)Ref.g(178250428921673276L, var30)).contains(a);
          }
 
-         if (var10001 == false) {
+         if (var10001 == null) {
             return;
          }
       }

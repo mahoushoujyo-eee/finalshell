@@ -18,18 +18,18 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
 public class E2 extends JComponent {
-   protected ImageIcon A;
-   protected String z;
-   protected ActionListener N;
-   protected Insets i;
-   protected Insets y;
-   protected boolean n;
-   protected Color d;
-   protected Color p;
-   protected Color s;
-   protected Color B;
-   protected Color e;
-   protected int h;
+   public ImageIcon A;
+   public String z;
+   public ActionListener N;
+   public Insets i;
+   public Insets y;
+   public boolean n;
+   public Color d;
+   public Color p;
+   public Color s;
+   public Color B;
+   public Color e;
+   public int h;
    public boolean R;
    public static int[] P;
    public static long[] a;
@@ -187,7 +187,7 @@ public class E2 extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       int[] var10000 = P();
       super.paintComponent(var1);
       int[] var2 = var10000;
@@ -351,7 +351,7 @@ public class E2 extends JComponent {
       return var2;
    }
 
-   static boolean P(E2 var0, boolean var1) {
+   public static boolean P(E2 var0, boolean var1) {
       return var0.R = var1;
    }
 

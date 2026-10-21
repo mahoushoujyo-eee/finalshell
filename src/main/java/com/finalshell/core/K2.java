@@ -8,8 +8,8 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 public class K2 extends V2 {
-   protected Color q = OP.I;
-   protected Color W = OP.x;
+   public Color q = OP.I;
+   public Color W = OP.x;
 
    public Color j() {
       return this.q;
@@ -55,15 +55,15 @@ public class K2 extends V2 {
       super.u(var1, var2, (JLabel)var3);
    }
 
-   protected void f(Graphics2D var1, Rectangle var2, com.finalshell.ui.panel.U var3) {
+   public void f(Graphics2D var1, Rectangle var2, com.finalshell.ui.panel.U var3) {
    }
 
-   protected void v(Graphics2D var1, Rectangle var2, com.finalshell.ui.panel.U var3) {
+   public void v(Graphics2D var1, Rectangle var2, com.finalshell.ui.panel.U var3) {
       var1.setPaint(new GradientPaint(0.0F, (float)var2.y, this.q, 0.0F, (float)(var2.y + var2.height), this.W));
       var1.fillRect(0, 0, var3.getWidth(), var3.getHeight());
    }
 
-   protected void k(Graphics2D var1, Rectangle var2, com.finalshell.ui.panel.U var3) {
+   public void k(Graphics2D var1, Rectangle var2, com.finalshell.ui.panel.U var3) {
    }
 
    @Override

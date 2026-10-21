@@ -7,10 +7,10 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class Rt2 extends ComponentAdapter {
-   protected final Window F;
-   protected final Window E;
-   protected boolean i = true;
-   protected Point r;
+   public final Window F;
+   public final Window E;
+   public boolean i = true;
+   public Point r;
 
    public Rt2(Window var1, Window var2) {
       this.F = var1;

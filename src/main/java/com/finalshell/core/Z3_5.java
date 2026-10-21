@@ -3,12 +3,12 @@ package com.finalshell.core;
 import com.finalshell.reflect.Ref;
 
 public class Z3_5 {
-   String g;
-   String G;
-   String p;
-   final Lj4_2 x;
+   public String g;
+   public String G;
+   public String p;
+   public final Lj4_2 x;
 
-   Z3_5(Lj4_2 var1, String var2, String var3, String var4) {
+   public Z3_5(Lj4_2 var1, String var2, String var3, String var4) {
       this.x = var1;
       long var6 = 299608230923374339L;
       Ref.s(299608230923374339L, var2, var6);

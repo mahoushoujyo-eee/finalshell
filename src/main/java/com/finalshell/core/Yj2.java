@@ -10,9 +10,9 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 public class Yj2 extends D2_2 {
-   final Qq2 e;
+   public final Qq2 e;
 
-   protected Yj2(Qq2 var1) {
+   public Yj2(Qq2 var1) {
       this.e = var1;
    }
 

@@ -17,8 +17,8 @@ public class KO3 extends Ky4 {
    }
 
    public KO3(int var1, boolean var2, Component[] var3) {
+   super(new TO(0, var1, var1, var2, false));
       int[] var10000 = K32.L$arrint();
-      super(new TO(0, var1, var1, var2, false));
       int[] var4 = var10000;
 
       for (Component var8 : var3) {

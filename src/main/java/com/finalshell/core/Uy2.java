@@ -1,18 +1,18 @@
 package com.finalshell.core;
 
 public class Uy2 {
-   long o;
-   int x;
+   public long o;
+   public int x;
    public static int f;
    public static int T;
-   int G;
-   String l;
+   public int G;
+   public String l;
 
    static {
       __vfClinit__();
    }
 
-   Uy2(long var1, int var3, int var4) {
+   public Uy2(long var1, int var3, int var4) {
       this(null, var1, var3, var4);
    }
 

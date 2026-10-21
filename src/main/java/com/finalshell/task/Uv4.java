@@ -6,9 +6,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class Uv4 implements Runnable {
-   final O32 r;
+   public final O32 r;
 
-   Uv4(O32 var1) {
+   public Uv4(O32 var1) {
       this.r = var1;
    }
 

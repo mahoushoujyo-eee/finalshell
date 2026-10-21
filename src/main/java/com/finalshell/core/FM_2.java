@@ -2,8 +2,8 @@ package com.finalshell.core;
 
 // $VF: synthetic class
 public class FM_2 {
-   static int[] Z;
-   static int[] s;
+   public static int[] Z;
+   public static int[] s;
 
    static {
       __vfClinit__();

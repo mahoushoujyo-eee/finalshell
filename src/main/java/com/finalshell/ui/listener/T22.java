@@ -6,9 +6,9 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
 public class T22 implements TreeSelectionListener {
-   final K5_2 A;
+   public final K5_2 A;
 
-   T22(K5_2 var1) {
+   public T22(K5_2 var1) {
       this.A = var1;
    }
 
@@ -19,7 +19,7 @@ public class T22 implements TreeSelectionListener {
          String var10000 = com.finalshell.ui.panel.S.d();
          this.A.F();
          String var2 = var10000;
-         int var3 = this.A.U;
+         int var3 = (this.A.U) ? 1 : 0;
          if (var2 != null) {
             if (!this.A.U) {
                return;

@@ -8,8 +8,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import net.miginfocom.swing.MigLayout;
 
 public abstract class Z7 extends JComponent {
-   String h;
-   DefaultMutableTreeNode c;
+   public String h;
+   public DefaultMutableTreeNode c;
    public static int K;
    public static String e;
 

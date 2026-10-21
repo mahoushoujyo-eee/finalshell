@@ -4,7 +4,7 @@ import javax.swing.JComponent;
 import javax.swing.JTabbedPane;
 
 public class Ef4 extends E12 {
-   protected boolean m = Ew4.q;
+   public boolean m = Ew4.q;
 
    public Ef4() {
    }

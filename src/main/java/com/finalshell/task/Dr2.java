@@ -6,10 +6,10 @@ import com.finalshell.ui.listener.BV;
 import java.lang.reflect.InvocationTargetException;
 
 public class Dr2 implements Runnable {
-   final String o;
-   final BV b;
+   public final String o;
+   public final BV b;
 
-   Dr2(BV var1, String var2) {
+   public Dr2(BV var1, String var2) {
       this.b = var1;
       this.o = var2;
    }

@@ -1,16 +1,16 @@
 package com.finalshell.core;
 
 public class HM_2 extends HP_2 {
-   final H4_2[] k;
-   final com.finalshell.ui.model.S_3 H;
-   final P_4 B;
-   final Hd2 Z;
-   final String b;
-   final Hd2[] K;
-   final Hd2[] s;
-   final Ht2_2 O;
+   public final H4_2[] k;
+   public final com.finalshell.ui.model.S_3 H;
+   public final P_4 B;
+   public final Hd2 Z;
+   public final String b;
+   public final Hd2[] K;
+   public final Hd2[] s;
+   public final Ht2_2 O;
 
-   HM_2(Ht2_2 var1, H4_2[] var2, com.finalshell.ui.model.S_3 var3, P_4 var4, Hd2 var5, String var6, Hd2[] var7, Hd2[] var8) {
+   public HM_2(Ht2_2 var1, H4_2[] var2, com.finalshell.ui.model.S_3 var3, P_4 var4, Hd2 var5, String var6, Hd2[] var7, Hd2[] var8) {
       super(var1);
       this.O = var1;
       this.k = var2;

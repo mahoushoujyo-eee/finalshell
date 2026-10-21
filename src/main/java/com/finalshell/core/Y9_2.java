@@ -29,7 +29,7 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
    public com.finalshell.ui.panel.Cy4 z;
    public com.finalshell.ui.panel.Cy4 p;
    public PropertyChangeListener G;
-   protected P62 R;
+   public P62 R;
    public boolean D = false;
    public static String[] a;
    public static String[] c;
@@ -287,43 +287,43 @@ public class Y9_2 extends BasicScrollPaneUI implements W2_3 {
       var10000.paint(var1, var2);
    }
 
-   static com.finalshell.ui.panel.Cy4 R(Y9_2 var0) {
+   public static com.finalshell.ui.panel.Cy4 R(Y9_2 var0) {
       return var0.v();
    }
 
-   static JScrollPane s(Y9_2 var0) {
+   public static JScrollPane s(Y9_2 var0) {
       return var0.scrollpane;
    }
 
-   static com.finalshell.ui.panel.Cy4 D$cy_4(Y9_2 var0) {
+   public static com.finalshell.ui.panel.Cy4 D$cy_4(Y9_2 var0) {
       return var0.C$cy_4();
    }
 
-   static JScrollPane G(Y9_2 var0) {
+   public static JScrollPane G(Y9_2 var0) {
       return var0.scrollpane;
    }
 
-   static com.finalshell.ui.panel.Cy4 X(Y9_2 var0) {
+   public static com.finalshell.ui.panel.Cy4 X(Y9_2 var0) {
       return var0.g();
    }
 
-   static JScrollPane E(Y9_2 var0) {
+   public static JScrollPane E(Y9_2 var0) {
       return var0.scrollpane;
    }
 
-   static boolean D$boolean(Y9_2 var0) {
+   public static boolean D$boolean(Y9_2 var0) {
       return var0.m;
    }
 
-   static boolean O(Y9_2 var0) {
+   public static boolean O(Y9_2 var0) {
       return var0.b;
    }
 
-   static boolean b(Y9_2 var0, boolean var1) {
+   public static boolean b(Y9_2 var0, boolean var1) {
       return var0.D = var1;
    }
 
-   static JScrollPane i(Y9_2 var0) {
+   public static JScrollPane i(Y9_2 var0) {
       return var0.scrollpane;
    }
 

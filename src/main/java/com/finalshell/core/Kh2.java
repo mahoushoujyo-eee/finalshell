@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.lang.reflect.Type;
 
 public class Kh2 implements X4 {
-   protected final java.lang.Class c;
-   protected final Enum[] r;
-   protected final Enum[] s;
-   protected long[] L;
+   public final java.lang.Class c;
+   public final Enum[] r;
+   public final Enum[] s;
+   public long[] L;
    public static String[] a;
    public static String[] b;
    public static long[] d;

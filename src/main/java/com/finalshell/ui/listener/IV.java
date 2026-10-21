@@ -6,10 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class IV implements ActionListener {
-   final K42 c;
+   public final K42 c;
    public static String a;
 
-   IV(K42 var1) {
+   public IV(K42 var1) {
       this.c = var1;
    }
 

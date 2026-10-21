@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class CX implements ActionListener {
-   final User D;
+   public final User D;
 
-   CX(User var1) {
+   public CX(User var1) {
       this.D = var1;
    }
 

@@ -13,14 +13,14 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class LL3_2 implements Cq2 {
-   HashMap l;
-   int m;
-   int F;
-   ArrayList s;
-   ExecutorService I;
-   HashSet V;
-   HashMap X;
-   HashMap c;
+   public HashMap l;
+   public int m;
+   public int F;
+   public ArrayList s;
+   public ExecutorService I;
+   public HashSet V;
+   public HashMap X;
+   public HashMap c;
    public static long a;
 
    public LL3_2() {
@@ -72,7 +72,7 @@ public class LL3_2 implements Cq2 {
       StringBuilder var5 = var10001;
       Object var11 = 614370709562827652L;
       HashMap var8 = (HashMap)((HashMap)Ref.g(614370709562827652L, var11)).get(var6);
-      if (var5 != false) {
+      if (var5 == null) {
          if (var8 == null) {
             var8 = new HashMap();
             Object var13 = 614370709562827652L;
@@ -88,7 +88,7 @@ public class LL3_2 implements Cq2 {
       Connection12.X();
       Object var9 = 614370709562827652L;
       HashMap var6 = (HashMap)((HashMap)Ref.g(614370709562827652L, var9)).get(var5);
-      if (this != false && var6 == null) {
+      if (this == null && var6 == null) {
          var6 = new HashMap();
          Object var11 = 614370709562827652L;
          ((HashMap)Ref.g(614370709562827652L, var11)).put(var5, var6);
@@ -109,10 +109,10 @@ public class LL3_2 implements Cq2 {
 
       String var8 = var3.append((String)var10003).append("_").append(var2).toString();
       int var10002 = (var6.containsKey(var8)) ? 1 : 0;
-      if (this != false) {
+      if (this == null) {
          if (var10002 != 0) {
             var7 = (Integer)var6.get(var8);
-            if (this != false) {
+            if (this == null) {
                return var7;
             }
          }
@@ -211,7 +211,7 @@ public class LL3_2 implements Cq2 {
       }
    }
 
-   YI N(int var1) {
+   public YI N(int var1) {
       Object var2 = 386849566821741858L;
       return (YI)((HashMap)Ref.g(386849566821741858L, var2)).get(var1);
    }
@@ -230,7 +230,7 @@ public class LL3_2 implements Cq2 {
       }
    }
 
-   void w(VO var1) {
+   public void w(VO var1) {
       Connection12.d$boolean();
       Object var5 = 550567548032100594L;
       Iterator var3 = ((ArrayList)Ref.g(550567548032100594L, var5)).iterator();
@@ -249,7 +249,7 @@ public class LL3_2 implements Cq2 {
             throw var9.getTargetException();
          }
 
-         if (var2 != false) {
+         if (var2 == null) {
             break;
          }
       }

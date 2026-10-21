@@ -17,16 +17,16 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class RenameFolderDialog extends JDialog {
-   boolean q;
-   AppendCarriageReturnCRPanel x;
-   T32 w;
-   Li4 Q;
+   public boolean q;
+   public AppendCarriageReturnCRPanel x;
+   public T32 w;
+   public Li4 Q;
    public static String[] a;
    public static String[] b;
 
-   RenameFolderDialog(AppendCarriageReturnCRPanel var1, boolean var2, T32 var3) {
+   public RenameFolderDialog(AppendCarriageReturnCRPanel var1, boolean var2, T32 var3) {
+   super();
       label46: {
-         super();
          Registry.lookupField(448934280581484389L).setBoolean(this, false);
          AppendCarriageReturnCRPanel.Y();
          long var12 = 416321445355990082L;

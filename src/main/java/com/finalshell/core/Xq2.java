@@ -4,7 +4,7 @@ import org.pcap4j.packet.IcmpV4CommonPacket;
 import org.pcap4j.packet.IpV4Packet;
 
 public class Xq2 extends XQ_2 {
-   static Xq2 p;
+   public static Xq2 p;
 
    public static synchronized Xq2 A() {
       String[] var0 = XQ_2.B();

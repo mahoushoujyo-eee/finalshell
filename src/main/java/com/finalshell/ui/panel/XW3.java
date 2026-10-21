@@ -20,7 +20,7 @@ import org.jetbrains.annotations.NotNull;
 public class XW3 extends JPanel implements FocusListener {
    public final ConnectionProperty i;
    public final L62 G;
-   final Cn2 u;
+   public final Cn2 u;
    public static String a;
 
    public XW3(@NotNull Cn2 var1, WH3 var2, ConnectionProperty var3) {
@@ -38,7 +38,7 @@ public class XW3 extends JPanel implements FocusListener {
       this.add(this.G);
    }
 
-   protected void M(MouseEvent var1) {
+   public void M(MouseEvent var1) {
       String[] var2 = Cn2.Q$arrString();
       int var10000 = (var1.isPopupTrigger()) ? 1 : 0;
       if (var2 != null) {
@@ -80,7 +80,7 @@ public class XW3 extends JPanel implements FocusListener {
       this.V();
    }
 
-   protected JPopupMenu B() {
+   public JPopupMenu B() {
       JPopupMenu var1 = new JPopupMenu();
       AD_2.m(var1, this.u);
       JMenuItem var2 = new JMenuItem(a);
@@ -108,11 +108,11 @@ public class XW3 extends JPanel implements FocusListener {
       this.V();
    }
 
-   XW3(Cn2 var1, WH3 var2, ConnectionProperty var3, ZK var4) {
+   public XW3(Cn2 var1, WH3 var2, ConnectionProperty var3, ZK var4) {
       this(var1, var2, var3);
    }
 
-   static L62 w(XW3 var0) {
+   public static L62 w(XW3 var0) {
       return var0.G;
    }
 

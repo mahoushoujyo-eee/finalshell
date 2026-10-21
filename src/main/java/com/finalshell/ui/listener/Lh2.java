@@ -5,9 +5,9 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
 public class Lh2 implements TreeSelectionListener {
-   final KF3 F;
+   public final KF3 F;
 
-   Lh2(KF3 var1) {
+   public Lh2(KF3 var1) {
       this.F = var1;
    }
 

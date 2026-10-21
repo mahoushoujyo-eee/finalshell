@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class CM {
-   static ArrayList s;
+   public static ArrayList s;
    public static String[] a;
    public static String[] b;
 

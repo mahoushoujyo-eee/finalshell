@@ -10,11 +10,11 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class ZL implements ActionListener {
-   final AM X;
-   final T32 n;
-   final CopyMenu I;
+   public final AM X;
+   public final T32 n;
+   public final CopyMenu I;
 
-   ZL(CopyMenu var1, AM var2, T32 var3) {
+   public ZL(CopyMenu var1, AM var2, T32 var3) {
       this.I = var1;
       this.X = var2;
       this.n = var3;

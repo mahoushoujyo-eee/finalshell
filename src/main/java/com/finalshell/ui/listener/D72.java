@@ -8,9 +8,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class D72 implements ActionListener {
-   final KD3 R;
+   public final KD3 R;
 
-   D72(KD3 var1) {
+   public D72(KD3 var1) {
       this.R = var1;
    }
 

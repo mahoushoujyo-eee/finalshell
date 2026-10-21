@@ -8,9 +8,9 @@ import java.awt.event.MouseListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Kh2 implements MouseListener {
-   final Xj2 F;
+   public final Xj2 F;
 
-   Kh2(Xj2 var1) {
+   public Kh2(Xj2 var1) {
       this.F = var1;
    }
 

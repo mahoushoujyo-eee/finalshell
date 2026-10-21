@@ -5,9 +5,9 @@ import com.finalshell.ui.model.Q6;
 import com.finalshell.ui.panel.QuickConnectPanel;
 
 public class U02 implements Runnable {
-   final QuickConnectPanel w;
+   public final QuickConnectPanel w;
 
-   U02(QuickConnectPanel var1) {
+   public U02(QuickConnectPanel var1) {
       this.w = var1;
    }
 

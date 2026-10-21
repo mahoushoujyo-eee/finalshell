@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class V implements Runnable {
-   HashMap o;
-   HashMap c;
-   boolean z = false;
-   Object D = new Object();
-   Thread m;
-   long u = 0L;
-   LinkedBlockingQueue Z = new LinkedBlockingQueue();
+   public HashMap o;
+   public HashMap c;
+   public boolean z = false;
+   public Object D = new Object();
+   public Thread m;
+   public long u = 0L;
+   public LinkedBlockingQueue Z = new LinkedBlockingQueue();
 
    public V() {
       this.o = new HashMap();
@@ -28,7 +28,7 @@ public class V implements Runnable {
       this.Z.add(var3);
    }
 
-   long k(Qu2 var1) {
+   public long k(Qu2 var1) {
       int var2 = (int)((float)var1.P.E * Yh2.o);
       return System.currentTimeMillis() + (long)var1.P.E + (long)var2;
    }

@@ -5,9 +5,9 @@ import com.finalshell.core.Ne4;
 import com.finalshell.reflect.Ref;
 
 public class Cj4 implements Runnable {
-   final MT L;
+   public final MT L;
 
-   Cj4(MT var1) {
+   public Cj4(MT var1) {
       this.L = var1;
    }
 

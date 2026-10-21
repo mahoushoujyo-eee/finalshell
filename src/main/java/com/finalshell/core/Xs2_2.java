@@ -7,8 +7,8 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Xs2_2 implements Transferable {
-   DefaultMutableTreeNode[] L;
-   final T8 F;
+   public DefaultMutableTreeNode[] L;
+   public final T8 F;
 
    public Xs2_2(T8 var1, DefaultMutableTreeNode[] var2) {
       this.F = var1;

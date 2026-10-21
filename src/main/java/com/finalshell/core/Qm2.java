@@ -14,14 +14,14 @@ public class Qm2 {
    public Connection j;
    public CU M;
    public Tz4 e;
-   long n;
-   LA3 u;
-   int O;
+   public long n;
+   public LA3 u;
+   public int O;
    public boolean l;
-   long N;
-   long g;
-   static Random D;
-   int W;
+   public long N;
+   public long g;
+   public static Random D;
+   public int W;
    public LinkedBlockingQueue f;
    public F92 d;
    public boolean G;
@@ -195,7 +195,7 @@ public class Qm2 {
    public void P() {
    }
 
-   void T() {
+   public void T() {
       this.N = System.currentTimeMillis();
    }
 

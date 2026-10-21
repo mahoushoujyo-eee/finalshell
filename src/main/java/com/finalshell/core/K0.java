@@ -5,11 +5,11 @@ import java.lang.ref.SoftReference;
 import java.util.Map.Entry;
 
 public class K0 implements Entry {
-   final Entry x;
-   final Object W;
-   final LZ3 G;
+   public final Entry x;
+   public final Object W;
+   public final LZ3 G;
 
-   K0(LZ3 var1, Entry var2, Object var3) {
+   public K0(LZ3 var1, Entry var2, Object var3) {
       this.G = var1;
       this.x = var2;
       this.W = var3;

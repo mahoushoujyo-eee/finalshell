@@ -5,21 +5,21 @@ import java.util.Collection;
 public class Hg2_2 extends Hd2 {
    @C_9
    public Hd2[] q;
-   static boolean U;
-   final C_i_2 J;
-   final K_2_2 P;
-   final H3_2 j;
+   public static boolean U;
+   public final C_i_2 J;
+   public final K_2_2 P;
+   public final H3_2 j;
    public static String[] a;
    public static String[] c;
 
-   Hg2_2(H3_2 var1, C_i_2 var2, K_2_2 var3) {
+   public Hg2_2(H3_2 var1, C_i_2 var2, K_2_2 var3) {
       this.j = var1;
       this.J = var2;
       this.P = var3;
    }
 
    @Override
-   protected C_J[] V$arr_J() throws B2_5 {
+   public C_J[] V$arr_J() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -154,7 +154,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected HP_2[] H() {
+   public HP_2[] H() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -235,7 +235,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected Hd2[] j$arrhd_2() {
+   public Hd2[] j$arrhd_2() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -303,7 +303,7 @@ public class Hg2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 V$hd_2() {
+   public Hd2 V$hd_2() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -348,7 +348,7 @@ public class Hg2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 l$hd_2() {
+   public Hd2 l$hd_2() {
       C_i_2 var1 = (C_i_2)H3_2.V$K_2(this.J);
 
       try {
@@ -363,7 +363,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected String J() {
+   public String J() {
       return F0_2.n(this.J.R());
    }
 
@@ -373,7 +373,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected Hd2 G() {
+   public Hd2 G() {
       throw new P_5(this.P.Q(), b(-18572, -13878));
    }
 
@@ -388,7 +388,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected Hv2_2[] C() {
+   public Hv2_2[] C() {
       String[] var1 = RG_2.C();
 
       label49: {
@@ -440,7 +440,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected U3_3[] A$arru_3() {
+   public U3_3[] A$arru_3() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -656,7 +656,7 @@ public class Hg2_2 extends Hd2 {
 
    @C_9
    @Override
-   protected Hd2 g() throws B2_5 {
+   public Hd2 g() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -938,7 +938,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected Hd2[] l$arrhd_2() throws B2_5 {
+   public Hd2[] l$arrhd_2() throws B2_5 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1158,7 +1158,7 @@ public class Hg2_2 extends Hd2 {
    }
 
    @Override
-   protected H4_2[] a() throws B2_5 {
+   public H4_2[] a() throws B2_5 {
       return H3_2.R(this.j, this.P.d());
    }
 

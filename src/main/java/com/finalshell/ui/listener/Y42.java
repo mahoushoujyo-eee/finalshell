@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Y42 implements MouseListener {
-   final NA_2 L;
+   public final NA_2 L;
 
-   Y42(NA_2 var1) {
+   public Y42(NA_2 var1) {
       this.L = var1;
    }
 
@@ -22,7 +22,7 @@ public class Y42 implements MouseListener {
       byte var10002 = 3;
       if (this != null) {
          label28: {
-            if (var10001 == 3) {
+            if (var10001 == null) {
                var10001 = this;
                Object var6 = 151107122339903167L;
                boolean var10 = ((NA_2)Ref.g(151107122339903167L, var6)).isRowSelected(var3);

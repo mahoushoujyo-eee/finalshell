@@ -1,9 +1,9 @@
 package com.finalshell.core;
 
 public class CR3 extends C42 {
-   final Y_ Z;
+   public final Y_ Z;
 
-   CR3(Y_ var1) {
+   public CR3(Y_ var1) {
       this.Z = var1;
    }
 

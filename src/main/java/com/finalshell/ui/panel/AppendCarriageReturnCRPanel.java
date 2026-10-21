@@ -59,21 +59,21 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
-   AM Q;
-   Ge2 i;
-   Cp2 B;
-   T32 g;
-   JSplitPane a;
-   JPanel J;
-   JScrollPane m;
-   JTextArea Z;
-   EditPanel d;
-   JPanel T;
-   Lj4_2 k;
-   Copy3 j;
-   JCheckBoxMenuItem E;
-   boolean b;
-   String M;
+   public AM Q;
+   public Ge2 i;
+   public Cp2 B;
+   public T32 g;
+   public JSplitPane a;
+   public JPanel J;
+   public JScrollPane m;
+   public JTextArea Z;
+   public EditPanel d;
+   public JPanel T;
+   public Lj4_2 k;
+   public Copy3 j;
+   public JCheckBoxMenuItem E;
+   public boolean b;
+   public String M;
    public static int[] u;
    public static String[] c;
    public static String[] e;
@@ -284,7 +284,7 @@ public class AppendCarriageReturnCRPanel extends JPanel implements AL, Fb2 {
          throw var220.getTargetException();
       }
 
-new Dimension(var3, var238);
+var10032 = new Dimension(var3, var238);
       JCheckBoxMenuItem var17 = var235;
       var17.addActionListener(new com.finalshell.ui.listener.T(this, var17));
       var12.add((JMenuItem)var17);
@@ -301,7 +301,7 @@ new Dimension(var3, var238);
          throw var219.getTargetException();
       }
 
-new Dimension(var3, var241);
+var10033 = new Dimension(var3, var241);
       JCheckBoxMenuItem var18 = var236;
       var18.addActionListener(new Nw2(this, var18));
       JCheckBoxMenuItem var239;
@@ -317,7 +317,7 @@ new Dimension(var3, var241);
          throw var218.getTargetException();
       }
 
-new Dimension(var3, var244);
+var242 = new Dimension(var3, var244);
       long var98 = 274811053631936956L;
       JCheckBoxMenuItem var97 = var239;
       Ref.s(274811053631936956L, var97, var98);
@@ -348,7 +348,7 @@ new Dimension(var3, var244);
       label274: {
          int var10038 = 1;
          if (this == null) {
-            if (var10037 == 1) {
+            if (var10037 == null) {
                var20.setSelectedIndex(0);
                if (this == null) {
                   break label274;
@@ -614,7 +614,7 @@ new Dimension(var3, var244);
       label251: {
          int var10069 = 1;
          if (var2 == null) {
-            if (var10068 == 1) {
+            if (var10068 == null) {
                var226.setSelectedIndex(0);
                if (var2 == null) {
                   break label251;
@@ -936,7 +936,7 @@ new Dimension(var3, var244);
       }
    }
 
-   void R() {
+   public void R() {
       Y();
       Object var2 = 499934073596807594L;
       Ref.g(499934073596807594L, var2);
@@ -1038,7 +1038,7 @@ new Dimension(var3, var244);
       Ref.s(127006560398762220L, var15, var16);
    }
 
-   void o() {
+   public void o() {
       Y();
       Registry.emptyArgs();
       long var17 = 270389152141252877L;
@@ -1366,7 +1366,7 @@ new Dimension(var3, var244);
       }
    }
 
-   void x() {
+   public void x() {
       Object var11 = 165605583887724001L;
       String var2 = ((JTextArea)Ref.g(165605583887724001L, var11)).getText();
       Registry.emptyArgs();
@@ -1562,7 +1562,7 @@ new Dimension(var3, var244);
       }
    }
 
-   void d() {
+   public void d() {
       int[] var1 = Y();
       Object var4 = 544586534803602568L;
       Object var10001 = (JScrollPane)Ref.g(544586534803602568L, var4);
@@ -1596,7 +1596,7 @@ new Dimension(var3, var244);
       var2.height = a(4391, 7430188607703190936L);
    }
 
-   void z() {
+   public void z() {
       Ty4 var1 = new Ty4(Registry.lookupField(412252850898252674L).getInt(null));
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
@@ -1613,7 +1613,7 @@ new Dimension(var3, var244);
       }
    }
 
-   void E() {
+   public void E() {
       Ty4 var1 = new Ty4(Registry.lookupField(494664326722011331L).getInt(null));
       Registry.emptyArgs();
       long var2 = 270389152141252877L;
@@ -1694,7 +1694,7 @@ new Dimension(var3, var244);
       return var3;
    }
 
-   void e(String var1) {
+   public void e(String var1) {
       Li4 var2 = new Li4();
       Object[] var10001 = Registry.packArgs(var1);
       long var8 = 193904661956891993L;
@@ -1825,7 +1825,7 @@ new Dimension(var3, var244);
       }
    }
 
-   void F(T32 var1, Li4 var2, String var3) {
+   public void F(T32 var1, Li4 var2, String var3) {
       Object[] var10001 = Registry.packArgs(var3);
       long var6 = 193904661956891993L;
       Object[] var5 = var10001;
@@ -2070,7 +2070,7 @@ new Dimension(var3, var244);
       Object[] var10005 = Registry.emptyArgs();
       long var7 = 424156930953488367L;
       Object[] var6 = var10005;
-new Insets((Copy3)Ref.h(424156930953488367L, var6, var7), false, this, null);
+var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var6, var7), false, this, null);
    }
 
    public void j(T32 var1) {
@@ -2083,7 +2083,7 @@ new Insets((Copy3)Ref.h(424156930953488367L, var6, var7), false, this, null);
       Object[] var10005 = Registry.emptyArgs();
       long var8 = 424156930953488367L;
       Object[] var7 = var10005;
-new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this, var1);
+var10004 = new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this, var1);
    }
 
    public void J() {
@@ -2177,7 +2177,7 @@ new Insets((Copy3)Ref.h(424156930953488367L, var7, var8), true, this, var1);
       return (ArrayList)var20;
    }
 
-   void R(Y9 var1) {
+   public void R(Y9 var1) {
       Object[] var10001 = Registry.emptyArgs();
       long var6 = 625676037677438329L;
       Object[] var5 = var10001;

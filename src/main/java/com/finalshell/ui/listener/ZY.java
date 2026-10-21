@@ -10,10 +10,10 @@ import javax.swing.JButton;
 import javax.swing.SwingUtilities;
 
 public class ZY implements MouseMotionListener {
-   final JButton g;
-   final Tv2 G;
+   public final JButton g;
+   public final Tv2 G;
 
-   ZY(Tv2 var1, JButton var2) {
+   public ZY(Tv2 var1, JButton var2) {
       this.G = var1;
       this.g = var2;
    }
@@ -35,7 +35,7 @@ public class ZY implements MouseMotionListener {
       Object var13 = 334109740315771342L;
       Object var10009 = Ref.g(334109740315771342L, var13);
       Object var15 = 336078366828898497L;
-new ZY((Connection5)Ref.g(336078366828898497L, var15), var1.getID(), var1.getWhen(), var1.getModifiers(), var2.x, var2.y, var1.getClickCount(), var1.isPopupTrigger());
+var10009 = new ZY((Connection5)Ref.g(336078366828898497L, var15), var1.getID(), var1.getWhen(), var1.getModifiers(), var2.x, var2.y, var1.getClickCount(), var1.isPopupTrigger());
 
 
 

@@ -22,8 +22,8 @@ import javax.swing.JScrollPane;
 import net.miginfocom.swing.MigLayout;
 
 public class Edit extends Z7 implements Fb2 {
-   C62 q;
-   com.finalshell.core.Yy2 E;
+   public C62 q;
+   public com.finalshell.core.Yy2 E;
    public static Ky4[] p;
    public static String[] a;
    public static String[] b;
@@ -163,7 +163,7 @@ public class Edit extends Z7 implements Fb2 {
       }
    }
 
-   void Z(String var1) {
+   public void Z(String var1) {
       t();
       Registry.emptyArgs();
       long var6 = 270389152141252877L;

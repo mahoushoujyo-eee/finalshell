@@ -18,16 +18,16 @@ import javax.swing.SpinnerNumberModel;
 public class Yo4 implements ActionListener, ItemListener {
    public String L;
    public String B;
-   final JComboBox e;
-   final Kf2 u;
-   final JSlider l;
-   final JSpinner o;
-   final W82 n;
-   final JTextArea b;
-   final JTextArea V;
-   final S1 m;
+   public final JComboBox e;
+   public final Kf2 u;
+   public final JSlider l;
+   public final JSpinner o;
+   public final W82 n;
+   public final JTextArea b;
+   public final JTextArea V;
+   public final S1 m;
 
-   Yo4(S1 var1, JComboBox var2, Kf2 var3, JSlider var4, JSpinner var5, W82 var6, JTextArea var7, JTextArea var8) {
+   public Yo4(S1 var1, JComboBox var2, Kf2 var3, JSlider var4, JSpinner var5, W82 var6, JTextArea var7, JTextArea var8) {
       this.m = var1;
       this.e = var2;
       this.u = var3;

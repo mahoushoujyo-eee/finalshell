@@ -16,15 +16,15 @@ public class Nr4 extends Ne4 {
    public static ImageIcon p;
    public static ImageIcon s;
    public static ImageIcon K;
-   protected WeakReference d;
-   protected Za2 E;
-   protected Document y;
-   protected DocumentListener G;
-   protected com.finalshell.ui.panel.Wb2 q;
-   protected Pb4 o;
-   protected LZ v;
-   protected LZ l;
-   protected LZ F;
+   public WeakReference d;
+   public Za2 E;
+   public Document y;
+   public DocumentListener G;
+   public com.finalshell.ui.panel.Wb2 q;
+   public Pb4 o;
+   public LZ v;
+   public LZ l;
+   public LZ F;
    public static String[] a;
    public static String[] b;
 
@@ -47,7 +47,7 @@ public class Nr4 extends Ne4 {
       this.D();
    }
 
-   protected void D() {
+   public void D() {
       this.u(a(29353, 2015), new Object[0]);
       this.z(false);
       this.Z();
@@ -55,7 +55,7 @@ public class Nr4 extends Ne4 {
       this.h();
    }
 
-   protected void Z() {
+   public void Z() {
       this.q = new com.finalshell.ui.panel.Wb2(Nr4.class, a(29351, 23275));
       this.q.g(0, 2, 0, 2);
       this.q.setCursor(Cursor.getDefaultCursor());
@@ -63,7 +63,7 @@ public class Nr4 extends Ne4 {
       this.v(this.q);
    }
 
-   protected void Y() {
+   public void Y() {
       this.o = new Pb4();
       String[] var10000 = CB3.C$arrString();
       this.v = new LZ(p);
@@ -84,14 +84,14 @@ public class Nr4 extends Ne4 {
       }
    }
 
-   protected void h() {
+   public void h() {
       this.G = new com.finalshell.ui.listener.E22(this);
       this.y();
       this.addPropertyChangeListener(a(29356, 27890), new com.finalshell.ui.listener.C_M(this));
       this.addKeyListener(new Ik2(this));
    }
 
-   protected void y() {
+   public void y() {
       String[] var1 = CB3.C$arrString();
       Document var10000 = this.y;
       if (var1 != null) {
@@ -135,7 +135,7 @@ public class Nr4 extends Ne4 {
       this.u();
    }
 
-   protected void u() {
+   public void u() {
       String[] var1 = CB3.C$arrString();
       Object var10000 = this.d;
       if (var1 != null) {
@@ -157,7 +157,7 @@ public class Nr4 extends Ne4 {
       ((com.finalshell.ui.panel.Us2)var10000).S(this.E);
    }
 
-   protected void d() {
+   public void d() {
       String[] var1 = CB3.C$arrString();
       Object var10000 = this.d;
       if (var1 != null) {

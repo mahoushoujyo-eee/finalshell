@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Td_2 implements PropertyChangeListener {
-   final Wb2 d;
+   public final Wb2 d;
 
-   Td_2(Wb2 var1) {
+   public Td_2(Wb2 var1) {
       this.d = var1;
    }
 

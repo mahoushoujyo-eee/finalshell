@@ -4,11 +4,11 @@ import com.finalshell.ui.listener.Vz2;
 import javax.swing.SwingUtilities;
 
 public class Dz2 implements Runnable {
-   final int n;
-   final Vz2 V;
+   public final int n;
+   public final Vz2 V;
    public static long a;
 
-   Dz2(Vz2 var1, int var2) {
+   public Dz2(Vz2 var1, int var2) {
       this.V = var1;
       this.n = var2;
    }

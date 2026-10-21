@@ -5,9 +5,6 @@ import java.sql.Time;
 import java.sql.Timestamp;
 
 public class LY3 implements WE3 {
-   LY3() {
-   }
-
    public Boolean E(java.lang.Class var1) {
       boolean var2 = Yn4.Y();
       java.lang.Class var10000 = var1;

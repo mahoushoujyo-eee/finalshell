@@ -9,12 +9,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class M6 {
-   HashMap M;
-   com.finalshell.ui.frame.U s;
-   ArrayList I;
-   boolean O;
-   static com.finalshell.ui.frame.U d;
-   com.finalshell.ui.frame.U K;
+   public HashMap M;
+   public com.finalshell.ui.frame.U s;
+   public ArrayList I;
+   public boolean O;
+   public static com.finalshell.ui.frame.U d;
+   public com.finalshell.ui.frame.U K;
    public static long a;
 
    public M6() {
@@ -32,7 +32,7 @@ public class M6 {
       Ref.s(362106988670708490L, var5, var6);
    }
 
-   void H() {
+   public void H() {
       long var1 = System.currentTimeMillis();
       Object[] var10001 = Registry.packArgs(true);
       long var5 = 561698688134982306L;
@@ -300,7 +300,7 @@ public class M6 {
       // 1c0: areturn
    }
 
-   HashMap B() {
+   public HashMap B() {
       Object var2 = 439877715338463110L;
       return (HashMap)((HashMap)Ref.g(439877715338463110L, var2)).clone();
    }

@@ -6,9 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Ir4 implements ActionListener {
-   final Kz4 b;
+   public final Kz4 b;
 
-   Ir4(Kz4 var1) {
+   public Ir4(Kz4 var1) {
       this.b = var1;
    }
 

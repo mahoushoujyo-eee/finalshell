@@ -9,34 +9,34 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Rdp {
-   WI I = null;
+   public WI I = null;
    public int w = 0;
-   int y;
-   UR F;
-   Connect2 Z;
-   boolean u;
-   Object e;
-   boolean T;
+   public int y;
+   public UR F;
+   public Connect2 Z;
+   public boolean u;
+   public Object e;
+   public boolean T;
    public HashMap J;
-   boolean B;
-   Object W;
-   Object k;
+   public boolean B;
+   public Object W;
+   public Object k;
    public InetAddress R;
    public int D;
    public int M;
-   int K;
-   boolean l;
-   int Q;
-   int q;
-   int N;
-   BR3 t;
-   int V;
-   static Random C;
-   long i;
-   boolean s;
-   boolean G;
-   static int m;
-   Object z;
+   public int K;
+   public boolean l;
+   public int Q;
+   public int q;
+   public int N;
+   public BR3 t;
+   public int V;
+   public static Random C;
+   public long i;
+   public boolean s;
+   public boolean G;
+   public static int m;
+   public Object z;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -46,7 +46,7 @@ public class Rdp {
       __vfClinit__();
    }
 
-   Rdp(UR var1) {
+   public Rdp(UR var1) {
       this.y = (int)c;
       this.Z = null;
       this.u = false;
@@ -74,7 +74,7 @@ public class Rdp {
       this.D = var1.f;
    }
 
-   void i(byte[] param1, int param2, int param3) throws PV, InterruptedException {
+   public void i(byte[] param1, int param2, int param3) throws PV, InterruptedException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -181,7 +181,7 @@ public class Rdp {
       // ba: return
    }
 
-   void Y(byte[] param1, int param2, int param3) throws PV, InterruptedException {
+   public void Y(byte[] param1, int param2, int param3) throws PV, InterruptedException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -410,7 +410,7 @@ public class Rdp {
       var10000.G = true;
    }
 
-   void v(WI param1, boolean param2, boolean param3, boolean param4) {
+   public void v(WI param1, boolean param2, boolean param3, boolean param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -509,15 +509,15 @@ public class Rdp {
       // c3: return
    }
 
-   void e$void(int var1) {
+   public void e$void(int var1) {
       this.F.Y.Q.Q(this.F, var1);
    }
 
-   void N() {
+   public void N() {
       this.F.Y.Q.u(this.F);
    }
 
-   WI e$WI(int var1) {
+   public WI e$WI(int var1) {
       return (WI)this.J.get(var1);
    }
 
@@ -563,13 +563,13 @@ public class Rdp {
       }
    }
 
-   void b(int var1) {
+   public void b(int var1) {
       synchronized (this.z) {
          WI var3 = (WI)this.J.remove(var1);
       }
    }
 
-   void h() {
+   public void h() {
       synchronized (this.k) {
          this.k.notifyAll();
       }
@@ -578,7 +578,7 @@ public class Rdp {
    // $VF: Could not inline inconsistent finally blocks
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   void V() {
+   public void V() {
       String[] var10000 = PingMessageR.N();
       Object var2 = this.k;
       synchronized (this.k){} // $VF: monitorenter 
@@ -605,7 +605,7 @@ public class Rdp {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void U() {
+   public void U() {
       String[] var10000 = PingMessageR.N();
       W3 var2 = new W3(this.F.v, this.F.Y.q, this.M);
       var2.K(this.R);
@@ -640,7 +640,7 @@ public class Rdp {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   void F() {
+   public void F() {
       String[] var10000 = PingMessageR.N();
       WJ var2 = new WJ(this.F.v, this.F.Y.q);
       String[] var1 = var10000;
@@ -674,7 +674,7 @@ public class Rdp {
       }
    }
 
-   void s(ArrayList var1) {
+   public void s(ArrayList var1) {
       boolean var2 = false;
       boolean var3 = false;
       int var4 = this.F.e.R();
@@ -689,7 +689,7 @@ public class Rdp {
       }
    }
 
-   void i(DatagramPacket var1) throws IOException {
+   public void i(DatagramPacket var1) throws IOException {
       this.r(var1, this.F.v);
    }
 

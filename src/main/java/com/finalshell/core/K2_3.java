@@ -16,7 +16,7 @@ public class K2_3 implements CP_2 {
    public final F_3_2 t = new CK_3(this);
    public final C_e_2_2 I = new S_3(this);
    public final FY_2 n = new CZ_3(this);
-   static boolean a;
+   public static boolean a;
 
    public K2_3() {
       this.Z = this;
@@ -1948,11 +1948,11 @@ public class K2_3 implements CP_2 {
       var1.S.i(this.i);
    }
 
-   static CP_2 B(K2_3 var0) {
+   public static CP_2 B(K2_3 var0) {
       return var0.Z;
    }
 
-   static C_w_2 x(K2_3 var0) {
+   public static C_w_2 x(K2_3 var0) {
       return var0.i;
    }
 

@@ -11,14 +11,14 @@ import org.pcap4j.core.NotOpenException;
 import org.pcap4j.core.PcapNativeException;
 
 public class DX3_2 implements Q0 {
-   short K = I();
-   Yu2 P = new Yu2();
-   String B;
-   Q0 F;
-   boolean S = true;
-   int A;
-   boolean w = false;
-   GH_2 G;
+   public short K = I();
+   public Yu2 P = new Yu2();
+   public String B;
+   public Q0 F;
+   public boolean S = true;
+   public int A;
+   public boolean w = false;
+   public GH_2 G;
    public static long[] a;
    public static Integer[] b;
 
@@ -55,7 +55,7 @@ public class DX3_2 implements Q0 {
       var5.F = null;
    }
 
-   static short I() {
+   public static short I() {
       String[] var10000 = XQ_2.B();
       int var1 = a(20338, 4574849776412187L);
       int var2 = a(9255, 3454409876788809039L);

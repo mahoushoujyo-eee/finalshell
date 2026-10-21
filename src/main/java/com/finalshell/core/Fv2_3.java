@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class Fv2_3 implements F_3_2 {
-   final FF_2 u;
+   public final FF_2 u;
    public static String[] a;
    public static String[] b;
 
-   Fv2_3(FF_2 var1) {
+   public Fv2_3(FF_2 var1) {
       this.u = var1;
    }
 

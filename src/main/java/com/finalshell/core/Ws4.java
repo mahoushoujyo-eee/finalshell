@@ -5,7 +5,7 @@ import java.awt.Rectangle;
 import javax.swing.JList;
 
 public class Ws4 extends WO3 {
-   protected Ne4 R(JList var1, int var2, Uv2 var3) {
+   public Ne4 R(JList var1, int var2, Uv2 var3) {
       Ne4 var5;
       String var6;
       label14: {
@@ -31,7 +31,7 @@ public class Ws4 extends WO3 {
       return var5;
    }
 
-   protected Rectangle e(JList var1, int var2, Uv2 var3, Rectangle var4) {
+   public Rectangle e(JList var1, int var2, Uv2 var3, Rectangle var4) {
       Ui2 var5 = ((com.finalshell.ui.panel.CC)var1).A$ii_4().m(var3);
       Rectangle var6 = var5.M().u$Rectangle();
       int var7 = var6.x + var6.width + var5.getIconTextGap() - ((Ne4)this.d).getInsets().left;
@@ -44,12 +44,12 @@ public class Ws4 extends WO3 {
    }
 
    @Override
-   protected Rectangle O(JList var1, int var2, Object var3, Rectangle var4) {
+   public Rectangle O(JList var1, int var2, Object var3, Rectangle var4) {
       return this.e(var1, var2, (Uv2)var3, var4);
    }
 
    @Override
-   protected Component j(JList var1, int var2, Object var3) {
+   public Component j(JList var1, int var2, Object var3) {
       return this.R(var1, var2, (Uv2)var3);
    }
 

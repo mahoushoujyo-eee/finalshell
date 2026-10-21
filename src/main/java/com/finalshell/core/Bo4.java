@@ -5,28 +5,28 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.Ky4;
 
 public class Bo4 {
-   String i;
-   String g;
-   String J;
+   public String i;
+   public String g;
+   public String J;
    public static int f;
    public static int q;
    public static int p;
    public static int e;
    public static int E;
    public static int B;
-   int r;
-   boolean R;
-   boolean n;
-   boolean Q;
-   String A;
+   public int r;
+   public boolean R;
+   public boolean n;
+   public boolean Q;
+   public String A;
 
-   Bo4(String var1, String var2, String var3) {
+   public Bo4(String var1, String var2, String var3) {
       this(var1, var2, var3, null);
    }
 
    public Bo4(String var1, String var2, String var3, String var4) {
+   super();
       String var10000 = W2.F();
-      super();
       String var5 = var10000;
       Registry.lookupField(441230096973232620L).setInt(this, 0);
       Registry.lookupField(195748561367902473L).setBoolean(this, false);

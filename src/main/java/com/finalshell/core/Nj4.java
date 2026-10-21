@@ -9,9 +9,9 @@ import java.util.Map;
 import java.util.Set;
 
 public class Nj4 extends Nv4 implements Ak2 {
-   protected final Nc2[] h;
-   protected final Nc2[] b;
-   protected final Zzzzd4BeanInfo j;
+   public final Nc2[] h;
+   public final Nc2[] b;
+   public final Zzzzd4BeanInfo j;
    public transient volatile long[] i;
    public transient volatile short[] w;
    public static String[] a;
@@ -27,7 +27,7 @@ public class Nj4 extends Nv4 implements Ak2 {
       this(var1, N(var2));
    }
 
-   static Map N(String[] var0) {
+   public static Map N(String[] var0) {
       String var10000 = Nv4.o();
       HashMap var2 = new HashMap();
       String[] var3 = var0;
@@ -273,7 +273,7 @@ public class Nj4 extends Nv4 implements Ak2 {
       this.z(var1, var2, var3, var4, var5, false);
    }
 
-   protected void z(NL3 param1, Object param2, Object param3, Type param4, int param5, boolean param6) throws IOException {
+   public void z(NL3 param1, Object param2, Object param3, Type param4, int param5, boolean param6) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -2347,7 +2347,7 @@ public class Nj4 extends Nv4 implements Ak2 {
       // 131a: return
    }
 
-   protected void w(NL3 var1, String var2, Object var3) {
+   public void w(NL3 var1, String var2, Object var3) {
       String var4 = Nv4.o();
 
       String var10000;
@@ -2497,11 +2497,11 @@ public class Nj4 extends Nv4 implements Ak2 {
       // 94: ireturn
    }
 
-   protected boolean x(NL3 var1) {
+   public boolean x(NL3 var1) {
       return this.N(var1, 0);
    }
 
-   protected boolean N(NL3 param1, int param2) {
+   public boolean N(NL3 param1, int param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3442,15 +3442,15 @@ public class Nj4 extends Nv4 implements Ak2 {
       // 12c: areturn
    }
 
-   protected DL3 n(int var1) {
+   public DL3 n(int var1) {
       return this.b[var1].D;
    }
 
-   protected Type Q(int var1) {
+   public Type Q(int var1) {
       return this.b[var1].j.a;
    }
 
-   protected char Q(NL3 param1, Object param2, char param3) {
+   public char Q(NL3 param1, Object param2, char param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3529,7 +3529,7 @@ public class Nj4 extends Nv4 implements Ak2 {
       // a2: ireturn
    }
 
-   protected char v(NL3 param1, Object param2, char param3) {
+   public char v(NL3 param1, Object param2, char param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3608,7 +3608,7 @@ public class Nj4 extends Nv4 implements Ak2 {
       // a2: ireturn
    }
 
-   protected boolean y(NL3 param1, String param2) {
+   public boolean y(NL3 param1, String param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

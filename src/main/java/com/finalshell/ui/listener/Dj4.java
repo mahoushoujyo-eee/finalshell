@@ -10,9 +10,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Dj4 implements ActionListener {
-   final SetExternalEditorPanel p;
+   public final SetExternalEditorPanel p;
 
-   Dj4(SetExternalEditorPanel var1) {
+   public Dj4(SetExternalEditorPanel var1) {
       this.p = var1;
    }
 
@@ -33,7 +33,7 @@ public class Dj4 implements ActionListener {
          throw var34.getTargetException();
       }
 
-new Dj4(var10005);
+var10004 = new Dj4(var10005);
       Registry.packArgs(var10003.getName());
       long var10 = 353935338506646766L;
       var10004 = Ref.h2(353935338506646766L, var10);

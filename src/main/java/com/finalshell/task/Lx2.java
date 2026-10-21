@@ -6,10 +6,10 @@ import com.finalshell.core.XQ_2;
 import org.icmp4j.j;
 
 public class Lx2 implements Runnable {
-   final Qt2 e;
+   public final Qt2 e;
    public final j c;
 
-   Lx2(Qt2 var1, j var2) {
+   public Lx2(Qt2 var1, j var2) {
       this.e = var1;
       this.c = var2;
    }

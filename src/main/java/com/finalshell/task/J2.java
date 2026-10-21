@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class J2 extends Thread {
-   final Connect5 e;
+   public final Connect5 e;
    public final OutputStream c;
    public static String a;
    public static long b;
 
-   J2(Connect5 var1, OutputStream var2) {
+   public J2(Connect5 var1, OutputStream var2) {
       this.e = var1;
       this.c = var2;
    }

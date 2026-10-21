@@ -5,13 +5,13 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class O_2_4 implements H4_2 {
-   final Map U;
-   final V2_3 o;
-   final Ht2_2 i;
+   public final Map U;
+   public final V2_3 o;
+   public final Ht2_2 i;
    public static String[] a;
    public static String[] b;
 
-   O_2_4(Ht2_2 var1, Map var2, V2_3 var3) {
+   public O_2_4(Ht2_2 var1, Map var2, V2_3 var3) {
       this.i = var1;
       this.U = var2;
       this.o = var3;

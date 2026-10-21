@@ -9,8 +9,8 @@ import java.util.Random;
 public class Kx4_2 {
    public static int l;
    public static int w;
-   NY Y;
-   NY z;
+   public NY Y;
+   public NY z;
    public static int q;
    public static String[] a;
    public static String[] b;
@@ -119,7 +119,7 @@ public class Kx4_2 {
       }
    }
 
-   void z() {
+   public void z() {
       Object var1 = 583041299359063640L;
       Object var10002 = Ref.g(583041299359063640L, var1);
       long var4 = 589060347779085766L;

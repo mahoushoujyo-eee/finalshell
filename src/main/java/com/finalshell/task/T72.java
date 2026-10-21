@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 
 public class T72 implements Runnable {
-   final YT3_2 X;
+   public final YT3_2 X;
 
-   T72(YT3_2 var1) {
+   public T72(YT3_2 var1) {
       this.X = var1;
    }
 

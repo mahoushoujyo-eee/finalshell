@@ -7,9 +7,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class MZ implements Comparator {
-   final Connection4 c;
+   public final Connection4 c;
 
-   MZ(Connection4 var1) {
+   public MZ(Connection4 var1) {
       this.c = var1;
    }
 

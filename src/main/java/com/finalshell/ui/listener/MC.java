@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MC implements ActionListener {
-   final Y7 t;
+   public final Y7 t;
 
-   MC(Y7 var1) {
+   public MC(Y7 var1) {
       this.t = var1;
    }
 

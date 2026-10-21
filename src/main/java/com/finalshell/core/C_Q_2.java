@@ -3,10 +3,10 @@ package com.finalshell.core;
 import java.util.Set;
 
 public class C_Q_2 extends K2_3 {
-   final Set h;
-   final Set V;
+   public final Set h;
+   public final Set V;
 
-   C_Q_2(Set var1, Set var2) {
+   public C_Q_2(Set var1, Set var2) {
       this.h = var1;
       this.V = var2;
    }

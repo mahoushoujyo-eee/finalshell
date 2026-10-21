@@ -7,9 +7,9 @@ import java.util.Iterator;
 public class R implements Iterator {
    @C_9
    public Iterator G;
-   final C K;
+   public final C K;
 
-   R(C var1) {
+   public R(C var1) {
       this.K = var1;
       this.G = C.K(this.K).iterator();
    }

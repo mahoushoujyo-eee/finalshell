@@ -10,9 +10,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 public class C52 implements ListSelectionListener {
-   final EffectPreview N;
+   public final EffectPreview N;
 
-   C52(EffectPreview var1) {
+   public C52(EffectPreview var1) {
       this.N = var1;
    }
 

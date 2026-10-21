@@ -6,11 +6,11 @@ import com.finalshell.ui.panel.Address;
 import java.lang.reflect.InvocationTargetException;
 
 public class CZ implements Cq2 {
-   final YI J;
-   final String W;
-   final Ca4 i;
+   public final YI J;
+   public final String W;
+   public final Ca4 i;
 
-   CZ(Ca4 var1, YI var2, String var3) {
+   public CZ(Ca4 var1, YI var2, String var3) {
       this.i = var1;
       this.J = var2;
       this.W = var3;

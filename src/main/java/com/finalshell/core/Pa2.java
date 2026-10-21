@@ -10,15 +10,12 @@ import java.awt.dnd.DragSourceDragEvent;
 import java.awt.dnd.DragSourceDropEvent;
 
 public class Pa2 extends DragSourceAdapter {
-   Pa2() {
-   }
-
    @Override
    public void dragEnter(DragSourceDragEvent var1) {
       this.c(var1);
    }
 
-   protected void c(DragSourceDragEvent var1) {
+   public void c(DragSourceDragEvent var1) {
       int var10000 = Rn2.Y();
       DragSourceContext var3 = var1.getDragSourceContext();
       Rn2.h = var3.getComponent();

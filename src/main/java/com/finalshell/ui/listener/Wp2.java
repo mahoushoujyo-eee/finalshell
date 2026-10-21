@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class Wp2 implements ActionListener {
-   final AW C;
+   public final AW C;
 
-   Wp2(AW var1) {
+   public Wp2(AW var1) {
       this.C = var1;
    }
 

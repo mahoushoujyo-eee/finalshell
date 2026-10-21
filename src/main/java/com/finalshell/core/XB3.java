@@ -10,14 +10,14 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 
 public class XB3 implements CO3 {
-   byte[] Q;
-   byte[] N;
-   byte[] v;
-   byte[] r;
-   byte[] C;
-   byte[] t;
-   byte[] H;
-   byte[] Z;
+   public byte[] Q;
+   public byte[] N;
+   public byte[] v;
+   public byte[] r;
+   public byte[] C;
+   public byte[] t;
+   public byte[] H;
+   public byte[] Z;
    public static String a;
 
    @Override

@@ -16,8 +16,8 @@ import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 
 public class XM extends DefaultTableCellRenderer {
-   Border y;
-   SimpleDateFormat T;
+   public Border y;
+   public SimpleDateFormat T;
    public static String a;
    public static long[] b;
    public static Integer[] c;
@@ -43,7 +43,7 @@ public class XM extends DefaultTableCellRenderer {
       int var11 = var1.convertColumnIndexToModel(var6);
       JLabel var31 = var2.getClass().equals(ZG_2.class);
       if (var7 != null) {
-         if (var31 != false) {
+         if (var31 == null) {
             ZG_2 var12 = (ZG_2)var2;
             KeyStroke var10001 = (KeyStroke)(Registry.emptyArgs());
             long var17 = 546345160214988812L;
@@ -118,7 +118,7 @@ public class XM extends DefaultTableCellRenderer {
       }
 
       if (var7 != null) {
-         if (var31 != false) {
+         if (var31 == null) {
             var9.setOpaque(true);
             if (var7 != null) {
                return var8;
@@ -130,7 +130,7 @@ public class XM extends DefaultTableCellRenderer {
 
       JLabel var30 = var31;
       if (var7 != null) {
-         if (var30 == false) {
+         if (var30 == null) {
             var9.setOpaque(true);
             var9.setBackground(new Color(a(17820, 4325960600750597551L), a(26418, 427748747234838272L), a(26418, 427748747234838272L), 2));
             if (var7 != null) {

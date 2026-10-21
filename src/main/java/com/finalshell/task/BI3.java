@@ -6,9 +6,6 @@ import com.finalshell.core.Bi4;
 public class BI3 implements Runnable {
    public static long a;
 
-   BI3() {
-   }
-
    @Override
    public void run() {
       byte[] var1 = new byte[(int)a];

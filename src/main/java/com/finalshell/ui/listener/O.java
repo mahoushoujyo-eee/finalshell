@@ -7,9 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class O implements ActionListener {
-   final Edit V;
+   public final Edit V;
 
-   O(Edit var1) {
+   public O(Edit var1) {
       this.V = var1;
    }
 

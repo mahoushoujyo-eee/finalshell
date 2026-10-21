@@ -9,7 +9,7 @@ public class Y__2 extends GT3 {
    public static Integer[] c;
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var5;
       int var7;
       byte var12;

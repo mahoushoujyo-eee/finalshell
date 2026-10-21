@@ -21,7 +21,7 @@ public class Ap2 {
       new Ap2();
    }
 
-   Ap2() {
+   public Ap2() {
       JFrame var2 = new JFrame(a(-9737, -26881));
       var2.setDefaultCloseOperation(3);
       l();
@@ -41,11 +41,11 @@ public class Ap2 {
       var2.setLocationRelativeTo(null);
       var2.setVisible(true);
       if (Ky4.F$arrString() != null) {
-         b(var2 == false);
+         b(var2 == null);
       }
    }
 
-   JComponent s() {
+   public JComponent s() {
       boolean var10000 = l();
       K52 var2 = new K52();
       Ne4 var3 = new Ne4(a(11183, 1396414622511969277L));

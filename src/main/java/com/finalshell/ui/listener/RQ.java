@@ -6,9 +6,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class RQ extends KeyAdapter {
-   final K32 t;
+   public final K32 t;
 
-   RQ(K32 var1) {
+   public RQ(K32 var1) {
       this.t = var1;
    }
 

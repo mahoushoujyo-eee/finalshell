@@ -11,59 +11,59 @@ import java.util.Iterator;
 import javax.swing.KeyStroke;
 
 public class U62 {
-   String nK;
-   FX3 B;
-   FX3 I;
-   FX3 C;
-   Dx4_2 na;
-   Dx4_2 O;
-   Dx4_2 R;
-   String L;
-   String m;
-   String nX;
-   boolean np;
-   Rectangle no;
-   int X;
-   int T;
-   int e;
-   int f;
-   String nv;
-   String n7;
-   String nr;
-   int r;
-   int U;
-   ArrayList S;
-   boolean ns;
-   boolean w;
-   boolean q;
-   String V;
-   String u;
-   boolean j;
-   boolean G;
-   ArrayList nt;
-   String nP;
-   int K;
-   Rectangle k;
-   ArrayList p;
-   ArrayList i;
-   HashMap D;
-   String n8;
-   boolean nC;
+   public String nK;
+   public FX3 B;
+   public FX3 I;
+   public FX3 C;
+   public Dx4_2 na;
+   public Dx4_2 O;
+   public Dx4_2 R;
+   public String L;
+   public String m;
+   public String nX;
+   public boolean np;
+   public Rectangle no;
+   public int X;
+   public int T;
+   public int e;
+   public int f;
+   public String nv;
+   public String n7;
+   public String nr;
+   public int r;
+   public int U;
+   public ArrayList S;
+   public boolean ns;
+   public boolean w;
+   public boolean q;
+   public String V;
+   public String u;
+   public boolean j;
+   public boolean G;
+   public ArrayList nt;
+   public String nP;
+   public int K;
+   public Rectangle k;
+   public ArrayList p;
+   public ArrayList i;
+   public HashMap D;
+   public String n8;
+   public boolean nC;
    public static int nR;
    public static int F;
-   int b;
-   int nD;
+   public int b;
+   public int nD;
    public static int nk;
    public static int H;
-   int v;
-   boolean s;
-   boolean E;
-   boolean g;
+   public int v;
+   public boolean s;
+   public boolean E;
+   public boolean g;
    public static int x;
    public static int d;
-   int nV;
-   int nO;
-   int nF;
+   public int nV;
+   public int nO;
+   public int nF;
    public static int nh;
    public static int nG;
    public int y;
@@ -74,25 +74,25 @@ public class U62 {
    public static int nn;
    public static int Z;
    public int h;
-   String n;
-   String W;
-   boolean t;
-   boolean nJ;
-   boolean P;
+   public String n;
+   public String W;
+   public boolean t;
+   public boolean nJ;
+   public boolean P;
    public static int a;
    public static int J;
    public static int M;
-   int Q;
-   boolean nT;
-   boolean nf;
-   boolean nb;
-   int nL;
-   boolean o;
-   String N;
-   int l;
-   FX3 Y;
-   String z;
-   long A;
+   public int Q;
+   public boolean nT;
+   public boolean nf;
+   public boolean nb;
+   public int nL;
+   public boolean o;
+   public String N;
+   public int l;
+   public FX3 Y;
+   public String z;
+   public long A;
    public String n1;
    public static String[] nM;
    public static String[] ab;
@@ -222,7 +222,7 @@ public class U62 {
       }
    }
 
-   void L$void() {
+   public void L$void() {
       Ky4[] var10000 = YT3_2.c();
       int var2 = a(27525, 676531558851024391L);
       Ky4[] var1 = var10000;
@@ -239,7 +239,7 @@ public class U62 {
       Object var3 = var10001;
       var10001 = var3;
       if (var1 != null) {
-         if (var3 != false) {
+         if (var3 == null) {
             var2 = a(1525, 4500489025469970550L);
          }
 
@@ -254,7 +254,7 @@ public class U62 {
       }
 
       label155: {
-         if (var10001 != false) {
+         if (var10001 == null) {
             Object[] var57 = Registry.packArgs(Registry.lookupField(518223218338208363L).getInt(null), a(19657, -13506), var2, a(31603, 8151178144623298283L));
             long var9 = 457295964159493440L;
             Object[] var8 = var57;
@@ -838,7 +838,7 @@ public class U62 {
          Li4 var10001 = var4.hasNext();
 
          label55:
-         while (var10001 != false) {
+         while (var10001 == null) {
             Li4 var5 = (Li4)var4.next();
             var10001 = var5;
             ArrayList var10002 = (ArrayList)(Registry.emptyArgs());
@@ -949,7 +949,7 @@ public class U62 {
          Li4 var10001 = var3.hasNext();
 
          label63:
-         while (var10001 != false) {
+         while (var10001 == null) {
             Li4 var4 = (Li4)var3.next();
             var10001 = var4;
             ArrayList var10002 = (ArrayList)(Registry.emptyArgs());

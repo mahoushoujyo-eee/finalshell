@@ -6,10 +6,10 @@ import java.awt.image.ColorModel;
 import java.awt.image.WritableRaster;
 
 public abstract class Gy4 extends W5 {
-   protected int t = a(25584, 6697158943221741684L);
-   protected int P = 1;
-   protected Rectangle r;
-   protected Rectangle U;
+   public int t = a(25584, 6697158943221741684L);
+   public int P = 1;
+   public Rectangle r;
+   public Rectangle U;
    public static long[] ab;
    public static Integer[] bb;
 
@@ -29,9 +29,9 @@ public abstract class Gy4 extends W5 {
       return this.P;
    }
 
-   protected abstract void h(int var1, int var2, float[] var3);
+   public abstract void h(int var1, int var2, float[] var3);
 
-   protected void T(Rectangle var1) {
+   public void T(Rectangle var1) {
    }
 
    @Override
@@ -216,7 +216,7 @@ public abstract class Gy4 extends W5 {
       return var10000;
    }
 
-   protected BufferedImage l(BufferedImage var1, int var2, int var3, int[] var4, Rectangle var5) {
+   public BufferedImage l(BufferedImage var1, int var2, int var3, int[] var4, Rectangle var5) {
       int var7 = var2;
       int var8 = var3;
       int var9 = var5.width;

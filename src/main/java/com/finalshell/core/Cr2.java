@@ -3,11 +3,8 @@ package com.finalshell.core;
 public class Cr2 extends Cx2_2 {
    public static String j;
 
-   Cr2() {
-   }
-
    @Override
-   String i() {
+   public String i() {
       return j;
    }
 

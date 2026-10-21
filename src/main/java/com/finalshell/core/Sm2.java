@@ -8,7 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.border.Border;
 
 public final class Sm2 {
-   int R = Registry.lookupField(259904972972140803L).getInt(null);
+   public int R = Registry.lookupField(259904972972140803L).getInt(null);
    public static int w;
    public static Insets A;
    public static Color P;

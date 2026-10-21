@@ -6,12 +6,12 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class OG3 implements PropertyChangeListener {
-   final com.finalshell.ui.panel.O2 G;
-   final KD3 l;
+   public final com.finalshell.ui.panel.O2 G;
+   public final KD3 l;
    public static String[] a;
    public static String[] b;
 
-   OG3(KD3 var1, com.finalshell.ui.panel.O2 var2) {
+   public OG3(KD3 var1, com.finalshell.ui.panel.O2 var2) {
       this.l = var1;
       this.G = var2;
    }

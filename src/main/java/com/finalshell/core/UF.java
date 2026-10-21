@@ -4,7 +4,7 @@ public class UF extends UV_2 {
    public static String a;
 
    @Override
-   String y() {
+   public String y() {
       return a;
    }
 

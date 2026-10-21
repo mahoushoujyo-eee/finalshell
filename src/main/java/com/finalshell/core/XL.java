@@ -792,7 +792,7 @@ public class XL extends Xv2 {
       if (!var4) {
          return var5 != 0;
       } else {
-         return (boolean)(var5 > 0 ? 1 : 0);
+         return (boolean)((var5 > 0 ? 1 : 0) != 0);
       }
    }
 
@@ -893,23 +893,23 @@ public class XL extends Xv2 {
       }
    }
 
-   static int I(XL var0) {
+   public static int I(XL var0) {
       return var0.u;
    }
 
-   static List X(XL var0) {
+   public static List X(XL var0) {
       return var0.S;
    }
 
-   static int[][] Q(XL var0) {
+   public static int[][] Q(XL var0) {
       return var0.o;
    }
 
-   static int K(XL var0) {
+   public static int K(XL var0) {
       return var0.Z;
    }
 
-   static WC_2 h(XL var0) {
+   public static WC_2 h(XL var0) {
       return var0.r;
    }
 

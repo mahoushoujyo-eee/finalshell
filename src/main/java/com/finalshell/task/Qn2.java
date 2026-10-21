@@ -4,9 +4,9 @@ import com.finalshell.ui.frame.U;
 import javax.swing.SwingUtilities;
 
 public class Qn2 implements Runnable {
-   final U Z;
+   public final U Z;
 
-   Qn2(U var1) {
+   public Qn2(U var1) {
       this.Z = var1;
    }
 

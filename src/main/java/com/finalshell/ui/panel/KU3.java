@@ -13,8 +13,8 @@ public class KU3 extends Ky4 {
    }
 
    public KU3(int var1, int var2, Component[] var3) {
+   super(new FlowLayout(var1, var2, 0));
       int[] var10000 = K32.L$arrint();
-      super(new FlowLayout(var1, var2, 0));
       int[] var4 = var10000;
       Component[] var9 = var3;
       if (var4 != null) {

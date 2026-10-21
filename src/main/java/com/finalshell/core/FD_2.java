@@ -5,13 +5,13 @@ import java.util.Iterator;
 import java.util.List;
 
 public class FD_2 implements H_4_2 {
-   final FF_2 L;
+   public final FF_2 L;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   FD_2(FF_2 var1) {
+   public FD_2(FF_2 var1) {
       this.L = var1;
    }
 

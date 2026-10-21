@@ -32,19 +32,19 @@ import javax.swing.SwingUtilities;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class RouteTracePanel2 extends JPopupMenu {
-   Connection5 D;
-   Tf4 L;
-   Ck4 u;
-   DefaultMutableTreeNode B;
-   KQ P;
-   boolean y;
-   boolean G;
+   public Connection5 D;
+   public Tf4 L;
+   public Ck4 u;
+   public DefaultMutableTreeNode B;
+   public KQ P;
+   public boolean y;
+   public boolean G;
    public static String[] a;
    public static String[] b;
 
    public RouteTracePanel2(Connection5 var1, DefaultMutableTreeNode var2, KQ var3, boolean var4, boolean var5) {
+   super();
       String var10000 = AA.z();
-      super();
       String var6 = var10000;
       long var8 = 520858298081292913L;
       Ref.s(520858298081292913L, var2, var8);

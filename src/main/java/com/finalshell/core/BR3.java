@@ -4,12 +4,12 @@ import java.net.InetAddress;
 
 public class BR3 {
    public UR u;
-   InetAddress a;
-   int y;
-   Rdp p;
-   boolean j = false;
+   public InetAddress a;
+   public int y;
+   public Rdp p;
+   public boolean j = false;
 
-   BR3(UR var1) {
+   public BR3(UR var1) {
       this.u = var1;
       this.a = var1.s;
       this.y = var1.f;

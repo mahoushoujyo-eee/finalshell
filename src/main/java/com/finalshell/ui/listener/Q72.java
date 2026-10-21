@@ -7,12 +7,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Q72 implements ActionListener {
-   final Qe2_2 J;
-   final KD3 U;
+   public final Qe2_2 J;
+   public final KD3 U;
    public static String[] a;
    public static String[] b;
 
-   Q72(KD3 var1, Qe2_2 var2) {
+   public Q72(KD3 var1, Qe2_2 var2) {
       this.U = var1;
       this.J = var2;
    }

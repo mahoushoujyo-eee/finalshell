@@ -4,24 +4,21 @@ import com.finalshell.crypto.ConnectHost;
 
 public abstract class Cd2_2 extends Cv2 {
    public int w;
-   byte[] O;
-   byte[] Y;
-   byte[] C;
-   byte[] Z;
-   byte[] m;
+   public byte[] O;
+   public byte[] Y;
+   public byte[] C;
+   public byte[] Z;
+   public byte[] m;
    public UJ j;
    public YU x;
    public Ow2 D;
-   protected String z;
-   protected String S;
-   protected int B;
+   public String z;
+   public String S;
+   public int B;
    public static String[] d;
    public static String[] e;
    public static long[] l;
    public static Integer[] o;
-
-   Cd2_2() {
-   }
 
    @Override
    public void x(ConnectHost param1, byte[] param2, byte[] param3, byte[] param4, byte[] param5) throws Exception {

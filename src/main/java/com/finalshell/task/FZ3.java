@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.CL;
 import java.lang.reflect.InvocationTargetException;
 
 public class FZ3 implements Runnable {
-   final CL F;
+   public final CL F;
 
-   FZ3(CL var1) {
+   public FZ3(CL var1) {
       this.F = var1;
    }
 

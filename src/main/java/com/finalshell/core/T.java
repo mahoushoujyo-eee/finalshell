@@ -3,9 +3,9 @@ package com.finalshell.core;
 import javax.swing.Icon;
 
 public class T extends KD {
-   final D E;
+   public final D E;
 
-   T(D var1, Icon var2) {
+   public T(D var1, Icon var2) {
       super(var2);
       this.E = var1;
    }

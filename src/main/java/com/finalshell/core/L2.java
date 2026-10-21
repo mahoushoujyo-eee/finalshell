@@ -413,7 +413,7 @@ public class L2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   static void B(XA var0) {
+   public static void B(XA var0) {
       Ky4[] var10000 = XA.P();
       Object var2 = V;
       synchronized (V){} // $VF: monitorenter 
@@ -570,11 +570,11 @@ public class L2 {
       }
    }
 
-   static Hashtable X() {
+   public static Hashtable X() {
       return C;
    }
 
-   L2(String var1, int var2, Nv2 var3, YG var4) {
+   public L2(String var1, int var2, Nv2 var3, YG var4) {
       this(var1, var2, var3);
    }
 

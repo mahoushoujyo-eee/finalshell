@@ -5,8 +5,8 @@ import com.finalshell.core.QC;
 import javax.swing.Icon;
 
 public class Ov2 extends O implements ND {
-   protected boolean W;
-   protected float Z;
+   public boolean W;
+   public float Z;
    public static String a;
 
    public Ov2() {

@@ -7,10 +7,10 @@ import java.awt.Point;
 import java.awt.Rectangle;
 
 public class C_k_2 implements E_2 {
-   final Component P;
-   final QX G;
+   public final Component P;
+   public final QX G;
 
-   C_k_2(QX var1, Component var2) {
+   public C_k_2(QX var1, Component var2) {
       this.G = var1;
       this.P = var2;
    }

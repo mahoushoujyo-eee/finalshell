@@ -55,15 +55,15 @@ public class WQ3 extends TransferHandler {
    }
 
    @Override
-   protected Transferable createTransferable(JComponent var1) {
+   public Transferable createTransferable(JComponent var1) {
       return new EB(this);
    }
 
-   static DataFlavor[] r() {
+   public static DataFlavor[] r() {
       return M;
    }
 
-   static BufferedImage Y(WQ3 var0) {
+   public static BufferedImage Y(WQ3 var0) {
       return var0.H;
    }
 

@@ -5,11 +5,11 @@ import java.awt.image.BufferedImage;
 import java.awt.image.PixelGrabber;
 
 public class Bh2 implements SC {
-   protected int[] e;
-   protected int P;
-   protected int p;
-   protected int g = 0;
-   protected boolean W = false;
+   public int[] e;
+   public int P;
+   public int p;
+   public int g = 0;
+   public boolean W = false;
    public static String[] a;
    public static String[] b;
    public static long[] c;

@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.ConnectionProperty;
 import java.awt.Rectangle;
 
 public class EO implements E_2 {
-   final ConnectionProperty J;
+   public final ConnectionProperty J;
 
-   EO(ConnectionProperty var1) {
+   public EO(ConnectionProperty var1) {
       this.J = var1;
    }
 

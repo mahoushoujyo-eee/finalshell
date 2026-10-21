@@ -8,9 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Comparator;
 
 public class DD implements Comparator {
-   final Connection5 R;
+   public final Connection5 R;
 
-   DD(Connection5 var1) {
+   public DD(Connection5 var1) {
       this.R = var1;
    }
 

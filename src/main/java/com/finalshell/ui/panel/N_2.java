@@ -66,8 +66,8 @@ public class N_2 extends Ky4 implements OM {
    }
 
    public N_2(boolean var1) {
+   super();
       int var10000 = W();
-      super();
       this.O = new ArrayList(1);
       this.F = new ArrayList(1);
       this.Q = false;
@@ -510,75 +510,75 @@ public class N_2 extends Ky4 implements OM {
       }
    }
 
-   static Color y(N_2 var0, Color var1) {
+   public static Color y(N_2 var0, Color var1) {
       return var0.R = var1;
    }
 
-   static L r(N_2 var0) {
+   public static L r(N_2 var0) {
       return var0.l;
    }
 
-   static Color c(N_2 var0) {
+   public static Color c(N_2 var0) {
       return var0.R;
    }
 
-   static void a(N_2 var0, Color var1, A2 var2) {
+   public static void a(N_2 var0, Color var1, A2 var2) {
       var0.q(var1, var2);
    }
 
-   static X3 u(N_2 var0) {
+   public static X3 u(N_2 var0) {
       return var0.q;
    }
 
-   static Kh4 P(N_2 var0) {
+   public static Kh4 P(N_2 var0) {
       return var0.h;
    }
 
-   static boolean N(N_2 var0) {
+   public static boolean N(N_2 var0) {
       return var0.T;
    }
 
-   static Ne4 t(N_2 var0) {
+   public static Ne4 t(N_2 var0) {
       return var0.N;
    }
 
-   static Ne4 f(N_2 var0) {
+   public static Ne4 f(N_2 var0) {
       return var0.J;
    }
 
-   static Ne4 o(N_2 var0) {
+   public static Ne4 o(N_2 var0) {
       return var0.C;
    }
 
-   static Ne4 U(N_2 var0) {
+   public static Ne4 U(N_2 var0) {
       return var0.z;
    }
 
-   static Ne4 Z(N_2 var0) {
+   public static Ne4 Z(N_2 var0) {
       return var0.Y;
    }
 
-   static Ne4 l(N_2 var0) {
+   public static Ne4 l(N_2 var0) {
       return var0.G;
    }
 
-   static Ne4 E(N_2 var0) {
+   public static Ne4 E(N_2 var0) {
       return var0.p;
    }
 
-   static int l(N_2 var0, int var1) {
+   public static int l(N_2 var0, int var1) {
       return var0.e = var1;
    }
 
-   static void O(N_2 var0, ActionEvent var1) {
+   public static void O(N_2 var0, ActionEvent var1) {
       var0.Q(var1);
    }
 
-   static void D(N_2 var0, ActionEvent var1) {
+   public static void D(N_2 var0, ActionEvent var1) {
       var0.x(var1);
    }
 
-   static void c(N_2 var0, ActionEvent var1) {
+   public static void c(N_2 var0, ActionEvent var1) {
       var0.k(var1);
    }
 

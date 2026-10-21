@@ -6,18 +6,18 @@ public abstract class LI3 extends Ls4 {
    public static String[] a;
    public static String[] b;
 
-   LI3(Xe2 var1, byte[] var2, byte[] var3) {
+   public LI3(Xe2 var1, byte[] var2, byte[] var3) {
       super(var1);
       this.c = var2;
       this.K = var3;
    }
 
-   abstract String y();
+   public abstract String y();
 
-   abstract String Y$String();
+   public abstract String Y$String();
 
    @Override
-   void K(int var1) throws Pc2 {
+   public void K(int var1) throws Pc2 {
       try {
          java.lang.Class var2 = java.lang.Class.forName(Xe2.r(b(-4608, 26316))).asSubclass(PA.class);
          PA var3 = (PA)var2.getDeclaredConstructor().newInstance();
@@ -30,22 +30,22 @@ public abstract class LI3 extends Ls4 {
       }
    }
 
-   byte[] Y$arrbyte() {
+   public byte[] Y$arrbyte() {
       throw new UnsupportedOperationException();
    }
 
    @Override
-   byte[] d() {
+   public byte[] d() {
       throw new UnsupportedOperationException();
    }
 
    @Override
-   byte[] r$arrbyte() {
+   public byte[] r$arrbyte() {
       throw new UnsupportedOperationException();
    }
 
    @Override
-   boolean I(byte[] param1) {
+   public boolean I(byte[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -353,7 +353,7 @@ public abstract class LI3 extends Ls4 {
    }
 
    @Override
-   byte[] A() {
+   public byte[] A() {
       return E8.J(this.y());
    }
 

@@ -1,14 +1,14 @@
 package com.finalshell.core;
 
 public class FI_2 implements C_w_2 {
-   static boolean L;
-   final FF_2 r;
+   public static boolean L;
+   public final FF_2 r;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   FI_2(FF_2 var1) {
+   public FI_2(FF_2 var1) {
       this.r = var1;
    }
 

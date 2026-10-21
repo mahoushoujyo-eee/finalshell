@@ -4,12 +4,12 @@ public class O extends Exception {
    public String m;
    public static String a;
 
-   O(String var1) {
+   public O(String var1) {
       super(var1);
       this.m = var1;
    }
 
-   O(String var1, int var2) {
+   public O(String var1, int var2) {
       super(a + var2);
       this.m = var1;
    }

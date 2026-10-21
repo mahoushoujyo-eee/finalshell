@@ -9,10 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JCheckBoxMenuItem;
 
 public class Ci2 implements ActionListener {
-   final JCheckBoxMenuItem k;
-   final SetExternalEditorPanel O;
+   public final JCheckBoxMenuItem k;
+   public final SetExternalEditorPanel O;
 
-   Ci2(SetExternalEditorPanel var1, JCheckBoxMenuItem var2) {
+   public Ci2(SetExternalEditorPanel var1, JCheckBoxMenuItem var2) {
       this.O = var1;
       this.k = var2;
    }

@@ -16,7 +16,7 @@ public class DH {
    public InputStream Y;
    public InputStream O;
    public OutputStream U;
-   Ke4_2 D;
+   public Ke4_2 D;
    public static String[] b;
    public static String[] e;
    public static long[] f;
@@ -469,7 +469,7 @@ public class DH {
       // 246: return
    }
 
-   void H(AU param1) throws IOException {
+   public void H(AU param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

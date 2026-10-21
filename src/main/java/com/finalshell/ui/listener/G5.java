@@ -6,10 +6,10 @@ import javax.swing.event.CaretListener;
 import javax.swing.event.ChangeListener;
 
 public class G5 implements CaretListener {
-   final ChangeListener f;
-   final com.finalshell.ui.panel.N_2 V;
+   public final ChangeListener f;
+   public final com.finalshell.ui.panel.N_2 V;
 
-   G5(com.finalshell.ui.panel.N_2 var1, ChangeListener var2) {
+   public G5(com.finalshell.ui.panel.N_2 var1, ChangeListener var2) {
       this.V = var1;
       this.f = var2;
    }
@@ -24,7 +24,7 @@ public class G5 implements CaretListener {
          int var10000;
          label40: {
             try {
-               var10000 = com.finalshell.ui.panel.N_2.N(this.V);
+               var10000 = (com.finalshell.ui.panel.N_2.N(this.V)) ? 1 : 0;
                if (var2 == 0) {
                   break label40;
                }

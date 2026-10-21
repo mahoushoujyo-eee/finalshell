@@ -4,9 +4,9 @@ import com.finalshell.ui.panel.Wd2;
 import javax.swing.event.AncestorEvent;
 
 public class Fh2_2 extends FY {
-   final Wd2 t;
+   public final Wd2 t;
 
-   Fh2_2(Wd2 var1) {
+   public Fh2_2(Wd2 var1) {
       this.t = var1;
    }
 

@@ -6,10 +6,10 @@ import java.awt.event.WindowStateListener;
 import javax.swing.JLayeredPane;
 
 public class I52 implements WindowStateListener {
-   final Qt2 j;
-   final JLayeredPane i;
+   public final Qt2 j;
+   public final JLayeredPane i;
 
-   I52(Qt2 var1, JLayeredPane var2) {
+   public I52(Qt2 var1, JLayeredPane var2) {
       this.j = var1;
       this.i = var2;
    }

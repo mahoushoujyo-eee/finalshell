@@ -13,8 +13,8 @@ public final class RP_2 extends R8_2 {
    }
 
    public RP_2(com.finalshell.ui.model.I var1, NV_2 var2, C_r_2 var3, @C_9 C_r_2 var4) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       String[] var5 = var10000;
       (this.h = var2).d(this);
       (this.k = var3).G(this);

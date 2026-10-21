@@ -6,9 +6,9 @@ import com.finalshell.ui.frame.KeyManagerFrame;
 import java.lang.reflect.InvocationTargetException;
 
 public class V4 implements Fb2 {
-   final KeyManagerFrame D;
+   public final KeyManagerFrame D;
 
-   V4(KeyManagerFrame var1) {
+   public V4(KeyManagerFrame var1) {
       this.D = var1;
    }
 

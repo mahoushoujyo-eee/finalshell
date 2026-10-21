@@ -6,10 +6,10 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class UC extends MouseAdapter {
-   final HT M;
-   final com.finalshell.core.O5 y;
+   public final HT M;
+   public final com.finalshell.core.O5 y;
 
-   UC(HT var1, com.finalshell.core.O5 var2) {
+   public UC(HT var1, com.finalshell.core.O5 var2) {
       this.M = var1;
       this.y = var2;
    }

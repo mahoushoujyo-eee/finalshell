@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.core.Ip7;
 
 public class WB3 implements Runnable {
-   final Ip7 D;
+   public final Ip7 D;
 
-   WB3(Ip7 var1) {
+   public WB3(Ip7 var1) {
       this.D = var1;
    }
 

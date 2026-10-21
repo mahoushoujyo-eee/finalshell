@@ -14,10 +14,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Nu2 implements MouseMotionListener {
-   final Connection5 J;
+   public final Connection5 J;
    public static long a;
 
-   Nu2(Connection5 var1) {
+   public Nu2(Connection5 var1) {
       this.J = var1;
    }
 
@@ -53,7 +53,7 @@ public class Nu2 implements MouseMotionListener {
 
             Nu2 var91 = (Nu2)var3;
             if (var2 == null) {
-               if (var3 != false) {
+               if (var3 == null) {
                   Object var23 = 468723888490930522L;
                   Ref.g(468723888490930522L, var23);
                   Object var25 = 624888273314831754L;

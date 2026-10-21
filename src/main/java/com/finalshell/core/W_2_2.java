@@ -3,19 +3,16 @@ package com.finalshell.core;
 import com.finalshell.crypto.PingMessageR;
 
 public class W_2_2 {
-   int B;
-   int s;
-   int x;
-   int G;
-   int n;
-   int l;
-   boolean M = false;
-   int X;
+   public int B;
+   public int s;
+   public int x;
+   public int G;
+   public int n;
+   public int l;
+   public boolean M = false;
+   public int X;
 
-   W_2_2() {
-   }
-
-   float i() {
+   public float i() {
       String[] var1;
       int var2;
       label23: {
@@ -47,7 +44,7 @@ public class W_2_2 {
       return (float)var5 / (float)this.h();
    }
 
-   float m() {
+   public float m() {
       String[] var10000 = PingMessageR.N();
       float var2 = 0.0F;
       String[] var1 = var10000;
@@ -63,16 +60,16 @@ public class W_2_2 {
       return (float)var3 / (float)this.f();
    }
 
-   void h(int var1) {
+   public void h(int var1) {
       this.X += var1;
    }
 
-   void m(int var1) {
+   public void m(int var1) {
       this.x++;
       this.B += var1;
    }
 
-   void z(int var1) {
+   public void z(int var1) {
       this.s += var1;
    }
 

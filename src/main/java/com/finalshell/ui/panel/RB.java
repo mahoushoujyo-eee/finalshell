@@ -17,7 +17,7 @@ public class RB extends JComponent {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var3 = (Graphics2D)var1;
       boolean var10000 = PQ.p();

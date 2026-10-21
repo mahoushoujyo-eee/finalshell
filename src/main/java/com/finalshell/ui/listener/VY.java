@@ -16,10 +16,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class VY implements MouseListener {
-   final Connection4 y;
+   public final Connection4 y;
    public static long a;
 
-   VY(Connection4 var1) {
+   public VY(Connection4 var1) {
       this.y = var1;
    }
 
@@ -84,7 +84,7 @@ public class VY implements MouseListener {
          }
 
          VY var6 = var31;
-         if (var6 == 1) {
+         if (var6 == null) {
             Object var25 = 402958598703799057L;
             Registry.lookupField(191167021799414579L).setBoolean(Ref.g(402958598703799057L, var25), true);
          }
@@ -141,7 +141,7 @@ public class VY implements MouseListener {
          if (var2 != null) {
             label198: {
                label180:
-               if (var10003 == 1) {
+               if (var10003 == null) {
                   var10003 = var6;
                   if (var2 != null) {
                      if (var6 == null) {
@@ -153,7 +153,7 @@ public class VY implements MouseListener {
 
                   var10003 = var10003.getClass().equals(Ck4.class);
                   if (var2 != null) {
-                     if (var10003 != 0) {
+                     if (var10003 != null) {
                         label169: {
                            Ck4 var8 = (Ck4)var6.getUserObject();
                            int var65 = var1.getClickCount();
@@ -183,12 +183,12 @@ public class VY implements MouseListener {
                      break label198;
                   }
 
-                  if (var10003 != 0) {
+                  if (var10003 != null) {
                      Tf4 var56 = (Tf4)var6.getUserObject();
                      boolean var9 = false;
                      var10003 = var1.getClickCount();
                      if (var2 != null) {
-                        if (var10003 == 2) {
+                        if (var10003 == null) {
                            var9 = true;
                            Object var18 = 402958598703799057L;
                            Ref.g(402958598703799057L, var18);
@@ -222,7 +222,7 @@ public class VY implements MouseListener {
 
                      if (var2 != null) {
                         label154:
-                        if (var10003 != false) {
+                        if (var10003 == null) {
                            Object var26 = 402958598703799057L;
                            Ref.g(402958598703799057L, var26);
                            Object[] var75 = Registry.packArgs(var7, var56, var5, null, true, true);
@@ -292,7 +292,7 @@ public class VY implements MouseListener {
                      }
 
                      label144:
-                     if (var10003 == 2) {
+                     if (var10003 == null) {
                         Connection4 var66 = var3;
                         if (var2 != null) {
                            Object[] var71 = Registry.packArgs(var1.getPoint());

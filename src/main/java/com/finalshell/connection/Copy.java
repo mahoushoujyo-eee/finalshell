@@ -29,24 +29,24 @@ import javax.swing.text.DefaultCaret;
 import net.miginfocom.swing.MigLayout;
 
 public class Copy extends F8 {
-   String m;
-   String I;
-   String b;
-   U82 d;
-   String W;
-   Kw4 U;
-   Y62_2 y;
-   GR C;
-   int A;
-   int D;
+   public String m;
+   public String I;
+   public String b;
+   public U82 d;
+   public String W;
+   public Kw4 U;
+   public Y62_2 y;
+   public GR C;
+   public int A;
+   public int D;
    public static String[] a;
    public static String[] e;
    public static long[] g;
    public static Integer[] h;
 
    public Copy(Kw4 var1) {
+   super();
       String[] var10000 = Y62_2.Z();
-      super();
       String[] var2 = var10000;
       long var9 = 231874607456927970L;
       String var8 = "";
@@ -125,7 +125,7 @@ public class Copy extends F8 {
       }
    }
 
-   JTextArea M() {
+   public JTextArea M() {
       JTextArea var1 = new JTextArea();
       var1.setLineWrap(true);
       var1.setOpaque(false);

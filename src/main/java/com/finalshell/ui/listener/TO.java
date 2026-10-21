@@ -17,13 +17,13 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class TO implements MouseListener {
-   final boolean D;
-   final Connection4 U;
-   final Address O;
-   final com.finalshell.core.Km2 b;
+   public final boolean D;
+   public final Connection4 U;
+   public final Address O;
+   public final com.finalshell.core.Km2 b;
    public static long a;
 
-   TO(com.finalshell.core.Km2 var1, boolean var2, Connection4 var3, Address var4) {
+   public TO(com.finalshell.core.Km2 var1, boolean var2, Connection4 var3, Address var4) {
       this.b = var1;
       this.D = var2;
       this.U = var3;
@@ -103,7 +103,7 @@ public class TO implements MouseListener {
                }
 
                label183:
-               if (var107 == 2) {
+               if (var107 == null) {
                   Object var22 = 396507593444187971L;
                   var10003 = Ref.g(396507593444187971L, var22);
                   Object[] var111 = Registry.packArgs((int)var3);
@@ -293,7 +293,7 @@ public class TO implements MouseListener {
                Object var60 = 396507593444187971L;
                var10003 = ((com.finalshell.core.Km2)Ref.g(396507593444187971L, var60)).isRowSelected((int)var3);
                if (var2 == null) {
-                  if (var10003 == false) {
+                  if (var10003 == null) {
                      Object var62 = 396507593444187971L;
                      ((com.finalshell.core.Km2)Ref.g(396507593444187971L, var62)).getSelectionModel().setSelectionInterval((int)var3, (int)var3);
                   }
@@ -307,7 +307,7 @@ public class TO implements MouseListener {
                   break label174;
                }
 
-               if (var10003 != false) {
+               if (var10003 == null) {
                   Object var66 = 396507593444187971L;
                   Ref.g(396507593444187971L, var66);
                   Object var68 = 485948784714883245L;
@@ -317,7 +317,7 @@ public class TO implements MouseListener {
                   Object var72 = 612091313834066062L;
                   Kl4 var130 = (Kl4)Ref.g(612091313834066062L, var72);
                   Object var74 = 487924346083543578L;
-new O32(var130, this, (Connection4)Ref.g(487924346083543578L, var74));
+var125 = new O32(var130, this, (Connection4)Ref.g(487924346083543578L, var74));
                   this.show((Component)var1.getSource(), var1.getX(), var1.getY());
                }
             }

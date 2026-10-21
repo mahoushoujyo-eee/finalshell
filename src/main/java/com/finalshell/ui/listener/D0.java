@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class D0 implements ActionListener {
-   final AddCommandListener S;
+   public final AddCommandListener S;
 
-   D0(AddCommandListener var1) {
+   public D0(AddCommandListener var1) {
       this.S = var1;
    }
 

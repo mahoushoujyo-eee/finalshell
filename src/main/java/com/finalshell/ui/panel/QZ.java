@@ -15,10 +15,10 @@ import java.awt.LayoutManager;
 import java.awt.Rectangle;
 
 public class QZ extends Qt2 {
-   protected boolean g = Xl2.n;
-   protected int b = 0;
-   protected WC_2 N;
-   protected boolean s = false;
+   public boolean g = Xl2.n;
+   public int b = 0;
+   public WC_2 N;
+   public boolean s = false;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -88,7 +88,7 @@ public class QZ extends Qt2 {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
       Graphics2D var2 = (Graphics2D)var1;
       Object var3 = RV.X(var2);

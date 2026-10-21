@@ -18,24 +18,24 @@ import javax.swing.text.BadLocationException;
 import net.miginfocom.swing.MigLayout;
 
 public class DownloadDialog extends JDialog {
-   Window N;
-   Address r;
-   String c;
-   JTextArea Z;
-   JScrollPane B;
-   String V;
-   final int O;
-   DB3 k;
-   long F;
-   long I;
+   public Window N;
+   public Address r;
+   public String c;
+   public JTextArea Z;
+   public JScrollPane B;
+   public String V;
+   public final int O;
+   public DB3 k;
+   public long F;
+   public long I;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   DownloadDialog(Window var1, Address var2, String var3, String var4) {
+   public DownloadDialog(Window var1, Address var2, String var3, String var4) {
+   super(var1);
       short var10000 = -27698;
-      super(var1);
       short var10001 = 12137;
       this.O = a(31200, 3408528587104196419L);
       long var8 = 207607350854790523L;
@@ -94,7 +94,7 @@ public class DownloadDialog extends JDialog {
       }
    }
 
-   void t() {
+   public void t() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -722,7 +722,7 @@ public class DownloadDialog extends JDialog {
       // 5ad: return
    }
 
-   void A(String var1) {
+   public void A(String var1) {
       SwingUtilities.invokeLater(new Up4(this, var1));
    }
 

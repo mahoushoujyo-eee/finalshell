@@ -16,7 +16,7 @@ public class Yz2 {
       new Yz2();
    }
 
-   Yz2() {
+   public Yz2() {
       JFrame var1 = new JFrame();
       var1.setDefaultCloseOperation(3);
       Tc4 var2 = new Tc4(this);

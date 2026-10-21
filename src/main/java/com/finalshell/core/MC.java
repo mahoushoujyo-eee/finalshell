@@ -15,7 +15,7 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeCellEditor;
 
 public class MC extends DefaultTreeCellEditor {
-   Ne4 D;
+   public Ne4 D;
    public static String[] a;
    public static String[] b;
 

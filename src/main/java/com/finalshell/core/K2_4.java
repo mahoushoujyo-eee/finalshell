@@ -4,11 +4,11 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 public class K2_4 implements FilenameFilter {
-   static boolean n;
-   final com.finalshell.ui.model.Y2 S;
+   public static boolean n;
+   public final com.finalshell.ui.model.Y2 S;
    public static String a;
 
-   K2_4(com.finalshell.ui.model.Y2 var1) {
+   public K2_4(com.finalshell.ui.model.Y2 var1) {
       this.S = var1;
    }
 

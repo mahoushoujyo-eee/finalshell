@@ -5,9 +5,6 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public abstract class ZP_2 {
-   protected ZP_2() {
-   }
-
    public abstract Object o();
 
    public abstract int U();
@@ -31,7 +28,7 @@ public abstract class ZP_2 {
 
       Object var4 = var10002;
       String var10001 = (String)var4;
-      if (this != false) {
+      if (this == null) {
          if (var4 == null) {
             return "";
          }
@@ -41,7 +38,7 @@ public abstract class ZP_2 {
 
       String var5 = var10001.toString();
       var10001 = var5;
-      if (this != false) {
+      if (this == null) {
          if (var5 == null) {
             return "";
          }

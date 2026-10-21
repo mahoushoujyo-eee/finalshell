@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.panel.Ky4;
 
 public class TQ3 extends Ty4 {
-   String u;
-   String x;
-   int w;
+   public String u;
+   public String x;
+   public int w;
    public static int Q;
    public static int U;
    public static int O;
@@ -18,11 +18,11 @@ public class TQ3 extends Ty4 {
    public static int R;
    public static int d;
    public static int m;
-   int L;
+   public int L;
 
    public TQ3(String var1, int var2, int var3) {
+   super();
       Ky4[] var10000 = Ty4.Y();
-      super();
       Ky4[] var4 = var10000;
       Registry.lookupField(548098573368557380L).setInt(this, var2);
       long var6 = 325713135597124793L;

@@ -55,7 +55,7 @@ public class Gc4 extends Gy4 {
    }
 
    @Override
-   protected void T(Rectangle var1) {
+   public void T(Rectangle var1) {
       String[] var2 = W5.q();
       if (var2 != null) {
          if (this.t != 0) {
@@ -71,7 +71,7 @@ public class Gc4 extends Gy4 {
    }
 
    @Override
-   protected void h(int var1, int var2, float[] var3) {
+   public void h(int var1, int var2, float[] var3) {
       String[] var10000 = W5.q();
       float var5 = (float)var2 / this.o;
       String[] var4 = var10000;

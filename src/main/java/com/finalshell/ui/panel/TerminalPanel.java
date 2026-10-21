@@ -10,7 +10,7 @@ public class TerminalPanel extends JPanel {
    public static String[] a;
    public static String[] b;
 
-   TerminalPanel() {
+   public TerminalPanel() {
       this.setLayout(new MigLayout(a(-23375, -30588), a(-23376, 13887), a(-23374, -32475)));
       JLabel var1 = new JLabel(a(-23373, 14357));
       var1.setFont((Font)Registry.lookupField(395970988011231853L).get(null));

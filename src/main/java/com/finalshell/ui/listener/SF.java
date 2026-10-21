@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 import java.io.File;
 
 public class SF implements ActionListener {
-   final File G;
-   final Kz4 h;
+   public final File G;
+   public final Kz4 h;
 
-   SF(Kz4 var1, File var2) {
+   public SF(Kz4 var1, File var2) {
       this.h = var1;
       this.G = var2;
    }

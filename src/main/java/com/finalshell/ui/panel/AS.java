@@ -19,12 +19,12 @@ import javax.swing.table.TableCellRenderer;
 import net.miginfocom.swing.MigLayout;
 
 public class AS extends JPanel implements TableCellRenderer {
-   JLabel a;
-   JLabel A;
-   JLabel K;
-   Font s;
-   Color Y;
-   Color r;
+   public JLabel a;
+   public JLabel A;
+   public JLabel K;
+   public Font s;
+   public Color Y;
+   public Color r;
    public static String[] b;
    public static String[] c;
    public static long[] d;
@@ -214,7 +214,7 @@ public class AS extends JPanel implements TableCellRenderer {
                               break label154;
                            }
 
-                           if (var10006 != false) {
+                           if (var10006 == null) {
                               var12 = var12.substring(0, var12.length() - 1);
                            }
                         }

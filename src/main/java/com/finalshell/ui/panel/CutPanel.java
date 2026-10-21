@@ -16,11 +16,11 @@ import javax.swing.text.JTextComponent;
 public class CutPanel extends JPopupMenu implements MouseListener, ActionListener {
    public static long serialVersionUID;
    public static CutPanel V;
-   JMenuItem o;
-   JMenuItem U;
-   JMenuItem K;
-   JMenuItem b;
-   JMenuItem P;
+   public JMenuItem o;
+   public JMenuItem U;
+   public JMenuItem K;
+   public JMenuItem b;
+   public JMenuItem P;
    public static String[] a;
    public static String[] c;
    public static long[] d;
@@ -106,7 +106,7 @@ public class CutPanel extends JPopupMenu implements MouseListener, ActionListene
       }
    }
 
-   static CutPanel j() {
+   public static CutPanel j() {
       int var0 = Jy2.C();
       CutPanel var10000 = V;
       if (var0 == 0) {

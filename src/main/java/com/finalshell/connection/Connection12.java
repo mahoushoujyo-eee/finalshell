@@ -23,21 +23,21 @@ import java.util.ArrayList;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Connection12 implements Ms2 {
-   String w;
-   Lv4_2 a;
-   ConnectHost M;
-   DY3 e;
-   LinkedBlockingQueue W;
-   boolean P;
-   boolean U;
-   Address l;
-   boolean z;
+   public String w;
+   public Lv4_2 a;
+   public ConnectHost M;
+   public DY3 e;
+   public LinkedBlockingQueue W;
+   public boolean P;
+   public boolean U;
+   public Address l;
+   public boolean z;
    public static int s;
    public static int E;
-   int Z;
-   boolean b;
-   Object B;
-   ConnectHost J;
+   public int Z;
+   public boolean b;
+   public Object B;
+   public ConnectHost J;
    public static boolean O;
    public static String[] c;
    public static String[] d;
@@ -63,11 +63,11 @@ public class Connection12 implements Ms2 {
       Ref.s(413998988881633946L, var1, var10);
       int var10003 = var3;
       int var10004 = Registry.lookupField(172266869270573121L).getInt(null);
-      if (this != false) {
+      if (this == null) {
          label21: {
             if (var3 == var10004) {
                var10003 = (Registry.lookupField(538791385288143541L).getBoolean(this)) ? 1 : 0;
-               if (this == false) {
+               if (this == null) {
                   break label21;
                }
 
@@ -1002,7 +1002,7 @@ public class Connection12 implements Ms2 {
       return var2;
    }
 
-   synchronized DY3 I() throws Exception {
+   public synchronized DY3 I() throws Exception {
       Object[] var10001 = Registry.emptyArgs();
       long var2 = 135220879492188512L;
       Object[] var1 = var10001;
@@ -1120,7 +1120,7 @@ public class Connection12 implements Ms2 {
       // cf: areturn
    }
 
-   void D$void() throws Exception {
+   public void D$void() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -3166,7 +3166,7 @@ public class Connection12 implements Ms2 {
       // a10: areturn
    }
 
-   DY3 e$dY_3() throws Pc2 {
+   public DY3 e$dY_3() throws Pc2 {
       Object var3 = 473156217884412983L;
       Dm4 var1 = ((ConnectHost)Ref.g(473156217884412983L, var3)).i$dm_4(a(10451, -4460));
       var1.I();

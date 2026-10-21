@@ -6,9 +6,9 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 
 public class Ly2 implements WindowFocusListener {
-   final com.finalshell.ui.dialog.C5 x;
+   public final com.finalshell.ui.dialog.C5 x;
 
-   Ly2(com.finalshell.ui.dialog.C5 var1) {
+   public Ly2(com.finalshell.ui.dialog.C5 var1) {
       this.x = var1;
    }
 

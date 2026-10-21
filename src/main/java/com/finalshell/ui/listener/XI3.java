@@ -5,11 +5,11 @@ import com.finalshell.core.WC_2;
 import javax.swing.JCheckBox;
 
 public class XI3 extends XA3 {
-   final JCheckBox N;
-   final Rt4 V;
+   public final JCheckBox N;
+   public final Rt4 V;
    public static String a;
 
-   XI3(Rt4 var1, JCheckBox var2) {
+   public XI3(Rt4 var1, JCheckBox var2) {
       super(var1);
       this.V = var1;
       this.N = var2;

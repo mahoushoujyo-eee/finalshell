@@ -4,9 +4,9 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class CT3 {
-   String M;
-   long w;
-   String k;
+   public String M;
+   public long w;
+   public String k;
    public static int o;
    public static int r;
    public static int R;
@@ -14,9 +14,9 @@ public class CT3 {
    public static int U;
    public static int y;
    public static int i;
-   int l;
+   public int l;
 
-   CT3(String var1, String var2, long var3, int var5) {
+   public CT3(String var1, String var2, long var3, int var5) {
       Registry.lookupField(466423498630046229L).setInt(this, Registry.lookupField(341718875000366390L).getInt(null));
       long var7 = 121519761132144266L;
       Ref.s(121519761132144266L, var1, var7);

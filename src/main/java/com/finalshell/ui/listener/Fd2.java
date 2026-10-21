@@ -9,9 +9,9 @@ import java.awt.event.ItemListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Fd2 implements ItemListener {
-   final EnableBackgroundImage L;
+   public final EnableBackgroundImage L;
 
-   Fd2(EnableBackgroundImage var1) {
+   public Fd2(EnableBackgroundImage var1) {
       this.L = var1;
    }
 

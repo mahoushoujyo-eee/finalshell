@@ -3,9 +3,9 @@ package com.finalshell.task;
 import javax.swing.JTextField;
 
 public class KT implements Runnable {
-   final JTextField[] H;
+   public final JTextField[] H;
 
-   KT(JTextField[] var1) {
+   public KT(JTextField[] var1) {
       this.H = var1;
    }
 

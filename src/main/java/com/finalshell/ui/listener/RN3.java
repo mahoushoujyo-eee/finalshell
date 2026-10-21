@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class RN3 implements ActionListener {
-   final com.finalshell.core.At2 n;
-   final HD T;
+   public final com.finalshell.core.At2 n;
+   public final HD T;
 
-   RN3(HD var1, com.finalshell.core.At2 var2) {
+   public RN3(HD var1, com.finalshell.core.At2 var2) {
       this.T = var1;
       this.n = var2;
    }

@@ -8,11 +8,11 @@ import java.awt.Point;
 import java.awt.Rectangle;
 
 public class EG3 implements Runnable {
-   final YM S;
+   public final YM S;
    public static long[] a;
    public static Integer[] b;
 
-   EG3(YM var1) {
+   public EG3(YM var1) {
       this.S = var1;
    }
 

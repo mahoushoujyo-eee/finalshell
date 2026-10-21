@@ -5,22 +5,22 @@ import com.finalshell.reflect.Registry;
 import java.awt.event.MouseEvent;
 
 public class Y9 {
-   T32 K;
+   public T32 K;
    public static int D;
    public static int u;
    public static int C;
    public static int f;
    public static int n;
-   boolean i;
-   MouseEvent e;
-   int V;
-   int v;
-   int I;
-   int Y;
-   boolean S;
-   boolean L;
+   public boolean i;
+   public MouseEvent e;
+   public int V;
+   public int v;
+   public int I;
+   public int Y;
+   public boolean S;
+   public boolean L;
 
-   Y9(T32 var1, int var2) {
+   public Y9(T32 var1, int var2) {
       long var4 = 503850750474376128L;
       Ref.s(503850750474376128L, var1, var4);
       Registry.lookupField(128694443696326857L).setInt(this, var2);

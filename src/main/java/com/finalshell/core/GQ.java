@@ -29,10 +29,10 @@ import org.pcap4j.packet.namednumber.UdpPort;
 import org.pcap4j.util.MacAddress;
 
 public class GQ {
-   static byte y;
-   static short w;
-   static byte r;
-   static short v;
+   public static byte y;
+   public static short w;
+   public static byte r;
+   public static short v;
    public static boolean c;
    public static byte[] V;
    public static long[] a;
@@ -144,7 +144,9 @@ public class GQ {
       return Z(var0, var1, var10);
    }
 
-   static Packet i(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, int var7, byte[] var8, short var9) {
+   public static Packet i(
+      MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, int var7, byte[] var8, short var9
+   ) {
       Object var10 = null;
       TcpPacket.Builder var11 = new TcpPacket.Builder();
       var11.payloadBuilder$TcpPacket_Builder(new UnknownPacket.Builder().rawData(var8));
@@ -184,7 +186,7 @@ public class GQ {
       return Z(var0, var1, var12);
    }
 
-   static Packet B(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, int var7, short var8) {
+   public static Packet B(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, int var7, short var8) {
       TcpPacket.Builder var9 = new TcpPacket.Builder();
       var9.correctChecksumAtBuild$TcpPacket_Builder(true);
       var9.correctLengthAtBuild$TcpPacket_Builder(true);
@@ -220,7 +222,7 @@ public class GQ {
       return Z(var0, var1, var10);
    }
 
-   static Packet I(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, int var7, short var8) {
+   public static Packet I(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, int var7, short var8) {
       TcpPacket.Builder var10 = new TcpPacket.Builder();
       var10.correctChecksumAtBuild$TcpPacket_Builder(true);
       var10.correctLengthAtBuild$TcpPacket_Builder(true);
@@ -281,7 +283,7 @@ public class GQ {
       return var17;
    }
 
-   static Packet G(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, short var7) {
+   public static Packet G(MacAddress var0, MacAddress var1, Inet4Address var2, short var3, Inet4Address var4, short var5, int var6, short var7) {
       TcpPacket.Builder var9 = new TcpPacket.Builder();
       var9.correctChecksumAtBuild$TcpPacket_Builder(true);
       var9.correctLengthAtBuild$TcpPacket_Builder(true);

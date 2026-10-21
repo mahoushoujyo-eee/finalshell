@@ -41,7 +41,7 @@ public class En2 {
    public static boolean L;
    public boolean G = !Nj2.S;
    public Fz2 n;
-   protected String t = Ok2.Z;
+   public String t = Ok2.Z;
    public com.finalshell.ui.model.D r;
    public final GT T;
    public final GT Y;
@@ -3154,7 +3154,7 @@ public class En2 {
       // f2: areturn
    }
 
-   protected Ak2 O() {
+   public Ak2 O() {
       return GH.T;
    }
 

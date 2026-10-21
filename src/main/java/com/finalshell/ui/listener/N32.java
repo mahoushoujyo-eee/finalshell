@@ -6,10 +6,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class N32 implements ChangeListener {
-   final EX p;
-   final KD3 r;
+   public final EX p;
+   public final KD3 r;
 
-   N32(KD3 var1, EX var2) {
+   public N32(KD3 var1, EX var2) {
       this.r = var1;
       this.p = var2;
    }

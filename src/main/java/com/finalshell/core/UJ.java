@@ -1,10 +1,10 @@
 package com.finalshell.core;
 
 public class UJ {
-   final byte[] l = new byte[4];
-   byte[] g;
-   int X;
-   int Z;
+   public final byte[] l = new byte[4];
+   public byte[] g;
+   public int X;
+   public int Z;
    public static long[] a;
    public static Integer[] b;
    public static long[] c;
@@ -71,11 +71,11 @@ public class UJ {
       this.X = this.X + a(14872, 799791411457606617L);
    }
 
-   void S(int var1) {
+   public void S(int var1) {
       this.X += var1;
    }
 
-   void J(int var1) {
+   public void J(int var1) {
       boolean var2 = Dm4.F$boolean();
 
       while (var1 > 0) {
@@ -146,7 +146,7 @@ public class UJ {
       return var1 << a(22671, 625972412490195277L) & b(29961, 3825806452494889813L) | var3 & b(6222, 5154550432671014421L);
    }
 
-   int c$int() {
+   public int c$int() {
       int var1 = this.r();
       return var1 << a(26730, 5647035932439482789L) & a(27092, 7800845655292219423L) | this.r() & a(21352, 3605338777157184166L);
    }
@@ -159,7 +159,7 @@ public class UJ {
       this.G(var1, 0, var1.length);
    }
 
-   void G(byte[] var1, int var2, int var3) {
+   public void G(byte[] var1, int var2, int var3) {
       System.arraycopy(this.g, this.Z, var1, var2, var3);
       this.Z += var3;
    }
@@ -262,7 +262,7 @@ public class UJ {
       return var3;
    }
 
-   byte[] C(int[] var1, int[] var2) {
+   public byte[] C(int[] var1, int[] var2) {
       int var3 = this.d();
       var1[0] = this.T(var3);
       var2[0] = var3;
@@ -290,15 +290,15 @@ public class UJ {
       var10000.Z = 0;
    }
 
-   void a() {
+   public void a() {
       this.Z = 0;
    }
 
-   byte A() {
+   public byte A() {
       return this.g[5];
    }
 
-   void X(int var1) {
+   public void X(int var1) {
       int var10000 = (Dm4.J$boolean()) ? 1 : 0;
       int var3 = this.X + var1 + a(16078, 7651718402987869959L);
       boolean var2 = (((((boolean)var10000) != 0) != 0) != 0) != 0;
@@ -328,7 +328,7 @@ public class UJ {
       this.g = var5;
    }
 
-   byte[][] U(int param1, String param2) throws Pc2 {
+   public byte[][] U(int param1, String param2) throws Pc2 {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -383,7 +383,7 @@ public class UJ {
       // 55: areturn
    }
 
-   static UJ h(byte[][] var0) {
+   public static UJ h(byte[][] var0) {
       int var2 = var0.length * 4;
       boolean var10000 = Dm4.J$boolean();
       int var3 = 0;

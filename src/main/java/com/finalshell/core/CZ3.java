@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class CZ3 implements AL {
-   final com.finalshell.ui.panel.CE y;
+   public final com.finalshell.ui.panel.CE y;
 
-   CZ3(com.finalshell.ui.panel.CE var1) {
+   public CZ3(com.finalshell.ui.panel.CE var1) {
       this.y = var1;
    }
 

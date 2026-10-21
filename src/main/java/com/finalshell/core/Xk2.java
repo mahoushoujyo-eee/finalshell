@@ -399,7 +399,7 @@ public final class Xk2 {
       // df: return
    }
 
-   protected static void q(boolean var0, Component var1) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+   public static void q(boolean var0, Component var1) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
       Color var10000;
       label16: {
          try {

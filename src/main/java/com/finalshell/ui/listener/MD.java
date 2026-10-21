@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class MD implements ActionListener {
-   final RouteTracePanel2 W;
+   public final RouteTracePanel2 W;
 
-   MD(RouteTracePanel2 var1) {
+   public MD(RouteTracePanel2 var1) {
       this.W = var1;
    }
 

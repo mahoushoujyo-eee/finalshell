@@ -7,11 +7,11 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 
 public class A_2 implements Fb4 {
-   final File b;
-   final CK e;
-   final SelectUploadFile k;
+   public final File b;
+   public final CK e;
+   public final SelectUploadFile k;
 
-   A_2(SelectUploadFile var1, File var2, CK var3) {
+   public A_2(SelectUploadFile var1, File var2, CK var3) {
       this.k = var1;
       this.b = var2;
       this.e = var3;

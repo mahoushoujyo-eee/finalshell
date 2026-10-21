@@ -18,12 +18,12 @@ import javax.swing.border.CompoundBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class ProcessPanel extends JPanel {
-   JLabel L;
-   KV Y;
-   ArrayList U;
-   int e;
-   KA_3 Z;
-   Color T;
+   public JLabel L;
+   public KV Y;
+   public ArrayList U;
+   public int e;
+   public KA_3 Z;
+   public Color T;
    public static String[] a;
    public static String[] b;
    public static long[] c;

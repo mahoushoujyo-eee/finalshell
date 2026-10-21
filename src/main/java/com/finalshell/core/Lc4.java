@@ -3,10 +3,10 @@ package com.finalshell.core;
 import org.jetbrains.annotations.NotNull;
 
 public class Lc4 implements Lf2 {
-   final Dx4 W;
-   final Connect_2 e;
+   public final Dx4 W;
+   public final Connect_2 e;
 
-   Lc4(Connect_2 var1, Dx4 var2) {
+   public Lc4(Connect_2 var1, Dx4 var2) {
       this.e = var1;
       this.W = var2;
    }

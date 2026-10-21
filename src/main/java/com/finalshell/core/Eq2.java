@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.FileFilter;
 
 public class Eq2 implements FileFilter {
-   final On2 t;
+   public final On2 t;
 
-   Eq2(On2 var1) {
+   public Eq2(On2 var1) {
       this.t = var1;
    }
 

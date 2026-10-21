@@ -994,7 +994,7 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected RootPaneContainer createFloatingWindow(JToolBar var1) {
+   public RootPaneContainer createFloatingWindow(JToolBar var1) {
       com.finalshell.ui.dialog.D3 var3;
       label23: {
          String var10000 = XT3.l();
@@ -1031,45 +1031,45 @@ public class Pk4 extends BasicToolBarUI implements W2_3, L0_2 {
    }
 
    @Override
-   protected DragWindow createDragWindow(JToolBar var1) {
+   public DragWindow createDragWindow(JToolBar var1) {
       DragWindow var2 = super.createDragWindow(var1);
       Xk2.f(var2, 0.5F);
       return var2;
    }
 
    @Override
-   protected void installRolloverBorders(JComponent var1) {
+   public void installRolloverBorders(JComponent var1) {
    }
 
    @Override
-   protected void installNonRolloverBorders(JComponent var1) {
+   public void installNonRolloverBorders(JComponent var1) {
    }
 
    @Override
-   protected void installNormalBorders(JComponent var1) {
+   public void installNormalBorders(JComponent var1) {
    }
 
    @Override
-   protected void setBorderToRollover(Component var1) {
+   public void setBorderToRollover(Component var1) {
    }
 
    @Override
-   protected void setBorderToNonRollover(Component var1) {
+   public void setBorderToNonRollover(Component var1) {
    }
 
    @Override
-   protected void setBorderToNormal(Component var1) {
+   public void setBorderToNormal(Component var1) {
    }
 
-   static JToolBar b(Pk4 var0) {
+   public static JToolBar b(Pk4 var0) {
       return var0.toolBar;
    }
 
-   static void I(Pk4 var0, JComponent var1, boolean var2) {
+   public static void I(Pk4 var0, JComponent var1, boolean var2) {
       var0.T(var1, var2);
    }
 
-   static JToolBar K(Pk4 var0) {
+   public static JToolBar K(Pk4 var0) {
       return var0.toolBar;
    }
 

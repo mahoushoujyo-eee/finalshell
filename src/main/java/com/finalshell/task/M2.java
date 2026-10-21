@@ -9,14 +9,14 @@ import com.finalshell.ui.panel.Connection4;
 import java.lang.reflect.InvocationTargetException;
 
 public class M2 implements Runnable {
-   final Connection12 f;
-   final Tf4 t;
-   final Tf4 e;
-   final String l;
-   final Connection4 J;
-   final File8 z;
+   public final Connection12 f;
+   public final Tf4 t;
+   public final Tf4 e;
+   public final String l;
+   public final Connection4 J;
+   public final File8 z;
 
-   M2(File8 var1, Connection12 var2, Tf4 var3, Tf4 var4, String var5, Connection4 var6) {
+   public M2(File8 var1, Connection12 var2, Tf4 var3, Tf4 var4, String var5, Connection4 var6) {
       this.z = var1;
       this.f = var2;
       this.t = var3;

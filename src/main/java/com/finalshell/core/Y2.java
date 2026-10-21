@@ -10,32 +10,32 @@ import javax.swing.JComponent;
 import javax.swing.JScrollBar;
 
 public class Y2 extends Lz2_2 implements Wt4 {
-   protected boolean l = V_3.d;
-   protected boolean q = V_3.S;
-   protected int t = V_3.o;
-   protected Insets k = V_3.X;
-   protected Color J = V_3.T;
-   protected Color e = V_3.v;
-   protected Color F = V_3.C;
-   protected Color W = V_3.z;
-   protected Color h;
-   protected Color R;
-   protected Color G;
-   protected Color x;
-   protected Color O;
-   protected Color b;
-   protected boolean Y;
-   protected WC_2 Q;
-   protected float D;
-   protected boolean C;
-   protected boolean p;
-   protected boolean L;
-   protected Rectangle v;
-   protected Rectangle K;
-   protected Insets i;
-   protected Insets m;
-   protected Insets j;
-   protected MouseAdapter n;
+   public boolean l = V_3.d;
+   public boolean q = V_3.S;
+   public int t = V_3.o;
+   public Insets k = V_3.X;
+   public Color J = V_3.T;
+   public Color e = V_3.v;
+   public Color F = V_3.C;
+   public Color W = V_3.z;
+   public Color h;
+   public Color R;
+   public Color G;
+   public Color x;
+   public Color O;
+   public Color b;
+   public boolean Y;
+   public WC_2 Q;
+   public float D;
+   public boolean C;
+   public boolean p;
+   public boolean L;
+   public Rectangle v;
+   public Rectangle K;
+   public Insets i;
+   public Insets m;
+   public Insets j;
+   public MouseAdapter n;
 
    public Y2() {
       this.h = V_3.O;
@@ -156,7 +156,7 @@ public class Y2 extends Lz2_2 implements Wt4 {
       var3.s$void();
    }
 
-   protected void s$void() {
+   public void s$void() {
       this.i = new Insets(this.k.top, this.k.right, this.k.bottom, this.k.left);
       this.m = new Insets(this.k.left, this.k.bottom, this.k.right, this.k.top);
       this.j = new Insets(this.k.right, this.k.top, this.k.left, this.k.bottom);
@@ -477,10 +477,10 @@ public class Y2 extends Lz2_2 implements Wt4 {
       RV.X(var1, var4);
    }
 
-   protected void v(Graphics2D var1, Rectangle var2) {
+   public void v(Graphics2D var1, Rectangle var2) {
    }
 
-   protected void O(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+   public void O(Graphics2D var1, JScrollBar var2, Rectangle var3) {
       label43: {
          int[] var4 = W_2.B$arrint();
          int var10000 = (this.q) ? 1 : 0;
@@ -528,10 +528,10 @@ public class Y2 extends Lz2_2 implements Wt4 {
       var1.drawLine(var3.x, var3.y, var3.x + var3.width - 1, var3.y);
    }
 
-   protected void Z(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+   public void Z(Graphics2D var1, JScrollBar var2, Rectangle var3) {
    }
 
-   protected void E(Graphics2D var1, JScrollBar var2, Rectangle var3) {
+   public void E(Graphics2D var1, JScrollBar var2, Rectangle var3) {
       Insets var4 = this.v(var2);
       int var5 = var3.width - var4.left - var4.right;
       int var6 = var3.height - var4.top - var4.bottom;
@@ -542,11 +542,11 @@ public class Y2 extends Lz2_2 implements Wt4 {
       var1.drawRoundRect(var3.x + var4.left, var3.y + var4.top, var5 - 1, var6 - 1, var7, var7);
    }
 
-   protected Insets v(JScrollBar var1) {
+   public Insets v(JScrollBar var1) {
       return (Insets)Registry.lookupField(118658416480315900L).get(null);
    }
 
-   protected Color o(JScrollBar var1) {
+   public Color o(JScrollBar var1) {
       int[] var2 = W_2.B$arrint();
       boolean var10000 = var1.isEnabled();
       if (var2 == null) {
@@ -581,7 +581,7 @@ public class Y2 extends Lz2_2 implements Wt4 {
       }
    }
 
-   protected Color c(JScrollBar var1) {
+   public Color c(JScrollBar var1) {
       int[] var2 = W_2.B$arrint();
       boolean var10000 = var1.isEnabled();
       if (var2 == null) {

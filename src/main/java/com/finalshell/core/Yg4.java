@@ -60,12 +60,12 @@ public class Yg4 extends GT3 {
    }
 
    @Override
-   protected void J(Rectangle var1) {
+   public void J(Rectangle var1) {
       var1.width = var1.width * this.v;
    }
 
    @Override
-   protected int[] K(int var1, int var2, int[] var3, Rectangle var4) {
+   public int[] K(int var1, int var2, int[] var3, Rectangle var4) {
       String[] var10000 = W5.q();
       int[] var6 = new int[var1 * var2];
       String[] var5 = var10000;

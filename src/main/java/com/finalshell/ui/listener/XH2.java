@@ -8,9 +8,9 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class XH2 implements DocumentListener {
-   final ShowDeletedPanel Q;
+   public final ShowDeletedPanel Q;
 
-   XH2(ShowDeletedPanel var1) {
+   public XH2(ShowDeletedPanel var1) {
       this.Q = var1;
    }
 

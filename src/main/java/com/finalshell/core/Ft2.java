@@ -16,17 +16,17 @@ public class Ft2 extends Fm2 {
       this.I.c(this.B().g$Pt_2());
    }
 
-   protected Ud2_2 B() {
+   public Ud2_2 B() {
       return (Ud2_2)this.U;
    }
 
    @Override
-   protected AO_2 s() {
+   public AO_2 s() {
       return new A2_3(this.B());
    }
 
    @Override
-   protected void A() {
+   public void A() {
       Ud2_2 var4;
       label30: {
          Ud2_2 var2;

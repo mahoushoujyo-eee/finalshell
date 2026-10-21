@@ -7,10 +7,10 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 
 public class PE {
-   static O12 G;
-   static char[] d;
-   static char[] C;
-   static char[] X;
+   public static O12 G;
+   public static char[] d;
+   public static char[] C;
+   public static char[] X;
    public static String[] a;
    public static String[] b;
    public static long[] c;

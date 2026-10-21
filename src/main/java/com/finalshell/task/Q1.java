@@ -8,14 +8,14 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class Q1 implements Runnable {
-   final Nq2 S;
-   final ArrayList f;
-   final String D;
-   final String d;
-   final String h;
-   final Address q;
+   public final Nq2 S;
+   public final ArrayList f;
+   public final String D;
+   public final String d;
+   public final String h;
+   public final Address q;
 
-   Q1(Address var1, Nq2 var2, ArrayList var3, String var4, String var5, String var6) {
+   public Q1(Address var1, Nq2 var2, ArrayList var3, String var4, String var5, String var6) {
       this.q = var1;
       this.S = var2;
       this.f = var3;

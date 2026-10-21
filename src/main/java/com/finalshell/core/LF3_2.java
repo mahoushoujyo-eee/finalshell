@@ -9,15 +9,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class LF3_2 implements PO3 {
-   boolean p;
-   Connection12 G;
-   Lv4_2 q;
-   int J;
-   L0 v;
-   KV e;
-   boolean O;
-   int n;
-   ArrayList s;
+   public boolean p;
+   public Connection12 G;
+   public Lv4_2 q;
+   public int J;
+   public L0 v;
+   public KV e;
+   public boolean O;
+   public int n;
+   public ArrayList s;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -25,7 +25,7 @@ public class LF3_2 implements PO3 {
    public static long[] f;
    public static Long[] g;
 
-   LF3_2(Lv4_2 var1, boolean var2) {
+   public LF3_2(Lv4_2 var1, boolean var2) {
       Registry.lookupField(293577005979220571L).setInt(this, a(4063, 527846010556201822L));
       Registry.lookupField(588222327077575093L).setBoolean(this, true);
       ArrayList var10001 = new ArrayList();
@@ -37,7 +37,7 @@ public class LF3_2 implements PO3 {
       Registry.lookupField(206342559758395463L).setBoolean(this, var2);
    }
 
-   void D() {
+   public void D() {
       Object var1 = 549777208306704057L;
       Ref.g(549777208306704057L, var1);
       Object[] var10002 = Registry.emptyArgs();
@@ -52,7 +52,7 @@ public class LF3_2 implements PO3 {
       }
    }
 
-   void I() {
+   public void I() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -561,7 +561,7 @@ public class LF3_2 implements PO3 {
       ((ArrayList)Ref.g(579268137100591706L, var2)).add(var1);
    }
 
-   void B(VO var1) {
+   public void B(VO var1) {
       SpeedTestFrame.K();
       Object var5 = 579268137100591706L;
       Iterator var3 = ((ArrayList)Ref.g(579268137100591706L, var5)).iterator();

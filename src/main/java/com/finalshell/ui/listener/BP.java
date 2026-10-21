@@ -6,11 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BP implements ActionListener {
-   final Xt2 c;
+   public final Xt2 c;
    public static long[] a;
    public static Integer[] b;
 
-   BP(Xt2 var1) {
+   public BP(Xt2 var1) {
       this.c = var1;
    }
 

@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import com.finalshell.ui.frame.UpdateFrame;
 
 public class FA3 implements Runnable {
-   final YT3_2 Q;
+   public final YT3_2 Q;
 
-   FA3(YT3_2 var1) {
+   public FA3(YT3_2 var1) {
       this.Q = var1;
    }
 

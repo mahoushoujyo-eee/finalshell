@@ -39,13 +39,13 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 
 public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
-   protected List K;
-   protected boolean w;
-   protected int s;
-   protected int c;
-   protected int r;
-   protected int B;
-   protected int n;
+   public List K;
+   public boolean w;
+   public int s;
+   public int c;
+   public int r;
+   public int B;
+   public int n;
    public static String[] a;
    public static String[] b;
    public static long[] d;
@@ -210,7 +210,7 @@ public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
       this.firePropertyChange(a(18376, -9422), null, null);
    }
 
-   protected List B() {
+   public List B() {
       boolean var1 = Oj2.g();
       List var10000 = this.K;
       if (var1) {
@@ -224,13 +224,13 @@ public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
       return var10000;
    }
 
-   protected LS3 g(LS3 var1) {
+   public LS3 g(LS3 var1) {
       LS3 var2 = this.N(var1.H(), var1.F());
       this.B().add(var1);
       return var2;
    }
 
-   protected void y(List var1) {
+   public void y(List var1) {
       boolean var2 = Oj2.V();
       List var10000 = var1;
       if (!var2) {
@@ -249,7 +249,7 @@ public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
       }
    }
 
-   protected void O(LS3 var1) {
+   public void O(LS3 var1) {
       boolean var2 = Oj2.V();
       List var10000 = this.B();
       if (!var2) {
@@ -288,7 +288,7 @@ public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
       }
    }
 
-   protected void o(List var1) {
+   public void o(List var1) {
       boolean var2 = Oj2.g();
       List var10000 = var1;
       if (var2) {
@@ -307,11 +307,11 @@ public class Yy2 extends JLabel implements Pp2, RF3, D7, Au2, Yb4 {
       }
    }
 
-   protected void y() {
+   public void y() {
       this.B().clear();
    }
 
-   protected LS3 N(int var1, int var2) {
+   public LS3 N(int var1, int var2) {
       int var10000 = (Oj2.g()) ? 1 : 0;
       Iterator var4 = this.B().iterator();
       boolean var3 = (((((boolean)var10000) != 0) != 0) != 0) != 0;

@@ -8,8 +8,8 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class A4 implements Gq2, Hs2 {
-   String f;
-   JTextField T;
+   public String f;
+   public JTextField T;
    public static String[] a;
    public static String[] b;
    public static long c;
@@ -65,7 +65,7 @@ public class A4 implements Gq2, Hs2 {
       int var4 = JOptionPane.showConfirmDialog(null, var3, var1, 2);
       Object[] var2 = var10001;
       int var11 = var4;
-      if (var2 != false) {
+      if (var2 == null) {
          if (var4 == 0) {
             Object var7 = 408889500726345751L;
             String var10003 = ((JTextField)Ref.g(408889500726345751L, var7)).getText();

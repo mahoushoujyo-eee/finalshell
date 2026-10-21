@@ -4,20 +4,20 @@ import com.finalshell.ui.panel.Ky4;
 
 public final class Re2 {
    public static int[] D;
-   int C;
-   int h;
-   int[] r;
-   int x = 0;
-   int W;
-   int u;
-   int f;
-   int E;
-   byte p;
-   byte s;
-   int[] R;
-   int L;
-   int[] P;
-   int X;
+   public int C;
+   public int h;
+   public int[] r;
+   public int x = 0;
+   public int W;
+   public int u;
+   public int f;
+   public int E;
+   public byte p;
+   public byte s;
+   public int[] R;
+   public int L;
+   public int[] P;
+   public int X;
    public final Df2 m;
    public final DC J;
    public static String[] a;
@@ -25,12 +25,12 @@ public final class Re2 {
    public static long[] c;
    public static Integer[] d;
 
-   Re2(Df2 var1, DC var2) {
+   public Re2(Df2 var1, DC var2) {
       this.m = var1;
       this.J = var2;
    }
 
-   void m(int var1, int var2, int[] var3, int var4, int[] var5, int var6) {
+   public void m(int var1, int var2, int[] var3, int var4, int[] var5, int var6) {
       this.C = 0;
       this.p = (byte)var1;
       this.s = (byte)var2;
@@ -41,7 +41,7 @@ public final class Re2 {
       this.r = null;
    }
 
-   int Q(int var1) {
+   public int Q(int var1) {
       int[] var2;
       int var10;
       int var11;
@@ -835,11 +835,11 @@ public final class Re2 {
       }
    }
 
-   void O(Df2 var1) {
+   public void O(Df2 var1) {
    }
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
-   int G(int var1, int var2, int[] var3, int var4, int[] var5, int var6, DC var7, Df2 var8) {
+   public int G(int var1, int var2, int[] var3, int var4, int[] var5, int var6, DC var7, Df2 var8) {
       int[] var9;
       int var14;
       int var15;

@@ -9,9 +9,9 @@ import java.util.Map;
 import javax.swing.SwingConstants;
 
 public class Tw2 extends T4 implements SwingConstants {
-   protected int x;
-   protected int X;
-   protected Map R = new HashMap();
+   public int x;
+   public int X;
+   public Map R = new HashMap();
    public static String a;
 
    public Tw2() {
@@ -274,7 +274,7 @@ public class Tw2 extends T4 implements SwingConstants {
       }
    }
 
-   protected Dimension r(Container var1, boolean var2) {
+   public Dimension r(Container var1, boolean var2) {
       Insets var4 = var1.getInsets();
       Dimension var5 = new Dimension();
       Component[] var6 = var1.getComponents();
@@ -397,7 +397,7 @@ public class Tw2 extends T4 implements SwingConstants {
       return var5;
    }
 
-   protected boolean U(Component var1) {
+   public boolean U(Component var1) {
       int var2 = T4.b();
       boolean var10000 = this.R.containsKey(var1);
       if (var2 != 0) {

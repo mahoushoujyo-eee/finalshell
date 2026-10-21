@@ -16,7 +16,7 @@ public class Ud4 extends AbstractCellEditor implements TableCellRenderer, TableC
    public NO l;
    public NO L;
 
-   Ud4() {
+   public Ud4() {
       NO var10001 = new NO();
       long var2 = 559060643683375928L;
       NO var1 = var10001;

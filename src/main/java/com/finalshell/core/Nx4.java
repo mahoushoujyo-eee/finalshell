@@ -21,17 +21,17 @@ import javax.swing.ImageIcon;
 
 public class Nx4 extends Ne4 {
    public static ImageIcon Y;
-   protected K72 K;
-   protected boolean X = true;
-   protected final int o = a(29758, 5744036123628311584L);
-   protected final int F = a(13465, 8728646085917758597L);
-   protected String n = "";
-   protected Color E;
-   protected final KD d;
-   protected Robot j;
-   protected com.finalshell.ui.panel.Wb2 L;
-   protected Ds2 S;
-   protected com.finalshell.ui.panel.N_2 R;
+   public K72 K;
+   public boolean X = true;
+   public final int o = a(29758, 5744036123628311584L);
+   public final int F = a(13465, 8728646085917758597L);
+   public String n = "";
+   public Color E;
+   public final KD d;
+   public Robot j;
+   public com.finalshell.ui.panel.Wb2 L;
+   public Ds2 S;
+   public com.finalshell.ui.panel.N_2 R;
    public static int l;
    public static String[] a;
    public static String[] b;
@@ -79,7 +79,7 @@ public class Nx4 extends Ne4 {
       this.T(var1);
    }
 
-   protected void T(Color var1) {
+   public void T(Color var1) {
       Color var2 = this.E;
       this.E = var1;
       this.x();
@@ -101,12 +101,12 @@ public class Nx4 extends Ne4 {
       this.s();
    }
 
-   protected void x() {
+   public void x() {
       this.d.setIcon(Xg2.L(this.E));
       this.p();
    }
 
-   protected void b() {
+   public void b() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -175,7 +175,7 @@ public class Nx4 extends Ne4 {
       // 7a: return
    }
 
-   protected void u() {
+   public void u() {
       int var1 = R();
       K72 var10000 = this.K;
       if (var1 == 0) {
@@ -196,7 +196,7 @@ public class Nx4 extends Ne4 {
       this.p();
    }
 
-   protected void p() {
+   public void p() {
       int var1 = c$int();
       Nx4 var10000 = this;
       if (var1 != 0) {
@@ -212,16 +212,16 @@ public class Nx4 extends Ne4 {
       this.n = var2;
    }
 
-   protected String w(Color var1) {
+   public String w(Color var1) {
       boolean var2 = this.K.equals(K72.hex);
       return var2 ? P9.u(var1) : var1.getRed() + "," + var1.getGreen() + "," + var1.getBlue();
    }
 
-   protected void s() {
+   public void s() {
       this.setMargin(this.g() ? new Insets(-1, 0, -1, -1) : new Insets(0, 0, 0, 0));
    }
 
-   protected void o() {
+   public void o() {
       label15: {
          int var1 = c$int();
          Nx4 var10000 = this;
@@ -242,7 +242,7 @@ public class Nx4 extends Ne4 {
       this.revalidate();
    }
 
-   protected void N() {
+   public void N() {
       int var1 = c$int();
 
       Nx4 var10000;
@@ -294,11 +294,11 @@ public class Nx4 extends Ne4 {
       var10000.v(this.L);
    }
 
-   protected void f() {
+   public void f() {
       this.v(null);
    }
 
-   protected void j() {
+   public void j() {
       int var1;
       Nx4 var10000;
       var1 = c$int();
@@ -367,7 +367,7 @@ public class Nx4 extends Ne4 {
       this.R.requestFocusInWindow();
    }
 
-   protected void y() {
+   public void y() {
       int var10000 = c$int();
       Point var2 = this.getLocationOnScreen();
       int var1 = var10000;

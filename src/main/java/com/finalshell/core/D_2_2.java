@@ -44,7 +44,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
       var3.setBackground(new Color(a(9978, 5533583335471518337L), a(7334, 3938256343096600796L), a(7334, 3938256343096600796L), a(10998, 5581724395554315919L)));
    }
 
-   protected boolean j() {
+   public boolean j() {
       return true;
    }
 
@@ -56,12 +56,12 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
    }
 
    @Override
-   protected LayoutManager createLayout() {
+   public LayoutManager createLayout() {
       return new BorderLayout();
    }
 
    @Override
-   protected void addSubComponents() {
+   public void addSubComponents() {
       int[] var1 = W();
       this.add(
          new KP3(new com.finalshell.ui.panel.G3(this, this.frame.getTitle(), new M_3(this), 2, new Object[0]), this.j() ? 3 : 1, 3, 0, 3), a(-26308, 13673)
@@ -122,7 +122,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
    }
 
    @Override
-   protected void createButtons() {
+   public void createButtons() {
       this.iconButton = new H_2_2(this);
       this.iconButton.addActionListener(this.iconifyAction);
       this.maxButton = new C_3_3(this);
@@ -133,7 +133,7 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
    }
 
    @Override
-   protected void setButtonIcons() {
+   public void setButtonIcons() {
       ImageIcon var2;
       JButton var10000;
       label21: {
@@ -157,39 +157,39 @@ public class D_2_2 extends BasicInternalFrameTitlePane {
       this.closeButton.setIcon(Q);
    }
 
-   static JInternalFrame X(D_2_2 var0) {
+   public static JInternalFrame X(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame g(D_2_2 var0) {
+   public static JInternalFrame g(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame D(D_2_2 var0) {
+   public static JInternalFrame D(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame o(D_2_2 var0) {
+   public static JInternalFrame o(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame G(D_2_2 var0) {
+   public static JInternalFrame G(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame J(D_2_2 var0) {
+   public static JInternalFrame J(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame y(D_2_2 var0) {
+   public static JInternalFrame y(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame q(D_2_2 var0) {
+   public static JInternalFrame q(D_2_2 var0) {
       return var0.frame;
    }
 
-   static JInternalFrame s(D_2_2 var0) {
+   public static JInternalFrame s(D_2_2 var0) {
       return var0.frame;
    }
 

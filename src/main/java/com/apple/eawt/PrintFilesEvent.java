@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.List;
 
 public class PrintFilesEvent extends FilesEvent {
-   PrintFilesEvent(List<File> files) {
+   public PrintFilesEvent(List<File> files) {
       super(files);
    }
 }

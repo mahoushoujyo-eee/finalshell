@@ -10,10 +10,7 @@ public abstract class Qi2 {
    public static String[] c;
    public static long g;
 
-   Qi2() {
-   }
-
-   void Q(ConnectHost param1, Dm4 param2) throws Exception {
+   public void Q(ConnectHost param1, Dm4 param2) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -47,15 +44,15 @@ public abstract class Qi2 {
       // 2c: return
    }
 
-   boolean K() {
+   public boolean K() {
       return this.R;
    }
 
-   void T(boolean var1) {
+   public void T(boolean var1) {
       this.R = var1;
    }
 
-   void C(YU param1) throws Exception {
+   public void C(YU param1) throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

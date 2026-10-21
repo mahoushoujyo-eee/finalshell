@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class FD implements MouseListener {
-   final Km4 t;
+   public final Km4 t;
 
-   FD(Km4 var1) {
+   public FD(Km4 var1) {
       this.t = var1;
    }
 

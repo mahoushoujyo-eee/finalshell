@@ -32,7 +32,7 @@ public class OH3 extends BasicTabbedPaneUI {
 
    // $VF: Irreducible bytecode was duplicated to produce valid code
    @Override
-   protected void paintTabArea(Graphics var1, int var2, int var3) {
+   public void paintTabArea(Graphics var1, int var2, int var3) {
       Graphics2D var5 = (Graphics2D)var1;
       int var6 = this.tabPane.getTabCount();
       String var10000 = com.finalshell.ui.panel.Hd2.X();
@@ -200,7 +200,7 @@ public class OH3 extends BasicTabbedPaneUI {
       var20.R(var5, var2, this.rects, var10, var11, var12, var3, var7, var8);
    }
 
-   protected void R(Graphics2D var1, int var2, Rectangle[] var3, int var4, int var5, int var6, int var7, Rectangle var8, Rectangle var9) {
+   public void R(Graphics2D var1, int var2, Rectangle[] var3, int var4, int var5, int var6, int var7, Rectangle var8, Rectangle var9) {
       String var10000 = com.finalshell.ui.panel.Hd2.X();
       Rectangle var11 = var3[var7];
       String var10 = var10000;
@@ -230,7 +230,7 @@ public class OH3 extends BasicTabbedPaneUI {
    }
 
    @Override
-   protected void paintText(Graphics var1, int var2, Font var3, FontMetrics var4, int var5, String var6, Rectangle var7, boolean var8) {
+   public void paintText(Graphics var1, int var2, Font var3, FontMetrics var4, int var5, String var6, Rectangle var7, boolean var8) {
       Map var10;
       label60: {
          String var9;
@@ -314,7 +314,7 @@ public class OH3 extends BasicTabbedPaneUI {
       FN.O(var1, var10);
    }
 
-   protected void S(Graphics2D var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, boolean var11) {
+   public void S(Graphics2D var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, boolean var11) {
       String var12;
       label132: {
          var12 = com.finalshell.ui.panel.Hd2.X();
@@ -482,7 +482,7 @@ public class OH3 extends BasicTabbedPaneUI {
    }
 
    @Override
-   protected void paintContentBorder(Graphics var1, int var2, int var3) {
+   public void paintContentBorder(Graphics var1, int var2, int var3) {
       int var7;
       int var8;
       int var9;

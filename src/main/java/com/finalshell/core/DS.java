@@ -16,13 +16,13 @@ import javax.crypto.spec.DESKeySpec;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class DS {
-   static int z;
+   public static int z;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   static byte[] S(byte[] var0) {
+   public static byte[] S(byte[] var0) {
       Ky4[] var10000 = YT3_2.c();
       long var2 = Registry.lookupField(567239955528735437L).getLong(null) / (long)new Random((long)var0[5]).nextInt(a(22500, 9214245546184578384L));
       Ky4[] var1 = var10000;
@@ -260,7 +260,7 @@ public class DS {
       return var10003;
    }
 
-   static byte[] M(int var0) {
+   public static byte[] M(int var0) {
       byte[] var2 = new byte[var0];
       Ky4[] var10000 = YT3_2.c();
       int var3 = 0;
@@ -289,12 +289,12 @@ public class DS {
       return var4;
    }
 
-   void M(byte[] var1, long var2) {
+   public void M(byte[] var1, long var2) {
       Random var4 = new Random();
       var4.nextLong();
    }
 
-   void Z() {
+   public void Z() {
    }
 
    public static byte[] U(byte[] var0, byte[] var1) throws Exception {
@@ -311,7 +311,7 @@ public class DS {
          throw var9.getTargetException();
       }
 
-new Random((byte[])var10005);
+var10004 = new Random((byte[])var10005);
       DESKeySpec var3 = var10002;
       SecretKeyFactory var4 = SecretKeyFactory.getInstance(a(-32029, (int)var10002));
       SecretKey var5 = var4.generateSecret(var3);

@@ -5,8 +5,8 @@ import java.lang.reflect.Type;
 import java.math.BigDecimal;
 
 public class KH3 implements Ak2, X4 {
-   static BigDecimal s;
-   static BigDecimal o;
+   public static BigDecimal s;
+   public static BigDecimal o;
    public static KH3 b;
    public static String a;
    public static long[] c;

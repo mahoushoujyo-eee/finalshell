@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Cb2 implements ActionListener {
-   final UpdateFrame L;
+   public final UpdateFrame L;
    public static String a;
 
-   Cb2(UpdateFrame var1) {
+   public Cb2(UpdateFrame var1) {
       this.L = var1;
    }
 

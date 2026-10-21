@@ -11,7 +11,7 @@ import java.util.List;
 
 public class C_4_2 implements Transferable {
    public static DataFlavor[] U;
-   protected final List o;
+   public final List o;
 
    public C_4_2(File var1) {
       int var10000 = NV_2.V();

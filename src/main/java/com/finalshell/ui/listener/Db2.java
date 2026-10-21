@@ -8,9 +8,9 @@ import java.awt.event.MouseMotionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class Db2 implements MouseMotionListener {
-   final Vn2 i;
+   public final Vn2 i;
 
-   Db2(Vn2 var1) {
+   public Db2(Vn2 var1) {
       this.i = var1;
    }
 

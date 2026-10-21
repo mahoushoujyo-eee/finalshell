@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class BX3 implements ActionListener {
-   final TunnelList v;
+   public final TunnelList v;
 
-   BX3(TunnelList var1) {
+   public BX3(TunnelList var1) {
       this.v = var1;
    }
 

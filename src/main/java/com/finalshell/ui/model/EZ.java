@@ -151,7 +151,7 @@ public final class EZ implements Serializable, Cloneable {
             var10001 = var3.f();
          }
 
-         return (boolean)(var5 == var10001 ? 1 : 0);
+         return (boolean)((var5 == var10001 ? 1 : 0) != 0);
       } else {
          return false;
       }

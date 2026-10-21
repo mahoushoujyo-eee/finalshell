@@ -1,9 +1,6 @@
 package com.finalshell.core;
 
 public class Xw2 implements On2 {
-   Xw2() {
-   }
-
    public boolean J(DN_2 var1) {
       String[] var2 = GR.I();
       boolean var10000 = var1.o();

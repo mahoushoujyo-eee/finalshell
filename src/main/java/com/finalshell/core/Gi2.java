@@ -41,55 +41,55 @@ import javax.swing.plaf.basic.BasicButtonUI;
 import javax.swing.text.View;
 
 public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
-   protected static Stroke U;
-   protected Color e = SG.Y;
-   protected Color O = SG.k;
-   protected Color S = SG.K;
-   protected Color q = SG.h;
-   protected Color H = SG.S;
-   protected boolean j;
-   protected Color s;
-   protected boolean c;
-   protected int i;
-   protected boolean f;
-   protected boolean B;
-   protected boolean l;
-   protected int C;
-   protected Insets J;
-   protected Color A;
-   protected int h;
-   protected Color n;
-   protected Color y;
-   protected int a;
-   protected boolean P;
-   protected float R;
-   protected boolean V;
-   protected boolean K;
-   protected boolean o;
-   protected boolean k;
-   protected Og4 L;
-   protected boolean X;
-   protected boolean w;
-   protected boolean I;
-   protected boolean N;
-   protected boolean G;
-   protected boolean m;
-   protected boolean g;
-   protected boolean z;
-   protected boolean D;
-   protected Color E;
-   protected boolean W;
-   protected float u;
-   protected Point F;
-   protected WC_2 x;
-   protected AbstractButton b;
-   protected boolean d;
-   protected boolean Z;
-   protected boolean T;
-   protected boolean t;
-   protected MouseAdapter Q;
-   protected AncestorListener p;
-   protected PropertyChangeListener M;
+   public static Stroke U;
+   public Color e = SG.Y;
+   public Color O = SG.k;
+   public Color S = SG.K;
+   public Color q = SG.h;
+   public Color H = SG.S;
+   public boolean j;
+   public Color s;
+   public boolean c;
+   public int i;
+   public boolean f;
+   public boolean B;
+   public boolean l;
+   public int C;
+   public Insets J;
+   public Color A;
+   public int h;
+   public Color n;
+   public Color y;
+   public int a;
+   public boolean P;
+   public float R;
+   public boolean V;
+   public boolean K;
+   public boolean o;
+   public boolean k;
+   public Og4 L;
+   public boolean X;
+   public boolean w;
+   public boolean I;
+   public boolean N;
+   public boolean G;
+   public boolean m;
+   public boolean g;
+   public boolean z;
+   public boolean D;
+   public Color E;
+   public boolean W;
+   public float u;
+   public Point F;
+   public WC_2 x;
+   public AbstractButton b;
+   public boolean d;
+   public boolean Z;
+   public boolean T;
+   public boolean t;
+   public MouseAdapter Q;
+   public AncestorListener p;
+   public PropertyChangeListener M;
    public static Rectangle v;
    public static Rectangle r;
    public static Rectangle Y;
@@ -295,7 +295,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       var10000.setBorder(GA.y(this.g()));
    }
 
-   protected Insets g() {
+   public Insets g() {
       int[] var10000 = KD.s$arrint();
       byte var2 = (this.b.getComponentOrientation().isLeftToRight()) ? 1 : 0;
       int[] var1 = var10000;
@@ -1388,7 +1388,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       FN.k(var6, var24);
    }
 
-   void B(Graphics var1, JComponent var2) {
+   public void B(Graphics var1, JComponent var2) {
       Registry.packArgs(var2, var1);
       long var9 = 135169693674870498L;
       String var10001 = (String)Ref.h2(135169693674870498L, var9);
@@ -1515,7 +1515,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       return SwingUtilities.layoutCompoundLabel(var1, var2, var10002, var10003, var10004, var10005, var10006, var10007, v, Y, r, var10011.getIconTextGap());
    }
 
-   protected boolean e() {
+   public boolean e() {
       int[] var1 = KD.s$arrint();
       boolean var10000 = this.b instanceof JButton;
       if (var1 == null) {
@@ -1529,15 +1529,15 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       return var1 != null ? var10000 : var10000;
    }
 
-   protected Color z(boolean var1) {
+   public Color z(boolean var1) {
       return var1 ? this.S : this.e;
    }
 
-   protected Color v(boolean var1) {
+   public Color v(boolean var1) {
       return var1 ? this.q : this.O;
    }
 
-   protected boolean g(AbstractButton var1) {
+   public boolean g(AbstractButton var1) {
       int[] var10000 = KD.s$arrint();
       Container var3 = var1.getParent();
       int[] var2 = var10000;
@@ -1578,7 +1578,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       }
    }
 
-   protected boolean Q(AbstractButton var1) {
+   public boolean Q(AbstractButton var1) {
       int[] var10000 = KD.s$arrint();
       Container var3 = var1.getParent();
       int[] var2 = var10000;
@@ -1619,7 +1619,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       }
    }
 
-   protected boolean O(AbstractButton var1) {
+   public boolean O(AbstractButton var1) {
       int[] var10000 = KD.s$arrint();
       Container var3 = var1.getParent();
       int[] var2 = var10000;
@@ -1749,7 +1749,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
    }
 
    @Override
-   protected void paintText(Graphics var1, JComponent var2, Rectangle var3, String var4) {
+   public void paintText(Graphics var1, JComponent var2, Rectangle var3, String var4) {
       AbstractButton var6 = (AbstractButton)var2;
       ButtonModel var7 = var6.getModel();
       int[] var10000 = KD.s$arrint();
@@ -1799,7 +1799,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
    }
 
    @Override
-   protected void paintIcon(Graphics var1, JComponent var2, Rectangle var3) {
+   public void paintIcon(Graphics var1, JComponent var2, Rectangle var3) {
       Graphics2D var7;
       boolean var10;
       label30: {
@@ -1845,7 +1845,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       RV.E(var7, var9, var8);
    }
 
-   protected Shape u(AbstractButton var1, boolean var2) {
+   public Shape u(AbstractButton var1, boolean var2) {
       int[] var10000 = KD.s$arrint();
       byte var4 = var1.getComponentOrientation().isLeftToRight();
       int[] var3 = var10000;
@@ -1942,7 +1942,7 @@ public class Gi2 extends BasicButtonUI implements W2_3, SwingConstants, L0_2 {
       return var2;
    }
 
-   static void F(Gi2 var0) {
+   public static void F(Gi2 var0) {
       var0.v();
    }
 

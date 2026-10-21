@@ -10,7 +10,7 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class K42 extends AbstractTableModel {
-   ArrayList g;
+   public ArrayList g;
    public static String a;
    public static String y;
    public static String G;
@@ -24,8 +24,8 @@ public class K42 extends AbstractTableModel {
    public static String D;
    public static String v;
    public static String t;
-   String[] A;
-   boolean Q;
+   public String[] A;
+   public boolean Q;
 
    public K42() {
       ArrayList var10001 = new ArrayList();

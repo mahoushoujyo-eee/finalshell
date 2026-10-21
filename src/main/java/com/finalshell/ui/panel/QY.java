@@ -14,14 +14,14 @@ import java.util.List;
 import javax.swing.ImageIcon;
 
 public class QY extends QB {
-   protected int O;
-   protected double G;
-   protected double s;
-   protected QE u;
-   protected QE o;
-   protected boolean g;
-   protected List h = new ArrayList();
-   protected int H = -1;
+   public int O;
+   public double G;
+   public double s;
+   public QE u;
+   public QE o;
+   public boolean g;
+   public List h = new ArrayList();
+   public int H = -1;
    public static String d;
    public static long j;
 
@@ -141,7 +141,7 @@ public class QY extends QB {
    }
 
    @Override
-   protected void i() {
+   public void i() {
       this.revalidate();
    }
 
@@ -161,7 +161,7 @@ public class QY extends QB {
    }
 
    @Override
-   protected void f() {
+   public void f() {
       int[] var1 = E2.P();
       QY var10000 = this;
       if (var1 == null) {

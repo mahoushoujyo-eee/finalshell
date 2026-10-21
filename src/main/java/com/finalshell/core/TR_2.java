@@ -11,8 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 public class TR_2 extends T4 {
-   protected List Z = new ArrayList();
-   protected Map H = new HashMap();
+   public List Z = new ArrayList();
+   public Map H = new HashMap();
 
    public List b() {
       return this.Z;

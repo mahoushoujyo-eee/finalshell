@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class BF implements Runnable {
-   final ArrayList h;
-   final CB R;
+   public final ArrayList h;
+   public final CB R;
 
-   BF(CB var1, ArrayList var2) {
+   public BF(CB var1, ArrayList var2) {
       this.R = var1;
       this.h = var2;
    }

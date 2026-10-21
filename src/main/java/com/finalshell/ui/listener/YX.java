@@ -8,9 +8,9 @@ import java.awt.event.MouseMotionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YX implements MouseMotionListener {
-   final Bq2 U;
+   public final Bq2 U;
 
-   YX(Bq2 var1) {
+   public YX(Bq2 var1) {
       this.U = var1;
    }
 

@@ -9,7 +9,7 @@ public final class Wr2_2 {
    public static long[] a;
    public static Integer[] b;
 
-   protected static boolean I(char var0) {
+   public static boolean I(char var0) {
       String var1 = L();
       char var10000 = var0;
       if (var1 == null) {
@@ -41,7 +41,7 @@ public final class Wr2_2 {
       return var10000 != 0;
    }
 
-   protected static boolean L(char var0) {
+   public static boolean L(char var0) {
       String var1 = L();
       int var10000 = var0;
       if (var1 == null) {
@@ -51,7 +51,7 @@ public final class Wr2_2 {
       return var10000 != 0;
    }
 
-   protected static boolean J(char var0) {
+   public static boolean J(char var0) {
       String var1 = L();
       int var10000 = L[var0];
       if (var1 == null) {
@@ -65,7 +65,7 @@ public final class Wr2_2 {
       return var10000 != 0;
    }
 
-   protected static boolean D(char var0) {
+   public static boolean D(char var0) {
       boolean var10000;
       String var1 = L();
       var10000 = I(var0);
@@ -580,7 +580,7 @@ public final class Wr2_2 {
       return var5;
    }
 
-   protected static int Y(char[] var0) {
+   public static int Y(char[] var0) {
       String var1 = L();
       if (var0 == null) {
          return 0;

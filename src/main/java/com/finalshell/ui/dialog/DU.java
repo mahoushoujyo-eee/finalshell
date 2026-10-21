@@ -30,11 +30,11 @@ import javax.swing.JTextField;
 import net.miginfocom.swing.MigLayout;
 
 public class DU extends JDialog {
-   JPasswordField d;
-   JTextField C;
-   U62 Y;
-   JLabel c;
-   AW K;
+   public JPasswordField d;
+   public JTextField C;
+   public U62 Y;
+   public JLabel c;
+   public AW K;
    public static int[] W;
    public static String[] a;
    public static String[] b;
@@ -118,7 +118,7 @@ public class DU extends JDialog {
          throw var135.getTargetException();
       }
 
-new JPanel(var10012);
+var10011 = new JPanel(var10012);
       long var44 = 429952889391243847L;
       Ref.s(429952889391243847L, this, var44);
       Object var45 = 429952889391243847L;
@@ -183,7 +183,7 @@ new JPanel(var10012);
          throw var131.getTargetException();
       }
 
-new JPanel(var10024);
+var10023 = new JPanel(var10024);
       long var68 = 228183978052282907L;
       Ref.s(228183978052282907L, this, var68);
       Object var69 = 228183978052282907L;
@@ -401,7 +401,7 @@ new JPanel(var10024);
       }
    }
 
-   void W() {
+   public void W() {
       Object var1 = 429952889391243847L;
       JTextField var10001 = (JTextField)Ref.g(429952889391243847L, var1);
       Object var3 = 181350030129350521L;
@@ -467,7 +467,7 @@ new JPanel(var10024);
       }
    }
 
-   static void d(String var0) {
+   public static void d(String var0) {
       try {
          Desktop.getDesktop().browse(new URI(var0));
       } catch (IOException var2) {
@@ -477,7 +477,7 @@ new JPanel(var10024);
       }
    }
 
-   JButton C(String var1) {
+   public JButton C(String var1) {
       JButton var2 = new JButton(var1);
       Registry.packArgs(var2);
       long var3 = 560784054776466487L;

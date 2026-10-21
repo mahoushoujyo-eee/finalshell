@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.JButton;
 
 public class Connection2 implements ActionListener {
-   final com.finalshell.ui.frame.U v;
+   public final com.finalshell.ui.frame.U v;
    public static String[] a;
    public static String[] b;
 
-   Connection2(com.finalshell.ui.frame.U var1) {
+   public Connection2(com.finalshell.ui.frame.U var1) {
       this.v = var1;
    }
 
@@ -35,7 +35,7 @@ public class Connection2 implements ActionListener {
          Object var10 = 143091319553655617L;
          Connection2 var10004 = ((JButton)Ref.g(143091319553655617L, var10)).getText().equals(a(-19793, -27372));
          if (var2 == null) {
-            if (var10004 != false) {
+            if (var10004 == null) {
                ConnectHost var43 = var3;
                if (var2 == null) {
                   if (var3 == null) {
@@ -67,7 +67,7 @@ public class Connection2 implements ActionListener {
             var10006.getText().equals(a(-19794, -13963));
          }
 
-         if (var10004 == false) {
+         if (var10004 == null) {
             return;
          }
 

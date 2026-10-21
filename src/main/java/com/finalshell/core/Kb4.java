@@ -4,16 +4,16 @@ import com.finalshell.reflect.Ref;
 import com.finalshell.reflect.Registry;
 
 public class Kb4 {
-   String m;
-   String P;
-   int u;
-   String c;
-   boolean j;
-   boolean s;
-   boolean B;
-   long e;
-   String C;
-   String R;
+   public String m;
+   public String P;
+   public int u;
+   public String c;
+   public boolean j;
+   public boolean s;
+   public boolean B;
+   public long e;
+   public String C;
+   public String R;
    public static String[] q;
 
    public String V$String() {

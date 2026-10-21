@@ -17,10 +17,10 @@ public class YP {
    public Et2 v;
    public final EnumSet U;
    public int w = new Random().nextInt();
-   boolean W = false;
-   boolean m = false;
-   boolean f;
-   boolean c;
+   public boolean W = false;
+   public boolean m = false;
+   public boolean f;
+   public boolean c;
 
    public YP() {
       this(null, null, o);
@@ -235,15 +235,15 @@ public class YP {
       return this.q$YP();
    }
 
-   static Et2 i(YP var0) {
+   public static Et2 i(YP var0) {
       return var0.a;
    }
 
-   static Et2 r(YP var0) {
+   public static Et2 r(YP var0) {
       return var0.v;
    }
 
-   static EnumSet h(YP var0) {
+   public static EnumSet h(YP var0) {
       return var0.U;
    }
 

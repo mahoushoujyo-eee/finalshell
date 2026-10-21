@@ -4,13 +4,13 @@ import com.finalshell.core.JM;
 import java.io.IOException;
 
 public class KY3 extends Thread {
-   final JM J;
+   public final JM J;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   KY3(JM var1) {
+   public KY3(JM var1) {
       this.J = var1;
    }
 

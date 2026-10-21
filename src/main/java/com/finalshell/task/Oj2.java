@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.OX3;
 import java.lang.reflect.InvocationTargetException;
 
 public class Oj2 implements Runnable {
-   final OX3 U;
+   public final OX3 U;
 
-   Oj2(OX3 var1) {
+   public Oj2(OX3 var1) {
       this.U = var1;
    }
 

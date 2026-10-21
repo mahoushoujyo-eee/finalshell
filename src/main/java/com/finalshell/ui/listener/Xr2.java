@@ -5,9 +5,9 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 
 public class Xr2 implements TreeSelectionListener {
-   final KD3 N;
+   public final KD3 N;
 
-   Xr2(KD3 var1) {
+   public Xr2(KD3 var1) {
       this.N = var1;
    }
 
@@ -16,7 +16,7 @@ public class Xr2 implements TreeSelectionListener {
       KD3 var3;
       label24: {
          int[] var2 = KD3.u();
-         int var10000 = KD3.j(this.N);
+         int var10000 = (KD3.j(this.N)) ? 1 : 0;
          if (var2 == null) {
             if (var10000 == 0) {
                return;

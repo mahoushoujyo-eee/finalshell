@@ -1,7 +1,7 @@
 package com.finalshell.core;
 
 public class IZ3 implements On2 {
-   protected On2 m;
+   public On2 m;
 
    public IZ3() {
       this(DE.I);

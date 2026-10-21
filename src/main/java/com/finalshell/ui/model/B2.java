@@ -7,17 +7,17 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 
 public abstract class B2 implements Iterator {
-   NI K;
-   int L;
-   int p;
-   NI A;
-   final Xy4 O;
+   public NI K;
+   public int L;
+   public int p;
+   public NI A;
+   public final Xy4 O;
 
-   B2(Xy4 var1) {
+   public B2(Xy4 var1) {
+   super();
       int var10000 = Ph2.u();
       this.O = var1;
       int var2 = var10000;
-      super();
       this.L = var1.b;
       Xy4 var6 = var1;
       if (var2 == 0) {
@@ -58,7 +58,7 @@ public abstract class B2 implements Iterator {
       return false;
    }
 
-   final NI L() {
+   public final NI L() {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

@@ -13,8 +13,8 @@ import javax.swing.JPanel;
 import net.miginfocom.swing.MigLayout;
 
 public class Qj2 {
-   JFrame l;
-   Gh2_2 T;
+   public JFrame l;
+   public Gh2_2 T;
    public static String a;
    public static long[] b;
    public static Integer[] c;

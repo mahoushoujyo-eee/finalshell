@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class JY implements ActionListener {
-   final Xw2 X;
+   public final Xw2 X;
 
-   JY(Xw2 var1) {
+   public JY(Xw2 var1) {
       this.X = var1;
    }
 

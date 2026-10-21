@@ -28,7 +28,7 @@ public class DJ {
       __vfClinit__();
    }
 
-   static void a() {
+   public static void a() {
       System.out.println(a(13676, 3821));
       System.out.println(a(13653, 31215));
       System.out.println(String.format(a(13642, 8729), a(13682, -12093), a(13644, -27182)));
@@ -444,11 +444,11 @@ public class DJ {
       // be: areturn
    }
 
-   protected static void s(String var0) throws IOException {
+   public static void s(String var0) throws IOException {
       System.out.print(var0);
    }
 
-   protected static String A$String() throws IOException {
+   public static String A$String() throws IOException {
       BufferedReader var0 = new BufferedReader(new InputStreamReader(System.in));
       return var0.readLine();
    }

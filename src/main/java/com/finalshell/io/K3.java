@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.io.Reader;
 
 public class K3 extends FilterReader {
-   final N2_4 D;
+   public final N2_4 D;
 
-   K3(Reader var1, N2_4 var2) {
+   public K3(Reader var1, N2_4 var2) {
       super(var1);
       this.D = var2;
    }

@@ -6,10 +6,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class WD implements ChangeListener {
-   final NJ Z;
-   final It4 T;
+   public final NJ Z;
+   public final It4 T;
 
-   WD(It4 var1, NJ var2) {
+   public WD(It4 var1, NJ var2) {
       this.T = var1;
       this.Z = var2;
    }

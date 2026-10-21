@@ -33,7 +33,7 @@ public class IH extends IB {
       return var3;
    }
 
-   protected void I(JTextComponent var1) {
+   public void I(JTextComponent var1) {
       String[] var10000 = M();
       this.w = new Wc4(this);
       var1.addFocusListener(this.w);
@@ -52,15 +52,15 @@ public class IH extends IB {
       var3.addActionListener(this.W);
    }
 
-   protected void y(JTextComponent var1) {
+   public void y(JTextComponent var1) {
       var1.setText((String)this.o());
    }
 
-   protected void r(JTextComponent var1) {
+   public void r(JTextComponent var1) {
       this.J(var1.getText());
    }
 
-   protected void C(JTextComponent var1) {
+   public void C(JTextComponent var1) {
       String[] var10000 = M();
       var1.removeFocusListener(this.w);
       this.w = null;
@@ -80,22 +80,22 @@ public class IH extends IB {
    }
 
    @Override
-   protected void T(JComponent var1) {
+   public void T(JComponent var1) {
       this.r((JTextComponent)var1);
    }
 
    @Override
-   protected void s(JComponent var1) {
+   public void s(JComponent var1) {
       this.y((JTextComponent)var1);
    }
 
    @Override
-   protected void r(JComponent var1) {
+   public void r(JComponent var1) {
       this.C((JTextComponent)var1);
    }
 
    @Override
-   protected void F(JComponent var1) {
+   public void F(JComponent var1) {
       this.I((JTextComponent)var1);
    }
 

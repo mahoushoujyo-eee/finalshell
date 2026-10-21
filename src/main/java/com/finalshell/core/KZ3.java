@@ -6,11 +6,11 @@ import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.packet.Packet;
 
 public class KZ3 implements PacketListener {
-   final DnsResolveFailedSetting p;
+   public final DnsResolveFailedSetting p;
    public final PcapNetworkInterface e;
    public static long a;
 
-   KZ3(DnsResolveFailedSetting var1, PcapNetworkInterface var2) {
+   public KZ3(DnsResolveFailedSetting var1, PcapNetworkInterface var2) {
       this.p = var1;
       this.e = var2;
    }

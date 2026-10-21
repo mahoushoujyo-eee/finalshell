@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.JD;
 import java.lang.reflect.InvocationTargetException;
 
 public class TB implements Runnable {
-   final JD E;
+   public final JD E;
 
-   TB(JD var1) {
+   public TB(JD var1) {
       this.E = var1;
    }
 

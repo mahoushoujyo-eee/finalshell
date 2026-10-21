@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
 
 public abstract class Zd2 extends ZH {
-   protected boolean Z = false;
+   public boolean Z = false;
 
    @Override
    public BufferedImage filter(BufferedImage var1, BufferedImage var2) {

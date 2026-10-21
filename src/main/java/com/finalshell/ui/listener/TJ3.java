@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class TJ3 implements ActionListener {
-   final DU B;
+   public final DU B;
 
-   TJ3(DU var1) {
+   public TJ3(DU var1) {
       this.B = var1;
    }
 

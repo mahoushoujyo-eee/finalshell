@@ -62,8 +62,8 @@ public class IG {
    public boolean p = !Nj2.S;
    public final O12 q = new O12(a(24888, 730393290776994142L));
    public com.finalshell.ui.model.D c;
-   protected ClassLoader J;
-   protected UU s;
+   public ClassLoader J;
+   public UU s;
    public static boolean Z;
    public static boolean W;
    public static boolean I;
@@ -1917,7 +1917,7 @@ public class IG {
       // a5: areturn
    }
 
-   protected X4 w(java.lang.Class var1) {
+   public X4 w(java.lang.Class var1) {
       return new Kh2(var1);
    }
 
@@ -4806,7 +4806,7 @@ public class IG {
       var5.add(var1);
    }
 
-   static GT q(IG var0) {
+   public static GT q(IG var0) {
       return var0.l;
    }
 

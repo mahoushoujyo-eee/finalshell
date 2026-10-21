@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class UP implements ActionListener {
-   final com.finalshell.ui.frame.U S;
+   public final com.finalshell.ui.frame.U S;
 
-   UP(com.finalshell.ui.frame.U var1) {
+   public UP(com.finalshell.ui.frame.U var1) {
       this.S = var1;
    }
 

@@ -3,12 +3,12 @@ package com.finalshell.task;
 import com.finalshell.core.UR3;
 
 public class QA implements Runnable {
-   final UR3 L;
+   public final UR3 L;
    public static long a;
    public static long[] b;
    public static Long[] c;
 
-   QA(UR3 var1) {
+   public QA(UR3 var1) {
       this.L = var1;
    }
 

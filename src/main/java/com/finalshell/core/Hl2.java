@@ -690,7 +690,7 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
    }
 
    @Override
-   protected void paintSafely(Graphics var1) {
+   public void paintSafely(Graphics var1) {
       boolean var2;
       JTextComponent var3;
       Graphics2D var4;
@@ -919,7 +919,7 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
    }
 
    @Override
-   protected void paintBackground(Graphics var1) {
+   public void paintBackground(Graphics var1) {
    }
 
    @Override
@@ -962,11 +962,11 @@ public class Hl2 extends BasicPasswordFieldUI implements W2_3, SwingConstants, L
       return var3;
    }
 
-   static JPasswordField s(Hl2 var0) {
+   public static JPasswordField s(Hl2 var0) {
       return var0.K;
    }
 
-   static void i(Hl2 var0) {
+   public static void i(Hl2 var0) {
       var0.U();
    }
 

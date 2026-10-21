@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.LS;
 import java.lang.reflect.InvocationTargetException;
 
 public class KH implements Runnable {
-   final LS A;
+   public final LS A;
 
-   KH(LS var1) {
+   public KH(LS var1) {
       this.A = var1;
    }
 

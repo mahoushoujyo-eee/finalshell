@@ -17,12 +17,12 @@ import javax.swing.JTextArea;
 import net.miginfocom.swing.MigLayout;
 
 public class Lh2 extends JPanel {
-   boolean u;
-   JTextArea K;
-   com.finalshell.core.Qp2 e;
-   com.finalshell.ui.model.D12 y;
-   ArrayList V;
-   JScrollPane v;
+   public boolean u;
+   public JTextArea K;
+   public com.finalshell.core.Qp2 e;
+   public com.finalshell.ui.model.D12 y;
+   public ArrayList V;
+   public JScrollPane v;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -115,7 +115,7 @@ public class Lh2 extends JPanel {
       }
 
       if (Ky4.F$arrString() != null) {
-         FilePanel.R(var1 == false);
+         FilePanel.R(var1 == null);
       }
    }
 
@@ -201,13 +201,13 @@ public class Lh2 extends JPanel {
 
             String var7 = var10007.append((String)var10008).append("\n").toString();
             var4.append(var7);
-            if (var2 == false) {
+            if (var2 == null) {
                break;
             }
 
             Object var22 = 219617317460024904L;
             ((ArrayList)Ref.g(219617317460024904L, var22)).add(var6);
-            if (var2 != false) {
+            if (var2 == null) {
                continue;
             }
          }
@@ -219,8 +219,8 @@ public class Lh2 extends JPanel {
       String var49 = var10002.toString();
       Object var24 = 585425668346696528L;
       Lh2 var55 = this.equals(((JTextArea)Ref.g(585425668346696528L, var24)).getText());
-      if (var2 != false) {
-         if (var55 == false) {
+      if (var2 == null) {
+         if (var55 == null) {
             Object var26 = 585425668346696528L;
             ((JTextArea)Ref.g(585425668346696528L, var26)).setText(var49);
          }
@@ -247,7 +247,7 @@ public class Lh2 extends JPanel {
 
       Lh2 var63 = var50;
       int var67 = -1;
-      if (var2 != false) {
+      if (var2 == null) {
          if (var50 > -1) {
             Object var36 = 575306184824179663L;
             ((com.finalshell.core.Qp2)Ref.g(575306184824179663L, var36)).getSelectionModel().setSelectionInterval((int)var50, (int)var50);
@@ -262,7 +262,7 @@ public class Lh2 extends JPanel {
       }
 
       int var51 = var63 + var67;
-      if (var2 != false) {
+      if (var2 == null) {
          if (var51 < a(2585, 5474526052165013402L)) {
             var51 = a(3853, 7268830619927136907L);
          }

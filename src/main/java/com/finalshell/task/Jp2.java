@@ -6,9 +6,9 @@ import com.finalshell.ui.panel.ShowDeletedPanel;
 import java.lang.reflect.InvocationTargetException;
 
 public class Jp2 implements Runnable {
-   final ShowDeletedPanel L;
+   public final ShowDeletedPanel L;
 
-   Jp2(ShowDeletedPanel var1) {
+   public Jp2(ShowDeletedPanel var1) {
       this.L = var1;
    }
 

@@ -13,10 +13,10 @@ import javax.swing.SwingUtilities;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class Bs4 implements MouseListener {
-   final JButton Q;
-   final Tv2 g;
+   public final JButton Q;
+   public final Tv2 g;
 
-   Bs4(Tv2 var1, JButton var2) {
+   public Bs4(Tv2 var1, JButton var2) {
       this.g = var1;
       this.Q = var2;
    }

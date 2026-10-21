@@ -3,10 +3,10 @@ package com.finalshell.task;
 import com.finalshell.ui.dialog.D2;
 
 public class N72 implements Runnable {
-   final int J;
-   final D2 L;
+   public final int J;
+   public final D2 L;
 
-   N72(D2 var1, int var2) {
+   public N72(D2 var1, int var2) {
       this.L = var1;
       this.J = var2;
    }

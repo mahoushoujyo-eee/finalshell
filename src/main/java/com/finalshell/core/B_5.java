@@ -8,9 +8,6 @@ public class B_5 implements Y2_3 {
    public static long[] b;
    public static Integer[] c;
 
-   B_5() {
-   }
-
    @Override
    public int u() {
       return 1;

@@ -73,7 +73,7 @@ public class PV implements Serializable, Cloneable {
       if (var2 != 0) {
          return var4 != 0;
       } else {
-         return (boolean)(var4 != 0 ? 1 : 0);
+         return (boolean)((var4 != 0 ? 1 : 0) != 0);
       }
    }
 

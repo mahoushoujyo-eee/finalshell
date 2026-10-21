@@ -5,9 +5,9 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class P02 implements ChangeListener {
-   final BX M;
+   public final BX M;
 
-   P02(BX var1) {
+   public P02(BX var1) {
       this.M = var1;
    }
 

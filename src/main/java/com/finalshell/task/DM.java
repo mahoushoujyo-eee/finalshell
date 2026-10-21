@@ -6,9 +6,9 @@ import com.finalshell.ui.listener.Lm4;
 import java.lang.reflect.InvocationTargetException;
 
 public class DM implements Runnable {
-   final Lm4 F;
+   public final Lm4 F;
 
-   DM(Lm4 var1) {
+   public DM(Lm4 var1) {
       this.F = var1;
    }
 

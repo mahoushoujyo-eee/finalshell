@@ -5,9 +5,9 @@ import com.finalshell.core.TM;
 import com.finalshell.reflect.Ref;
 
 public class NM implements Runnable {
-   final TM K;
+   public final TM K;
 
-   NM(TM var1) {
+   public NM(TM var1) {
       this.K = var1;
    }
 

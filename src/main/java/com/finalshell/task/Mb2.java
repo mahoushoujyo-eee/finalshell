@@ -6,10 +6,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 public class Mb2 implements Runnable {
-   final DefaultMutableTreeNode z;
-   final Connection5 k;
+   public final DefaultMutableTreeNode z;
+   public final Connection5 k;
 
-   Mb2(Connection5 var1, DefaultMutableTreeNode var2) {
+   public Mb2(Connection5 var1, DefaultMutableTreeNode var2) {
       this.k = var1;
       this.z = var2;
    }

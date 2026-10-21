@@ -1,12 +1,12 @@
 package com.finalshell.core;
 
 public class C_R extends K2_3 {
-   final X_3_2 J;
-   final NV_2 w;
+   public final X_3_2 J;
+   public final NV_2 w;
    public static String[] b;
    public static String[] c;
 
-   C_R(NV_2 var1, X_3_2 var2) {
+   public C_R(NV_2 var1, X_3_2 var2) {
       this.w = var1;
       this.J = var2;
    }

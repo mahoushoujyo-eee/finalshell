@@ -5,9 +5,6 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class XY implements PopupMenuListener {
-   XY() {
-   }
-
    @Override
    public void popupMenuWillBecomeVisible(PopupMenuEvent var1) {
    }

@@ -9,7 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class GD extends MouseAdapter {
-   final Yg2 H;
+   public final Yg2 H;
    public static long a;
 
    public GD(Yg2 var1) {
@@ -42,7 +42,7 @@ public class GD extends MouseAdapter {
       ((Yg2)Ref.g(394340410247477610L, var4)).repaint();
    }
 
-   GD(Yg2 var1, KO3 var2) {
+   public GD(Yg2 var1, KO3 var2) {
       this(var1);
    }
 

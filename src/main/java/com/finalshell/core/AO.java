@@ -8,10 +8,7 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
 public class AO extends ChannelInitializer {
    public static String a;
 
-   AO() {
-   }
-
-   protected void H(SocketChannel var1) throws Exception {
+   public void H(SocketChannel var1) throws Exception {
       var1.pipeline().addLast(a, new ReadTimeoutHandler(5));
       var1.pipeline().addLast(new ZF_2());
       var1.pipeline().addLast(new Lz2());
@@ -19,7 +16,7 @@ public class AO extends ChannelInitializer {
    }
 
    @Override
-   protected void initChannel(Channel var1) throws Exception {
+   public void initChannel(Channel var1) throws Exception {
       this.H((SocketChannel)var1);
    }
 

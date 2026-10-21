@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class OE implements Runnable {
-   final DefaultMutableTreeNode n;
-   final Connection5 t;
+   public final DefaultMutableTreeNode n;
+   public final Connection5 t;
 
-   OE(Connection5 var1, DefaultMutableTreeNode var2) {
+   public OE(Connection5 var1, DefaultMutableTreeNode var2) {
       this.t = var1;
       this.n = var2;
    }

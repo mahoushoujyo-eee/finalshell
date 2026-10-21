@@ -9,36 +9,36 @@ import java.util.Iterator;
 import java.util.Random;
 
 public class F92 {
-   int J;
-   Object f = new Object();
+   public int J;
+   public Object f = new Object();
    public HashMap C = new HashMap();
-   HashMap X = new HashMap();
-   long l = 0L;
-   int r = a(16045, 7238709439410119833L);
-   int h = this.r;
-   int V = this.h;
-   int d = -1;
-   Object A = new Object();
-   long m = 0L;
-   long F = 0L;
-   long i;
-   long j = System.currentTimeMillis();
-   Random R = new Random();
-   HashMap x = new HashMap();
+   public HashMap X = new HashMap();
+   public long l = 0L;
+   public int r = a(16045, 7238709439410119833L);
+   public int h = this.r;
+   public int V = this.h;
+   public int d = -1;
+   public Object A = new Object();
+   public long m = 0L;
+   public long F = 0L;
+   public long i;
+   public long j = System.currentTimeMillis();
+   public Random R = new Random();
+   public HashMap x = new HashMap();
    public int s = a(5465, 6098055134163079018L);
-   int v = -1;
-   long w;
-   long L;
-   int c = 0;
-   LA3 S;
-   InetAddress U;
-   int p;
+   public int v = -1;
+   public long w;
+   public long L;
+   public int c = 0;
+   public LA3 S;
+   public InetAddress U;
+   public int p;
    public HashMap N = new HashMap();
-   Object T = new Object();
-   Object P = new Object();
-   String D;
+   public Object T = new Object();
+   public Object P = new Object();
+   public String D;
    public com.finalshell.task.Tb2 z;
-   boolean u = false;
+   public boolean u = false;
    public static String[] a;
    public static String[] b;
    public static long[] e;
@@ -46,7 +46,7 @@ public class F92 {
    public static long[] k;
    public static Long[] n;
 
-   F92(LA3 var1, int var2, InetAddress var3, int var4) {
+   public F92(LA3 var1, int var2, InetAddress var3, int var4) {
       this.z = new com.finalshell.task.Tb2();
       this.J = var2;
       this.S = var1;
@@ -122,13 +122,13 @@ public class F92 {
       this.S.H(var1);
    }
 
-   void b(Qm2 var1) {
+   public void b(Qm2 var1) {
       synchronized (this.T) {
          this.N.put(var1.W, var1);
       }
    }
 
-   void g(Qm2 var1) {
+   public void g(Qm2 var1) {
       synchronized (this.T) {
          this.N.remove(var1.W);
       }
@@ -194,7 +194,7 @@ public class F92 {
       // 63: return
    }
 
-   Iterator J() {
+   public Iterator J() {
       Object var1 = null;
       synchronized (this.T) {
          return new com.finalshell.ui.model.TQ(this.N.keySet().iterator());
@@ -254,7 +254,7 @@ public class F92 {
    // $VF: Could not inline inconsistent finally blocks
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   Fr2 A(int var1) {
+   public Fr2 A(int var1) {
       Ky4[] var10000 = Qm2.J();
       Fr2 var3 = null;
       Object var4 = this.A;

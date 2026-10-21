@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class IT3 {
-   static int s;
-   static int w;
-   static int S;
+   public static int s;
+   public static int w;
+   public static int S;
    public final Ph2[] c;
    public final String z;
    public final Zzzzd4BeanInfo W;
@@ -18,8 +18,8 @@ public class IT3 {
    public static Integer[] b;
 
    public IT3(Ph2[] var1, Zzzzd4BeanInfo var2, String var3, boolean var4, boolean var5) {
+   super();
       boolean var10001;
-      super();
       String var10000 = Nv4.o();
       this.O = new HashMap();
       String var6 = var10000;
@@ -125,23 +125,23 @@ public class IT3 {
       return var7;
    }
 
-   static boolean Z(IT3 var0) {
+   public static boolean Z(IT3 var0) {
       return var0.Y;
    }
 
-   static int G(IT3 var0) {
+   public static int G(IT3 var0) {
       return var0.H;
    }
 
-   static boolean I(IT3 var0) {
+   public static boolean I(IT3 var0) {
       return var0.Z;
    }
 
-   static String D(IT3 var0) {
+   public static String D(IT3 var0) {
       return var0.z;
    }
 
-   static Zzzzd4BeanInfo c(IT3 var0) {
+   public static Zzzzd4BeanInfo c(IT3 var0) {
       return var0.W;
    }
 

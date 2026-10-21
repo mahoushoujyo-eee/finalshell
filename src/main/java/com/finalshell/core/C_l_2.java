@@ -5,10 +5,7 @@ import com.finalshell.reflect.Registry;
 public final class C_l_2 {
    public static String a;
 
-   C_l_2() {
-   }
-
-   static String F() {
+   public static String F() {
       return a + Registry.lookupField(558584643801613540L).getInt(null);
    }
 

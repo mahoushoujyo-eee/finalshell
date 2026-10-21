@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.ui.panel.SetBackgroundImagePanel;
 
 public class D implements Runnable {
-   final SetBackgroundImagePanel E;
+   public final SetBackgroundImagePanel E;
 
-   D(SetBackgroundImagePanel var1) {
+   public D(SetBackgroundImagePanel var1) {
       this.E = var1;
    }
 

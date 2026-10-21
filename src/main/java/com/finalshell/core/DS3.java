@@ -14,7 +14,7 @@ public class DS3 extends Dm4 {
    public static long[] h;
    public static Integer[] i;
 
-   DS3() {
+   public DS3() {
       this.M(b(20633, 2584653661390976490L));
       this.Q(b(940, 6660855936291333854L));
       this.f(b(26425, 6693608346007831118L));
@@ -302,7 +302,7 @@ public class DS3 extends Dm4 {
    }
 
    @Override
-   void D(UJ param1) {
+   public void D(UJ param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -497,7 +497,7 @@ public class DS3 extends Dm4 {
       }
    }
 
-   static String[] R(ConnectHost var0) {
+   public static String[] R(ConnectHost var0) {
       boolean var10000 = Dm4.F$boolean();
       Vector var2 = new Vector();
       boolean var1 = var10000;
@@ -557,7 +557,7 @@ public class DS3 extends Dm4 {
       return var10;
    }
 
-   static String J(String var0) {
+   public static String J(String var0) {
       boolean var1 = Dm4.J$boolean();
       String var10000 = var0;
       if (!var1) {
@@ -589,7 +589,7 @@ public class DS3 extends Dm4 {
       return var10000;
    }
 
-   static void f(ConnectHost var0, String var1, int var2, int var3, String var4, int var5, PJ3 var6) throws Pc2 {
+   public static void f(ConnectHost var0, String var1, int var2, int var3, String var4, int var5, PJ3 var6) throws Pc2 {
       String var7 = J(var1);
       synchronized (G) {
          if (y(var0, var7, var2) != null) {
@@ -608,7 +608,7 @@ public class DS3 extends Dm4 {
       }
    }
 
-   static void f(ConnectHost var0, String var1, int var2, int var3, String var4, Object[] var5) throws Pc2 {
+   public static void f(ConnectHost var0, String var1, int var2, int var3, String var4, Object[] var5) throws Pc2 {
       String var6 = J(var1);
       synchronized (G) {
          if (y(var0, var6, var2) != null) {
@@ -626,7 +626,7 @@ public class DS3 extends Dm4 {
       }
    }
 
-   static void f(DS3 param0) {
+   public static void f(DS3 param0) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -661,14 +661,14 @@ public class DS3 extends Dm4 {
       // 2f: return
    }
 
-   static void W(ConnectHost var0, int var1) {
+   public static void W(ConnectHost var0, int var1) {
       c(var0, null, var1);
    }
 
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   static void c(ConnectHost var0, String var1, int var2) {
+   public static void c(ConnectHost var0, String var1, int var2) {
       boolean var10000 = Dm4.J$boolean();
       Vector var4 = G;
       synchronized (G){} // $VF: monitorenter 
@@ -773,7 +773,7 @@ public class DS3 extends Dm4 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   static void M(ConnectHost var0) {
+   public static void M(ConnectHost var0) {
       Object var2 = null;
       boolean var10000 = Dm4.F$boolean();
       int var3 = 0;

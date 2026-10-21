@@ -14,8 +14,8 @@ public class Qy2 implements CW3 {
    }
 
    public Qy2(java.lang.Class var1, String[] var2) {
+   super();
       String var10000 = Nv4.o();
-      super();
       String var3 = var10000;
       this.k = new HashSet();
       this.t = new HashSet();

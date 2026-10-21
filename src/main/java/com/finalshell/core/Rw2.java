@@ -10,8 +10,8 @@ public final class Rw2 extends R8_2 {
    public static Integer[] g;
 
    public Rw2(com.finalshell.ui.model.I var1, NV_2 var2, @C_9 NV_2 var3) {
+   super(var1);
       String[] var10000 = RG_2.C();
-      super(var1);
       String[] var4 = var10000;
       this.K = var2;
       this.h = var3;

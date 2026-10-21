@@ -11,7 +11,7 @@ import java.util.Iterator;
 import javax.swing.table.AbstractTableModel;
 
 public class Cd4 extends AbstractTableModel {
-   ArrayList O;
+   public ArrayList O;
    public static String g;
    public static String Y;
    public static String V;
@@ -27,8 +27,8 @@ public class Cd4 extends AbstractTableModel {
    public static String I;
    public static String m;
    public static String G;
-   String[] o;
-   boolean v;
+   public String[] o;
+   public boolean v;
    public static long[] b;
    public static Integer[] c;
 

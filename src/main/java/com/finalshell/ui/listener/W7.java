@@ -8,9 +8,9 @@ import java.awt.event.ItemListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class W7 implements ItemListener {
-   final com.finalshell.core.Ol4 w;
+   public final com.finalshell.core.Ol4 w;
 
-   W7(com.finalshell.core.Ol4 var1) {
+   public W7(com.finalshell.core.Ol4 var1) {
       this.w = var1;
    }
 

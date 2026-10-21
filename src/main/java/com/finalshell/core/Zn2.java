@@ -17,17 +17,17 @@ import javax.swing.tree.MutableTreeNode;
 import javax.swing.tree.TreeNode;
 
 public class Zn2 extends L4_2 {
-   protected final Object E = new Object();
-   protected final List O = new ArrayList(1);
-   protected com.finalshell.ui.panel.Us2 q;
-   protected boolean x = true;
-   protected R72 c;
-   protected CB3 B = null;
-   protected final Object f = new Object();
-   protected final Map g = new HashMap();
-   protected final Map i = new HashMap();
-   protected final Eo4 L = new Eo4();
-   protected final Object K = new Object();
+   public final Object E = new Object();
+   public final List O = new ArrayList(1);
+   public com.finalshell.ui.panel.Us2 q;
+   public boolean x = true;
+   public R72 c;
+   public CB3 B = null;
+   public final Object f = new Object();
+   public final Map g = new HashMap();
+   public final Map i = new HashMap();
+   public final Eo4 L = new Eo4();
+   public final Object K = new Object();
 
    public Zn2(com.finalshell.ui.panel.Us2 var1, R72 var2) {
       super(null);
@@ -164,7 +164,7 @@ public class Zn2 extends L4_2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void I(CB3 var1, boolean var2) {
+   public void I(CB3 var1, boolean var2) {
       String[] var10000 = CB3.C$arrString();
       Object var4 = this.f;
       synchronized (this.f){} // $VF: monitorenter 
@@ -206,7 +206,7 @@ public class Zn2 extends L4_2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void N(List var1, boolean var2) {
+   public void N(List var1, boolean var2) {
       String[] var10000 = CB3.C$arrString();
       Object var4 = this.f;
       synchronized (this.f){} // $VF: monitorenter 
@@ -238,7 +238,7 @@ public class Zn2 extends L4_2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void b(CB3[] var1, boolean var2) {
+   public void b(CB3[] var1, boolean var2) {
       String[] var10000 = CB3.C$arrString();
       Object var4 = this.f;
       synchronized (this.f){} // $VF: monitorenter 
@@ -271,7 +271,7 @@ public class Zn2 extends L4_2 {
       }
    }
 
-   protected void j(CB3 var1) {
+   public void j(CB3 var1) {
       synchronized (this.f) {
          this.L.put(var1.H(), var1);
       }
@@ -279,7 +279,7 @@ public class Zn2 extends L4_2 {
 
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void g(List var1) {
+   public void g(List var1) {
       String[] var10000 = CB3.C$arrString();
       Object var3 = this.f;
       synchronized (this.f){} // $VF: monitorenter 
@@ -312,7 +312,7 @@ public class Zn2 extends L4_2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected int s(CB3 var1) {
+   public int s(CB3 var1) {
       String[] var10000 = CB3.C$arrString();
       Object var3 = this.K;
       synchronized (this.K){} // $VF: monitorenter 
@@ -593,7 +593,7 @@ public class Zn2 extends L4_2 {
       this.c(var2);
    }
 
-   protected void o(List var1, CB3 var2, int var3) {
+   public void o(List var1, CB3 var2, int var3) {
       super.F(var1, var2, var3);
       this.Q(var1);
    }
@@ -675,7 +675,7 @@ public class Zn2 extends L4_2 {
       }
    }
 
-   protected void v(CB3 var1, boolean var2) {
+   public void v(CB3 var1, boolean var2) {
       com.finalshell.ui.model.P2 var4;
       label17: {
          label16: {
@@ -702,7 +702,7 @@ public class Zn2 extends L4_2 {
       this.q.P(var4);
    }
 
-   protected void Z(CB3 var1) {
+   public void Z(CB3 var1) {
       String[] var10000 = CB3.C$arrString();
       this.e(var1);
       int var3 = 0;
@@ -717,7 +717,7 @@ public class Zn2 extends L4_2 {
       }
    }
 
-   protected void e(CB3 var1) {
+   public void e(CB3 var1) {
       String[] var10000 = CB3.C$arrString();
       List var3 = (List)this.i.get(var1.H());
       String[] var2 = var10000;
@@ -739,7 +739,7 @@ public class Zn2 extends L4_2 {
       }
    }
 
-   protected List Y$List(CB3 var1, List var2) {
+   public List Y$List(CB3 var1, List var2) {
       String[] var3 = CB3.C$arrString();
       Object var10000 = var2;
       if (var3 != null) {
@@ -781,7 +781,7 @@ public class Zn2 extends L4_2 {
       return RT3.T(this.L);
    }
 
-   protected void Q(List var1) {
+   public void Q(List var1) {
       String[] var10000 = CB3.C$arrString();
       Iterator var3 = var1.iterator();
       String[] var2 = var10000;
@@ -795,7 +795,7 @@ public class Zn2 extends L4_2 {
       }
    }
 
-   protected void W(CB3[] var1) {
+   public void W(CB3[] var1) {
       String[] var2 = CB3.C$arrString();
 
       for (CB3 var6 : var1) {
@@ -806,7 +806,7 @@ public class Zn2 extends L4_2 {
       }
    }
 
-   protected void a(CB3 var1) {
+   public void a(CB3 var1) {
       String[] var10000 = CB3.C$arrString();
       ImageIcon var3 = var1.Y();
       String[] var2 = var10000;
@@ -843,7 +843,7 @@ public class Zn2 extends L4_2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void r(CB3 var1) {
+   public void r(CB3 var1) {
       String[] var10000 = CB3.C$arrString();
       Object var4 = this.E;
       synchronized (this.E){} // $VF: monitorenter 
@@ -873,7 +873,7 @@ public class Zn2 extends L4_2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void s(CB3 var1, List var2) {
+   public void s(CB3 var1, List var2) {
       String[] var10000 = CB3.C$arrString();
       Object var5 = this.E;
       synchronized (this.E){} // $VF: monitorenter 
@@ -903,7 +903,7 @@ public class Zn2 extends L4_2 {
    // $VF: Could not verify finally blocks. A semaphore variable has been added to preserve control flow.
    // $VF: Could not create synchronized statement, marking monitor enters and exits
    // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
-   protected void r(CB3 var1, Throwable var2) {
+   public void r(CB3 var1, Throwable var2) {
       String[] var10000 = CB3.C$arrString();
       Object var5 = this.E;
       synchronized (this.E){} // $VF: monitorenter 

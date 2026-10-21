@@ -9,11 +9,11 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 public class Y8 implements Runnable {
-   final String S;
-   final FJ3 y;
+   public final String S;
+   public final FJ3 y;
    public static String a;
 
-   Y8(FJ3 var1, String var2) {
+   public Y8(FJ3 var1, String var2) {
       this.y = var1;
       this.S = var2;
    }

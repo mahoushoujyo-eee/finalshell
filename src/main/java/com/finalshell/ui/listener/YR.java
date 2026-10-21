@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YR implements ActionListener {
-   final LoginDialog Y;
+   public final LoginDialog Y;
 
-   YR(LoginDialog var1) {
+   public YR(LoginDialog var1) {
       this.Y = var1;
    }
 

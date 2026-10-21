@@ -7,11 +7,11 @@ import java.awt.Dimension;
 import javax.swing.JComponent;
 
 public class Tb2 extends T4 {
-   protected int d = 0;
-   protected WC_2 U = null;
-   protected int f = 0;
-   protected int I;
-   protected JComponent Y;
+   public int d = 0;
+   public WC_2 U = null;
+   public int f = 0;
+   public int I;
+   public JComponent Y;
    public static String[] a;
    public static String[] b;
    public static long e;

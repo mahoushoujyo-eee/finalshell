@@ -9,13 +9,13 @@ import javax.swing.SwingUtilities;
 
 public class Pq2 extends MouseAdapter {
    public boolean f;
-   final K42 h;
-   final com.finalshell.ui.panel.O b;
-   final String W;
-   final String E;
-   final Kk4 z;
+   public final K42 h;
+   public final com.finalshell.ui.panel.O b;
+   public final String W;
+   public final String E;
+   public final Kk4 z;
 
-   Pq2(Kk4 var1, K42 var2, com.finalshell.ui.panel.O var3, String var4, String var5) {
+   public Pq2(Kk4 var1, K42 var2, com.finalshell.ui.panel.O var3, String var4, String var5) {
       this.z = var1;
       this.h = var2;
       this.b = var3;

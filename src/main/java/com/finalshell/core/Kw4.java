@@ -6,29 +6,29 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Kw4 {
-   float E;
-   float o;
-   int N;
-   int H;
-   String a;
-   int s;
-   String D;
-   int h;
-   boolean W;
-   int K;
+   public float E;
+   public float o;
+   public int N;
+   public int H;
+   public String a;
+   public int s;
+   public String D;
+   public int h;
+   public boolean W;
+   public int K;
    public static int Z;
    public static int q;
-   int J;
+   public int J;
    public static int r;
    public static int e;
-   int V;
-   ArrayList M;
-   HashSet t;
-   U82 j;
-   String d;
-   long S;
-   long A;
-   String k;
+   public int V;
+   public ArrayList M;
+   public HashSet t;
+   public U82 j;
+   public String d;
+   public long S;
+   public long A;
+   public String k;
 
    public Kw4() {
       Registry.lookupField(224082240603469676L).setBoolean(this, false);

@@ -11,11 +11,11 @@ import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 
 public class FC implements ItemListener {
-   final QuickConnectPanel V;
+   public final QuickConnectPanel V;
    public static String[] a;
    public static String[] b;
 
-   FC(QuickConnectPanel var1) {
+   public FC(QuickConnectPanel var1) {
       this.V = var1;
    }
 

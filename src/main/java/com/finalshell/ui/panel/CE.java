@@ -17,14 +17,14 @@ import javax.swing.border.MatteBorder;
 import net.miginfocom.swing.MigLayout;
 
 public class CE extends F8 {
-   CopyPanel P;
-   T32 n;
-   KV Z;
-   String x;
-   boolean g;
-   YX3 A;
-   Ty2 U;
-   boolean r;
+   public CopyPanel P;
+   public T32 n;
+   public KV Z;
+   public String x;
+   public boolean g;
+   public YX3 A;
+   public Ty2 U;
+   public boolean r;
    public static int[] T;
    public static String[] a;
    public static String[] b;
@@ -173,7 +173,7 @@ public class CE extends F8 {
       }
    }
 
-   void J() {
+   public void J() {
       ConnectionProperty var10001 = (ConnectionProperty)(Registry.emptyArgs());
       long var7 = 595556246051364370L;
       Object[] var6 = var10001;
@@ -348,7 +348,7 @@ public class CE extends F8 {
       }
    }
 
-   void r() {
+   public void r() {
       Object var1 = 441490372026516146L;
       Registry.lookupField(461634183601281643L).setBoolean(Ref.g(441490372026516146L, var1), false);
       Object var3 = 441490372026516146L;

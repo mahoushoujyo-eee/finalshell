@@ -11,7 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 
 public class L3 extends Lz2_2 {
-   protected PF3 t;
+   public PF3 t;
 
    public L3() {
       this((PF3)null);

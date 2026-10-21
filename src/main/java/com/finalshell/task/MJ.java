@@ -6,11 +6,11 @@ import com.finalshell.reflect.Ref;
 import java.io.IOException;
 
 public class MJ implements Runnable {
-   final DQ3 C;
-   final String J;
-   final Ty2 d;
+   public final DQ3 C;
+   public final String J;
+   public final Ty2 d;
 
-   MJ(Ty2 var1, DQ3 var2, String var3) {
+   public MJ(Ty2 var1, DQ3 var2, String var3) {
       this.d = var1;
       this.C = var2;
       this.J = var3;

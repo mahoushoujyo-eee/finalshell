@@ -11,7 +11,7 @@ public abstract class Nd2 {
       this.D = System.nanoTime();
    }
 
-   Nd2(Xo2 var1, boolean var2, I0 var3) {
+   public Nd2(Xo2 var1, boolean var2, I0 var3) {
       this(var1, var2);
    }
 }

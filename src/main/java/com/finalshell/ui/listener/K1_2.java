@@ -7,10 +7,10 @@ import java.awt.event.WindowEvent;
 import javax.swing.JPanel;
 
 public class K1_2 extends WindowAdapter {
-   final JPanel y;
-   final DU G;
+   public final JPanel y;
+   public final DU G;
 
-   K1_2(DU var1, JPanel var2) {
+   public K1_2(DU var1, JPanel var2) {
       this.G = var1;
       this.y = var2;
    }

@@ -6,13 +6,13 @@ import java.io.File;
 public class QE extends Thread {
    public CK U;
    public File[] K;
-   final CK F;
+   public final CK F;
    public static String[] a;
    public static String[] b;
    public static long[] c;
    public static Integer[] d;
 
-   QE(CK var1, File[] var2) {
+   public QE(CK var1, File[] var2) {
       this.F = var1;
       this.U = null;
       this.K = var2;

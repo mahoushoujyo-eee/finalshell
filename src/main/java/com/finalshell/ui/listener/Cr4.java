@@ -6,10 +6,10 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 public class Cr4 implements PopupMenuListener {
-   final Qe2_2 R;
-   final Kz4 m;
+   public final Qe2_2 R;
+   public final Kz4 m;
 
-   Cr4(Kz4 var1, Qe2_2 var2) {
+   public Cr4(Kz4 var1, Qe2_2 var2) {
       this.m = var1;
       this.R = var2;
    }

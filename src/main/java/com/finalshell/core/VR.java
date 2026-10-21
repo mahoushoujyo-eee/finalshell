@@ -5,9 +5,9 @@ import com.finalshell.reflect.Registry;
 import java.lang.reflect.InvocationTargetException;
 
 public class VR implements Tk4 {
-   final M6 i;
+   public final M6 i;
 
-   VR(M6 var1) {
+   public VR(M6 var1) {
       this.i = var1;
    }
 

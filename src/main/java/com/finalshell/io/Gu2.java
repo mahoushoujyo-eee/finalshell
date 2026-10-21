@@ -11,12 +11,12 @@ public class Gu2 extends PipedInputStream {
    public static long[] a;
    public static Integer[] b;
 
-   Gu2() throws IOException {
+   public Gu2() throws IOException {
       this.q = a(1994, 105303827313998873L);
       this.r = this.q;
    }
 
-   Gu2(int var1) throws IOException {
+   public Gu2(int var1) throws IOException {
       this.q = a(1994, 105303827313998873L);
       this.r = this.q;
       this.buffer = new byte[var1];
@@ -24,18 +24,18 @@ public class Gu2 extends PipedInputStream {
       this.r = var1;
    }
 
-   Gu2(int var1, int var2) throws IOException {
+   public Gu2(int var1, int var2) throws IOException {
       this(var1);
       this.r = var2;
    }
 
-   Gu2(PipedOutputStream var1) throws IOException {
+   public Gu2(PipedOutputStream var1) throws IOException {
       super(var1);
       this.q = a(1701, 1369861003029101943L);
       this.r = this.q;
    }
 
-   Gu2(PipedOutputStream var1, int var2) throws IOException {
+   public Gu2(PipedOutputStream var1, int var2) throws IOException {
       super(var1);
       this.q = a(1994, 105303827313998873L);
       this.r = this.q;
@@ -108,7 +108,7 @@ public class Gu2 extends PipedInputStream {
       return var2;
    }
 
-   synchronized void r(int param1) throws IOException {
+   public synchronized void r(int param1) throws IOException {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

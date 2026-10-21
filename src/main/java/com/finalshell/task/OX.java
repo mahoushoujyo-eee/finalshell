@@ -5,9 +5,9 @@ import com.finalshell.core.Bj4;
 import java.io.IOException;
 
 public class OX implements Runnable {
-   final byte[] S;
+   public final byte[] S;
 
-   OX(byte[] var1) {
+   public OX(byte[] var1) {
       this.S = var1;
    }
 

@@ -737,7 +737,7 @@ public class Nz2_2 {
       }
    }
 
-   String p(int var1, KV var2) {
+   public String p(int var1, KV var2) {
       String var10000 = W2.F();
       Object var4 = null;
       String var3 = var10000;

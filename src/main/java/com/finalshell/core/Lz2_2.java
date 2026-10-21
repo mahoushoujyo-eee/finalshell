@@ -11,10 +11,10 @@ import java.util.List;
 import javax.swing.JComponent;
 
 public abstract class Lz2_2 implements Og4 {
-   protected Boolean d = false;
-   protected Dimension H = new Dimension(0, 0);
-   protected Insets U = new Insets(0, 0, 0, 0);
-   protected List c = new ArrayList(1);
+   public Boolean d = false;
+   public Dimension H = new Dimension(0, 0);
+   public Insets U = new Insets(0, 0, 0, 0);
+   public List c = new ArrayList(1);
    public static int[] V;
 
    @Override
@@ -149,7 +149,7 @@ public abstract class Lz2_2 implements Og4 {
       }
    }
 
-   protected Point J(int var1, int var2) {
+   public Point J(int var1, int var2) {
       return new Point(var1, var2);
    }
 

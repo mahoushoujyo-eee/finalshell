@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class LO extends Thread {
-   final Connect k;
+   public final Connect k;
    public final OutputStream M;
    public static String a;
    public static long b;
 
-   LO(Connect var1, OutputStream var2) {
+   public LO(Connect var1, OutputStream var2) {
       this.k = var1;
       this.M = var2;
    }

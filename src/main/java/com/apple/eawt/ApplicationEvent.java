@@ -7,11 +7,11 @@ public class ApplicationEvent extends EventObject {
    public String fFilename;
    public boolean fHandled;
 
-   ApplicationEvent(Object o) {
+   public ApplicationEvent(Object o) {
       super(o);
    }
 
-   ApplicationEvent(Object o, String s) {
+   public ApplicationEvent(Object o, String s) {
       super(o);
    }
 

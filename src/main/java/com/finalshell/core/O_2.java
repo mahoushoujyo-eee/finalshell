@@ -13,31 +13,31 @@ import java.awt.geom.GeneralPath;
 import javax.swing.JComponent;
 
 public class O_2 extends Lz2_2 implements RJ, WR_2 {
-   protected boolean F = M2.i;
-   protected boolean K = M2.F;
-   protected int v = M2.G;
-   protected int q = M2.s;
-   protected float M = M2.u;
-   protected Stroke X = M2.J;
-   protected Color f = M2.v;
-   protected Color Q = M2.T;
-   protected boolean N = M2.k;
-   protected boolean I = M2.d;
-   protected boolean o = true;
-   protected boolean C = true;
-   protected boolean y = true;
-   protected boolean P = true;
-   protected boolean O = false;
-   protected boolean W = false;
-   protected boolean m = false;
-   protected boolean J = false;
-   protected P62 t;
-   protected boolean u = false;
-   protected boolean a;
-   protected boolean x;
-   protected boolean l;
-   protected int b;
-   protected int j;
+   public boolean F = M2.i;
+   public boolean K = M2.F;
+   public int v = M2.G;
+   public int q = M2.s;
+   public float M = M2.u;
+   public Stroke X = M2.J;
+   public Color f = M2.v;
+   public Color Q = M2.T;
+   public boolean N = M2.k;
+   public boolean I = M2.d;
+   public boolean o = true;
+   public boolean C = true;
+   public boolean y = true;
+   public boolean P = true;
+   public boolean O = false;
+   public boolean W = false;
+   public boolean m = false;
+   public boolean J = false;
+   public P62 t;
+   public boolean u = false;
+   public boolean a;
+   public boolean x;
+   public boolean l;
+   public int b;
+   public int j;
    public static String[] g;
    public static String[] h;
    public static long[] i;
@@ -795,7 +795,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       RV.X(var1, var6);
    }
 
-   protected void A(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
+   public void A(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
       int[] var5 = W_2.B$arrint();
       int var10000 = this.q;
       int var10001 = 4;
@@ -946,7 +946,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       var11.l(var1, var12, var9, var8, var10);
    }
 
-   protected void S(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
+   public void S(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
       label11: {
          int[] var5 = W_2.B$arrint();
          if (this.I) {
@@ -963,7 +963,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       var1.fill(var4);
    }
 
-   protected void f(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
+   public void f(Graphics2D var1, Rectangle var2, JComponent var3, Shape var4) {
       int[] var5;
       Stroke var6;
       int var10000;
@@ -1117,11 +1117,11 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       RV.t(var1, var6, this.X != null);
    }
 
-   protected Shape g(JComponent var1, boolean var2) {
+   public Shape g(JComponent var1, boolean var2) {
       return O42.k(var1, var2 ? a(16515, 458) : a(16514, 3058), new T2_2(this, var1, var2), this.A$arrObject(var1));
    }
 
-   protected Object[] A$arrObject(JComponent var1) {
+   public Object[] A$arrObject(JComponent var1) {
       Object[] var10000 = new Object[a(5707, 8040048458137009893L)];
       var10000[0] = this.b;
       var10000[1] = this.j;
@@ -1139,7 +1139,7 @@ public class O_2 extends Lz2_2 implements RJ, WR_2 {
       return var10000;
    }
 
-   protected Shape o(JComponent var1, boolean var2) {
+   public Shape o(JComponent var1, boolean var2) {
       int[] var3 = W_2.B$arrint();
       int var10000 = var2;
       if (var3 == null) {

@@ -7,16 +7,16 @@ import java.io.IOException;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class PasswordError implements Runnable {
-   final BufferedWriter B;
-   final String n;
-   final BufferedReader P;
-   final AtomicBoolean o;
-   final Process X;
-   final CH g;
+   public final BufferedWriter B;
+   public final String n;
+   public final BufferedReader P;
+   public final AtomicBoolean o;
+   public final Process X;
+   public final CH g;
    public static String[] a;
    public static String[] b;
 
-   PasswordError(BufferedWriter var1, String var2, BufferedReader var3, AtomicBoolean var4, Process var5, CH var6) {
+   public PasswordError(BufferedWriter var1, String var2, BufferedReader var3, AtomicBoolean var4, Process var5, CH var6) {
       this.B = var1;
       this.n = var2;
       this.P = var3;

@@ -3,9 +3,9 @@ package com.finalshell.task;
 import com.finalshell.core.Connect_2;
 
 public class YI3 implements Runnable {
-   final Connect_2 E;
+   public final Connect_2 E;
 
-   YI3(Connect_2 var1) {
+   public YI3(Connect_2 var1) {
       this.E = var1;
    }
 

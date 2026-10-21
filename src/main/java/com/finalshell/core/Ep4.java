@@ -8,8 +8,8 @@ import java.util.concurrent.ConcurrentMap;
 
 public class Ep4 implements X4 {
    public final UT_2[] d;
-   protected final UT_2[] N;
-   protected final java.lang.Class g;
+   public final UT_2[] N;
+   public final java.lang.Class g;
    public final ZzzzF6BeanInfo T;
    public ConcurrentMap H;
    public final Map u;
@@ -525,7 +525,7 @@ public class Ep4 implements X4 {
       // 10d: areturn
    }
 
-   static boolean N(int param0, int[] param1) {
+   public static boolean N(int param0, int[] param1) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -1574,7 +1574,7 @@ public class Ep4 implements X4 {
       // 4a4: areturn
    }
 
-   protected void E(P7 var1, int var2) {
+   public void E(P7 var1, int var2) {
       try {
          if (var1.P() != var2) {
             throw new Hi2(a(-24415, 596));
@@ -1584,11 +1584,11 @@ public class Ep4 implements X4 {
       }
    }
 
-   protected Enum V(P7 var1, char var2) {
+   public Enum V(P7 var1, char var2) {
       throw new Hi2(a(-24414, -13587) + var1.C$String());
    }
 
-   protected Object n(Yn4 param1, Type param2, Object param3, Object param4, int param5, int[] param6) {
+   public Object n(Yn4 param1, Type param2, Object param3, Object param4, int param5, int[] param6) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -5088,7 +5088,7 @@ public class Ep4 implements X4 {
       // 2014: athrow
    }
 
-   protected Enum z(U9 param1, char[] param2, X4 param3) {
+   public Enum z(U9 param1, char[] param2, X4 param3) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7328,15 +7328,15 @@ public class Ep4 implements X4 {
       return this.N[var1].p.a;
    }
 
-   protected Object a(Yn4 var1, Type var2, Object var3, Object var4, int var5) {
+   public Object a(Yn4 var1, Type var2, Object var3, Object var4, int var5) {
       return this.z(var1, var2, var3, var4, var5, new int[0]);
    }
 
-   protected Object z(Yn4 var1, Type var2, Object var3, Object var4, int var5, int[] var6) {
+   public Object z(Yn4 var1, Type var2, Object var3, Object var4, int var5, int[] var6) {
       return this.n(var1, var2, var3, var4, var5, var6);
    }
 
-   protected static Ep4 g(IG param0, ZzzzF6BeanInfo param1, String param2) {
+   public static Ep4 g(IG param0, ZzzzF6BeanInfo param1, String param2) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
@@ -7425,7 +7425,7 @@ public class Ep4 implements X4 {
       // a1: areturn
    }
 
-   protected static void B(Collection param0, X4 param1, Yn4 param2, Type param3, Object param4) {
+   public static void B(Collection param0, X4 param1, Yn4 param2, Type param3, Object param4) {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

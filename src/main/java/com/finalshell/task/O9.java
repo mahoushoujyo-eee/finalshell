@@ -6,9 +6,9 @@ import com.finalshell.ui.dialog.ClearListDialog;
 import java.lang.reflect.InvocationTargetException;
 
 public class O9 implements Runnable {
-   final ClearListDialog E;
+   public final ClearListDialog E;
 
-   O9(ClearListDialog var1) {
+   public O9(ClearListDialog var1) {
       this.E = var1;
    }
 

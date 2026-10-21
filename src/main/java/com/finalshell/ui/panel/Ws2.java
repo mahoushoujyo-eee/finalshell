@@ -9,7 +9,7 @@ public class Ws2 extends JPanel {
    }
 
    @Override
-   protected void paintComponent(Graphics var1) {
+   public void paintComponent(Graphics var1) {
       super.paintComponent(var1);
    }
 }

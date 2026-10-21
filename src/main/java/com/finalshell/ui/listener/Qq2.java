@@ -13,10 +13,10 @@ import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 
 public class Qq2 implements ActionListener {
-   final Y12_2 A;
-   final RouteTracePanel3 O;
+   public final Y12_2 A;
+   public final RouteTracePanel3 O;
 
-   Qq2(RouteTracePanel3 var1, Y12_2 var2) {
+   public Qq2(RouteTracePanel3 var1, Y12_2 var2) {
       this.O = var1;
       this.A = var2;
    }

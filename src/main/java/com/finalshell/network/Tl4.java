@@ -12,13 +12,13 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 
 public class Tl4 extends Socket {
-   protected Y2_5 X;
-   protected String O;
-   protected String m;
-   protected InetAddress o;
-   protected InetAddress H;
-   protected int V;
-   protected int b;
+   public Y2_5 X;
+   public String O;
+   public String m;
+   public InetAddress o;
+   public InetAddress H;
+   public int V;
+   public int b;
    public Socket t = null;
    public static String[] a;
    public static String[] c;
@@ -186,7 +186,7 @@ public class Tl4 extends Socket {
       // 8b: return
    }
 
-   protected Tl4(String var1, int var2, Y2_5 var3) {
+   public Tl4(String var1, int var2, Y2_5 var3) {
       this.b = var2;
       this.X = var3;
       this.o = var3.Y.getLocalAddress();
@@ -194,7 +194,7 @@ public class Tl4 extends Socket {
       this.m = var1;
    }
 
-   protected Tl4(InetAddress var1, int var2, Y2_5 var3) {
+   public Tl4(InetAddress var1, int var2, Y2_5 var3) {
       this.H = var1;
       this.b = var2;
       this.X = var3;

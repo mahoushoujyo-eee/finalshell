@@ -4,9 +4,9 @@ import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 
 public class O3 extends FocusAdapter {
-   final com.finalshell.core.M3 F;
+   public final com.finalshell.core.M3 F;
 
-   O3(com.finalshell.core.M3 var1) {
+   public O3(com.finalshell.core.M3 var1) {
       this.F = var1;
    }
 

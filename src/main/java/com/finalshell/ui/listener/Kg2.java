@@ -5,9 +5,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class Kg2 implements PropertyChangeListener {
-   final Pk4 v;
+   public final Pk4 v;
 
-   Kg2(Pk4 var1) {
+   public Kg2(Pk4 var1) {
       this.v = var1;
    }
 

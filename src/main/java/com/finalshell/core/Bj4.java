@@ -1,11 +1,11 @@
 package com.finalshell.core;
 
 public class Bj4 extends BN3 {
-   static volatile boolean t;
-   static volatile boolean x;
-   static volatile int F;
-   static volatile long E;
-   static volatile long T;
+   public static volatile boolean t;
+   public static volatile boolean x;
+   public static volatile int F;
+   public static volatile long E;
+   public static volatile long T;
    public static String[] a;
    public static String[] b;
    public static long[] c;
@@ -13,7 +13,7 @@ public class Bj4 extends BN3 {
    public static long[] g;
    public static Long[] i;
 
-   static void d() throws Exception {
+   public static void d() throws Exception {
       // $VF: Couldn't be decompiled
       throw new UnsupportedOperationException("decompilation failed (Vineflower)");
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)

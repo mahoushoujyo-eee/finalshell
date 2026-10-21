@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class KM3 implements ActionListener {
-   final SelectPrivateKeyDialog e;
+   public final SelectPrivateKeyDialog e;
 
-   KM3(SelectPrivateKeyDialog var1) {
+   public KM3(SelectPrivateKeyDialog var1) {
       this.e = var1;
    }
 

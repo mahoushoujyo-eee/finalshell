@@ -20,20 +20,20 @@ import org.fife.ui.rtextarea.RTextArea;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 public class File extends F8 {
-   JPanel V;
+   public JPanel V;
    public CollapsibleSectionPanel B;
    public RSyntaxTextArea P;
-   StatusBar D;
-   String J;
-   long h;
-   RTextScrollPane x;
-   boolean j;
+   public StatusBar D;
+   public String J;
+   public long h;
+   public RTextScrollPane x;
+   public boolean j;
    public static String[] a;
    public static String[] b;
    public static long[] d;
    public static Integer[] e;
 
-   File() {
+   public File() {
       Registry.lookupField(292168955479905724L).setBoolean(this, false);
       this.setLayout(new MigLayout(a(-23779, -15836), a(-23781, 10679), a(-23783, 12607)));
       TextEditorFrame.m();
@@ -109,7 +109,7 @@ public class File extends F8 {
       }
    }
 
-   void Y() {
+   public void Y() {
       Registry.lookupField(292168955479905724L).setBoolean(this, true);
    }
 
@@ -195,7 +195,7 @@ public class File extends F8 {
       this.setBorder(var2);
    }
 
-   void o(String var1) {
+   public void o(String var1) {
       long var7 = 237696362079353570L;
       Ref.s(237696362079353570L, var1, var7);
       java.io.File var10002;
@@ -243,7 +243,7 @@ public class File extends F8 {
       }
    }
 
-   void B() {
+   public void B() {
       try {
          Object var2 = 622876623804831693L;
          ((RSyntaxTextArea)Ref.g(622876623804831693L, var2)).getText();
@@ -267,7 +267,7 @@ public class File extends F8 {
       }
    }
 
-   void G() {
+   public void G() {
    }
 
    public RSyntaxTextArea i$RSyntaxTextArea() {

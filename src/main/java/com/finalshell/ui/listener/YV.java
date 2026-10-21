@@ -8,9 +8,9 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 
 public class YV implements ActionListener {
-   final QuickConnectPanel l;
+   public final QuickConnectPanel l;
 
-   YV(QuickConnectPanel var1) {
+   public YV(QuickConnectPanel var1) {
       this.l = var1;
    }
 
